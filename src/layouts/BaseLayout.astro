@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '鼎曜國際顧問 - 專業投資諮詢服務' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | 鼎曜國際顧問</title>
+  <meta name="description" content={description}>
+  <meta name="generator" content="Astro">
+  <link rel="canonical" href="https://dingyaoadvisory.tw">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">首頁</a>
+      <a href="/about">關於我們</a>
+      <a href="/services">服務項目</a>
+      <a href="/blog">部落格</a>
+      <a href="/contact">聯絡我們</a>
+    </nav>
+  </header>
+  
+  <main>
+    <slot />
+  </main>
+  
+  <footer>
+    <p>&copy; 2024-2026 鼎曜國際顧問 DingYao Advisory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
