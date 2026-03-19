@@ -50,4 +50,4 @@ npm run preview # 預覽建置結果
 - 新增/更新文章
 - 維護官網結構
 - 管理 menu/footer 一致性
-- 自動 git commit + push
+- 自動 git commit + push# test
