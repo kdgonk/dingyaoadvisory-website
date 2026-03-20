@@ -2,6 +2,11 @@
   "name": "dingyaoadvisory-website",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Static site - dist/ already contains all files'"
+    "build": "echo 'Static site - dist/ already contains all files'",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.76.0"
   }
 }
