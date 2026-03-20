@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專欄文章 | 鼎曜國際顧問 - 南非置產、留學與身分規劃</title>
+    <meta name="description" content="探索南非置產、教育留學、退休生活與身分規劃的專業見解。鼎曜國際顧問為您提供最新的投資趨勢分析與實用指南。">
+    <meta name="keywords" content="南非置產,南非房產,開普敦房地產,南非投資,南非留學,南非退休,南非PR,永久居留權,南非房地產投資,開普敦置產">
+    
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://dingyaoadvisory.tw/blog">
+    <link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog">
+    <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-en">
+    <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="專欄文章 | 鼎曜國際顧問">
+    <meta property="og:description" content="探索南非置產、教育留學、退休生活與身分規劃的專業見解。">
+    <meta property="og:image" content="https://assets.dingyaoadvisory.tw/blog-hero.jpg">
+    <meta property="og:url" content="https://dingyaoadvisory.tw/blog">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="鼎曜國際顧問">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="專欄文章 | 鼎曜國際顧問">
+    <meta name="twitter:description" content="探索南非置產、教育留學、退休生活與身分規劃的專業見解。">
+    <meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/blog-hero.jpg">
+    <meta name="twitter:site" content="@dingyaoadvisory">
+    
+    <!-- Favicon -->
+    <link href="https://assets.dingyaoadvisory.tw/favicon.svg" rel="icon" type="image/svg+xml">
+    
+    <!-- Preconnect -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://cdn.tailwindcss.com" rel="preconnect">
+    <link href="https://assets.dingyaoadvisory.tw" rel="preconnect">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            gold: '#C5A059',
+                            blue: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        logo: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #1e3a8a 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #E8C878 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "鼎曜國際顧問專欄",
+        "description": "南非置產、教育留學、退休生活與身分規劃的專業見解",
+        "url": "https://dingyaoadvisory.tw/blog",
+        "inLanguage": "zh-TW",
+        "publisher": {
+            "@type": "Organization",
+            "name": "鼎曜國際顧問 DingYao Advisory",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://assets.dingyaoadvisory.tw/dingyao%20logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dingyaoadvisory.tw/blog"
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://dingyaoadvisory.tw/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "專欄文章",
+                "item": "https://dingyaoadvisory.tw/blog"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50 max-w-7xl w-[95%]">
+        <div class="max-w-7xl mx-auto bg-white/95 backdrop-blur-xl border border-white/40 shadow-2xl rounded-3xl px-6 py-3 transition-all duration-300">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                    <div class="text-3xl font-bold font-logo tracking-tighter leading-none select-none">
+                        <span class="text-[#0F172A]">D</span><span class="text-[#C5A059]">Y</span><span class="text-[#0F172A]">A</span>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-3">
+                        <div class="h-8 w-px bg-gray-200 mx-1"></div>
+                        <div class="flex flex-col justify-center">
+                            <span class="text-[0.65rem] font-bold text-[#0F172A] tracking-[0.2em] uppercase leading-tight font-logo">DING YAO</span>
+                            <span class="text-[0.55rem] text-gray-400 font-medium tracking-[0.1em] uppercase leading-tight">ADVISORY</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Menu -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="partners.html">戰略夥伴</a>
+                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="platform.html">數位服務</a>
+                    <div class="relative group">
+                        <button class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition flex items-center">
+                            美好生活 <i class="fas fa-chevron-down ml-1 text-xs opacity-50"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-2">
+                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="education.html"><i class="fas fa-graduation-cap w-6 text-center mr-2 text-yellow-500"></i> 教育留學</a>
+                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="retirement.html"><i class="fas fa-wine-glass-alt w-6 text-center mr-2 text-red-500"></i> 退休生活</a>
+                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="residency.html"><i class="fas fa-passport w-6 text-center mr-2 text-blue-500"></i> 身分規劃</a>
+                        </div>
+                    </div>
+                    <a class="px-4 py-2 text-sm font-medium text-blue-900 bg-blue-50 rounded-full transition" href="blog.html">專欄</a>
+                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="assets.html">精選資產</a>
+                </div>
+                
+                <!-- Right side -->
+                <div class="hidden md:flex items-center gap-3">
+                    <div class="flex items-center text-xs font-bold text-gray-400">
+                        <a class="hover:text-blue-900 transition" href="blog-en.html">EN</a>
+                        <span class="mx-2">/</span>
+                        <span class="text-blue-900 cursor-default">TW</span>
+                    </div>
+                    <a class="bg-blue-900 text-white hover:bg-blue-800 px-6 py-2 rounded-full text-xs font-bold shadow-lg shadow-blue-900/20 transform hover:-translate-y-0.5 transition whitespace-nowrap" href="index.html#contact">預約諮詢</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                <span class="text-gradient">專欄文章</span>
+            </h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+                探索南非置產、教育留學、退休生活與身分規劃的專業見解
+            </p>
+            
+            <!-- Category Filter -->
+            <div class="flex flex-wrap justify-center gap-3 mt-8">
+                <button class="px-4 py-2 bg-white/30 text-white rounded-full text-sm hover:bg-white/40 transition category-btn active" data-category="all">全部文章</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="investment">置產投資</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="education">教育留學</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="lifestyle">退休生活</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="residency">身分規劃</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Breadcrumb -->
+    <nav class="bg-white border-b border-gray-100 py-3 px-4" aria-label="Breadcrumb">
+        <div class="max-w-7xl mx-auto">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500">
+                <li><a href="index.html" class="hover:text-blue-900 transition">首頁</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li class="text-gray-900">專欄文章</li>
+            </ol>
+        </div>
+    </nav>
+    
+    <!-- Blog Grid - 等待火星人文章 -->
+    <section class="py-16 px-4 bg-gray-50 min-h-[400px]">
+        <div class="max-w-7xl mx-auto">
+            <!-- 文章列表容器 - 文章將由泰坦人動態新增 -->
+            <div id="blog-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 文章將由火星人撰寫後，泰坦人新增至此 -->
+            </div>
+            
+            <!-- 空狀態提示 -->
+            <div id="empty-state" class="text-center py-16 hidden">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-blue-900 mb-4">
+                    <i class="fas fa-pen-fancy text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">文章準備中</h3>
+                <p class="text-gray-600 max-w-md mx-auto">
+                    我們正在準備優質內容，敬請期待。如果您有任何想了解的主題，歡迎<a href="index.html#contact" class="text-blue-900 hover:underline">聯繫我們</a>。
+                </p>
+            </div>
+            
+            <!-- 載入更多按鈕（隱藏，有文章時顯示） -->
+            <div id="load-more-container" class="text-center mt-12 hidden">
+                <button class="px-8 py-3 bg-white border-2 border-[#0F172A] text-[#0F172A] rounded-full font-medium hover:bg-[#0F172A] hover:text-white transition">
+                    載入更多文章 <i class="fas fa-chevron-down ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-[#0F172A]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                探索更多投資機會
+            </h2>
+            <p class="text-gray-400 text-lg mb-8">
+                預約一對一諮詢，讓我們為您量身打造南非置產方案
+            </p>
+            <a href="index.html#contact" class="inline-flex items-center gap-2 bg-[#C5A059] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#B08D4E] transition shadow-lg">
+                <i class="fas fa-calendar-alt"></i> 立即預約諮詢
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-[#0f172a] text-gray-400 py-16 border-t border-gray-800 text-sm font-light">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Logo & Description -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-white font-bold text-2xl tracking-tight uppercase font-logo">
+                            D<span class="text-[#C5A059]">Y</span>A
+                        </span>
+                        <div class="h-4 w-px bg-gray-600"></div>
+                        <span class="text-gray-300 font-medium text-xs tracking-widest uppercase">DINGYAO ADVISORY</span>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed text-xs">
+                        <strong>亞太區獨家數位行銷中心</strong><br/>
+                        我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。
+                    </p>
+                    <!-- Social Links -->
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.instagram.com/dingyaoadvisory" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://x.com/dingyaoadvisory" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.linkedin.com/company/dingyaoadvisory/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest border-b border-gray-800 pb-2 inline-block">核心服務</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a class="hover:text-yellow-500 transition" href="assets.html">海外置產顧問</a></li>
+                        <li><a class="hover:text-yellow-500 transition" href="education.html">頂級留學規劃</a></li>
+                        <li><a class="hover:text-yellow-500 transition" href="retirement.html">退休移居方案</a></li>
+                        <li><a class="hover:text-yellow-500 transition" href="residency.html">永久居留權 (PR)</a></li>
+                        <li><a class="hover:text-yellow-500 transition" href="platform.html">數位資產平台</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest border-b border-gray-800 pb-2 inline-block">戰略夥伴</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a class="hover:text-yellow-500 transition flex items-center group" href="https://crestlineadvisory.co.za" target="_blank"><i class="fas fa-external-link-alt mr-2 text-gray-600 group-hover:text-yellow-500"></i>Crestline Advisory</a></li>
+                        <li><a class="hover:text-yellow-500 transition flex items-center group" href="https://canvascrest.co.za" target="_blank"><i class="fas fa-external-link-alt mr-2 text-gray-600 group-hover:text-yellow-500"></i>CanvasCrest Properties</a></li>
+                        <li><a class="hover:text-yellow-500 transition flex items-center group" href="https://www.standardbank.co.za" target="_blank"><i class="fas fa-university mr-2 text-gray-600 group-hover:text-yellow-500"></i>Standard Bank</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest border-b border-gray-800 pb-2 inline-block">聯絡我們</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><i class="fas fa-envelope mr-2 text-gray-600"></i>info@dingyaoadvisory.tw</li>
+                        <li><i class="fas fa-phone mr-2 text-gray-600"></i>+886 (04) 1234-5678</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-gray-600"></i>台中市西區台灣大道二段</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-600">
+                <p>© 2026 DingYao Advisory. All rights reserved. | <a href="privacy.html" class="hover:text-yellow-500 transition">隱私權政策</a> | <a href="terms.html" class="hover:text-yellow-500 transition">服務條款</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // 文章資料
+        const blogPosts = [
+            {
+                title: "南非開普敦房地產投資指南 2026：收益率、區域與策略完整解析",
+                excerpt: "深入解析開普敦房地產市場現況，從平均 7% 租賃收益率到僅 1% 空置率，帶您掌握最佳投資區域與策略。",
+                category: "investment",
+                categoryName: "置產投資",
+                categoryColor: "bg-blue-100 text-blue-800",
+                date: "2026年3月20日",
+                url: "blog/cape-town-property-investment-2026.html",
+                image: "blog-cape-town.jpg",
+                imageWebp: "blog-cape-town.webp",
+                imageAvif: "blog-cape-town.avif"
+            }
+        ];
+        
+        // 渲染文章列表
+        function renderPosts() {
+            const container = document.getElementById('blog-posts');
+            const emptyState = document.getElementById('empty-state');
+            const loadMoreContainer = document.getElementById('load-more-container');
+            
+            if (blogPosts.length === 0) {
+                container.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                loadMoreContainer.classList.add('hidden');
+                return;
+            }
+            
+            emptyState.classList.add('hidden');
+            loadMoreContainer.classList.remove('hidden');
+            
+            container.innerHTML = blogPosts.map(post => `
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="${post.category}">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <picture>
+                            <source srcset="${post.imageAvif}" type="image/avif">
+                            <source srcset="${post.imageWebp}" type="image/webp">
+                            <img src="${post.image}" 
+                                 alt="${post.title}" 
+                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 decoding="async">
+                        </picture>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 ${post.categoryColor} text-xs font-medium rounded-full">${post.categoryName}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
+                            <a href="${post.url}" class="hover:text-[#C5A059] transition">${post.title}</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">${post.excerpt}</p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span><i class="far fa-calendar mr-1"></i>${post.date}</span>
+                            <a href="${post.url}" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
+                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+        }
+        
+        // 分類篩選
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // 更新按鈕狀態
+                document.querySelectorAll('.category-btn').forEach(b => {
+                    b.classList.remove('bg-white/30');
+                    b.classList.add('bg-white/10');
+                });
+                this.classList.remove('bg-white/10');
+                this.classList.add('bg-white/30');
+                
+                // 篩選文章
+                const category = this.dataset.category;
+                const posts = document.querySelectorAll('article');
+                posts.forEach(post => {
+                    if (category === 'all' || post.dataset.category === category) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // 初始渲染
+        renderPosts();
+    </script>
+</body>
+</html>
