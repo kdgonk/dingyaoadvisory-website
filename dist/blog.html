@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>專欄文章 | 鼎曜國際顧問 - 南非置產、留學與身分規劃</title>
     <meta name="description" content="探索南非置產、教育留學、退休生活與身分規劃的專業見解。鼎曜國際顧問為您提供最新的投資趨勢分析與實用指南。">
-    <meta name="keywords" content="南非置產,南非房產,開普敦房地產,南非投資,南非留學,南非退休,南非PR,永久居留權">
+    <meta name="keywords" content="南非置產,南非房產,開普敦房地產,南非投資,南非留學,南非退休,南非PR,永久居留權,南非房地產投資,開普敦置產">
     
     <!-- Canonical & hreflang -->
     <link rel="canonical" href="https://dingyaoadvisory.tw/blog">
@@ -20,19 +20,25 @@
     <meta property="og:image" content="https://assets.dingyaoadvisory.tw/blog-hero.jpg">
     <meta property="og:url" content="https://dingyaoadvisory.tw/blog">
     <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="鼎曜國際顧問">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="專欄文章 | 鼎曜國際顧問">
     <meta name="twitter:description" content="探索南非置產、教育留學、退休生活與身分規劃的專業見解。">
     <meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/blog-hero.jpg">
+    <meta name="twitter:site" content="@dingyaoadvisory">
     
     <!-- Favicon -->
     <link href="https://assets.dingyaoadvisory.tw/favicon.svg" rel="icon" type="image/svg+xml">
     
-    <!-- Fonts -->
+    <!-- Preconnect -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://cdn.tailwindcss.com" rel="preconnect">
+    <link href="https://assets.dingyaoadvisory.tw" rel="preconnect">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
@@ -79,7 +85,7 @@
         }
     </style>
     
-    <!-- JSON-LD -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -87,14 +93,41 @@
         "name": "鼎曜國際顧問專欄",
         "description": "南非置產、教育留學、退休生活與身分規劃的專業見解",
         "url": "https://dingyaoadvisory.tw/blog",
+        "inLanguage": "zh-TW",
         "publisher": {
             "@type": "Organization",
-            "name": "鼎曜國際顧問",
+            "name": "鼎曜國際顧問 DingYao Advisory",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://assets.dingyaoadvisory.tw/dingyao%20logo.png"
             }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dingyaoadvisory.tw/blog"
         }
+    }
+    </script>
+    
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首頁",
+                "item": "https://dingyaoadvisory.tw/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "專欄文章",
+                "item": "https://dingyaoadvisory.tw/blog"
+            }
+        ]
     }
     </script>
 </head>
@@ -104,7 +137,7 @@
         <div class="max-w-7xl mx-auto bg-white/95 backdrop-blur-xl border border-white/40 shadow-2xl rounded-3xl px-6 py-3 transition-all duration-300">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
-                <div class="flex items-center gap-4 cursor-pointer group" onclick="location.href='index.html'">
+                <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
                     <div class="text-3xl font-bold font-logo tracking-tighter leading-none select-none">
                         <span class="text-[#0F172A]">D</span><span class="text-[#C5A059]">Y</span><span class="text-[#0F172A]">A</span>
                     </div>
@@ -115,7 +148,7 @@
                             <span class="text-[0.55rem] text-gray-400 font-medium tracking-[0.1em] uppercase leading-tight">ADVISORY</span>
                         </div>
                     </div>
-                </div>
+                </a>
                 
                 <!-- Menu -->
                 <div class="hidden md:flex items-center space-x-1">
@@ -160,265 +193,47 @@
             
             <!-- Category Filter -->
             <div class="flex flex-wrap justify-center gap-3 mt-8">
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition" onclick="filterPosts('all')">全部文章</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition" onclick="filterPosts('investment')">置產投資</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition" onclick="filterPosts('education')">教育留學</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition" onclick="filterPosts('lifestyle')">退休生活</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition" onclick="filterPosts('residency')">身分規劃</button>
+                <button class="px-4 py-2 bg-white/30 text-white rounded-full text-sm hover:bg-white/40 transition category-btn active" data-category="all">全部文章</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="investment">置產投資</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="education">教育留學</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="lifestyle">退休生活</button>
+                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="residency">身分規劃</button>
             </div>
         </div>
     </section>
     
-    <!-- Featured Post -->
-    <section class="py-12 px-4 bg-white">
+    <!-- Breadcrumb -->
+    <nav class="bg-white border-b border-gray-100 py-3 px-4" aria-label="Breadcrumb">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-8 items-center bg-gradient-to-r from-blue-50 to-gray-50 rounded-3xl overflow-hidden card-hover">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <picture>
-                        <source srcset="https://assets.dingyaoadvisory.tw/blog-featured.avif" type="image/avif">
-                        <source srcset="https://assets.dingyaoadvisory.tw/blog-featured.webp" type="image/webp">
-                        <img src="https://assets.dingyaoadvisory.tw/blog-featured.jpg" 
-                             alt="精選文章" 
-                             class="w-full h-full object-cover"
-                             width="800"
-                             height="500"
-                             loading="lazy"
-                             decoding="async">
-                    </picture>
-                </div>
-                <div class="p-8">
-                    <span class="inline-block px-3 py-1 bg-[#C5A059] text-white text-xs font-bold rounded-full mb-4">精選文章</span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-[#0F172A] mb-4">
-                        南非開普敦房地產投資指南 2026
-                    </h2>
-                    <p class="text-gray-600 mb-6">
-                        深入解析開普敦房地產市場趨勢、熱門區域分析、投資回報預估，以及外國人購屋流程。為您揭開南非置產的神秘面紗。
-                    </p>
-                    <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
-                        <span><i class="far fa-calendar mr-2"></i>2026年3月20日</span>
-                        <span><i class="far fa-clock mr-2"></i>閱讀時間 12 分鐘</span>
-                    </div>
-                    <a href="#" class="inline-flex items-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-800 transition">
-                        閱讀全文 <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
+            <ol class="flex items-center space-x-2 text-sm text-gray-500">
+                <li><a href="index.html" class="hover:text-blue-900 transition">首頁</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li class="text-gray-900">專欄文章</li>
+            </ol>
         </div>
-    </section>
+    </nav>
     
-    <!-- Blog Grid -->
-    <section class="py-16 px-4 bg-gray-50">
+    <!-- Blog Grid - 等待火星人文章 -->
+    <section class="py-16 px-4 bg-gray-50 min-h-[400px]">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Post 1 -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-cape-town.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-cape-town.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-cape-town.jpg" 
-                                 alt="開普敦置產優勢" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">置產投資</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            為什麼選擇開普敦？南非置產的五大優勢
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                            開普敦不僅擁有世界級的自然景觀，更具備穩定的政治環境、健全的法律體系與高投資回報率。
-                        </p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月18日</span>
-                            <a href="#" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
-                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Post 2 -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="education">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-education.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-education.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-education.jpg" 
-                                 alt="南非教育體系" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">教育留學</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            南非教育體系解析：從幼兒園到高等教育
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                            了解南非的教育制度、知名學府、學費概況，以及台灣學生如何銜接南非學位。
-                        </p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月15日</span>
-                            <a href="#" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
-                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Post 3 -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="lifestyle">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-lifestyle.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-lifestyle.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-lifestyle.jpg" 
-                                 alt="開普敦生活" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">退休生活</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            開普敦生活品質：治安、醫療、休閒全解析
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                            深入了解開普敦的真實生活面貌，從治安現況、醫療資源到休閒娛樂，全方位評估退休生活品質。
-                        </p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月12日</span>
-                            <a href="#" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
-                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Post 4 -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="residency">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-pr.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-pr.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-pr.jpg" 
-                                 alt="南非永久居留權" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">身分規劃</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            南非永久居留權 (PR) 申請完整指南
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                            詳細解析南非 PR 申請條件、流程、所需文件，以及投資移民、退休移民等多種途徑。
-                        </p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月10日</span>
-                            <a href="#" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
-                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Post 5 -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-wine.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-wine.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-wine.jpg" 
-                                 alt="南非酒莊投資" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">置產投資</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            南非酒莊投資：從莊園到收益的完整分析
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                            探索南非開普敦葡萄酒莊園的投資潛力，了解莊園投資模式、收益來源與風險管理。
-                        </p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月8日</span>
-                            <a href="#" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
-                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Post 6 -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-invest.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-invest.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-invest.jpg" 
-                                 alt="南非投資報酬" 
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">置產投資</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            8% 年化報酬？解析南非房地產的真實收益
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                            深入探討南非房地產投資的收益結構，包括租金收益率、資產增值、匯率影響等關鍵因素。
-                        </p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月5日</span>
-                            <a href="#" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
-                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
+            <!-- 文章列表容器 - 文章將由泰坦人動態新增 -->
+            <div id="blog-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 文章將由火星人撰寫後，泰坦人新增至此 -->
             </div>
             
-            <!-- Load More -->
-            <div class="text-center mt-12">
+            <!-- 空狀態提示 -->
+            <div id="empty-state" class="text-center py-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-blue-900 mb-4">
+                    <i class="fas fa-pen-fancy text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">文章準備中</h3>
+                <p class="text-gray-600 max-w-md mx-auto">
+                    我們正在準備優質內容，敬請期待。如果您有任何想了解的主題，歡迎<a href="index.html#contact" class="text-blue-900 hover:underline">聯繫我們</a>。
+                </p>
+            </div>
+            
+            <!-- 載入更多按鈕（隱藏，有文章時顯示） -->
+            <div id="load-more-container" class="text-center mt-12 hidden">
                 <button class="px-8 py-3 bg-white border-2 border-[#0F172A] text-[#0F172A] rounded-full font-medium hover:bg-[#0F172A] hover:text-white transition">
                     載入更多文章 <i class="fas fa-chevron-down ml-2"></i>
                 </button>
@@ -460,10 +275,10 @@
                     </p>
                     <!-- Social Links -->
                     <div class="flex flex-wrap gap-3 pt-2">
-                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.facebook.com/DingYaoAdvisory/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.instagram.com/dingyaoadvisory" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://x.com/dingyaoadvisory" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.linkedin.com/company/dingyaoadvisory/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.instagram.com/dingyaoadvisory" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://x.com/dingyaoadvisory" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.linkedin.com/company/dingyaoadvisory/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 
@@ -507,26 +322,85 @@
     
     <!-- JavaScript -->
     <script>
-        // Filter posts by category
-        function filterPosts(category) {
-            const posts = document.querySelectorAll('article');
-            posts.forEach(post => {
-                if (category === 'all' || post.dataset.category === category) {
-                    post.style.display = 'block';
-                } else {
-                    post.style.display = 'none';
-                }
-            });
+        // 文章資料（將由泰坦人動態更新）
+        const blogPosts = [];
+        
+        // 渲染文章列表
+        function renderPosts() {
+            const container = document.getElementById('blog-posts');
+            const emptyState = document.getElementById('empty-state');
+            const loadMoreContainer = document.getElementById('load-more-container');
             
-            // Update active button
-            const buttons = document.querySelectorAll('.hero-gradient button');
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-white/30');
-                btn.classList.add('bg-white/10');
-            });
-            event.target.classList.remove('bg-white/10');
-            event.target.classList.add('bg-white/30');
+            if (blogPosts.length === 0) {
+                container.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                loadMoreContainer.classList.add('hidden');
+                return;
+            }
+            
+            emptyState.classList.add('hidden');
+            loadMoreContainer.classList.remove('hidden');
+            
+            container.innerHTML = blogPosts.map(post => `
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="${post.category}">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <picture>
+                            <source srcset="${post.imageAvif}" type="image/avif">
+                            <source srcset="${post.imageWebp}" type="image/webp">
+                            <img src="${post.image}" 
+                                 alt="${post.title}" 
+                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                 width="400"
+                                 height="250"
+                                 loading="lazy"
+                                 decoding="async">
+                        </picture>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 ${post.categoryColor} text-xs font-medium rounded-full">${post.categoryName}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
+                            <a href="${post.url}" class="hover:text-[#C5A059] transition">${post.title}</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">${post.excerpt}</p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span><i class="far fa-calendar mr-1"></i>${post.date}</span>
+                            <a href="${post.url}" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">
+                                閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
         }
+        
+        // 分類篩選
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // 更新按鈕狀態
+                document.querySelectorAll('.category-btn').forEach(b => {
+                    b.classList.remove('bg-white/30');
+                    b.classList.add('bg-white/10');
+                });
+                this.classList.remove('bg-white/10');
+                this.classList.add('bg-white/30');
+                
+                // 篩選文章
+                const category = this.dataset.category;
+                const posts = document.querySelectorAll('article');
+                posts.forEach(post => {
+                    if (category === 'all' || post.dataset.category === category) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // 初始渲染
+        renderPosts();
     </script>
 </body>
 </html>
