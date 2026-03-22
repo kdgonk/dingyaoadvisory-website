@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="鼎曜國際顧問">
+    
+    <!-- GEO Tags -->
+    <meta name="geo.region" content="TW-TXG">
+    <meta name="geo.placename" content="台中市">
+    <meta name="geo.position" content="24.163;120.647">
+    <meta name="ICBM" content="24.163, 120.647">
+    
     <title>專欄文章 | 鼎曜國際顧問 - 南非置產、留學與身分規劃</title>
     <meta name="description" content="探索南非置產、教育留學、退休生活與身分規劃的專業見解。鼎曜國際顧問為您提供最新的投資趨勢分析與實用指南。">
     <meta name="keywords" content="南非置產,南非房產,開普敦房地產,南非投資,南非留學,南非退休,南非PR,永久居留權">
@@ -18,13 +27,14 @@
     <meta property="og:image" content="https://assets.dingyaoadvisory.tw/blog-hero.jpg">
     <meta property="og:url" content="https://dingyaoadvisory.tw/blog">
     <meta property="og:locale" content="zh_TW">
+    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:site_name" content="鼎曜國際顧問">
     
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dingyaoadvisory">
     <meta name="twitter:title" content="專欄文章 | 鼎曜國際顧問">
     <meta name="twitter:description" content="探索南非置產、教育留學、退休生活與身分規劃的專業見解。">
     <meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/blog-hero.jpg">
-    <meta name="twitter:site" content="@dingyaoadvisory">
     
     <link href="https://assets.dingyaoadvisory.tw/favicon.svg" rel="icon" type="image/svg+xml">
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -95,8 +105,8 @@
                             <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="residency.html"><i class="fas fa-passport w-6 text-center mr-2 text-blue-500"></i> 身分規劃</a>
                         </div>
                     </div>
-                    <a class="px-4 py-2 text-sm font-medium text-blue-900 bg-blue-50 rounded-full transition" href="blog.html">專欄</a>
                     <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="assets.html">精選資產</a>
+                    <a class="px-4 py-2 text-sm font-medium text-blue-900 bg-blue-50 rounded-full transition" href="blog.html">專欄</a>
                 </div>
                 <div class="hidden md:flex items-center gap-3">
                     <div class="flex items-center text-xs font-bold text-gray-400">
@@ -123,8 +133,8 @@
                     <a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="retirement.html">退休生活</a>
                     <a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="residency.html">身分規劃</a>
                 </div>
-                <a class="block px-4 py-3 text-sm font-medium text-blue-900 bg-blue-50 rounded-xl" href="blog.html">專欄</a>
                 <a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="assets.html">精選資產</a>
+                <a class="block px-4 py-3 text-sm font-medium text-blue-900 bg-blue-50 rounded-xl" href="blog.html">專欄</a>
                 <a class="block px-4 py-3 text-sm font-bold text-center text-white bg-blue-900 rounded-xl mt-4 shadow-lg" href="index.html#contact" onclick="toggleMobileMenu()">立即預約諮詢</a>
             </div>
         </nav>
@@ -241,16 +251,20 @@
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest border-b border-gray-800 pb-2 inline-block">合規與聯繫</h4>
                     <ul class="space-y-3 text-xs">
-                        <li><a class="hover:text-yellow-500 transition" href="index.html#contact">預約諮詢</a></li>
-                        <li><a class="hover:text-yellow-500 transition" href="privacy.html">隱私權政策</a></li>
-                        <li><a class="hover:text-yellow-500 transition" href="terms.html">服務條款</a></li>
-                        <li class="pt-2 text-gray-500"><i class="fas fa-envelope mr-2 text-gray-600"></i>info@dingyaoadvisory.tw</li>
-                        <li class="text-gray-500"><i class="fas fa-phone mr-2 text-gray-600"></i>+886 (04) 1234-5678</li>
+                        <li><a class="hover:text-white transition" href="privacy.html">隱私權政策 (Privacy)</a></li>
+                        <li><a class="hover:text-white transition" href="terms.html">服務條款 (Terms)</a></li>
+                        <li class="pt-4 text-gray-500"><i class="fas fa-map-marker-alt mr-2"></i> 台中市西屯區 (亞太總部)</li>
+                        <li class="text-gray-500"><i class="fas fa-envelope mr-2"></i> <a class="hover:text-white transition" href="mailto:info@dingyaoadvisory.tw">info@dingyaoadvisory.tw</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-600">
-                <p>© 2026 DingYao Advisory. All rights reserved.</p>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+                <div class="mb-4 md:mb-0">
+                    © <span id="copyright-year">2025-2026</span> <a class="font-bold hover:text-yellow-500 transition duration-300" href="index-en.html">鼎曜國際顧問有限公司</a> All rights reserved. | Taichung, Taiwan
+                </div>
+                <div class="flex space-x-6">
+                    <span>Designed for Global Investors</span>
+                </div>
             </div>
         </div>
     </footer>
