@@ -141,8 +141,17 @@
     </div>
     
     <!-- Hero Section -->
-    <section class="hero-gradient pt-32 pb-16 px-4">
-        <div class="max-w-7xl mx-auto text-center">
+    <section class="relative pt-32 pb-16 px-4 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <picture>
+                <source srcset="blog/images/blog-hero.webp" type="image/webp">
+                <img src="blog/images/blog-hero.jpg" alt="部落格背景" class="w-full h-full object-cover" width="1920" height="1080">
+            </picture>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/90"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto text-center relative z-10">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
                 <span class="text-gradient">專欄文章</span>
             </h1>
@@ -176,9 +185,8 @@
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-antarctic-research.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-antarctic-research.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-antarctic-research.jpg" alt="南非南極研究領先全球" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
+                            <source srcset="blog/images/blog-antarctic-thumb.webp" type="image/webp">
+                            <img src="blog/images/blog-antarctic-thumb.jpg" alt="南非南極研究領先全球" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <div class="p-6">
@@ -198,9 +206,8 @@
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-cape-town.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-cape-town.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-cape-town.jpg" alt="南非開普敦房地產投資指南" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
+                            <source srcset="blog/images/cape-town-property-thumb.webp" type="image/webp">
+                            <img src="blog/images/cape-town-property-thumb.jpg" alt="南非開普敦房地產投資指南" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <div class="p-6">
@@ -220,9 +227,8 @@
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-south-africa-ww3-safety.avif" type="image/avif">
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog-south-africa-ww3-safety.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog-south-africa-ww3-safety.jpg" alt="南非在三戰中的安全性分析" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
+                            <source srcset="blog/images/south-africa-ww3-safety-thumb.webp" type="image/webp">
+                            <img src="blog/images/south-africa-ww3-safety-thumb.jpg" alt="南非在三戰中的安全性分析" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <div class="p-6">
