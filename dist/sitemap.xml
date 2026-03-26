@@ -256,7 +256,16 @@
     <!-- Blog Articles -->
     <url>
         <loc>https://dingyaoadvisory.tw/blog/south-africa-investment-2025</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-investment-2025-en</loc>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025"/>
@@ -266,7 +275,16 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation-en</loc>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation"/>
@@ -276,7 +294,16 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament-en</loc>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament"/>
@@ -286,7 +313,16 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/blog/south-africa-antarctic-research</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-antarctic-research-en</loc>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research"/>
