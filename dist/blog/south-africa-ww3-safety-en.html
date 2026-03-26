@@ -333,7 +333,8 @@
         <!-- Article Header -->
         <header class="max-w-4xl mx-auto px-4 mt-8">
             <div class="flex items-center gap-3 mb-4">
-                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Investment Analysis</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Property Investment</span>
+                <span class="text-gray-500 text-sm"><i class="far fa-calendar mr-1"></i>March 22, 2026</span>
                 <span class="text-gray-500 text-sm"><i class="far fa-clock mr-1"></i>8 min read</span>
             </div>
             
@@ -341,13 +342,43 @@
                 Would South Africa Be the Safest Place If World War III Broke Out?
             </h1>
             
-            <p class="text-xl text-gray-600 mb-6">
-                International media ranks South Africa 11th among the safest countries. This article rationally analyzes South Africa's advantages and investment value from perspectives of geography, political neutrality, and resource self-sufficiency.
+            <p class="text-xl text-gray-600 mb-6" id="article-summary">
+                International media ranks South Africa <strong class="text-blue-900">11th among the safest countries</strong>. This article rationally analyzes South Africa's advantages and investment value from perspectives of geography, political neutrality, and resource self-sufficiency.
             </p>
             
-            <div class="flex items-center gap-4 text-sm text-gray-500 mb-8">
-                <span><i class="far fa-calendar mr-1"></i>March 22, 2026</span>
-                <span><i class="far fa-user mr-1"></i>Leo Pan</span>
+            <!-- Data Visualization Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 text-center border border-blue-200">
+                    <p class="text-2xl font-bold text-blue-900">12,000</p>
+                    <p class="text-xs text-gray-600">km</p>
+                    <p class="text-sm text-gray-700 font-medium">Distance from Taiwan</p>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-4 text-center border border-yellow-200">
+                    <p class="text-2xl font-bold text-yellow-700">11th</p>
+                    <p class="text-xs text-gray-600">Global Ranking</p>
+                    <p class="text-sm text-gray-700 font-medium">Safest Countries</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 text-center border border-green-200">
+                    <p class="text-2xl font-bold text-green-700">7%</p>
+                    <p class="text-xs text-gray-600">Avg. Annual Yield</p>
+                    <p class="text-sm text-gray-700 font-medium">Rental Returns</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 text-center border border-purple-200">
+                    <p class="text-2xl font-bold text-purple-700">TWD 22M</p>
+                    <p class="text-xs text-gray-600">Investment</p>
+                    <p class="text-sm text-gray-700 font-medium">Immigration Threshold</p>
+                </div>
+            </div>
+            
+            <!-- Author Block -->
+            <div class="flex items-center gap-4 mb-8 p-4 bg-gray-50 rounded-xl">
+                <div class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center">
+                    <span class="text-white font-bold">LP</span>
+                </div>
+                <div>
+                    <p class="font-bold text-gray-900">Leo Pan</p>
+                    <p class="text-sm text-gray-500">Founder, DingYao Advisory</p>
+                </div>
             </div>
             
             <!-- Featured Image -->
@@ -382,10 +413,19 @@
                     
                     <div class="highlight-box">
                         <h4 class="font-bold text-[#0F172A] mb-2"><i class="fas fa-shield-alt mr-2"></i>Three Key Factors for South Africa's Inclusion</h4>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li><strong>Geographic Location:</strong> Located in the Southern Hemisphere, far from major conflict hotspots in the Northern Hemisphere</li>
-                            <li><strong>Political Neutrality:</strong> Pursues a non-aligned policy, refusing to take sides</li>
-                            <li><strong>Resource Self-Sufficiency:</strong> Abundant mineral and agricultural resources, reducing dependence on imports</li>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">1</span>
+                                <span><strong>Geographic Location:</strong> Located in the Southern Hemisphere, far from major conflict hotspots in the Northern Hemisphere</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">2</span>
+                                <span><strong>Political Neutrality:</strong> Pursues a non-aligned policy, refusing to take sides</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">3</span>
+                                <span><strong>Resource Self-Sufficiency:</strong> Abundant mineral and agricultural resources, reducing dependence on imports</span>
+                            </li>
                         </ul>
                     </div>
                     
@@ -591,11 +631,52 @@
                     </ul>
                     
                     <div class="cta-box">
+                        <div class="inline-flex items-center gap-2 bg-yellow-500/20 border border-yellow-500/40 rounded-full px-4 py-2 mb-4">
+                            <span class="relative flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"></span>
+                            </span>
+                            <span class="text-yellow-400 text-sm font-bold">Limited Time Opportunity</span>
+                        </div>
+                        
                         <h3 class="text-2xl font-bold mb-4">Ready to Explore South African Investment Opportunities?</h3>
                         <p class="text-gray-300 mb-6">Whether you're interested in asset allocation, retirement planning, or immigration property investment, DingYao Advisory can provide you with professional advice.</p>
-                        <a href="../index-en.html#contact" class="inline-flex items-center gap-2 bg-[#C5A059] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#B08D4E] transition shadow-lg">
-                            <i class="fas fa-calendar-alt"></i> Book Free Consultation Now
-                        </a>
+                        
+                        <!-- CTA Data Cards -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 max-w-2xl mx-auto">
+                            <div class="bg-white/10 backdrop-blur rounded-lg p-3 border border-white/20">
+                                <p class="text-2xl font-bold text-yellow-400">12,000</p>
+                                <p class="text-xs text-gray-300">km</p>
+                                <p class="text-sm text-gray-200">Distance from Taiwan</p>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur rounded-lg p-3 border border-white/20">
+                                <p class="text-2xl font-bold text-yellow-400">11th</p>
+                                <p class="text-xs text-gray-300">Global Ranking</p>
+                                <p class="text-sm text-gray-200">Safest Countries</p>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur rounded-lg p-3 border border-white/20">
+                                <p class="text-2xl font-bold text-yellow-400">7%</p>
+                                <p class="text-xs text-gray-300">Annual Yield</p>
+                                <p class="text-sm text-gray-200">Rental Returns</p>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur rounded-lg p-3 border border-white/20">
+                                <p class="text-2xl font-bold text-yellow-400">TWD 22M</p>
+                                <p class="text-xs text-gray-300">Investment</p>
+                                <p class="text-sm text-gray-200">Immigration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="../index-en.html#contact" class="inline-flex items-center justify-center bg-yellow-500 text-blue-900 font-bold text-lg px-8 py-4 rounded-lg hover:bg-yellow-400 transition transform hover:-translate-y-1 shadow-xl">
+                                <i class="fas fa-calendar-check mr-2"></i>
+                                Book Free Consultation Now
+                            </a>
+                            
+                            <a href="../assets-en.html" class="inline-flex items-center justify-center bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-white hover:text-blue-900 transition">
+                                Browse Investment Opportunities
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
                     </div>
                     
                     <h2>Conclusion: Rational Perspective, Prudent Decision-Making</h2>
@@ -692,14 +773,17 @@
             
             <!-- Author Info -->
             <div class="bg-white rounded-2xl shadow-lg p-8 mt-8">
-                <div class="flex items-center gap-4">
-                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
-                        <span class="text-2xl font-bold text-blue-900">LP</span>
+                <div class="flex items-start gap-4">
+                    <div class="w-16 h-16 rounded-full bg-blue-900 flex items-center justify-center flex-shrink-0">
+                        <span class="text-2xl font-bold text-white">LP</span>
                     </div>
                     <div>
-                        <h4 class="font-bold text-[#0F172A]">Leo Pan</h4>
-                        <p class="text-gray-500 text-sm">Founder, DingYao Advisory</p>
-                        <p class="text-sm text-gray-600 mt-1">Specializing in South African property investment, education, retirement planning, and residency solutions, helping clients build ideal asset portfolios and lifestyle plans in South Africa.</p>
+                        <h4 class="font-bold text-[#0F172A] text-lg">Leo Pan</h4>
+                        <p class="text-sm text-gray-500 mb-2">Founder, DingYao Advisory</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Specializing in South African property investment, education, retirement planning, and residency solutions, helping clients build ideal asset portfolios and lifestyle plans in South Africa. 
+                            With over 10 years of cross-border investment advisory experience, dedicated to driving transparency through technology, enabling Taiwanese investors to control their wealth and future as if they were there in person.
+                        </p>
                     </div>
                 </div>
             </div>
