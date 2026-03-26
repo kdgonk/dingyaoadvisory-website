@@ -235,111 +235,111 @@
 
     <!-- Blog Page -->
     <url>
-        <loc>https://dingyaoadvisory.tw/blog.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog"/>
     </url>
     <url>
-        <loc>https://dingyaoadvisory.tw/blog-en.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog-en</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog"/>
     </url>
 
     <!-- Blog Articles -->
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/south-africa-investment-2025.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-investment-2025</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-investment-2025"/>
     </url>
 
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/second-home-global-asset-allocation"/>
     </url>
 
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-nuclear-disarmament"/>
     </url>
 
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/south-africa-antarctic-research.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-antarctic-research</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-antarctic-research"/>
     </url>
 
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/south-africa-ww3-safety.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-ww3-safety</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety"/>
     </url>
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/south-africa-ww3-safety-en.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog/south-africa-ww3-safety-en</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety.html"/>
-    </url>
-
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026.html</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/south-africa-ww3-safety"/>
     </url>
 
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment.html</loc>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment"/>
     </url>
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment-en.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment-en</loc>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment-en.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment"/>
     </url>
 
 </urlset>
