@@ -275,6 +275,25 @@
 
     <!-- Blog Articles (最新文章在前) -->
     <url>
+        <loc>https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025</loc>
+        <lastmod>2026-04-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025-en</loc>
+        <lastmod>2026-04-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/western-cape-business-travel-recovery-2025"/>
+    </url>
+
+    <url>
         <loc>https://dingyaoadvisory.tw/blog/south-africa-silicon-valley</loc>
         <lastmod>2026-04-01</lastmod>
         <changefreq>monthly</changefreq>
