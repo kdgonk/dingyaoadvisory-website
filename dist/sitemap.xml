@@ -253,6 +253,26 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog"/>
     </url>
 
+    <!-- Blog Pagination -->
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog-page-2.html</loc>
+        <lastmod>2026-04-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog-page-2.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-page-2-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog-page-2.html"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog-page-2-en.html</loc>
+        <lastmod>2026-04-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog-page-2.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-page-2-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog-page-2.html"/>
+    </url>
+
     <!-- Blog Articles (最新文章在前) -->
     <url>
         <loc>https://dingyaoadvisory.tw/blog/south-africa-silicon-valley</loc>
@@ -337,6 +357,25 @@
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026-en</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-property-investment-2026"/>
     </url>
 
     <url>
