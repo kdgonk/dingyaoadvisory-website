@@ -862,7 +862,7 @@
     </section>
     
     <!-- Footer - 與首頁一致 -->
-    <footer class="bg-[#0f172a] text-gray-400 py-16 border-t border-gray-800 text-sm font-light">
+        <footer class="bg-[#0f172a] text-gray-400 py-16 border-t border-gray-800 text-sm font-light">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <div class="space-y-4">
@@ -884,8 +884,6 @@
                         <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.instagram.com/dingyaoadvisory" rel="noopener noreferrer" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                         <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://x.com/dingyaoadvisory" rel="noopener noreferrer" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
                         <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.linkedin.com/company/dingyaoadvisory/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.threads.net/@dingyaoadvisory" rel="noopener noreferrer" target="_blank" title="Threads"><i class="fab fa-threads"></i></a>
-                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.youtube.com/@dingyaoadvisory" rel="noopener noreferrer" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -938,6 +936,20 @@
             const menu = document.getElementById('mobile-menu');
             if (menu.classList.contains('hidden')) {
                 menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSpan = document.getElementById('copyright-year');
+            const currentYear = new Date().getFullYear();
+            if (currentYear > 2025) {
+                yearSpan.textContent = `2025-${currentYear}`;
+            }
+        });
+    </script>
+             menu.classList.remove('hidden');
             } else {
                 menu.classList.add('hidden');
             }
