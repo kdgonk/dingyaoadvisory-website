@@ -275,6 +275,25 @@
 
     <!-- Blog Articles (最新文章在前) -->
     <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026</loc>
+        <lastmod>2026-04-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026-en</loc>
+        <lastmod>2026-04-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-property-outlook-2026"/>
+    </url>
+
+    <url>
         <loc>https://dingyaoadvisory.tw/blog/zar-vs-asia-quality-life</loc>
         <lastmod>2026-04-06</lastmod>
         <changefreq>monthly</changefreq>
