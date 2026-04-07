@@ -26,7 +26,7 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
-<script src="https://cdn.tailwindcss.com"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 <script type="application/ld+json">
@@ -79,6 +79,7 @@
         .action-btn { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
         .action-btn:active { transform: scale(0.97); }
     </style>
+<link rel="stylesheet" href="/css/tailwind.min.css">
 </head>
 <body class="bg-[#0b1120] text-white min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PVWHRBWG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
@@ -149,24 +150,7 @@
             © 2026 DingYao Advisory
         </div>
 </main>
-<script>
-      (function(d,t) {
-        var BASE_URL = "https://chat.dingyaoadvisory.tw";
-        
-        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=BASE_URL+"/packs/js/sdk.js";
-        g.defer = true;
-        g.async = true;
-        s.parentNode.insertBefore(g,s);
-        g.onload=function(){
-          window.chatwootSDK.run({
-            // [設定] 請確認這裡已經填入您的 Website Token
-            websiteToken: 'YOUR_WEBSITE_TOKEN', 
-            baseUrl: BASE_URL
-          });
-        }
-      })(document,"script");
-    </script>
+
 <script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"9e2901f53e974197bd350476d8945ca3","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"></script>
 </body>
 </html>
