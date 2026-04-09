@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+    <!-- FirstRand UK Exit Article (2026-04-09) -->
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/firstrand-uk-exit</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/firstrand-uk-exit"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/firstrand-uk-exit-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/firstrand-uk-exit"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/firstrand-uk-exit-en</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/firstrand-uk-exit"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/firstrand-uk-exit-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/firstrand-uk-exit"/>
+    </url>
+
     <url>
         <loc>https://dingyaoadvisory.tw/</loc>
         <lastmod>2026-02-25</lastmod>
