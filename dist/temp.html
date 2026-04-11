@@ -188,15 +188,33 @@ body { font-family: 'Noto Sans TC', sans-serif; }
             <!-- 第二期：Coming Soon -->
             <div class="phase-card bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 relative">
                 <!-- Coming Soon 遮罩 -->
-                <div class="coming-soon-overlay absolute inset-0 z-10 flex flex-col items-center justify-center text-white">
+                <div class="coming-soon-overlay absolute inset-0 z-10 flex flex-col items-center justify-center text-white p-6">
                     <div class="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-4">
                         <i class="fas fa-hourglass-half text-4xl text-yellow-400"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-2">Coming Soon</h3>
-                    <p class="text-gray-300 text-sm">敬請期待</p>
-                    <div class="mt-6 flex items-center gap-2 text-xs text-gray-400">
-                        <i class="fas fa-bell"></i>
-                        <span>開放時將優先通知 VIP 會員</span>
+                    <p class="text-gray-300 text-sm mb-6">敬請期待</p>
+                    
+                    <!-- VIP 優先預約表單 -->
+                    <div class="w-full max-w-xs bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                        <p class="text-xs text-center mb-3 text-yellow-300">
+                            <i class="fas fa-crown mr-1"></i>
+                            VIP 優先取得第二期方案資料
+                        </p>
+                        <div class="space-y-3">
+                            <input type="text" 
+                                   id="vip-code-phase2" 
+                                   placeholder="輸入您的 VIP 專屬號碼"
+                                   class="w-full px-4 py-2 rounded-lg bg-white/90 text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            <button onclick="submitVipCode('phase2')" 
+                                    class="w-full py-2 bg-yellow-500 text-blue-900 rounded-lg font-bold text-sm hover:bg-yellow-400 transition flex items-center justify-center gap-2">
+                                <i class="fas fa-paper-plane"></i>
+                                優先索取資料
+                            </button>
+                        </div>
+                        <p class="text-xs text-center text-gray-400 mt-3">
+                            專員將優先與您聯繫
+                        </p>
                     </div>
                 </div>
                 
@@ -226,12 +244,35 @@ body { font-family: 'Noto Sans TC', sans-serif; }
             <!-- 第三期：Coming Soon -->
             <div class="phase-card bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 relative">
                 <!-- Coming Soon 遮罩 -->
-                <div class="coming-soon-overlay absolute inset-0 z-10 flex flex-col items-center justify-center text-white">
+                <div class="coming-soon-overlay absolute inset-0 z-10 flex flex-col items-center justify-center text-white p-6">
                     <div class="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-4">
                         <i class="fas fa-hourglass-half text-4xl text-yellow-400"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-2">Coming Soon</h3>
-                    <p class="text-gray-300 text-sm">敬請期待</p>
+                    <p class="text-gray-300 text-sm mb-6">敬請期待</p>
+                    
+                    <!-- VIP 優先預約表單 -->
+                    <div class="w-full max-w-xs bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                        <p class="text-xs text-center mb-3 text-yellow-300">
+                            <i class="fas fa-crown mr-1"></i>
+                            VIP 優先取得第三期方案資料
+                        </p>
+                        <div class="space-y-3">
+                            <input type="text" 
+                                   id="vip-code-phase3" 
+                                   placeholder="輸入您的 VIP 專屬號碼"
+                                   class="w-full px-4 py-2 rounded-lg bg-white/90 text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            <button onclick="submitVipCode('phase3')" 
+                                    class="w-full py-2 bg-yellow-500 text-blue-900 rounded-lg font-bold text-sm hover:bg-yellow-400 transition flex items-center justify-center gap-2">
+                                <i class="fas fa-paper-plane"></i>
+                                優先索取資料
+                            </button>
+                        </div>
+                        <p class="text-xs text-center text-gray-400 mt-3">
+                            專員將優先與您聯繫
+                        </p>
+                    </div>
+                </div>
                     <div class="mt-6 flex items-center gap-2 text-xs text-gray-400">
                         <i class="fas fa-bell"></i>
                         <span>開放時將優先通知 VIP 會員</span>
@@ -356,6 +397,33 @@ body { font-family: 'Noto Sans TC', sans-serif; }
         返回官網首頁
     </a>
 </div>
+
+<!-- VIP 代碼提交功能 -->
+<script>
+function submitVipCode(phase) {
+    const inputId = 'vip-code-' + phase;
+    const vipCode = document.getElementById(inputId).value.trim();
+    
+    if (!vipCode) {
+        alert('請輸入您的 VIP 專屬號碼');
+        return;
+    }
+    
+    // 這裡可以串接後端 API 或發送通知
+    // 目前先顯示確認訊息
+    const phaseName = phase === 'phase2' ? '第二期' : '第三期';
+    
+    alert(`感謝您！我們已收到您的 VIP 號碼：${vipCode}\n\n專員將儘速與您聯繫，提供${phaseName}方案優先資料。`);
+    
+    // 清空輸入框
+    document.getElementById(inputId).value = '';
+    
+    // 實際部署時可改為：
+    // - 發送到 n8n webhook
+    // - 串接 CRM 系統
+    // - 發送 Email 通知
+}
+</script>
 
 </body>
 </html>
