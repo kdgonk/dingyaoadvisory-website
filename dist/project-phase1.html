@@ -468,17 +468,139 @@ body { font-family: 'Noto Sans TC', sans-serif; }
                 </div>
                 <div class="space-y-4">
                     <div>
-                        <p class="text-xs text-blue-300">房產價值</p>
-                        <p class="text-xl font-bold">R 10,450,000</p>
+                        <p class="text-xs text-blue-300">保守月租金</p>
+                        <p class="text-xl font-bold text-yellow-400">R 30,000</p>
+                        <p class="text-xs text-green-400 mt-1">約 NT$ 5 萬/月</p>
                     </div>
                     <div>
-                        <p class="text-xs text-blue-300">預估年租金報酬</p>
-                        <p class="text-xl font-bold text-yellow-400">5-6%</p>
-                    </div>
-                    <div class="border-t border-white/20 pt-4">
                         <p class="text-xs text-blue-300">年租金收入</p>
-                        <p class="text-2xl font-bold text-yellow-400">R 522,500</p>
-                        <p class="text-xs text-green-400 mt-1">約 NT$ 87 萬/年</p>
+                        <p class="text-xl font-bold text-yellow-400">R 360,000</p>
+                        <p class="text-xs text-green-400 mt-1">約 NT$ 60 萬/年</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 月度現金流 -->
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-8 mb-8">
+            <h3 class="text-xl font-bold text-center mb-6">
+                <i class="fas fa-calendar-alt mr-2 text-yellow-400"></i>
+                現金流試算表
+            </h3>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-3 px-4 text-left text-blue-200">期間</th>
+                            <th class="py-3 px-4 text-right text-blue-200">租金收入 (ZAR)</th>
+                            <th class="py-3 px-4 text-right text-blue-200">利息收入 (ZAR)</th>
+                            <th class="py-3 px-4 text-right text-blue-200">合計 (ZAR)</th>
+                            <th class="py-3 px-4 text-right text-blue-200">約新台幣</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-4 px-4 font-medium">每月</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 30,000</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 28,979</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-400">R 58,979</td>
+                            <td class="py-4 px-4 text-right text-yellow-300">NT$ 98,730</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-4 px-4 font-medium">每年</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 360,000</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 347,750</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-400">R 707,750</td>
+                            <td class="py-4 px-4 text-right text-yellow-300">NT$ 1,184,970</td>
+                        </tr>
+                        <tr class="border-b border-white/10 bg-blue-500/10">
+                            <td class="py-4 px-4 font-bold">5 年</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 1,800,000</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 1,738,750</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-400 text-lg">R 3,538,750</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-300 text-lg">NT$ 592 萬</td>
+                        </tr>
+                        <tr class="border-b border-white/20 bg-green-500/10">
+                            <td class="py-4 px-4 font-bold">10 年</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 3,600,000</td>
+                            <td class="py-4 px-4 text-right text-green-400">R 3,477,500</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-400 text-xl">R 7,077,500</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-300 text-xl">NT$ 1,185 萬</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- 10 年後退場情境 -->
+        <div class="bg-gradient-to-r from-green-600 to-green-500 rounded-2xl p-8 mb-8">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-bold flex items-center gap-2">
+                    <i class="fas fa-flag-checkered"></i>
+                    10 年後退場情境
+                </h3>
+                <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    2036 年預估
+                </span>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white/10 rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-piggy-bank text-3xl text-white"></i>
+                        <div>
+                            <p class="text-xs text-green-100">銀行總資產</p>
+                            <p class="text-2xl font-bold text-white">R 8,827,500</p>
+                            <p class="text-xs text-green-200">原始 R 5.35M + 10 年利息</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-home text-3xl text-white"></i>
+                        <div>
+                            <p class="text-xs text-green-100">房產市值（未出售）</p>
+                            <p class="text-2xl font-bold text-white">R 22,566,422</p>
+                            <p class="text-xs text-green-200">年增值 8% 複利</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-500 rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-trophy text-3xl text-blue-900"></i>
+                        <div>
+                            <p class="text-xs text-blue-800">總資產淨值</p>
+                            <p class="text-2xl font-bold text-blue-900">R 31,393,922</p>
+                            <p class="text-xs text-blue-700">約 NT$ 5,253 萬</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white/10 rounded-xl p-6">
+                <h4 class="font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-chart-bar"></i>
+                    投資績效總結
+                </h4>
+                <div class="grid md:grid-cols-4 gap-4 text-center">
+                    <div>
+                        <p class="text-xs text-green-100 mb-1">原始投入</p>
+                        <p class="text-lg font-bold">R 16,000,000</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-green-100 mb-1">10 年現金流</p>
+                        <p class="text-lg font-bold text-yellow-300">R 7,077,500</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-green-100 mb-1">房產增值</p>
+                        <p class="text-lg font-bold text-yellow-300">R 12,116,422</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-green-100 mb-1">投報倍數</p>
+                        <p class="text-lg font-bold text-yellow-300">1.96x</p>
                     </div>
                 </div>
             </div>
@@ -488,7 +610,7 @@ body { font-family: 'Noto Sans TC', sans-serif; }
         <div class="bg-white/5 backdrop-blur rounded-2xl p-8 mb-8">
             <h3 class="text-xl font-bold text-center mb-6">
                 <i class="fas fa-table mr-2 text-yellow-400"></i>
-                年度收益總表
+                年度收益明細
             </h3>
             
             <div class="overflow-x-auto">
@@ -520,9 +642,9 @@ body { font-family: 'Noto Sans TC', sans-serif; }
                                     包租代管租金
                                 </span>
                             </td>
-                            <td class="py-4 px-4 text-right font-bold text-yellow-400">R 522,500</td>
-                            <td class="py-4 px-4 text-right text-yellow-300">NT$ 874,985</td>
-                            <td class="py-4 px-4 text-xs text-blue-200">5% 年租金報酬</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-400">R 360,000</td>
+                            <td class="py-4 px-4 text-right text-yellow-300">NT$ 602,760</td>
+                            <td class="py-4 px-4 text-xs text-blue-200">R 30,000/月</td>
                         </tr>
                         <tr class="border-b border-white/20 bg-yellow-500/10">
                             <td class="py-4 px-4 font-bold">
@@ -531,8 +653,8 @@ body { font-family: 'Noto Sans TC', sans-serif; }
                                     年度現金流總計
                                 </span>
                             </td>
-                            <td class="py-4 px-4 text-right font-bold text-yellow-400 text-lg">R 870,250</td>
-                            <td class="py-4 px-4 text-right font-bold text-yellow-300 text-lg">NT$ 1,457,165</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-400 text-lg">R 707,750</td>
+                            <td class="py-4 px-4 text-right font-bold text-yellow-300 text-lg">NT$ 1,184,970</td>
                             <td class="py-4 px-4 text-xs text-yellow-300">
                                 <i class="fas fa-check-circle mr-1"></i>
                                 穩定現金流
@@ -545,15 +667,15 @@ body { font-family: 'Noto Sans TC', sans-serif; }
             <div class="mt-6 grid md:grid-cols-3 gap-4">
                 <div class="bg-green-500/20 rounded-xl p-4 text-center">
                     <p class="text-xs text-green-300 mb-1">月均現金流</p>
-                    <p class="text-xl font-bold text-green-400">NT$ 121,430</p>
+                    <p class="text-xl font-bold text-green-400">NT$ 98,730</p>
                 </div>
                 <div class="bg-blue-500/20 rounded-xl p-4 text-center">
                     <p class="text-xs text-blue-300 mb-1">現金流投報率</p>
-                    <p class="text-xl font-bold text-blue-400">5.4%</p>
+                    <p class="text-xl font-bold text-blue-400">4.4%</p>
                 </div>
                 <div class="bg-yellow-500/20 rounded-xl p-4 text-center">
                     <p class="text-xs text-yellow-300 mb-1">加計房產增值</p>
-                    <p class="text-xl font-bold text-yellow-400">13.4%</p>
+                    <p class="text-xl font-bold text-yellow-400">12.4%</p>
                 </div>
             </div>
         </div>
@@ -583,8 +705,8 @@ body { font-family: 'Noto Sans TC', sans-serif; }
                 </div>
                 <div>
                     <p class="text-xs text-blue-800 mb-1">5 年租金收入（選配）</p>
-                    <p class="text-2xl font-bold">R 2,612,500</p>
-                    <p class="text-xs text-blue-700">約 NT$ 437 萬</p>
+                    <p class="text-2xl font-bold">R 1,800,000</p>
+                    <p class="text-xs text-blue-700">約 NT$ 301 萬</p>
                 </div>
             </div>
             
@@ -592,11 +714,11 @@ body { font-family: 'Noto Sans TC', sans-serif; }
                 <div class="flex justify-between items-center">
                     <div>
                         <p class="text-sm text-blue-800">5 年總收益（含包租）</p>
-                        <p class="text-3xl font-bold">R 9,251,250</p>
+                        <p class="text-3xl font-bold">R 8,438,750</p>
                     </div>
                     <div class="text-right">
                         <p class="text-sm text-blue-800">約新台幣</p>
-                        <p class="text-3xl font-bold">1,549 萬</p>
+                        <p class="text-3xl font-bold">1,413 萬</p>
                     </div>
                 </div>
             </div>
