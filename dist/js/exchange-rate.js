@@ -15,23 +15,16 @@
     const API_URL = 'https://api.exchangerate-api.com/v4/latest/ZAR';
     
     // 備用匯率（API 失敗時使用）
-    const FALLBACK_RATE = 0.1675; // 1 ZAR ≈ 1.675 TWD（2026 年參考值）
+    const FALLBACK_RATE = 1.675; // 1 ZAR ≈ 1.675 TWD（2026 年參考值）
     
     /**
      * 格式化數字為台幣格式
      */
     function formatTWD(amount) {
         if (amount >= 10000) {
-            return 'NT$ ' + Math.round(amount / 10000) + ' 萬';
+            return '約 NT$ ' + Math.round(amount / 10000) + ' 萬';
         }
         return 'NT$ ' + Math.round(amount).toLocaleString('zh-TW');
-    }
-    
-    /**
-     * 格式化 ZAR 金額
-     */
-    function formatZAR(amount) {
-        return 'R ' + amount.toLocaleString('en-ZA');
     }
     
     /**
@@ -76,37 +69,43 @@
         const rateResult = await fetchExchangeRate();
         const rate = rateResult.rate;
         
+        console.log('匯率轉換開始，匯率:', rate, 'ZAR/TWD');
+        
         // 找出所有需要轉換的元素
         const elements = document.querySelectorAll('[data-zar]');
+        console.log('找到 ' + elements.length + ' 個需要轉換的元素');
         
         elements.forEach(el => {
             const zar = parseFloat(el.getAttribute('data-zar'));
             const twd = zar * rate;
             
-            // 更新內容
-            const originalText = el.textContent;
-            
             // 檢查是否有自定義格式
-            if (el.getAttribute('data-format') === 'short') {
-                el.textContent = '約 ' + formatTWD(twd);
-            } else if (el.getAttribute('data-format') === 'table') {
+            const format = el.getAttribute('data-format');
+            if (format === 'short') {
                 el.textContent = formatTWD(twd);
+            } else if (format === 'table') {
+                if (twd >= 10000) {
+                    el.textContent = 'NT$ ' + Math.round(twd / 10000) + ' 萬';
+                } else {
+                    el.textContent = 'NT$ ' + Math.round(twd).toLocaleString('zh-TW');
+                }
             } else {
                 el.textContent = '約新台幣 ' + Math.round(twd / 10000) + ' 萬元';
             }
+            
+            console.log('轉換:', zar, 'ZAR →', Math.round(twd), 'TWD');
         });
         
         // 更新匯率時間戳記
         const timestampElements = document.querySelectorAll('[data-exchange-time]');
         timestampElements.forEach(el => {
             const time = new Date();
-            el.textContent = '參考匯率更新時間：' + time.toLocaleString('zh-TW', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit'
-            });
+            const formattedTime = time.getFullYear() + '年' + 
+                (time.getMonth() + 1) + '月' + 
+                time.getDate() + '日 ' +
+                time.getHours().toString().padStart(2, '0') + ':' +
+                time.getMinutes().toString().padStart(2, '0');
+            el.textContent = '參考匯率時間：' + formattedTime + '（1 ZAR ≈ ' + rate.toFixed(4) + ' TWD）';
         });
         
         // 顯示匯率來源
@@ -123,30 +122,11 @@
     }
     
     /**
-     * 顯示匯率資訊區塊
-     */
-    function showExchangeInfo(rateResult) {
-        const infoBlocks = document.querySelectorAll('.exchange-rate-info');
-        infoBlocks.forEach(block => {
-            const rateEl = block.querySelector('.rate-value');
-            const timeEl = block.querySelector('.rate-time');
-            
-            if (rateEl) {
-                rateEl.textContent = '1 ZAR ≈ ' + rateResult.rate.toFixed(4) + ' TWD';
-            }
-            if (timeEl) {
-                timeEl.textContent = '參考匯率更新時間：' + new Date().toLocaleString('zh-TW');
-            }
-        });
-    }
-    
-    /**
      * 初始化
      */
     async function init() {
         try {
             const result = await convertAll();
-            showExchangeInfo(result);
             console.log('匯率轉換完成:', result);
         } catch (error) {
             console.error('匯率轉換失敗:', error);
@@ -164,7 +144,6 @@
     window.ExchangeRate = {
         convertAll,
         fetchExchangeRate,
-        formatTWD,
-        formatZAR
+        formatTWD
     };
 })();
