@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>預覽：全球精選資產配置新版 | 鼎曜國際顧問</title>
+<meta content="鼎曜國際顧問全球精選資產配置方案預覽頁面" name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                brand: { navy: '#0F172A', gold: '#C5A059', blue: '#1e3a8a' }
+            },
+            fontFamily: {
+                sans: ['Noto Sans TC', 'sans-serif'],
+                logo: ['Playfair Display', 'serif']
+            }
+        }
+    }
+}
+</script>
+<style>
+body { font-family: 'Noto Sans TC', sans-serif; }
+.font-logo { font-family: 'Playfair Display', serif; }
+
+/* 預覽頁面用樣式 */
+.preview-header {
+    background: linear-gradient(135deg, #0F172A 0%, #1e3a8a 100%);
+}
+
+.coming-soon-overlay {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 58, 138, 0.85) 100%);
+}
+
+.phase-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phase-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.asset-bar {
+    transition: all 0.3s ease;
+}
+
+.asset-bar:hover {
+    transform: scaleX(1.02);
+}
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+<!-- 預覽說明橫幅 -->
+<div class="preview-header text-white py-4 px-6 text-center">
+    <p class="text-sm font-medium">
+        <i class="fas fa-eye mr-2"></i>
+        此為「全球精選資產配置」區塊新版預覽 — 僅展示第一、二、三期設計方案
+    </p>
+</div>
+
+<!-- 新版全球精選資產配置區塊 -->
+<section class="py-24 bg-gray-50" id="showcase-new">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- 標題區 -->
+        <div class="text-center mb-16">
+            <span class="inline-flex items-center gap-2 bg-blue-100 text-blue-900 text-xs font-bold px-4 py-2 rounded-full mb-4">
+                <i class="fas fa-gem text-yellow-500"></i>
+                Premium Investment Plans
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-3">全球精選資產配置</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                嚴選 Crestline Advisory 開發之高投報項目，由台灣團隊獨家代理
+            </p>
+        </div>
+
+        <!-- 三期方案卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- 第一期：已開放 -->
+            <div class="phase-card bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group">
+                <!-- 圖片區 -->
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://assets.dingyaoadvisory.tw/project-steyn.jpg" 
+                         alt="第一期投資方案" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+                         onerror="this.src='https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800'">
+                    
+                    <!-- 狀態標籤 -->
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-green-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1">
+                            <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                            開放申請
+                        </span>
+                    </div>
+                    
+                    <!-- 期數標籤 -->
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-yellow-500 text-blue-900 text-xs font-bold px-3 py-1 rounded-full shadow">
+                            第一期
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- 內容區 -->
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">開普敦精選莊園投資</h3>
+                    <p class="text-gray-500 text-sm mb-4">Durbanville 頂級封閉式社區</p>
+                    
+                    <!-- 總額 -->
+                    <div class="bg-blue-900 text-white rounded-xl p-4 mb-4">
+                        <p class="text-xs text-blue-200 mb-1">總投資額度</p>
+                        <p class="text-2xl font-bold">R 16,000,000</p>
+                        <p class="text-xs text-blue-300 mt-1">約新台幣 2,680 萬元</p>
+                    </div>
+                    
+                    <!-- 資產配置明細 -->
+                    <div class="space-y-3 mb-4">
+                        <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">資產配置明細</p>
+                        
+                        <!-- 房產 -->
+                        <div class="asset-bar bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-3 text-white">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs font-medium">🏠 房產投資</span>
+                                <span class="text-sm font-bold">65.3%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">R 10,450,000</span>
+                                <span class="text-xs text-blue-200">約 NT$ 1,750 萬</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 律師與PR費用 -->
+                        <div class="asset-bar bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-lg p-3 text-blue-900">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs font-medium">⚖️ 律師與PR費用</span>
+                                <span class="text-sm font-bold">1.3%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">R 200,000</span>
+                                <span class="text-xs text-blue-700">約 NT$ 33 萬</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 高利息帳戶 -->
+                        <div class="asset-bar bg-gradient-to-r from-green-600 to-green-500 rounded-lg p-3 text-white">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-xs font-medium">💰 高利息帳戶</span>
+                                <span class="text-sm font-bold">33.4%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">R 5,350,000</span>
+                                <span class="text-xs text-green-100">約 NT$ 897 萬</span>
+                            </div>
+                            <p class="text-xs text-green-100 mt-1">
+                                <i class="fas fa-chart-line mr-1"></i>
+                                享有約 6-7% 年化浮動利率
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 預估投報 -->
+                    <div class="flex justify-between items-center border-t border-gray-100 pt-4 mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500">預估年增值</p>
+                            <p class="font-bold text-green-600">房產 8%</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-500">高利定存</p>
+                            <p class="font-bold text-blue-900">6-7%</p>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA -->
+                    <button class="w-full py-3 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition font-bold text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        索取詳細方案
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 第二期：Coming Soon -->
+            <div class="phase-card bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 relative">
+                <!-- Coming Soon 遮罩 -->
+                <div class="coming-soon-overlay absolute inset-0 z-10 flex flex-col items-center justify-center text-white">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-4">
+                        <i class="fas fa-hourglass-half text-4xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Coming Soon</h3>
+                    <p class="text-gray-300 text-sm">敬請期待</p>
+                    <div class="mt-6 flex items-center gap-2 text-xs text-gray-400">
+                        <i class="fas fa-bell"></i>
+                        <span>開放時將優先通知 VIP 會員</span>
+                    </div>
+                </div>
+                
+                <!-- 背景卡片內容（模糊） -->
+                <div class="relative h-56 overflow-hidden opacity-30">
+                    <img src="https://assets.dingyaoadvisory.tw/project-waterfall.jpg" 
+                         alt="第二期方案" 
+                         class="w-full h-full object-cover blur-sm">
+                </div>
+                
+                <div class="p-6 opacity-30">
+                    <div class="h-6 bg-gray-200 rounded mb-2 w-3/4"></div>
+                    <div class="h-4 bg-gray-200 rounded mb-4 w-1/2"></div>
+                    <div class="h-20 bg-gray-200 rounded mb-4"></div>
+                    <div class="h-20 bg-gray-100 rounded mb-4"></div>
+                    <div class="h-12 bg-gray-200 rounded"></div>
+                </div>
+                
+                <!-- 期數標籤 -->
+                <div class="absolute top-4 right-4 z-20">
+                    <span class="bg-gray-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                        第二期
+                    </span>
+                </div>
+            </div>
+            
+            <!-- 第三期：Coming Soon -->
+            <div class="phase-card bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 relative">
+                <!-- Coming Soon 遮罩 -->
+                <div class="coming-soon-overlay absolute inset-0 z-10 flex flex-col items-center justify-center text-white">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-full p-6 mb-4">
+                        <i class="fas fa-hourglass-half text-4xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Coming Soon</h3>
+                    <p class="text-gray-300 text-sm">敬請期待</p>
+                    <div class="mt-6 flex items-center gap-2 text-xs text-gray-400">
+                        <i class="fas fa-bell"></i>
+                        <span>開放時將優先通知 VIP 會員</span>
+                    </div>
+                </div>
+                
+                <!-- 背景卡片內容（模糊） -->
+                <div class="relative h-56 overflow-hidden opacity-30">
+                    <img src="https://assets.dingyaoadvisory.tw/project-sandton.jpg" 
+                         alt="第三期方案" 
+                         class="w-full h-full object-cover blur-sm">
+                </div>
+                
+                <div class="p-6 opacity-30">
+                    <div class="h-6 bg-gray-200 rounded mb-2 w-3/4"></div>
+                    <div class="h-4 bg-gray-200 rounded mb-4 w-1/2"></div>
+                    <div class="h-20 bg-gray-200 rounded mb-4"></div>
+                    <div class="h-20 bg-gray-100 rounded mb-4"></div>
+                    <div class="h-12 bg-gray-200 rounded"></div>
+                </div>
+                
+                <!-- 期數標籤 -->
+                <div class="absolute top-4 right-4 z-20">
+                    <span class="bg-gray-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                        第三期
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- 底部說明 -->
+        <div class="mt-12 text-center">
+            <p class="text-gray-500 text-sm max-w-2xl mx-auto">
+                <i class="fas fa-info-circle mr-2 text-blue-500"></i>
+                所有投資方案均由 Crestline Advisory 專業評估，資金存入投資人名下 Standard Bank 專屬帳戶，安全合規。
+            </p>
+        </div>
+        
+    </div>
+</section>
+
+<!-- 設計說明區塊 -->
+<section class="py-16 bg-white border-t border-gray-200">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+            <i class="fas fa-palette text-yellow-500 mr-3"></i>
+            設計說明
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-xl p-6">
+                <h3 class="font-bold text-gray-900 mb-3 flex items-center">
+                    <span class="w-8 h-8 rounded-full bg-blue-900 text-white flex items-center justify-center text-sm mr-3">1</span>
+                    第一期卡片（已開放）
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>顯示完整投資方案詳情</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>總額 R 16,000,000</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>資產配置明細（房產、PR費用、高利帳戶）</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>百分比視覺化呈現</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>綠色「開放申請」狀態標籤</li>
+                </ul>
+            </div>
+            
+            <div class="bg-gray-50 rounded-xl p-6">
+                <h3 class="font-bold text-gray-900 mb-3 flex items-center">
+                    <span class="w-8 h-8 rounded-full bg-gray-700 text-white flex items-center justify-center text-sm mr-3">2</span>
+                    第二、三期（Coming Soon）
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>半透明遮罩覆蓋</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Coming Soon 視覺效果</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>背景內容模糊處理</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>VIP 優先通知提示</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>保持整體視覺一致性</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-8 bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+            <h3 class="font-bold text-yellow-800 mb-3 flex items-center">
+                <i class="fas fa-calculator mr-2"></i>
+                第一期金額計算明細
+            </h3>
+            <div class="font-mono text-sm text-yellow-900 bg-yellow-100 rounded-lg p-4">
+                <p class="mb-2">總投資額：R 16,000,000（100%）</p>
+                <p class="mb-2">├─ 房產投資：R 10,450,000（65.3%）</p>
+                <p class="mb-2">├─ 律師與PR費用：R 200,000（1.3%）</p>
+                <p class="mb-2">└─ 高利息帳戶：R 5,350,000（33.4%）</p>
+                <p class="mt-3 text-yellow-700 font-sans text-xs">
+                    <i class="fas fa-info-circle mr-1"></i>
+                    剩餘金額 = R 16,000,000 - R 10,450,000 - R 200,000 = R 5,350,000
+                </p>
+            </div>
+        </div>
+        
+        <div class="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+            <h3 class="font-bold text-blue-800 mb-3">
+                <i class="fas fa-sync-alt mr-2"></i>
+                如需調整
+            </h3>
+            <p class="text-sm text-blue-700 mb-3">
+                請告知以下調整需求：
+            </p>
+            <ul class="text-sm text-blue-600 space-y-1">
+                <li>• 第一期卡片內容細節（標題、地點、金額等）</li>
+                <li>• 顏色配置或視覺風格</li>
+                <li>• Coming Soon 卡片樣式</li>
+                <li>• 其他功能需求</li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+
+<!-- 返回官網 -->
+<div class="fixed bottom-6 right-6 z-50">
+    <a href="https://dingyaoadvisory.tw/" 
+       class="flex items-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-800 transition font-bold text-sm">
+        <i class="fas fa-home"></i>
+        返回官網首頁
+    </a>
+</div>
+
+</body>
+</html>
