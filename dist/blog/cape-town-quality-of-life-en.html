@@ -838,8 +838,20 @@
     </section>
     
     <!-- CTA Section -->
-    <section class="py-16 px-4 bg-gradient-to-br from-blue-900 via-blue-800 to-gray-900 text-white">
-        <div class="max-w-4xl mx-auto text-center">
+    <section class="relative py-16 px-4 text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <picture>
+                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-quality-of-life-hero.webp" type="image/webp">
+                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-quality-of-life-hero.jpg"
+                     alt=""
+                     class="w-full h-full object-cover"
+                     width="1200" height="675"
+                     aria-hidden="true">
+            </picture>
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-blue-800/90 to-gray-900/95"></div>
+        </div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
             <div class="inline-flex items-center gap-2 bg-yellow-500/20 border border-yellow-500/40 rounded-full px-4 py-2 mb-6">
                 <span class="relative flex h-3 w-3">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
@@ -889,6 +901,7 @@
                 <i class="fas fa-info-circle mr-1"></i>
                 Consultation is completely free with no hidden fees. Your information will be kept strictly confidential.
             </p>
+        </div>
         </div>
     </section>
     
