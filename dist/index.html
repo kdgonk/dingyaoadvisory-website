@@ -516,18 +516,351 @@
 </section>
 <section class="py-24 bg-gray-50" id="showcase">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col lg:flex-row justify-between items-end mb-12">
-<div class="mb-6 lg:mb-0">
-<h2 class="text-3xl font-bold text-blue-900 mb-2">全球精選資產配置</h2>
-<p class="text-gray-600">嚴選 Crestline Advisory 開發之高投報項目，由台灣團隊獨家代理</p>
-</div>
-<div class="flex flex-wrap gap-2" id="filter-container">
-<button class="filter-btn active px-4 py-2 bg-blue-900 text-white text-sm rounded-lg shadow transition border border-blue-900" onclick="filterProjects('all')">所有項目</button>
-<button class="filter-btn px-4 py-2 bg-white text-gray-600 text-sm rounded-lg border hover:bg-gray-100 transition" onclick="filterProjects('South Africa')">南非
-                        (開普敦都會區)</button>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-container"></div>
+    <!-- 標題區 -->
+    <div class="text-center mb-16">
+        <span class="inline-flex items-center gap-2 bg-blue-100 text-blue-900 text-xs font-bold px-4 py-2 rounded-full mb-4">
+            <i class="fas fa-gem text-yellow-500"></i>
+            Premium Investment Plans
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-3">全球精選資產配置</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            嚴選 Crestline Advisory 開發之高投報項目，由台灣團隊獨家代理
+        </p>
+    </div>
+
+    <!-- 三期方案卡片 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- 第一期：已開放 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group">
+            <!-- 圖片區 -->
+            <div class="relative h-56 overflow-hidden">
+                <img src="https://assets.dingyaoadvisory.tw/project-steyn.jpg" 
+                     alt="第一期投資方案" 
+                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+                     onerror="this.src='https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800'">
+                
+                <!-- 狀態標籤 -->
+                <div class="absolute top-4 left-4">
+                    <span class="bg-green-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1">
+                        <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                        開放申請
+                    </span>
+                </div>
+                
+                <!-- 期數標籤 -->
+                <div class="absolute top-4 right-4">
+                    <span class="bg-yellow-500 text-blue-900 text-xs font-bold px-3 py-1 rounded-full shadow">
+                        第一期
+                    </span>
+                </div>
+            </div>
+            
+            <!-- 內容區 -->
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">開普敦精選莊園投資</h3>
+                <p class="text-gray-500 text-sm mb-4">Durbanville 頂級封閉式社區</p>
+                
+                <!-- 總額 -->
+                <div class="bg-blue-900 text-white rounded-xl p-4 mb-4">
+                    <p class="text-xs text-blue-200 mb-1">總投資額度</p>
+                    <p class="text-2xl font-bold">R 16,000,000</p>
+                    <p class="text-xs text-blue-300 mt-1">約新台幣 2,680 萬元</p>
+                </div>
+                
+                <!-- 資產配置明細 -->
+                <div class="space-y-3 mb-4">
+                    <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">資產配置明細</p>
+                    
+                    <!-- 房產 -->
+                    <div class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-3 text-white">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-medium">🏠 房產投資</span>
+                            <span class="text-sm font-bold">65.3%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold">R 10,450,000</span>
+                            <span class="text-xs text-blue-200">約 NT$ 1,750 萬</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 律師與PR費用 -->
+                    <div class="bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-lg p-3 text-blue-900">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-medium">⚖️ 律師與PR費用</span>
+                            <span class="text-sm font-bold">1.3%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold">R 200,000</span>
+                            <span class="text-xs text-blue-700">約 NT$ 33 萬</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 高利活存專案 -->
+                    <div class="bg-gradient-to-r from-green-600 to-green-500 rounded-lg p-3 text-white">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-medium">💰 高利活存專案</span>
+                            <span class="text-sm font-bold">33.4%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold">R 5,350,000</span>
+                            <span class="text-xs text-green-100">約 NT$ 897 萬</span>
+                        </div>
+                        <p class="text-xs text-green-100 mt-1">
+                            <i class="fas fa-star mr-1"></i>
+                            鼎曜獨家談成專案利率
+                        </p>
+                        <p class="text-xs text-yellow-300 mt-1">
+                            <i class="fas fa-sync-alt mr-1"></i>
+                            每月複利計息
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 預估投報 -->
+                <div class="border-t border-gray-100 pt-4 mb-4">
+                    <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">預估收益</p>
+                    <div class="grid grid-cols-3 gap-2 text-center">
+                        <div class="bg-blue-50 rounded-lg p-2">
+                            <p class="text-xs text-gray-500">房產增值</p>
+                            <p class="font-bold text-blue-900">8%</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-2">
+                            <p class="text-xs text-gray-500">活存利息</p>
+                            <p class="font-bold text-green-600">6-7%</p>
+                        </div>
+                        <div class="bg-yellow-50 rounded-lg p-2">
+                            <p class="text-xs text-gray-500">包租租金</p>
+                            <p class="font-bold text-yellow-600">5-6%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA -->
+                <a href="project-phase1.html" class="block w-full py-3 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition font-bold text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center">
+                    <i class="fas fa-paper-plane mr-2"></i>
+                    索取詳細方案
+                </a>
+            </div>
+        </div>
+        
+        <!-- 第二期：Coming Soon -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group relative">
+            <!-- 圖片區 -->
+            <div class="relative h-56 overflow-hidden">
+                <img src="https://assets.dingyaoadvisory.tw/project-waterfall.jpg" 
+                     alt="斯泰倫博斯酒莊莊園" 
+                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+                     onerror="this.src='https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?q=80&w=800'">
+                
+                <!-- 鎖定遮罩 -->
+                <div class="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-900/60 to-blue-900/90 backdrop-blur-sm z-10">
+                    <!-- VIP 專屬標籤 -->
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-yellow-500/90 text-blue-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                            <i class="fas fa-crown"></i>
+                            VIP 專屬
+                        </span>
+                    </div>
+                    
+                    <!-- 期數標籤 -->
+                    <div class="absolute top-4 right-4 z-20">
+                        <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full shadow border border-white/30">
+                            第二期 · 2027 Q1
+                        </span>
+                    </div>
+                    
+                    <!-- 中央鎖定圖示 -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="bg-white/10 backdrop-blur-md rounded-full p-6 mb-4 border border-white/20">
+                            <i class="fas fa-lock text-4xl text-yellow-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1 text-center px-4">
+                            斯泰倫博斯 · 傳世酒莊
+                        </h3>
+                        <p class="text-gray-300 text-sm mb-4">Stellenbosch Heritage Estate</p>
+                        <p class="text-xs text-yellow-300 bg-yellow-500/20 px-4 py-1.5 rounded-full border border-yellow-400/30 mb-4">
+                            <i class="fas fa-gem mr-1"></i>
+                            僅限 VIP 會員優先取得資料
+                        </p>
+                        
+                        <!-- VIP 專屬優勢 -->
+                        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 mx-4 max-w-xs border border-white/10">
+                            <p class="text-xs text-yellow-200 font-bold mb-3 flex items-center gap-2">
+                                <i class="fas fa-crown"></i>
+                                VIP 專屬優勢
+                            </p>
+                            <ul class="text-xs text-gray-300 space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check text-green-400"></i>
+                                    <span>優先選件權</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check text-green-400"></i>
+                                    <span>專屬折扣優惠</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check text-green-400"></i>
+                                    <span>私人導覽服務</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 內容區（被遮罩） -->
+            <div class="p-6 relative">
+                <!-- 遮罩層 -->
+                <div class="absolute inset-0 bg-gradient-to-b from-blue-50/90 to-white/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center border-t border-yellow-200">
+                    <div class="text-center px-6">
+                        <p class="text-gray-600 text-sm mb-4 font-medium">
+                            <i class="fas fa-info-circle mr-1 text-yellow-500"></i>
+                            此方案目前僅開放 VIP 會員優先預購
+                        </p>
+                        
+                        <!-- VIP 輸入框 -->
+                        <div class="space-y-3 max-w-xs mx-auto">
+                            <input type="text" 
+                                   id="vip-code-phase2" 
+                                   placeholder="輸入您的 VIP 專屬號碼"
+                                   class="w-full px-4 py-2.5 rounded-lg bg-white text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 border border-yellow-300 shadow-sm">
+                            <button onclick="submitVipCode('phase2')" 
+                                    class="w-full py-2.5 bg-yellow-500 text-blue-900 rounded-lg font-bold text-sm hover:bg-yellow-400 transition flex items-center justify-center gap-2 shadow-lg">
+                                <i class="fas fa-unlock"></i>
+                                解鎖查看詳情
+                            </button>
+                        </div>
+                        
+                        <p class="text-xs text-gray-500 mt-3">
+                            專員將優先與您聯繫
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 背景內容（模糊） -->
+                <div class="blur-sm opacity-40 pointer-events-none select-none">
+                    <div class="h-6 bg-gray-200 rounded mb-2 w-3/4"></div>
+                    <div class="h-4 bg-gray-200 rounded mb-4 w-1/2"></div>
+                    <div class="h-24 bg-gray-200 rounded mb-4"></div>
+                    <div class="h-12 bg-gray-200 rounded"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第三期：Coming Soon -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group relative">
+            <!-- 圖片區 -->
+            <div class="relative h-56 overflow-hidden">
+                <img src="https://assets.dingyaoadvisory.tw/project-sandton.jpg" 
+                     alt="康斯坦夏大使館區莊園" 
+                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
+                     onerror="this.src='https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=800'">
+                
+                <!-- 鎖定遮罩 -->
+                <div class="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-900/60 to-blue-900/90 backdrop-blur-sm z-10">
+                    <!-- VIP 專屬標籤 -->
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-yellow-500/90 text-blue-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                            <i class="fas fa-crown"></i>
+                            VIP 專屬
+                        </span>
+                    </div>
+                    
+                    <!-- 期數標籤 -->
+                    <div class="absolute top-4 right-4 z-20">
+                        <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full shadow border border-white/30">
+                            第三期 · 2027 Q2
+                        </span>
+                    </div>
+                    
+                    <!-- 中央鎖定圖示 -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="bg-white/10 backdrop-blur-md rounded-full p-6 mb-4 border border-white/20">
+                            <i class="fas fa-lock text-4xl text-yellow-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1 text-center px-4">
+                            康斯坦夏 · 使館綠帶
+                        </h3>
+                        <p class="text-gray-300 text-sm mb-4">Constantia Embassy Estate</p>
+                        <p class="text-xs text-yellow-300 bg-yellow-500/20 px-4 py-1.5 rounded-full border border-yellow-400/30 mb-4">
+                            <i class="fas fa-gem mr-1"></i>
+                            僅限 VIP 會員優先取得資料
+                        </p>
+                        
+                        <!-- VIP 專屬優勢 -->
+                        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 mx-4 max-w-xs border border-white/10">
+                            <p class="text-xs text-yellow-200 font-bold mb-3 flex items-center gap-2">
+                                <i class="fas fa-crown"></i>
+                                VIP 專屬優勢
+                            </p>
+                            <ul class="text-xs text-gray-300 space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check text-green-400"></i>
+                                    <span>優先選件權</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check text-green-400"></i>
+                                    <span>專屬折扣優惠</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check text-green-400"></i>
+                                    <span>私人導覽服務</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 內容區（被遮罩） -->
+            <div class="p-6 relative">
+                <!-- 遮罩層 -->
+                <div class="absolute inset-0 bg-gradient-to-b from-blue-50/90 to-white/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center border-t border-yellow-200">
+                    <div class="text-center px-6">
+                        <p class="text-gray-600 text-sm mb-4 font-medium">
+                            <i class="fas fa-info-circle mr-1 text-yellow-500"></i>
+                            此方案目前僅開放 VIP 會員優先預購
+                        </p>
+                        
+                        <!-- VIP 輸入框 -->
+                        <div class="space-y-3 max-w-xs mx-auto">
+                            <input type="text" 
+                                   id="vip-code-phase3" 
+                                   placeholder="輸入您的 VIP 專屬號碼"
+                                   class="w-full px-4 py-2.5 rounded-lg bg-white text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 border border-yellow-300 shadow-sm">
+                            <button onclick="submitVipCode('phase3')" 
+                                    class="w-full py-2.5 bg-yellow-500 text-blue-900 rounded-lg font-bold text-sm hover:bg-yellow-400 transition flex items-center justify-center gap-2 shadow-lg">
+                                <i class="fas fa-unlock"></i>
+                                解鎖查看詳情
+                            </button>
+                        </div>
+                        
+                        <p class="text-xs text-gray-500 mt-3">
+                            專員將優先與您聯繫
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 背景內容（模糊） -->
+                <div class="blur-sm opacity-40 pointer-events-none select-none">
+                    <div class="h-6 bg-gray-200 rounded mb-2 w-3/4"></div>
+                    <div class="h-4 bg-gray-200 rounded mb-4 w-1/2"></div>
+                    <div class="h-24 bg-gray-200 rounded mb-4"></div>
+                    <div class="h-12 bg-gray-200 rounded"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- 底部說明 -->
+    <div class="mt-12 text-center">
+        <p class="text-gray-500 text-sm max-w-2xl mx-auto">
+            <i class="fas fa-info-circle mr-2 text-blue-500"></i>
+            所有投資方案均由 Crestline Advisory 專業評估，資金存入投資人名下 Standard Bank 專屬帳戶，安全合規。
+        </p>
+    </div>
+    
 </div>
 </section>
 <section class="py-24 bg-white relative overflow-hidden" id="contact">
@@ -789,6 +1122,23 @@
         function declineCookies() {
             localStorage.setItem('cookieConsent', 'false');
             document.getElementById('cookie-banner').classList.add('hidden');
+        }
+
+        // VIP Code Submit
+        function submitVipCode(phase) {
+            const inputId = 'vip-code-' + phase;
+            const vipCode = document.getElementById(inputId).value.trim();
+            
+            if (!vipCode) {
+                alert('請輸入您的 VIP 專屬號碼');
+                return;
+            }
+            
+            const phaseName = phase === 'phase2' ? '第二期' : '第三期';
+            
+            alert(`感謝您！我們已收到您的 VIP 號碼：${vipCode}\n\n專員將儘速與您聯繫，提供${phaseName}方案優先資料。`);
+            
+            document.getElementById(inputId).value = '';
         }
     </script>
 
