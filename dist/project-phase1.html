@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="鼎曜國際顧問有限公司">
 <title>第一期投資方案 | 開普敦精選莊園 | 鼎曜國際顧問</title>
 <meta name="description" content="南非開普敦Durbanville頂級莊園投資方案，總額R16,000,000，含房產投資、PR申請、高利活存完整配置。複利計息，收益最大化。">
 <meta name="keywords" content="南非置產, 開普敦房產, 南非PR, 海外投資, 高利活存, Durbanville, 複利">
-<meta name="robots" content="index, follow">
-<meta name="author" content="鼎曜國際顧問有限公司">
 <link rel="canonical" href="https://dingyaoadvisory.tw/project-phase1">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -16,25 +16,17 @@
 tailwind.config = {
     theme: {
         extend: {
-            colors: {
-                brand: { navy: '#0F172A', gold: '#C5A059', blue: '#1e3a8a' }
-            },
-            fontFamily: {
-                sans: ['Noto Sans TC', 'sans-serif'],
-                logo: ['Playfair Display', 'serif']
-            }
+            colors: { brand: { navy: '#0F172A', gold: '#C5A059', blue: '#1e3a8a' } },
+            fontFamily: { sans: ['Noto Sans TC', 'sans-serif'], logo: ['Playfair Display', 'serif'] }
         }
     }
 }
 </script>
-<style>
-body { font-family: 'Noto Sans TC', sans-serif; }
-.font-logo { font-family: 'Playfair Display', serif; }
-</style>
+<style>body{font-family:'Noto Sans TC',sans-serif}.font-logo{font-family:'Playfair Display',serif}</style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-yellow-500 selection:text-blue-900">
 
-<!-- Header (與官網一致) -->
+<!-- Navigation -->
 <div class="fixed w-full z-50 top-4 md:top-6 px-4 pointer-events-none">
 <nav class="max-w-7xl mx-auto bg-white/95 backdrop-blur-xl border border-white/40 shadow-2xl rounded-3xl px-6 py-3 transition-all duration-300 relative pointer-events-auto">
 <div class="flex justify-between items-center">
@@ -56,10 +48,42 @@ body { font-family: 'Noto Sans TC', sans-serif; }
 </div>
 <div class="hidden md:flex items-center space-x-1">
 <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="partners.html">戰略夥伴</a>
-<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="assets.html">精選資產</a>
+<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="platform.html">數位服務</a>
+<div class="relative group dropdown-container">
+<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition flex items-center focus:outline-none">
+美好生活 <i class="fas fa-chevron-down ml-1 text-xs opacity-50 transition-transform duration-300 group-hover:-rotate-180"></i>
+</button>
+<div class="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="education.html"><i class="fas fa-graduation-cap w-6 text-center mr-2 text-yellow-500"></i> 教育留學</a>
+<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="retirement.html"><i class="fas fa-wine-glass-alt w-6 text-center mr-2 text-red-500"></i> 退休生活</a>
+<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="residency.html"><i class="fas fa-passport w-6 text-center mr-2 text-blue-500"></i> 身分規劃</a>
+</div>
+</div>
+<a class="px-4 py-2 text-sm font-medium text-blue-900 bg-blue-50 rounded-full transition" href="assets.html">精選資產</a>
 <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="blog.html">專欄</a>
 </div>
-<a class="hidden md:flex bg-[#C5A059] text-white hover:bg-[#b8944f] px-6 py-2 rounded-full text-sm font-bold shadow-lg transition whitespace-nowrap" href="index.html#contact">預約諮詢</a>
+<div class="hidden md:flex items-center gap-3">
+<a class="bg-blue-900 text-white hover:bg-blue-800 px-6 py-2 rounded-full text-xs font-bold shadow-lg shadow-blue-900/20 transform hover:-translate-y-0.5 transition whitespace-nowrap" href="index.html#contact">預約諮詢</a>
+</div>
+<div class="md:hidden flex items-center gap-4">
+<button class="text-gray-700 bg-white border border-gray-300 focus:outline-none p-2 ml-2 relative z-50 pointer-events-auto cursor-pointer flex items-center justify-center rounded-lg hover:bg-gray-100 shadow-sm" onclick="toggleMobileMenu()" type="button">
+<i class="fas fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden border-t border-gray-100 mt-3 pt-2 space-y-1" id="mobile-menu">
+<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="partners.html">戰略夥伴</a>
+<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="platform.html">數位服務</a>
+<div class="pl-4 border-l-2 border-gray-100 ml-4 my-2">
+<p class="text-xs text-gray-400 uppercase tracking-widest mb-2 pl-2">美好生活</p>
+<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="education.html">教育留學</a>
+<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="retirement.html">退休生活</a>
+<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="residency.html">身分規劃</a>
+</div>
+<a class="block px-4 py-3 text-sm font-medium text-blue-900 bg-blue-50 rounded-xl" href="assets.html">精選資產</a>
+<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="blog.html">專欄</a>
+<a class="block px-4 py-3 text-sm font-bold text-center text-white bg-blue-900 rounded-xl mt-4 shadow-lg" href="index.html#contact" onclick="toggleMobileMenu()">立即預約諮詢</a>
 </div>
 </nav>
 </div>
@@ -68,26 +92,15 @@ body { font-family: 'Noto Sans TC', sans-serif; }
 <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center text-white">
-<!-- 期數標籤 -->
 <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-400 text-sm font-bold px-4 py-2 rounded-full mb-6">
 <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
 第一期 · 現已開放
 </div>
-
-<!-- 主標題 -->
-<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">
-開普敦精選莊園投資
-</h1>
-<p class="text-xl md:text-2xl text-slate-300 font-light mb-8">
-Durbanville Premium Estate
-</p>
-
-<!-- 核心數字 -->
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">開普敦精選莊園投資</h1>
+<p class="text-xl md:text-2xl text-slate-300 font-light mb-8">Durbanville Premium Estate</p>
 <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-12 max-w-2xl mx-auto border border-white/20">
 <p class="text-slate-300 text-sm uppercase tracking-widest mb-2">總投資額度</p>
-<p class="text-5xl md:text-6xl font-bold text-white">
-R 16,000,000
-</p>
+<p class="text-5xl md:text-6xl font-bold text-white">R 16,000,000</p>
 </div>
 </div>
 </div>
@@ -100,9 +113,7 @@ R 16,000,000
 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">資產配置明細</h2>
 <p class="text-slate-600">三項核心配置，穩健收益組合</p>
 </div>
-
 <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-<!-- 房產投資 -->
 <div class="bg-white rounded-2xl shadow-lg shadow-slate-200/50 p-8 border border-slate-100 hover:shadow-xl transition-shadow">
 <div class="flex items-center justify-between mb-6">
 <div class="flex items-center gap-3">
@@ -118,18 +129,10 @@ R 16,000,000
 <p class="text-3xl font-bold text-slate-900">R 10,450,000</p>
 </div>
 <div class="mt-4 space-y-2">
-<div class="flex items-center gap-2 text-sm text-slate-600">
-<i class="fas fa-check text-emerald-500 w-4"></i>
-<span>封閉式安全社區</span>
-</div>
-<div class="flex items-center gap-2 text-sm text-slate-600">
-<i class="fas fa-check text-emerald-500 w-4"></i>
-<span>歷史年增值 8%</span>
+<div class="flex items-center gap-2 text-sm text-slate-600"><i class="fas fa-check text-emerald-500 w-4"></i><span>封閉式安全社區</span></div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><i class="fas fa-check text-emerald-500 w-4"></i><span>歷史年增值 8%</span></div>
 </div>
 </div>
-</div>
-
-<!-- 律師與PR費用 -->
 <div class="bg-white rounded-2xl shadow-lg shadow-slate-200/50 p-8 border border-slate-100 hover:shadow-xl transition-shadow">
 <div class="flex items-center justify-between mb-6">
 <div class="flex items-center gap-3">
@@ -145,22 +148,11 @@ R 16,000,000
 <p class="text-3xl font-bold text-slate-900">R 200,000</p>
 </div>
 <div class="mt-4 space-y-2">
-<div class="flex items-center gap-2 text-sm text-slate-600">
-<i class="fas fa-check text-emerald-500 w-4"></i>
-<span>當地律師見證</span>
-</div>
-<div class="flex items-center gap-2 text-sm text-slate-600">
-<i class="fas fa-check text-emerald-500 w-4"></i>
-<span>PR 申請代辦</span>
-</div>
-<div class="flex items-center gap-2 text-sm text-slate-600">
-<i class="fas fa-check text-emerald-500 w-4"></i>
-<span>全程合規審查</span>
+<div class="flex items-center gap-2 text-sm text-slate-600"><i class="fas fa-check text-emerald-500 w-4"></i><span>當地律師見證</span></div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><i class="fas fa-check text-emerald-500 w-4"></i><span>PR 申請代辦</span></div>
+<div class="flex items-center gap-2 text-sm text-slate-600"><i class="fas fa-check text-emerald-500 w-4"></i><span>全程合規審查</span></div>
 </div>
 </div>
-</div>
-
-<!-- 高利活存 -->
 <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl shadow-lg shadow-slate-300/50 p-8 text-white hover:shadow-xl transition-shadow">
 <div class="flex items-center justify-between mb-6">
 <div class="flex items-center gap-3">
@@ -177,10 +169,7 @@ R 16,000,000
 </div>
 <div class="mt-4 p-3 bg-[#C5A059]/20 rounded-xl border border-[#C5A059]/30">
 <p class="text-lg font-bold text-[#C5A059] mb-1">年利率 6.5%</p>
-<p class="text-xs text-slate-300">
-<i class="fas fa-sync-alt mr-1"></i>
-每月複利計息，利息滾入本金
-</p>
+<p class="text-xs text-slate-300"><i class="fas fa-sync-alt mr-1"></i>每月複利計息，利息滾入本金</p>
 </div>
 </div>
 </div>
@@ -195,13 +184,8 @@ R 16,000,000
 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">預估收益試算</h2>
 <p class="text-slate-600 max-w-2xl mx-auto">以下為保守估計，實際收益可能更高。專案帳戶採每月複利計息，利息滾入本金再生息。</p>
 </div>
-
-<!-- 收益試算表格 -->
 <div class="bg-slate-50 rounded-3xl p-6 md:p-8 border border-slate-200 mb-12 overflow-x-auto">
-<h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-<i class="fas fa-chart-line text-[#C5A059]"></i>
-現金流試算表
-</h3>
+<h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2"><i class="fas fa-chart-line text-[#C5A059]"></i>現金流試算表</h3>
 <table class="w-full text-sm md:text-base">
 <thead>
 <tr class="border-b-2 border-slate-200">
@@ -239,42 +223,25 @@ R 16,000,000
 </tbody>
 </table>
 <div class="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-200">
-<p class="text-sm text-amber-800 text-center">
-<i class="fas fa-lightbulb mr-2"></i>
-<strong>複利效應：</strong>10 年利息收入比單利計算多賺約 R 1,406,334
-</p>
+<p class="text-sm text-amber-800 text-center"><i class="fas fa-lightbulb mr-2"></i><strong>複利效應：</strong>10 年利息收入比單利計算多賺約 R 1,406,334</p>
 </div>
 </div>
-
-<!-- 總收益預估 -->
 <div class="grid md:grid-cols-2 gap-8 mb-12">
-<!-- 5 年總收益 -->
 <div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-3xl p-8 md:p-10 text-white">
 <div class="flex items-center gap-2 mb-6">
 <i class="fas fa-trophy text-[#C5A059] text-2xl"></i>
 <h3 class="text-2xl font-bold">5 年總收益預估</h3>
 </div>
 <div class="space-y-4 mb-6">
-<div class="flex justify-between items-center py-2 border-b border-blue-700">
-<span class="text-blue-300">房產增值（年 8%）</span>
-<span class="font-bold text-xl">R 4,900,000</span>
-</div>
-<div class="flex justify-between items-center py-2 border-b border-blue-700">
-<span class="text-blue-300">利息收入（複利）</span>
-<span class="font-bold text-xl">R 2,045,598</span>
-</div>
-<div class="flex justify-between items-center py-2 border-b border-blue-700">
-<span class="text-blue-300">租金收入（選配）</span>
-<span class="font-bold text-xl">R 1,800,000</span>
-</div>
+<div class="flex justify-between items-center py-2 border-b border-blue-700"><span class="text-blue-300">房產增值（年 8%）</span><span class="font-bold text-xl">R 4,900,000</span></div>
+<div class="flex justify-between items-center py-2 border-b border-blue-700"><span class="text-blue-300">利息收入（複利）</span><span class="font-bold text-xl">R 2,045,598</span></div>
+<div class="flex justify-between items-center py-2 border-b border-blue-700"><span class="text-blue-300">租金收入（選配）</span><span class="font-bold text-xl">R 1,800,000</span></div>
 </div>
 <div class="bg-white/10 rounded-2xl p-6 text-center">
 <p class="text-blue-300 text-sm mb-2">5 年總收益（含包租）</p>
 <p class="text-4xl font-bold text-white">R 8,745,598</p>
 </div>
 </div>
-
-<!-- 10 年退場情境 -->
 <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 md:p-10 text-white">
 <div class="flex items-center gap-2 mb-6">
 <i class="fas fa-flag-checkered text-emerald-400 text-2xl"></i>
@@ -308,33 +275,83 @@ R 16,000,000
 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">準備好開始了嗎？</h2>
 <p class="text-xl text-slate-300 mb-8">立即聯繫我們，獲取完整的投資方案說明</p>
 <a href="index.html#contact" class="inline-flex items-center gap-3 bg-[#C5A059] hover:bg-[#b8944f] text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg shadow-[#C5A059]/30 transition transform hover:-translate-y-1">
-<i class="fas fa-arrow-right"></i>
-索取詳細方案
+<i class="fas fa-arrow-right"></i>索取詳細方案
 </a>
-<p class="text-sm text-slate-500 mt-6">
-<i class="fas fa-shield-alt mr-1"></i>
-以上試算基於保守估計，實際收益可能因市場波動而有所增減
-</p>
+<p class="text-sm text-slate-500 mt-6"><i class="fas fa-shield-alt mr-1"></i>以上試算基於保守估計，實際收益可能因市場波動而有所增減</p>
 </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-slate-900 text-white py-12">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center">
-<div class="text-3xl font-bold font-logo tracking-tighter leading-none select-none mb-4">
-<span class="text-white">D</span><span class="text-[#C5A059]">Y</span><span class="text-white">A</span>
+<footer class="bg-[#0f172a] text-gray-400 py-16 border-t border-gray-800 text-sm font-light">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="text-white font-bold text-2xl tracking-tight uppercase font-logo">D<span class="text-[#C5A059]">Y</span>A</span>
+<div class="h-4 w-px bg-gray-600"></div>
+<span class="text-gray-300 font-medium text-xs tracking-widest uppercase">DINGYAO ADVISORY</span>
 </div>
-<p class="text-slate-400 text-sm mb-6">鼎曜國際顧問 DingYao Advisory</p>
-<div class="flex justify-center gap-6 mb-8">
-<a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" class="text-slate-400 hover:text-[#C5A059] transition"><i class="fab fa-facebook text-xl"></i></a>
-<a href="https://www.instagram.com/dingyaoadvisory" target="_blank" class="text-slate-400 hover:text-[#C5A059] transition"><i class="fab fa-instagram text-xl"></i></a>
-<a href="https://www.linkedin.com/company/dingyaoadvisory/" target="_blank" class="text-slate-400 hover:text-[#C5A059] transition"><i class="fab fa-linkedin text-xl"></i></a>
+<p class="text-gray-500 leading-relaxed text-xs"><strong>亞太區獨家數位行銷中心</strong><br/>我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
+<div class="flex flex-wrap gap-3 pt-2">
+<a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.instagram.com/dingyaoadvisory" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://x.com/dingyaoadvisory" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+<a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.linkedin.com/company/dingyaoadvisory/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+<a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.threads.net/@dingyaoadvisory" target="_blank" rel="noopener noreferrer" aria-label="Threads"><i class="fab fa-threads"></i></a>
+<a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition" href="https://www.youtube.com/@dingyaoadvisory" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
 </div>
-<p class="text-xs text-slate-500">© 2026 鼎曜國際顧問有限公司。版權所有。</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest border-b border-gray-800 pb-2 inline-block">戰略生態系連結</h4>
+<ul class="space-y-3 text-xs">
+<li><a class="hover:text-yellow-500 transition flex items-center group" href="https://crestlineadvisory.co.za" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt mr-2 text-gray-600 group-hover:text-yellow-500"></i>Crestline Advisory (執行端)</a></li>
+<li><a class="hover:text-yellow-500 transition flex items-center group" href="https://canvascrest.co.za" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt mr-2 text-gray-600 group-hover:text-yellow-500"></i>CanvasCrest Properties (開發端)</a></li>
+<li><a class="hover:text-yellow-500 transition flex items-center group" href="https://www.standardbank.co.za" target="_blank" rel="noopener noreferrer"><i class="fas fa-university mr-2 text-gray-600 group-hover:text-yellow-500"></i>Standard Bank (資金託管)</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest border-b border-gray-800 pb-2 inline-block">核心服務</h4>
+<ul class="space-y-3 text-xs">
+<li><a class="hover:text-yellow-500 transition" href="assets.html">海外置產顧問</a></li>
+<li><a class="hover:text-yellow-500 transition" href="education.html">頂級留學規劃</a></li>
+<li><a class="hover:text-yellow-500 transition" href="retirement.html">退休移居方案</a></li>
+<li><a class="hover:text-yellow-500 transition" href="residency.html">永久居留權 (PR)</a></li>
+<li><a class="hover:text-yellow-500 transition" href="platform.html">數位資產平台</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest border-b border-gray-800 pb-2 inline-block">合規與聯繫</h4>
+<ul class="space-y-3 text-xs">
+<li><a class="hover:text-white transition" href="privacy.html">隱私權政策 (Privacy)</a></li>
+<li><a class="hover:text-white transition" href="terms.html">服務條款 (Terms)</a></li>
+<li class="pt-4 text-gray-500"><i class="fas fa-map-marker-alt mr-2"></i> 台中市西屯區 (亞太總部)</li>
+<li class="text-gray-500"><i class="fas fa-envelope mr-2"></i> <a class="hover:text-white transition" href="mailto:info@dingyaoadvisory.tw">info@dingyaoadvisory.tw</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+<div class="mb-4 md:mb-0">
+© <span id="copyright-year">2025-2026</span> <a class="font-bold hover:text-yellow-500 transition duration-300" href="index.html">鼎曜國際顧問有限公司</a> All rights reserved. | Taichung, Taiwan
+</div>
+<div class="flex space-x-6">
+<span>Designed for Global Investors</span>
+</div>
 </div>
 </div>
 </footer>
 
+<script>
+function toggleMobileMenu() {
+const menu = document.getElementById('mobile-menu');
+menu.classList.toggle('hidden');
+}
+document.addEventListener('DOMContentLoaded', function() {
+const yearSpan = document.getElementById('copyright-year');
+const currentYear = new Date().getFullYear();
+if (currentYear > 2025) {
+yearSpan.textContent = `2025-${currentYear}`;
+}
+});
+</script>
 </body>
 </html>
