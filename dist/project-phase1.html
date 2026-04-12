@@ -31,8 +31,6 @@ tailwind.config = {
 body { font-family: 'Noto Sans TC', sans-serif; }
 .font-logo { font-family: 'Playfair Display', serif; }
 </style>
-<!-- 匯率轉換模組 -->
-<script src="js/exchange-rate.js" defer></script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
@@ -87,13 +85,9 @@ Durbanville Premium Estate
 <!-- 核心數字 -->
 <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-12 max-w-2xl mx-auto border border-white/20">
 <p class="text-slate-300 text-sm uppercase tracking-widest mb-2">總投資額度</p>
-<p class="text-5xl md:text-6xl font-bold text-white mb-2">
+<p class="text-5xl md:text-6xl font-bold text-white">
 R 16,000,000
 </p>
-<p class="text-2xl text-[#C5A059] font-semibold" data-zar="16000000" data-format="short">
-約新台幣 2,680 萬元
-</p>
-<p class="text-xs text-slate-400 mt-2" data-exchange-source>（參考匯率）</p>
 </div>
 </div>
 </div>
@@ -121,8 +115,7 @@ R 16,000,000
 <h3 class="text-xl font-bold text-slate-900 mb-2">房產投資</h3>
 <p class="text-sm text-slate-500 mb-4">Durbanville 莊園物業</p>
 <div class="border-t border-slate-100 pt-4">
-<p class="text-3xl font-bold text-slate-900 mb-1">R 10,450,000</p>
-<p class="text-sm text-slate-500" data-zar="10450000" data-format="short">約新台幣 1,750 萬元</p>
+<p class="text-3xl font-bold text-slate-900">R 10,450,000</p>
 </div>
 <div class="mt-4 space-y-2">
 <div class="flex items-center gap-2 text-sm text-slate-600">
@@ -149,8 +142,7 @@ R 16,000,000
 <h3 class="text-xl font-bold text-slate-900 mb-2">律師與PR費用</h3>
 <p class="text-sm text-slate-500 mb-4">專業服務費用</p>
 <div class="border-t border-slate-100 pt-4">
-<p class="text-3xl font-bold text-slate-900 mb-1">R 200,000</p>
-<p class="text-sm text-slate-500" data-zar="200000" data-format="short">約新台幣 33 萬元</p>
+<p class="text-3xl font-bold text-slate-900">R 200,000</p>
 </div>
 <div class="mt-4 space-y-2">
 <div class="flex items-center gap-2 text-sm text-slate-600">
@@ -182,7 +174,6 @@ R 16,000,000
 <p class="text-sm text-slate-400 mb-4">鼎曜獨家談成專案利率</p>
 <div class="border-t border-slate-700 pt-4">
 <p class="text-3xl font-bold mb-1">R 5,350,000</p>
-<p class="text-sm text-slate-400" data-zar="5350000" data-format="short">約新台幣 897 萬元</p>
 </div>
 <div class="mt-4 p-3 bg-[#C5A059]/20 rounded-xl border border-[#C5A059]/30">
 <p class="text-lg font-bold text-[#C5A059] mb-1">年利率 6.5%</p>
@@ -218,9 +209,6 @@ R 16,000,000
 <th class="py-4 px-4 text-right text-slate-500 font-semibold">租金收入</th>
 <th class="py-4 px-4 text-right text-slate-500 font-semibold">利息收入（複利）</th>
 <th class="py-4 px-4 text-right text-slate-500 font-semibold">合計收入</th>
-<th class="py-4 px-4 text-right text-slate-500 font-semibold">
-約新台幣<span class="block text-xs font-normal" data-exchange-source>（參考匯率）</span>
-</th>
 </tr>
 </thead>
 <tbody>
@@ -229,35 +217,31 @@ R 16,000,000
 <td class="py-4 px-4 text-right text-emerald-600">R 30,000</td>
 <td class="py-4 px-4 text-right text-emerald-600">R 28,979</td>
 <td class="py-4 px-4 text-right font-bold text-slate-900">R 58,979</td>
-<td class="py-4 px-4 text-right text-slate-600" data-zar="58979" data-format="table">NT$ 98,730</td>
 </tr>
 <tr class="border-b border-slate-200">
 <td class="py-4 px-4 font-medium text-slate-700">1 年</td>
 <td class="py-4 px-4 text-right text-emerald-600">R 360,000</td>
 <td class="py-4 px-4 text-right text-emerald-600">R 358,291</td>
 <td class="py-4 px-4 text-right font-bold text-slate-900">R 718,291</td>
-<td class="py-4 px-4 text-right text-slate-600" data-zar="718291" data-format="table">NT$ 120 萬</td>
 </tr>
 <tr class="border-b border-slate-200 bg-blue-50">
 <td class="py-4 px-4 font-bold text-slate-900">5 年</td>
 <td class="py-4 px-4 text-right text-emerald-600">R 1,800,000</td>
 <td class="py-4 px-4 text-right text-emerald-600">R 2,045,598</td>
 <td class="py-4 px-4 text-right font-bold text-blue-900 text-lg">R 3,845,598</td>
-<td class="py-4 px-4 text-right font-bold text-blue-900" data-zar="3845598" data-format="table">NT$ 643 萬</td>
 </tr>
 <tr class="bg-[#C5A059]/10">
 <td class="py-4 px-4 font-bold text-slate-900">10 年</td>
 <td class="py-4 px-4 text-right text-emerald-600">R 3,600,000</td>
 <td class="py-4 px-4 text-right text-emerald-600">R 4,883,834</td>
 <td class="py-4 px-4 text-right font-bold text-[#C5A059] text-xl">R 8,483,834</td>
-<td class="py-4 px-4 text-right font-bold text-[#C5A059]" data-zar="8483834" data-format="table">NT$ 1,420 萬</td>
 </tr>
 </tbody>
 </table>
 <div class="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-200">
 <p class="text-sm text-amber-800 text-center">
 <i class="fas fa-lightbulb mr-2"></i>
-<strong>複利效應：</strong>10 年利息收入比單利計算多賺約 R 1,406,334（NT$ 235 萬）
+<strong>複利效應：</strong>10 年利息收入比單利計算多賺約 R 1,406,334
 </p>
 </div>
 </div>
@@ -286,8 +270,7 @@ R 16,000,000
 </div>
 <div class="bg-white/10 rounded-2xl p-6 text-center">
 <p class="text-blue-300 text-sm mb-2">5 年總收益（含包租）</p>
-<p class="text-4xl font-bold text-white mb-1">R 8,745,598</p>
-<p class="text-2xl text-[#C5A059]" data-zar="8745598" data-format="short">約新台幣 1,464 萬</p>
+<p class="text-4xl font-bold text-white">R 8,745,598</p>
 </div>
 </div>
 
@@ -311,8 +294,7 @@ R 16,000,000
 </div>
 <div class="bg-[#C5A059] rounded-2xl p-6 text-center text-slate-900">
 <p class="text-slate-700 text-sm mb-2">總資產淨值</p>
-<p class="text-4xl font-bold mb-1">R 32,800,256</p>
-<p class="text-xl" data-zar="32800256" data-format="short">約新台幣 5,486 萬</p>
+<p class="text-4xl font-bold">R 32,800,256</p>
 <p class="text-sm text-slate-700 mt-2">投報倍數 2.05x</p>
 </div>
 </div>
@@ -332,9 +314,6 @@ R 16,000,000
 <p class="text-sm text-slate-500 mt-6">
 <i class="fas fa-shield-alt mr-1"></i>
 以上試算基於保守估計，實際收益可能因市場波動而有所增減
-</p>
-<p class="text-xs text-slate-600 mt-3" data-exchange-time>
-參考匯率更新時間：載入中...
 </p>
 </div>
 </section>
