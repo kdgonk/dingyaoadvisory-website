@@ -45,9 +45,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { navy: '#0F172A', gold: '#C5A059', blue: '#1e3a8a' } },
+                    fontFamily: { sans: ['Noto Sans TC', 'sans-serif'], logo: ['Playfair Display', 'serif'] }
+                }
+            }
+        }
+    </script>
+    
     <style>
-        body { font-family: 'Noto Sans TC', sans-serif; }
-        .font-logo { font-family: 'Playfair Display', serif; }
         body { font-family: 'Noto Sans TC', sans-serif; }
         .font-logo { font-family: 'Playfair Display', serif; }
         .hero-gradient { background: linear-gradient(135deg, #0F172A 0%, #1e3a8a 100%); }
@@ -179,23 +189,25 @@
         <div class="max-w-7xl mx-auto">
             <div id="blog-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Article: TSMC 技術突破與開普敦置產 (2026-05-08) -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
+                <!-- Article: TSMC 技術突破帶動外資回流 (NEWEST - 2026-05-08) -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="trend">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/tsmc-cape-town-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/tsmc-cape-town-hero.jpg" alt="TSMC 技術突破帶動外資回流" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
+                        <a href="blog/tsmc-breakthrough-cape-town-property.html">
+                            <picture>
+                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/tsmc-cape-town-hero.webp" type="image/webp">
+                                <img src="https://assets.dingyaoadvisory.tw/blog/images/tsmc-cape-town-hero.jpg" alt="TSMC 技術突破帶動外資回流" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium rounded-full">置產投資</span>
-                            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full">NEW</span>
+                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">產業趨勢</span>
+                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
                         </div>
                         <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/tsmc-breakthrough-cape-town-property.html" class="hover:text-[#C5A059] transition">TSMC 技術突破帶動外資回流：高資產族群的海外置產新選擇</a>
+                            <a href="blog/tsmc-breakthrough-cape-town-property.html" class="hover:text-[#C5A059] transition">TSMC 技術突破帶動外資回流：高資產族群海外置產新選擇</a>
                         </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">TSMC技術突破創造龐大財富效應，南非開普敦房產以8-10%租金投報率成為高資產族群海外置產的新選擇。</p>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">2024年台積電2奈米量產領先全球，外資淨買超超過5,000億。科技新貴如何佈局南非開普敦房產？年租金投報率8-10%，是台北的4-5倍。</p>
                         <div class="flex items-center justify-between text-sm text-gray-500">
                             <span><i class="far fa-calendar mr-1"></i>2026年5月8日</span>
                             <a href="blog/tsmc-breakthrough-cape-town-property.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
@@ -203,148 +215,6 @@
                     </div>
                 </article>
                 
-                <!-- Article: 南非房地產投資 2026 (2026-04-16) -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.png" alt="南非房地產投資 2026" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium rounded-full">置產投資</span>
-                            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-real-estate-investment-2026.html" class="hover:text-[#C5A059] transition">南非房地產投資 2026：為什麼台灣投資者現在進場？R16,000,000 案例完整解析</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">以實際案例解析：R10,450,000 房產如何創造 7% 租金收益率 + 8% 年增值，總投資 R16,000,000 取得永久居留權。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年4月16日</span>
-                            <a href="blog/south-africa-real-estate-investment-2026.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Article: Mahindra 評估南非 CKD 生產升級 (2026-04-22) -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="analysis">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/mahindra-ckd-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/mahindra-ckd-hero.jpg" alt="Mahindra 評估南非 CKD 生產升級" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-purple-500/20 text-purple-400 border border-purple-500/30 text-xs font-medium rounded-full">產業分析</span>
-                            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/mahindra-south-africa-ckd-manufacturing.html" class="hover:text-[#C5A059] transition">Mahindra 評估南非 CKD 生產升級：平價車市場的新佈局</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">印度第二大汽車製造商 Mahindra 正在評估將南非德班工廠從 SKD 升級為 CKD 生產，代表對南非市場的深度投資。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年4月22日</span>
-                            <a href="blog/mahindra-south-africa-ckd-manufacturing.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Article: 中國資本佈局南非 (2026-04-14) -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/china-south-africa-investment-momentum-hero-zh.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/china-south-africa-investment-momentum-hero-zh.jpg" alt="中國已經進場了，你還在觀望嗎？" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium rounded-full">置產投資</span>
-                            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/china-south-africa-investment-momentum.html" class="hover:text-[#C5A059] transition">中國已經進場了，你還在觀望嗎？南非投資窗口正在關閉</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">350位企業領袖齊聚上海投資大會，中國資本加速佈局南非。這波紅利，屬於先行者。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年4月14日</span>
-                            <a href="blog/china-south-africa-investment-momentum.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Article: 南非軍工出口賺外匯 (2026-04-13) -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="analysis">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-defence-exports-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-defence-exports-hero.jpg" alt="南非軍工出口賺外匯" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-purple-500/20 text-purple-400 border border-purple-500/30 text-xs font-medium rounded-full">產業分析</span>
-                            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-defence-exports.html" class="hover:text-[#C5A059] transition">南非軍工出口賺外匯：2025年5.5億美元背後的轉型故事</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">當台灣花大錢向海外買武器時，南非正悄悄成為非洲唯一軍工出口大國。2025年軍售42國、賺進5.5億美元。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年4月13日</span>
-                            <a href="blog/south-africa-defence-exports.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Article: 開普敦封閉式社區投資完整指南 (2026-04-12) -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-gated-community.html">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-gated-community-hero.jpg" alt="開普敦封閉式社區投資完整指南" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium rounded-full">置產投資</span>
-                            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-gated-community.html" class="hover:text-[#C5A059] transition">開普敦封閉式社區投資完整指南：2026年台灣人置產必讀</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">深入解析開普敦封閉式社區投資優勢、三大熱區比較、台灣人買房完整流程。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年4月12日</span>
-                            <a href="blog/cape-town-gated-community.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article: 開普敦生活品質全球排名 (2026-04-11) -->
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="lifestyle">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-quality-of-life.html">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-quality-of-life-hero.jpg" alt="開普敦生活品質全球排名" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">生活品質</span>
-                            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-quality-of-life.html" class="hover:text-[#C5A059] transition">開普敦生活品質全球排名：投資移民的隱藏寶石</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Time Out 2026全球最佳城市第6名，生活品質指數160.33超越倫敦，成本僅新加坡一半。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年4月11日</span>
-                            <a href="blog/cape-town-quality-of-life.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-
                 <!-- Article: 美銀排名南非股市第一 (2026-04-10) -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
@@ -405,7 +275,7 @@
                         <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
                             <a href="blog/firstrand-uk-exit.html" class="hover:text-[#C5A059] transition">FirstRand 撤離英國市場：南非銀行業海外擴張的警示燈</a>
                         </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">南非最大銀行宣佈退出英國市場，面市場，面臨近10億美元監管風暴。深入分析對投資者的啟示。</p>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">南非最大銀行宣佈退出英國市場，面臨近10億美元監管風暴。深入分析對投資者的啟示。</p>
                         <div class="flex items-center justify-between text-sm text-gray-500">
                             <span><i class="far fa-calendar mr-1"></i>2026年4月9日</span>
                             <a href="blog/firstrand-uk-exit.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
@@ -437,7 +307,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: 南極冰原上的機遇 (2026-04-08) -->
+                <!-- Article: 南極冰原上的機遇 (NEWEST - 2026-04-08) -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="analysis">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
@@ -461,7 +331,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: G20峰會後的開普敦房產機遇 (2026-04-07) -->
+                <!-- Article 1: G20峰會後的開普敦房產機遇 (NEWEST - 2026-04-07) -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
@@ -485,7 +355,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: 2026年開普敦房市展望 (2026-04-06) -->
+                <!-- Article: 2026年開普敦房市展望 (NEWEST - 2026-04-06) -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
@@ -509,7 +379,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: 1600萬南非幣跨境選擇 (2026-04-06) -->
+                <!-- Article: 1600萬南非幣跨境選擇 -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
@@ -532,7 +402,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: 南非技能人才回流潮 v2 (2026-04-05) -->
+                <!-- Article: 南非技能人才回流潮 v2 (NEWEST - 2026-04-05) -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
@@ -556,7 +426,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: 南非投資機遇 2026 (2026-04-05) -->
+                <!-- Article 1: 南非投資機遇 2026 (NEW) -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <picture>
@@ -579,7 +449,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: WW3 安全 (2026-03-26) -->
+                <!-- Article 2: WW3 安全 -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-ww3-safety-hero.jpg" alt="第三次世界大戰與南非安全" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
@@ -599,7 +469,7 @@
                     </div>
                 </article>
                 
-                <!-- Article: 機場升級 (2026-03-25) -->
+                <!-- Article 3: 機場升級 -->
                 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
                         <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-airport-upgrade-hero.jpg" alt="開普敦機場升級" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
