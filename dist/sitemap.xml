@@ -422,7 +422,27 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog-page-2"/>
     </url>
 
-    <!-- Blog Articles (最新文章在前) -->
+    <!-- Blog Articles (最新文章在前) -->    <!-- Article: 海外置產陷阱與機會 -->
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia-en</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/overseas-property-traps-southeast-asia"/>
+    </url>
+    
+
     
     <!-- Article: G20峰會後的開普敦房產機遇 -->
     <url>

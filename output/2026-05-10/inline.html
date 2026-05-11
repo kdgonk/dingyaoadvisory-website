@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1200px;
+  height: 600px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  background: linear-gradient(180deg, #F8F9FA 0%, #E9ECEF 100%);
+  padding: 50px;
+  overflow: hidden;
+}
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1E3A5F;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.comparison-container {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: stretch;
+}
+.side {
+  width: 450px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.side-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid;
+}
+.taiwan-side .side-header { border-color: #DE2910; }
+.sa-side .side-header { border-color: #007749; }
+.flag {
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.taiwan-flag {
+  background: linear-gradient(135deg, #DE2910 0%, #DE2910 50%, #000080 50%, #000080 100%);
+  color: white;
+}
+.sa-flag {
+  background: linear-gradient(135deg, #007749 0%, #FFB612 50%, #DE3831 50%, #DE3831 100%);
+  color: white;
+}
+.side-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.taiwan-side .side-title { color: #DE2910; }
+.sa-side .side-title { color: #007749; }
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #E9ECEF;
+}
+.metric:last-child { border-bottom: none; }
+.metric-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6C757D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.metric-value {
+  font-size: 20px;
+  font-weight: 700;
+}
+.taiwan-val { color: #6C757D; }
+.sa-val { color: #007749; }
+.highlight {
+  font-size: 28px;
+  color: #D4AF37;
+}
+.vs-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+}
+.vs-circle {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #1E3A5F, #D4AF37);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+</style>
+</head>
+<body>
+<div class="title">Taiwan vs Western Cape Property Investment Comparison</div>
+<div class="comparison-container">
+  <div class="side taiwan-side">
+    <div class="side-header">
+      <div class="flag taiwan-flag">🔴</div>
+      <div class="side-title">Taiwan 台灣</div>
+    </div>
+    <div class="metrics">
+      <div class="metric">
+        <div class="metric-label">Rental Yield</div>
+        <div class="metric-value taiwan-val">1.5-2.5%</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Entry Price</div>
+        <div class="metric-value taiwan-val">NT$50M+</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Annual Growth</div>
+        <div class="metric-value taiwan-val">3-5%</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Currency</div>
+        <div class="metric-value taiwan-val">—</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="vs-divider">
+    <div class="vs-circle">VS</div>
+  </div>
+  
+  <div class="side sa-side">
+    <div class="side-header">
+      <div class="flag sa-flag">🇿🇦</div>
+      <div class="side-title">Western Cape</div>
+    </div>
+    <div class="metrics">
+      <div class="metric">
+        <div class="metric-label">Rental Yield</div>
+        <div class="metric-value sa-val">6-10%</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Entry Price</div>
+        <div class="metric-value sa-val">NT$15-25M</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Annual Growth</div>
+        <div class="metric-value sa-val">8-12%</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Currency</div>
+        <div class="metric-value sa-val highlight">20-30% Off</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
