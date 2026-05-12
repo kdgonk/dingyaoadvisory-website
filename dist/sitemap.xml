@@ -708,4 +708,43 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment"/>
     </url>
 
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/overseas-asset-allocation</loc>
+        <lastmod>2026-05 12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/overseas-asset-allocation"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/overseas-asset-allocation-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/overseas-asset-allocation"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/overseas-asset-allocation-en</loc>
+        <lastmod>2026-05 12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/overseas-asset-allocation"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/overseas-asset-allocation-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/overseas-asset-allocation"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation</loc>
+        <lastmod>2026-05 12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation-en</loc>
+        <lastmod>2026-05 12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-allocation"/>
+    </url>
 </urlset>
