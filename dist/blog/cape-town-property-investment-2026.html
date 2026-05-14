@@ -586,19 +586,19 @@ width="1200" height="675">
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">外國人可以在開普敦購買房產嗎？</div>
+<div class="qa-question" onclick="toggleFaq(this)">外國人可以在開普敦購買房產嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">可以。南非對外國人購房持開放態度，無需居留身份即可購買住宅、商業、工業物業。但外國人貸款比例通常不超過房價的50%，需要提供海外收入證明或資產證明。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">開普敦哪個區域最適合投資？</div>
+<div class="qa-question" onclick="toggleFaq(this)">開普敦哪個區域最適合投資？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">根據投資目標不同：追求資本增值可選大西洋沿岸（Camps Bay、Clifton）；追求穩定收益可選市中心V&A Waterfront；學區置產可選南部郊區（Constantia、Newlands）；現金流導向可選北部郊區（Durbanville），收益率可達8-12%。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">G20峰會對開普敦房產有什麼影響？</div>
+<div class="qa-question" onclick="toggleFaq(this)">G20峰會對開普敦房產有什麼影響？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">2025年南非主辦G20峰會，開普敦承辦部長級會議。基礎設施投入超過120億蘭特，國際曝光度大幅提升。歷史經驗顯示，類似國際盛會往往帶動主辦城市房價在會後2-3年內上漲15-25%。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">投資開普敦房產的風險有哪些？</div>
+<div class="qa-question" onclick="toggleFaq(this)">投資開普敦房產的風險有哪些？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">主要風險包括：匯率波動（蘭特對美元匯率變化）、利率變化、政治不穩定、經濟衰退、限電危機。對沖策略包括長期持有、選擇核心區域、高現金流物業、配備太陽能系統等。</div>
 </div>
 </div>
@@ -860,5 +860,13 @@ All rights reserved. | Taichung, Taiwan
  }
  });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

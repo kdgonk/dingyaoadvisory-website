@@ -682,32 +682,32 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Can foreigners freely purchase property in South Africa?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Can foreigners freely purchase property in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Yes. Unlike Canada, Australia, New Zealand, and others, South Africa imposes no restrictions on foreign property ownership. Foreign buyers enjoy identical property rights to South African citizens.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">What budget should I plan for Cape Town property?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">What budget should I plan for Cape Town property?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Budget depends on your objectives: Entry-level apartments (Sea Point, etc.) ZAR 3-5 million (~$180K-300K USD); Mid-market homes (Constantia, etc.) ZAR 8-15 million (~$470K-880K USD); Luxury/villas (Clifton, etc.) ZAR 20+ million (~$1.2M+ USD). Budget an additional 10-15% for taxes, legal fees, and furnishing.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Can buying property get me South African residency?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Can buying property get me South African residency?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Property purchase alone does not confer residency. However, pathways include: Retirement Visa (prove passive income, apply for permanent residency after 5 years); Financially Independent Visa (prove ZAR 12M net assets, direct permanent residency); Business Visa (invest in South African business, can combine with property).</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">What rental yields can I expect in Cape Town?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">What rental yields can I expect in Cape Town?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Varies by area and property type: Long-term rentals 5-8% gross yield (~4-6% net); Short-term rentals (Airbnb) 10-15% peak season, but seasonal and management-intensive; V&A Waterfront lower yields (~3-5%) but stronger capital appreciation potential.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Is Cape Town safe?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Is Cape Town safe?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Like any major global city, safety varies by neighborhood. International buyer preferred areas feature comprehensive security. Cape Town's 2025 record international buyer activity demonstrates global investor confidence in these areas.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Is now a good time to invest in Cape Town?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Is now a good time to invest in Cape Town?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Current factors suggest a potentially historic opportunity: Exchange rates remain favorable (despite 2025 appreciation); G20-driven international attention increasing; Traditional markets closed to foreign buyers; Property prices remain reasonable compared to global peers. Individual timing should align with personal financial planning and professional advice.</div>
                     </div>
                 </div>
@@ -952,5 +952,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

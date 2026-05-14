@@ -402,19 +402,19 @@ Frequently Asked Questions
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">What are ICAO Digital Travel Credentials (DTC)?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What are ICAO Digital Travel Credentials (DTC)?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Digital Travel Credentials (DTC) are a next-generation travel document framework developed by the International Civil Aviation Organization (ICAO). The system uses a dual-component design: a Virtual Component (DTC-VC) stored on smartphones or secure cloud servers, and a Physical Component (DTC-PC) embedded in upgraded electronic passports. The core innovation is end-to-end biometric verification—particularly facial recognition—that replaces the traditional passport-and-manual-inspection model.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">When will passport-free travel begin in South Africa?</div>
+<div class="qa-question" onclick="toggleFaq(this)">When will passport-free travel begin in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">The DTC system is currently in a voluntary adoption phase, with countries implementing it according to their readiness. South Africa, as one of Africa's largest aviation hubs, is expected to begin pilot programs in 2027-2028. Importantly, physical passports will not be completely eliminated in the near term—travelers will still need to carry them as backup identification.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">What are the benefits of passport-free travel for travelers?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What are the benefits of passport-free travel for travelers?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Key benefits include dramatically reduced border processing times (from an average of 5-7 minutes down to 30 seconds to 1 minute), reduced risk of identity fraud and passport loss, and a seamless travel experience where the entire journey—from check-in to boarding—can be completed with facial recognition. For frequent business travelers and investors, time saved translates directly to higher efficiency and lower opportunity costs.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">Is passport-free travel safe? How is privacy protected?</div>
+<div class="qa-question" onclick="toggleFaq(this)">Is passport-free travel safe? How is privacy protected?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">ICAO's DTC system follows strict international security and privacy standards. All biometric data is encrypted and only accessed when necessary. The architecture is specifically designed to address data sovereignty concerns—each government operates its own DTC verification infrastructure, eliminating any single centralized database. Travelers can view and delete their biometric data at any time, with explicit privacy protections built into the system.</div>
 </div>
 </div>
@@ -669,5 +669,13 @@ All rights reserved. | Taichung, Taiwan
  }
  });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

@@ -672,32 +672,32 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">外國人可以在南非自由購買房產嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">外國人可以在南非自由購買房產嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">是的。與加拿大、澳洲、紐西蘭等國不同，南非對外國人購買房產沒有任何限制。您可以購買住宅、商業地產或土地，享有與本國公民相同的產權保護。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">購買開普敦房產需要多少預算？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">購買開普敦房產需要多少預算？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">視您的目標而定：入門級公寓（Sea Point等地）約300-500萬蘭特（約18-30萬美元）；中產住宅（Constantia等地）約800-1500萬蘭特（約47-88萬美元）；豪宅或海濱別墅（Clifton等地）2000萬蘭特以上（約117萬美元以上）。建議預留房價10-15%的額外費用（稅費、律師費、裝修等）。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">買房可以獲得南非永久居留權嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">買房可以獲得南非永久居留權嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">單純購買房產不能直接獲得永居身份。但您可以通過退休簽證（證明穩定被動收入，滿5年後申請永居）、財務獨立簽證（證明淨資產1,200萬蘭特，直接申請永居）或商業簽證（在南非投資企業，可搭配房產投資）等途徑結合房產投資。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦的租金收益率如何？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦的租金收益率如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">視區域與房產類型而定：長期租賃，毛收益率約5-8%（扣除管理費後約4-6%）；短期租賃（Airbnb）旺季可達10-15%，但需考慮管理成本與季節性波動。V&A Waterfront等高端區域因房價較高，收益率相對較低，但資本增值潛力較大。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦的治安真的安全嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦的治安真的安全嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">如同世界上任何大城市，開普敦不同區域的治安狀況有顯著差異。國際買家偏好的區域（Clifton、Constantia、Sea Point、V&A Waterfront）通常有完善的安保措施。2025年開普敦創下國際買家交易量新高，本身就反映了全球投資者對這些區域的信心。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">什麼時候是進場開普敦房市的好時機？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">什麼時候是進場開普敦房市的好時機？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">考量以下因素，現在可能是歷史性的機會：匯率仍處於有利水平（雖已從低點回升）；G20效應帶動國際關注度上升；全球其他熱門市場對外國買家關閉；開普敦房價相對於其他國際城市仍屬合理。具體進場時機應結合您的個人財務規劃與專業顧問建議。</div>
                     </div>
                 </div>
@@ -943,5 +943,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

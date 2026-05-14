@@ -644,19 +644,19 @@ width="1200" height="675">
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">南非在南極有哪些科考站？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南非在南極有哪些科考站？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">南非擁有三座主要科考站：桑內科考站（SANAE IV）位於南極大陸毛德皇后地，是主要科研基地；馬里恩島研究站位於印度洋南部，研究生物多樣性與氣候變遷；戈夫島研究站位於南大西洋，專注生態系統監測與氣象研究。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">南極科考產業有哪些投資機會？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南極科考產業有哪些投資機會？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">主要投資機會包括：極地物流（運輸船租賃、中轉倉儲）、科研設備（氣象站、監測儀器、極地建築）、技術服務（數據分析、人員培訓、環境評估）、極地旅遊（體驗中心、裝備租賃）、衍生技術商業化（保溫材料、可再生能源、遠程醫療）。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">投資南極科考產業需要什麼資質？</div>
+<div class="qa-question" onclick="toggleFaq(this)">投資南極科考產業需要什麼資質？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">由於南極條約體系的限制，投資需符合國際規範。建議：1）深入了解南極條約及相關法規；2）建立本地合作夥伴關係；3）參與政府公開招標；4）具備相關技術或物流能力。鼎曜可協助對接合規資源。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">南極科考產業的市場規模有多大？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南極科考產業的市場規模有多大？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">全球極地科研設備市場約3-5億美元/年，南非及周邊地區佔比約15-20%。極地旅遊市場約15億美元/年，年增長率8-12%。這是一個高壁壘、高利潤、高成長性的利基市場。</div>
 </div>
 </div>
@@ -918,5 +918,13 @@ All rights reserved. | Taichung, Taiwan
  }
  });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

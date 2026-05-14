@@ -833,35 +833,35 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Is South Africa's crime problem severe? Is investment safe?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Is South Africa's crime problem severe? Is investment safe?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Every major city worldwide has safety issues—Paris has pickpockets, London requires vigilance. Cape Town's prime areas (Atlantic Seaboard, City Bowl, V&A Waterfront) have safety levels comparable to major European cities. Before investment, we'll explain area characteristics in detail, helping you choose suitable properties.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Can foreigners buy property in South Africa?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Can foreigners buy property in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Yes. South Africa is one of the few African countries allowing foreigners to fully own real estate. Foreigners can buy residential, commercial properties, and land, enjoying the same property rights as citizens. The only restriction is purchasing agricultural land or sensitive border areas requiring special permits—but general residential investment is fully open.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How are Cape Town rental yields?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How are Cape Town rental yields?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Cape Town seaside long-term rental yields reach 5-7% annually, with peak-season short-term rentals reaching over 10%—far better than mature markets like London (3%) or Paris (2.5%). The talent return wave drives premium rental demand, making now an excellent entry time.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Will moving money in and out be difficult?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Will moving money in and out be difficult?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             South African forex controls have been significantly relaxed, with relatively free capital flow. But large capital outflows require procedures like tax clearance—we recommend working with professional consultants. DingYao provides end-to-end capital flow services.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Can children receive international education in Cape Town?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Can children receive international education in Cape Town?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Absolutely. Cape Town has a complete international school system, from kindergarten through high school, all with English instruction. The University of Cape Town is Africa's #1 ranked university with internationally recognized degrees. The British education system allows seamless transition to UK graduate programs—excellent for Asian families prioritizing education.
                         </div>
@@ -1154,5 +1154,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

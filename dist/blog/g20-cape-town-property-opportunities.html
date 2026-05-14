@@ -524,19 +524,19 @@ width="800" height="600" loading="eager">
 常見問題 FAQ
 </h2>
 <div class="qa-item">
-<div class="qa-question">G20峰會後現在進場開普敦房產是否太晚？</div>
+<div class="qa-question" onclick="toggleFaq(this)">G20峰會後現在進場開普敦房產是否太晚？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">現在不是太晚，而是「第二波」的開始。第一波（峰會前佈局）已經過去，但第二波（基礎設施價值釋放）才剛啟動。V&A Waterfront房價雖已上漲18%，但Foreshore、City Bowl仍有較大增值空間，基礎設施的價值釋放是漸進的，未來3-5年將持續發酵。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">投資簽證政策有哪些重大放寬？</div>
+<div class="qa-question" onclick="toggleFaq(this)">投資簽證政策有哪些重大放寬？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">2026年1月起，南非投資簽證門檻從R5,000,000降低50%至R2,500,000，處理時間從18-24個月縮短至6-12個月，家庭成員範圍擴大至包含父母，居留權限從需每年更新改為3年有效。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">哪些區域是G20峰會紅利的最大受益者？</div>
+<div class="qa-question" onclick="toggleFaq(this)">哪些區域是G20峰會紅利的最大受益者？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">三個最受益的投資熱區包括：1) V&A Waterfront（峰會直接受益者，均價已上漲17.9%）；2) Foreshore（被低估的價值窪地，房價僅為V&A Waterfront的60-70%，預期3年增值35-50%）；3) 機場周邊區域（會議經濟新前沿，性價比極高）。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">商務短租與一般觀光短租有何不同？</div>
+<div class="qa-question" onclick="toggleFaq(this)">商務短租與一般觀光短租有何不同？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">商務旅客支付能力強（日均預算R4,000-8,000，是觀光客的2-3倍），需求穩定（會議日期確定，取消率低），對品質要求高（需要高速網路、工作空間），忠誠度高。V&A Waterfront的商務短租占比已達42%，日均價格R4,650，入住率78%。</div>
 </div>
 </div>
@@ -755,5 +755,13 @@ yearSpan.textContent = `2025-${currentYear}`;
 });
 </script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

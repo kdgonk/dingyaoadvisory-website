@@ -573,7 +573,7 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦機場升級計劃何時完成？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦機場升級計劃何時完成？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             根據ACSA官方公告，開普敦國際機場升級計劃預計於2030年前分階段完成。第一期航廈擴建工程已於2025年動工，
                             預計2028年完工啟用。完整升級後，機場年旅客處理能力將從1,400萬提升至2,000萬。
@@ -581,7 +581,7 @@
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">機場升級會如何影響周邊房價？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">機場升級會如何影響周邊房價？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             根據國際機場協會(ACI)的研究，機場基礎建設投資通常會帶動周邊15-30公里範圍內的房地產增值。
                             開普敦機場周邊的Somerset West、Stellenbosch、Bellville等區域，預計在2028-2030年間將看到10-25%的房價漲幅。
@@ -590,7 +590,7 @@
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">台灣投資人如何在開普敦置產？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">台灣投資人如何在開普敦置產？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             台灣投資人可透過鼎曜國際顧問與南非在地夥伴Crestline Advisory合作，投資款匯入律師TPFA信託帳戶，
                             依合約分期放款給開發商。投資款直接存入投資人名下的Standard Bank Wealth私人銀行帳戶，不經手顧問公司。
@@ -599,7 +599,7 @@
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">機場升級會創造多少就業機會？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">機場升級會創造多少就業機會？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             根據ACSA官方預估，開普敦機場升級計劃將直接創造約15,000個建設相關工作機會，包括工程師、建築工人、
                             項目經理、技術人員等。加上間接帶動的物流、旅遊、酒店、零售等產業，總就業效應將達到30,000個職位以上。
@@ -863,5 +863,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

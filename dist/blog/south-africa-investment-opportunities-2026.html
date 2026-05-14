@@ -614,23 +614,23 @@ width="1200" height="675" loading="eager">
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">2026年是投資南非房地產的好時機嗎？</div>
+<div class="qa-question" onclick="toggleFaq(this)">2026年是投資南非房地產的好時機嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">是的。2026年南非具備難得的投資窗口：利率處於降息週期（Prime Rate 10.75%）、蘭特仍被低估（USD/ZAR 16.50-17.50）、G20效應提升國際形象、房價處於轉折點（預計成長3.2%-4.5%）。對於外國投資者而言，現在進入市場可同時享受資產增值和匯率收益的「雙重回報」。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">南非對外國人購房有哪些限制？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南非對外國人購房有哪些限制？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">南非允許外國人自由購買住宅、商業和農業用地，無需政府審批或居留身份。外國人可申請銀行房貸（通常最高70% LTV），可出租並匯出租金收入。但需注意：租金收入需申報、出售時需繳納資本利得稅（個人最高18%）、非居民出售時需預扣最高15%所得稅。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">開普敦、約翰尼斯堡、德班哪個城市更適合投資？</div>
+<div class="qa-question" onclick="toggleFaq(this)">開普敦、約翰尼斯堡、德班哪個城市更適合投資？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">三城市各有優勢：開普敦國際化程度最高、生活品質最佳，適合保守型投資者（租金收益率4-6%）；約翰尼斯堡經濟活動集中、租金收益率高（8-10%），適合平衡型投資者；德班租金收益率最高（8-10%）且進入門檻最低，適合積極型投資者。建議根據自身風險承受能力和投資目標選擇。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">投資南非房地產的主要風險有哪些？</div>
+<div class="qa-question" onclick="toggleFaq(this)">投資南非房地產的主要風險有哪些？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">主要風險包括：治安風險（部分區域犯罪率較高）、匯率波動風險（蘭特可能貶值）、政治風險（政府聯盟內部存在分歧）、基礎設施風險（部分地區水和電供應不穩定）。緩解措施包括：選擇封閉式社區、分散貨幣配置、通過信託結構持有資產、進行充分的區域盡職調查。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">南非目前的利率環境如何？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南非目前的利率環境如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">南非儲備銀行（SARB）在2025年下半年啟動降息週期。截至2026年3月，Repo Rate為7.25%，Prime Rate為10.75%，較2024年高峰的11.75%已下降100個基點。市場預期2026年內仍有進一步降息空間，Prime Rate可能降至10.25%-10.50%。現在是進場鎖定融資成本的好時機。</div>
 </div>
 </div>
@@ -872,5 +872,11 @@ All rights reserved. | Taichung, Taiwan
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

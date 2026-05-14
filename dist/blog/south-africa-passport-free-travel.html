@@ -402,19 +402,19 @@ width="1200" height="675">
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">什麼是ICAO數位旅行憑證（DTC）？</div>
+<div class="qa-question" onclick="toggleFaq(this)">什麼是ICAO數位旅行憑證（DTC）？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">ICAO數位旅行憑證（Digital Travel Credential, DTC）是由國際民航組織開發的新一代旅行證件系統，採用雙組件設計：虛擬組件（DTC-VC）儲存在手機或雲端，物理組件（DTC-PC）為升級後的電子護照晶片。系統的核心是全程使用生物識別（特別是面部識別）來確認旅客身份，徹底改變百年傳統的護照+人工查驗模式。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">南非什麼時候開始實施無護照旅行？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南非什麼時候開始實施無護照旅行？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">DTC系統目前處於自願採用階段，各國可根據準備情況逐步引入。南非作為非洲最大航空樞紐之一，預計將在2027-2028年間開始試點。值得注意的是，實體護照在短期內仍不會被完全取代，旅客仍需攜帶護照作為備份身份證明。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">無護照旅行對旅客有什麼優勢？</div>
+<div class="qa-question" onclick="toggleFaq(this)">無護照旅行對旅客有什麼優勢？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">主要優勢包括：大幅縮短邊境處理時間（從平均5-7分鐘降至30秒至1分鐘）、減少身份偽造和護照遺失風險、實現「無縫旅行」體驗（從報到到登機全流程刷臉完成）。此外，對於經常旅行的商務人士和投資者而言，時間節省意味著更高的效率和更低的時間成本。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">無護照旅行是否安全？個人隱私如何保障？</div>
+<div class="qa-question" onclick="toggleFaq(this)">無護照旅行是否安全？個人隱私如何保障？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">ICAO的DTC系統遵循嚴格的國際安全和隱私標準。所有生物識別數據均採用加密儲存，且僅在必要時才被讀取。系統設計本身已考慮到數據主權問題——各國政府將擁有自己的DTC驗證基礎設施，不存在單一集中式數據庫。旅客可隨時查看和刪除自己的生物識別數據，隱私權利受到明確保障。</div>
 </div>
 </div>
@@ -670,5 +670,13 @@ All rights reserved. | Taichung, Taiwan
  }
  });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

@@ -501,19 +501,19 @@ Frequently Asked Questions
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">How is Bank of America's EEMEA equity strategy ranking calculated?</div>
+<div class="qa-question" onclick="toggleFaq(this)">How is Bank of America's EEMEA equity strategy ranking calculated?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Bank of America's EEMEA (Europe, Middle East, Africa) equity strategy ranking uses six weighted indicators: valuation at 10%, historical valuation at 10%, earnings growth at 20%, price/momentum per share at 20%, dividends at 20%, and GEM fund allocation at 20%. In the latest report, South Africa ranked #1 with a weighted average score of 83, surpassing Saudi Arabia (81), Greece (79), Poland (77), Turkey (76), and the UAE (74).</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">The JSE experienced its worst month in nearly 20 years in March. Is now a good time to invest in South African stocks?</div>
+<div class="qa-question" onclick="toggleFaq(this)">The JSE experienced its worst month in nearly 20 years in March. Is now a good time to invest in South African stocks?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Although the JSE lost nearly R3 trillion in market capitalization in March 2026, mainly affected by international geopolitical factors including US and Israeli attacks on Iran and regional oil infrastructure shocks, Bank of America's ranking shows that South African equities' fundamentals remain strong long-term. The report specifically highlighted South African government economic reform achievements—including energy stability, logistics improvement, and fiscal management—as structural improvements laying the foundation for future recovery. After a significant correction, valuations are more attractive, potentially making this a good entry point for long-term investors.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">What does South African stocks occupying 12 of the top 20 positions mean for investors?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What does South African stocks occupying 12 of the top 20 positions mean for investors?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">This indicates South African companies are performing exceptionally collectively—not just individual giants shining. Companies selected include Northam Platinum (platinum group metals leader), Sibanye Stillwater (precious metals mining), and Ninety One (asset management), spanning mining, finance, agriculture, and other sectors. This broad-based corporate strength demonstrates South Africa's diversified economic foundation, giving investors abundant quality options to choose from.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">How can average investors participate in the South African market? What should they pay attention to?</div>
+<div class="qa-question" onclick="toggleFaq(this)">How can average investors participate in the South African market? What should they pay attention to?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Main ways to participate in the South African market include: direct purchase of South African stocks (opening accounts with local brokerages), investing in JSE major indices through ETFs (such as FTSE/JSE Top 40), or participating in South African Real Estate Investment Trusts (REITs). Working with an investment advisor with South African market expertise is strongly recommended, as South Africa's foreign exchange controls, tax structure, and regulatory environment differ significantly from markets familiar to Asian investors. DingYao Advisory provides full-service support from account opening to asset management, helping investors enter the South African market safely and in compliance.</div>
 </div>
 </div>
@@ -781,5 +781,13 @@ All rights reserved. | Taichung, Taiwan
  }
  });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

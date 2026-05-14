@@ -433,11 +433,11 @@ body { font-family: 'Noto Sans TC', sans-serif; }
 <hr class="border-t border-gray-200 my-8">
 
 <h2>常見問題</h2>
-<div class="qa-item"><div class="qa-question"><strong>Q：開普敦房屋外國人有限制嗎？</strong></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><strong>Q：開普敦房屋外國人有限制嗎？</strong></div>
 <div class="qa-answer">A：外國人可自由購買南非房產，貸款上限為房價的 50%，需準備至少 50% 自備款。</div></div>
-<div class="qa-item"><div class="qa-question"><strong>Q：蘭特匯率波動大，如何避險？</strong></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><strong>Q：蘭特匯率波動大，如何避險？</strong></div>
 <div class="qa-answer">A：建議採取長期持有策略，以租金收益覆蓋持有成本，並透過資產分散降低匯率風險。蘭特長期貶值趨勢對海外投資人反而有利——進場時以較低成本購入，未來蘭特回升時雙重獲利。</div></div>
-<div class="qa-item"><div class="qa-question"><strong>Q：包租代管的費用如何計算？</strong></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><strong>Q：包租代管的費用如何計算？</strong></div>
 <div class="qa-answer">A：專業包租代管服務通常收取租金的 10%至15% 作為管理費，但能將有效收益率從 3%至4% 提升至 6%至10%，整體投資報酬率反而更高。</div></div>
 <hr class="border-t border-gray-200 my-8">
 
@@ -578,6 +578,14 @@ yearSpan.textContent = `2025-${currentYear}`;
 });
 </script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 
 </html>

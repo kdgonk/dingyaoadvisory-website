@@ -719,23 +719,23 @@
                 </h2>
                 
                 <div class="qa-item">
-                    <div class="qa-question">What can R10.45 million ZAR buy in Cape Town real estate?</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">What can R10.45 million ZAR buy in Cape Town real estate?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">With R10.45 million ZAR (~R4.95M), you can purchase a villa or garden home in Cape Town. Key areas include Woodstock (~580㎡, 8-10% rental yield), Observatory (~650㎡, 5-7% yield), or Southern Suburbs properties in the R2.5-4.5 million range with annual rental yields reaching 8%.</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">What are South African bank deposit interest rates and actual returns?</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">What are South African bank deposit interest rates and actual returns?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">The SARB policy rate stands at 7% (post July 2025 rate cut), with actual fixed deposit rates around 7-8% annually. Depositing R5.55 million ZAR would grow to approximately R10.92 million ZAR after 10 years, generating pure interest income of approximately R5.37 million ZAR (~R2.83M).</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">What's the asset gap between Taiwan and Cape Town after 10 years with R7.43M?</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">What's the asset gap between Taiwan and Cape Town after 10 years with R7.43M?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">Taiwan option (all into property + savings): ~R12.73M after 10 years. Cape Town option (property + savings + rental): ~R14.87M after 10 years. The gap is approximately R2.14M, with Cape Town outperforming by about 17%.</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">How does Cape Town's cost of living compare to Taipei?</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">How does Cape Town's cost of living compare to Taipei?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">According to Numbeo 2025 data, Cape Town's single-person living cost (excluding rent) is approximately R8,500/month, about 22% lower than Taipei's R18,000/month. One-bedroom apartment rent in city center is R12,000/month vs R25,000/month in Taipei, approximately 30% lower in Cape Town.</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">Who is the Cape Town property investment best suited for?</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">Who is the Cape Town property investment best suited for?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">Ideal candidates include: retirees seeking passive income (7% deposits + rental yield far exceeds Asian rates), digital nomads (English-speaking environment + pleasant climate + low cost), long-term asset allocators (geographic risk diversification, South Africa interest rate benefits), and outdoor lifestyle enthusiasts (beaches, hiking, wine culture).</div>
                 </div>
             </div>
@@ -1003,5 +1003,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

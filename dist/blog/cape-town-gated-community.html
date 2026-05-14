@@ -825,32 +825,32 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q1：投資門檻是多少？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q1：投資門檻是多少？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer"><strong>R10,450,000 至 R11,000,000</strong>，視物件而定。Stellenbosch 入門門檻最低（2,600 萬），Durbanville 與 Constantia 分別為 2,750 萬與 2,700 萬。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q2：外國人可以買南非房地產嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q2：外國人可以買南非房地產嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">可以。南非允許外國人自由購買房地產，無需居留權或公民身份。封閉式社區屬於住宅用地，無額外限制。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q3：需要南非居留權嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q3：需要南非居留權嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">不需要。投資不綁定居留權，你可以純粹作為海外資產配置。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q4：封閉式社區安全性如何？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q4：封閉式社區安全性如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">封閉式社區配備 24 小時武裝保全、門禁管制、監視器系統。犯罪率比開放式社區低 85% 以上。保險公司通常給予 30-50% 的保費折扣。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q5：投資報酬率如何？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q5：投資報酬率如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">綜合報酬率約 <strong>14-16%/年</strong>（租金 8-10% + 資本增值 8%）。這是西開普省封閉式社區的平均水準（Property24、Lightstone 數據）。</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q6：我該如何開始？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q6：我該如何開始？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">三步驟：1. <strong>諮詢</strong>：與在地顧問討論你的投資目標。2. <strong>選址</strong>：根據預算與需求，選擇適合的區域與物件。3. <strong>執行</strong>：委託專業團隊處理簽約、過戶與後續管理。</div>
                     </div>
                 </div>
@@ -1079,5 +1079,13 @@
         }
     });
     </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

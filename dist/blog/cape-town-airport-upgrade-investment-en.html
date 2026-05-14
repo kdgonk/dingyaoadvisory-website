@@ -570,28 +570,28 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">When will the Cape Town Airport upgrade be completed?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">When will the Cape Town Airport upgrade be completed?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             According to ACSA's official announcement, the Cape Town International Airport upgrade is scheduled for completion by 2030 in phases. The first phase terminal expansion began in 2025 and is expected to be operational by 2028. After complete upgrade, the airport's annual passenger capacity will increase from 14 million to 20 million.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How will the airport upgrade affect surrounding property prices?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How will the airport upgrade affect surrounding property prices?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             According to research by Airports Council International (ACI), airport infrastructure investments typically drive property value increases within a 15-30 km radius. Areas surrounding Cape Town Airport such as Somerset West, Stellenbosch, and Bellville are expected to see 10-25% price appreciation between 2028-2030. This appreciation mainly comes from employment growth, commercial activity, and improved transportation accessibility.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How can Taiwanese investors purchase property in Cape Town?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How can Taiwanese investors purchase property in Cape Town?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Taiwanese investors can work with DingYao Advisory and our South African partner Crestline Advisory to transfer funds to a TPFA trust account, then make staged payments to developers according to contract milestones. Investment funds are deposited directly into the investor's personal Standard Bank exclusive account, without passing through the advisory company. The bank only releases funds upon investor authorization and when construction reaches contract milestones. The entire process complies with FICA anti-money laundering regulations.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How many jobs will the airport upgrade create?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How many jobs will the airport upgrade create?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             According to ACSA's official estimates, the Cape Town Airport upgrade will directly create approximately 15,000 construction-related jobs, including engineers, construction workers, project managers, and technical staff. Combined with indirect employment in logistics, tourism, hospitality, and retail sectors, the total employment impact is expected to exceed 30,000 positions. These jobs will be released progressively between 2025-2030, providing stable rental demand for the surrounding real estate market.
                         </div>
@@ -857,5 +857,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

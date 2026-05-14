@@ -405,19 +405,19 @@ FAQ
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">Why is FirstRand exiting the UK market?</div>
+<div class="qa-question" onclick="toggleFaq(this)">Why is FirstRand exiting the UK market?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">FirstRand's UK subsidiary MotoNovo was found to have engaged in unfair motor finance practices. The UK FCA required provisions of approximately £750 million (about $940 million). Facing this massive compensation claim, FirstRand decided to terminate its UK consumer finance operations through an "orderly exit".</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">What impact does this have on South Africa's financial sector?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What impact does this have on South Africa's financial sector?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">FirstRand's withdrawal serves as a profound lesson for South African banking, highlighting regulatory risks in overseas expansion, cross-border compliance costs, and regulatory chain effects. Other South African banks (such as Absa, Standard Bank) have similar operations in the UK and Europe and need to monitor for similar investigations.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">What are the implications for investing in South African financial stocks?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What are the implications for investing in South African financial stocks?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Investors need to watch: 1) Banking stocks may face short-term pressure; 2) Rand exchange rate risk; 3) Regulatory chain effects; 4) From a long-term perspective, FirstRand's core business fundamentals remain solid, and it can still maintain dividend payments even in the worst-case scenario.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">How should ordinary investors view cross-border regulatory risk?</div>
+<div class="qa-question" onclick="toggleFaq(this)">How should ordinary investors view cross-border regulatory risk?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Cross-border investment is not just about revenue figures and policy rates. Regulatory environments, compliance costs, and geopolitical risks can instantly change investment outcomes. Timely withdrawal and risk management are equally important when facing regulatory storms in overseas markets. This is precisely where professional investment advisors add value.</div>
 </div>
 </div>
@@ -666,5 +666,13 @@ All rights reserved. | Taichung, Taiwan
  }
  });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

@@ -725,42 +725,42 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Is Cape Town really suitable for Taiwanese residents?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Is Cape Town really suitable for Taiwanese residents?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Cape Town can be a worthwhile option for Taiwanese people, but benefits and drawbacks need to be weighed. Advantages include: pleasant climate (similar to Southern California), relatively low cost of living, low property entry threshold, and world-class natural landscapes. Challenges include: extra attention to safety needed, differences in healthcare systems from Taiwan, and primarily English/Afrikaans language environment. We recommend staying for several weeks on a tourist visa before making decisions to personally experience local life.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Why is Cape Town property so much cheaper than Taipei?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Why is Cape Town property so much cheaper than Taipei?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Reasons for Cape Town's relatively affordable property include: relatively abundant land supply, lower overall South African economic development level, weak South African Rand exchange rate, and market segmentation due to wealth inequality. Notably, Cape Town's premium residential areas (like Clifton, Bantry Bay) have prices comparable to Taipei's prime locations, but overall average prices show a dramatic gap. This also means you can purchase high-quality property at reasonable prices in Cape Town.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How much monthly budget is needed to live in Cape Town?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How much monthly budget is needed to live in Cape Town?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             According to Numbeo data, Cape Town's monthly cost for one person (excluding rent) is approximately R25,000-35,000. Adding rent (city centre one-bedroom ~R32,759), total monthly expenditure is around R60,000-70,000. Compared to Taipei's monthly expenditure (including rent ~R55,000-65,000), Cape Town's overall cost of living is slightly higher, but considering the higher quality of life and climate, the value proposition remains outstanding.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How serious are Cape Town's safety issues?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How serious are Cape Town's safety issues?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Cape Town's Safety Index is 26.46, rated "Low" on Numbeo. This means residents need to remain vigilant and take precautions. However, safety issues primarily concentrate in specific areas; Cape Town's wealthy suburbs (like the Southern Suburbs) are relatively safe. Many international residents choose to live in secured gated communities and take basic safety measures (avoiding night solo walks, not flaunting wealth). For those accustomed to Taiwan's highly safe environment, adaptation is required.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">What are the tax considerations for investing in Cape Town property?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">What are the tax considerations for investing in Cape Town property?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             South African property investment involves: property transfer tax (calculated progressively based on property value), annual municipal rates, income tax (if renting out property), and capital gains tax (when selling). Foreign investors face the same tax rates as local residents, but note double taxation agreements between South Africa and Taiwan. We recommend consulting professional tax advisors to optimise tax structures. Additionally, South African mortgage rates are relatively high (~11.27%), making cash purchases potentially more economical.
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">What is Cape Town's healthcare quality like?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">What is Cape Town's healthcare quality like?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Cape Town's Health Care Index is 68.91, rated "High." South Africa has Africa's most developed healthcare system; Cape Town hosts multiple international-standard private hospitals with medical quality comparable to Europe. Private medical insurance costs approximately R5,000-15,000/month depending on coverage. For those accustomed to Taiwan's National Health Insurance, expectations for healthcare costs need adjustment. We recommend purchasing comprehensive international medical insurance to ensure access to optimal treatment in emergencies.
                         </div>
@@ -1048,5 +1048,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

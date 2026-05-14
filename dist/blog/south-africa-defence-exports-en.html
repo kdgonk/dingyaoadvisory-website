@@ -490,27 +490,27 @@ Frequently Asked Questions
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">How large is South Africa's defence industry?</div>
+<div class="qa-question" onclick="toggleFaq(this)">How large is South Africa's defence industry?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">In 2025, South Africa's defence exports reached $550 million, selling to 42 countries. South Africa is Africa's only significant arms exporter.</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">What weapons does South Africa mainly export?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What weapons does South Africa mainly export?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Mainly ammunition, armoured vehicles, aircraft and aviation equipment. Germany is the largest ammunition buyer, while African countries are primary armoured vehicle customers.</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">Why is Germany buying ammunition from South Africa?</div>
+<div class="qa-question" onclick="toggleFaq(this)">Why is Germany buying ammunition from South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Cost advantage, available capacity, and quality certified to NATO standards. After the Russia-Ukraine war, European defence production capacity was insufficient.</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">What impact does this have on South Africa's economy?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What impact does this have on South Africa's economy?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Defence exports bring foreign exchange income, technology spillover effects, and high value-added employment. This signals South Africa's transformation from resource exporter to technology exporter.</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">Why should investors care?</div>
+<div class="qa-question" onclick="toggleFaq(this)">Why should investors care?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">This shows South Africa's industry is upgrading and economic structure is diversifying. Defence export data provides a concrete industry indicator for assessing South Africa's long-term investment environment.</div>
 </div>
 </div>
@@ -672,5 +672,11 @@ All rights reserved. | Taichung, Taiwan
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

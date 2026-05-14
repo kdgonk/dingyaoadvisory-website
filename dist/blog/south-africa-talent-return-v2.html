@@ -835,35 +835,35 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">南非的治安問題嚴重嗎？投資安全嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">南非的治安問題嚴重嗎？投資安全嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             全世界的大城市都有治安問題——巴黎有扒手，倫敦也要注意安全。開普敦精華區（如 Atlantic Seaboard、City Bowl、V&A Waterfront）的安全程度與歐洲主要城市相當。投資前我們會為您詳細說明各區域特性，協助您選擇適合的標的。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">外國人可以在南非購買房地產嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">外國人可以在南非購買房地產嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             可以。南非是非洲少數允許外國人完全擁有不動產的國家。外國人可購買住宅、公寓、商業地產、土地，享有與本國公民相同的產權保障。唯一限制是購買農地或邊境敏感區域需特別許可，但一般住宅投資完全開放。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦的租金收益率如何？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦的租金收益率如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             開普敦濱海區長租年收益率可達 5-7%，旺季短租更可達 10% 以上，遠優於倫敦（3%）、巴黎（2.5%）等成熟市場。人才回流潮帶動高端租賃需求，是進場的好時機。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">資金匯出入會有困難嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">資金匯出入會有困難嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             南非外匯管制已大幅放寬，資金進出相對自由。但大額資金匯出需要稅務清關等程序，建議透過專業顧問協助辦理。鼎曜可提供資金匯出入的一條龍服務。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">子女可以在開普敦接受國際教育嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">子女可以在開普敦接受國際教育嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             可以。開普敦有完善的國際學校體系，從幼兒園到高中都有英語授課的優質選擇。開普敦大學是非洲排名第一的大學，學位國際認可。英式教育體系可無縫銜接英國研究所，是亞洲家庭子女教育的優質選擇。
                         </div>
@@ -1157,5 +1157,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

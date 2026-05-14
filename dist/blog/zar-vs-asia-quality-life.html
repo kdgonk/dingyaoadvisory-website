@@ -793,23 +793,23 @@
                 </h2>
                 
                 <div class="qa-item">
-                    <div class="qa-question">R16,000,000在開普敦可以買什麼樣的房產？</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">R16,000,000在開普敦可以買什麼樣的房產？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">以R10,450,000（R10,450,000）可在開普敦購買花園住宅或翻新 loft。重點區域包括Woodstock（約580㎡、8-10%租金收益率）、Observatory（約650㎡、5-7%收益率）或Southern Suburbs（200-250㎡花園住宅）。</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">南非銀行的定存利率是多少？實際收益如何？</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">南非銀行的定存利率是多少？實際收益如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">南非SARB政策利率為7%（2026年4月），實際定存利率約6.5%年息（日結月付複利）。以R5,550,000（R5,550,000）存入，十年後本金+利息可達約R102,650,000，純利息收入約R50,500,000。</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">R16,000,000放在台灣與開普敦，十年後資產差距有多大？</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">R16,000,000放在台灣與開普敦，十年後資產差距有多大？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">台灣方案（全部投入房產）：十年後總資產約R217,900,000。開普敦方案（房產+定存+租金）：十年後總資產約R286,250,000。差距約R68,350,000，開普敦方案勝出約31%。</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">開普敦生活成本與台北相比如何？</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">開普敦生活成本與台北相比如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">根據Numbeo 2026數據，開普敦單人生活成本（不含房租）約R8,500/月（R8,000），比台北約R10,000低約20%。市中心一房房租約R12,000/月（R11,500），比台北約R14,000低約18%。私立醫療費用更是台北的一半。</div>
                 </div>
                 <div class="qa-item">
-                    <div class="qa-question">哪些人適合選擇開普敦置產方案？</div>
+                    <div class="qa-question" onclick="toggleFaq(this)">哪些人適合選擇開普敦置產方案？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                     <div class="qa-answer">適合族群包括：追求被動收入的退休人士（7%定存+租金收益遠超亞洲）、數位遊牧工作者（英語環境+宜居氣候+低成本）、長期資產配置者（分散地理風險、享受南非利率紅利）、熱愛戶外生活者（海灘、登山、葡萄酒文化）。</div>
                 </div>
             </div>
@@ -1077,5 +1077,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

@@ -666,28 +666,28 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">為什麼南非被評為全球最安全的國家之一？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">為什麼南非被評為全球最安全的國家之一？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             根據2026年3月國際媒體報導，南非入選全球最安全國家第11位。這主要基於其獨特的地理位置優勢（距離主要衝突區超過12,000公里）、政治中立立場（不結盟運動成員、BRICS成員國但保持獨立外交政策）、豐富的自然資源自給能力，以及穩定的氣候條件。這些因素綜合起來，使南非成為極端情況下的理想避風港。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">台灣人投資南非房地產的門檻是多少？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">台灣人投資南非房地產的門檻是多少？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             透過鼎曜國際顧問與南非在地夥伴合作，投資款匯入律師TPFA信託帳戶，依合約里程碑撥款至開發商，交屋後剩餘資金轉入Standard Bank Wealth私人銀行帳戶，全程合規並符合FICA反洗錢法規。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">南非的房地產投資報酬率如何？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">南非的房地產投資報酬率如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             根據南非房地產市場數據，開普敦等優質區域的租賃收益率平均可達8-10%，遠高於台灣的2%左右。同時空置率僅約1%，遠低於一般國際標準，顯示租賃市場需求強勁，能為投資人帶來穩定的被動收入。加上南非幣對處於相對低點，現在進場具有良好的匯率優勢。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">投資南非房地產可以取得永久居留權嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">投資南非房地產可以取得永久居留權嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             是的。透過符合南非政府規定的房地產投資金額，投資人及其直系親屬可以申請南非永久居留權（Permanent Residency）。取得永久居留權後，享有與南非公民幾乎相同的權利，包括工作、教育、醫療等，並可在未來申請入籍。這為投資人及其家人提供了一個「亂世保險」。
                         </div>
@@ -954,5 +954,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

@@ -418,11 +418,11 @@ Lifestyle <i class="fas fa-chevron-down ml-1 text-xs opacity-50 transition-trans
 <hr class="border-t border-gray-200 my-8">
 
 <h2>FAQ</h2>
-<div class="qa-item"><div class="qa-question"><strong>Q: Are there restrictions on foreign property ownership in Cape Town?</strong></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><strong>Q: Are there restrictions on foreign property ownership in Cape Town?</strong></div>
 <div class="qa-answer">A: Foreigners can freely purchase South African property. The loan ceiling is 50% of the property value, requiring at least 50% down payment.</div></div>
-<div class="qa-item"><div class="qa-question"><strong>Q: The rand has high volatility—how to hedge currency risk?</strong></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><strong>Q: The rand has high volatility—how to hedge currency risk?</strong></div>
 <div class="qa-answer">A: We recommend a long-term holding strategy, using rental income to cover holding costs, and reducing currency risk through asset diversification. The rand's long-term depreciation trend actually benefits overseas investors—you buy at a lower Taiwan dollar cost, and benefit doubly when the rand strengthens.</div></div>
-<div class="qa-item"><div class="qa-question"><strong>Q: How are rental management fees calculated?</strong></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><strong>Q: How are rental management fees calculated?</strong></div>
 <div class="qa-answer">A: Professional rental management services typically charge 10% to 15% of rent as management fees, but can increase effective yields from 3% to 4% up to 6% to 10%—overall investment returns are actually higher.</div></div>
 <hr class="border-t border-gray-200 my-8">
 
@@ -561,6 +561,14 @@ yearSpan.textContent = `2025-${currentYear}`;
 });
 </script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 
 </html>

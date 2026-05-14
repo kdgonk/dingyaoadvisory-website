@@ -198,10 +198,10 @@
 <section class="max-w-4xl mx-auto px-4 py-12 bg-white rounded-3xl shadow-lg">
 <h2 class="text-2xl font-bold text-[#0F172A] mb-8 text-center">常見問題</h2>
 <div id="faq">
-<div class="qa-item"><div class="qa-question"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>Bank of America的EEMEA股票策略排名是如何計算的？</div><div class="qa-answer">採用六項加權指標：估值10%、歷史估值10%、盈利增長20%、價格/每股動能20%、股息20%、GEM基金配置20%。南非以加權平均83分排名第一。</div></div>
-<div class="qa-item"><div class="qa-question"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>JSE三月經歷了近20年最差月份，現在是投資好時機嗎？</div><div class="qa-answer">經歷大幅回調後，估值更具吸引力。Bank of America報告顯示南非長期基本面仍然強勁，對長線投資者可能是進場好時機。</div></div>
-<div class="qa-item"><div class="qa-question"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>南非股票在前20名中占12席意味著什麼？</div><div class="qa-answer">南非企業整體表現優異，市場質量獲得國際機構認可。入選企業涵蓋礦業、金融等多個領域。</div></div>
-<div class="qa-item"><div class="qa-question"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>一般投資者如何參與南非市場？</div><div class="qa-answer">可透過直接購買南非股票、ETF投資JSE指數、或參與南非REITs。建議透過專業顧問進行。</div></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>Bank of America的EEMEA股票策略排名是如何計算的？</div><div class="qa-answer">採用六項加權指標：估值10%、歷史估值10%、盈利增長20%、價格/每股動能20%、股息20%、GEM基金配置20%。南非以加權平均83分排名第一。</div></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>JSE三月經歷了近20年最差月份，現在是投資好時機嗎？</div><div class="qa-answer">經歷大幅回調後，估值更具吸引力。Bank of America報告顯示南非長期基本面仍然強勁，對長線投資者可能是進場好時機。</div></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>南非股票在前20名中占12席意味著什麼？</div><div class="qa-answer">南非企業整體表現優異，市場質量獲得國際機構認可。入選企業涵蓋礦業、金融等多個領域。</div></div>
+<div class="qa-item"><div class="qa-question" onclick="toggleFaq(this)"><i class="fas fa-question-circle text-[#C5A059] mr-2"></i>一般投資者如何參與南非市場？</div><div class="qa-answer">可透過直接購買南非股票、ETF投資JSE指數、或參與南非REITs。建議透過專業顧問進行。</div></div>
 </div>
 </section>
 
@@ -293,5 +293,13 @@ yearSpan.textContent = `2025-${currentYear}`;
 }
 });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

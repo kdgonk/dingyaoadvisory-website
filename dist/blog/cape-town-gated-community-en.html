@@ -827,32 +827,32 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q1: What is the investment threshold?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q1: What is the investment threshold?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer"><strong>TWD 26 million to TWD 27.5 million</strong>, depending on the property. Stellenbosch has the lowest entry threshold (TWD 26 million), while Durbanville and Constantia are TWD 27.5 million and TWD 27 million respectively.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q2: Can foreigners buy South African property?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q2: Can foreigners buy South African property?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Yes. South Africa permits foreign nationals to freely purchase real estate without requiring residence rights or citizenship. Gated communities are residential properties with no additional restrictions.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q3: Do I need South African residency?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q3: Do I need South African residency?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">No. Investment does not tie to residency—you can treat it purely as overseas asset allocation.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q4: How secure are gated communities?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q4: How secure are gated communities?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Gated communities feature 24-hour armed security, access control, and CCTV systems. Crime rates are over 85% lower than open communities. Insurance companies typically offer 30-50% premium discounts.</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q5: What are the investment returns?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q5: What are the investment returns?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Combined return of approximately <strong>14-16% annually</strong> (rental 8-10% + capital appreciation 8%). This is the average for Western Cape gated communities (Property24, Lightstone data).</div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Q6: How do I get started?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Q6: How do I get started?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">Three steps: 1. <strong>Consultation</strong>: Discuss your investment objectives with local advisors. 2. <strong>Site Selection</strong>: Choose suitable areas and properties based on budget and needs. 3. <strong>Execution</strong>: Engage professional team for signing, transfer, and ongoing management.</div>
                     </div>
                 </div>
@@ -1081,5 +1081,13 @@
         }
     });
     </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

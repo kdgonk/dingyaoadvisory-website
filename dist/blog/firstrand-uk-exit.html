@@ -405,19 +405,19 @@ FirstRand 撤離英國市場
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">FirstRand 為什麼要撤離英國市場？</div>
+<div class="qa-question" onclick="toggleFaq(this)">FirstRand 為什麼要撤離英國市場？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">FirstRand 的英國子公司 MotoNovo 因涉及不公平汽車金融實務，被英國金融行為監管局（FCA）要求增提約7.5億英鎊的賠償準備金。面對這筆鉅額賠償，FirstRand 決定終止在英國的消費金融業務，進行「有序退出」。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">這件事對南非金融業有什麼影響？</div>
+<div class="qa-question" onclick="toggleFaq(this)">這件事對南非金融業有什麼影響？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">FirstRand 的撤退對南非銀行業是一次深刻的教育，凸顯了海外擴張的監理風險、跨國法規遵循成本，以及監管環境的連鎖效應。其他南非銀行（如 Absa、Standard Bank）在英國或歐洲也有類似業務，需密切關注是否面臨類似調查。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">對投資南非金融股有什麼啟示？</div>
+<div class="qa-question" onclick="toggleFaq(this)">對投資南非金融股有什麼啟示？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">投資者需關注：1) 銀行股短期可能承壓；2) 南非蘭特匯率風險；3) 監管環境的連鎖效應；4) 長期視角下，FirstRand 核心業務體質仍然穩健，即使在最壞情況下仍能維持股利發放。</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">一般投資者該如何看待跨國監管風險？</div>
+<div class="qa-question" onclick="toggleFaq(this)">一般投資者該如何看待跨國監管風險？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">跨國投資不只是看營收數字和政策利率，監管環境、法規遵循成本、地緣政治風險都可能瞬間改變投資命運。在海外市場遭遇監管風暴時，及時撤退與風險管理同樣重要。這正是專業投資顧問的價值所在。</div>
 </div>
 </div>
@@ -667,5 +667,13 @@ All rights reserved. | Taichung, Taiwan
  }
  });
 </script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
+<script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

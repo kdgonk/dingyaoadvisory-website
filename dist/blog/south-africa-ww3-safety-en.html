@@ -767,7 +767,7 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">Is South Africa really ranked 11th among the world's safest countries?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">Is South Africa really ranked 11th among the world's safest countries?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Yes, according to comprehensive rankings from multiple international security assessment institutions in March 2026, South Africa ranks 11th among the world's safest countries.
                             This ranking considers multiple factors including geographic location, political neutrality, natural resource self-sufficiency, and climate stability.
@@ -776,7 +776,7 @@
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How far is South Africa from major conflict zones?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How far is South Africa from major conflict zones?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             South Africa is located at the southernmost tip of the African continent, approximately 12,000 kilometers from Taiwan, 8,000-10,000 kilometers from major European cities,
                             and about 7,000 kilometers from Middle Eastern conflict zones. This geographic position provides a natural buffer advantage in potential global conflicts.
@@ -785,7 +785,7 @@
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">What kind of returns can I expect from real estate investment in South Africa?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">What kind of returns can I expect from real estate investment in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             According to South African real estate market data, rental yields in major cities like Cape Town average 7%, with vacancy rates around only 1%,
                             significantly outperforming many mature markets. Additionally, with continued international capital inflow, capital appreciation potential is considerable.
@@ -794,7 +794,7 @@
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">How can foreigners obtain permanent residence in South Africa?</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">How can foreigners obtain permanent residence in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             Foreign investors can apply for Permanent Residence (PR) through South Africa's investment immigration program, with an investment threshold of approximately R22 million.
                             DingYao Advisory provides comprehensive consulting services to help investors understand the application process, prepare documentation,
@@ -1092,5 +1092,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

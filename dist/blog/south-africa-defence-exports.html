@@ -492,27 +492,27 @@ width="1200" height="675">
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">南非軍工產業有多大？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南非軍工產業有多大？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">2025年南非國防出口達5.5億美元，銷售到42個國家。雖然規模無法與美國、俄羅斯相比，但南非是非洲唯一有規模的軍工出口國。</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">南非主要出口什麼武器？</div>
+<div class="qa-question" onclick="toggleFaq(this)">南非主要出口什麼武器？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">主要出口彈藥（佔最大宗）、裝甲車、飛機及航空設備。德國是彈藥最大買家，非洲國家是裝甲車主要客戶。</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">為什麼德國要跟南非買彈藥？</div>
+<div class="qa-question" onclick="toggleFaq(this)">為什麼德國要跟南非買彈藥？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">成本優勢、產能充足、品質通過北約認證。俄烏戰爭後歐洲軍工產能不足，需要外部供應鏈支援。</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">這對南非經濟有什麼影響？</div>
+<div class="qa-question" onclick="toggleFaq(this)">這對南非經濟有什麼影響？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">軍工出口帶來外匯收入、技術外溢效應、高附加價值就業機會。這是南非從資源出口國向技術出口國轉型的信號。</div>
 </div>
 
 <div class="qa-item">
-<div class="qa-question">台灣投資者為什麼要關注？</div>
+<div class="qa-question" onclick="toggleFaq(this)">台灣投資者為什麼要關注？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">這顯示南非產業正在升級，經濟結構多元化。對於評估南非投資環境的長期價值，軍工出口數據提供了一個具體的產業指標。</div>
 </div>
 </div>
@@ -675,5 +675,11 @@ All rights reserved. | Taichung, Taiwan
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

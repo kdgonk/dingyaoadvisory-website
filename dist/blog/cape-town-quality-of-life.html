@@ -721,42 +721,42 @@
                     </h2>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦真的適合台灣人居住嗎？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦真的適合台灣人居住嗎？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             開普敦對台灣人來說是一個值得考慮的選擇，但需要權衡利弊。優勢包括：氣候宜人（類似南加州）、生活成本相對較低、房產入場門檻低、自然景觀世界級。挑戰包括：安全問題需要額外注意、醫療體系與台灣有差異、語言環境以英語和非洲語為主。建議在做出決定前，先以觀光簽證停留數週，親自體驗當地生活。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦的房價為什麼比台北便宜這麼多？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦的房價為什麼比台北便宜這麼多？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             開普敦房價相對便宜的原因包括：土地供給相對充裕、南非整體經濟發展水準較低、南非蘭特匯率弱勢、貧富差距導致市場分化。值得注意的是，開普敦的高端住宅區（如 Clifton、Bantry Bay）價格與台北精華區相近，但整體平均價格差距巨大。這也意味著在開普敦，可以用合理價格購買高品質的房產。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">在開普敦生活，一個月需要多少預算？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">在開普敦生活，一個月需要多少預算？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             根據 Numbeo 數據，開普敦一個人的月生活成本（不含房租）約為R5,000-7,000。加上房租（市中心一房公寓約R6,500），每月總支出約R12,000-14,000。相比台北的每月支出（含房租約R11,000-13,000），開普敦的總體生活成本略高，但考慮到更高的生活品質和氣候，性價比仍然突出。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦的安全問題有多嚴重？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦的安全問題有多嚴重？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             開普敦的安全指數為 26.46，在 Numbeo 評級中屬於「低」。這意味著居民需要保持警覺，採取預防措施。然而，安全問題主要集中在特定區域，開普敦的富裕郊區（如南部郊區）相對安全。許多國際居民選擇住在有保全的封閉式社區，並採取基本的安全措施（如不在夜間獨行、不露財等）。對於習慣台灣高度安全環境的人來說，這需要適應。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">投資開普敦房產有什麼稅務考量？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">投資開普敦房產有什麼稅務考量？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             南非房產投資涉及的稅務包括：房產轉讓稅（根據房產價值階梯計算）、年度市政稅、所得稅（如果出租房產）、資本利得稅（出售時）。外國投資者與本地居民稅率相同，但需注意南非與台灣之間的雙重課稅協定。建議諮詢專業稅務顧問，優化稅務結構。此外，南非的房貸利率較高（約 11.27%），現金購買可能更為划算。
                         </div>
                     </div>
                     
                     <div class="qa-item">
-                        <div class="qa-question">開普敦的醫療水準如何？</div>
+                        <div class="qa-question" onclick="toggleFaq(this)">開普敦的醫療水準如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
                         <div class="qa-answer">
                             開普敦的醫療指數為 68.91，屬於「高」評級。南非擁有非洲最發達的醫療體系，開普敦擁有多家國際級私立醫院，醫療水準與歐洲相當。私立醫療保險費用約為R 5,000-15,000 元/月，視覆蓋範圍而定。對於習慣台灣全民健保的人來說，需要調整對醫療成本的預期。建議購買完善的國際醫療保險，確保在緊急情況下能夠獲得最佳治療。
                         </div>
@@ -1045,5 +1045,11 @@
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>

@@ -611,23 +611,23 @@ Frequently Asked Questions
 </h2>
 
 <div class="qa-item">
-<div class="qa-question">Is 2026 a good time to invest in South African real estate?</div>
+<div class="qa-question" onclick="toggleFaq(this)">Is 2026 a good time to invest in South African real estate?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Yes. 2026 presents a rare investment window: interest rates in a cutting cycle (Prime Rate 10.75%), Rand remains undervalued (USD/ZAR 16.50-17.50), G20 effect enhanced international image, and house prices at a turning point (expected growth 3.2%-4.5%). Foreign investors can enjoy both asset appreciation and currency gains—a rare "double return" opportunity.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">What restrictions apply to foreigners buying property in South Africa?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What restrictions apply to foreigners buying property in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">South Africa allows foreigners to freely purchase residential, commercial, and agricultural land without government approval or residency status. Foreigners can obtain bank mortgages (typically up to 70% LTV) and can rent and remit rental income. Note: rental income must be declared, CGT applies on sale (up to 18% for individuals), and non-residents are subject to up to 15% withholding tax on property sales.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">Which city is better for investment: Cape Town, Johannesburg, or Durban?</div>
+<div class="qa-question" onclick="toggleFaq(this)">Which city is better for investment: Cape Town, Johannesburg, or Durban?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Each city has distinct advantages: Cape Town offers highest internationalization and quality of life, suitable for conservative investors (rental yield 4-6%); Johannesburg has concentrated economic activity with high yields (8-10%), suitable for balanced investors; Durban offers highest yields (8-10%) and lowest entry barriers, suitable for aggressive investors. Choose based on your risk tolerance and objectives.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">What are the main risks of investing in South African real estate?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What are the main risks of investing in South African real estate?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">Key risks include: security risk (higher crime in some areas), currency volatility (Rand may fluctuate), political risk (coalition divisions), and infrastructure risk (water/electricity in some areas). Mitigation: choose gated communities, diversify currency exposure, hold assets through trusts, and conduct thorough due diligence.</div>
 </div>
 <div class="qa-item">
-<div class="qa-question">What is the current interest rate environment in South Africa?</div>
+<div class="qa-question" onclick="toggleFaq(this)">What is the current interest rate environment in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
 <div class="qa-answer">SARB began its rate cutting cycle in H2 2025. As of March 2026, Repo Rate is 7.25% and Prime Rate is 10.75%—down 100 basis points from the 2024 peak of 11.75%. The market expects further cuts in 2026, with Prime Rate potentially falling to 10.25%-10.50%. Now is an excellent time to lock in financing costs.</div>
 </div>
 </div>
@@ -869,5 +869,11 @@ All rights reserved. | Taichung, Taiwan
 <!-- Odoo Live Chat -->
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/loader/1"></script>
 <script defer type="text/javascript" src="https://portal.dingyaoadvisory.tw/im_livechat/assets_embed.js"></script>
+<script>function toggleFaq(el) {
+    const item = el.closest('.qa-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
+    if (!wasOpen) { item.classList.add('open'); }
+}</script>
 </body>
 </html>
