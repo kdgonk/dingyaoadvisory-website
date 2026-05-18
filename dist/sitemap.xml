@@ -873,5 +873,21 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    
+<!-- South Africa vs Taiwan Property ROI Article (2026-05-18) -->
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/sa-tw-property-roi.html</loc>
+        <lastmod>2026-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+<!-- South Africa vs Taiwan Property ROI Article English (2026-05-18) -->
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/sa-tw-property-roi-en.html</loc>
+        <lastmod>2026-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
 </urlset>
