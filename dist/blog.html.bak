@@ -190,37 +190,6 @@
         <div class="max-w-7xl mx-auto">
             <div id="blog-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 <!-- Article: Samsung Strike Crisis (NEW AFTERNOON - 2026-05-15) -->
-
-                
-                <!-- Article: Capital Exodus - Taiwan Stock Volatility to Cape Town Real Estate (NEWEST - 2026-05-18) -->
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
-                    <div class="relative">
-                        <img src="https://assets.dingyaoadvisory.tw/blog/images/capital-haven-hero.webp" alt="全球資金大挪移：台股震盪下，開普敦房產成為資金避風港" class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-brand-gold text-white text-xs font-bold px-2.5 py-1 rounded-full">海外投資</span>
-                        </div>
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full animate-pulse">NEW</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2 line-clamp-2">
-                            <a href="blog/capital-haven.html" class="hover:text-brand-gold transition-colors">全球資金大挪移：台股震盪下，開普敦房產成為資金避風港</a>
-                        </h3>
-                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">2026年5月開盤以來台股面臨「資金大逃殺」，外資連續大幅賣超。VIX攀升至18.43、TSM ADR跌幅達3.20%，投資人該如何配置資產？開普敦房地產以8-10%有效租金報酬率、僅約5%年化波動率，成為高資產投資人的資金避風港...</p>
-                        <div class="flex items-center justify-between text-xs text-slate-500">
-                            <div class="flex items-center gap-2">
-                                <i class="far fa-calendar text-brand-gold"></i>
-                                <time datetime="2026-05-18">2026年5月18日</time>
-                            </div>
-                            <div class="flex items-center gap-1">
-                                <i class="far fa-clock text-brand-gold"></i>
-                                <span>8 分鐘</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- End Article: Capital Exodus -->
 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="trend">
     <div class="aspect-[16/10] overflow-hidden">
         <a href="blog/samsung-strike-supply-chain-vs-cape-town-property.html">

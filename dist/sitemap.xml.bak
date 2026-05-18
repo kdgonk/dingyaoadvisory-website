@@ -856,22 +856,4 @@
     <lastmod>2026-05-15</lastmod>
     <priority>0.8</priority>
 </url>
-
-    
-    <!-- Capital Haven Article (2026-05-18) -->
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/capital-haven.html</loc>
-        <lastmod>2026-05-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Capital Haven Article English (2026-05-18) -->
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/capital-haven-en.html</loc>
-        <lastmod>2026-05-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
 </urlset>
