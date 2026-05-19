@@ -889,5 +889,20 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    
+<!-- Global Capital Rotation Taiwan Market Volatility to Cape Town Property (2026-05-19) -->
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/taiwan-capital-flight-cape-town-property</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/taiwan-capital-flight-cape-town-property-en</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
 
 </urlset>
