@@ -920,4 +920,19 @@
         <priority>0.80</priority>
     </url>
 
+    <!-- Article: SA Property Recovery G20 Opportunity (2026-05-20) -->
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/2026-05-20-sa-property-recovery-g20-opportunity</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/2026-05-20-sa-property-recovery-g20-opportunity-en</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
 </urlset>
