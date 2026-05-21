@@ -899,4 +899,22 @@
         <priority>0.8</priority>
     </url>
 
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts"/>
+  </url>
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts-en</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/taiwan-high-net-worth-overseas-accounts"/>
+  </url>
 </urlset>
