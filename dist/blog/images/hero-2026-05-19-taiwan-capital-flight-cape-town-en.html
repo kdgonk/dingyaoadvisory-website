@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    width: 1200px; height: 630px;
+    font-family: "Montserrat", "Inter", "Noto Sans TC", sans-serif;
+    display: flex; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Left Side - Taiwan Stock Turbulence */
+.left-section {
+    width: 50%;
+    background: linear-gradient(180deg, #0d1b2a 0%, #1b263b 50%, #0d1b2a 100%);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+/* Right Side - Cape Town Safe Haven */
+.right-section {
+    width: 50%;
+    background: linear-gradient(180deg, #1e3a5f 0%, #2d5a87 50%, #e8b87d 100%);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+/* Central Arrow */
+.arrow-container {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+.arrow {
+    width: 0; height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 60px solid #d4a574;
+    filter: drop-shadow(0 4px 15px rgba(212,165,116,0.5));
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+/* Left Side Elements */
+.chart-area {
+    width: 100%; height: 180px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.candle {
+    position: absolute;
+    bottom: 0;
+    width: 12px;
+    border-radius: 2px;
+}
+.candle-red {
+    background: linear-gradient(to top, #c53030, #fc8181);
+    box-shadow: 0 0 10px rgba(197,48,48,0.4);
+}
+.candle-green {
+    background: linear-gradient(to top, #38a169, #68d391);
+}
+
+.vix-badge {
+    position: absolute; top: 30px; left: 30px;
+    background: rgba(197,48,48,0.9);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tw-stock-label {
+    font-size: 28px; font-weight: 700;
+    color: #fc8181;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.decline-box {
+    background: rgba(197,48,48,0.2);
+    border: 2px solid #c53030;
+    border-radius: 12px;
+    padding: 15px 30px;
+    text-align: center;
+}
+.decline-number {
+    font-size: 48px; font-weight: 800;
+    color: #fc8181;
+}
+.decline-sub {
+    font-size: 18px; color: rgba(255,255,255,0.7);
+}
+
+/* Right Side Elements */
+.mountain-silhouette {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 200px;
+    background: linear-gradient(to top, #1a1a2e 0%, transparent 100%);
+    z-index: 1;
+}
+
+.ct-label {
+    font-size: 28px; font-weight: 700;
+    color: #fef3c7;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+.yield-box {
+    background: rgba(56,161,105,0.3);
+    border: 2px solid #38a169;
+    border-radius: 12px;
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 10;
+}
+.yield-number {
+    font-size: 48px; font-weight: 800;
+    color: #68d391;
+}
+.yield-sub {
+    font-size: 18px; color: rgba(255,255,255,0.9);
+}
+
+.safe-haven-badge {
+    position: absolute; top: 30px; right: 30px;
+    background: rgba(56,161,105,0.9);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Bottom Title */
+.main-title {
+    position: absolute; bottom: 40px; left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 20;
+}
+.main-title-text {
+    font-size: 24px; font-weight: 700;
+    color: #fef3c7;
+    white-space: nowrap;
+}
+.main-sub-text {
+    font-size: 14px; color: #d4a574;
+    margin-top: 5px;
+}
+
+/* Logo */
+.logo { 
+    position: absolute; bottom: 15px; right: 25px; 
+    color: rgba(255,255,255,0.5); font-size: 12px;
+    font-weight: 500; letter-spacing: 1px;
+    z-index: 20;
+}
+
+/* Coin Flow Effect */
+.coin {
+    position: absolute;
+    width: 20px; height: 20px;
+    background: linear-gradient(135deg, #ffd700, #d4a574);
+    border-radius: 50%;
+    z-index: 15;
+}
+.coin-1 { left: 45%; top: 30%; animation: flow1 3s infinite; }
+.coin-2 { left: 48%; top: 50%; animation: flow2 3s infinite 0.5s; }
+.coin-3 { left: 46%; top: 70%; animation: flow1 3s infinite 1s; }
+@keyframes flow1 {
+    0% { transform: translateX(0) scale(1); opacity: 0; }
+    20% { opacity: 1; }
+    100% { transform: translateX(80px) scale(0.5); opacity: 0; }
+}
+@keyframes flow2 {
+    0% { transform: translateX(0) scale(1); opacity: 0; }
+    20% { opacity: 1; }
+    100% { transform: translateX(100px) scale(0.5); opacity: 0; }
+}
+</style>
+</head>
+<body>
+<div class="left-section">
+    <div class="vix-badge">VIX ↑ 18.5</div>
+    <div class="tw-stock-label">TAIEX Taiwan</div>
+    <div class="chart-area">
+        <div class="candle candle-red" style="left: 10%; height: 60%; width: 8%;"></div>
+        <div class="candle candle-red" style="left: 22%; height: 70%; width: 8%;"></div>
+        <div class="candle candle-red" style="left: 34%; height: 80%; width: 8%;"></div>
+        <div class="candle candle-red" style="left: 46%; height: 95%; width: 8%;"></div>
+        <div class="candle candle-red" style="left: 58%; height: 100%; width: 8%;"></div>
+        <div class="candle candle-red" style="left: 70%; height: 90%; width: 8%;"></div>
+        <div class="candle candle-green" style="left: 82%; height: 40%; width: 8%;"></div>
+    </div>
+    <div class="decline-box">
+        <div class="decline-number">-523 pts</div>
+        <div class="decline-sub">Single Day Drop -1.25%</div>
+    </div>
+</div>
+
+<div class="right-section">
+    <div class="safe-haven-badge">SAFE HAVEN</div>
+    <div class="ct-label">CAPE TOWN</div>
+    <svg class="mountain-silhouette" viewBox="0 0 600 200" preserveAspectRatio="none">
+        <path d="M0,200 L0,150 L100,120 L200,80 L300,140 L400,100 L500,130 L600,90 L600,200 Z" fill="#0f3460" opacity="0.6"/>
+        <path d="M0,200 L0,170 L80,160 L200,140 L300,160 L400,140 L500,150 L600,160 L600,200 Z" fill="#16213e" opacity="0.8"/>
+    </svg>
+    <div class="yield-box">
+        <div class="yield-number">6-10%</div>
+        <div class="yield-sub">Annual Rental Yield</div>
+    </div>
+</div>
+
+<div class="arrow-container">
+    <div class="arrow"></div>
+</div>
+
+<div class="coin coin-1"></div>
+<div class="coin coin-2"></div>
+<div class="coin coin-3"></div>
+
+<div class="main-title">
+    <div class="main-title-text">Global Capital Migration</div>
+    <div class="main-sub-text">Amid Taiwan Stock Volatility, Cape Town Property Becomes Safe Haven</div>
+</div>
+
+<div class="logo">DING YAO ADVISORY</div>
+</body>
+</html>

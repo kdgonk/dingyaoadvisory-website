@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    width: 1200px; 
+    height: 630px; 
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #1B4D5C 0%, #0d2f3a 50%, #1B4D5C 100%);
+    position: relative;
+}
+.gold-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse at 20% 80%, rgba(212,175,55,0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(212,175,55,0.2) 0%, transparent 40%);
+}
+.content {
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    right: 60px;
+    z-index: 10;
+}
+.tag {
+    display: inline-block;
+    background: linear-gradient(90deg, #D4AF37, #F4D03F);
+    color: #1B4D5C;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.title {
+    color: #F5F5F5;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+.subtitle {
+    color: #D4AF37;
+    font-size: 28px;
+    font-weight: 600;
+}
+.mountain {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(160deg, #0a3d4a 0%, #062830 100%);
+    clip-path: polygon(100% 100%, 60% 20%, 30% 60%, 0% 100%);
+    opacity: 0.8;
+}
+.city {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(to top, #0d2f3a, transparent);
+}
+.building {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, #1a4a5a, #2d6a7a);
+    border-radius: 2px 2px 0 0;
+}
+.b1 { right: 50px; width: 60px; height: 120px; }
+.b2 { right: 120px; width: 50px; height: 160px; }
+.b3 { right: 180px; width: 70px; height: 100px; }
+.b4 { right: 260px; width: 45px; height: 140px; }
+.b5 { right: 315px; width: 55px; height: 90px; }
+.g20-badge {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #D4AF37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D4AF37;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+}
+</style>
+</head>
+<body>
+<div class="gold-accent"></div>
+<div class="mountain"></div>
+<div class="city">
+    <div class="building b1"></div>
+    <div class="building b2"></div>
+    <div class="building b3"></div>
+    <div class="building b4"></div>
+    <div class="building b5"></div>
+</div>
+<div class="g20-badge">G20<br>2026</div>
+<div class="content">
+    <div class="tag">Investment Opportunity</div>
+    <div class="title">South Africa Property Recovery</div>
+    <div class="subtitle">10.5% Rates + G20 Summit | The Window is Open</div>
+</div>
+</body>
+</html>

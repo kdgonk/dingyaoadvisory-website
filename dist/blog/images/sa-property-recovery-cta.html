@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    width: 1200px; 
+    height: 400px; 
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    position: relative;
+    background: linear-gradient(90deg, #1B4D5C 0%, #0d3d4a 40%, #1a4a5a 100%);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse at 80% 50%, rgba(212,175,55,0.25) 0%, transparent 50%);
+}
+.content {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    z-index: 10;
+}
+.title {
+    color: #F5F5F5;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.highlight {
+    color: #D4AF37;
+}
+.subtitle {
+    color: rgba(245,245,245,0.8);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #D4AF37, #F4D03F);
+    color: #1B4D5C;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 20px rgba(212,175,55,0.4);
+}
+.accent-line {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    bottom: 60px;
+    width: 6px;
+    background: linear-gradient(180deg, #D4AF37 0%, rgba(212,175,55,0.2) 100%);
+    border-radius: 3px;
+}
+.visual {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background: 
+        linear-gradient(135deg, rgba(27,77,92,0.3) 0%, transparent 100%),
+        repeating-linear-gradient(45deg, rgba(212,175,55,0.05) 0px, rgba(212,175,55,0.05) 1px, transparent 1px, transparent 20px);
+}
+.property-icon {
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 120px;
+    opacity: 0.3;
+    color: #D4AF37;
+}
+.stats {
+    position: absolute;
+    right: 80px;
+    bottom: 50px;
+    text-align: right;
+}
+.stat-item {
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+}
+.stat-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: #D4AF37;
+}
+.stat-label {
+    font-size: 13px;
+    color: rgba(245,245,245,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="visual"></div>
+<div class="property-icon">🏢</div>
+<div class="accent-line"></div>
+<div class="content">
+    <div class="title">The <span class="highlight">Western Cape Recovery</span> Window is Open</div>
+    <div class="subtitle">7-12% Annual Appreciation • 40% Foreign Buyer Increase</div>
+    <div class="cta-button">Explore Your Opportunity →</div>
+</div>
+<div class="stats">
+    <div class="stat-item">
+        <div class="stat-value">7-12%</div>
+        <div class="stat-label">Appreciation</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-value">5-9%</div>
+        <div class="stat-label">Rental Yield</div>
+    </div>
+</div>
+</body>
+</html>
