@@ -221,39 +221,6 @@
     </div>
 </article>
 <!-- End Article: South African Landlord Confidence Hits 11-Year High -->
-
-<!-- Article: When the Rand Falls: Why USD/ZAR 16.44 Is a Once-in-a-Decade Cape Town Property Window (NEW Afternoon Release - 2026-05-22) -->
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="currency">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/zar-at-1644-cape-town-property-en.html">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-at-1644-cape-town-property-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-at-1644-cape-town-property-hero.jpg" alt="When the Rand Falls: Why USD/ZAR 16.44 Is a Once-in-a-Decade Cape Town Property Window" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="eager" decoding="async">
-            </picture>
-        </a>
-    </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Currency Strategy</span>
-            <span class="px-2 py-1 bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-medium rounded-full animate-pulse">NEW Afternoon Release</span>
-        </div>
-        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-            <a href="blog/zar-at-1644-cape-town-property-en.html" class="hover:text-[#C5A059] transition">When the Rand Falls: Why USD/ZAR 16.44 Is a Once-in-a-Decade Cape Town Property Window</a>
-        </h3>
-        <p class="text-gray-600 text-sm mb-4 line-clamp-3">The USD/ZAR exchange rate has fallen to 16.44, creating an 11.8% entry discount for dollar‑based investors. This article uncovers how to convert rand weakness into Cape Town property alpha via the dual‑engine cash‑flow structure.</p>
-        <div class="flex items-center justify-between text-sm text-gray-500">
-            <div class="flex items-center gap-2">
-                <i class="far fa-calendar text-[#C5A059]"></i>
-                <time datetime="2026-05-22">May 22, 2026</time>
-            </div>
-            <div class="flex items-center gap-1">
-                <i class="far fa-clock text-[#C5A059]"></i>
-                <span>8 min</span>
-            </div>
-        </div>
-    </div>
-</article>
-<!-- End Article: When the Rand Falls: Why USD/ZAR 16.44 Is a Once-in-a-Decade Cape Town Property Window -->
 <!-- Article: South Africa Elite Estates: Five-Year Price Growth Analysis (NEW Morning Release - 2026-05-22) -->
 <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="estate-market">
     <div class="aspect-[16/10] overflow-hidden">
