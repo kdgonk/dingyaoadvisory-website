@@ -185,69 +185,85 @@
         </div>
     </nav>
     
-    <!-- Blog Grid -->
+    <!-- Blog Grid: Hero + Standard Layout -->
     <section class="py-16 px-4 bg-gray-50">
         <div class="max-w-7xl mx-auto">
-                                                        <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/sarb-mpc-may-2026-property-guide-en.html">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-mpc-may-2026-property-guide-hero.jpg" alt="SARB MPC Rate Decision & Cape Town Property Investment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30 text-xs font-medium rounded-full">Property Investment</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-500 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
+            <div id="blog-posts">
+                <!-- Featured Hero Article (First Article - SARB MPC) -->
+                <article class="hero-card mb-8 bg-white rounded-3xl overflow-hidden shadow-xl card-hover" data-category="investment">
+                    <div class="grid lg:grid-cols-2 gap-0">
+                        <div class="aspect-[16/10] lg:aspect-auto lg:h-full overflow-hidden">
+                            <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="block h-full">
+                                <picture>
+                                    <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-mpc-may-2026-property-guide-hero.webp" type="image/webp">
+                                    <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-mpc-may-2026-property-guide-hero.jpg" alt="SARB MPC Rate Decision & Cape Town Property Investment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="eager">
+                                </picture>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="hover:text-[#C5A059] transition">SARB MPC Meeting Preview: Property Investor's Guide to Rate Decisions</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">How the SARB May rate decision impacts Cape Town property. Dual-engine delivers R 1.17M-1.38M/year across rate scenarios. Entry threshold R 16,000,000.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>May 27, 2026</span>
-                            <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                        <div class="p-8 lg:p-10 flex flex-col justify-center">
+                            <div class="flex flex-wrap items-center gap-3 mb-4">
+                                <span class="px-3 py-1.5 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/40 text-sm font-semibold rounded-full">Property Investment</span>
+                                <span class="px-3 py-1.5 bg-green-500/20 text-green-700 border border-green-500/40 text-sm font-semibold rounded-full animate-pulse">NEW</span>
+                            </div>
+                            <h2 class="text-2xl lg:text-3xl font-bold text-[#0F172A] mb-4 leading-tight">
+                                <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="hover:text-[#C5A059] transition">SARB MPC Meeting Preview: Property Investor's Guide to Rate Decisions</a>
+                            </h2>
+                            <p class="text-gray-600 text-base lg:text-lg mb-6 line-clamp-3 lg:line-clamp-4">How the SARB May rate decision impacts Cape Town property. Dual-engine delivers R 1.17M-1.38M/year across rate scenarios. Attorney trust protection, Standard Bank Wealth call account. Entry threshold R 16,000,000.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500 mt-auto">
+                                <span class="flex items-center gap-2"><i class="far fa-calendar"></i>May 27, 2026</span>
+                                <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="inline-flex items-center gap-2 bg-[#C5A059] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#B08D4E] transition shadow-lg">
+                                    Deep Dive <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </article>
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
+
+                <!-- Standard Grid (Remaining Articles) -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="standard-posts">
+                
+                <!-- Article 1: Cape Town Tech Expansion -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-tech-semigration-2026-en.html">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-tech-semigration-2026-hero.jpg" alt="Cape Town Tech Expansion & Semigration 2.0" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
+                        <a href="blog/cape-town-tech-semigration-2026-en.html" class="block">
+                            <picture>
+                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-tech-semigration-2026-hero.webp" type="image/webp">
+                                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-tech-semigration-2026-hero.jpg" alt="Cape Town Tech Expansion & Semigration 2.0" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
-                    <div class="p-6">
+                    <div class="p-5">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30 text-xs font-medium rounded-full">Property Investment</span>
-                            
                         </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
+                        <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">
                             <a href="blog/cape-town-tech-semigration-2026-en.html" class="hover:text-[#C5A059] transition">Cape Town Tech Expansion Drives Property Demand: Semigration 2.0 Investment Opportunities</a>
                         </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Western Cape housing demand grew 58% in 5 years. Tech talent drives rental demand with 8-10% yields. Dual-engine cash flow from R 1,171,000/year. Entry threshold R 16,000,000.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Western Cape housing demand grew 58% in 5 years. Tech talent drives rental demand with 8-10% yields.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
                             <span><i class="far fa-calendar mr-1"></i>May 26, 2026</span>
                             <a href="blog/cape-town-tech-semigration-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
                         </div>
                     </div>
                 </article>
-<!-- Article: Cape Town Tech Expansion & Semigration 2.0 (NEW Morning Release - 2026-05-26) -->
-
-                            <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
+                
+                <!-- Article 2: Rental Occupancy -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-rental-occupancy-2026-en.html">
+                        <a href="blog/cape-town-rental-occupancy-2026-en.html" class="block">
                             <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.jpg" alt="Cape Town Rental Occupancy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="p-6">
+                    <div class="p-5">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30 text-xs font-medium rounded-full">Property Investment</span>
                             <span class="px-2 py-1 bg-green-500/20 text-green-500 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
+                        <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">
                             <a href="blog/cape-town-rental-occupancy-2026-en.html" class="hover:text-[#C5A059] transition">Cape Town Rental Occupancy 2026: Why It Guarantees Stable Returns for Overseas Investors</a>
                         </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Western Cape premium properties maintain 92-96% occupancy with just 2-4 weeks vacancy. Semigration and remote work trends drive Cape Town rental market.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Western Cape premium properties maintain 92-96% occupancy with just 2-4 weeks vacancy.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-500">
                             <span><i class="far fa-calendar mr-1"></i>May 25, 2026</span>
                             <a href="blog/cape-town-rental-occupancy-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
                         </div>
@@ -676,7 +692,13 @@
                 this.classList.remove('bg-white/10');
                 this.classList.add('bg-white/30');
                 const category = this.dataset.category;
-                const posts = document.querySelectorAll('article');
+                // Handle hero card visibility
+                const heroCard = document.querySelector('.hero-card');
+                if (heroCard) {
+                    heroCard.style.display = (category === 'all' || heroCard.dataset.category === category) ? 'block' : 'none';
+                }
+                // Handle standard posts
+                const posts = document.querySelectorAll('#standard-posts article');
                 posts.forEach(post => { post.style.display = (category === 'all' || post.dataset.category === category) ? 'block' : 'none'; });
             });
         });
