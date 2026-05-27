@@ -517,4 +517,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-short-term-rentals"/>
 </url>
 <!-- 2026-05-22 - 6 articles -->
-  </urlset>
+  
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide"/>
+    </url>
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide-en</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/sarb-mpc-may-2026-property-guide"/>
+    </url>
+
+</urlset>
