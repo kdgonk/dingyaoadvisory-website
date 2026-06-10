@@ -1,0 +1,27 @@
+{
+  "name": "DingYao Advisory",
+  "description": "南非開普敦置產投資顧問",
+  "url": "https://dingyaoadvisory.tw",
+  "contact": {
+    "email": "info@dingyaoadvisory.tw"
+  },
+  "services": [
+    "海外置產顧問",
+    "留學規劃",
+    "退休移民",
+    "永久居留權"
+  ],
+  "core_product": {
+    "name": "R16M 南非置產方案",
+    "investment": "南非幣 1600 萬",
+    "structure": "房產 R10.45M + 費用 R0.55M + 活存 R5M",
+    "annual_return": "R1.17M - R1.38M",
+    "yield": "7.3% - 8.6%"
+  },
+  "content_author": "Scott Huang | Business Development",
+  "language": [
+    "zh-TW",
+    "en"
+  ],
+  "last_updated": "2026-06-10"
+}
