@@ -1,0 +1,62 @@
+# llms.txt
+
+> 鼎曜國際顧問官方網站 - 南非開普敦置產投資、留學規劃、退休移民諮詢服務
+
+## About
+
+鼎曜國際顧問提供專業的南非開普敦置產顧問服務，協助客戶進行海外資產配置、子女留學規劃、退休移民安排。
+
+### 核心服務
+- 海外置產顧問
+- 頂級留學規劃
+- 退休移居方案
+- 永久居留權 (PR)
+
+### 核心產品：R16M 南非置產方案
+- 總投資：南非幣 1600 萬（約新台幣 2700 萬）
+- 結構：房產 R10.45M + 費用 R0.55M + 活存 R5M
+- 年收：R1.17M - R1.38M（約 7.3% - 8.6% 收益率）
+- 訂金：R70K（固定，不退）
+- 保留期：60 天
+
+## Docs
+
+### 核心頁面
+- [首頁](/index.html) — 公司介紹與核心服務
+- [房產列表](/assets) — 開普敦精選物業
+- [聯絡諮詢](/contact) — 預約諮詢服務
+
+### 部落格文章 (Blog)
+- [專欄文章列表 (中文)](/blog)
+- [Blog Articles (English)](/blog-en)
+
+## Sitemap
+
+```
+/                    → 首頁
+/blog                → 專欄文章列表 (中文)
+/blog-en             → Blog Articles (English)
+/assets              → 房產列表
+/contact             → 聯絡諮詢
+/sitemap.xml         → XML Sitemap
+/llms.txt            → AI Search Optimization
+/webmcp.json         → AI Assistant Navigation
+/.well-known/ai.json → AI Metadata
+```
+
+## Optional
+
+### SEO 與結構化資料
+- 所有文章使用 JSON-LD 結構化資料 (Article + FAQPage + BreadcrumbList)
+- 圖片原創，不使用第三方素材
+- 中英文版本同步發布
+- 作者：Scott Huang | Business Development
+
+### 內容政策
+- 所有數據使用真實產品規格
+- 每篇文章配圖原創
+- 70%+ 內容聚焦開普敦置產
+
+---
+
+Last updated: 2026-06-10

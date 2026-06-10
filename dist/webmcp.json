@@ -1,0 +1,83 @@
+{
+  "name": "DingYao Advisory",
+  "description": "南非開普敦置產投資顧問 - 專業海外置產、留學規劃、退休移民諮詢",
+  "version": "1.0.0",
+  "base_url": "https://dingyaoadvisory.tw",
+  "language": ["zh-TW", "en"],
+  "ai_readable": {
+    "llms_txt": "/llms.txt",
+    "sitemap": "/sitemap.xml"
+  },
+  "pages": {
+    "home": {
+      "zh": "/",
+      "en": "/index-en.html",
+      "purpose": "首頁 - 公司介紹與核心服務"
+    },
+    "blog": {
+      "zh": "/blog",
+      "en": "/blog-en",
+      "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析"
+    },
+    "assets": {
+      "zh": "/assets",
+      "en": "/assets-en",
+      "purpose": "房產列表 - 開普敦精選物業"
+    },
+    "contact": {
+      "zh": "/contact",
+      "en": "/contact-en",
+      "purpose": "聯絡諮詢 - 預約諮詢服務"
+    }
+  },
+  "contact": {
+    "email": "info@dingyaoadvisory.tw",
+    "phone": "+886-2-XXXX-XXXX",
+    "address": "台北市信義區信義路五段"
+  },
+  "key_information": {
+    "core_product": {
+      "name": "R16M 南非置產方案",
+      "investment": "南非幣 1600 萬（約新台幣 2700 萬）",
+      "structure": "房產 R10.45M + 費用 R0.55M + 活存 R5M",
+      "annual_return": "R1.17M - R1.38M",
+      "yield": "7.3% - 8.6%",
+      "deposit": "R70K（固定，不退）",
+      "retention": "60 天保留期"
+    },
+    "services": [
+      "海外置產顧問",
+      "頂級留學規劃",
+      "退休移居方案",
+      "永久居留權諮詢"
+    ],
+    "company": {
+      "name": "鼎曜國際顧問",
+      "entity": "鼎曜國際顧問有限公司",
+      "registration": "台灣註冊公司"
+    }
+  },
+  "content_categories": [
+    {
+      "name": "投資趨勢",
+      "slug": "investment",
+      "description": "南非房地產市場分析與投資機會"
+    },
+    {
+      "name": "移民資訊",
+      "slug": "immigration",
+      "description": "南非簽證、永久居留權、公民申請"
+    },
+    {
+      "name": "稅務規劃",
+      "slug": "tax",
+      "description": "跨國稅務、資產配置建議"
+    },
+    {
+      "name": "生活指南",
+      "slug": "lifestyle",
+      "description": "開普敦生活、教育、醫療資訊"
+    }
+  ],
+  "last_updated": "2026-06-10"
+}
