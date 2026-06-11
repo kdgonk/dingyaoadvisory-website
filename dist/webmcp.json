@@ -3,7 +3,10 @@
   "description": "南非開普敦置產投資顧問 - 專業海外置產、留學規劃、退休移民諮詢",
   "version": "1.0.0",
   "base_url": "https://dingyaoadvisory.tw",
-  "language": ["zh-TW", "en"],
+  "language": [
+    "zh-TW",
+    "en"
+  ],
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -17,7 +20,23 @@
     "blog": {
       "zh": "/blog",
       "en": "/blog-en",
-      "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析"
+      "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
+      "articles": [
+        {
+          "url": "https://dingyaoadvisory.tw/blog/sa-tax-emigration-cape-town-investment-2026",
+          "title": "南非稅務移民潮下的開普敦房產：海外投資者如何掌握雙向機遇",
+          "description": "南非高淨值人士加速稅務移民出走，海外投資者卻逆勢進入開普敦。R 16,000,000 雙引擎配置掌握租金與利息雙重現金流，通過律師信託保護架構安全持有資產。",
+          "language": "zh-TW",
+          "date_published": "2026-06-11"
+        },
+        {
+          "url": "https://dingyaoadvisory.tw/blog/sa-tax-emigration-cape-town-investment-2026-en",
+          "title": "Cape Town Property Amid South Africa's Tax Emigration Wave: A Strategic Guide for Overseas Investors",
+          "description": "South African HNWIs are accelerating tax emigration, yet overseas investors are entering Cape Town from the opposite direction. The R 16,000,000 dual-engine allocation captures rental yield and interest income through lawyer trust protection.",
+          "language": "en",
+          "date_published": "2026-06-11"
+        }
+      ]
     },
     "assets": {
       "zh": "/assets",
@@ -79,5 +98,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-10"
+  "last_updated": "2026-06-11"
 }
