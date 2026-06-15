@@ -23,6 +23,16 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-cape-town-property-safe-haven-2026",
+          "title": "SARB三年來首次升息至7%：開普敦房產為何仍是海外投資避風港",
+          "description": "SARB升息至7.00%，本地按掭族壓力驟增，但海外現金買家反而獲得競爭力提升。雙引擎年現金流R 1,171,000-1,380,000。"
+        },
+        {
+          "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-cape-town-property-safe-haven-2026-en",
+          "title": "SARB Rate Hike to 7%: Why Cape Town Property Remains a Safe Haven for Overseas Investors",
+          "description": "SARB raises repo rate to 7.00% - mortgage stress for locals, but cash buyers gain competitive edge. Dual-engine annual cash flow R 1,171,000-1,380,000."
+        },
+        {
           "url": "https://dingyaoadvisory.tw/blog/south-africa-credit-upgrade-cape-town-investment-2026",
           "title": "南非21年来首获信用评级升级：开普敦成为国际投资者新宠",
           "description": "Fitch 21年来首次上调南非评级至BB，10年期国债收益率暴跌148基点。开普敦双引擎现金流 R 1,171,000-R 1,380,000/年，律师信托保护架构保障资金安全。",
@@ -112,5 +122,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-13"
+  "last_updated": "2026-06-15"
 }
