@@ -23,6 +23,20 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "url": "https://dingyaoadvisory.tw/blog/myciti-phase2a-infrastructure-cape-town-property-investment",
+          "title": "MyCiTi Phase 2A 完工啟動：R100億交通基建如何重塑開普敦房產投資版圖",
+          "description": "MyCiTi Phase 2A 巴士車廠完工，R100億交通基建啟動開普敦南部走廊TOD紅利。海外現金買家雙引擎年現金流R 1,171,000-1,380,000，律師信託保護保障資金安全。",
+          "language": "zh-TW",
+          "date_published": "2026-06-16"
+        },
+        {
+          "url": "https://dingyaoadvisory.tw/blog/myciti-phase2a-infrastructure-cape-town-property-investment-en",
+          "title": "MyCiTi Phase 2A Infrastructure Complete: How R10 Billion Transport Investment Reshapes Cape Town Property Values",
+          "description": "MyCiTi Phase 2A depots complete: R10 billion transport infrastructure unlocks TOD premiums across Cape Town southern corridor. Dual-engine annual cash flow R 1,171,000-1,380,000 with legal trust protection.",
+          "language": "en",
+          "date_published": "2026-06-16"
+        },
+        {
           "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-cape-town-property-safe-haven-2026",
           "title": "SARB三年來首次升息至7%：開普敦房產為何仍是海外投資避風港",
           "description": "SARB升息至7.00%，本地按掭族壓力驟增，但海外現金買家反而獲得競爭力提升。雙引擎年現金流R 1,171,000-1,380,000。"
@@ -122,5 +136,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-15"
+  "last_updated": "2026-06-16"
 }
