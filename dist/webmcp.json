@@ -23,6 +23,20 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "開普敦 Uppers 高端住宅區價格堅挺：稀缺性如何創造海外置產的結構性優勢",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-uppers-luxury-property-investment-2026",
+          "language": "zh-TW",
+          "date": "2026-06-17",
+          "description": "Bishopscourt 五年翻近三倍至 R 30M、Constantia Upper 穩居 R 26M——Cape Town Uppers 的稀缺性如何為海外投資者創造結構性優勢。"
+        },
+        {
+          "title": "Cape Town's Uppers Hold Strong: Why Scarcity Creates Structural Advantage for Overseas Property Investment",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-uppers-luxury-property-investment-2026-en",
+          "language": "en",
+          "date": "2026-06-17",
+          "description": "Bishopscourt prices nearly tripled to R 30M in five years. Cape Town's Uppers defy market gravity through scarcity. Dual-engine cash flow from day one."
+        },
+        {
           "url": "https://dingyaoadvisory.tw/blog/myciti-phase2a-infrastructure-cape-town-property-investment",
           "title": "MyCiTi Phase 2A 完工啟動：R100億交通基建如何重塑開普敦房產投資版圖",
           "description": "MyCiTi Phase 2A 巴士車廠完工，R100億交通基建啟動開普敦南部走廊TOD紅利。海外現金買家雙引擎年現金流R 1,171,000-1,380,000，律師信託保護保障資金安全。",
@@ -136,5 +150,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-16"
+  "last_updated": "2026-06-17"
 }
