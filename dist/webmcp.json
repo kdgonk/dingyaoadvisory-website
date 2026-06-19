@@ -23,6 +23,20 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "SARB升息下的開普敦房產：為何海外投資者反而應該進場？",
+          "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-cape-town-foreign-investors-opportunity",
+          "language": "zh-TW",
+          "date_published": "2026-06-19",
+          "description": "SARB升息至7.00%，本地買家融資成本飚升，但開普敦高端市場82%為現金交易。海外投資者獲得三重優勢。"
+        },
+        {
+          "title": "SARB's Rate Hike and Cape Town Property: Why Foreign Investors Should Enter Now",
+          "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-cape-town-foreign-investors-opportunity-en",
+          "language": "en",
+          "date_published": "2026-06-19",
+          "description": "SARB raised the repo rate to 7.00%, squeezing local buyers but 82% of Cape Town premium transactions are cash deals."
+        },
+        {
           "language": "zh-TW",
           "title": "南非幣匯率優勢與開普敦置產時機：外國投資者的貨幣折扣窗口",
           "url": "https://dingyaoadvisory.tw/blog/zar-exchange-rate-cape-town-property-foreign-investors-2026",
@@ -166,5 +180,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-18"
+  "last_updated": "2026-06-19"
 }
