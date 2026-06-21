@@ -1,20 +1,20 @@
 {
   "name": "DingYao Advisory",
-  "description": "\u5357\u975e\u958b\u666e\u6566\u7f6e\u7522\u6295\u8cc7\u9867\u554f",
+  "description": "南非開普敦置產投資顧問",
   "url": "https://dingyaoadvisory.tw",
   "contact": {
     "email": "info@dingyaoadvisory.tw"
   },
   "services": [
-    "\u6d77\u5916\u7f6e\u7522\u9867\u554f",
-    "\u7559\u5b78\u898f\u5283",
-    "\u9000\u4f11\u79fb\u6c11",
-    "\u6c38\u4e45\u5c45\u7559\u6b0a"
+    "海外置產顧問",
+    "留學規劃",
+    "退休移民",
+    "永久居留權"
   ],
   "core_product": {
-    "name": "R16M \u5357\u975e\u7f6e\u7522\u65b9\u6848",
-    "investment": "\u5357\u975e\u5e63 1600 \u842c",
-    "structure": "\u623f\u7522 R10.45M + \u8cbb\u7528 R0.55M + \u6d3b\u5b58 R5M",
+    "name": "R16M 南非置產方案",
+    "investment": "南非幣 1600 萬",
+    "structure": "房產 R10.45M + 費用 R0.55M + 活存 R5M",
     "annual_return": "R1.17M - R1.38M",
     "yield": "7.3% - 8.6%"
   },
@@ -23,5 +23,5 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-06-20"
+  "last_updated": "2026-06-21"
 }

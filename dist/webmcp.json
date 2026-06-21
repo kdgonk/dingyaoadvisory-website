@@ -23,6 +23,20 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "開普敦 Southern Suburbs 豪宅區價格創新高：「The Uppers」五年翻倍背後的投資邏輯",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-southern-suburbs-luxury-property-record-prices-uppers",
+          "description": "Bishopscourt 均價迫近 R 30M、Constantia Upper 五年翻倍——開普敦 Southern Suburbs 的「The Uppers」豪宅帶正以結構性稀缺改寫價格紀錄。雙引擎現金流 R 1,171,000-1,380,000/年。",
+          "date": "2026-06-21",
+          "language": "zh-TW"
+        },
+        {
+          "title": "Cape Town Southern Suburbs Luxury Property Hits Record Prices: The Uppers Doubling in Five Years",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-southern-suburbs-luxury-property-record-prices-uppers-en",
+          "description": "Bishopscourt averages approach R 30M, Constantia Upper doubled to R 26M - structural scarcity rewriting price records. Dual-engine cash flow R 1,171,000-1,380,000/year.",
+          "date": "2026-06-21",
+          "language": "en"
+        },
+        {
           "title": "開普敦GrandWest R6.5億商場破土動工：當機構資本押注開普敦，個人投資者該怎麼做？",
           "url": "https://dingyaoadvisory.tw/blog/grandwest-mall-cape-town-infrastructure-investment",
           "description": "Sun International 與 Flanagan & Gerard 合資 R 650,000,000 的 GrandWest Mall 於 2026 年 6 月正式動工，70% 以上招商率證實機構級資本對開普敦的信心。雙引擎現金流 R 1,171,000-1,380,000/年。",
@@ -194,5 +208,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-20"
+  "last_updated": "2026-06-21"
 }
