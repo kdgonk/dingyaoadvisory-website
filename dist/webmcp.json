@@ -23,6 +23,20 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "開普敦豪宅區逆勢創新高：當全球經濟動盪，稀缺資產為何成為海外投資者的避風港",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-uppers-luxury-scarcity-investment-2026",
+          "description": "Bishopscourt 突破 R 30M、Kenilworth Upper 五年漲幅超 220%——開普敦 The Uppers 豪宅區逆勢創新高。R 16,000,000 雙引擎年現金流 R 1,171,000-1,380,000。",
+          "language": "zh-TW",
+          "date": "2026-06-22"
+        },
+        {
+          "title": "Cape Town Luxury Defies Downturn: Why Scarcity Assets Are the Safe Haven for Overseas Property Investors",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-uppers-luxury-scarcity-investment-2026-en",
+          "description": "Bishopscourt broke R 30M, Kenilworth Upper surged over 220% in five years. The Uppers defy economic headwinds. Dual-engine cash flow R 1,171,000-1,380,000/year.",
+          "language": "en",
+          "date": "2026-06-22"
+        },
+        {
           "title": "開普敦 Southern Suburbs 豪宅區價格創新高：「The Uppers」五年翻倍背後的投資邏輯",
           "url": "https://dingyaoadvisory.tw/blog/cape-town-southern-suburbs-luxury-property-record-prices-uppers",
           "description": "Bishopscourt 均價迫近 R 30M、Constantia Upper 五年翻倍——開普敦 Southern Suburbs 的「The Uppers」豪宅帶正以結構性稀缺改寫價格紀錄。雙引擎現金流 R 1,171,000-1,380,000/年。",
@@ -208,5 +222,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-22"
 }
