@@ -23,6 +23,22 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "Cape Town Property Prices Defy SARB's Rate Hike: Why the Market Is Still Booming at 7%",
+          "url": "/blog/cape-town-property-resilience-sarb-rate-hike-2026-en",
+          "description": "The Africanvestor June 2026 data: Cape Town property prices up 8-10% annually, Sea Point/Green Point surging 12-15%. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.",
+          "language": "en",
+          "category": "investment",
+          "date": "2026-06-24"
+        },
+        {
+          "title": "開普敦房價逆勢上揚：SARB升息至7%後，為何開普敦房市依然火熱？",
+          "url": "/blog/cape-town-property-resilience-sarb-rate-hike-2026",
+          "description": "The Africanvestor 2026年6月最新數據顯示開普敦房價年增8-10%，Sea Point/Green Point高達12-15%。R 16,000,000雙引擎年現金流R 1,171,000-1,380,000。",
+          "language": "zh-TW",
+          "category": "investment",
+          "date": "2026-06-24"
+        },
+        {
           "title": "開普敦房源半年驟減12.5%：供不應求如何創造海外買家的出租投資機會",
           "url": "https://dingyaoadvisory.tw/blog/cape-town-listing-supply-crunch-buy-to-let-2026",
           "description": "Property24 數據顯示開普敦房源庫存半年驟減12.5%，4房以上大戶型跌幅最劇（-15.6%）。R 16,000,000 雙引擎年現金流 R 1,171,000-1,380,000。",
@@ -236,5 +252,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-23"
+  "last_updated": "2026-06-24"
 }
