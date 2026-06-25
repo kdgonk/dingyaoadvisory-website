@@ -23,6 +23,20 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "Who's Buying Cape Town Property in 2026? Semigration, Foreign Buyers, and Bank Competition Driving Demand",
+          "url": "/blog/cape-town-property-demand-semigration-foreign-buyers-2026-en",
+          "description": "PropFlow360 June 2026: semigration drives Cape Town property demand, international buyers account for 40%+ of premium transactions, 7 banks compete. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.",
+          "language": "en",
+          "published": "2026-06-25"
+        },
+        {
+          "title": "開普敦房市需求大解析：誰在買？為什麼買？—— semigration、國際買家與銀行競爭的三重驅動力",
+          "url": "/blog/cape-town-property-demand-semigration-foreign-buyers-2026",
+          "description": "PropFlow360 2026年6月最新數據：semigration持續驅動開普敦房市，國際買家佔高端交易40%+，7家銀行激烈競爭。R 16,000,000雙引擎年現金流R 1,171,000-1,380,000。",
+          "language": "zh-TW",
+          "published": "2026-06-25"
+        },
+        {
           "title": "Cape Town Property Prices Defy SARB's Rate Hike: Why the Market Is Still Booming at 7%",
           "url": "/blog/cape-town-property-resilience-sarb-rate-hike-2026-en",
           "description": "The Africanvestor June 2026 data: Cape Town property prices up 8-10% annually, Sea Point/Green Point surging 12-15%. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.",
@@ -252,5 +266,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-24"
+  "last_updated": "2026-06-25"
 }
