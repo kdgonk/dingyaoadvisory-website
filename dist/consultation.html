@@ -3,32 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>隱私權政策 | 鼎曜國際顧問 DingYao Advisory</title>
-<meta name="description" content="鼎曜國際顧問 DingYao Advisory 隱私權政策 — 了解我們如何蒐集、使用及保護您的個人資料。">
-<meta name="keywords" content="隱私權政策, 個人資料保護, DingYao Advisory, 鼎曜國際顧問, 資料安全">
+<title>預約諮詢 | 鼎曜國際顧問 DingYao Advisory</title>
+<meta name="description" content="預約 DingYao Advisory 免費諮詢，獲取南非置產、教育諮詢、身分移居、數位資產託管等專業評估報告。">
+<meta name="keywords" content="預約諮詢, 南非置產諮詢, 免費評估, DingYao Advisory, 鼎曜國際顧問, 海外投資諮詢">
 <meta name="author" content="DingYao Advisory">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="隱私權政策 | 鼎曜國際顧問 DingYao Advisory">
-<meta property="og:description" content="了解我們如何蒐集、使用及保護您的個人資料。">
+<meta property="og:title" content="預約諮詢 | 鼎曜國際顧問 DingYao Advisory">
+<meta property="og:description" content="預約免費諮詢，獲取您的專屬投資評估報告。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://dingyaoadvisory.tw/privacy.html">
-<meta property="og:image" content="https://assets.dingyaoadvisory.tw/privacy-hero.avif">
+<meta property="og:url" content="https://dingyaoadvisory.tw/consultation.html">
+<meta property="og:image" content="https://dingyaoadvisory.tw/og-image.jpg">
 <meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="隱私權政策 | 鼎曜國際顧問">
-<meta name="twitter:description" content="了解我們如何蒐集、使用及保護您的個人資料。">
+<meta name="twitter:title" content="預約諮詢 | 鼎曜國際顧問">
+<meta name="twitter:description" content="預約免費諮詢，獲取您的專屬投資評估報告。">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "隱私權政策",
-  "description": "鼎曜國際顧問 DingYao Advisory 隱私權政策",
-  "url": "https://dingyaoadvisory.tw/privacy.html",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "鼎曜國際顧問 DingYao Advisory",
-    "url": "https://dingyaoadvisory.tw"
-  }
+  "@type": "FinancialService",
+  "name": "鼎曜國際顧問 DingYao Advisory — 預約諮詢",
+  "description": "預約免費諮詢，獲取專屬投資評估報告",
+  "url": "https://dingyaoadvisory.tw/consultation.html",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "台中市",
+    "addressRegion": "西屯區",
+    "addressCountry": "TW"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@dingyaoadvisory.tw",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.facebook.com/DingYaoAdvisory/",
+    "https://www.instagram.com/dingyaoadvisory",
+    "https://x.com/dingyaoadvisory",
+    "https://www.linkedin.com/company/dingyaoadvisory/"
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +71,7 @@
   --font-accent: 'Cinzel', 'Playfair Display', Georgia, serif;
   --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --transition-fast: all 0.2s ease;
-  --max-width: 900px;
+  --max-width: 1200px;
   --section-padding: 100px 24px;
 }
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -170,7 +182,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 
 /* ===== HERO ===== */
 .hero {
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -178,24 +190,24 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   overflow: hidden;
 }
 .hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
-.hero-bg picture, .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.hero-overlay {
-  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(135deg, rgba(10,14,23,0.85) 0%, rgba(10,14,23,0.5) 50%, rgba(10,14,23,0.7) 100%);
-  z-index: 1;
-}
 .hero-bg .gradient-1 {
   position: absolute; top: -20%; right: -10%;
   width: 800px; height: 800px;
   background: radial-gradient(circle, rgba(201, 168, 76, 0.06) 0%, transparent 60%);
-  border-radius: 50%; z-index: 2;
+  border-radius: 50%;
+}
+.hero-bg .gradient-2 {
+  position: absolute; bottom: -30%; left: -10%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(30, 58, 95, 0.08) 0%, transparent 60%);
+  border-radius: 50%;
 }
 .hero-bg .grid-overlay {
   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
   background-image: linear-gradient(rgba(201, 168, 76, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 168, 76, 0.03) 1px, transparent 1px);
-  background-size: 60px 60px; z-index: 2;
+  background-size: 60px 60px;
 }
-.hero-content { position: relative; z-index: 3; max-width: 800px; margin: 0 auto; text-align: center; }
+.hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; text-align: center; }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 8px 20px; border: 1px solid rgba(201, 168, 76, 0.2);
@@ -203,164 +215,199 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   color: var(--gold-pale); font-family: var(--font-accent);
   margin-bottom: 32px; background: rgba(201, 168, 76, 0.05);
 }
-.hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.1; margin-bottom: 8px; letter-spacing: -0.02em; }
-.hero-subtitle { font-size: clamp(1rem, 1.5vw, 1.2rem); color: var(--text-muted); max-width: 600px; margin: 24px auto 0; line-height: 1.8; }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 800; line-height: 1.1; margin-bottom: 8px; letter-spacing: -0.02em; }
+.hero h1 .gold-text { display: block; font-style: italic; font-weight: 700; }
+.hero-subtitle { font-size: clamp(1rem, 1.5vw, 1.25rem); color: var(--text-muted); max-width: 650px; margin: 24px auto 40px; line-height: 1.8; }
+.hero-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.hero-scroll {
+  position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: var(--text-muted); font-size: 0.7rem; letter-spacing: 2px;
+  font-family: var(--font-accent); animation: float 3s ease-in-out infinite;
+}
+.hero-scroll i { font-size: 1rem; }
+@keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
 
-/* ===== POLICY CONTENT ===== */
-.policy-content {
+/* ===== GUARANTEES ===== */
+.guarantees {
   background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
   position: relative;
 }
-.policy-content::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  opacity: 0.2;
+.guarantees-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
 }
-.policy-meta {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.policy-meta .last-updated {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-.policy-meta .last-updated span { color: var(--gold); }
-
-/* ===== ACCORDION ===== */
-.accordion-list { max-width: 800px; margin: 0 auto; }
-.accordion-item {
-  border: 1px solid var(--card-border);
-  margin-bottom: 12px;
-  background: var(--card-bg);
-  overflow: hidden;
-  transition: var(--transition-smooth);
-}
-.accordion-item:hover { border-color: rgba(201, 168, 76, 0.2); }
-.accordion-header {
-  width: 100%;
-  padding: 20px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: none;
-  border: none;
-  color: var(--warm-white);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  text-align: left;
-  transition: var(--transition-fast);
-  gap: 16px;
-}
-.accordion-header:hover { color: var(--gold); }
-.accordion-header i {
-  font-size: 0.8rem;
-  color: var(--gold);
-  transition: var(--transition-smooth);
-  flex-shrink: 0;
-}
-.accordion-item.active .accordion-header i { transform: rotate(180deg); }
-.accordion-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-}
-.accordion-item.active .accordion-body {
-  max-height: 600px;
-}
-.accordion-body-inner {
-  padding: 0 24px 20px;
-}
-.accordion-body-inner p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.8;
-  margin-bottom: 12px;
-}
-.accordion-body-inner p:last-child { margin-bottom: 0; }
-.accordion-body-inner ul { margin-bottom: 12px; }
-.accordion-body-inner ul li {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  padding: 4px 0;
-  padding-left: 20px;
-  position: relative;
-}
-.accordion-body-inner ul li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 12px;
-  width: 6px;
-  height: 6px;
-  background: var(--gold);
-  border-radius: 50%;
-}
-
-/* ===== DPO SECTION ===== */
-.dpo-section {
-  background: var(--navy-deep);
-  position: relative;
-  text-align: center;
-}
-.dpo-section::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  opacity: 0.2;
-}
-.dpo-card {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 48px 40px;
+.guarantee-card {
+  padding: 40px 28px;
   border: 1px solid var(--card-border);
   background: var(--card-bg);
+  text-align: center;
+  transition: var(--transition-smooth);
 }
-.dpo-card h3 { margin-bottom: 12px; }
-.dpo-card p { color: var(--text-muted); margin-bottom: 8px; font-size: 0.9rem; }
-.dpo-card a { color: var(--gold); }
-.dpo-card a:hover { text-decoration: underline; }
-.dpo-icon {
+.guarantee-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--shadow-gold);
+}
+.guarantee-card .g-icon {
   width: 64px; height: 64px;
-  border: 1px solid var(--gold);
   border-radius: 50%;
+  border: 1px solid var(--gold);
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 20px;
-  color: var(--gold);
+  color: var(--gold); font-size: 1.5rem;
 }
-.dpo-desc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; line-height: 1.7; }
-.dpo-contact-row {
+.guarantee-card h3 { margin-bottom: 12px; font-size: 1.1rem; }
+.guarantee-card p { font-size: 0.85rem; color: var(--text-muted); }
+
+/* ===== FORM SECTION ===== */
+.form-section {
+  background: var(--navy-deep);
+  position: relative;
+}
+.form-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.2;
+}
+.form-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.form-info h2 { margin-bottom: 20px; }
+.form-info > p { color: var(--text-muted); margin-bottom: 32px; }
+.form-highlights {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 16px;
 }
-.dpo-contact-item {
+.form-highlight {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 20px;
+  gap: 14px;
+  padding: 16px 20px;
   border: 1px solid var(--card-border);
-  background: rgba(201, 168, 76, 0.03);
+  background: var(--card-bg);
 }
-.dpo-contact-item svg {
-  width: 20px; height: 20px;
-  min-width: 20px;
-  color: var(--gold);
+.form-highlight i {
+  width: 36px; height: 36px; min-width: 36px;
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 0.85rem;
 }
-.dpo-contact-item a,
-.dpo-contact-item span {
-  font-size: 0.9rem;
+.form-highlight span { font-size: 0.85rem; color: var(--cream); }
+.form-wrap {
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  padding: 40px;
+}
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--cream);
+  margin-bottom: 6px;
 }
-.dpo-contact-item a { color: var(--gold); }
-.dpo-note { font-size: 0.8rem; color: var(--text-muted); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--warm-white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: var(--transition-fast);
+  border-radius: 0;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(201, 168, 76, 0.05);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: var(--text-muted); }
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238B8FA3' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  cursor: pointer;
+}
+.form-group select option { background: var(--navy-dark); color: var(--warm-white); }
+.form-group textarea { resize: vertical; min-height: 80px; }
+.phone-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 12px;
+}
+.form-submit { margin-top: 8px; }
+.form-submit .btn { width: 100%; justify-content: center; padding: 16px; }
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px;
+}
+.form-success.show { display: block; }
+.form-success .success-icon {
+  font-size: 3rem;
+  color: #22c55e;
+  margin-bottom: 20px;
+}
+.form-success h3 { margin-bottom: 12px; }
+.form-success p { color: var(--text-muted); }
+
+/* ===== CONTACT INFO ===== */
+.contact-info-section {
+  background: linear-gradient(180deg, var(--navy-dark) 0%, var(--navy-deep) 100%);
+  position: relative;
+}
+.contact-info-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.2;
+}
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.contact-card {
+  padding: 40px 28px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+.contact-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--shadow-gold);
+}
+.contact-card .c-icon {
+  width: 56px; height: 56px;
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--gold); font-size: 1.3rem;
+}
+.contact-card h4 { margin-bottom: 8px; font-size: 1rem; }
+.contact-card p { font-size: 0.85rem; color: var(--text-muted); }
 
 /* ===== FOOTER ===== */
 .footer{background:#0A0E17;border-top:1px solid rgba(201,168,76,0.08);padding:80px 0 40px}
@@ -383,6 +430,10 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 /* ===== ANIMATIONS ===== */
 .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in-left { opacity: 0; transform: translateX(-30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in-left.visible { opacity: 1; transform: translateX(0); }
+.fade-in-right { opacity: 0; transform: translateX(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in-right.visible { opacity: 1; transform: translateX(0); }
 .stagger-children > * { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .stagger-children.visible > *:nth-child(1) { transition-delay: 0s; }
 .stagger-children.visible > *:nth-child(2) { transition-delay: 0.1s; }
@@ -408,6 +459,12 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 }
   .hero-btns{flex-direction:column}
   .btn-primary,.btn-outline{width:100%;justify-content:center}
+}
+
+@media(max-width:1024px){
+  .guarantees-grid { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
+  .form-inner { grid-template-columns: 1fr; }
+  .contact-cards { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
 }
 
 @media(max-width:768px){
@@ -456,196 +513,179 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <!-- Hero -->
 <section class="hero" id="hero">
   <div class="hero-bg">
-    <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/privacy-hero.webp');opacity:0.25;"></div>
-    <div class="hero-overlay"></div>
+    <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-hero.webp');opacity:0.25;"></div>
     <div class="gradient-1"></div>
+    <div class="gradient-2"></div>
     <div class="grid-overlay"></div>
   </div>
   <div class="hero-content">
     <div class="hero-badge">
-      <i class="fas fa-shield-halved"></i>
-      Privacy Policy
+      <i class="fas fa-calendar-check"></i>
+      Free Consultation
     </div>
-    <h1>隱私權政策</h1>
-    <p class="hero-subtitle">鼎曜國際顧問 DingYao Advisory 致力於保護您的個人資料與隱私權。</p>
+    <h1>
+      啟動您的
+      <span class="gold-text">資產配置計畫</span>
+    </h1>
+    <p class="hero-subtitle">
+      好的投資始於正確的諮詢。請留下資訊，我們的資深顧問將提供您一份 <strong class="gold-text">「亞太區專屬投資評估報告」</strong>。
+    </p>
+    <div class="hero-actions">
+      <a href="#form" class="btn btn-primary">
+        立即預約 <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        聯絡資訊 <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>填寫表單</span>
+    <i class="fas fa-chevron-down"></i>
   </div>
 </section>
 
-<!-- Policy Content -->
-<section class="section policy-content" id="policy">
-  <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/privacy-policy.webp');opacity:0.10;"></div>
+<!-- Guarantees -->
+<section class="section guarantees" id="guarantees">
+  <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-guarantees.webp');opacity:0.12;"></div>
   <div class="container">
-    <div class="policy-meta fade-in">
-      <p class="last-updated">最後更新日期：<span>2026 年 6 月 23 日</span></p>
+    <div class="section-title fade-in">
+      <span class="section-label">Our Guarantees</span>
+      <h2>三大保證</h2>
+      <p>我們承諾提供最專業、最透明的諮詢服務</p>
     </div>
-    <div class="accordion-list">
-      <div class="accordion-item active fade-in">
-        <button class="accordion-header" onclick="toggleAccordion(this)">
-          <span>1. 個人資料蒐集</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <p>當您使用本網站或我們的服務時，我們可能會蒐集以下類型的個人資料：</p>
-            <ul>
-              <li>基本識別資料：姓名、電子郵件地址、電話號碼、聯絡地址</li>
-              <li>財務資訊：投資預算範圍、資產狀況（您主動提供）</li>
-              <li>技術資料：IP 位址、瀏覽器類型、裝置資訊、Cookie 識別碼</li>
-              <li>使用資料：頁面瀏覽記錄、點擊行為、停留時間</li>
-              <li>通訊記錄：您與我們的諮詢往來內容</li>
-            </ul>
-            <p>我們僅在您主動填寫表單、預約諮詢或使用本網站服務時蒐集上述資料。所有資料的蒐集均基於您的明確同意。</p>
+    <div class="guarantees-grid stagger-children">
+      <div class="guarantee-card">
+        <div class="g-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>國際銀行金流合規諮詢</h3>
+        <p>Standard Bank 國際級銀行合作，確保您的資金跨境流動安全合規，提供完整的金流規劃建議。</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="g-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.42a6 6 0 0 1 .84 3.42v2.5a6 6 0 0 1-7 5.9"/><path d="M12 14l-6.16-3.42a6 6 0 0 0-.84 3.42v2.5a6 6 0 0 0 7 5.9"/></svg></div>
+        <h3>頂級私校入學評估</h3>
+        <p>為您的子女評估最適合的南非頂級私立學校，從申請到入學全程協助，確保教育無縫接軌。</p>
+      </div>
+      <div class="guarantee-card">
+        <div class="g-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>移民身分與稅務規劃建議</h3>
+        <p>專業移民律師與會計師團隊，為您量身打造最優化的身分規劃與稅務方案。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Form Section -->
+<section class="section form-section" id="form">
+  <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-form.webp');opacity:0.10;"></div>
+  <div class="container">
+    <div class="form-inner">
+      <div class="form-info fade-in-left">
+        <span class="section-label">Book Your Session</span>
+        <h2>預約免費評估</h2>
+        <p>填寫以下表單，我們的資深顧問將在 <strong class="gold-text">24 小時內</strong> 與您聯繫，提供專屬投資評估報告。</p>
+        <div class="form-highlights">
+          <div class="form-highlight">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="width:36px;height:36px;min-width:36px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);padding:6px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>24 小時內專人回覆</span>
+          </div>
+          <div class="form-highlight">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="width:36px;height:36px;min-width:36px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);padding:6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>免費提供專屬評估報告</span>
+          </div>
+          <div class="form-highlight">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="width:36px;height:36px;min-width:36px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);padding:6px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>您的資料將嚴格保密</span>
+          </div>
+          <div class="form-highlight">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="width:36px;height:36px;min-width:36px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);padding:6px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>可選擇線上或實體諮詢</span>
           </div>
         </div>
       </div>
-
-      <div class="accordion-item fade-in">
-        <button class="accordion-header" onclick="toggleAccordion(this)">
-          <span>2. 資料使用方式</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <p>我們將您的個人資料用於以下目的：</p>
-            <ul>
-              <li>提供您所要求的諮詢服務與投資評估報告</li>
-              <li>回覆您的詢問並與您保持聯繫</li>
-              <li>改善我們的網站體驗與服務品質</li>
-              <li>發送與您相關的投資機會與市場資訊（經您同意）</li>
-              <li>履行法律與監管合規義務</li>
-              <li>內部分析與業務規劃</li>
-            </ul>
-            <p>我們不會將您的個人資料用於上述範圍以外的用途。如欲變更資料使用方式，我們將事先取得您的同意。</p>
+      <div class="form-wrap fade-in-right">
+        <form id="consultForm" onsubmit="return handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">您的稱呼 <span style="color:var(--gold);">*</span></label>
+            <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item fade-in">
-        <button class="accordion-header" onclick="toggleAccordion(this)">
-          <span>3. 資料保護措施</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <p>我們採取多層次的技術與組織措施保護您的個人資料：</p>
-            <ul>
-              <li>SSL/TLS 加密傳輸：所有資料傳輸均使用 256 位元加密</li>
-              <li>存取控制：僅授權人員可存取個人資料，並定期審查權限</li>
-              <li>資料最小化：僅蒐集提供服務所必要的最少資料</li>
-              <li>定期安全審查：每年進行資訊安全評估與滲透測試</li>
-              <li>員工訓練：所有員工定期接受資料保護與隱私權訓練</li>
-              <li>資料備份：定期備份並安全儲存，防止資料遺失</li>
-            </ul>
-            <p>儘管我們採取上述措施，請理解沒有任何網路傳輸或電子儲存方法是完全安全的。我們將持續更新安全措施以因應新的威脅。</p>
+          <div class="form-group">
+            <label for="budget">預算範圍</label>
+            <select id="budget" name="budget">
+              <option value="">請選擇預算範圍</option>
+              <option value="1000-3000">1000萬 - 3000萬</option>
+              <option value="3000-5000">3000萬 - 5000萬</option>
+              <option value="5000+">5000萬以上</option>
+            </select>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item fade-in">
-        <button class="accordion-header" onclick="toggleAccordion(this)">
-          <span>4. Cookie 使用</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <p>本網站使用 Cookie 及類似技術以改善您的瀏覽體驗。Cookie 是小型文字檔案，儲存在您的裝置上。</p>
-            <p>我們使用的 Cookie 類型：</p>
-            <ul>
-              <li><strong>必要 Cookie：</strong>維持網站基本功能所必需，無法關閉</li>
-              <li><strong>分析 Cookie：</strong>幫助我們了解訪客如何使用網站，以優化服務</li>
-              <li><strong>偏好 Cookie：</strong>記住您的設定與偏好</li>
-              <li><strong>行銷 Cookie：</strong>用於提供與您相關的內容與廣告</li>
-            </ul>
-            <p>您可以透過瀏覽器設定管理或刪除 Cookie。請注意，停用某些 Cookie 可能影響網站功能。</p>
+          <div class="form-group">
+            <label for="email">Email <span style="color:var(--gold);">*</span></label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item fade-in">
-        <button class="accordion-header" onclick="toggleAccordion(this)">
-          <span>5. 第三方分享</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <p>我們不會將您的個人資料出售、交易或出租給第三方。但在以下情況，我們可能分享您的資料：</p>
-            <ul>
-              <li><strong>合作夥伴：</strong>在提供諮詢服務時，與 Crestline Advisory 等合作夥伴分享必要資訊</li>
-              <li><strong>法律要求：</strong>依法律規定或政府機關要求揭露</li>
-              <li><strong>服務提供商：</strong>與受我們委託的第三方服務提供商（如雲端服務、分析工具）分享，這些廠商須遵守嚴格的資料保護協議</li>
-              <li><strong>業務轉讓：</strong>在公司合併、收購或資產出售時，您的資料可能作為資產轉移</li>
-            </ul>
-            <p>所有第三方合作夥伴均須遵守與我們同等或更嚴格的資料保護標準。</p>
+          <div class="form-group">
+            <label for="phone">聯絡電話</label>
+            <div class="phone-row">
+              <select id="countryCode" name="countryCode">
+                <option value="+886">🇹🇼 +886</option>
+                <option value="+27">🇿🇦 +27</option>
+              </select>
+              <input type="tel" id="phone" name="phone" placeholder="請輸入電話號碼">
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item fade-in">
-        <button class="accordion-header" onclick="toggleAccordion(this)">
-          <span>6. 用戶權利</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <p>根據適用的資料保護法規，您享有以下權利：</p>
-            <ul>
-              <li><strong>查閱權：</strong>查詢我們持有的您的個人資料</li>
-              <li><strong>更正權：</strong>要求更正不正確或不完整的資料</li>
-              <li><strong>刪除權：</strong>在特定條件下要求刪除您的個人資料</li>
-              <li><strong>限制處理權：</strong>要求限制對您資料的處理</li>
-              <li><strong>資料可攜權：</strong>要求以結構化格式提供您的資料</li>
-              <li><strong>反對權：</strong>反對我們基於正當利益處理您的資料</li>
-              <li><strong>撤回同意：</strong>隨時撤回您對資料處理的同意</li>
-            </ul>
-            <p>如欲行使上述權利，請透過下方聯絡方式與我們的資料保護長 (DPO) 聯繫。我們將在 30 天內回覆您的請求。</p>
+          <div class="form-group">
+            <label for="interest">感興趣的服務</label>
+            <select id="interest" name="interest">
+              <option value="">請選擇感興趣的服務</option>
+              <option value="property">南非置產 (莊園/豪宅)</option>
+              <option value="education">頂級私校教育諮詢</option>
+              <option value="residency">身分與移居規劃</option>
+              <option value="digital">數位資產託管服務</option>
+            </select>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item fade-in">
-        <button class="accordion-header" onclick="toggleAccordion(this)">
-          <span>7. 政策更新</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <p>我們可能不時更新本隱私權政策，以反映服務變更、法律要求或業務需求。重大變更時，我們將：</p>
-            <ul>
-              <li>在本網站發布更新後的政策，並更新頁面頂部的「最後更新日期」</li>
-              <li>對於重大變更，我們將透過電子郵件或網站公告通知您</li>
-              <li>建議您定期查閱本政策，以了解我們如何保護您的資料</li>
-            </ul>
-            <p>繼續使用本網站或服務即表示您同意更新後的政策。如您不同意變更，請停止使用我們的服務並聯繫我們刪除您的資料。</p>
+          <div class="form-group">
+            <label for="message">備註 (選填)</label>
+            <textarea id="message" name="message" placeholder="如有其他需求或問題，請在此說明..."></textarea>
           </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              預約免費評估 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>感謝您的諮詢！</h3>
+          <p>我們已收到您的預約申請，將在 24 小時內由專人與您聯繫。</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- DPO Contact -->
-<section class="section dpo-section" id="dpo">
-  <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/privacy-dpo.webp');opacity:0.10;"></div>
+<!-- Contact Info -->
+<section class="section contact-info-section" id="contact">
+  <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-contact.webp');opacity:0.10;"></div>
   <div class="container">
-    <div class="dpo-card fade-in">
-      <div class="dpo-icon">
-        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div class="section-title fade-in">
+      <span class="section-label">Contact Information</span>
+      <h2>聯絡資訊</h2>
+      <p>歡迎透過以下方式與我們聯繫</p>
+    </div>
+    <div class="contact-cards stagger-children">
+      <div class="contact-card">
+        <div class="c-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h4>亞太總部</h4>
+        <p>台中市西屯區<br>台灣</p>
       </div>
-      <span class="section-label">Data Protection Officer</span>
-      <h3>聯絡資料保護長</h3>
-      <p class="dpo-desc">如您對本隱私權政策有任何疑問，或欲行使您的資料保護權利，請聯繫我們的資料保護長：</p>
-      <div class="dpo-contact-row">
-        <div class="dpo-contact-item">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <a href="mailto:info@dingyaoadvisory.tw">info@dingyaoadvisory.tw</a>
-        </div>
-        <div class="dpo-contact-item">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>台中市西屯區，台灣</span>
-        </div>
+      <div class="contact-card">
+        <div class="c-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h4>諮詢專線</h4>
+        <p>請透過 Email 預約<br>我們將主動與您聯繫</p>
       </div>
-      <div class="gold-divider center"></div>
-      <p class="dpo-note">我們將在收到請求後的 <strong>30 天內</strong> 回覆您。</p>
+      <div class="contact-card">
+        <div class="c-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <h4>電子郵件</h4>
+        <p><a href="mailto:info@dingyaoadvisory.tw" style="color:var(--gold);">info@dingyaoadvisory.tw</a></p>
+      </div>
     </div>
   </div>
 </section>
