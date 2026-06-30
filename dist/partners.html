@@ -1031,7 +1031,127 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   .section-title h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
   .plan-card { padding: 24px; }
   .form-row { grid-template-columns: 1fr; }
-}</style>
+}
+
+/* ===== PARTNERS-SPECIFIC STYLES ===== */
+
+/* Glow Backgrounds */
+.glow-bg{position:fixed;top:-30%;left:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 8s ease-in-out infinite}
+.glow-bg-2{position:fixed;bottom:-30%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.03) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 10s ease-in-out infinite 2s}
+@keyframes glowPulse{0%,100%{opacity:0.6}50%{opacity:1}}
+
+/* Hero Override */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,14,23,0.85) 0%,rgba(10,14,23,0.4) 50%,rgba(10,14,23,0.7) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-tag{font-family:'Cinzel',serif;font-size:clamp(0.65rem,0.9vw,0.85rem);letter-spacing:4px;color:#C9A84C;margin-bottom:16px;text-transform:uppercase}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:800;line-height:1.1;margin-bottom:20px}
+.hero-title .gold{display:block}
+.hero-desc{font-size:clamp(0.95rem,1.3vw,1.2rem);color:#F5F0E8BB;max-width:600px;margin-bottom:36px;line-height:1.8}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+
+/* Section Backgrounds */
+.section-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.section-bg img{width:100%;height:100%;object-fit:cover}
+.section-bg-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,14,23,0.92) 0%,rgba(10,14,23,0.7) 50%,rgba(10,14,23,0.88) 100%)}
+.section > .container{position:relative;z-index:2}
+
+/* Section Title Override */
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.75rem,4vw,3rem);font-weight:700;margin-bottom:16px;line-height:1.2}
+.section-subtitle{font-size:clamp(0.95rem,1.5vw,1.15rem);color:#F5F0E899;max-width:640px;margin-bottom:48px}
+.gold{color:#C9A84C}
+.gold-line{width:60px;height:3px;background:#C9A84C;margin-bottom:24px;border-radius:2px}
+.text-center{text-align:center}
+.text-center .gold-line{margin:0 auto 24px}
+.text-center .section-subtitle{margin:0 auto 48px}
+
+/* Partner Cards */
+.partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px}
+.partner-card{background:linear-gradient(135deg,rgba(12,27,51,0.8),rgba(10,14,23,0.9));border:1px solid rgba(201,168,76,0.1);border-radius:16px;overflow:hidden;transition:all 0.4s ease}
+.partner-card:hover{transform:translateY(-8px);border-color:rgba(201,168,76,0.3);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+.partner-card-img{width:100%;height:200px;object-fit:cover}
+.partner-card-body{padding:32px}
+.partner-logo{height:48px;margin-bottom:16px;object-fit:contain;object-position:left}
+.partner-card h3{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;margin-bottom:12px}
+.partner-card p{color:#F5F0E899;font-size:0.9rem;line-height:1.7;margin-bottom:20px}
+.partner-link{color:#C9A84C;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:gap 0.3s}
+.partner-link:hover{gap:10px}
+
+/* Ecosystem Diagram */
+.eco-section{background:linear-gradient(180deg,rgba(12,27,51,0.3),transparent)}
+.eco-diagram{position:relative;max-width:800px;margin:0 auto;padding:60px 0}
+.eco-triangle{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;position:relative}
+.eco-node{text-align:center;padding:32px 16px;background:rgba(12,27,51,0.8);border:1px solid rgba(201,168,76,0.15);border-radius:12px;transition:all 0.4s;position:relative;overflow:hidden}
+.eco-node-bg{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;opacity:0.08;z-index:0;pointer-events:none}
+.eco-node > .eco-node-icon,
+.eco-node > h4,
+.eco-node > p{position:relative;z-index:1}
+.eco-node:hover{transform:translateY(-4px);border-color:#C9A84C;box-shadow:0 0 30px rgba(201,168,76,0.1)}
+.eco-node-icon{font-size:2rem;color:#C9A84C;margin-bottom:12px}
+.eco-node h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;margin-bottom:6px}
+.eco-node p{font-size:0.8rem;color:#F5F0E877}
+.eco-center{text-align:center;margin-top:40px;position:relative}
+.eco-center::before{content:'';position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:2px;height:40px;background:linear-gradient(to bottom,transparent,#C9A84C44)}
+.eco-center h3{font-family:'Playfair Display',serif;font-size:1.5rem;color:#C9A84C;margin-bottom:8px}
+.eco-center p{color:#F5F0E877;font-size:0.9rem}
+
+/* Rate Card */
+.rate-card{background:linear-gradient(135deg,rgba(201,168,76,0.05),rgba(12,27,51,0.6));border:1px solid rgba(201,168,76,0.2);border-radius:16px;padding:48px;text-align:center;max-width:700px;margin:0 auto}
+.rate-number{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:#C9A84C;line-height:1}
+.rate-label{font-size:1rem;color:#F5F0E8AA;margin:8px 0 16px}
+.rate-desc{font-size:0.9rem;color:#F5F0E877;max-width:500px;margin:0 auto 24px}
+.rate-note{font-size:0.78rem;color:#F5F0E855;margin-top:16px}
+
+/* Partner Marquee */
+.partner-marquee-wrap{overflow:hidden;position:relative;width:100%;padding:20px 0}
+.partner-marquee{display:flex;gap:24px;animation:marqueeScroll 40s linear infinite;width:max-content}
+.partner-marquee:hover{animation-play-state:paused}
+@keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.marquee-card{min-width:280px;max-width:280px;background:linear-gradient(135deg,rgba(12,27,51,0.8),rgba(10,14,23,0.9));border:1px solid rgba(201,168,76,0.1);border-radius:12px;padding:24px;transition:all 0.3s;flex-shrink:0;position:relative;overflow:hidden}
+.marquee-card-bg{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;opacity:0.06;z-index:0;pointer-events:none}
+.marquee-card > .marquee-card-bg{z-index:0}
+.marquee-card > .m-logo,
+.marquee-card > h4,
+.marquee-card > p,
+.marquee-card > a{position:relative;z-index:1}
+.marquee-card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,0.3);box-shadow:0 12px 40px rgba(0,0,0,0.4)}
+.marquee-card .m-logo{height:36px;margin-bottom:12px;object-fit:contain;object-position:left;filter:brightness(0.9)}
+.marquee-card h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;margin-bottom:6px}
+.marquee-card p{font-size:0.8rem;color:#F5F0E877;line-height:1.5}
+.marquee-card .m-link{color:#C9A84C;font-size:0.75rem;font-weight:600;display:inline-flex;align-items:center;gap:4px;margin-top:10px;transition:gap 0.3s}
+.marquee-card .m-link:hover{gap:8px}
+
+/* CTA Section */
+.cta-section{background:linear-gradient(135deg,rgba(12,27,51,0.6),rgba(10,14,23,0.8));border-top:1px solid rgba(201,168,76,0.1);border-bottom:1px solid rgba(201,168,76,0.1)}
+.cta-content{text-align:center;max-width:700px;margin:0 auto}
+.cta-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;margin-bottom:16px}
+.cta-content p{color:#F5F0E899;margin-bottom:32px;font-size:1rem}
+
+/* ===== PARTNERS RWD ===== */
+@media(max-width:768px){
+  .partner-grid{grid-template-columns:1fr}
+  .partner-card-img{height:160px}
+  .partner-card-body{padding:24px}
+  .eco-triangle{grid-template-columns:1fr;gap:16px}
+  .eco-node{padding:24px 16px}
+  .eco-diagram{padding:40px 0}
+  .rate-card{padding:32px 20px}
+  .marquee-card{min-width:240px;max-width:240px}
+  .hero-title{font-size:clamp(1.8rem,8vw,2.8rem)}
+  .section{padding:60px 0}
+  .hero-btns{flex-direction:column}
+  .btn-primary,.btn-outline{width:100%;justify-content:center}
+}
+@media(max-width:480px){
+  .partner-card-img{height:140px}
+  .marquee-card{min-width:200px;max-width:200px}
+  .marquee-card{padding:16px}
+  .rate-card{padding:24px 16px}
+  .eco-node{padding:20px 12px}
+}
+</style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
