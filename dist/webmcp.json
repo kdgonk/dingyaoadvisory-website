@@ -23,6 +23,20 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "國際買家湧入開普敦：2026年外國人置產趨勢與台灣投資者的策略定位",
+          "url": "/blog/international-buyers-cape-town-foreign-property-trends-2026",
+          "description": "BetterBond報告：開普敦高端市場國際買家佔40%+，超越倫敦（30%）和紐約（20%）。德國退休基金、荷蘭科技創業者、英國遠端工作者同時湧入。R 16,000,000雙引擎年現金流R 1,171,000-1,380,000。",
+          "language": "zh-TW",
+          "date": "2026-06-30"
+        },
+        {
+          "title": "International Buyers Flock to Cape Town: 2026 Foreign Property Trends and Strategic Positioning for Taiwanese Investors",
+          "url": "/blog/international-buyers-cape-town-foreign-property-trends-2026-en",
+          "description": "BetterBond report: International buyers account for 40%+ of Cape Town luxury transactions, surpassing London (30%) and New York (20%). German pension funds, Dutch tech entrepreneurs, British remote workers. R 16,000,000 dual-engine annual cash flow R 1,171,000-1,380,000.",
+          "language": "en",
+          "date": "2026-06-30"
+        },
+        {
           "title": "開普敦租賃市場深度解析：高端物業租金收益率如何為海外投資者創造穩定被動收入",
           "url": "/blog/cape-town-rental-yields-premium-passive-income-2026",
           "description": "KiliCasa和The Africanvestor最新數據：開普敦高端物業出租率92-96%，空置期僅2-4週，租金年增5-8%。City Bowl和Sea Point淨收益率7.5-7.9%。R 16,000,000雙引擎年現金流R 1,171,000-1,380,000。",
@@ -294,5 +308,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-06-29"
+  "last_updated": "2026-06-30"
 }
