@@ -1031,7 +1031,18 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   .section-title h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
   .plan-card { padding: 24px; }
   .form-row { grid-template-columns: 1fr; }
-}</style>
+}
+
+/* ===== TOUR-SPECIFIC STYLES ===== */
+.section-subtitle{font-size:clamp(0.95rem,1.5vw,1.15rem);color:#F5F0E899;max-width:640px;margin-bottom:48px}
+.gold-line{width:60px;height:3px;background:#C9A84C;margin-bottom:24px;border-radius:2px}
+.text-center{text-align:center}
+.text-center .gold-line{margin:0 auto 24px}
+.text-center .section-subtitle{margin:0 auto 48px}
+.glow-bg{position:fixed;top:-30%;left:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 8s ease-in-out infinite}
+.glow-bg-2{position:fixed;bottom:-30%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.03) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 10s ease-in-out infinite 2s}
+@keyframes glowPulse{0%,100%{opacity:0.6}
+.btn-primary,.btn-outline{width:100%;justify-content:center}</style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->

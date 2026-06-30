@@ -1056,7 +1056,145 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   .section-title h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
   .plan-card { padding: 24px; }
   .form-row { grid-template-columns: 1fr; }
-}</style>
+}
+
+/* ===== CONSULTATION-SPECIFIC STYLES ===== */
+.guarantees {
+  background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
+  position: relative;
+}
+.guarantees-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.guarantee-card {
+  padding: 40px 28px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+.guarantee-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--shadow-gold);
+}
+.guarantee-card .g-icon {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--gold); font-size: 1.5rem;
+}
+.guarantee-card h3 { margin-bottom: 12px; font-size: 1.1rem; }
+.guarantee-card p { font-size: 0.85rem; color: var(--text-muted); }
+.form-section {
+  background: var(--navy-deep);
+  position: relative;
+}
+.form-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.2;
+}
+.form-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.form-info h2 { margin-bottom: 20px; }
+.form-info > p { color: var(--text-muted); margin-bottom: 32px; }
+.form-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-highlight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+}
+.form-highlight i {
+  width: 36px; height: 36px; min-width: 36px;
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 0.85rem;
+}
+.form-highlight span { font-size: 0.85rem; color: var(--cream); }
+.form-wrap {
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  padding: 40px;
+}
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px;
+}
+.form-success.show { display: block; }
+.form-success .success-icon {
+  font-size: 3rem;
+  color: #22c55e;
+  margin-bottom: 20px;
+}
+.form-success h3 { margin-bottom: 12px; }
+.form-success p { color: var(--text-muted); }
+.contact-info-section {
+  background: linear-gradient(180deg, var(--navy-dark) 0%, var(--navy-deep) 100%);
+  position: relative;
+}
+.contact-info-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.2;
+}
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.contact-card {
+  padding: 40px 28px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+.contact-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--shadow-gold);
+}
+.contact-card .c-icon {
+  width: 56px; height: 56px;
+  border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--gold); font-size: 1.3rem;
+}
+.contact-card h4 { margin-bottom: 8px; font-size: 1rem; }
+.contact-card p { font-size: 0.85rem; color: var(--text-muted); }
+.btn-primary,.btn-outline{width:100%;justify-content:center}
+@media(max-width:1024px){
+  .guarantees-grid { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
+.form-inner { grid-template-columns: 1fr; }
+.contact-cards { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
+@media(max-width:1024px){
+  .guarantees-grid { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }</style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
