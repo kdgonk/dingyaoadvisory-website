@@ -224,128 +224,20 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .nav-toggle{display:none;background:none;border:none;color:#F5F0E8;font-size:1.5rem;cursor:pointer}
 
 /* ===== HERO ===== */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 120px 24px 80px;
-  overflow: hidden;
-}
-.hero-bg {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 0;
-}
-.hero-bg .gradient-1 {
-  position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, rgba(201, 168, 76, 0.06) 0%, transparent 60%);
-  border-radius: 50%;
-}
-.hero-bg .gradient-2 {
-  position: absolute;
-  bottom: -30%;
-  left: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(30, 58, 95, 0.08) 0%, transparent 60%);
-  border-radius: 50%;
-}
-.hero-bg .grid-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image:
-    linear-gradient(rgba(201, 168, 76, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 168, 76, 0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-.hero-bg .section-bg-img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('https://assets.dingyaoadvisory.tw/redesign/section-hero.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.20;
-  z-index: 0;
-  pointer-events: none;
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 20px;
-  border: 1px solid rgba(201, 168, 76, 0.2);
-  border-radius: 50px;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  color: var(--gold-pale);
-  font-family: var(--font-accent);
-  margin-bottom: 32px;
-  background: rgba(201, 168, 76, 0.05);
-}
-.hero-badge i { font-size: 0.6rem; }
-.hero h1 {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 8px;
-  letter-spacing: -0.02em;
-}
-.hero h1 .gold-text {
-  display: block;
-  font-style: italic;
-  font-weight: 700;
-}
-.hero-subtitle {
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  color: var(--text-muted);
-  max-width: 650px;
-  margin: 24px auto 40px;
-  line-height: 1.8;
-}
-.hero-subtitle strong { color: var(--warm-white); font-weight: 500; }
-.hero-actions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.hero-scroll {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-muted);
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  font-family: var(--font-accent);
-  animation: float 3s ease-in-out infinite;
-}
-.hero-scroll i { font-size: 1rem; }
-@keyframes float {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
-}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,14,23,0.85) 0%,rgba(10,14,23,0.4) 50%,rgba(10,14,23,0.7) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-tag{font-family:'Cinzel',serif;font-size:clamp(0.65rem,0.9vw,0.85rem);letter-spacing:4px;color:#C9A84C;margin-bottom:16px;text-transform:uppercase}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:800;line-height:1.1;margin-bottom:20px}
+.hero-title .gold{display:block}
+.hero-desc{font-size:clamp(0.95rem,1.3vw,1.2rem);color:#F5F0E8BB;max-width:600px;margin-bottom:36px;line-height:1.8}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:#C9A84C;color:#0A0E17;padding:14px 32px;border-radius:4px;font-weight:600;font-size:0.9rem;transition:all 0.3s;border:none;cursor:pointer}
+.btn-primary:hover{background:#DAB85E;transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,0.3)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid #F5F0E866;color:#F5F0E8;padding:14px 32px;border-radius:4px;font-weight:500;font-size:0.9rem;transition:all 0.3s;cursor:pointer}
+.btn-outline:hover{border-color:#C9A84C;color:#C9A84C;transform:translateY(-2px)}
 
 /* ===== TRUSTED ECOSYSTEM ===== */
 .trusted {
@@ -1080,10 +972,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .glow-bg{position:fixed;top:-30%;left:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 8s ease-in-out infinite}
 .glow-bg-2{position:fixed;bottom:-30%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.03) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 10s ease-in-out infinite 2s}
 @keyframes glowPulse{0%,100%{opacity:0.6}
-.hero-bg img{width:100%;height:100%;object-fit:cover}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,14,23,0.85) 0%,rgba(10,14,23,0.4) 50%,rgba(10,14,23,0.7) 100%);z-index:1}
-.hero-tag{font-family:'Cinzel',serif;font-size:clamp(0.65rem,0.9vw,0.85rem);letter-spacing:4px;color:#C9A84C;margin-bottom:16px;text-transform:uppercase}
-.hero-title .gold{display:block}
 .fade-in-delay-1{transition-delay:0.1s}
 .fade-in-delay-2{transition-delay:0.2s}
 .fade-in-delay-3{transition-delay:0.3s}
@@ -1115,7 +1003,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cta-content{text-align:center;max-width:700px;margin:0 auto}
 .cta-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;margin-bottom:16px}
 .cta-content p{color:#F5F0E899;margin-bottom:32px;font-size:1rem}
-.btn-primary,.btn-outline{width:100%;justify-content:center}
 .highlight-grid{grid-template-columns:1fr}
 .lifestyle-grid{grid-template-columns:1fr}
 .lifestyle-hero-content{padding:40px 24px}
@@ -1217,7 +1104,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="text-center fade-in">
       <div class="gold-line"></div>
-      <h2 class="section-title">Solving the <span class="gold">Black Box Anxiety</span></h2>
+      <h2 class="section-title">告別 <span class="gold">黑箱焦慮</span></h2>
       <p class="section-subtitle">海外置產最怕資訊不對稱 — 我們用數位平台讓一切透明可追蹤</p>
     </div>
     <div class="pain-grid">
