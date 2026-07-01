@@ -1113,12 +1113,14 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .pathway-summary h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#C9A84C;margin-bottom:12px}
 .pathway-summary p{font-size:0.9rem;color:#F5F0E8AA;max-width:600px;margin:0 auto;line-height:1.8}
 .pathway-summary .highlight-text{color:#C9A84C;font-weight:600}
+@media(max-width:768px){
 .pathway-grid{grid-template-columns:1fr;gap:0}
 .pathway-grid::before{left:8px}
 .pathway-col{padding:0 0 0 32px;text-align:left!important}
 .pathway-col.asia .pathway-col-title{text-align:left}
 .pathway-step.asia-step,.pathway-step.sa-step{text-align:left}
 .pathway-connector{left:8px}
+}
 .cta-urgency{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(10,14,23,0.95),rgba(12,27,51,0.9));border-top:1px solid rgba(201,168,76,0.12);border-bottom:1px solid rgba(201,168,76,0.12)}
 .cta-urgency::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,168,76,0.03) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(255,50,50,0.02) 0%,transparent 60%);pointer-events:none}
 .cta-urgency-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
