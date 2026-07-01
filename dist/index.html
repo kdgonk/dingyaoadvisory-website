@@ -1588,7 +1588,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="cookie-inner">
     <p>
       <i class="fas fa-shield" style="color:var(--gold);margin-right:8px;"></i>
-      <strong>我們重視您的隱私</strong> — 本網站使用 Cookie 以提供最佳的瀏覽體驗與行銷分析。繼續瀏覽即代表您同意我們的 <a href="#">隱私權政策</a>。
+      <strong>我們重視您的隱私</strong> — 本網站使用 Cookie 以提供最佳的瀏覽體驗與行銷分析。繼續瀏覽即代表您同意我們的 <a href="/privacy">隱私權政策</a>。
     </p>
     <div class="cookie-actions">
       <button class="btn btn-gold-ghost" onclick="rejectCookies()">拒絕</button>
@@ -1619,6 +1619,23 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
+
+// Cookie Banner
+(function(){
+  const banner = document.getElementById('cookieBanner');
+  if(!banner) return;
+  if(!localStorage.getItem('cookieConsent')){
+    setTimeout(() => { banner.classList.add('show'); }, 500);
+  }
+  window.acceptCookies = function(){
+    localStorage.setItem('cookieConsent', 'true');
+    banner.classList.remove('show');
+  };
+  window.rejectCookies = function(){
+    localStorage.setItem('cookieConsent', 'false');
+    banner.classList.remove('show');
+  };
+})();
 </script>
 <!-- Tawk.to Live Chat -->
 <script type="text/javascript">
