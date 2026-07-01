@@ -970,41 +970,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .footer-bottom-links a{font-size:0.78rem;color:#F5F0E855;transition:color 0.3s}
 .footer-bottom-links a:hover{color:#C9A84C}
 
-/* ===== COOKIE BANNER ===== */
-.cookie-banner {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 9999;
-  background: var(--navy-dark);
-  border-top: 1px solid var(--card-border);
-  padding: 20px 24px;
-  display: none;
-  backdrop-filter: blur(20px);
-}
-.cookie-banner.show { display: block; }
-.cookie-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.cookie-inner p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  flex: 1;
-  min-width: 280px;
-}
-.cookie-inner p a { color: var(--gold); text-decoration: underline; }
-.cookie-actions {
-  display: flex;
-  gap: 12px;
-  flex-shrink: 0;
-}
-.cookie-actions .btn { padding: 10px 24px; font-size: 0.8rem; }
-
 /* ===== ANIMATIONS ===== */
 .fade-in {
   opacity: 0;
