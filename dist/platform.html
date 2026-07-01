@@ -1001,7 +1001,77 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   .form-row { grid-template-columns: 1fr; }
 }
 
-/* ===== PLATFORM-SPECIFIC STYLES ===== */
+/* ===== DASHBOARD MOCKUP ===== */
+.dashboard-mockup{max-width:700px;margin:0 auto;border:1px solid rgba(201,168,76,0.15);background:linear-gradient(135deg,rgba(12,27,51,0.8),rgba(10,14,23,0.9));padding:32px;border-radius:12px;position:relative;overflow:hidden}
+.dashboard-mockup::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(201,168,76,0.02),transparent);animation:rotateBg 20s linear infinite;pointer-events:none}
+@keyframes rotateBg{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.dash-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid rgba(201,168,76,0.1);position:relative;z-index:1}
+.dash-header h5{font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:2px;color:#C9A84C}
+.dash-header .status{font-size:0.7rem;color:#22c55e;display:flex;align-items:center;gap:4px}
+.dash-row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.04);position:relative;z-index:1}
+.dash-row:last-child{border-bottom:none}
+.dash-row .d-label{font-size:0.85rem;color:#8B8FA3;display:flex;align-items:center;gap:8px}
+.dash-row .d-label i{color:#C9A84C66;font-size:0.7rem;width:16px}
+.dash-row .d-value{font-size:0.95rem;font-weight:600;color:#F5F0E8;font-family:'Playfair Display',serif}
+.dash-row .d-value.positive{color:#22c55e}
+.dash-row .d-value.gold{color:#C9A84C}
+.dash-notification{margin-top:20px;padding:16px 20px;background:rgba(34,197,94,0.05);border:1px solid rgba(34,197,94,0.15);display:flex;align-items:center;gap:12px;border-radius:8px;position:relative;z-index:1}
+.dash-notification i{color:#22c55e;font-size:1.1rem}
+.dash-notification span{font-size:0.85rem;color:#F5F0E8CC}
+.dash-notification .amount{margin-left:auto;font-weight:700;color:#22c55e;font-family:'Playfair Display',serif;font-size:1.1rem}
+.dash-progress{position:relative;z-index:1;margin-top:16px;padding:12px 0}
+.dash-progress-bar{height:6px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;margin-top:6px}
+.dash-progress-bar .fill{height:100%;background:linear-gradient(90deg,#C9A84C,#D4AF37);border-radius:3px;transition:width 1.5s ease}
+
+/* ===== CTA URGENCY ===== */
+.cta-urgency{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(10,14,23,0.95),rgba(12,27,51,0.9));border-top:1px solid rgba(201,168,76,0.12);border-bottom:1px solid rgba(201,168,76,0.12)}
+.cta-urgency::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,168,76,0.03) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(255,50,50,0.02) 0%,transparent 60%);pointer-events:none}
+.cta-urgency-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+.cta-urgency-left{padding:60px 0}
+.cta-urgency-tag{font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:3px;color:#ef4444;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.cta-urgency-tag i{font-size:0.6rem}
+.cta-urgency-left h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:16px}
+.cta-urgency-left h2 .gold{color:#C9A84C}
+.cta-urgency-left h2 .danger{color:#ef4444;display:block}
+.cta-urgency-desc{font-size:0.9rem;color:#F5F0E899;line-height:1.8;margin-bottom:24px;max-width:500px}
+.cta-urgency-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+.cta-urgency-stat{padding:16px;background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.1);border-radius:8px;transition:all 0.3s}
+.cta-urgency-stat:hover{border-color:rgba(201,168,76,0.25);transform:translateY(-2px)}
+.cta-urgency-stat .num{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#C9A84C;display:block}
+.cta-urgency-stat .num.danger-num{color:#ef4444}
+.cta-urgency-stat .label{font-size:0.75rem;color:#F5F0E877;margin-top:4px;display:block;line-height:1.4}
+.cta-urgency-btns{display:flex;gap:16px;flex-wrap:wrap}
+.cta-urgency-btns .btn-primary{background:#C9A84C;color:#0A0E17;padding:16px 36px;border-radius:4px;font-weight:700;font-size:0.95rem;transition:all 0.3s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px}
+.cta-urgency-btns .btn-primary:hover{background:#DAB85E;transform:translateY(-3px);box-shadow:0 12px 40px rgba(201,168,76,0.3)}
+.cta-urgency-btns .btn-outline-danger{background:transparent;border:1px solid rgba(239,68,68,0.3);color:#ef4444;padding:16px 36px;border-radius:4px;font-weight:600;font-size:0.9rem;transition:all 0.3s;cursor:pointer;display:inline-flex;align-items:center;gap:10px}
+.cta-urgency-btns .btn-outline-danger:hover{border-color:#ef4444;background:rgba(239,68,68,0.06);transform:translateY(-3px)}
+.cta-urgency-right{position:relative;padding:60px 0}
+.cta-urgency-visual{position:relative;padding:32px;border-radius:16px;background:linear-gradient(135deg,rgba(12,27,51,0.6),rgba(10,14,23,0.8));border:1px solid rgba(201,168,76,0.08);overflow:hidden}
+.cta-urgency-visual::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(201,168,76,0.03),transparent,rgba(239,68,68,0.02),transparent);animation:rotateBg 20s linear infinite;pointer-events:none}
+.cta-visual-content{position:relative;z-index:1}
+.cta-visual-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.cta-visual-card{padding:20px;border-radius:10px;text-align:center}
+.cta-visual-card.old-way{background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.1)}
+.cta-visual-card.new-way{background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15)}
+.cta-visual-card .icon{font-size:1.8rem;margin-bottom:8px;display:block}
+.cta-visual-card h5{font-size:0.85rem;font-weight:600;margin-bottom:6px}
+.cta-visual-card.old-way h5{color:#ef444488}
+.cta-visual-card.new-way h5{color:#C9A84C}
+.cta-visual-card p{font-size:0.72rem;color:#F5F0E877;line-height:1.5}
+.cta-visual-card .vs-badge{display:inline-block;font-size:0.6rem;padding:2px 8px;border-radius:3px;margin-top:6px;font-weight:600}
+.cta-visual-card.old-way .vs-badge{background:rgba(239,68,68,0.1);color:#ef4444}
+.cta-visual-card.new-way .vs-badge{background:rgba(201,168,76,0.15);color:#C9A84C}
+.cta-visual-quote{padding:16px 20px;background:rgba(201,168,76,0.03);border-left:2px solid #C9A84C;border-radius:0 8px 8px 0;margin-top:16px}
+.cta-visual-quote p{font-size:0.8rem;color:#F5F0E8AA;font-style:italic;line-height:1.6}
+.cta-visual-quote .author{font-size:0.7rem;color:#C9A84C88;margin-top:6px;font-style:normal}
+
+@media(max-width:768px){
+  .cta-urgency-left{padding:40px 0 0}
+  .cta-urgency-right{padding:0 0 40px}
+  .cta-urgency-stats{grid-template-columns:1fr}
+  .cta-visual-compare{grid-template-columns:1fr}
+  .cta-urgency-grid{grid-template-columns:1fr}
+}
 .section-subtitle{font-size:clamp(0.95rem,1.5vw,1.15rem);color:#F5F0E899;max-width:640px;margin-bottom:48px}
 .gold-line{width:60px;height:3px;background:#C9A84C;margin-bottom:24px;border-radius:2px}
 .text-center{text-align:center}
@@ -1056,7 +1126,9 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cta-financial-grid{grid-template-columns:1fr}
 .cta-financial-left{padding:40px 0 0}
 .cta-financial-right{padding:0 0 40px}
-.cta-financial-stats{grid-template-columns:1fr}/* ===== COOKIE CONSENT BANNER ===== */
+.cta-financial-stats{grid-template-columns:1fr}
+
+/* ===== COOKIE CONSENT BANNER ===== */
 .cookie-consent{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:rgba(10,14,23,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(201,168,76,0.12);padding:16px 24px;transform:translateY(100%);transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 -8px 40px rgba(0,0,0,0.5)}
 .cookie-consent.show{transform:translateY(0)}
 .cookie-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
@@ -1221,31 +1293,41 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <h2 class="section-title">即時 <span class="gold">資產儀表板</span></h2>
       <p class="section-subtitle">一目瞭然掌握您的海外資產全貌</p>
     </div>
-    <div class="fade-in" style="max-width:700px;margin:0 auto;border:1px solid rgba(201,168,76,0.15);background:rgba(12,27,51,0.6);padding:32px;border-radius:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid rgba(201,168,76,0.1)">
-        <h5 style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:2px;color:#C9A84C">資產儀表板</h5>
-        <span style="font-size:0.7rem;color:#22c55e;display:flex;align-items:center;gap:4px"><i class="fas fa-circle" style="font-size:0.5rem"></i> 同步中</span>
+    <div class="dashboard-mockup fade-in">
+      <div class="dash-header">
+        <h5><i class="fas fa-chart-simple" style="margin-right:6px"></i> 資產儀表板</h5>
+        <span class="status"><i class="fas fa-circle" style="font-size:0.5rem"></i> 同步中</span>
       </div>
-      <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
-        <span style="font-size:0.8rem;color:var(--text-muted)">物業估值</span>
-        <span style="font-size:0.9rem;font-weight:600;color:var(--warm-white)">R 10,450,000</span>
+      <div class="dash-row">
+        <span class="d-label"><i class="fas fa-building"></i> 物業估值</span>
+        <span class="d-value gold">R 10,450,000</span>
       </div>
-      <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
-        <span style="font-size:0.8rem;color:var(--text-muted)">活存餘額</span>
-        <span style="font-size:0.9rem;font-weight:600;color:var(--warm-white)">R 5,350,000</span>
+      <div class="dash-row">
+        <span class="d-label"><i class="fas fa-wallet"></i> 活存餘額</span>
+        <span class="d-value">R 5,350,000</span>
       </div>
-      <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
-        <span style="font-size:0.8rem;color:var(--text-muted)">本月收益</span>
-        <span style="font-size:0.9rem;font-weight:600;color:#22c55e">+R 31,250</span>
+      <div class="dash-row">
+        <span class="d-label"><i class="fas fa-arrow-trend-up"></i> 本月收益</span>
+        <span class="d-value positive">+R 31,250</span>
       </div>
-      <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
-        <span style="font-size:0.8rem;color:var(--text-muted)">工程進度</span>
-        <span style="font-size:0.9rem;font-weight:600;color:#C9A84C">68%</span>
+      <div class="dash-row">
+        <span class="d-label"><i class="fas fa-hard-hat"></i> 工程進度</span>
+        <span class="d-value gold">68%</span>
       </div>
-      <div style="margin-top:20px;padding:16px;background:rgba(34,197,94,0.05);border:1px solid rgba(34,197,94,0.15);display:flex;align-items:center;gap:12px;border-radius:8px">
-        <i class="fas fa-circle-check" style="color:#22c55e;font-size:1.1rem"></i>
-        <span style="font-size:0.85rem;color:var(--cream)">租金入帳通知</span>
-        <span style="margin-left:auto;font-weight:700;color:#22c55e;font-family:'Playfair Display',serif">+ ZAR 25,000</span>
+      <div class="dash-progress">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:#8B8FA3">
+          <span>購地</span>
+          <span>⚡ 施工中</span>
+          <span>交屋</span>
+        </div>
+        <div class="dash-progress-bar">
+          <div class="fill" style="width:68%"></div>
+        </div>
+      </div>
+      <div class="dash-notification">
+        <i class="fas fa-circle-check"></i>
+        <span>租金入帳通知</span>
+        <span class="amount">+ ZAR 25,000</span>
       </div>
     </div>
   </div>
@@ -1272,14 +1354,62 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section cta-section" id="cta">
+<!-- CTA URGENCY -->
+<section class="section cta-urgency" id="cta">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/hero-main.webp');opacity:0.08;"></div>
   <div class="container">
-    <div class="cta-content fade-in">
-      <h2>體驗資產管理的<span class="gold">未來</span></h2>
-      <p>預約一次免費 Demo，親身體驗 DYA 數位平台如何讓您的海外資產管理變得輕鬆透明。</p>
-      <a href="#" class="btn-primary">預約 Demo <i class="fas fa-arrow-right"></i></a>
+    <div class="cta-urgency-grid fade-in">
+      <div class="cta-urgency-left">
+        <div class="cta-urgency-tag"><i class="fas fa-circle"></i> 限額開放中</div>
+        <h2>錯過資訊不對稱的<span class="gold">代價</span><span class="danger">遠比你想像的高</span></h2>
+        <p class="cta-urgency-desc">根據 DYA 內部統計，海外置產投資人因資訊不對稱造成的平均損失高達 <strong style="color:#ef4444">R 180,000+</strong> — 從錯過租金入帳到工程延誤未即時應對。我們的數位平台讓您即時掌握一切。</p>
+        <div class="cta-urgency-stats">
+          <div class="cta-urgency-stat">
+            <span class="num">R 180K+</span>
+            <span class="label">平均資訊不對稱損失</span>
+          </div>
+          <div class="cta-urgency-stat">
+            <span class="num danger-num">-47%</span>
+            <span class="label">未使用平台的投資人<br>錯過關鍵通知比例</span>
+          </div>
+          <div class="cta-urgency-stat">
+            <span class="num">24/7</span>
+            <span class="label">全天候即時監控<br>不再錯過任何通知</span>
+          </div>
+          <div class="cta-urgency-stat">
+            <span class="num">100%</span>
+            <span class="label">資訊透明度<br>每個環節都可追蹤</span>
+          </div>
+        </div>
+        <div class="cta-urgency-btns">
+          <a href="#" class="btn-primary">立即預約免費 Demo <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="btn-outline-danger">了解平台功能 <i class="fas fa-chevron-down"></i></a>
+        </div>
+      </div>
+      <div class="cta-urgency-right">
+        <div class="cta-urgency-visual">
+          <div class="cta-visual-content">
+            <div class="cta-visual-compare">
+              <div class="cta-visual-card old-way">
+                <span class="icon">😰</span>
+                <h5>傳統方式</h5>
+                <p>等仲介通知、手動記帳、文件散落各處</p>
+                <span class="vs-badge">高風險</span>
+              </div>
+              <div class="cta-visual-card new-way">
+                <span class="icon">✅</span>
+                <h5>DYA 數位平台</h5>
+                <p>即時監控、自動通知、雲端文件管理</p>
+                <span class="vs-badge">低風險</span>
+              </div>
+            </div>
+            <div class="cta-visual-quote">
+              <p>「以前每個月要花 8 小時對帳，現在打開儀表板 5 分鐘就搞定。」</p>
+              <div class="author">— DYA 平台用戶，林先生</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
