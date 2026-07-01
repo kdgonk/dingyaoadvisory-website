@@ -1061,7 +1061,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   .section-title h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
   .plan-card { padding: 24px; }
   .form-row { grid-template-columns: 1fr; }
-}</style>
+}
+
 /* ===== COOKIE CONSENT BANNER ===== */
 .cookie-consent{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:rgba(10,14,23,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(201,168,76,0.12);padding:16px 24px;transform:translateY(100%);transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 -8px 40px rgba(0,0,0,0.5)}
 .cookie-consent.show{transform:translateY(0)}
@@ -1076,6 +1077,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cookie-btn-more{background:transparent;color:#F5F0E8AA;border:1px solid rgba(245,240,232,0.15);padding:10px 20px;border-radius:4px;font-size:0.85rem;cursor:pointer;transition:all 0.3s;white-space:nowrap}
 .cookie-btn-more:hover{border-color:#F5F0E8;color:#F5F0E8}
 @media(max-width:640px){.cookie-inner{flex-direction:column;text-align:center}.cookie-btns{width:100%;justify-content:center}}
+</style>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
@@ -1583,20 +1585,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </footer>
 
-<!-- Cookie Banner -->
-<div class="cookie-banner" id="cookieBanner">
-  <div class="cookie-inner">
-    <p>
-      <i class="fas fa-shield" style="color:var(--gold);margin-right:8px;"></i>
-      <strong>我們重視您的隱私</strong> — 本網站使用 Cookie 以提供最佳的瀏覽體驗與行銷分析。繼續瀏覽即代表您同意我們的 <a href="/privacy">隱私權政策</a>。
-    </p>
-    <div class="cookie-actions">
-      <button class="btn btn-gold-ghost" onclick="rejectCookies()">拒絕</button>
-      <button class="btn btn-primary" onclick="acceptCookies()">同意並繼續</button>
-    </div>
-  </div>
-</div>
-
 <script>
 // Navbar scroll effect
 window.addEventListener('scroll', function(){
@@ -1619,23 +1607,6 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
-
-// Cookie Banner
-(function(){
-  const banner = document.getElementById('cookieBanner');
-  if(!banner) return;
-  if(!localStorage.getItem('cookieConsent')){
-    setTimeout(() => { banner.classList.add('show'); }, 500);
-  }
-  window.acceptCookies = function(){
-    localStorage.setItem('cookieConsent', 'true');
-    banner.classList.remove('show');
-  };
-  window.rejectCookies = function(){
-    localStorage.setItem('cookieConsent', 'false');
-    banner.classList.remove('show');
-  };
-})();
 </script>
 <!-- Tawk.to Live Chat -->
 <script type="text/javascript">
