@@ -1051,6 +1051,21 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   .plan-card { padding: 24px; }
   .form-row { grid-template-columns: 1fr; }
 }</style>
+/* ===== COOKIE CONSENT BANNER ===== */
+.cookie-consent{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:rgba(10,14,23,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(201,168,76,0.12);padding:16px 24px;transform:translateY(100%);transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 -8px 40px rgba(0,0,0,0.5)}
+.cookie-consent.show{transform:translateY(0)}
+.cookie-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cookie-text{flex:1;min-width:260px}
+.cookie-text p{font-size:0.85rem;color:#F5F0E8BB;line-height:1.6;margin:0}
+.cookie-text a{color:#C9A84C;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.3);transition:border-color 0.3s}
+.cookie-text a:hover{border-color:#C9A84C}
+.cookie-btns{display:flex;gap:12px;flex-shrink:0}
+.cookie-btn-accept{background:#C9A84C;color:#0A0E17;border:none;padding:10px 28px;border-radius:4px;font-weight:700;font-size:0.85rem;cursor:pointer;transition:all 0.3s;white-space:nowrap}
+.cookie-btn-accept:hover{background:#DAB85E;transform:translateY(-2px);box-shadow:0 6px 24px rgba(201,168,76,0.25)}
+.cookie-btn-more{background:transparent;color:#F5F0E8AA;border:1px solid rgba(245,240,232,0.15);padding:10px 20px;border-radius:4px;font-size:0.85rem;cursor:pointer;transition:all 0.3s;white-space:nowrap}
+.cookie-btn-more:hover{border-color:#F5F0E8;color:#F5F0E8}
+@media(max-width:640px){.cookie-inner{flex-direction:column;text-align:center}.cookie-btns{width:100%;justify-content:center}}
+
 <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"How does DingYao protect my personal data?","acceptedAnswer":{"@type":"Answer","text":"DingYao Advisory complies with both Taiwan's Personal Data Protection Act (PDPA) and South Africa's Protection of Personal Information Act (POPIA). We use bank-grade encryption for all data transmission and storage, ensuring your KYC documents and transaction records remain fully secure."}},
@@ -1064,6 +1079,21 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <!-- End Google Tag Manager -->
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased selection:bg-yellow-500 selection:text-blue-900">
+<div class="cookie-consent" id="cookieConsent">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      <p>本網站使用 cookies 以提升您的使用體驗。繼續瀏覽即表示您同意我們的 <a href="/privacy">隱私權政策</a> 與 <a href="/terms">服務條款</a>。</p>
+    </div>
+    <div class="cookie-btns">
+      <button class="cookie-btn-more" onclick="window.location.href='/privacy'">了解更多</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">✓ 接受</button>
+    </div>
+  </div>
+</div>
+<script>
+function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*1000);document.cookie="cookie_consent=accepted;expires="+d.toUTCString()+";path=/";document.getElementById("cookieConsent").classList.remove("show");setTimeout(function(){document.getElementById("cookieConsent").style.display="none"},500)}
+(function(){if(document.cookie.indexOf("cookie_consent=accepted")===-1){setTimeout(function(){document.getElementById("cookieConsent").classList.add("show")},500)}})();
+</script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVWHRBWG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
