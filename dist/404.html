@@ -1074,7 +1074,24 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <a href="/tour">商業考察</a>
       <a href="/blog">鼎曜觀點</a>
       <a href="/consultation" class="btn-nav">預約諮詢</a>
-      <div class="nav-lang"><a href="#" class="active">TW</a><span>/</span><a href="#">EN</a></div>
+      <div class="nav-lang" id="langSwitcher">
+  <a href="#" class="active" id="langTw">TW</a><span>/</span><a href="#" id="langEn">EN</a>
+</div>
+<script>
+(function(){
+  var path = window.location.pathname;
+  var isEn = path.indexOf('/en') !== -1 || path.indexOf('/en/') !== -1;
+  var tw = document.getElementById('langTw');
+  var en = document.getElementById('langEn');
+  if(isEn){
+    tw.href = path.replace(/\/en(\/|$)/, '$1') || '/';
+    en.classList.add('active');
+    tw.classList.remove('active');
+  } else {
+    en.href = path.replace(/\/$/, '') + '/en';
+  }
+})();
+</script>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
