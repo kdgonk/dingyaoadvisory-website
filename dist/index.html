@@ -1052,7 +1052,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
 <link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/" />
-<link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/en" />
+<link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/index-en" />
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/" />
 </head>
 <body>
@@ -1104,15 +1104,29 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <script>
 (function(){
   var path = window.location.pathname;
-  var isEn = path.indexOf('/en') !== -1 || path.indexOf('/en/') !== -1;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  if(isEn){
-    tw.href = path.replace(/\/en(\/|$)/, '$1') || '/';
+  // If current path ends with -en, TW goes to non-en version
+  if (path.endsWith('-en')) {
+    tw.href = path.slice(0, -3) || '/';
+  } else {
+    tw.href = path;
+  }
+  // If current path is / or doesn't have -en, EN goes to -en version
+  if (path === '/') {
+    en.href = '/index-en';
+  } else if (path.endsWith('-en')) {
+    en.href = path;
+  } else {
+    en.href = path + '-en';
+  }
+  // Set active class based on -en suffix
+  if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
   } else {
-    en.href = path.replace(/\/$/, '') + '/en';
+    tw.classList.add('active');
+    en.classList.remove('active');
   }
 })();
 </script>
