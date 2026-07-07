@@ -1041,6 +1041,11 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cookie-btn-more{background:transparent;color:#F5F0E8AA;border:1px solid rgba(245,240,232,0.15);padding:10px 20px;border-radius:4px;font-size:0.85rem;cursor:pointer;transition:all 0.3s;white-space:nowrap}
 .cookie-btn-more:hover{border-color:#F5F0E8;color:#F5F0E8}
 @media(max-width:640px){.cookie-inner{flex-direction:column;text-align:center}.cookie-btns{width:100%;justify-content:center}}
+.contact-success{text-align:center;padding:40px 24px}
+.contact-success .success-icon{font-size:3.5rem;color:#22c55e;margin-bottom:20px}
+.contact-success h3{font-size:1.5rem;margin-bottom:12px;color:#C9A84C}
+.contact-success p{color:#F5F0E8AA;line-height:1.8;max-width:400px;margin:0 auto 10px}
+.contact-success a{color:#C9A84C;text-decoration:underline}
 </style>
 
 <!-- Google Tag Manager -->
@@ -1445,7 +1450,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         </div>
       </div>
       <div class="contact-form-wrap fade-in-right">
-        <form action="mailto:info@dingyaoadvisory.tw" method="post" enctype="text/plain" id="contactForm">
+        <form id="contactForm" onsubmit="return submitHomeContact(event)">
           <div class="form-group">
             <label for="name">您的稱呼</label>
             <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
@@ -1483,12 +1488,18 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
               <option value="digital">數位資產託管服務</option>
             </select>
           </div>
-          <div class="form-submit">
+          <div class="form-submit" id="formSubmit">
             <button type="submit" class="btn btn-primary">
               預約免費評估 <i class="fas fa-arrow-right"></i>
             </button>
           </div>
         </form>
+        <div id="contactSuccess" class="contact-success" style="display:none">
+          <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>預約成功！</h3>
+          <p>感謝您的諮詢，我們的資深顧問將在 <strong>24 小時內</strong> 與您聯繫，提供專屬的投資評估報告。</p>
+          <p>如有任何疑問，歡迎來信 <a href="mailto:info@dingyaoadvisory.tw">info@dingyaoadvisory.tw</a></p>
+        </div>
       </div>
     </div>
   </div>
@@ -1571,6 +1582,56 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
+
+// Home page contact form → Chatwoot API
+function submitHomeContact(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.querySelector('#name').value.trim();
+  const email = form.querySelector('#email').value.trim();
+  const phone = form.querySelector('#countryCode').value + form.querySelector('#phone').value.trim();
+  const budget = form.querySelector('#budget').value;
+  const interest = form.querySelector('#interest').value;
+
+  const btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送出中...';
+
+  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+    },
+    body: JSON.stringify({
+      inbox_id: 2,
+      name: name,
+      email: email,
+      phone_number: phone,
+      custom_attributes: {
+        source: 'home_page',
+        budget: budget || '',
+        interest: interest || ''
+      }
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.payload && data.payload.contact) {
+      form.style.display = 'none';
+      document.getElementById('contactSuccess').style.display = 'block';
+    } else {
+      throw new Error('建立聯絡人失敗');
+    }
+  })
+  .catch(err => {
+    btn.disabled = false;
+    btn.innerHTML = '預約免費評估 <i class="fas fa-arrow-right"></i>';
+    alert('送出失敗，請稍後再試或來信 info@dingyaoadvisory.tw');
+  });
+
+  return false;
+}
 </script>
 
 </body>
