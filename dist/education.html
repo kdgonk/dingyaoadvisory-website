@@ -1009,7 +1009,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .text-center .section-subtitle{margin:0 auto 48px}
 .glow-bg{position:fixed;top:-30%;left:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 8s ease-in-out infinite}
 .glow-bg-2{position:fixed;bottom:-30%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.03) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 10s ease-in-out infinite 2s}
-@keyframes glowPulse{0%,100%{opacity:0.6}
+@keyframes glowPulse{0%,100%{opacity:0.6}}
 .hero-bg img{width:100%;height:100%;object-fit:cover}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,14,23,0.85) 0%,rgba(10,14,23,0.4) 50%,rgba(10,14,23,0.7) 100%);z-index:1}
 .hero-tag{font-family:'Cinzel',serif;font-size:clamp(0.65rem,0.9vw,0.85rem);letter-spacing:4px;color:#C9A84C;margin-bottom:16px;text-transform:uppercase}
@@ -1234,8 +1234,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <h1 class="hero-title fade-in visible fade-in-delay-1">菁英教育<br><span class="gold">入場券</span></h1>
       <p class="hero-desc fade-in visible fade-in-delay-2">為您的孩子打開通往世界的大門 — 南非頂級私校全英語貴族教育，培養具國際視野的未來領袖。</p>
       <div class="hero-btns fade-in visible fade-in-delay-3">
-        <a href="#advantages" class="btn-primary">了解優勢 <i class="fas fa-arrow-right"></i></a>
-        <a href="#schools" class="btn-outline">探索學校 <i class="fas fa-chevron-down"></i></a>
+        <a href="#advantages" class="btn btn-primary">了解優勢 <i class="fas fa-arrow-right"></i></a>
+        <a href="#schools" class="btn btn-outline">探索學校 <i class="fas fa-chevron-down"></i></a>
       </div>
     </div>
   </div>
@@ -1579,7 +1579,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           </div>
         </div>
         <div class="cta-urgency-btns fade-in fade-in-delay-3">
-          <a href="#" class="btn-primary">立即預約教育諮詢 <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="btn btn-primary">立即預約教育諮詢 <i class="fas fa-arrow-right"></i></a>
           <a href="#" class="btn-outline-danger">了解黃金留學時機 <i class="fas fa-clock"></i></a>
         </div>
       </div>
@@ -1691,18 +1691,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
 </script>
-<!-- Tawk.to Live Chat -->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 
 </body>
 </html>

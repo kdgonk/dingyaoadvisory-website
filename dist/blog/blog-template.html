@@ -1108,7 +1108,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
         "dateModified": "{{ARTICLE_DATE}}",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://dingyaoadvisory.tw/blog/{{ARTICLE_SLUG}}.html"
+            "@id": "https://dingyaoadvisory.tw/blog/{{ARTICLE_SLUG}}"
         }
     }
     </script>
@@ -1120,9 +1120,9 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://dingyaoadvisory.tw/"},
-            {"@type": "ListItem", "position": 2, "name": "專欄", "item": "https://dingyaoadvisory.tw/blog.html"},
-            {"@type": "ListItem", "position": 3, "name": "{{ARTICLE_CATEGORY_LABEL}}", "item": "https://dingyaoadvisory.tw/blog.html#{{ARTICLE_CATEGORY}}"},
-            {"@type": "ListItem", "position": 4, "name": "{{ARTICLE_TITLE}}", "item": "https://dingyaoadvisory.tw/blog/{{ARTICLE_SLUG}}.html"}
+            {"@type": "ListItem", "position": 2, "name": "專欄", "item": "https://dingyaoadvisory.tw/blog"},
+            {"@type": "ListItem", "position": 3, "name": "{{ARTICLE_CATEGORY_LABEL}}", "item": "https://dingyaoadvisory.tw/blog#{{ARTICLE_CATEGORY}}"},
+            {"@type": "ListItem", "position": 4, "name": "{{ARTICLE_TITLE}}", "item": "https://dingyaoadvisory.tw/blog/{{ARTICLE_SLUG}}"}
         ]
     }
     </script>
@@ -1179,24 +1179,24 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
-                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="../partners.html">戰略夥伴</a>
-                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="../platform.html">數位服務</a>
+                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="../partners">戰略夥伴</a>
+                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="../platform">數位服務</a>
                     <div class="relative group dropdown-container">
                         <button class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition flex items-center focus:outline-none">
                             美好生活 <i class="fas fa-chevron-down ml-1 text-xs opacity-50 transition-transform duration-300 group-hover:-rotate-180"></i>
                         </button>
                         <div class="dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl shadow-xl overflow-hidden p-2">
-                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="../education.html"><i class="fas fa-graduation-cap w-6 text-center mr-2 text-yellow-500"></i> 教育留學</a>
-                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="../retirement.html"><i class="fas fa-wine-glass-alt w-6 text-center mr-2 text-red-500"></i> 退休生活</a>
-                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="../residency.html"><i class="fas fa-passport w-6 text-center mr-2 text-blue-500"></i> 身分規劃</a>
+                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="../education"><i class="fas fa-graduation-cap w-6 text-center mr-2 text-yellow-500"></i> 教育留學</a>
+                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="../retirement"><i class="fas fa-wine-glass-alt w-6 text-center mr-2 text-red-500"></i> 退休生活</a>
+                            <a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="../residency"><i class="fas fa-passport w-6 text-center mr-2 text-blue-500"></i> 身分規劃</a>
                         </div>
                     </div>
-                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="../assets.html">精選資產</a>
-                    <a class="px-4 py-2 text-sm font-medium text-blue-900 bg-blue-50 rounded-full transition" href="../blog.html">專欄</a>
+                    <a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="../assets">精選資產</a>
+                    <a class="px-4 py-2 text-sm font-medium text-blue-900 bg-blue-50 rounded-full transition" href="../blog">專欄</a>
                 </div>
                 <div class="hidden md:flex items-center gap-3">
                     <div class="flex items-center text-xs font-bold text-gray-400">
-                        <a class="hover:text-blue-900 transition" href="{{ARTICLE_SLUG}}-en.html">EN</a>
+                        <a class="hover:text-blue-900 transition" href="{{ARTICLE_SLUG}}-en">EN</a>
                         <span class="mx-2">/</span>
                         <span class="text-blue-900 cursor-default">TW</span>
                     </div>
@@ -1236,9 +1236,9 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
     <nav class="bg-white border-b border-gray-100 py-3 px-4" aria-label="Breadcrumb">
         <div class="max-w-7xl mx-auto">
             <ol class="flex items-center space-x-2 text-sm text-gray-500">
-                <li><a href="../index.html" class="hover:text-blue-900 transition">首頁</a></li>
+                <li><a href="../index" class="hover:text-blue-900 transition">首頁</a></li>
                 <li><i class="fas fa-chevron-right text-xs"></i></li>
-                <li><a href="../blog.html" class="hover:text-blue-900 transition">專欄</a></li>
+                <li><a href="../blog" class="hover:text-blue-900 transition">專欄</a></li>
                 <li><i class="fas fa-chevron-right text-xs"></i></li>
                 <li class="text-gray-900">{{ARTICLE_CATEGORY_LABEL}}</li>
             </ol>
