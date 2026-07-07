@@ -23,6 +23,22 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "開普敦 Sectional Title 公寓投資攻略：2026年租金收益率最高的區域與外國買家入門指南",
+          "url": "/blog/cape-town-sectional-title-investment-guide-2026",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "date": "2026-07-07",
+          "description": "開普敦 Sectional Title 公寓投資全攻略：Observatory 租金收益率 10.0%、外國買家購買流程、雙引擎現金流 R 1,171,000-1,380,000。鼎曜 Phase 1 入場門檻 R 16,000,000。"
+        },
+        {
+          "title": "Cape Town Sectional Title Investment Guide 2026: Highest-Yield Apartment Areas and Foreign Buyer Strategy",
+          "url": "/blog/cape-town-sectional-title-investment-guide-2026-en",
+          "language": "en",
+          "category": "Overseas Property",
+          "date": "2026-07-07",
+          "description": "Cape Town Sectional Title Investment Guide: Observatory 10.0% yield, foreign buyer process, dual-engine cash flow R 1,171,000-1,380,000. DingYao Phase 1 entry R 16,000,000."
+        },
+        {
           "title": "外國投資者在南非買房的稅費全攻略：開普敦置產的隱形成本與節稅策略",
           "slug": "south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026",
           "language": "zh-TW",
@@ -340,5 +356,5 @@
       "description": "開普敦生活、教育、醫療資訊"
     }
   ],
-  "last_updated": "2026-07-06"
+  "last_updated": "2026-07-07"
 }
