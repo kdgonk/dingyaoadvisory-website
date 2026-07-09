@@ -207,7 +207,7 @@
       <a href="/tour">商業考察</a>
       <a href="/blog">鼎曜觀點</a>
       <a href="/consultation" class="btn-nav">預約諮詢</a>
-      <div class="nav-lang"><a href="#" class="active">TW</a><span>/</span><a href="#">EN</a></div>
+      <div class="nav-lang"><a href="#" class="active" id="langTw">TW</a><span>/</span><a href="#" id="langEn">EN</a></div>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
@@ -290,7 +290,14 @@
     </div>
     
     <!-- Hero Section with Background Image -->
-    <section class="relative pt-32 pb-16 px-4 overflow-hidden min-h-[60vh] flex items-center">
+    
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-tech-semigration-2026-hero.webp" alt="" class="hero-bg-img" loading="lazy">
+  <div class="hero-overlay"></div>
+</div>
+
+<section class="relative pt-32 pb-16 px-4 overflow-hidden min-h-[60vh] flex items-center">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
             <picture>
@@ -930,5 +937,38 @@
     document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
     if (!wasOpen) { item.classList.add('open'); }
 }</script>
+
+// Language switcher
+(function(){
+  var path = window.location.pathname;
+  var tw = document.getElementById('langTw');
+  var en = document.getElementById('langEn');
+  if (path.endsWith('-en')) {
+    tw.href = path.slice(0, -3) || '/';
+  } else {
+    tw.href = path;
+  }
+  if (path === '/') {
+    en.href = '/index-en';
+  } else if (path.endsWith('-en')) {
+    en.href = path;
+  } else {
+    en.href = path + '-en';
+  }
+  if (path.endsWith('-en')) {
+    en.classList.add('active');
+    tw.classList.remove('active');
+  } else {
+    tw.classList.add('active');
+    en.classList.remove('active');
+  }
+})();
+
+
+<div class="cookie-consent" id="cookieConsent">
+  <p>本網站使用 cookies 提升您的使用體驗。繼續瀏覽即表示您同意我們的 <a href="/privacy">隱私權政策</a> 與 <a href="/terms">服務條款</a>。</p>
+  <button onclick="document.getElementById('cookieConsent').style.display='none'">接受</button>
+</div>
+
 </body>
 </html>

@@ -1098,7 +1098,55 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .qa-item .qa-answer { display: none; }
 .qa-item.open .qa-answer { display: block; }
 .qa-toggle { transition: transform 0.3s; }
-.qa-item.open .qa-toggle { transform: rotate(180deg); }</style>
+.qa-item.open .qa-toggle { transform: rotate(180deg); }
+/* ===== ARTICLE HERO ===== */
+.article-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+.article-hero .hero-bg-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.article-hero .hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(10,14,23,0.3) 0%, rgba(10,14,23,0.8) 100%);
+  z-index: 1;
+}
+.article-hero .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.cookie-consent {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: rgba(10,14,23,0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 24px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 16px; flex-wrap: wrap;
+  z-index: 9999;
+  border-top: 1px solid rgba(201,168,76,0.1);
+}
+.cookie-consent p { font-size: 0.85rem; color: #F5F0E8AA; margin: 0; }
+.cookie-consent a { color: #C9A84C; text-decoration: underline; }
+.cookie-consent button {
+  background: #C9A84C; color: #0A0E17;
+  border: none; padding: 8px 24px; border-radius: 4px;
+  font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+</style>
     
     <!-- JSON-LD Structured Data: Article -->
     <script type="application/ld+json">
@@ -1211,7 +1259,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
       <a href="/tour">商業考察</a>
       <a href="/blog">鼎曜觀點</a>
       <a href="/consultation" class="btn-nav">預約諮詢</a>
-      <div class="nav-lang"><a href="#" class="active">TW</a><span>/</span><a href="#">EN</a></div>
+      <div class="nav-lang"><a href="#" class="active" id="langTw">TW</a><span>/</span><a href="#" id="langEn">EN</a></div>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
@@ -1293,7 +1341,14 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
     </div>
     
     <!-- Hero Section with Background Image -->
-    <section class="relative pt-32 pb-16 px-4 overflow-hidden min-h-[60vh] flex items-center">
+    
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-dual-engine-income-rental-savings-65-percent-hero.webp" alt="" class="hero-bg-img" loading="lazy">
+  <div class="hero-overlay"></div>
+</div>
+
+<section class="relative pt-32 pb-16 px-4 overflow-hidden min-h-[60vh] flex items-center">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
             <picture>
@@ -1747,5 +1802,38 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
         document.querySelectorAll('.qa-item.open').forEach(function(openItem) { openItem.classList.remove('open'); });
         if (!wasOpen) { item.classList.add('open'); }
     }</script>
+
+// Language switcher
+(function(){
+  var path = window.location.pathname;
+  var tw = document.getElementById('langTw');
+  var en = document.getElementById('langEn');
+  if (path.endsWith('-en')) {
+    tw.href = path.slice(0, -3) || '/';
+  } else {
+    tw.href = path;
+  }
+  if (path === '/') {
+    en.href = '/index-en';
+  } else if (path.endsWith('-en')) {
+    en.href = path;
+  } else {
+    en.href = path + '-en';
+  }
+  if (path.endsWith('-en')) {
+    en.classList.add('active');
+    tw.classList.remove('active');
+  } else {
+    tw.classList.add('active');
+    en.classList.remove('active');
+  }
+})();
+
+
+<div class="cookie-consent" id="cookieConsent">
+  <p>本網站使用 cookies 提升您的使用體驗。繼續瀏覽即表示您同意我們的 <a href="/privacy">隱私權政策</a> 與 <a href="/terms">服務條款</a>。</p>
+  <button onclick="document.getElementById('cookieConsent').style.display='none'">接受</button>
+</div>
+
 </body>
 </html>
