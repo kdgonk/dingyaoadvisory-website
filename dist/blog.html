@@ -1018,7 +1018,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .fade-in-delay-2{transition-delay:0.2s}
 .fade-in-delay-3{transition-delay:0.3s}
 .fade-in-delay-4{transition-delay:0.4s}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:32px}
+.blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}@media(max-width:1024px){.blog-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.blog-grid{grid-template-columns:1fr}}
 .blog-card{background:linear-gradient(135deg,rgba(12,27,51,0.8),rgba(10,14,23,0.9));border:1px solid rgba(201,168,76,0.1);border-radius:12px;overflow:hidden;transition:all 0.4s}
 .blog-card:hover{transform:translateY(-6px);border-color:rgba(201,168,76,0.3);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
 .blog-card-img{width:100%;height:200px;object-fit:cover}
@@ -1168,6 +1168,21 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </div>
     <div class="blog-grid">
 <article class="blog-card fade-in fade-in-delay-1">
+        <div style="height:200px;background:linear-gradient(135deg,rgba(201,168,76,0.08),rgba(12,27,51,0.6));display:flex;align-items:center;justify-content:center;font-size:3rem;color:#C9A84C">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-tag">新品精選</span>
+          <h3>SARB 7月利率決議前瞻：升息壓力下的開普敦房產投資策略</h3>
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> 2026.07.08</span>
+            <span><i class="far fa-clock"></i> 10 分鐘閱讀</span>
+          </div>
+          <p>SARB 7月利率決議前瞻：Polymarket 定價 52.5% 升息機率。開普敦房產在升息環境中的投資策略，雙引擎現金流 R 1,171,000-1,380,000 維持穩定。鼎曜 Phase 1 入場門檻 R 16,000,000。</p>
+          <a href="/blog/sarb-july-2026-mpc-preview-cape-town-property.html" class="blog-link">閱讀全文 <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card fade-in fade-in-delay-1">
         <div style="height:200px;background:linear-gradient(135deg,rgba(201,168,76,0.08),rgba(12,27,51,0.6));display:flex;align-items:center;justify-content:center;font-size:3rem;color:#C9A84C">
           <i class="fas fa-building"></i>
         </div>
