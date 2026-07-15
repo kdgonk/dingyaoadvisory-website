@@ -1220,17 +1220,17 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
-      <a href="/partners-en">Strategic Partners</a>
-      <a href="/platform-en">Digital Services</a>
-      <a href="/education-en">Education & Study Abroad</a>
-      <a href="/retirement-en" class="gold">Retirement Living</a>
-      <a href="/residency-en">Residency Planning</a>
-      <a href="/assets-en">Featured Assets</a>
-      <a href="/tour-en">Business Tours</a>
-      <a href="/blog-en">DingYao Insights</a>
-      <a href="/consultation-en" class="btn-nav">Book a Consultation</a>
+      <a href="/partners-en">Partners</a>
+      <a href="/platform-en">Platform</a>
+      <a href="/education-en">Education</a>
+      <a href="/retirement-en" class="gold">Retirement</a>
+      <a href="/residency-en">Residency</a>
+      <a href="/assets-en">Assets</a>
+      <a href="/tour-en">Tours</a>
+      <a href="/blog-en">Insights</a>
+      <a href="/consultation-en" class="btn-nav">Book Now</a>
       <div class="nav-lang" id="langSwitcher">
   <a href="#" class="active" id="langTw">TW</a><span>/</span><a href="#" id="langEn">EN</a>
 </div>
@@ -1239,13 +1239,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1253,13 +1253,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1471,7 +1472,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>Exclusive Digital Marketing Hub for Asia Pacific — We are dedicated to bridging the information gap in cross-border investment. Through digital escrow technology, we connect Taiwan capital with premium South African assets.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
