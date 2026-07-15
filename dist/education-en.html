@@ -1115,7 +1115,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cta-urgency-right{position:relative;padding:60px 0}
 .cta-urgency-visual{position:relative;padding:32px;border-radius:16px;background:linear-gradient(135deg,rgba(12,27,51,0.6),rgba(10,14,23,0.8));border:1px solid rgba(201,168,76,0.08);overflow:hidden}
 .cta-urgency-visual::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(201,168,76,0.03),transparent,rgba(239,68,68,0.02),transparent);animation:rotateBg 20s linear infinite;pointer-events:none}
-@keyframes rotateBg{0%{transform:rotate(0deg)}
+@keyframes rotateBg{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
 .cta-visual-content{position:relative;z-index:1}
 .cta-visual-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
 .cta-visual-card{padding:20px;border-radius:10px;text-align:center}
