@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-07-16",
+  "last_updated": "2026-07-20",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "SARB 七月 MPC 倒數三天：三種利率情境與開普敦房產投資策略",
+          "url": "/blog/sarb-july-2026-mpc-three-scenarios-cape-town-property",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "距離 SARB 七月 MPC 利率決議僅剩三天。預測市場顯示升息機率 47.5%。三種情境分析對開普敦房產投資者的影響與因應策略，含 DingYao 雙引擎現金流模型。",
+          "date": "2026-07-20"
+        },
+        {
+          "title": "SARB July MPC Countdown: Three Rate Scenarios for Cape Town Property Investors",
+          "url": "/blog/sarb-july-2026-mpc-three-scenarios-cape-town-property-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "With 3 days until the SARB July MPC decision, prediction markets show 47.5% probability of a hike. Analysis of three scenarios and their impact on Cape Town property investment strategy, including the DingYao dual-engine cash flow model.",
+          "date": "2026-07-20"
+        },
         {
           "title": "開普敦「南遷潮」2026：為什麼南非人正在用腳投票，選擇開普敦？",
           "url": "/blog/cape-town-semigration-2026",
