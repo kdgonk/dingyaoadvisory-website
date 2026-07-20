@@ -1525,6 +1525,58 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
+
+// Consultation form → Chatwoot API
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.querySelector('#name').value.trim();
+  const email = form.querySelector('#email').value.trim();
+  const phone = form.querySelector('#countryCode').value + form.querySelector('#phone').value.trim();
+  const budget = form.querySelector('#budget').value;
+  const interest = form.querySelector('#interest').value;
+  const message = form.querySelector('#message').value.trim();
+
+  const btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送出中...';
+
+  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+    },
+    body: JSON.stringify({
+      inbox_id: 2,
+      name: name,
+      email: email,
+      phone_number: phone,
+      custom_attributes: {
+        source: 'consultation_page',
+        budget: budget || '',
+        interest: interest || '',
+        message: message || ''
+      }
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.payload && data.payload.contact) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    } else {
+      throw new Error('建立聯絡人失敗');
+    }
+  })
+  .catch(err => {
+    btn.disabled = false;
+    btn.innerHTML = '預約免費評估 <i class="fas fa-arrow-right"></i>';
+    alert('送出失敗，請稍後再試或來信 info@dingyaoadvisory.tw');
+  });
+
+  return false;
+}
 </script>
 
 </body>
