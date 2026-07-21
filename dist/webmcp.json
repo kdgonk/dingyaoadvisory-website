@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-07-20",
+  "last_updated": "2026-07-21",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "外國買家十年砸 R1,530 億搶進開普敦豪宅：Lightstone 數據揭示的投資趨勢與機會",
+          "url": "/blog/foreign-buyers-r153bn-cape-town-luxury-10-years",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "Business Day 最新報導：Lightstone 數據顯示過去十年外國買家在開普敦高端房產市場投入 R1,530 億，R2,000 萬以上房產 39% 由外國人購入。深入分析外資湧入對開普敦房市的影響與海外投資者的置產策略。",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "Foreign Buyers Spent R153 Billion on Cape Town Luxury Homes in 10 Years: Lightstone Data Reveals Investment Trends",
+          "url": "/blog/foreign-buyers-r153bn-cape-town-luxury-10-years-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "Business Day reports: Lightstone data shows foreign buyers spent R153 billion on Cape Town luxury properties over the past decade. 39% of homes above R20 million were purchased by foreigners. Analysis of foreign capital inflow and investment strategies for overseas buyers.",
+          "date": "2026-07-21"
+        },
         {
           "title": "SARB 七月 MPC 倒數三天：三種利率情境與開普敦房產投資策略",
           "url": "/blog/sarb-july-2026-mpc-three-scenarios-cape-town-property",
