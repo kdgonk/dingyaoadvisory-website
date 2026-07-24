@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [SARB 意外維持利率 7% 不變：4:2 投票結果對開普敦房產投資者的三大啟示](/blog/sarb-holds-rate-july-2026-cape-town-property-impact) — SARB 7月MPC以4:2投票維持利率7%不變，出乎市場預期。解析利率穩定對開普敦房市的三大啟示：貸款買家喘息、油價下跌利多、2027降息預期。
+- [SARB Holds at 7% in a 4-2 Vote: Three Key Takeaways for Cape Town Property Investors](/blog/sarb-holds-rate-july-2026-cape-town-property-impact-en) — The SARB MPC voted 4-2 to hold the repo rate at 7.00% on July 23, defying market expectations. Analysis of three key implications for Cape Town property.
 - [開普敦 Sectional Title 公寓投資攻略：2026年租金收益率最高的區域與外國買家入門指南](/blog/cape-town-sectional-title-investment-guide-2026) — Observatory 租金收益率 10.0%，外國買家 Sectional Title 入門指南
 - [Cape Town Sectional Title Investment Guide 2026: Highest-Yield Apartment Areas and Foreign Buyer Strategy](/blog/cape-town-sectional-title-investment-guide-2026-en) — Observatory 10.0% yield, Sectional Title foreign buyer guide
 - [專欄文章列表 (中文)](/blog)

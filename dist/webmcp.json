@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "SARB 意外維持利率 7% 不變：4:2 投票結果對開普敦房產投資者的三大啟示",
+          "url": "/blog/sarb-holds-rate-july-2026-cape-town-property-impact",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "SARB 7月MPC以4:2投票維持利率7%不變，出乎市場預期。解析利率穩定對開普敦房市的三大啟示：貸款買家喘息、油價下跌利多、2027降息預期。雙引擎年現金流R 1,171,000-1,380,000，律師信託保護全程保障。",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "SARB Holds at 7% in a 4-2 Vote: Three Key Takeaways for Cape Town Property Investors",
+          "url": "/blog/sarb-holds-rate-july-2026-cape-town-property-impact-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "The SARB MPC voted 4-2 to hold the repo rate at 7.00% on July 23, defying market expectations. Analysis of three key implications for Cape Town property: rate stability through year-end, fuel price tailwinds, and 2027 rate cut expectations. Dual-engine cash flow R 1,171,000-1,380,000/year.",
+          "date": "2026-07-24"
+        },
         {
           "title": "南非通膨飆至 5% 兩年新高：SARB 升息壓力升溫，開普敦房產投資者該如何應對？",
           "url": "/blog/south-africa-inflation-5-percent-cape-town-property-2026",
