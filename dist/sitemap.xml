@@ -84,46 +84,6 @@
     </url>
 
     <url>
-        <loc>https://dingyaoadvisory.tw/blog/cape-town-gated-community</loc>
-        <lastmod>2026-07-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
-    </url>
-
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/cape-town-gated-community-en</loc>
-        <lastmod>2026-07-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
-    </url>
-
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment</loc>
-        <lastmod>2026-07-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
-    </url>
-
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment-en</loc>
-        <lastmod>2026-07-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
-    </url>
-
-    <url>
         <loc>https://dingyaoadvisory.tw/blog/cape-town-airport-upgrade-investment</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
@@ -204,6 +164,26 @@
     </url>
 
     <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-gated-community</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-gated-community-en</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-gated-community"/>
+    </url>
+
+    <url>
         <loc>https://dingyaoadvisory.tw/blog/cape-town-international-capital</loc>
         <lastmod>2026-07-24</lastmod>
         <changefreq>monthly</changefreq>
@@ -241,6 +221,26 @@
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-listing-supply-crunch-buy-to-let-2026"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-listing-supply-crunch-buy-to-let-2026-en"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-listing-supply-crunch-buy-to-let-2026"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment-en</loc>
+        <lastmod>2026-07-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-luxury-property-lifestyle-investment"/>
     </url>
 
     <url>
