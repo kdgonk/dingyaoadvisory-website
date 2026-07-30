@@ -35,7 +35,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/blog</loc>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog"/>
@@ -45,7 +45,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/blog-en</loc>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog"/>
@@ -801,6 +801,26 @@
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/fitch-upgrade-south-africa-cape-town-investment-2026"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/fitch-upgrade-south-africa-cape-town-investment-2026-en"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/fitch-upgrade-south-africa-cape-town-investment-2026"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026</loc>
+        <lastmod>2026-07-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026-en</loc>
+        <lastmod>2026-07-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/forbes-global-properties-cape-town-luxury-real-estate-2026"/>
     </url>
 
     <url>
