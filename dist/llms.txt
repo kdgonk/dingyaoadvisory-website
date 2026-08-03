@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [SARB 8月11日新規上路！外國人在南非買房的國際收支申報全攻略](/blog/sarb-bop-codes-foreign-property-buyers-2026) — 2026 年 8 月 11 日，南非儲備銀行（SARB）將正式實施更新後的國際收支（Balance of Payments, BoP）申報代碼。這項看似技術性的行政調整，對於在開普敦置產的外國買家而言，卻是一項關乎資金安全的關鍵變革——使用錯誤的 BoP 代碼，可能導致資金匯出延遲，甚至資金被凍結。
+- [SARB's New BoP Codes from 11 August 2026: What Foreign Property Buyers Must Know](/blog/sarb-bop-codes-foreign-property-buyers-2026-en) — On 11 August 2026, the South African Reserve Bank (SARB) implements updated Balance of Payments (BoP) reporting codes — over 800 categories and subcategories. For foreign buyers purchasing property in Cape Town, using the wrong BoP code can result in delayed fund transfers or frozen capital.
 - [開普敦房市 2026 年中盤點：房價年增 12.9%、成交僅需 18 天 — 供給極度緊縮下的投資策略](/blog/cape-town-property-market-mid-2026-pulse-check) — 2026上半年開普敦房市交出驚人成績單：均價年增 12.9%、房源年減 25%、成交僅需 18 天。供給極度緊縮下的投資策略：聚焦高端市場、雙引擎結構、專業在地團隊、律師信託保護。
 - [Cape Town Property Market Mid-2026 Pulse Check: 12.9% Price Growth, 18-Day Sales — Investment Strategy in a Supply-Squeezed Market](/blog/cape-town-property-market-mid-2026-pulse-check-en) — Cape Town's property market delivered stunning H1 2026 results: 12.9% YoY price growth, 25% inventory drop, and just 18 days on market. Investment strategies for a supply-squeezed market.
 - [Semigration 2.0：開普敦房市進入成熟期 — 三股新流向如何重塑南非房地產格局](/blog/cape-town-semigration-2-0-maturing-market-2026) — 南非 semigration 已從疫情狂熱期進入成熟階段。三股新流向正在重塑市場：西開普省仍為首選但增速放緩、反向回流 Gauteng 真實但有限、Gqeberha 和 Garden Route 成為新興價值目的地。

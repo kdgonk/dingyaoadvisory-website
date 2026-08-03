@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-08-03",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "SARB 8月11日新規上路！外國人在南非買房的國際收支申報全攻略",
+          "url": "/blog/sarb-bop-codes-foreign-property-buyers-2026",
+          "language": "zh-TW",
+          "category": "稅務法規",
+          "description": "2026 年 8 月 11 日，南非儲備銀行（SARB）將正式實施更新後的國際收支（Balance of Payments, BoP）申報代碼。這項看似技術性的行政調整，對於在開普敦置產的外國買家而言，卻是一項關乎資金安全的關鍵變革——使用錯誤的 BoP 代碼，可能導致資金匯出延遲，甚至資金被凍結。",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "SARB's New BoP Codes from 11 August 2026: What Foreign Property Buyers Must Know — A Complete Guide to Compliance",
+          "url": "/blog/sarb-bop-codes-foreign-property-buyers-2026-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "On 11 August 2026, the South African Reserve Bank (SARB) implements updated Balance of Payments (BoP) reporting codes — over 800 categories and subcategories. For foreign buyers purchasing property in Cape Town, using the wrong BoP code can result in delayed fund transfers or frozen capital. This complete guide covers everything you need to know.",
+          "date": "2026-08-03"
+        },
         {
           "title": "開普敦房市 2026 年中盤點：房價年增 12.9%、成交僅需 18 天 — 供給極度緊縮下的投資策略",
           "url": "/blog/cape-town-property-market-mid-2026-pulse-check",
@@ -501,34 +517,7 @@
       "海外置產顧問",
       "頂級留學規劃",
       "退休移居方案",
-      "永久居留權諮詢"
-    ],
-    "company": {
-      "name": "鼎曜國際顧問",
-      "entity": "鼎曜國際顧問有限公司",
-      "registration": "台灣註冊公司"
-    }
-  },
-  "content_categories": [
-    {
-      "name": "投資趨勢",
-      "slug": "investment",
-      "description": "南非房地產市場分析與投資機會"
-    },
-    {
-      "name": "移民資訊",
-      "slug": "immigration",
-      "description": "南非簽證、永久居留權、公民申請"
-    },
-    {
-      "name": "稅務規劃",
-      "slug": "tax",
-      "description": "跨國稅務、資產配置建議"
-    },
-    {
-      "name": "生活指南",
-      "slug": "lifestyle",
-      "description": "開普敦生活、教育、醫療資訊"
-    }
-  ]
+      "永久居留權 (PR)"
+    ]
+  }
 }
