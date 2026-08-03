@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-07-14",
+  "last_updated": "2026-08-03",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,198 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "南非房貸：外國人申請完整指南 — 利率、成數、文件與審批流程",
+          "url": "/blog/south-africa-mortgage-foreign-buyers-guide",
+          "language": "zh-TW",
+          "category": "房產投資",
+          "description": "外國人申請南非房貸完整指南：南非儲備銀行SARB規範、FICA資金審查、貸款成數LTV、利率與審批流程。Crestline Advisory執行端協助，R150,000一次性顧問費，開普敦管轄與Garlicke & Bousfield律師樓把關。",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "The Complete Guide to South Africa Mortgages for Foreign Buyers: Rates, LTV, Documents and Approval Process",
+          "url": "/blog/south-africa-mortgage-foreign-buyers-guide-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "A complete guide to South Africa mortgages for foreign buyers: SARB regulations, FICA fund checks, loan-to-value ratios, interest rates and the approval process. Crestline Advisory provides execution support, R150,000 one-time consulting fee, governed by Cape Town law with Garlicke & Bousfield legal protection.",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "開普敦買房流程完整指南：外國人從簽約到過戶的七大步驟",
+          "url": "/blog/cape-town-property-purchase-process-guide",
+          "language": "zh-TW",
+          "category": "房產投資",
+          "description": "開普敦買房流程完整指南：簽訂offer、律師信託、過戶程序、稅費與時程。R150,000一次性顧問費，資金進Money Market享7.30%利息，Crestline Advisory與Garlicke & Bousfield律師樓全程把關，確保您安全完成南非置產。",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "The Complete Cape Town Property Purchase Process Guide: Seven Steps from Offer to Transfer",
+          "url": "/blog/cape-town-property-purchase-process-guide-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "Complete Cape Town property purchase process guide: offer to purchase, lawyer trust, transfer process, fees and timeline. R150,000 one-time consulting fee, funds earning 7.30% in Money Market, with Crestline Advisory and Garlicke & Bousfield protecting every step of your South Africa investment.",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "SARB 8月11日新規上路！外國人在南非買房的國際收支申報全攻略",
+          "url": "/blog/sarb-bop-codes-foreign-property-buyers-2026",
+          "language": "zh-TW",
+          "category": "稅務法規",
+          "description": "2026 年 8 月 11 日，南非儲備銀行（SARB）將正式實施更新後的國際收支（Balance of Payments, BoP）申報代碼。這項看似技術性的行政調整，對於在開普敦置產的外國買家而言，卻是一項關乎資金安全的關鍵變革——使用錯誤的 BoP 代碼，可能導致資金匯出延遲，甚至資金被凍結。",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "SARB's New BoP Codes from 11 August 2026: What Foreign Property Buyers Must Know — A Complete Guide to Compliance",
+          "url": "/blog/sarb-bop-codes-foreign-property-buyers-2026-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "On 11 August 2026, the South African Reserve Bank (SARB) implements updated Balance of Payments (BoP) reporting codes — over 800 categories and subcategories. For foreign buyers purchasing property in Cape Town, using the wrong BoP code can result in delayed fund transfers or frozen capital. This complete guide covers everything you need to know.",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "開普敦房市 2026 年中盤點：房價年增 12.9%、成交僅需 18 天 — 供給極度緊縮下的投資策略",
+          "url": "/blog/cape-town-property-market-mid-2026-pulse-check",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "2026上半年開普敦房市交出驚人成績單：均價年增 12.9%、房源年減 25%、成交僅需 18 天。供給極度緊縮下的投資策略：聚焦高端市場、雙引擎結構、專業在地團隊、律師信託保護。雙引擎年現金流 R 1,171,000-1,380,000，律師信託保護全程保障。",
+          "date": "2026-07-28"
+        },
+        {
+          "title": "Cape Town Property Market Mid-2026 Pulse Check: 12.9% Price Growth, 18-Day Sales — Investment Strategy in a Supply-Squeezed Market",
+          "url": "/blog/cape-town-property-market-mid-2026-pulse-check-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "Cape Town's property market delivered stunning H1 2026 results: 12.9% YoY price growth, 25% inventory drop, and just 18 days on market. Investment strategies for a supply-squeezed market. Dual-engine cash flow R 1,171,000-1,380,000/year with lawyer trust protection.",
+          "date": "2026-07-28"
+        },
+        {
+          "title": "Semigration 2.0：開普敦房市進入成熟期 — 三股新流向如何重塑南非房地產格局",
+          "url": "/blog/cape-town-semigration-2-0-maturing-market-2026",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "南非 semigration 已從疫情狂熱期進入成熟階段。三股新流向正在重塑市場：西開普省仍為首選但增速放緩、反向回流 Gauteng 真實但有限、Gqeberha 和 Garden Route 成為新興價值目的地。雙引擎年現金流 R 1,171,000-1,380,000，律師信託保護全程保障。",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "Semigration 2.0: Cape Town's Property Market Enters a Mature Phase — Three New Currents Reshaping South African Real Estate",
+          "url": "/blog/cape-town-semigration-2-0-maturing-market-2026-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "South Africa's semigration story has evolved beyond the one-way narrative. Three distinct currents are reshaping the market as it enters a more mature phase, with implications for international property investors. Dual-engine cash flow R 1,171,000-1,380,000/year with lawyer trust protection.",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "SARB 意外維持利率 7% 不變：4:2 投票結果對開普敦房產投資者的三大啟示",
+          "url": "/blog/sarb-holds-rate-july-2026-cape-town-property-impact",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "SARB 7月MPC以4:2投票維持利率7%不變，出乎市場預期。解析利率穩定對開普敦房市的三大啟示：貸款買家喘息、油價下跌利多、2027降息預期。雙引擎年現金流R 1,171,000-1,380,000，律師信託保護全程保障。",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "SARB Holds at 7% in a 4-2 Vote: Three Key Takeaways for Cape Town Property Investors",
+          "url": "/blog/sarb-holds-rate-july-2026-cape-town-property-impact-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "The SARB MPC voted 4-2 to hold the repo rate at 7.00% on July 23, defying market expectations. Analysis of three key implications for Cape Town property: rate stability through year-end, fuel price tailwinds, and 2027 rate cut expectations. Dual-engine cash flow R 1,171,000-1,380,000/year.",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "南非通膨飆至 5% 兩年新高：SARB 升息壓力升溫，開普敦房產投資者該如何應對？",
+          "url": "/blog/south-africa-inflation-5-percent-cape-town-property-2026",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "南非6月CPI年增率達5.0%，創兩年新高。今日MPC會議升息機率47.5%。解析通膨升溫對開普敦房價、租金收益率的影響，以及海外現金買家的策略優勢。雙引擎年現金流R 1,171,000-1,380,000，律師信託保護全程保障。",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "South Africa Inflation Hits 5% — A Two-Year High: What It Means for Cape Town Property Investors",
+          "url": "/blog/south-africa-inflation-5-percent-cape-town-property-2026-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "South Africa's June CPI hit 5.0%, a two-year high, as the SARB MPC meets today with a 47.5% probability of a rate hike. Analysis of inflation's impact on Cape Town property prices, rental yields, and strategic advantages for foreign cash buyers. Dual-engine cash flow R 1,171,000-1,380,000/year.",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "開普敦北郊房市崛起：Durbanville 年增 13% 的投資機會解析",
+          "url": "/blog/cape-town-northern-suburbs-boom-durbanville-13-percent-2026",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "開普敦北郊（Durbanville、Brackenfell）房市年增13%+，均價僅R1.9M，31.9%買家為18-35歲年輕族群。MyCiTi交通擴張推升沿線房價6-9%，區分權租金收益率8-10%。雙引擎年現金流R 1,171,000-1,380,000，律師信託保護全程保障。",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "Cape Town's Northern Suburbs Boom: 13%+ Growth in Durbanville, Brackenfell, and Beyond",
+          "url": "/blog/cape-town-northern-suburbs-boom-durbanville-13-percent-2026-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "Cape Town's Northern Suburbs are surging with 13%+ annual growth. Average price R1.9M, 31.9% of buyers aged 18-35. MyCiTi transit expansion adds 6-9% premium. Sectional title rental yields 8-10%. Dual-engine cash flow R 1,171,000-1,380,000/year with lawyer trust protection.",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "外國買家十年砸 R1,530 億搶進開普敦豪宅：Lightstone 數據揭示的投資趨勢與機會",
+          "url": "/blog/foreign-buyers-r153bn-cape-town-luxury-10-years",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "Business Day 最新報導：Lightstone 數據顯示過去十年外國買家在開普敦高端房產市場投入 R1,530 億，R2,000 萬以上房產 39% 由外國人購入。深入分析外資湧入對開普敦房市的影響與海外投資者的置產策略。",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "Foreign Buyers Spent R153 Billion on Cape Town Luxury Homes in 10 Years: Lightstone Data Reveals Investment Trends",
+          "url": "/blog/foreign-buyers-r153bn-cape-town-luxury-10-years-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "Business Day reports: Lightstone data shows foreign buyers spent R153 billion on Cape Town luxury properties over the past decade. 39% of homes above R20 million were purchased by foreigners. Analysis of foreign capital inflow and investment strategies for overseas buyers.",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "SARB 七月 MPC 倒數三天：三種利率情境與開普敦房產投資策略",
+          "url": "/blog/sarb-july-2026-mpc-three-scenarios-cape-town-property",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "距離 SARB 七月 MPC 利率決議僅剩三天。預測市場顯示升息機率 47.5%。三種情境分析對開普敦房產投資者的影響與因應策略，含 DingYao 雙引擎現金流模型。",
+          "date": "2026-07-20"
+        },
+        {
+          "title": "SARB July MPC Countdown: Three Rate Scenarios for Cape Town Property Investors",
+          "url": "/blog/sarb-july-2026-mpc-three-scenarios-cape-town-property-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "With 3 days until the SARB July MPC decision, prediction markets show 47.5% probability of a hike. Analysis of three scenarios and their impact on Cape Town property investment strategy, including the DingYao dual-engine cash flow model.",
+          "date": "2026-07-20"
+        },
+        {
+          "title": "開普敦「南遷潮」2026：為什麼南非人正在用腳投票，選擇開普敦？",
+          "url": "/blog/cape-town-semigration-2026",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "2026年開普敦南遷潮持續升溫：35%全國南遷人口流向西開普省，平均房價R260萬，租金收益率4-8%。深入分析四大投資區域與外國人置產流程。",
+          "date": "2026-07-17"
+        },
+        {
+          "title": "Cape Town Semigration 2026: Why South Africans Are Voting With Their Feet",
+          "url": "/blog/cape-town-semigration-2026-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "2026 Cape Town semigration surge: 35% of national internal migration flows to Western Cape. Average property price R2.6M, rental yields 4-8%, days-on-market 55-70. Complete investment guide for foreign buyers.",
+          "date": "2026-07-17"
+        },
+        {
+          "title": "SARB 7月 MPC 利率決策倒數：升息 47.5% 機率下，開普敦房市的結構性分化與海外現金買家的戰略機遇",
+          "url": "/blog/sarb-july-mpc-cape-town-property",
+          "language": "zh-TW",
+          "category": "海外置產",
+          "description": "SARB 7月23日 MPC 會議升息機率達 47.5%，開普敦房市正經歷供給驟減（-12.5%）與利率緊縮的雙重擠壓。深入分析為何升息環境對海外現金買家反而是結構性進場良機，以及雙引擎方案如何在利率上升週期中創造穩定現金流。",
+          "date": "2026-07-16"
+        },
+        {
+          "title": "SARB July MPC Countdown: 47.5% Hike Probability — Why Cash Buyers Hold the Winning Hand in Cape Town Property",
+          "url": "/blog/sarb-july-mpc-cape-town-property-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "With the SARB MPC meeting on July 23 showing a 47.5% probability of a rate hike, Cape Town's property market faces a structural divergence. Supply is down 12.5% in 6 months, rental demand surging, and overseas cash buyers hold a unique structural advantage. Dual-engine annual cash flow R 1,171,000-1,380,000.",
+          "date": "2026-07-16"
+        },
         {
           "title": "開普敦房市供需失衡加劇：當 SARB 升息遇上供給驟減，海外現金買家的完美風暴",
           "url": "/blog/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage",
@@ -357,34 +549,7 @@
       "海外置產顧問",
       "頂級留學規劃",
       "退休移居方案",
-      "永久居留權諮詢"
-    ],
-    "company": {
-      "name": "鼎曜國際顧問",
-      "entity": "鼎曜國際顧問有限公司",
-      "registration": "台灣註冊公司"
-    }
-  },
-  "content_categories": [
-    {
-      "name": "投資趨勢",
-      "slug": "investment",
-      "description": "南非房地產市場分析與投資機會"
-    },
-    {
-      "name": "移民資訊",
-      "slug": "immigration",
-      "description": "南非簽證、永久居留權、公民申請"
-    },
-    {
-      "name": "稅務規劃",
-      "slug": "tax",
-      "description": "跨國稅務、資產配置建議"
-    },
-    {
-      "name": "生活指南",
-      "slug": "lifestyle",
-      "description": "開普敦生活、教育、醫療資訊"
-    }
-  ]
+      "永久居留權 (PR)"
+    ]
+  }
 }

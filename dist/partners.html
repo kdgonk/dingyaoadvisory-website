@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>合作夥伴 — DYA Ding Yao Advisory APAC Hub</title>
+<meta property="og:url" content="https://dingyaoadvisory.tw/partners">
 <link rel="canonical" href="https://dingyaoadvisory.tw/partners">
 <meta name="description" content="DYA 黃金三角戰略夥伴 — Crestline Advisory、CanvasCrest Properties、Standard Bank，為您打造南非頂級置產的生態系。">
 <meta name="keywords" content="合作夥伴,南非置產,Crestline,CanvasCrest,Standard Bank,生態系,DYA">
@@ -13,6 +14,7 @@
 <meta property="og:description" content="黃金三角戰略夥伴 — 南非在地專業顧問、頂級開發商、國際級銀行">
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/partners-hero.avif">
 <meta property="og:type" content="website">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/partners-hero.avif">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="https://assets.dingyaoadvisory.tw/favicon.svg">
 <link rel="icon" type="image/png" href="https://assets.dingyaoadvisory.tw/favicon.png">
@@ -1008,7 +1010,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 /* Glow Backgrounds */
 .glow-bg{position:fixed;top:-30%;left:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 8s ease-in-out infinite}
 .glow-bg-2{position:fixed;bottom:-30%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.03) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 10s ease-in-out infinite 2s}
-@keyframes glowPulse{0%,100%{opacity:0.6}}50%{opacity:1}}
+@keyframes glowPulse{0%,100%{opacity:0.6}50%{opacity:1}}
 
 /* Hero Override */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
@@ -1142,6 +1144,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/partners" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/partners-en" />
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/partners" />
+<meta name="twitter:title" content="合作夥伴 — DYA Ding Yao Advisory APAC Hub">
+<meta name="twitter:description" content="黃金三角戰略夥伴 — 南非在地專業顧問、頂級開發商、國際級銀行">
 </head>
 <body>
 <div class="cookie-consent" id="cookieConsent">
@@ -1169,7 +1173,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -1188,13 +1192,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1202,13 +1206,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1216,7 +1221,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
-
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -1477,7 +1481,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1533,7 +1537,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </div>
   </div>
 </footer>
-
 
 <script>
 // Navbar scroll effect

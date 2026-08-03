@@ -14,9 +14,10 @@
 <meta property="og:title" content="Global Residency Planning | DingYao Advisory">
 <meta property="og:description" content="South Africa PR permanent residency application services, asset threshold R 16 million, 4-step process.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://dingyaoadvisory.tw/residency">
+<meta property="og:url" content="https://dingyaoadvisory.tw/residency-en">
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/residency-hero.avif">
 <meta property="og:locale" content="en_US">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/residency-hero.avif">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="https://assets.dingyaoadvisory.tw/favicon.svg">
 <link rel="icon" type="image/png" href="https://assets.dingyaoadvisory.tw/favicon.png">
@@ -28,7 +29,7 @@
   "@type": "FinancialService",
   "name": "DingYao Advisory — Global Residency Planning",
   "description": "South Africa PR permanent residency application services, asset threshold R 16 million",
-  "url": "https://dingyaoadvisory.tw/residency",
+  "url": "https://dingyaoadvisory.tw/residency-en",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Taichung City",
@@ -1372,9 +1373,9 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
-<link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/residency" />
+<link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/residency-en" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/residency-en" />
-<link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/residency" />
+<link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/residency-en" />
 </head>
 <body>
 <div class="cookie-consent" id="cookieConsent">
@@ -1407,32 +1408,30 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
-      <a href="/partners">Strategic Partners</a>
-      <a href="/platform">Digital Services</a>
-      <a href="/education">Study Abroad</a>
-      <a href="/retirement" class="gold">Retirement Living</a>
-      <a href="/residency">Residency Planning</a>
-      <a href="/assets">Selected Assets</a>
-      <a href="/tour">Business Tours</a>
-      <a href="/blog">DingYao Insights</a>
-      <a href="/consultation" class="btn-nav">Book Consultation</a>
-      <div class="nav-lang" id="langSwitcher">
-  <a href="#" class="active" id="langTw">TW</a><span>/</span><a href="#" id="langEn">EN</a>
-</div>
+      <a href="/partners-en">Partners</a>
+      <a href="/platform-en">Platform</a>
+      <a href="/education-en">Education</a>
+      <a href="/retirement-en" class="gold">Retirement</a>
+      <a href="/residency-en">Residency</a>
+      <a href="/assets-en">Assets</a>
+      <a href="/tour-en">Tour</a>
+      <a href="/blog-en">Insights</a>
+      <a href="/consultation-en" class="btn-nav">Consultation</a>
+      <div class="nav-lang" id="langSwitcher"><a href="#" class="" id="langTw">TW</a><span>/</span><a href="#" class="active" id="langEn">EN</a>
 <script>
 (function(){
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1440,13 +1439,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1454,7 +1454,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
-
 
 <!-- Hero -->
 <section class="hero" id="hero">
@@ -1748,7 +1747,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <h2>Ready to Start Your<br>Residency Planning?</h2>
       <p>Book a free consultation and let our professional advisors assess the best residency plan for you.</p>
       <a href="consultation.html" class="btn btn-primary">
-        Book a Consultation Now <i class="fas fa-arrow-right"></i>
+        Book Now Now <i class="fas fa-arrow-right"></i>
       </a>
     </div>
   </div>
@@ -1759,7 +1758,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>The exclusive digital marketing hub in the Asia-Pacific region — we are committed to bridging the information gap in cross-border investment. Connecting Taiwanese capital with premier South African assets through digital escrow technology.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1783,12 +1782,12 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div>
         <h4>Core Services</h4>
         <ul>
-          <li><a href="/assets">Overseas Property Advisory</a></li>
-          <li><a href="/education">Premium Study Abroad Planning</a></li>
-          <li><a href="/retirement">Retirement Relocation Solutions</a></li>
-          <li><a href="/residency">Permanent Residency (PR)</a></li>
-          <li><a href="/platform">Digital Asset Platform</a></li>
-          <li><a href="/tour">Business Tours</a></li>
+          <li><a href="/assets-en">Overseas Property Advisory</a></li>
+          <li><a href="/education-en">Premium Study Abroad Planning</a></li>
+          <li><a href="/retirement-en">Retirement Solutions</a></li>
+          <li><a href="/residency-en">Permanent Residency (PR)</a></li>
+          <li><a href="/platform-en">Platform</a></li>
+          <li><a href="/tour-en">Business Tours</a></li>
         </ul>
       </div>
       <div>
@@ -1809,13 +1808,12 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <p>Designed for Global Investors &copy; 2026 <a href="https://dingyaoadvisory.tw" style="color:#C9A84C;text-decoration:none;">DingYao</a> Advisory</p>
       <div class="footer-bottom-links">
         <a href="/sitemap.xml">Sitemap</a>
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/terms">Terms of Service</a>
+        <a href="/privacy-en">Privacy Policy</a>
+        <a href="/terms-en">Terms of Service</a>
       </div>
     </div>
   </div>
 </footer>
-
 
 <script>
 // Navbar scroll effect

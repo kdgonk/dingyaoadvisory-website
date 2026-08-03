@@ -23,6 +23,7 @@
 <meta property="article:modified_time" content="2026-06-15T08:00:00+08:00">
 <meta property="article:section" content="Property Investment">
 <meta property="og:site_name" content="鼎曜國際顧問 DingYao Advisory">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/blog/images/sarb-rate-hike-cape-town-property-safe-haven-2026-hero.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SARB三年來首次升息至7%：開普敦房產為何仍是海外投資避風港 | 鼎曜國際顧問">
 <meta name="twitter:description" content="SARB三年來首度升息，repo rate回到7.00%、prime rate升至10.50%。本地按揭族壓力驟增，但對海外現金買家而言，這恰恰是競爭力重分配的起點。雙引擎年現金流R 1,171,000-1,380,000。">
@@ -597,7 +598,7 @@ blockquote cite {
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -625,7 +626,7 @@ blockquote cite {
   <div class="container">
     <div class="fade-in visible">
       <span class="article-tag"><i class="fas fa-tag" style="margin-right:6px"></i>房產投資</span>
-      <h1 class="article-title">SARB三年來首次升息至7%：開普敦房產為何仍是海外投資避風港 | 鼎曜國際顧問</h1>
+      <h2 class="article-title">SARB三年來首次升息至7%：開普敦房產為何仍是海外投資避風港 | 鼎曜國際顧問</h2>
       <div class="article-meta">
         <span><i class="far fa-calendar"></i> 2026.01.01</span>
         <span><i class="far fa-clock"></i> 8 分鐘閱讀</span>
@@ -769,10 +770,10 @@ blockquote cite {
                         <span class="text-gray-400 text-sm ml-2"><i class="far fa-clock mr-1"></i>閱讀時間 9 分鐘</span>
                     </div>
                     
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                         SARB三年來首次升息至7%：
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-500">開普敦房產為何仍是海外投資避風港</span>
-                    </h1>
+                    </h2>
                     
                     <p id="article-summary" class="text-gray-200 text-lg max-w-3xl mb-8 leading-relaxed">
                         SARB 三年來首度升息，repo rate 回到 <strong class="text-yellow-400">7.00%</strong>、prime rate 升至 10.50%。本地按揭族壓力驟增，但對海外現金買家而言，這恰恰是競爭力重分配的起點。R 16,000,000 雙引擎年現金流 <strong class="text-yellow-400">R 1,171,000-1,380,000</strong>。
@@ -1122,7 +1123,7 @@ blockquote cite {
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1218,6 +1219,13 @@ if(localStorage.getItem('cookieConsent')==='accepted'){
   document.getElementById('langTw').href = base || '/';
   document.getElementById('langEn').href = (base ? base + '-en' : '/en') || '/en';
   if(isEn){ document.getElementById('langTw').classList.remove('active'); document.getElementById('langEn').classList.add('active'); }
+
+  // Set logo href based on language
+  if (path.endsWith('-en') || path.endsWith('-en/')) {
+    if (logo) logo.href = '/index-en';
+  } else {
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
+  }
 })();
 </script>
 

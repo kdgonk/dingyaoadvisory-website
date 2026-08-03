@@ -22,6 +22,7 @@
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/blog/images/south-africa-pr-guide-hero.webp">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="鼎曜國際顧問 DingYao Advisory">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/blog/images/south-africa-pr-guide-hero.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="南非 PR 申請完全指南：資產門檻、流程與常見問題">
 <meta name="twitter:description" content="南非永久居留權 (PR) 是許多高資產人士的第二身分首選。本文詳細介紹申請條件、資產門檻、4 步驟流程與常見問題，助您順利取得南非 PR。">
@@ -721,7 +722,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -1031,7 +1032,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1079,7 +1080,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
     <div class="footer-bottom">
       <p>Designed for Global Investors &copy; 2026 <a href="https://dingyaoadvisory.tw" style="color:#C9A84C;text-decoration:none;">DingYao</a> Advisory</p>
       <div class="footer-bottom-links">
-        <a href="/sitemap">網站地圖</a>
+        <a href="/sitemap.xml">網站地圖</a>
         <a href="/privacy">隱私權政策</a>
         <a href="/terms">服務條款</a>
       </div>
@@ -1120,6 +1121,7 @@ function toggleFaq(btn) {
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
+  var logo = document.getElementById('navLogo');
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
@@ -1138,6 +1140,13 @@ function toggleFaq(btn) {
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+  }
+
+  // Set logo href based on language
+  if (path.endsWith('-en') || path.endsWith('-en/')) {
+    if (logo) logo.href = '/index-en';
+  } else {
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>

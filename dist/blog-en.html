@@ -20,9 +20,9 @@
     <meta name="keywords" content="South Africa property,South Africa real estate,Cape Town real estate,South Africa investment,Study in South Africa,South Africa retirement,South Africa PR,Permanent Residency">
     
     <link rel="canonical" href="https://dingyaoadvisory.tw/blog-en">
-    <link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog">
+    <link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/blog-en">
     <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog-en">
-    <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog">
+    <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog-en">
     
     <meta property="og:type" content="website">
     <meta property="og:title" content="Insights | DingYao Advisory">
@@ -48,20 +48,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { brand: { navy: '#0F172A', gold: '#C5A059', blue: '#1e3a8a' } },
-                    fontFamily: { sans: ['Noto Sans TC', 'sans-serif'], logo: ['Playfair Display', 'serif'] }
-                }
-            }
-        }
-    </script>
-    
+
     <style>
 /* ===== CSS VARIABLES ===== */
 :root {
@@ -995,6 +982,41 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   transform: translateY(0);
 }
 
+/* ===== BLOG-SPECIFIC STYLES ===== */
+.section-subtitle{font-size:clamp(0.95rem,1.5vw,1.15rem);color:#F5F0E899;max-width:640px;margin-bottom:48px}
+.gold-line{width:60px;height:3px;background:#C9A84C;margin-bottom:24px;border-radius:2px}
+.text-center{text-align:center}
+.text-center .gold-line{margin:0 auto 24px}
+.text-center .section-subtitle{margin:0 auto 48px}
+.glow-bg{position:fixed;top:-30%;left:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 8s ease-in-out infinite}
+.glow-bg-2{position:fixed;bottom:-30%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(201,168,76,0.03) 0%,transparent 70%);pointer-events:none;z-index:0;animation:glowPulse 10s ease-in-out infinite 2s}
+@keyframes glowPulse{0%,100%{opacity:0.6}}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,14,23,0.85) 0%,rgba(10,14,23,0.4) 50%,rgba(10,14,23,0.7) 100%);z-index:1}
+.hero-tag{font-family:'Cinzel',serif;font-size:clamp(0.65rem,0.9vw,0.85rem);letter-spacing:4px;color:#C9A84C;margin-bottom:16px;text-transform:uppercase}
+.hero-title .gold{display:block}
+.hero-desc{font-size:clamp(1rem,1.5vw,1.25rem);color:#F5F0E899;max-width:650px;margin:24px auto 40px;line-height:1.8}
+.fade-in-delay-1{transition-delay:0.1s}
+.fade-in-delay-2{transition-delay:0.2s}
+.fade-in-delay-3{transition-delay:0.3s}
+.fade-in-delay-4{transition-delay:0.4s}
+.blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}@media(max-width:1024px){.blog-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.blog-grid{grid-template-columns:1fr}}
+.blog-card{background:linear-gradient(135deg,rgba(12,27,51,0.8),rgba(10,14,23,0.9));border:1px solid rgba(201,168,76,0.1);border-radius:12px;overflow:hidden;transition:all 0.4s}
+.blog-card:hover{transform:translateY(-6px);border-color:rgba(201,168,76,0.3);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+.blog-card-img{width:100%;height:200px;object-fit:cover}
+.blog-card-body{padding:28px}
+.blog-card .blog-tag{display:inline-block;font-size:0.7rem;font-weight:600;color:#C9A84C;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;padding:4px 12px;border:1px solid rgba(201,168,76,0.2);border-radius:4px}
+.blog-card h3{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;margin-bottom:10px;line-height:1.4}
+.blog-card .blog-meta{font-size:0.8rem;color:#F5F0E877;margin-bottom:12px;display:flex;gap:12px}
+.blog-card .blog-meta i{margin-right:4px}
+.blog-card p{color:#F5F0E899;font-size:0.88rem;line-height:1.7;margin-bottom:16px}
+.blog-card .blog-link{color:#C9A84C;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:gap 0.3s}
+.blog-card .blog-link:hover{gap:10px}
+.cta-section{background:linear-gradient(135deg,rgba(12,27,51,0.6),rgba(10,14,23,0.8));border-top:1px solid rgba(201,168,76,0.1);border-bottom:1px solid rgba(201,168,76,0.1)}
+.cta-content{text-align:center;max-width:700px;margin:0 auto}
+.cta-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;margin-bottom:16px}
+.cta-content p{color:#F5F0E899;margin-bottom:32px;font-size:1rem}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .trusted-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1050,7 +1072,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cookie-btn-more:hover{border-color:#F5F0E8;color:#F5F0E8}
 @media(max-width:640px){.cookie-inner{flex-direction:column;text-align:center}.cookie-btns{width:100%;justify-content:center}}
 
-    
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Blog","name":"DingYao Advisory Insights","description":"Professional insights on South African property investment, education abroad, retirement living, and residency planning","url":"https://dingyaoadvisory.tw/blog-en","inLanguage":"en","publisher":{"@type":"Organization","name":"DingYao Advisory","logo":{"@type":"ImageObject","url":"https://assets.dingyaoadvisory.tw/dingyao%20logo.png"}}}
     </script>
@@ -1059,7 +1080,10 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
     <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PVWHRBWG');</script>
 
 </head>
-<body class="font-sans bg-gray-50 text-gray-800 antialiased selection:bg-yellow-500 selection:text-blue-900">
+<body>
+<div class="glow-bg"></div>
+<div class="glow-bg-2"></div>
+
 <div class="cookie-consent" id="cookieConsent">
   <div class="cookie-inner">
     <div class="cookie-text">
@@ -1078,1000 +1102,1204 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PVWHRBWG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
     
-    <!-- Navigation -->
-    <div class="fixed w-full z-50 top-4 md:top-6 px-4 pointer-events-none">
-        <!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
-    <div class="nav-links" id="navLinks">
-      <a href="/partners">戰略夥伴</a>
-      <a href="/platform">數位服務</a>
-      <a href="/education">教育留學</a>
-      <a href="/retirement" class="gold">退休生活</a>
-      <a href="/residency">身分規劃</a>
-      <a href="/assets">精選資產</a>
-      <a href="/tour">商業考察</a>
-      <a href="/blog">鼎曜觀點</a>
-      <a href="/consultation" class="btn-nav">預約諮詢</a>
-      <div class="nav-lang"><a href="#" class="active">TW</a><span>/</span><a href="#">EN</a></div>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
-  </div>
-</nav>
-    </div>
-    
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-16 px-4 overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/blog-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/blog-hero.jpg" alt="Blog Background" class="w-full h-full object-cover" width="1920" height="1080">
-            </picture>
-            <div class="absolute inset-0 bg-gradient-to-b from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/90"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto text-center relative z-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
-                <span class="text-gradient">Insights</span>
-            </h1>
-            <p class="text-gray-300 text-lg max-w-2xl mx-auto">Professional perspectives on South African property, education abroad, retirement living, and residency planning</p>
-            
-            <div class="flex flex-wrap justify-center gap-3 mt-8">
-                <button class="px-4 py-2 bg-white/30 text-white rounded-full text-sm hover:bg-white/40 transition category-btn active" data-category="all">All Articles</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="investment">Property Investment</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="education">Education</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="lifestyle">Retirement</button>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="residency">Residency</button>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Breadcrumb -->
     <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
-      <a href="/partners">戰略夥伴</a>
-      <a href="/platform">數位服務</a>
-      <a href="/education">教育留學</a>
-      <a href="/retirement" class="gold">退休生活</a>
-      <a href="/residency">身分規劃</a>
-      <a href="/assets">精選資產</a>
-      <a href="/tour">商業考察</a>
-      <a href="/blog">鼎曜觀點</a>
-      <a href="/consultation" class="btn-nav">預約諮詢</a>
-      <div class="nav-lang"><a href="#" class="active">TW</a><span>/</span><a href="#">EN</a></div>
+      <a href="/partners-en">Partners</a>
+      <a href="/platform-en">Platform</a>
+      <a href="/education-en">Education</a>
+      <a href="/retirement-en" class="gold">Retirement</a>
+      <a href="/residency-en">Residency</a>
+      <a href="/assets-en">Assets</a>
+      <a href="/tour-en">Tour</a>
+      <a href="/blog-en">Insights</a>
+      <a href="/consultation-en" class="btn-nav">Consultation</a>
+      <div class="nav-lang"><a href="#" class="">TW</a><span>/</span><a href="#" class="active">EN</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
     
-    <!-- Blog Grid: Hero + Standard Layout -->
-    <section class="py-16 px-4 bg-gray-50">
-        <div class="max-w-7xl mx-auto">
-            <div id="blog-posts">
-<article class="hero-card bg-white rounded-2xl overflow-hidden shadow-lg card-hover mb-8" data-category="investment">
-    <div class="grid lg:grid-cols-2 gap-0">
-        <div class="aspect-[16/10] lg:aspect-auto lg:h-full overflow-hidden">
-            <a href="blog/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage-en">
-                <picture>
-                    <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage-hero.webp" type="image/webp">
-                    <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage-hero.jpg" alt="Cape Town's Supply Crunch Meets SARB's Hawkish Turn: Why Cash Buyers Hold the Winning Hand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="eager" width="600" height="400">
-                </picture>
-            </a>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <picture>
+          <source srcset="https://assets.dingyaoadvisory.tw/blog/images/blog-hero.webp" type="image/webp">
+          <img src="https://assets.dingyaoadvisory.tw/blog/images/blog-hero.jpg" alt="Insights" loading="lazy">
+        </picture>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container" style="position:relative;z-index:2">
+        <div class="hero-content">
+          <div class="hero-tag fade-in visible">DYA INSIGHTS</div>
+          <h1 class="hero-title fade-in visible fade-in-delay-1">Market Insights &<br><span class="gold">Latest Updates</span></h1>
+          <p class="hero-desc fade-in visible fade-in-delay-2">Professional perspectives on South African property, education abroad, retirement living, and residency planning.</p>
+          
+          <div class="flex flex-wrap justify-center gap-3 mt-8" style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:32px">
+            <button class="px-4 py-2 bg-white/30 text-white rounded-full text-sm hover:bg-white/40 transition category-btn active" data-category="all" style="padding:8px 16px;background:rgba(255,255,255,0.3);color:white;border-radius:999px;font-size:0.875rem;border:none;cursor:pointer;transition:all 0.2s">All Articles</button>
+            <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="investment" style="padding:8px 16px;background:rgba(255,255,255,0.1);color:white;border-radius:999px;font-size:0.875rem;border:none;cursor:pointer;transition:all 0.2s">Property Investment</button>
+            <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="education" style="padding:8px 16px;background:rgba(255,255,255,0.1);color:white;border-radius:999px;font-size:0.875rem;border:none;cursor:pointer;transition:all 0.2s">Education</button>
+            <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="lifestyle" style="padding:8px 16px;background:rgba(255,255,255,0.1);color:white;border-radius:999px;font-size:0.875rem;border:none;cursor:pointer;transition:all 0.2s">Retirement</button>
+            <button class="px-4 py-2 bg-white/10 text-white rounded-full text-sm hover:bg-white/20 transition category-btn" data-category="residency" style="padding:8px 16px;background:rgba(255,255,255,0.1);color:white;border-radius:999px;font-size:0.875rem;border:none;cursor:pointer;transition:all 0.2s">Residency</button>
+          </div>
         </div>
-        <div class="p-8 flex flex-col justify-center">
-            <div class="flex items-center gap-2 mb-3">
-                <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">NEW Morning Release</span>
-                <span class="text-xs text-gray-400">2026-07-14</span>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section" id="posts">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-label">LATEST ARTICLES</span>
+                <h2>All <span class="gold-text">Insights</span></h2>
+                <p>Curated analysis and market intelligence for global investors</p>
             </div>
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">
-                <a href="blog/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage-en" class="hover:text-[#C5A059] transition-colors">Cape Town's Supply Crunch Meets SARB's Hawkish Turn: Why Cash Buyers Hold the Winning Hand</a>
-            </h2>
-            <p class="text-gray-600 mb-6 line-clamp-3">Cape Town listings drop 12.5% in six months as SARB hike probability hits 47.5%. Why overseas cash buyers hold the winning hand in this perfect storm of supply crunch and rate uncertainty. Dual-engine annual cash flow R 1,171,000-1,380,000.</p>
-            <a href="blog/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage-en" class="inline-flex items-center text-sm font-bold text-white bg-[#C5A059] hover:bg-[#B8944F] px-6 py-3 rounded-full transition-all self-start shadow-lg shadow-[#C5A059]/20">
-                Read More <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-        </div>
+            <div class="blog-grid" id="standard-posts">
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-mortgage-foreign-buyers-guide-hero.webp" alt="South Africa Mortgage for Foreign Buyers: Rates, LTV, Documents and Approval" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>The Complete Guide to South Africa Mortgages for Foreign Buyers: Rates, LTV, Documents and Approval Process</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-08-03</span>
     </div>
+    <p>A complete guide to South Africa mortgages for foreign buyers: SARB regulations, FICA fund checks, loan-to-value ratios, interest rates and the approval process. Crestline Advisory provides execution support, R150,000 one-time consulting fee, governed by Cape Town law with Garlicke &amp; Bousfield legal protection.</p>
+    <a href="blog/south-africa-mortgage-foreign-buyers-guide-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-preview-cape-town-property-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-preview-cape-town-property-hero.jpg" alt="SARB July MPC Preview: Three Rate Scenarios and What They Mean for Cape Town Property Investors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-purchase-process-guide-hero.webp" alt="The Complete Cape Town Property Purchase Process Guide: Seven Steps from Offer to Transfer" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>The Complete Cape Town Property Purchase Process Guide: Seven Steps from Offer to Transfer</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-08-03</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">NEW Morning Release</span>
-            <span class="text-xs text-gray-400">2026-07-13</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en" class="hover:text-[#C5A059] transition-colors">SARB July MPC Preview: Three Rate Scenarios and What They Mean for Cape Town Property Investors</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">With 10 days until the SARB July MPC decision, prediction markets show a 47.5% probability of a rate hike. Analysis of three scenarios and their impact on Cape Town property investment. DingYao Phase 1 entry R 16,000,000, dual-engine annual cash flow R 1,171,000-1,380,000.</p>
-        <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
-</article><article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/cape-town-quality-life-property-demand-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-quality-life-property-demand-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-quality-life-property-demand-2026-hero.jpg" alt="Cape Town Quality of Life Drives Property Demand: From Lifestyle Destination to Investment Haven" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
-    </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">Morning Release</span>
-            <span class="text-xs text-gray-400">2026-07-10</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/cape-town-quality-life-property-demand-2026-en" class="hover:text-[#C5A059] transition-colors">Cape Town Quality of Life Drives Property Demand: From Lifestyle Destination to Investment Haven</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">Cape Town quality of life drives property demand: 319,000 semigrants, Atlantic Seaboard 8-12% annual growth. Dual-engine cash flow R 1,171,000-1,380,000/year. DingYao Phase 1 entry R 16,000,000.</p>
-        <a href="blog/cape-town-quality-life-property-demand-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>A complete guide to the Cape Town property purchase process: offer to purchase, lawyer trust, transfer process, fees and timeline. R150,000 one-time consulting fee, funds earning 7.30% in Money Market, with Crestline Advisory and Garlicke &amp; Bousfield protecting every step of your South Africa investment.</p>
+    <a href="blog/cape-town-property-purchase-process-guide-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-preview-cape-town-property-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-preview-cape-town-property-hero.jpg" alt="SARB July 2026 MPC Preview: Rate Hike Pressure and Cape Town Property Investment Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="regulation">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-bop-codes-foreign-property-buyers-2026-hero.webp" alt="SARB's New BoP Codes from 11 August 2026: What Foreign Property Buyers Must Know" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>SARB's New BoP Codes from 11 August 2026: What Foreign Property Buyers Must Know — A Complete Guide to Compliance</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-08-03</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">Morning Release</span>
-            <span class="text-xs text-gray-400">2026-07-08</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en" class="hover:text-[#C5A059] transition-colors">SARB July 2026 MPC Preview: Rate Hike Pressure and Cape Town Property Investment Strategy</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">SARB July 2026 MPC Preview: Polymarket prices 52.5% probability of a 25bps hike. Cape Town property investment strategy in a rising-rate environment. Dual-engine cash flow R 1,171,000-1,380,000 remains stable. DingYao Phase 1 entry R 16,000,000.</p>
-        <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>On 11 August 2026, the South African Reserve Bank (SARB) implements updated Balance of Payments (BoP) reporting codes — over 800 categories and subcategories. For foreign buyers purchasing property in Cape Town, using the wrong BoP code can result in delayed fund transfers or frozen capital. This complete guide covers everything you need to know.</p>
+    <a href="blog/sarb-bop-codes-foreign-property-buyers-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/cape-town-sectional-title-investment-guide-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-sectional-title-investment-guide-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-sectional-title-investment-guide-2026-hero.jpg" alt="Cape Town Sectional Title Investment Guide 2026: Highest-Yield Apartment Areas and Foreign Buyer Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="education">
+  <img src="https://www.goodthingsguy.com/wp-content/uploads/2026/07/sa-maths.jpeg" alt="South Africa Wins Silver and Bronze at 2026 IMO — World-Class Talent on Display" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>South Africa Wins Silver and Bronze at 2026 IMO — World-Class Talent on Display</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-31</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">Morning Release</span>
-            <span class="text-xs text-gray-400">2026-07-07</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/cape-town-sectional-title-investment-guide-2026-en" class="hover:text-[#C5A059] transition-colors">Cape Town Sectional Title Investment Guide 2026: Highest-Yield Apartment Areas and Foreign Buyer Strategy</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">Cape Town Sectional Title Investment Guide: Observatory 10.0% yield, foreign buyer process, dual-engine cash flow R 1,171,000-1,380,000. DingYao Phase 1 entry R 16,000,000.</p>
-        <a href="blog/cape-town-sectional-title-investment-guide-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
-</article>
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026-hero.jpg" alt="Complete Tax Guide for Foreign Property Buyers in South Africa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
-    </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">Morning Release</span>
-            <span class="text-xs text-gray-400">2026-07-06</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026-en" class="hover:text-[#C5A059] transition-colors">Complete Tax Guide for Foreign Property Buyers in South Africa: Hidden Costs and Tax-Efficient Strategies for Cape Town Investment</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">Complete tax guide for foreign property buyers in South Africa: Transfer Duty R 926,856, conveyancing, municipal rates, CGT breakdown. DingYao Phase 1 investment tax-efficient strategies.</p>
-        <a href="blog/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>South Africa's team at the 67th IMO 2026 in Shanghai brought home 1 Silver, 1 Bronze, and 3 Honourable Mentions — ranking 57th out of 117 countries. South Africa's education system proves it can compete with the world's best, even at the highest level of mathematical competition.</p>
+    <a href="blog/imo-2026-south-africa-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/south-africa-remote-work-visa-cape-town-property-demand-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-remote-work-visa-cape-town-property-demand-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-remote-work-visa-cape-town-property-demand-2026-hero.jpg" alt="How South Africa Remote Work Visa is Driving Cape Town Property Demand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-cbd-record-r12-8bn-development-boom-2026-hero.webp" alt="Cape Town CBD Development Hits Record R12.8bn: 41% Surge Reshaping the Skyline" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Cape Town CBD Development Hits Record R12.8bn: 41% Surge, 29 Projects Reshaping the Skyline — What This Means for Property Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-31</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">NEW Morning Release</span>
-            <span class="text-xs text-gray-400">2026-07-01</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/south-africa-remote-work-visa-cape-town-property-demand-2026-en" class="hover:text-[#C5A059] transition-colors">How South Africa's Remote Work Visa is Driving Cape Town Property Demand: The Structural Link Between Digital Nomads and Overseas Investment in 2026</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">South Africa's Remote Work Visitor Visa is reshaping Cape Town's property market — visa holders transition from short-term rentals to long-term leases to property buyers. ZAR 650,976/year income threshold, 3-year stay, 6-month tax holiday. R 16,000,000 dual-engine annual cash flow R 1,171,000-1,380,000.</p>
-        <a href="blog/south-africa-remote-work-visa-cape-town-property-demand-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
-</article>
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/international-buyers-cape-town-foreign-property-trends-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/international-buyers-cape-town-foreign-property-trends-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/international-buyers-cape-town-foreign-property-trends-2026-hero.jpg" alt="International Buyers Flock to Cape Town: 2026 Foreign Property Trends and Strategic Positioning for Taiwanese Investors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
-    </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">NEW Morning Release</span>
-            <span class="text-xs text-gray-400">2026-06-30</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/international-buyers-cape-town-foreign-property-trends-2026-en" class="hover:text-[#C5A059] transition-colors">International Buyers Flock to Cape Town: 2026 Foreign Property Trends and Strategic Positioning for Taiwanese Investors</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">BetterBond report: International buyers account for 40%+ of Cape Town luxury transactions, surpassing London (30%) and New York (20%). German pension funds, Dutch tech entrepreneurs, British remote workers. R 16,000,000 dual-engine annual cash flow R 1,171,000-1,380,000.</p>
-        <a href="blog/international-buyers-cape-town-foreign-property-trends-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>July 2026: The CCID's State of Cape Town Central City Report 2025 reveals a record R12.8bn in CBD property development — a 41% year-on-year surge. 29 projects, R6.2bn in residential investment, Golden Acre's 450 apartments. What this means for property investors.</p>
+    <a href="blog/cape-town-cbd-record-r12-8bn-development-boom-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-
-
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/cape-town-property-demand-semigration-foreign-buyers-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-demand-semigration-foreign-buyers-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-demand-semigration-foreign-buyers-2026-hero.jpg" alt="Who's Buying Cape Town Property in 2026? Semigration, Foreign Buyers, and Bank Competition Driving Demand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="eager" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/forbes-global-properties-cape-town-luxury-real-estate-2026-hero.webp" alt="Forbes Global Properties Lands in Cape Town: Why the World's Most Exclusive Real Estate Network Chose South Africa" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Forbes Global Properties Lands in Cape Town: Why the World's Most Exclusive Real Estate Network Chose South Africa — A New Era for Luxury Property</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-30</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">NEW Morning Briefing</span>
-            <span class="text-xs text-gray-400">2026-06-25</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/cape-town-property-demand-semigration-foreign-buyers-2026-en" class="hover:text-[#C5A059] transition-colors">Who's Buying Cape Town Property in 2026? Semigration, Foreign Buyers, and Bank Competition Driving Demand</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">PropFlow360 June 2026: semigration drives Cape Town property demand, international buyers account for 40%+ of premium transactions, 7 banks compete. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.</p>
-        <a href="blog/cape-town-property-demand-semigration-foreign-buyers-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>July 2026: Forbes Global Properties enters South Africa, choosing Cape Town as its first African member. Why did the world's most exclusive luxury real estate network choose now to enter South Africa? In-depth analysis of a new era for luxury property under international brand validation. Dual-engine cash flow R 1,171,000-1,380,000/year with attorney trust protection.</p>
+    <a href="blog/forbes-global-properties-cape-town-luxury-real-estate-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/cape-town-property-resilience-sarb-rate-hike-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-resilience-sarb-rate-hike-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-resilience-sarb-rate-hike-2026-hero.jpg" alt="Cape Town Property Prices Defy SARB's Rate Hike: Why the Market Is Still Booming at 7%" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="eager" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-luxury-property-boom-constantia-bishopscourt-2026-hero.webp" alt="Inside Cape Town's Luxury Property Boom: Constantia Upper Hits R26M, Foreign Buyers at 39%" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Inside Cape Town's Luxury Property Boom: Constantia Upper Hits R26M, Foreign Buyers at 39% — Why Ultra-Prime Defies Interest Rates</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-29</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">NEW Morning Briefing</span>
-            <span class="text-xs text-gray-400">2026-06-24</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/cape-town-property-resilience-sarb-rate-hike-2026-en" class="hover:text-[#C5A059] transition-colors">Cape Town Property Prices Defy SARB's Rate Hike: Why the Market Is Still Booming at 7%</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">The Africanvestor June 2026 data: Cape Town property prices up 8-10% annually, Sea Point/Green Point surging 12-15%. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.</p>
-        <a href="blog/cape-town-property-resilience-sarb-rate-hike-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>July 2026 data: Cape Town's Constantia Upper averages R26M, Bishopscourt R30M, with foreign buyers at 39% of R20M+ properties. Why ultra-prime real estate defies interest rates. Dual-engine cash flow R 1,171,000-1,380,000/year with attorney trust protection.</p>
+    <a href="blog/cape-town-luxury-property-boom-constantia-bishopscourt-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/cape-town-listing-supply-crunch-buy-to-let-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-listing-supply-crunch-buy-to-let-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-listing-supply-crunch-buy-to-let-2026-hero.jpg" alt="Cape Town Listings Plunge 12.5%: Supply Crunch Creates Buy-to-Let Opportunity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="eager" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-gated-community-hero.webp" alt="Cape Town Gated Community: Investment Guide for 2026" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Cape Town Gated Community: Investment Guide for 2026 — Security, Levies, and Top Estates for International Buyers</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-28</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs font-medium bg-yellow-500/10 text-yellow-600 px-2 py-1 rounded-full">NEW Morning Briefing</span>
-            <span class="text-xs text-gray-400">2026-06-23</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/cape-town-listing-supply-crunch-buy-to-let-2026-en" class="hover:text-[#C5A059] transition-colors">Cape Town Listings Plunge 12.5% in Six Months: How the Supply Crunch Creates a Buy-to-Let Opportunity for Overseas Investors</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">Property24 data: Cape Town listings dropped 12.5% in six months, 4-bedroom-plus homes fell -15.6%. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.</p>
-        <a href="blog/cape-town-listing-supply-crunch-buy-to-let-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>Complete guide to investing in Cape Town gated communities: security, levies, price trends, and top estate recommendations for international buyers. In-depth analysis of Val de Vie, Steenberg, De Zalze, and more. Dual-engine cash flow R 1,171,000-1,380,000/year with attorney trust protection.</p>
+    <a href="blog/cape-town-gated-community-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/cape-town-uppers-luxury-scarcity-investment-2026-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-uppers-luxury-scarcity-investment-2026-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-uppers-luxury-scarcity-investment-2026-hero.jpg" alt="Cape Town Luxury Defies Downturn: Why Scarcity Assets Are the Safe Haven for Overseas Property Investors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="eager" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-luxury-property-lifestyle-investment-hero.webp" alt="Cape Town Luxury Property: Lifestyle & Investment Guide" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Cape Town Luxury Property: Lifestyle & Investment Guide — Atlantic Seaboard, Constantia, and Premium Market Analysis</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-28</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs text-gray-400">2026-06-22</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/cape-town-uppers-luxury-scarcity-investment-2026-en" class="hover:text-[#C5A059] transition-colors">Cape Town Luxury Defies Downturn: Why Scarcity Assets Are the Safe Haven</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">Bishopscourt broke R 30M, Kenilworth Upper surged over 220% in five years. The Uppers defy economic headwinds. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
-        <a href="blog/cape-town-uppers-luxury-scarcity-investment-2026-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>In-depth analysis of Cape Town's luxury property market: lifestyle quality and investment returns. Explore Atlantic Seaboard, Constantia, Franschhoek and other premium areas. Dual-engine cash flow R 1,171,000-1,380,000/year with attorney trust protection.</p>
+    <a href="blog/cape-town-luxury-property-lifestyle-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/cape-town-southern-suburbs-luxury-property-record-prices-uppers-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-southern-suburbs-luxury-property-record-prices-uppers-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-southern-suburbs-luxury-property-record-prices-uppers-hero.jpg" alt="Cape Town Southern Suburbs Luxury Property Hits Record Prices: The Uppers Doubling in Five Years" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-market-mid-2026-pulse-check-hero.webp" alt="Cape Town Property Market Mid-2026 Pulse Check: 12.9% Price Growth, 18-Day Sales" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Cape Town Property Market Mid-2026 Pulse Check: 12.9% Price Growth, 18-Day Sales — Investment Strategy in a Supply-Squeezed Market</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-28</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs text-gray-400">2026-06-21</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/cape-town-southern-suburbs-luxury-property-record-prices-uppers-en" class="hover:text-[#C5A059] transition-colors">Cape Town Southern Suburbs Luxury Property Hits Record Prices: The Uppers Doubling in Five Years</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">Bishopscourt averages approach R 30M, Constantia Upper doubled to R 26M—structural scarcity rewriting price records. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
-        <a href="blog/cape-town-southern-suburbs-luxury-property-record-prices-uppers-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>Cape Town's property market delivered stunning H1 2026 results: 12.9% YoY price growth, 25% inventory drop, and just 18 days on market. Investment strategies for a supply-squeezed market: luxury focus, dual-engine structure, professional local team, attorney trust protection. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/cape-town-property-market-mid-2026-pulse-check-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/grandwest-mall-cape-town-infrastructure-investment-en">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/grandwest-mall-cape-town-infrastructure-investment-hero.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/grandwest-mall-cape-town-infrastructure-investment-hero.jpg" alt="Cape Town's R650 Million GrandWest Mall: When Institutional Capital Bets on a City, Should You Follow?" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="eager" width="400" height="250">
-            </picture>
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-semigration-2-0-maturing-market-2026-hero.webp" alt="Semigration 2.0: Cape Town's Property Market Enters a Mature Phase" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Semigration 2.0: Cape Town's Property Market Enters a Mature Phase — Three New Currents Reshaping South African Real Estate</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-27</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs text-gray-400">2026-06-20</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/grandwest-mall-cape-town-infrastructure-investment-en" class="hover:text-[#C5A059] transition-colors">Cape Town's R650M GrandWest Mall: When Institutional Capital Bets on a City, Should You Follow?</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">Sun International and Flanagan & Gerard break ground on a R 650M shopping mall, with 70%+ pre-leasing confirming institutional confidence. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
-        <a href="blog/grandwest-mall-cape-town-infrastructure-investment-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>South Africa's semigration story has evolved beyond the one-way narrative. Three distinct currents are reshaping the market as it enters a more mature phase, with implications for international property investors. Dual-engine cash flow R 1,171,000-1,380,000/year with lawyer trust protection.</p>
+    <a href="blog/cape-town-semigration-2-0-maturing-market-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-    <div class="aspect-[16/10] overflow-hidden">
-        <a href="blog/sarb-rate-hike-cape-town-foreign-investors-opportunity-en">
-            <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-rate-hike-cape-town-foreign-investors-opportunity-hero.webp" 
-                 alt="SARB's Rate Hike and Cape Town Property: Why Foreign Investors Should Enter Now" 
-                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                 loading="lazy">
-        </a>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-holds-rate-july-2026-cape-town-property-impact-hero.webp" alt="SARB Holds at 7% in a 4-2 Vote: Three Key Takeaways for Cape Town Property Investors" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>SARB Holds at 7% in a 4-2 Vote: Three Key Takeaways for Cape Town Property Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-24</span>
     </div>
-    <div class="p-6">
-        <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs text-gray-400">2026-06-19</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-            <a href="blog/sarb-rate-hike-cape-town-foreign-investors-opportunity-en" class="hover:text-[#C5A059] transition-colors">SARB's Rate Hike and Cape Town Property: Why Foreign Investors Should Enter Now</a>
-        </h3>
-        <p class="text-sm text-gray-600 line-clamp-3 mb-4">SARB raised the repo rate to 7.00%, squeezing local buyers—but 82% of Cape Town's premium transactions are cash deals. Overseas investors gain triple advantage: 5-8% negotiating room, ~14% currency discount, and 6.5% deposit returns.</p>
-        <a href="blog/sarb-rate-hike-cape-town-foreign-investors-opportunity-en" class="inline-flex items-center text-sm font-medium text-[#C5A059] hover:text-[#0F172A] transition-colors">
-            Read More <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div>
+    <p>The SARB MPC voted 4-2 to hold the repo rate at 7.00% on July 23, defying market expectations. Analysis of three key implications for Cape Town property: rate stability through year-end, fuel price tailwinds, and 2027 rate cut expectations. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/sarb-holds-rate-july-2026-cape-town-property-impact-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
 </article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <a href="blog/south-africa-credit-upgrade-cape-town-investment-2026-en.html" class="block">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-credit-upgrade-cape-town-investment-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-credit-upgrade-cape-town-investment-2026-hero.jpg" alt="South Africa First Credit Rating Upgrade in 21 Years" class="w-full h-full object-cover" loading="lazy" decoding="async">
-                        </picture>
-                    </a>
-                </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] text-xs font-medium rounded-full">Overseas Investment</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Cape Town</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">South Africa's First Credit Rating Upgrade in 21 Years</h3>
-                    <p class="text-gray-600 text-sm line-clamp-2">Fitch upgrades South Africa for the first time in 21 years. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
-                    <div class="flex items-center justify-between mt-3">
-                        <a href="blog/south-africa-credit-upgrade-cape-town-investment-2026-en.html" class="text-[#C5A059] font-semibold text-sm hover:underline">Read More</a>
-                        <span class="text-xs text-gray-400">2026-06-13</span>
-                    </div>
-                </div>
-            </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-inflation-5-percent-cape-town-property-2026-hero.webp" alt="South Africa Inflation Hits 5% — A Two-Year High: What It Means for Cape Town Property Investors" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>South Africa Inflation Hits 5% — A Two-Year High: What It Means for Cape Town Property Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-23</span>
+    </div>
+    <p>South Africa's June CPI hit 5.0%, a two-year high, as the SARB MPC meets today with a 47.5% probability of a rate hike. Analysis of inflation's impact on Cape Town property prices, rental yields, and strategic advantages for foreign cash buyers. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/south-africa-inflation-5-percent-cape-town-property-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <a href="blog/zar-exchange-rate-cape-town-property-foreign-investors-2026-en.html" class="block">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-exchange-rate-cape-town-property-foreign-investors-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-exchange-rate-cape-town-property-foreign-investors-2026-hero.jpg" alt="Rand Exchange Rate Advantage &amp; Cape Town Property Timing: The Currency Discount Window" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="eager" decoding="async" width="400" height="250">
-                        </picture>
-                    </a>
-                </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] text-xs font-medium rounded-full">Currency Edge</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Cape Town</span>
-                        
-                    </div>
-                    <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">Rand Exchange Rate Advantage &amp; Cape Town Property Timing: The Currency Discount Window</h3>
-                    <p class="text-gray-600 text-sm line-clamp-2">USD/ZAR at 16.23, three tailwinds converging: 20-30% currency discount, 8-9% rental yield, dual-engine cash flow R 1,171,000-1,380,000/year. R 16,000,000 with lawyer trust protection.</p>
-                    <div class="flex items-center justify-between mt-3">
-                        <a href="blog/zar-exchange-rate-cape-town-property-foreign-investors-2026-en.html" class="text-[#C5A059] font-semibold text-sm hover:underline">Read More</a>
-                        <span class="text-xs text-gray-400">2026-06-18</span>
-                    </div>
-                </div>
-            </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-northern-suburbs-boom-durbanville-13-percent-2026-hero.webp" alt="Cape Town's Northern Suburbs Boom: 13%+ Growth in Durbanville, Brackenfell, and Beyond" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Cape Town's Northern Suburbs Boom: 13%+ Growth in Durbanville, Brackenfell, and Beyond</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-22</span>
+    </div>
+    <p>Cape Town's Northern Suburbs are surging with 13%+ annual growth. Average price R1.9M, 31.9% of buyers aged 18-35. MyCiTi transit expansion adds 6-9% premium. Sectional title rental yields 8-10%. Dual-engine cash flow R 1,171,000-1,380,000/year with lawyer trust protection.</p>
+    <a href="blog/cape-town-northern-suburbs-boom-durbanville-13-percent-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <a href="blog/cape-town-uppers-luxury-property-investment-2026-en.html" class="block">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-uppers-luxury-property-investment-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-uppers-luxury-property-investment-2026-hero.jpg" alt="Cape Town Uppers Hold Strong: Why Scarcity Creates Structural Advantage for Overseas Property Investment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" width="400" height="250">
-                        </picture>
-                    </a>
-                </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] text-xs font-medium rounded-full">Scarcity</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Cape Town</span>
-                        
-                    </div>
-                    <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">Cape Town's Uppers Hold Strong: Why Scarcity Creates Structural Advantage for Overseas Property Investment</h3>
-                    <p class="text-gray-600 text-sm line-clamp-2">Bishopscourt prices nearly tripled to R 30M in five years. Dual-engine cash flow R 1,171,000-R 1,380,000/year with lawyer trust protection (律師信託保護).</p>
-                    <div class="flex items-center justify-between mt-3">
-                        <a href="blog/cape-town-uppers-luxury-property-investment-2026-en.html" class="text-[#C5A059] font-semibold text-sm hover:underline">Read More</a>
-                        <span class="text-xs text-gray-400">2026-06-17</span>
-                    </div>
-                </div>
-            </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-hero.webp" alt="Foreign Buyers Spent R153 Billion on Cape Town Luxury Homes in 10 Years: Lightstone Data Reveals Investment Trends" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Foreign Buyers Spent R153 Billion on Cape Town Luxury Homes in 10 Years: Lightstone Data Reveals Investment Trends</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-21</span>
+    </div>
+    <p>Business Day reports: Lightstone data shows foreign buyers spent R153 billion on Cape Town luxury properties over the past decade. 39% of homes above R20 million were purchased by foreigners. Analysis of foreign capital inflow and investment strategies for overseas buyers.</p>
+    <a href="blog/foreign-buyers-r153bn-cape-town-luxury-10-years-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <a href="blog/myciti-phase2a-infrastructure-cape-town-property-investment-en.html" class="block">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/myciti-phase2a-infrastructure-cape-town-property-investment-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/myciti-phase2a-infrastructure-cape-town-property-investment-hero.jpg" alt="MyCiTi Phase 2A Launch: R10B Transport Infrastructure Reshapes Cape Town Property Investment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" width="400" height="250">
-                        </picture>
-                    </a>
-                </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] text-xs font-medium rounded-full">MyCiTi</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Cape Town</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">MyCiTi Phase 2A Launch: How R10B Transport Infrastructure Reshapes Cape Town Property Investment</h3>
-                    <p class="text-gray-600 text-sm line-clamp-2">MyCiTi Phase 2A bus depot complete. R10B transport infrastructure unlocks Cape Town's southern corridor TOD dividend. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
-                    <div class="flex items-center justify-between mt-3">
-                        <a href="blog/myciti-phase2a-infrastructure-cape-town-property-investment-en.html" class="text-[#C5A059] font-semibold text-sm hover:underline">Read More</a>
-                        <span class="text-xs text-gray-400">2026-06-16</span>
-                    </div>
-                </div>
-            </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-hero.webp" alt="SARB July MPC Countdown: Three Rate Scenarios for Cape Town Property Investors" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>SARB July MPC Countdown: Three Rate Scenarios for Cape Town Property Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-20</span>
+    </div>
+    <p>With 3 days until the SARB July MPC decision, prediction markets show 47.5% probability of a hike. Analysis of three scenarios and their impact on Cape Town property investment strategy, including the DingYao dual-engine cash flow model.</p>
+    <a href="blog/sarb-july-2026-mpc-three-scenarios-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <a href="blog/sarb-rate-hike-cape-town-property-safe-haven-2026-en.html" class="block">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-rate-hike-cape-town-property-safe-haven-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-rate-hike-cape-town-property-safe-haven-2026-hero.jpg" alt="SARB Rate Hike: Cape Town Property Safe Haven" class="w-full h-full object-cover" loading="lazy" decoding="async">
-                        </picture>
-                    </a>
-                </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] text-xs font-medium rounded-full">SARB Rate Hike</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Cape Town</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">SARB Rate Hike to 7%: Why Cape Town Property Remains a Safe Haven for Overseas Investors</h3>
-                    <p class="text-gray-600 text-sm line-clamp-2">SARB raises rate to 7.00%, increasing local mortgage pressure but enhancing overseas cash buyer competitiveness. Dual-engine annual cash flow R 1,171,000-1,380,000.</p>
-                    <div class="flex items-center justify-between mt-3">
-                        <a href="blog/sarb-rate-hike-cape-town-property-safe-haven-2026-en.html" class="text-[#C5A059] font-semibold text-sm hover:underline">Read More</a>
-                        <span class="text-xs text-gray-400">2026-06-15</span>
-                    </div>
-                </div>
-            </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-semigration-2026-hero.webp" alt="Cape Town Semigration 2026: Why South Africans Are Voting With Their Feet" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Cape Town Semigration 2026: Why South Africans Are Voting With Their Feet</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-17</span>
+    </div>
+    <p>2026 Cape Town semigration surge: 35% of national internal migration flows to Western Cape. Average property price R2.6M, rental yields 4-8%, days-on-market 55-70. Complete investment guide for foreign buyers covering four key investment areas.</p>
+    <a href="blog/cape-town-semigration-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <a href="blog/cape-town-property-outlook-2026-overseas-investors-en.html" class="block">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-outlook-2026-overseas-investors-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-outlook-2026-overseas-investors-hero.jpg" alt="Cape Town Property 2026 Outlook: How Overseas Investors Capture 4-7% Appreciation" class="w-full h-full object-cover" loading="lazy" decoding="async">
-                        </picture>
-                    </a>
-                </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] text-xs font-medium rounded-full">Property Investment</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Cape Town</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">Cape Town Property 2026 Outlook: How Overseas Investors Capture 4-7% Appreciation</h3>
-                    <p class="text-gray-600 text-sm line-clamp-2">Western Cape 2026 property price growth forecast 4-7%, well above national average. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
-                    <div class="flex items-center justify-between mt-3">
-                        <a href="blog/cape-town-property-outlook-2026-overseas-investors-en.html" class="text-[#C5A059] font-semibold text-sm hover:underline">Read More →</a>
-                        <span class="text-xs text-gray-400">2026-06-12</span>
-                    </div>
-                </div>
-            </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-mpc-cape-town-property-hero.webp" alt="SARB July MPC Countdown: 47.5% Hike Probability — Why Cash Buyers Hold the Winning Hand" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>SARB July MPC Countdown: 47.5% Hike Probability — Why Cash Buyers Hold the Winning Hand in Cape Town Property</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-16</span>
+    </div>
+    <p>With the SARB MPC meeting on July 23 showing a 47.5% probability of a rate hike, Cape Town's property market faces a structural divergence. Supply is down 12.5% in 6 months, rental demand surging, and overseas cash buyers hold a unique structural advantage. Dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/sarb-july-mpc-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                <div class="aspect-[16/10] overflow-hidden">
-                    <a href="blog/sa-tax-emigration-cape-town-investment-2026-en.html" class="block">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sa-tax-emigration-cape-town-investment-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/sa-tax-emigration-cape-town-investment-2026-hero.jpg" alt="SA Tax Emigration and Cape Town Investment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </a>
-                </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30 text-xs font-medium rounded-full">Overseas Property</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Cape Town</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-[#0F172A] mb-2 line-clamp-2">
-                        <a href="blog/sa-tax-emigration-cape-town-investment-2026-en.html" class="hover:text-[#C5A059] transition">SA Tax Emigration and Cape Town Property Investment</a>
-                    </h3>
-                    <p class="text-gray-600 text-sm mb-3 line-clamp-2">South African HNWIs accelerate tax emigration while overseas investors enter Cape Town with dual-engine cash flow.</p>
-                    <div class="flex items-center justify-between text-xs text-gray-500">
-                        <span><i class="far fa-calendar mr-1"></i>2026-06-11</span>
-                        <a href="blog/sa-tax-emigration-cape-town-investment-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                    </div>
-                </div>
-            </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage-hero.jpg" alt="Cape Town's Supply Crunch Meets SARB's Hawkish Turn: Why Cash Buyers Hold the Winning Hand" class="blog-card-img" loading="eager">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>Cape Town's Supply Crunch Meets SARB's Hawkish Turn: Why Cash Buyers Hold the Winning Hand</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-14</span>
+    </div>
+    <p>Cape Town listings drop 12.5% in six months as SARB hike probability hits 47.5%. Why overseas cash buyers hold the winning hand in this perfect storm of supply crunch and rate uncertainty. Dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/cape-town-supply-crunch-sarb-hike-cash-buyer-advantage-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-dual-engine-income-rental-savings-65-percent-en.html" class="block">
-                            <picture>
-                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-dual-engine-income-rental-savings-65-percent-hero.webp" type="image/webp">
-                                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-dual-engine-income-rental-savings-65-percent-hero.jpg" alt="Cape Town Dual-Engine Income" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-dual-engine-income-rental-savings-65-percent-en.html" class="hover:text-[#C5A059] transition">Cape Town Property Dual-Engine Income: Rental 8-10% + Savings 6.5% = R 1.38M/Year</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Cape Town dual-engine income structure: rental engine 8-10% + Standard Bank Wealth savings 6.5% daily compounding, combined annual cash flow R 1,171,000-1,380,000.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>June 1, 2026</span>
-                            <a href="blog/cape-town-dual-engine-income-rental-savings-65-percent-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-preview-cape-town-property-hero.jpg" alt="SARB July MPC Preview: Three Rate Scenarios and What They Mean for Cape Town Property Investors" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>SARB July MPC Preview: Three Rate Scenarios and What They Mean for Cape Town Property Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-13</span>
+    </div>
+    <p>With 10 days until the SARB July MPC decision, prediction markets show a 47.5% probability of a rate hike. Analysis of three scenarios and their impact on Cape Town property investment. DingYao Phase 1 entry R 16,000,000, dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article><article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-quality-life-property-demand-2026-hero.jpg" alt="Cape Town Quality of Life Drives Property Demand: From Lifestyle Destination to Investment Haven" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Morning Release</span>
+    <h3>Cape Town Quality of Life Drives Property Demand: From Lifestyle Destination to Investment Haven</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-10</span>
+    </div>
+    <p>Cape Town quality of life drives property demand: 319,000 semigrants, Atlantic Seaboard 8-12% annual growth. Dual-engine cash flow R 1,171,000-1,380,000/year. DingYao Phase 1 entry R 16,000,000.</p>
+    <a href="blog/cape-town-quality-life-property-demand-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-water-resilience-property-value-growth-en.html" class="block">
-                            <picture>
-                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-water-resilience-property-value-growth-hero.webp" type="image/webp">
-                                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-water-resilience-property-value-growth-hero.jpg" alt="Cape Town Water Resilience" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-water-resilience-property-value-growth-en.html" class="hover:text-[#C5A059] transition">Cape Town's Water Resilience: How Infrastructure Recovery Signals Property Value Growth</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Cape Town dams surged 20% in a single week, exiting drought warning. Water resilience signals property premium.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>May 31, 2026</span>
-                            <a href="blog/cape-town-water-resilience-property-value-growth-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-preview-cape-town-property-hero.jpg" alt="SARB July 2026 MPC Preview: Rate Hike Pressure and Cape Town Property Investment Strategy" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Morning Release</span>
+    <h3>SARB July 2026 MPC Preview: Rate Hike Pressure and Cape Town Property Investment Strategy</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-08</span>
+    </div>
+    <p>SARB July 2026 MPC Preview: Polymarket prices 52.5% probability of a 25bps hike. Cape Town property investment strategy in a rising-rate environment. Dual-engine cash flow R 1,171,000-1,380,000 remains stable. DingYao Phase 1 entry R 16,000,000.</p>
+    <a href="blog/sarb-july-2026-mpc-preview-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-winter-property-strategy-seasonal-investment-en.html" class="block">
-                            <picture>
-                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-winter-property-strategy-seasonal-investment-hero.webp" type="image/webp">
-                                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-winter-property-strategy-seasonal-investment-hero.jpg" alt="Cape Town Winter Property Strategy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-winter-property-strategy-seasonal-investment-en.html" class="hover:text-[#C5A059] transition">Cape Town Winter Property Strategy</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Winter is the best entry timing for overseas investors. Off-season bargaining 3-8%, stable tech tenant demand year-round.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>May 30, 2026</span>
-                            <a href="blog/cape-town-winter-property-strategy-seasonal-investment-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-sectional-title-investment-guide-2026-hero.jpg" alt="Cape Town Sectional Title Investment Guide 2026: Highest-Yield Apartment Areas and Foreign Buyer Strategy" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Morning Release</span>
+    <h3>Cape Town Sectional Title Investment Guide 2026: Highest-Yield Apartment Areas and Foreign Buyer Strategy</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-07</span>
+    </div>
+    <p>Cape Town Sectional Title Investment Guide: Observatory 10.0% yield, foreign buyer process, dual-engine cash flow R 1,171,000-1,380,000. DingYao Phase 1 entry R 16,000,000.</p>
+    <a href="blog/cape-town-sectional-title-investment-guide-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026-hero.jpg" alt="Complete Tax Guide for Foreign Property Buyers in South Africa" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Morning Release</span>
+    <h3>Complete Tax Guide for Foreign Property Buyers in South Africa: Hidden Costs and Tax-Efficient Strategies for Cape Town Investment</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-06</span>
+    </div>
+    <p>Complete tax guide for foreign property buyers in South Africa: Transfer Duty R 926,856, conveyancing, municipal rates, CGT breakdown. DingYao Phase 1 investment tax-efficient strategies.</p>
+    <a href="blog/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/international-buyers-cape-town-foreign-investors-guide-en.html" class="block">
-                            <picture>
-                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/international-buyers-cape-town-foreign-investors-guide-hero.webp" type="image/webp">
-                                <img src="https://assets.dingyaoadvisory.tw/blog/images/international-buyers-cape-town-foreign-investors-guide-hero.jpg" alt="International Buyers Cape Town" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/international-buyers-cape-town-foreign-investors-guide-en.html" class="hover:text-[#C5A059] transition">International Buyers Cape Town: Foreign Investor's Guide</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Foreign buyers accelerating into Cape Town. Deep dive into legal structures and exchange rate windows for international investors.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>May 29, 2026</span>
-                            <a href="blog/international-buyers-cape-town-foreign-investors-guide-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-remote-work-visa-cape-town-property-demand-2026-hero.jpg" alt="How South Africa Remote Work Visa is Driving Cape Town Property Demand" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>How South Africa's Remote Work Visa is Driving Cape Town Property Demand: The Structural Link Between Digital Nomads and Overseas Investment in 2026</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-01</span>
+    </div>
+    <p>South Africa's Remote Work Visitor Visa is reshaping Cape Town's property market — visa holders transition from short-term rentals to long-term leases to property buyers. ZAR 650,976/year income threshold, 3-year stay, 6-month tax holiday. R 16,000,000 dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/south-africa-remote-work-visa-cape-town-property-demand-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/international-buyers-cape-town-foreign-property-trends-2026-hero.jpg" alt="International Buyers Flock to Cape Town: 2026 Foreign Property Trends and Strategic Positioning for Taiwanese Investors" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Release</span>
+    <h3>International Buyers Flock to Cape Town: 2026 Foreign Property Trends and Strategic Positioning for Taiwanese Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-30</span>
+    </div>
+    <p>BetterBond report: International buyers account for 40%+ of Cape Town luxury transactions, surpassing London (30%) and New York (20%). German pension funds, Dutch tech entrepreneurs, British remote workers. R 16,000,000 dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/international-buyers-cape-town-foreign-property-trends-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="block">
-                            <picture>
-                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-mpc-may-2026-property-guide-hero.webp" type="image/webp">
-                                <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-mpc-may-2026-property-guide-hero.jpg" alt="SARB MPC Meeting Preview" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="hover:text-[#C5A059] transition">SARB MPC Meeting Preview: Property Investor's Guide to Rate Decisions</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">How the SARB May rate decision impacts Cape Town property. Dual-engine delivers R 1.17M-1.38M/year.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>May 27, 2026</span>
-                            <a href="blog/sarb-mpc-may-2026-property-guide-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-demand-semigration-foreign-buyers-2026-hero.jpg" alt="Who's Buying Cape Town Property in 2026? Semigration, Foreign Buyers, and Bank Competition Driving Demand" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Briefing</span>
+    <h3>Who's Buying Cape Town Property in 2026? Semigration, Foreign Buyers, and Bank Competition Driving Demand</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-25</span>
+    </div>
+    <p>PropFlow360 June 2026: semigration drives Cape Town property demand, international buyers account for 40%+ of premium transactions, 7 banks compete. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/cape-town-property-demand-semigration-foreign-buyers-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-tech-semigration-2026-en.html" class="block">
-                            <picture>
-                                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-tech-semigration-2026-hero.webp" type="image/webp">
-                                <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-tech-semigration-2026-hero.jpg" alt="Cape Town Tech Expansion & Semigration 2.0" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-tech-semigration-2026-en.html" class="hover:text-[#C5A059] transition">Cape Town Tech Expansion Drives Property Demand: Semigration 2.0 Investment Opportunities</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Western Cape housing demand grew 58% in 5 years. Tech talent drives rental demand with 8-10% yields.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>May 26, 2026</span>
-                            <a href="blog/cape-town-tech-semigration-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-resilience-sarb-rate-hike-2026-hero.jpg" alt="Cape Town Property Prices Defy SARB's Rate Hike: Why the Market Is Still Booming at 7%" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Briefing</span>
+    <h3>Cape Town Property Prices Defy SARB's Rate Hike: Why the Market Is Still Booming at 7%</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-24</span>
+    </div>
+    <p>The Africanvestor June 2026 data: Cape Town property prices up 8-10% annually, Sea Point/Green Point surging 12-15%. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/cape-town-property-resilience-sarb-rate-hike-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/cape-town-rental-occupancy-2026-en.html" class="block">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.jpg" alt="Cape Town Rental Occupancy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30 text-xs font-medium rounded-full">Property Investment</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-500 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-rental-occupancy-2026-en.html" class="hover:text-[#C5A059] transition">Cape Town Rental Occupancy 2026: Why It Guarantees Stable Returns for Overseas Investors</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Western Cape premium properties maintain 92-96% occupancy with just 2-4 weeks vacancy.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>May 25, 2026</span>
-                            <a href="blog/cape-town-rental-occupancy-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-listing-supply-crunch-buy-to-let-2026-hero.jpg" alt="Cape Town Listings Plunge 12.5%: Supply Crunch Creates Buy-to-Let Opportunity" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">NEW Morning Briefing</span>
+    <h3>Cape Town Listings Plunge 12.5% in Six Months: How the Supply Crunch Creates a Buy-to-Let Opportunity for Overseas Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-23</span>
+    </div>
+    <p>Property24 data: Cape Town listings dropped 12.5% in six months, 4-bedroom-plus homes fell -15.6%. R 16,000,000 dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/cape-town-listing-supply-crunch-buy-to-let-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="trend">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/south-africa-passport-free-travel-en.html">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-passport-free-travel-hero.jpg" alt="South Africa Passport-Free Travel Revolution" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 text-xs font-medium rounded-full">Travel Trends</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-passport-free-travel-en.html" class="hover:text-[#C5A059] transition">South Africa's Passport-Free Travel Revolution: ICAO Digital Travel Credentials</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">ICAO introduces Digital Travel Credentials, positioning South African airports to lead the passport-free travel era.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 10, 2026</span>
-                            <a href="blog/south-africa-passport-free-travel-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-uppers-luxury-scarcity-investment-2026-hero.jpg" alt="Cape Town Luxury Defies Downturn: Why Scarcity Assets Are the Safe Haven for Overseas Property Investors" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Luxury Defies Downturn: Why Scarcity Assets Are the Safe Haven</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-22</span>
+    </div>
+    <p>Bishopscourt broke R 30M, Kenilworth Upper surged over 220% in five years. The Uppers defy economic headwinds. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/cape-town-uppers-luxury-scarcity-investment-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="analysis">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <a href="blog/firstrand-uk-exit-en.html">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/firstrand-uk-exit-hero.jpg" alt="FirstRand Exits UK Market" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium rounded-full">Economic Analysis</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/firstrand-uk-exit-en.html" class="hover:text-[#C5A059] transition">FirstRand Exits UK Market: A Warning Signal for South African Banking Overseas</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">South Africa's largest bank announces withdrawal from the UK market amid a $1 billion regulatory storm. In-depth analysis for investors.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 9, 2026</span>
-                            <a href="blog/firstrand-uk-exit-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-southern-suburbs-luxury-property-record-prices-uppers-hero.jpg" alt="Cape Town Southern Suburbs Luxury Property Hits Record Prices: The Uppers Doubling in Five Years" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Southern Suburbs Luxury Property Hits Record Prices: The Uppers Doubling in Five Years</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-21</span>
+    </div>
+    <p>Bishopscourt averages approach R 30M, Constantia Upper doubled to R 26M—structural scarcity rewriting price records. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/cape-town-southern-suburbs-luxury-property-record-prices-uppers-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.jpg" alt="Cape Town Property Investment Strategy 2026" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-property-investment-2026-en.html" class="hover:text-[#C5A059] transition">Complete Guide to Cape Town Property Investment Strategy 2026</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">From regional analysis to G20 effects, currency advantages to ROI projections, covering foreign buyer processes and risk management for optimal investment strategy.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 8, 2026</span>
-                            <a href="blog/cape-town-property-investment-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/grandwest-mall-cape-town-infrastructure-investment-hero.jpg" alt="Cape Town's R650 Million GrandWest Mall: When Institutional Capital Bets on a City, Should You Follow?" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town's R650M GrandWest Mall: When Institutional Capital Bets on a City, Should You Follow?</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-20</span>
+    </div>
+    <p>Sun International and Flanagan & Gerard break ground on a R 650M shopping mall, with 70%+ pre-leasing confirming institutional confidence. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
+    <a href="blog/grandwest-mall-cape-town-infrastructure-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/2026-04-07/article1-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/2026-04-07/article1-hero.jpg" alt="Cape Town Property After G20" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium rounded-full">Economic Analysis</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/g20-cape-town-property-opportunities-en.html" class="hover:text-[#C5A059] transition">Cape Town Property After G20: How International Investors Can Capture Policy Dividends</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">After the 2025 G20 Summit, Cape Town invested R12 billion in infrastructure. Analysis of which areas like V&A Waterfront and Foreshore benefit most.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 7, 2026</span>
-                            <a href="blog/g20-cape-town-property-opportunities-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="" alt="" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>SARB's Rate Hike and Cape Town Property: Why Foreign Investors Should Enter Now</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-19</span>
+    </div>
+    <p>SARB raised the repo rate to 7.00%, squeezing local buyers—but 82% of Cape Town's premium transactions are cash deals. Overseas investors gain triple advantage: 5-8% negotiating room, ~14% currency discount, and 6.5% deposit returns.</p>
+    <a href="blog/sarb-rate-hike-cape-town-foreign-investors-opportunity-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-outlook-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-outlook-2026-hero.jpg" alt="Cape Town Property Outlook 2026" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-property-outlook-2026-en.html" class="hover:text-[#C5A059] transition">Cape Town Property Outlook 2026: The Investment Opportunity as Global Markets Close Their Doors</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">As Canada, Australia, and New Zealand close their doors to foreign buyers, Cape Town emerges with open policies, currency advantages, and world-class lifestyle.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 6, 2026</span>
-                            <a href="blog/cape-town-property-outlook-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-credit-upgrade-cape-town-investment-2026-hero.jpg" alt="South Africa First Credit Rating Upgrade in 21 Years" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Overseas Investment</span>
+    <h3>South Africa's First Credit Rating Upgrade in 21 Years</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-13</span>
+    </div>
+    <p>Fitch upgrades South Africa for the first time in 21 years. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
+    <a href="blog/south-africa-credit-upgrade-cape-town-investment-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-hero.jpg" alt="R16M ZAR Cross-Border Choice" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/zar-vs-asia-quality-life-en.html" class="hover:text-[#C5A059] transition">R16 Million ZAR Cross-Border Choice: Cape Town vs Asian Lifestyle - 10-Year Showdown</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">NT$7.43M buys a small studio in Taiwan, but a garden home plus 7 years passive income in Cape Town. 10-year asset gap: NT$2.14M, Cape Town outperforms by 17%.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 6, 2026</span>
-                            <a href="blog/zar-vs-asia-quality-life-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-exchange-rate-cape-town-property-foreign-investors-2026-hero.jpg" alt="Rand Exchange Rate Advantage &amp; Cape Town Property Timing: The Currency Discount Window" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Currency Edge</span>
+    <h3>Rand Exchange Rate Advantage &amp; Cape Town Property Timing: The Currency Discount Window</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-18</span>
+    </div>
+    <p>USD/ZAR at 16.23, three tailwinds converging: 20-30% currency discount, 8-9% rental yield, dual-engine cash flow R 1,171,000-1,380,000/year. R 16,000,000 with lawyer trust protection.</p>
+    <a href="blog/zar-exchange-rate-cape-town-property-foreign-investors-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-hero.jpg" alt="South Africa Talent Return Wave" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                            <span class="px-2 py-1 bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-medium rounded-full">NEW</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-talent-return-v2-en.html" class="hover:text-[#C5A059] transition">South Africa's Talent Return Wave: Why Cape Town Is the Top Choice for Returning Professionals</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">In 2026, Cape Town experiences a skilled talent return wave, driving premium real estate. Currency advantages, British education, post-G20 integration—three layers of value for Asian investors.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 5, 2026</span>
-                            <a href="blog/south-africa-talent-return-v2-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-uppers-luxury-property-investment-2026-hero.jpg" alt="Cape Town Uppers Hold Strong: Why Scarcity Creates Structural Advantage for Overseas Property Investment" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Scarcity</span>
+    <h3>Cape Town's Uppers Hold Strong: Why Scarcity Creates Structural Advantage for Overseas Property Investment</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-17</span>
+    </div>
+    <p>Bishopscourt prices nearly tripled to R 30M in five years. Dual-engine cash flow R 1,171,000-R 1,380,000/year with lawyer trust protection (律師信託保護).</p>
+    <a href="blog/cape-town-uppers-luxury-property-investment-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-investment-opportunities-2026-hero.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-investment-opportunities-2026-hero.jpg" alt="South Africa Investment Opportunities 2026" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 text-xs font-medium rounded-full">Economic Analysis</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-investment-opportunities-2026-en.html" class="hover:text-[#C5A059] transition">South Africa Investment Opportunities 2026: Post-G20 Real Estate Strategy</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">G20 Summit success, interest rates at 10.75%, Rand undervalued—in-depth analysis with three investor strategies: conservative, balanced, and aggressive.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>April 5, 2026</span>
-                            <a href="blog/south-africa-investment-opportunities-2026-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/myciti-phase2a-infrastructure-cape-town-property-investment-hero.jpg" alt="MyCiTi Phase 2A Launch: R10B Transport Infrastructure Reshapes Cape Town Property Investment" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">MyCiTi</span>
+    <h3>MyCiTi Phase 2A Launch: How R10B Transport Infrastructure Reshapes Cape Town Property Investment</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-16</span>
+    </div>
+    <p>MyCiTi Phase 2A bus depot complete. R10B transport infrastructure unlocks Cape Town's southern corridor TOD dividend. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
+    <a href="blog/myciti-phase2a-infrastructure-cape-town-property-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-ww3-safety-hero.jpg" alt="South Africa WW3 Safety" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-ww3-safety-en.html" class="hover:text-[#C5A059] transition">If World War III Breaks Out, Would South Africa Be the Safest Place?</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">South Africa ranked 11th among the world's safest countries. From geographic location, political neutrality, resource self-sufficiency, and climate advantages—discover why South Africa is a haven in turbulent times.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>March 26, 2026</span>
-                            <a href="blog/south-africa-ww3-safety-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-rate-hike-cape-town-property-safe-haven-2026-hero.jpg" alt="SARB Rate Hike: Cape Town Property Safe Haven" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">SARB Rate Hike</span>
+    <h3>SARB Rate Hike to 7%: Why Cape Town Property Remains a Safe Haven for Overseas Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-15</span>
+    </div>
+    <p>SARB raises rate to 7.00%, increasing local mortgage pressure but enhancing overseas cash buyer competitiveness. Dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/sarb-rate-hike-cape-town-property-safe-haven-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
 
-<article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-airport-upgrade-hero.jpg" alt="Cape Town Airport Upgrade" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">Property Investment</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/cape-town-airport-upgrade-investment-en.html" class="hover:text-[#C5A059] transition">Cape Town International Airport Upgrade: New Investment Opportunities Behind 10 Billion ZAR</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">ACSA invests R10 billion to upgrade Cape Town Airport, creating 15,000 jobs. Explore the real estate investment dividends from airport expansion.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>March 25, 2026</span>
-                            <a href="blog/cape-town-airport-upgrade-investment-en.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-outlook-2026-overseas-investors-hero.jpg" alt="Cape Town Property 2026 Outlook: How Overseas Investors Capture 4-7% Appreciation" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town Property 2026 Outlook: How Overseas Investors Capture 4-7% Appreciation</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-12</span>
+    </div>
+    <p>Western Cape 2026 property price growth forecast 4-7%, well above national average. Dual-engine cash flow R 1,171,000-R 1,380,000/year.</p>
+    <a href="blog/cape-town-property-outlook-2026-overseas-investors-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sa-tax-emigration-cape-town-investment-2026-hero.jpg" alt="SA Tax Emigration and Cape Town Investment" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Overseas Property</span>
+    <h3>SA Tax Emigration and Cape Town Property Investment</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-11</span>
+    </div>
+    <p>South African HNWIs accelerate tax emigration while overseas investors enter Cape Town with dual-engine cash flow.</p>
+    <a href="blog/sa-tax-emigration-cape-town-investment-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-dual-engine-income-rental-savings-65-percent-hero.jpg" alt="Cape Town Dual-Engine Income" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town Property Dual-Engine Income: Rental 8-10% + Savings 6.5% = R 1.38M/Year</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> June 1, 2026</span>
+    </div>
+    <p>Cape Town dual-engine income structure: rental engine 8-10% + Standard Bank Wealth savings 6.5% daily compounding, combined annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/cape-town-dual-engine-income-rental-savings-65-percent-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-water-resilience-property-value-growth-hero.jpg" alt="Cape Town Water Resilience" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town's Water Resilience: How Infrastructure Recovery Signals Property Value Growth</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> May 31, 2026</span>
+    </div>
+    <p>Cape Town dams surged 20% in a single week, exiting drought warning. Water resilience signals property premium.</p>
+    <a href="blog/cape-town-water-resilience-property-value-growth-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-winter-property-strategy-seasonal-investment-hero.jpg" alt="Cape Town Winter Property Strategy" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town Winter Property Strategy</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> May 30, 2026</span>
+    </div>
+    <p>Winter is the best entry timing for overseas investors. Off-season bargaining 3-8%, stable tech tenant demand year-round.</p>
+    <a href="blog/cape-town-winter-property-strategy-seasonal-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/international-buyers-cape-town-foreign-investors-guide-hero.jpg" alt="International Buyers Cape Town" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>International Buyers Cape Town: Foreign Investor's Guide</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> May 29, 2026</span>
+    </div>
+    <p>Foreign buyers accelerating into Cape Town. Deep dive into legal structures and exchange rate windows for international investors.</p>
+    <a href="blog/international-buyers-cape-town-foreign-investors-guide-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-mpc-may-2026-property-guide-hero.jpg" alt="SARB MPC Meeting Preview" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>SARB MPC Meeting Preview: Property Investor's Guide to Rate Decisions</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> May 27, 2026</span>
+    </div>
+    <p>How the SARB May rate decision impacts Cape Town property. Dual-engine delivers R 1.17M-1.38M/year.</p>
+    <a href="blog/sarb-mpc-may-2026-property-guide-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-tech-semigration-2026-hero.jpg" alt="Cape Town Tech Expansion & Semigration 2.0" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town Tech Expansion Drives Property Demand: Semigration 2.0 Investment Opportunities</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> May 26, 2026</span>
+    </div>
+    <p>Western Cape housing demand grew 58% in 5 years. Tech talent drives rental demand with 8-10% yields.</p>
+    <a href="blog/cape-town-tech-semigration-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.jpg" alt="Cape Town Rental Occupancy" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town Rental Occupancy 2026: Why It Guarantees Stable Returns for Overseas Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> May 25, 2026</span>
+    </div>
+    <p>Western Cape premium properties maintain 92-96% occupancy with just 2-4 weeks vacancy.</p>
+    <a href="blog/cape-town-rental-occupancy-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="trend">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-passport-free-travel-hero.jpg" alt="South Africa Passport-Free Travel Revolution" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Travel Trends</span>
+    <h3>South Africa's Passport-Free Travel Revolution: ICAO Digital Travel Credentials</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 10, 2026</span>
+    </div>
+    <p>ICAO introduces Digital Travel Credentials, positioning South African airports to lead the passport-free travel era.</p>
+    <a href="blog/south-africa-passport-free-travel-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="analysis">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/firstrand-uk-exit-hero.jpg" alt="FirstRand Exits UK Market" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Economic Analysis</span>
+    <h3>FirstRand Exits UK Market: A Warning Signal for South African Banking Overseas</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 9, 2026</span>
+    </div>
+    <p>South Africa's largest bank announces withdrawal from the UK market amid a $1 billion regulatory storm. In-depth analysis for investors.</p>
+    <a href="blog/firstrand-uk-exit-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-2026-hero.jpg" alt="Cape Town Property Investment Strategy 2026" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Complete Guide to Cape Town Property Investment Strategy 2026</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 8, 2026</span>
+    </div>
+    <p>From regional analysis to G20 effects, currency advantages to ROI projections, covering foreign buyer processes and risk management for optimal investment strategy.</p>
+    <a href="blog/cape-town-property-investment-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/2026-04-07/article1-hero.jpg" alt="Cape Town Property After G20" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Economic Analysis</span>
+    <h3>Cape Town Property After G20: How International Investors Can Capture Policy Dividends</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 7, 2026</span>
+    </div>
+    <p>After the 2025 G20 Summit, Cape Town invested R12 billion in infrastructure. Analysis of which areas like V&A Waterfront and Foreshore benefit most.</p>
+    <a href="blog/g20-cape-town-property-opportunities-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-outlook-2026-hero.jpg" alt="Cape Town Property Outlook 2026" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town Property Outlook 2026: The Investment Opportunity as Global Markets Close Their Doors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 6, 2026</span>
+    </div>
+    <p>As Canada, Australia, and New Zealand close their doors to foreign buyers, Cape Town emerges with open policies, currency advantages, and world-class lifestyle.</p>
+    <a href="blog/cape-town-property-outlook-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-hero.jpg" alt="R16M ZAR Cross-Border Choice" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>R16 Million ZAR Cross-Border Choice: Cape Town vs Asian Lifestyle - 10-Year Showdown</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 6, 2026</span>
+    </div>
+    <p>NT$7.43M buys a small studio in Taiwan, but a garden home plus 7 years passive income in Cape Town. 10-year asset gap: NT$2.14M, Cape Town outperforms by 17%.</p>
+    <a href="blog/zar-vs-asia-quality-life-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-hero.jpg" alt="South Africa Talent Return Wave" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>South Africa's Talent Return Wave: Why Cape Town Is the Top Choice for Returning Professionals</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 5, 2026</span>
+    </div>
+    <p>In 2026, Cape Town experiences a skilled talent return wave, driving premium real estate. Currency advantages, British education, post-G20 integration—three layers of value for Asian investors.</p>
+    <a href="blog/south-africa-talent-return-v2-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-investment-opportunities-2026-hero.jpg" alt="South Africa Investment Opportunities 2026" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Economic Analysis</span>
+    <h3>South Africa Investment Opportunities 2026: Post-G20 Real Estate Strategy</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> April 5, 2026</span>
+    </div>
+    <p>G20 Summit success, interest rates at 10.75%, Rand undervalued—in-depth analysis with three investor strategies: conservative, balanced, and aggressive.</p>
+    <a href="blog/south-africa-investment-opportunities-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-ww3-safety-hero.jpg" alt="South Africa WW3 Safety" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>If World War III Breaks Out, Would South Africa Be the Safest Place?</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> March 26, 2026</span>
+    </div>
+    <p>South Africa ranked 11th among the world's safest countries. From geographic location, political neutrality, resource self-sufficiency, and climate advantages—discover why South Africa is a haven in turbulent times.</p>
+    <a href="blog/south-africa-ww3-safety-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-airport-upgrade-hero.jpg" alt="Cape Town Airport Upgrade" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Property Investment</span>
+    <h3>Cape Town International Airport Upgrade: New Investment Opportunities Behind 10 Billion ZAR</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> March 25, 2026</span>
+    </div>
+    <p>ACSA invests R10 billion to upgrade Cape Town Airport, creating 15,000 jobs. Explore the real estate investment dividends from airport expansion.</p>
+    <a href="blog/cape-town-airport-upgrade-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-three-structural-trends-h2-2026-hero.webp" alt="Three Structural Trends Reshaping Cape Town Property in H2 2026" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Three Structural Trends Reshaping Cape Town Property in H2 2026: Semigration, Foreign Capital Inflow, and Supply Crunch</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-07-15</span>
+    </div>
+    <p>Cape Town's property market is being reshaped by three irreversible structural forces: accelerating Semigration from Gauteng, surging foreign cash buyer demand, and a supply-side crunch. Analysis of how these forces interact and why overseas investors should act in H2 2026.</p>
+    <a href="blog/cape-town-three-structural-trends-h2-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/atlantic-seaboard-resilient-cape-town-safe-haven-2026-hero.jpg" alt="Atlantic Seaboard's Resilience: Why Cape Town's Coastal Strip Is a Safe Haven" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Atlantic Seaboard's Resilience: Why Cape Town's Coastal Strip Is a Safe Haven for International Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-05</span>
+    </div>
+    <p>Atlantic Seaboard proven resilience through three market crises, supply scarcity below 1%, international tenant vacancy under 2%. R 16,000,000 entry with dual-engine annual cash flow R 1,171,000-1,380,000 and attorney trust protection.</p>
+    <a href="blog/atlantic-seaboard-resilient-cape-town-safe-haven-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-cruise-terminal-waterfront-investment-hero.jpg" alt="Cape Town Cruise Terminal Innovation Hub" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Cruise Terminal Innovation Hub: Waterfront Commercial Revival and Overseas Investment Opportunities</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-04</span>
+    </div>
+    <p>V&A Waterfront cruise terminal innovation hub launched with Growthpoint Properties and government fund joint investment. Dual-engine annual cash flow R 1,171,000-1,380,000 with attorney trust protection throughout.</p>
+    <a href="blog/cape-town-cruise-terminal-waterfront-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-foreshore-rockefeller-overseas-investment-hero.jpg" alt="Cape Town Foreshore Hotel Apartment Rush" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Foreshore Hotel Apartment Rush: What the Rockefeller Sell-Out Reveals About Overseas Investment Trends</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-03</span>
+    </div>
+    <p>Rockefeller hotel apartments in Foreshore release final 60 developer units from R 2.1M. This hot sales wave reveals what overseas property investment trends are emerging in Cape Town's commercial core.</p>
+    <a href="blog/cape-town-foreshore-rockefeller-overseas-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-international-capital-hero.jpg" alt="Global Real Estate Recovery 2026" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Global Real Estate Recovery 2026: Why Cape Town Is the New Darling of International Capital</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>Morgan Stanley declares 2026 the global real estate recovery turning point. Capital is flowing from bonds and stocks back to property — and Cape Town is emerging as a key beneficiary with entry prices at 60-70% of comparable coastal cities.</p>
+    <a href="blog/cape-town-international-capital-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="lifestyle">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-quality-of-life-hero.jpg" alt="Cape Town Quality of Life Ranking" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Lifestyle</span>
+    <h3>Cape Town Ranked #42 in Global Quality of Life: Enjoy Top-Tier Living at One-Third of Taipei's Cost</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-04-11</span>
+    </div>
+    <p>2026 Mercer Global Quality of Life ranking: Cape Town #42 out of 230 cities. Living costs at just 35% of Taipei and 25% of London. Complete analysis of Cape Town's cost structure and investment immigration advantages.</p>
+    <a href="blog/cape-town-quality-of-life-cost-comparison-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-rental-yields-premium-passive-income-2026-hero.jpg" alt="Cape Town Rental Market Deep Dive" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Rental Market Deep Dive: Premium Property Yields Creating Stable Passive Income for Overseas Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-02</span>
+    </div>
+    <p>KiliCasa and The Africanvestor data: Cape Town premium property occupancy 92-96%, vacancy just 2-4 weeks, rental growth 5-8% annually. City Bowl and Sea Point net yields 7.5-7.9%. R 16,000,000 dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/cape-town-rental-yields-premium-passive-income-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-short-term-rentals-hero.jpg" alt="Cape Town Short-Term Rentals" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Short-Term Rentals: Investment Strategy for Overseas Property Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-20</span>
+    </div>
+    <p>Analysis of Cape Town's short-term rental market and how overseas investors can capitalize on tourism-driven demand. Professional management strategies for maximizing yield in Cape Town's growing tourism economy.</p>
+    <a href="blog/cape-town-short-term-rentals-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-waterfront-infrastructure-sea-point-investment-hero.jpg" alt="Cape Town Waterfront Dual Upgrade" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Waterfront Dual Upgrade: Sea Point Promenade Revitalization and Overseas Property Opportunities</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-25</span>
+    </div>
+    <p>Sea Point promenade governance optimization and V&A Waterfront innovation hub — dual infrastructure upgrades creating first-mover advantage for overseas investors. Dual-engine cash flow R 1,171,000-1,380,000/year.</p>
+    <a href="blog/cape-town-waterfront-infrastructure-sea-point-investment-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/cape-town-winter-rental-strategy-seasonal-yield-2026-hero.jpg" alt="Cape Town Winter Rental Strategy" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Cape Town Winter Rental Market: How Investors Lock in 8-10% Full-Year Yield During Off-Season</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-22</span>
+    </div>
+    <p>Cape Town winter rental market analysis: professional management maintains 8-10% full-year occupancy. Dual-engine annual cash flow R 1,171,000-1,380,000 with attorney trust protection throughout.</p>
+    <a href="blog/cape-town-winter-rental-strategy-seasonal-yield-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/fitch-upgrade-south-africa-cape-town-investment-2026-hero.jpg" alt="Fitch Upgrades South Africa" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Fitch Upgrades South Africa for First Time in 21 Years: What It Means for Cape Town Property Investment</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-08</span>
+    </div>
+    <p>South Africa receives its first Fitch rating upgrade in over 20 years. From macro risk reduction to Cape Town property allocation strategy — understand the timing and positioning for overseas investors.</p>
+    <a href="blog/fitch-upgrade-south-africa-cape-town-investment-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-capital-sell-tsmc-cape-town-property-hero.jpg" alt="Foreign Capital Sells TSMC" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Foreign Capital Sells TSMC for Three Days: As Taiwan Stocks Shake, Cape Town Property Becomes a Capital Safe Haven</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>Foreign investors sell TSMC for three consecutive days. VIX climbs to 17.99, daily VaR reaches -2.89%. In this volatile environment, HNW investors increasingly turn to Cape Town property for asset allocation and capital preservation.</p>
+    <a href="blog/foreign-capital-sell-tsmc-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/garlicke-bousfield-legal-guide-hero.webp" alt="Garlicke & Bousfield Legal Guide" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Garlicke & Bousfield: A Century of South African Property Legal Expertise</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-20</span>
+    </div>
+    <p>South African real estate transactions involve complex legal procedures. Garlicke & Bousfield, a century-old law firm, guides you through the complete legal process from purchase contracts and property transfer to tax filing.</p>
+    <a href="blog/garlicke-bousfield-legal-guide-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/global-real-estate-recovery-hero.jpg" alt="Global Real Estate Recovery" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>2026 Global Real Estate Recovery: Why Cape Town Is the Unexpected Darling of International Capital</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>While institutional capital flows to London and New York, savvy investors discover Cape Town — entry prices at 60-70% of comparable coastal cities, with yields 2-3x higher than these "safe markets."</p>
+    <a href="blog/global-real-estate-recovery-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/international-buyers-cape-town-hnw-premium-property-hero.jpg" alt="International Buyers Cape Town HNW" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>International Buyers Flock to Cape Town: Why Premium Property Is Attracting Global HNW Individuals</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-01</span>
+    </div>
+    <p>Foreign buyer share in South Africa's R 10M+ property market continues rising. Atlantic Seaboard and V&A Waterfront lead international capital inflows. R 16,000,000 dual-engine annual cash flow R 1,171,000-1,380,000.</p>
+    <a href="blog/international-buyers-cape-town-hnw-premium-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/samsung-strike-supply-chain-vs-cape-town-property-hero.jpg" alt="Samsung Strike Supply Chain Risk" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Samsung Strike Crisis and Supply Chain Risk: Why Cape Town Property Is the Ultimate Uncorrelated Asset</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>Samsung labor talks collapse with 50,000-worker strike threat. Global memory supply chain on alert. Cape Town property as an uncorrelated asset with near-zero correlation to tech cycles, offering true portfolio diversification.</p>
+    <a href="blog/samsung-strike-supply-chain-vs-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-rate-hold-june-2025-cape-town-property-hero.jpg" alt="SARB Pauses Rate Hikes" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>SARB Pauses Rate Hikes: Why South Africa's Interest Rate Policy Benefits Cape Town Property Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2025-06-15</span>
+    </div>
+    <p>SARB holds repo rate at 7.75%, marking end of hiking cycle. High-rate environment creates 5-10% negotiation discount for overseas cash buyers. Dual-engine cash flow R 1,171,000-1,380,000/year with attorney trust protection.</p>
+    <a href="blog/sarb-rate-hold-june-2025-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-high-interest-rate-advantage-cape-town-property-hero.jpg" alt="South Africa High Interest Rate Advantage" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>South Africa's High Interest Rate Advantage: How 6.5% Savings Yield Becomes the Hidden Engine for Cape Town Investment</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-30</span>
+    </div>
+    <p>South Africa's 10.50% prime rate seems daunting, but for cash buyers, 6.5% savings yield (effective 6.72% APR) is 3.5x Taiwan's fixed deposit rate. How high rates transform from obstacle to hidden engine for overseas investors.</p>
+    <a href="blog/south-africa-high-interest-rate-advantage-cape-town-property-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="analysis">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-march-and-march-protests-hero.jpg" alt="South Africa March and March Protests" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Economic Analysis</span>
+    <h3>South Africa's 'March and March' Anti-Immigration Protests: June 30 National Shutdown Crisis Analysis</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-30</span>
+    </div>
+    <p>Analysis of South Africa's March and March anti-immigration movement and the June 30 National Shutdown. Impact on Cape Town property market, government response, and investment outlook from DingYao Advisory.</p>
+    <a href="blog/south-africa-march-and-march-protests-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="residency">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-pr-guide-hero.webp" alt="South Africa PR Guide" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Residency</span>
+    <h3>South Africa PR Guide: Asset Thresholds, Process & FAQs</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-10</span>
+    </div>
+    <p>South African Permanent Residency (PR) is a top choice for HNW individuals seeking a second residency. This comprehensive guide covers application requirements, asset thresholds, a 4-step process, and frequently asked questions.</p>
+    <a href="blog/south-africa-pr-guide-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/standard-bank-money-market-hero.webp" alt="Standard Bank Money Market Guide" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Standard Bank Money Market: Complete Guide to 6-7% High-Yield Savings</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-28</span>
+    </div>
+    <p>Standard Bank's Money Market account offers highly competitive floating interest rates with flexible deposits and withdrawals — no lock-in period. In-depth analysis of the interest rate mechanism, account opening process, and fund security measures.</p>
+    <a href="blog/standard-bank-money-market-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="lifestyle">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/stellenbosch-retirement-living-hero.webp" alt="Stellenbosch Retirement Living" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Lifestyle</span>
+    <h3>Stellenbosch Retirement Living: Vineyards, Golf & Mediterranean Climate</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-05</span>
+    </div>
+    <p>Imagine waking to birds in the vineyards, teeing off at world-class golf courses, and savoring renowned wines in the evening. Stellenbosch offers unparalleled quality and value for retirement living in South Africa.</p>
+    <a href="blog/stellenbosch-retirement-living-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/stop-loss-emotion-cape-town-passive-income-hero.jpg" alt="Stop Loss Emotion Cape Town" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>When Stop-Loss Becomes Unbearable: Why Cape Town Property Is Your Exit from Emotional Investing</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>When stocks hover near stop-loss levels with just 0.31% margin, investors face emotional turmoil. Cape Town property offers a stable alternative with passive income and no daily price anxiety — the antidote to emotional trading.</p>
+    <a href="blog/stop-loss-emotion-cape-town-passive-income-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="residency">
+  <img src="https://assets.dingyaoadvisory.tw/images/taiwan-immigration-cape-town-pathways-hero-zh.jpg" alt="Taiwan Immigration to Cape Town" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Residency</span>
+    <h3>Taiwan Immigration to Cape Town: Three Visa Pathways Fully Explained</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-12</span>
+    </div>
+    <p>Taiwanese citizens can immigrate to Cape Town through investment, business, or retirement visa pathways. DingYao's R 16M property solution with attorney trust protection offers the simplest and most effective immigration route.</p>
+    <a href="blog/taiwan-immigration-cape-town-pathways-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="education">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/taiwan-parents-choosing-south-africa-private-schools-hero.webp" alt="Taiwan Parents Choosing South Africa Schools" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Education</span>
+    <h3>Why More Taiwanese Parents Are Choosing South Africa's Top Private Schools</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-15</span>
+    </div>
+    <p>Full English instruction, small class sizes, IEB and Cambridge international curricula — South Africa's top private schools offer world-class education at one-third the cost of Taiwanese private schools. In-depth analysis of educational advantages.</p>
+    <a href="blog/taiwan-parents-choosing-south-africa-private-schools-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/taiwan-stock-plunge-capetown-haven-hero.jpg" alt="Taiwan Stocks Plunge" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Taiwan Stocks Plunge 523 Points: How Cape Town Property Becomes a Capital Safe Haven</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>Taiwan stocks plunge 523 points in a single day. TSMC drops 1.55%. Foreign investors sell for third consecutive day with cumulative 2,785万 shares. In this volatile environment, Cape Town property emerges as a safe haven for capital allocation.</p>
+    <a href="blog/taiwan-stock-plunge-capetown-haven-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/taiwan-wealthy-overseas-allocation-hero.jpg" alt="Taiwan Wealthy Overseas Allocation" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>Taiwan's Wealthy Overseas Asset Allocation Code: 86% of Billionaires Invest Abroad</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>86% of Taiwan's billionaires have allocated assets overseas, while regular investors have less than 20%. What's the investment code behind this gap? Discover how Taiwan's elite are diversifying globally and what it means for your portfolio.</p>
+    <a href="blog/taiwan-wealthy-overseas-allocation-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/vix-stable-cashflow-cape-town-hero.jpg" alt="VIX Rises to 18" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>VIX Rises to 18: Why Cape Town Property Management Becomes the Top Choice for Stable Cash Flow</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>VIX volatility index rises from 15 to 17.99, approaching 18. Market uncertainty increases, foreign capital sells Taiwan stocks. When stocks can swing 2-3% daily, stable cash flow from Cape Town property becomes paramount for investors.</p>
+    <a href="blog/vix-stable-cashflow-cape-town-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/vix-surge-cape-town-property-hedge-hero.jpg" alt="VIX Surge Volatility Hedge" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>VIX Surges to 18 Range: Why Cape Town Property Becomes the Ultimate Volatility Hedge</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-05-15</span>
+    </div>
+    <p>VIX fear index rises from 15 to 18. What signal does this send? When markets become a rollercoaster, how should investors adjust their asset allocation? Cape Town property as a volatility hedge for portfolio protection.</p>
+    <a href="blog/vix-surge-cape-town-property-hedge-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
+<article class="blog-card fade-in fade-in-delay-1" data-category="investment">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-depreciation-cape-town-property-opportunity-2026-hero.jpg" alt="ZAR Depreciation Cape Town Opportunity" class="blog-card-img" loading="lazy">
+  <div class="blog-card-body">
+    <span class="blog-tag">Investment</span>
+    <h3>ZAR Depreciation Creates Cape Town Opportunity: Why Low USD/ZAR Is the Entry Window for Overseas Investors</h3>
+    <div class="blog-meta">
+      <span><i class="far fa-calendar"></i> 2026-06-06</span>
+    </div>
+    <p>ZAR/USD remains at low levels, creating a golden entry window for overseas investors in Cape Town property. Dual-engine annual cash flow R 1,171,000-1,380,000 with attorney trust protection ensuring fund security.</p>
+    <a href="blog/zar-depreciation-cape-town-property-opportunity-2026-en" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</article>
+
 </div>
-</div>
-        </div>
+        
     </section>
     
     <!-- CTA Section -->
-    <section class="py-20 px-4 bg-[#0F172A]">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Explore More Investment Opportunities</h2>
-            <p class="text-gray-400 text-lg mb-8">Book a one-on-one consultation and let us customize a South African property investment plan for you</p>
-            <a href="index-en.html#contact" class="inline-flex items-center gap-2 bg-[#C5A059] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#B08D4E] transition shadow-lg">
-                <i class="fas fa-calendar-alt"></i> Book Consultation Now
-            </a>
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Explore More Investment <span class="gold-text">Opportunities</span></h2>
+          <p>Book a one-on-one consultation and let us customize a South African property investment plan for you</p>
+          <a href="index-en.html#contact" class="btn btn-primary">
+            <i class="fas fa-calendar-alt"></i> Book Consultation Now
+          </a>
         </div>
+      </div>
     </section>
     
 </div>
@@ -2081,8 +2309,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
-        <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
+        <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <p>Asia Pacific's Exclusive Digital Marketing Hub — bridging the information gap in cross-border investment. Connecting Taiwanese capital with premium South African assets through digital escrow technology.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/dingyaoadvisory" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -2093,61 +2321,94 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         </div>
       </div>
       <div>
-        <h4>戰略生態系</h4>
+        <h4>Ecosystem</h4>
         <ul>
-          <li><a href="https://crestlineadvisory.co.za" target="_blank" rel="noopener">Crestline Advisory (執行端)</a></li>
-          <li><a href="https://canvascrest.co.za" target="_blank" rel="noopener">CanvasCrest Properties (開發端)</a></li>
-          <li><a href="https://www.standardbank.co.za" target="_blank" rel="noopener">Standard Bank (資金託管)</a></li>
-          <li><a href="https://www.gb.co.za" target="_blank" rel="noopener">Garlicke &amp; Bousfield (律師樓)</a></li>
+          <li><a href="https://crestlineadvisory.co.za" target="_blank" rel="noopener">Crestline Advisory (Execution)</a></li>
+          <li><a href="https://canvascrest.co.za" target="_blank" rel="noopener">CanvasCrest Properties (Development)</a></li>
+          <li><a href="https://www.standardbank.co.za" target="_blank" rel="noopener">Standard Bank (Custody)</a></li>
+          <li><a href="https://www.gb.co.za" target="_blank" rel="noopener">Garlicke &amp; Bousfield (Legal)</a></li>
         </ul>
       </div>
       <div>
-        <h4>核心服務</h4>
+        <h4>Services</h4>
         <ul>
-          <li><a href="/assets">海外置產顧問</a></li>
-          <li><a href="/education">頂級留學規劃</a></li>
-          <li><a href="/retirement">退休移居方案</a></li>
-          <li><a href="/residency">永久居留權 (PR)</a></li>
-          <li><a href="/platform">數位資產平台</a></li>
-          <li><a href="/tour">商業考察團</a></li>
+          <li><a href="/assets-en">Overseas Property Advisory</a></li>
+          <li><a href="/education-en">Premium Education Planning</a></li>
+          <li><a href="/retirement-en">Retirement Solutions</a></li>
+          <li><a href="/residency-en">Permanent Residency (PR)</a></li>
+          <li><a href="/platform-en">Digital Asset Platform</a></li>
+          <li><a href="/tour-en">Business Tours</a></li>
         </ul>
       </div>
       <div>
-        <h4>合規與聯繫</h4>
+        <h4>Contact</h4>
         <ul>
-          <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right:6px;color:#C9A84C"></i> 台中市西屯區 (亞太總部)</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right:6px;color:#C9A84C"></i> Taichung, Taiwan (APAC HQ)</a></li>
           <li><a href="mailto:info@dingyaoadvisory.tw"><i class="fas fa-envelope" style="margin-right:6px;color:#C9A84C"></i> info@dingyaoadvisory.tw</a></li>
         </ul>
+        <div class="footer-line-cta">
+          <a href="https://lin.ee/Z6pyU1S" target="_blank" rel="noopener">
+            <i class="fab fa-line"></i>
+            <span>Join LINE Official Account<br><small>Get your专属 investment assessment</small></span>
+          </a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <p>Designed for Global Investors &copy; 2026 <a href="https://dingyaoadvisory.tw" style="color:#C9A84C;text-decoration:none;">DingYao</a> Advisory</p>
       <div class="footer-bottom-links">
-        <a href="/sitemap.xml">網站地圖</a>
-        <a href="/privacy">隱私權政策</a>
-        <a href="/terms">服務條款</a>
+        <a href="/sitemap.xml">Sitemap</a>
+        <a href="/privacy-en">Privacy Policy</a>
+        <a href="/terms-en">Terms of Service</a>
       </div>
     </div>
 </footer>
     
     <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+        
+        // Fade-in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
+        
+        // Language switcher
+        document.querySelectorAll('.nav-lang a').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.textContent.trim() === 'TW') {
+                    window.location.href = '/blog';
+                }
+            });
+        });
+        
+        // Category filter
         document.querySelectorAll('.category-btn').forEach(btn => {
             btn.addEventListener('click', function() {
-                document.querySelectorAll('.category-btn').forEach(b => { b.classList.remove('bg-white/30'); b.classList.add('bg-white/10'); });
-                this.classList.remove('bg-white/10');
-                this.classList.add('bg-white/30');
+                document.querySelectorAll('.category-btn').forEach(b => {
+                    b.style.background = 'rgba(255,255,255,0.1)';
+                });
+                this.style.background = 'rgba(255,255,255,0.3)';
                 const category = this.dataset.category;
-                // Handle hero card visibility
-                const heroCard = document.querySelector('.hero-card');
-                if (heroCard) {
-                    heroCard.style.display = (category === 'all' || heroCard.dataset.category === category) ? 'block' : 'none';
-                }
-                // Handle standard posts
-                const posts = document.querySelectorAll('#standard-posts article');
+                const posts = document.querySelectorAll('#standard-posts .blog-card');
                 posts.forEach(post => { post.style.display = (category === 'all' || post.dataset.category === category) ? 'block' : 'none'; });
             });
         });

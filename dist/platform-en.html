@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital Platform — DYA Ding Yao Advisory APAC Hub</title>
+<meta property="og:url" content="https://dingyaoadvisory.tw/platform-en">
 <link rel="canonical" href="https://dingyaoadvisory.tw/platform-en">
 <meta name="description" content="DYA Digital Asset Management Platform — 24/7 real-time monitoring of your overseas assets, transparent project milestones, cash flow & tax dashboard, and cloud document vault. Full visibility into your entire portfolio.">
 <meta name="keywords" content="digital platform, asset management, overseas property, project milestones, cash flow dashboard, cloud document vault, DYA">
@@ -14,6 +15,7 @@
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/platform-hero.avif">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/platform-hero.avif">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="https://assets.dingyaoadvisory.tw/favicon.svg">
 <link rel="icon" type="image/png" href="https://assets.dingyaoadvisory.tw/favicon.png">
@@ -1002,8 +1004,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .stat-item{text-align:center;padding:32px 16px}
 .stat-item .counter-number{font-size:clamp(2.2rem,4vw,3.2rem)}
 .stat-label{font-size:0.9rem;color:#F5F0E888;margin-top:8px}
-
-}
 /* ===== COOKIE CONSENT BANNER ===== */
 .cookie-consent{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:rgba(10,14,23,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(201,168,76,0.12);padding:16px 24px;transform:translateY(100%);transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 -8px 40px rgba(0,0,0,0.5)}
 .cookie-consent.show{transform:translateY(0)}
@@ -1022,9 +1022,11 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
-<link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/platform" />
+<link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/platform-en" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/platform-en" />
-<link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/platform" />
+<link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/platform-en" />
+<meta name="twitter:title" content="Digital Platform — DYA Ding Yao Advisory APAC Hub">
+<meta name="twitter:description" content="Your 24/7 Digital Asset Butler — real-time monitoring of your overseas assets">
 </head>
 <body>
 <div class="cookie-consent" id="cookieConsent">
@@ -1053,32 +1055,30 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
-      <a href="/partners-en">Strategic Partners</a>
-      <a href="/platform-en">Digital Services</a>
-      <a href="/education-en">Education & Study Abroad</a>
-      <a href="/retirement-en" class="gold">Retirement Living</a>
-      <a href="/residency-en">Residency Planning</a>
-      <a href="/assets-en">Featured Assets</a>
-      <a href="/tour-en">Business Tours</a>
-      <a href="/blog-en">DingYao Insights</a>
-      <a href="/consultation-en" class="btn-nav">Book a Consultation</a>
-      <div class="nav-lang" id="langSwitcher">
-  <a href="#" class="active" id="langTw">TW</a><span>/</span><a href="#" id="langEn">EN</a>
-</div>
+      <a href="/partners-en">Partners</a>
+      <a href="/platform-en">Platform</a>
+      <a href="/education-en">Education</a>
+      <a href="/retirement-en" class="gold">Retirement</a>
+      <a href="/residency-en">Residency</a>
+      <a href="/assets-en">Assets</a>
+      <a href="/tour-en">Tour</a>
+      <a href="/blog-en">Insights</a>
+      <a href="/consultation-en" class="btn-nav">Consultation</a>
+      <div class="nav-lang" id="langSwitcher"><a href="#" class="" id="langTw">TW</a><span>/</span><a href="#" class="active" id="langEn">EN</a>
 <script>
 (function(){
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1086,13 +1086,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1100,7 +1101,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
-
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -1329,7 +1329,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>Exclusive APAC Digital Marketing Hub — We are dedicated to bridging the cross-border investment information gap. Through digital escrow technology, we connect Taiwanese capital with premier South African assets.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1355,9 +1355,9 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         <ul>
           <li><a href="/assets-en">Overseas Property Advisory</a></li>
           <li><a href="/education-en">Premium Study Abroad Planning</a></li>
-          <li><a href="/retirement-en">Retirement Relocation Solutions</a></li>
+          <li><a href="/retirement-en">Retirement Solutions</a></li>
           <li><a href="/residency-en">Permanent Residency (PR)</a></li>
-          <li><a href="/platform-en">Digital Asset Platform</a></li>
+          <li><a href="/platform-en">Platform</a></li>
           <li><a href="/tour-en">Business Tours</a></li>
         </ul>
       </div>
@@ -1385,7 +1385,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </div>
   </div>
 </footer>
-
 
 <script>
 // Navbar scroll effect

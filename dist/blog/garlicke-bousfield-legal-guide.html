@@ -20,6 +20,7 @@
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/blog/images/garlicke-bousfield-legal-guide-hero.webp">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="鼎曜國際顧問 DingYao Advisory">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/blog/images/garlicke-bousfield-legal-guide-hero.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Garlicke & Bousfield：百年律師樓的南非置產法律指南">
 <meta name="twitter:description" content="南非房地產交易涉及複雜的法律程序。Garlicke & Bousfield 百年律師樓為您解析從購地合約、產權移轉到稅務申報的完整法律流程。">
@@ -645,7 +646,7 @@ blockquote cite {
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -884,7 +885,7 @@ blockquote cite {
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -932,7 +933,7 @@ blockquote cite {
     <div class="footer-bottom">
       <p>Designed for Global Investors &copy; 2026 <a href="https://dingyaoadvisory.tw" style="color:#C9A84C;text-decoration:none;">DingYao</a> Advisory</p>
       <div class="footer-bottom-links">
-        <a href="/sitemap">網站地圖</a>
+        <a href="/sitemap.xml">網站地圖</a>
         <a href="/privacy">隱私權政策</a>
         <a href="/terms">服務條款</a>
       </div>
@@ -967,6 +968,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
+  var logo = document.getElementById('navLogo');
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
@@ -985,6 +987,13 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+  }
+
+  // Set logo href based on language
+  if (path.endsWith('-en') || path.endsWith('-en/')) {
+    if (logo) logo.href = '/index-en';
+  } else {
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>

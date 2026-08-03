@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>數位平台 — DYA Ding Yao Advisory APAC Hub</title>
+<meta property="og:url" content="https://dingyaoadvisory.tw/platform">
 <link rel="canonical" href="https://dingyaoadvisory.tw/platform">
 <meta name="description" content="DYA 數位資產管理平台 — 24/7 即時監控您的海外資產，履約進度透明化、金流稅務儀表板、雲端文件庫，讓您隨時掌握資產全貌。">
 <meta name="keywords" content="數位平台,資產管理,海外置產,履約進度,金流儀表板,雲端文件庫,DYA">
@@ -13,6 +14,7 @@
 <meta property="og:description" content="Your 24/7 Digital Asset Butler — 即時監控您的海外資產">
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/platform-hero.avif">
 <meta property="og:type" content="website">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/platform-hero.avif">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="https://assets.dingyaoadvisory.tw/favicon.svg">
 <link rel="icon" type="image/png" href="https://assets.dingyaoadvisory.tw/favicon.png">
@@ -1001,8 +1003,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .stat-item{text-align:center;padding:32px 16px}
 .stat-item .counter-number{font-size:clamp(2.2rem,4vw,3.2rem)}
 .stat-label{font-size:0.9rem;color:#F5F0E888;margin-top:8px}
-
-}
 /* ===== COOKIE CONSENT BANNER ===== */
 .cookie-consent{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:rgba(10,14,23,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(201,168,76,0.12);padding:16px 24px;transform:translateY(100%);transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 -8px 40px rgba(0,0,0,0.5)}
 .cookie-consent.show{transform:translateY(0)}
@@ -1024,6 +1024,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/platform" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/platform-en" />
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/platform" />
+<meta name="twitter:title" content="數位平台 — DYA Ding Yao Advisory APAC Hub">
+<meta name="twitter:description" content="Your 24/7 Digital Asset Butler — 即時監控您的海外資產">
 </head>
 <body>
 <div class="cookie-consent" id="cookieConsent">
@@ -1052,7 +1054,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -1071,13 +1073,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1085,13 +1087,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1099,7 +1102,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
-
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -1328,7 +1330,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1384,7 +1386,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </div>
   </div>
 </footer>
-
 
 <script>
 // Navbar scroll effect

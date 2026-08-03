@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>教育留學 — DYA Ding Yao Advisory APAC Hub</title>
+<meta property="og:url" content="https://dingyaoadvisory.tw/education">
 <link rel="canonical" href="https://dingyaoadvisory.tw/education">
 <meta name="description" content="DYA 菁英教育入場券 — 南非頂級私校留學規劃，Hilton College 等名校申請，全英語貴族教育，為您的孩子打開國際視野。">
 <meta name="keywords" content="教育留學,南非留學,頂級私校,Hilton College,全英語教育,貴族教育,DYA">
@@ -13,6 +14,7 @@
 <meta property="og:description" content="菁英教育入場券 — 南非頂級私校留學規劃">
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/edu-hero.avif">
 <meta property="og:type" content="website">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/edu-hero.avif">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="https://assets.dingyaoadvisory.tw/favicon.svg">
 <link rel="icon" type="image/png" href="https://assets.dingyaoadvisory.tw/favicon.png">
@@ -1116,7 +1118,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cta-urgency-right{position:relative;padding:60px 0}
 .cta-urgency-visual{position:relative;padding:32px;border-radius:16px;background:linear-gradient(135deg,rgba(12,27,51,0.6),rgba(10,14,23,0.8));border:1px solid rgba(201,168,76,0.08);overflow:hidden}
 .cta-urgency-visual::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(201,168,76,0.03),transparent,rgba(239,68,68,0.02),transparent);animation:rotateBg 20s linear infinite;pointer-events:none}
-@keyframes rotateBg{0%{transform:rotate(0deg)}
+@keyframes rotateBg{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
 .cta-visual-content{position:relative;z-index:1}
 .cta-visual-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
 .cta-visual-card{padding:20px;border-radius:10px;text-align:center}
@@ -1133,6 +1135,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cta-visual-quote{padding:16px 20px;background:rgba(201,168,76,0.03);border-left:2px solid #C9A84C;border-radius:0 8px 8px 0;margin-top:16px}
 .cta-visual-quote p{font-size:0.8rem;color:#F5F0E8AA;font-style:italic;line-height:1.6}
 .cta-visual-quote .author{font-size:0.7rem;color:#C9A84C88;margin-top:6px;font-style:normal}
+@media(max-width:768px){
 .cta-urgency-left{padding:40px 0 0}
 .cta-urgency-right{padding:0 0 40px}
 .cta-urgency-stats{grid-template-columns:1fr}
@@ -1184,6 +1187,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/education" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/education-en" />
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/education" />
+<meta name="twitter:title" content="教育留學 — DYA Ding Yao Advisory APAC Hub">
+<meta name="twitter:description" content="菁英教育入場券 — 南非頂級私校留學規劃">
 </head>
 <body>
 <div class="cookie-consent" id="cookieConsent">
@@ -1211,7 +1216,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -1230,13 +1235,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1244,13 +1249,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1258,7 +1264,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
-
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -1658,7 +1663,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1714,7 +1719,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </div>
   </div>
 </footer>
-
 
 <script>
 // Navbar scroll effect

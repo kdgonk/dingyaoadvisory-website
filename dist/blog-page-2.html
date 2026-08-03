@@ -48,8 +48,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -1049,7 +1048,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cookie-btn-more:hover{border-color:#F5F0E8;color:#F5F0E8}
 @media(max-width:640px){.cookie-inner{flex-direction:column;text-align:center}.cookie-btns{width:100%;justify-content:center}}
 
-    
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Blog","name":"鼎曜國際顧問專欄","description":"南非置產、教育留學、退休生活與身分規劃的專業見解","url":"https://dingyaoadvisory.tw/blog","inLanguage":"zh-TW","publisher":{"@type":"Organization","name":"鼎曜國際顧問 DingYao Advisory","logo":{"@type":"ImageObject","url":"https://assets.dingyaoadvisory.tw/dingyao%20logo.png"}}}
     </script>
@@ -1082,7 +1080,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -1101,13 +1099,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1115,13 +1113,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1162,7 +1161,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -1181,13 +1180,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1195,13 +1194,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1277,109 +1277,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
                         </div>
                     </div>
                 </article>
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-investment-2025-thumb.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-investment-2025-thumb.jpg" alt="2025年南非投資機遇" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">置產投資</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-investment-2025.html" class="hover:text-[#C5A059] transition">2025年南非投資機遇：彩虹之國的黃金時代來臨</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">南非擔任G20主辦國，經濟復甦跡象明顯。深入分析房地產投資、匯率優勢、居留身份規劃等機遇，揭示彩虹之國的投資潛力。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月25日</span>
-                            <a href="blog/south-africa-investment-2025.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="residency">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/blog-second-home-thumb.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/blog-second-home-thumb.jpg" alt="全球資產配置的最後一哩路：為什麼現在是你佈局「第二家園」的最佳時機？" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-orange-500/20 text-orange-400 border border-orange-500/30 text-xs font-medium rounded-full">身分規劃</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/second-home-global-asset-allocation.html" class="hover:text-[#C5A059] transition">全球資產配置的最後一哩路：為什麼現在是你佈局「第二家園」的最佳時機？</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">從地緣政治風險到稅務優化，第二家園已成為高淨值人士的必修課。解析南非為何成為亞太投資者的戰略選擇。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月25日</span>
-                            <a href="blog/second-home-global-asset-allocation.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-nuclear-thumb.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-nuclear-thumb.jpg" alt="南非冷知識" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">置產投資</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-nuclear-disarmament.html" class="hover:text-[#C5A059] transition">南非冷知識：唯一自願放棄核武的國家</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">南非是全球唯一一個曾擁有核武器後自願銷毀的國家。這段鮮為人知的歷史，揭示了南非在國際事務中的獨特地位。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月24日</span>
-                            <a href="blog/south-africa-nuclear-disarmament.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover" data-category="investment">
-                    <div class="aspect-[16/10] overflow-hidden">
-                        <picture>
-                            <source srcset="https://assets.dingyaoadvisory.tw/blog/images/blog-antarctic-thumb.webp" type="image/webp">
-                            <img src="https://assets.dingyaoadvisory.tw/blog/images/blog-antarctic-thumb.jpg" alt="南非南極研究領先全球" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" width="400" height="250" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 text-xs font-medium rounded-full">置產投資</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#0F172A] mb-3 line-clamp-2">
-                            <a href="blog/south-africa-antarctic-research.html" class="hover:text-[#C5A059] transition">南非南極研究領先全球：一個意想不到的投資啟示</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">南非在南極研究領域的領先地位，為投資者提供了意想不到的啟示。從地理位置到科研實力，了解南非如何成為通往南極的門戶。</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500">
-                            <span><i class="far fa-calendar mr-1"></i>2026年3月24日</span>
-                            <a href="blog/south-africa-antarctic-research.html" class="text-[#C5A059] hover:text-[#B08D4E] font-medium transition">閱讀更多 <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            
-            <!-- Pagination -->
-            <div class="flex justify-center items-center gap-4 mt-12">
-                <a href="blog.html" class="px-6 py-3 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 transition flex items-center gap-2">
-                    <i class="fas fa-chevron-left text-xs"></i> 上一頁
-                </a>
-                <div class="flex items-center gap-2">
-                    <a href="blog.html" class="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-gray-300 transition text-sm font-medium">1</a>
-                    <span class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900 text-white text-sm font-medium">2</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="py-20 px-4 bg-[#0F172A]">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">探索更多投資機會</h2>
             <p class="text-gray-400 text-lg mb-8">預約一對一諮詢，讓我們為您量身打造南非置產方案</p>
             <a href="index.html#contact" class="inline-flex items-center gap-2 bg-[#C5A059] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#B08D4E] transition shadow-lg">
                 <i class="fas fa-calendar-alt"></i> 立即預約諮詢
@@ -1392,7 +1289,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1465,7 +1362,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
             });
         });
     </script>
-
 
 </body>
 </html>

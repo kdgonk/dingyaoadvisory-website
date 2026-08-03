@@ -17,6 +17,7 @@
 <meta property="og:url" content="https://dingyaoadvisory.tw/consultation">
 <meta property="og:image" content="https://dingyaoadvisory.tw/og-image.jpg">
 <meta property="og:locale" content="zh_TW">
+<meta name="twitter:image" content="https://dingyaoadvisory.tw/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="https://assets.dingyaoadvisory.tw/favicon.svg">
 <link rel="icon" type="image/png" href="https://assets.dingyaoadvisory.tw/favicon.png">
@@ -1212,7 +1213,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
       <a href="/partners">戰略夥伴</a>
       <a href="/platform">數位服務</a>
@@ -1231,13 +1232,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   var path = window.location.pathname;
   var tw = document.getElementById('langTw');
   var en = document.getElementById('langEn');
-  // If current path ends with -en, TW goes to non-en version
+  var logo = document.getElementById('navLogo');
+
   if (path.endsWith('-en')) {
     tw.href = path.slice(0, -3) || '/';
   } else {
     tw.href = path;
   }
-  // If current path is / or doesn't have -en, EN goes to -en version
   if (path === '/') {
     en.href = '/index-en';
   } else if (path.endsWith('-en')) {
@@ -1245,13 +1246,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   } else {
     en.href = path + '-en';
   }
-  // Set active class based on -en suffix
   if (path.endsWith('-en')) {
     en.classList.add('active');
     tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
   } else {
     tw.classList.add('active');
     en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
   }
 })();
 </script>
@@ -1259,7 +1261,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
-
 
 <!-- Hero -->
 <section class="hero" id="hero">
@@ -1446,7 +1447,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1503,7 +1504,6 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </footer>
 
-
 <script>
 // Navbar scroll effect
 window.addEventListener('scroll', function(){
@@ -1526,6 +1526,58 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
+
+// Consultation form → Chatwoot API
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.querySelector('#name').value.trim();
+  const email = form.querySelector('#email').value.trim();
+  const phone = form.querySelector('#countryCode').value + form.querySelector('#phone').value.trim();
+  const budget = form.querySelector('#budget').value;
+  const interest = form.querySelector('#interest').value;
+  const message = form.querySelector('#message').value.trim();
+
+  const btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送出中...';
+
+  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+    },
+    body: JSON.stringify({
+      inbox_id: 2,
+      name: name,
+      email: email,
+      phone_number: phone,
+      custom_attributes: {
+        source: 'consultation_page',
+        budget: budget || '',
+        interest: interest || '',
+        message: message || ''
+      }
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.payload && data.payload.contact) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    } else {
+      throw new Error('建立聯絡人失敗');
+    }
+  })
+  .catch(err => {
+    btn.disabled = false;
+    btn.innerHTML = '預約免費評估 <i class="fas fa-arrow-right"></i>';
+    alert('送出失敗，請稍後再試或來信 info@dingyaoadvisory.tw');
+  });
+
+  return false;
+}
 </script>
 
 </body>
