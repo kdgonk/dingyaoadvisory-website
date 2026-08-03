@@ -24,6 +24,38 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "南非房貸：外國人申請完整指南 — 利率、成數、文件與審批流程",
+          "url": "/blog/south-africa-mortgage-foreign-buyers-guide",
+          "language": "zh-TW",
+          "category": "房產投資",
+          "description": "外國人申請南非房貸完整指南：南非儲備銀行SARB規範、FICA資金審查、貸款成數LTV、利率與審批流程。Crestline Advisory執行端協助，R150,000一次性顧問費，開普敦管轄與Garlicke & Bousfield律師樓把關。",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "The Complete Guide to South Africa Mortgages for Foreign Buyers: Rates, LTV, Documents and Approval Process",
+          "url": "/blog/south-africa-mortgage-foreign-buyers-guide-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "A complete guide to South Africa mortgages for foreign buyers: SARB regulations, FICA fund checks, loan-to-value ratios, interest rates and the approval process. Crestline Advisory provides execution support, R150,000 one-time consulting fee, governed by Cape Town law with Garlicke & Bousfield legal protection.",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "開普敦買房流程完整指南：外國人從簽約到過戶的七大步驟",
+          "url": "/blog/cape-town-property-purchase-process-guide",
+          "language": "zh-TW",
+          "category": "房產投資",
+          "description": "開普敦買房流程完整指南：簽訂offer、律師信託、過戶程序、稅費與時程。R150,000一次性顧問費，資金進Money Market享7.30%利息，Crestline Advisory與Garlicke & Bousfield律師樓全程把關，確保您安全完成南非置產。",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "The Complete Cape Town Property Purchase Process Guide: Seven Steps from Offer to Transfer",
+          "url": "/blog/cape-town-property-purchase-process-guide-en",
+          "language": "en",
+          "category": "overseas investment",
+          "description": "Complete Cape Town property purchase process guide: offer to purchase, lawyer trust, transfer process, fees and timeline. R150,000 one-time consulting fee, funds earning 7.30% in Money Market, with Crestline Advisory and Garlicke & Bousfield protecting every step of your South Africa investment.",
+          "date": "2026-08-03"
+        },
+        {
           "title": "SARB 8月11日新規上路！外國人在南非買房的國際收支申報全攻略",
           "url": "/blog/sarb-bop-codes-foreign-property-buyers-2026",
           "language": "zh-TW",
