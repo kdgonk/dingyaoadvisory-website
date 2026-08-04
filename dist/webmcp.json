@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-03",
+  "last_updated": "2026-08-04",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "開普敦房市兩極化：中產被高房價擠出，誰是贏家？",
+          "url": "/blog/cape-town-two-speed-affordability-crisis-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "開普敦房市正走向兩極化：西開普平均房價高出全國 72%，中產家庭貸款門檻越墊越高，但現金買家與外國投資者卻在低價區看到機會。解析開普敦置產的真實面貌。",
+          "date": "2026-08-04"
+        },
+        {
+          "title": "Cape Town's Two-Speed Property Market: Middle-Class Squeeze vs. Cash-Buyer Opportunity",
+          "url": "/blog/cape-town-two-speed-affordability-crisis-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Cape Town's property market is polarizing: the Western Cape average price is 72% above the national average, pushing middle-class families out while opening opportunities for cash buyers and foreign investors. Discover the real picture of Cape Town property investment.",
+          "date": "2026-08-04"
+        },
         {
           "title": "南非房貸：外國人申請完整指南 — 利率、成數、文件與審批流程",
           "url": "/blog/south-africa-mortgage-foreign-buyers-guide",
