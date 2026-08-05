@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "約翰尼斯堡 vs 開普敦：R1,960 億商辦價差揭示南非資本遷移真相",
+          "url": "/blog/johannesburg-cape-town-r196bn-commercial-gap-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "約翰尼斯堡 4,490 萬平方公尺商辦空間比開普敦多 54%，但兩地市場總值卻不相上下，換算約堡相對開普敦貼水高達 R1,960 億。解析南非資本為何持續流向開普敦，以及這對置產投資的意義。",
+          "date": "2026-08-05"
+        },
+        {
+          "title": "Joburg vs Cape Town: The R196bn Commercial Property Gap Reveals Where Capital Is Heading",
+          "url": "/blog/johannesburg-cape-town-r196bn-commercial-gap-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Johannesburg has 44.9 million square meters of let commercial space — 54% more than Cape Town — yet the two markets are worth almost the same. That implies a R196 billion discount for Joburg. Discover why South African capital keeps flowing to Cape Town.",
+          "date": "2026-08-05"
+        },
         {
           "title": "開普敦房市兩極化：中產被高房價擠出，誰是贏家？",
           "url": "/blog/cape-town-two-speed-affordability-crisis-2026",
