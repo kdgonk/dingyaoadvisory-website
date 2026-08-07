@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-07",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "開普敦 Atlantic Seaboard 1/3 被外國人買走：R60 億成交背後的高端置產密碼",
+          "url": "/blog/foreign-buyers-atlantic-seaboard-1-3-cape-town-r6bn-2026",
+          "language": "zh-TW",
+          "category": "置產投資",
+          "description": "deeds office 實證數據揭示：開普敦 Atlantic Seaboard 的 R60 億成交中，1/3 由外國人購買，每五間 R20m+ 豪宅兩間歸外國人。深入解析克夫頓、班崔、Sea Point、Camps Bay 為何是國際資本最集中的高端海濱區，以及外國買家的置產密碼。",
+          "date": "2026-08-07"
+        },
+        {
+          "title": "Foreign Buyers Now Control One-Third of Cape Town's Atlantic Seaboard: Inside the R6bn Deeds Data",
+          "url": "/blog/foreign-buyers-atlantic-seaboard-1-3-cape-town-r6bn-2026-en",
+          "language": "en",
+          "category": "Property Investment",
+          "description": "Deeds office data reveals the truth: one-third of the R6bn in Atlantic Seaboard sales was bought by foreigners, and two of every five R20m+ homes now belong to overseas buyers. A deep dive into why Clifton, Bantry Bay, Sea Point and Camps Bay are Cape Town's most international capital-concentrated waterfront, and the playbook for foreign buyers.",
+          "date": "2026-08-07"
+        },
         {
           "title": "約翰尼斯堡 vs 開普敦：R1,960 億商辦價差揭示南非資本遷移真相",
           "url": "/blog/johannesburg-cape-town-r196bn-commercial-gap-2026",
