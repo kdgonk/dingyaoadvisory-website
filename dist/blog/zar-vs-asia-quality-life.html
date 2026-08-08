@@ -588,14 +588,17 @@ blockquote cite {
   .highlight-box { padding: 20px; }
   .info-card { padding: 20px; }
 }
+/* ===== SECTION BACKGROUND (partners style) ===== */
+.section-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.section-bg img{width:100%;height:100%;object-fit:cover}
+.section-bg-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,14,23,0.92) 0%,rgba(10,14,23,0.7) 50%,rgba(10,14,23,0.88) 100%)}
+.article-body{position:relative;z-index:2}
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
 </head>
-<body>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
@@ -637,11 +640,12 @@ blockquote cite {
   </div>
 </header>
 
+
+
 <!-- ARTICLE BODY -->
 <section class="section" style="padding-top:0">
   <div class="container">
     <article class="article-body fade-in visible">
-
 <h2>前言：1600萬南非幣的真實購買力</h2>
                 <p>
                     <strong>1600萬南非幣（R16,000,000）</strong>，按2026年4月匯率計算（1 ZAR = 1.88 TWD），約合<strong>3008萬R</strong>。
@@ -655,39 +659,53 @@ blockquote cite {
 
             <!-- Hero Image -->
             <figure><img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-inline.jpg" alt="" loading="lazy"><figcaption>開普敦宜人的花園住宅環境，與亞洲城市的公寓形成鮮明對比</figcaption></figure>
+    </article>
+  </div>
+</section>
 
-                <h2>南非方案：開普敦的「資產雙引擎」配置</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s1.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s1.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>南非方案：開普敦的「資產雙引擎」配置</h2>
                 
                 <h3>資金配置總覽</h3>
                 <p>將R16,000,000（1600萬南非幣）進行如下配置：</p>
                 
-                <table class="w-full text-sm my-6 border-collapse">
+                <table class="tax-table">
                     <thead>
                         <tr>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">項目</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">南非幣（ZAR）</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">南非幣（ZAR）</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">比例</th>
+                            <th>項目</th>
+                            <th>南非幣（ZAR）</th>
+                            <th>南非幣（ZAR）</th>
+                            <th>比例</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">房產投資</td>
-                            <td class="border border-gray-200 px-4 py-2">R10,450,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約1965萬</td>
-                            <td class="border border-gray-200 px-4 py-2">65%</td>
+                            <td>房產投資</td>
+                            <td>R10,450,000</td>
+                            <td>約1965萬</td>
+                            <td>65%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">高息定存</td>
-                            <td class="border border-gray-200 px-4 py-2">R5,550,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約1043萬</td>
-                            <td class="border border-gray-200 px-4 py-2">35%</td>
+                            <td>高息定存</td>
+                            <td>R5,550,000</td>
+                            <td>約1043萬</td>
+                            <td>35%</td>
                         </tr>
-                        <tr class="bg-yellow-50 font-bold">
-                            <td class="border border-gray-200 px-4 py-2">總計</td>
-                            <td class="border border-gray-200 px-4 py-2">R16,000,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約3008萬</td>
-                            <td class="border border-gray-200 px-4 py-2">100%</td>
+                        <tr>
+                            <td>總計</td>
+                            <td>R16,000,000</td>
+                            <td>約3008萬</td>
+                            <td>100%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -697,45 +715,45 @@ blockquote cite {
                     根據 Lightstone 和 Property24 2026年Q1數據，開普敦房價呈現區域差異：
                 </p>
                 
-                <table class="w-full text-sm my-6 border-collapse">
+                <table class="tax-table">
                     <thead>
                         <tr>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">區域</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">均價/平方公尺</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">1965萬可購面積</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">租金收益率</th>
+                            <th>區域</th>
+                            <th>均價/平方公尺</th>
+                            <th>1965萬可購面積</th>
+                            <th>租金收益率</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">Woodstock</td>
-                            <td class="border border-gray-200 px-4 py-2">R18,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約580㎡</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600 font-medium">8-10%</td>
+                            <td>Woodstock</td>
+                            <td>R18,000</td>
+                            <td>約580㎡</td>
+                            <td>8-10%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">Observatory</td>
-                            <td class="border border-gray-200 px-4 py-2">R16,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約650㎡</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600 font-medium">5-7%</td>
+                            <td>Observatory</td>
+                            <td>R16,000</td>
+                            <td>約650㎡</td>
+                            <td>5-7%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">Sea Point</td>
-                            <td class="border border-gray-200 px-4 py-2">R38,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約275㎡</td>
-                            <td class="border border-gray-200 px-4 py-2">4.5-5%</td>
+                            <td>Sea Point</td>
+                            <td>R38,000</td>
+                            <td>約275㎡</td>
+                            <td>4.5-5%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">Green Point</td>
-                            <td class="border border-gray-200 px-4 py-2">R35,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約300㎡</td>
-                            <td class="border border-gray-200 px-4 py-2">4.5-5%</td>
+                            <td>Green Point</td>
+                            <td>R35,000</td>
+                            <td>約300㎡</td>
+                            <td>4.5-5%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">Southern Suburbs</td>
-                            <td class="border border-gray-200 px-4 py-2">R22,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約480㎡</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600 font-medium">5-5.8%</td>
+                            <td>Southern Suburbs</td>
+                            <td>R22,000</td>
+                            <td>約480㎡</td>
+                            <td>5-5.8%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -757,13 +775,12 @@ blockquote cite {
                     <li><strong>3.</strong> <strong>複利計算</strong>：每年複利計息</li>
                 </ul>
                 
-                <div class="bg-blue-50 border border-gray-200 rounded-xl p-6 my-8 font-mono text-sm">
-                    <p class="font-bold text-gray-800 mb-3">十年收益計算：</p>
+                <p>十年收益計算：</p>
                     <p>本金：1043萬 TWD（R5,550,000）<br>
                     年利率：7%<br>
                     複利因子：(1.07)^10 = 1.967</p>
                     <p>十年後本金+利息：1043萬 × 1.967 = <strong>約2053萬 TWD</strong></p>
-                    <p class="text-green-600 mt-3 font-bold">純利息收入：2053萬 - 1043萬 = <strong>約1010萬 TWD</strong></p>
+                    <p>純利息收入：2053萬 - 1043萬 = <strong>約1010萬 TWD</strong></p>
 
                 <h3>租金收入：被動現金流</h3>
                 <p>以R10,450,000房產、5.5% 毛租金收益率計算：</p>
@@ -775,14 +792,27 @@ blockquote cite {
                 
                 <h3>房產增值：保守估計</h3>
                 <p>開普敦房產長期增值率約 <strong>年均 3-5%</strong>（保守估計取4%）：</p>
-                <div class="bg-blue-50 border border-gray-200 rounded-xl p-6 my-8 font-mono text-sm">
-                    <p class="font-bold text-gray-800 mb-3">房產增值預估：</p>
+                <p>房產增值預估：</p>
                     <p>購入價：1965萬 TWD<br>
                     十年後估值（4%年增長）：1965萬 × (1.04)^10 = 1965萬 × 1.480<br>
                     = <strong>約2912萬 TWD</strong></p>
-                    <p class="text-green-600 mt-3 font-bold">房產增值：2912萬 - 1965萬 = <strong>約947萬 TWD</strong></p>
+                    <p>房產增值：2912萬 - 1965萬 = <strong>約947萬 TWD</strong></p>
+    </article>
+  </div>
+</section>
 
-                <h2>亞洲方案對比：R16,000,000能買什麼？</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s2.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s2.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>亞洲方案對比：R16,000,000能買什麼？</h2>
                 
                 <h3>方案A：台灣——高房價、低收益</h3>
                 <p><strong>房價現實</strong>（2026年數據）：</p>
@@ -820,154 +850,182 @@ blockquote cite {
                     <li><strong>銀級</strong>：定存 USD15萬 + 購買 RM60萬以上房產</li>
                 </ul>
                 <p>R16,000,000（約 USD93萬）雖可申請黃金級，但扣除定存後剩餘資金有限，房產選擇受限制。</p>
+    </article>
+  </div>
+</section>
 
-                <h2>十年資產差距：數據對決</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s3.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s3.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>十年資產差距：數據對決</h2>
                 
                 <h3>南非開普敦方案總覽</h3>
-                <table class="w-full text-sm my-6 border-collapse">
+                <table class="tax-table">
                     <thead>
                         <tr>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">資產類別</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">初始投入（萬R）</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">十年後估值（萬R）</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">收益（萬R）</th>
+                            <th>資產類別</th>
+                            <th>初始投入（萬R）</th>
+                            <th>十年後估值（萬R）</th>
+                            <th>收益（萬R）</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">房產</td>
-                            <td class="border border-gray-200 px-4 py-2">1965</td>
-                            <td class="border border-gray-200 px-4 py-2">2912</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">+947</td>
+                            <td>房產</td>
+                            <td>1965</td>
+                            <td>2912</td>
+                            <td>+947</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">定存（7%複利）</td>
-                            <td class="border border-gray-200 px-4 py-2">1043</td>
-                            <td class="border border-gray-200 px-4 py-2">2053</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">+1010</td>
+                            <td>定存（7%複利）</td>
+                            <td>1043</td>
+                            <td>2053</td>
+                            <td>+1010</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">租金收入（十年）</td>
-                            <td class="border border-gray-200 px-4 py-2">-</td>
-                            <td class="border border-gray-200 px-4 py-2">760</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">+760</td>
+                            <td>租金收入（十年）</td>
+                            <td>-</td>
+                            <td>760</td>
+                            <td>+760</td>
                         </tr>
-                        <tr class="bg-yellow-50 font-bold">
-                            <td class="border border-gray-200 px-4 py-2">總資產</td>
-                            <td class="border border-gray-200 px-4 py-2">3008</td>
-                            <td class="border border-gray-200 px-4 py-2 text-blue-900">5725</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">+2717</td>
+                        <tr>
+                            <td>總資產</td>
+                            <td>3008</td>
+                            <td>5725</td>
+                            <td>+2717</td>
                         </tr>
                     </tbody>
                 </table>
                 <p><strong>十年後總資產約R286,250,000</strong></p>
                 
                 <h3>台灣方案總覽</h3>
-                <table class="w-full text-sm my-6 border-collapse">
+                <table class="tax-table">
                     <thead>
-                        <tr class="bg-gray-100">
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">資產類別</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">初始投入（萬R）</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">十年後估值（萬R）</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">收益（萬R）</th>
+                        <tr>
+                            <th>資產類別</th>
+                            <th>初始投入（萬R）</th>
+                            <th>十年後估值（萬R）</th>
+                            <th>收益（萬R）</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">房產</td>
-                            <td class="border border-gray-200 px-4 py-2">3008</td>
-                            <td class="border border-gray-200 px-4 py-2">4043</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">+1035</td>
+                            <td>房產</td>
+                            <td>3008</td>
+                            <td>4043</td>
+                            <td>+1035</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">租金收入（十年）</td>
-                            <td class="border border-gray-200 px-4 py-2">-</td>
-                            <td class="border border-gray-200 px-4 py-2">315</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">+315</td>
+                            <td>租金收入（十年）</td>
+                            <td>-</td>
+                            <td>315</td>
+                            <td>+315</td>
                         </tr>
-                        <tr class="bg-gray-100 font-bold">
-                            <td class="border border-gray-200 px-4 py-2">總資產</td>
-                            <td class="border border-gray-200 px-4 py-2">3008</td>
-                            <td class="border border-gray-200 px-4 py-2">4358</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">+1350</td>
+                        <tr>
+                            <td>總資產</td>
+                            <td>3008</td>
+                            <td>4358</td>
+                            <td>+1350</td>
                         </tr>
                     </tbody>
                 </table>
                 
                 <h3>關鍵差距總結</h3>
-                <table class="w-full text-sm my-6 border-collapse">
+                <table class="tax-table">
                     <thead>
                         <tr>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">比較項目</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">開普敦方案</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">台灣方案</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">差距</th>
+                            <th>比較項目</th>
+                            <th>開普敦方案</th>
+                            <th>台灣方案</th>
+                            <th>差距</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-green-50">
-                            <td class="border border-gray-200 px-4 py-2 font-bold">十年後總資產</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600 font-bold">R286,250,000</td>
-                            <td class="border border-gray-200 px-4 py-2">R217,900,000</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600 font-bold">+1367萬 (+31%)</td>
+                        <tr>
+                            <td>十年後總資產</td>
+                            <td>R286,250,000</td>
+                            <td>R217,900,000</td>
+                            <td>+1367萬 (+31%)</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">被動收入（年）</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600 font-bold">約R890,000</td>
-                            <td class="border border-gray-200 px-4 py-2">約R225,000</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600 font-bold">+296%</td>
+                            <td>被動收入（年）</td>
+                            <td>約R890,000</td>
+                            <td>約R225,000</td>
+                            <td>+296%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">居住品質</td>
-                            <td class="border border-gray-200 px-4 py-2">花園住宅/大公寓</td>
-                            <td class="border border-gray-200 px-4 py-2">小公寓</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">明顯優勢</td>
+                            <td>居住品質</td>
+                            <td>花園住宅/大公寓</td>
+                            <td>小公寓</td>
+                            <td>明顯優勢</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">流動性</td>
-                            <td class="border border-gray-200 px-4 py-2">高（定存1043萬）</td>
-                            <td class="border border-gray-200 px-4 py-2">低（房產折現難）</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">明顯優勢</td>
+                            <td>流動性</td>
+                            <td>高（定存1043萬）</td>
+                            <td>低（房產折現難）</td>
+                            <td>明顯優勢</td>
                         </tr>
                     </tbody>
                 </table>
+    </article>
+  </div>
+</section>
 
-                <h2>生活品質對比：不只是數字</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s4.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s4.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>生活品質對比：不只是數字</h2>
                 
                 <h3>生活成本（Numbeo 2026數據）</h3>
-                <table class="w-full text-sm my-6 border-collapse">
+                <table class="tax-table">
                     <thead>
                         <tr>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">項目</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">開普敦</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">台北</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">差異</th>
+                            <th>項目</th>
+                            <th>開普敦</th>
+                            <th>台北</th>
+                            <th>差異</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">單人生活成本（不含房租）</td>
-                            <td class="border border-gray-200 px-4 py-2">約 R8,500/月（1.6萬TWD）</td>
-                            <td class="border border-gray-200 px-4 py-2">約 R20,000/月</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">開普敦較低約20%</td>
+                            <td>單人生活成本（不含房租）</td>
+                            <td>約 R8,500/月（1.6萬TWD）</td>
+                            <td>約 R20,000/月</td>
+                            <td>開普敦較低約20%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">房租（市中心一房）</td>
-                            <td class="border border-gray-200 px-4 py-2">R12,000/月（2.3萬TWD）</td>
-                            <td class="border border-gray-200 px-4 py-2">R28,000/月</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">開普敦較低約18%</td>
+                            <td>房租（市中心一房）</td>
+                            <td>R12,000/月（2.3萬TWD）</td>
+                            <td>R28,000/月</td>
+                            <td>開普敦較低約18%</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">外食費用（中位數餐廳）</td>
-                            <td class="border border-gray-200 px-4 py-2">較低</td>
-                            <td class="border border-gray-200 px-4 py-2">較高</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">開普敦較低</td>
+                            <td>外食費用（中位數餐廳）</td>
+                            <td>較低</td>
+                            <td>較高</td>
+                            <td>開普敦較低</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2">私立醫療（年度保費）</td>
-                            <td class="border border-gray-200 px-4 py-2">約 R30,000（5.6萬TWD）</td>
-                            <td class="border border-gray-200 px-4 py-2">約 R60,000</td>
-                            <td class="border border-gray-200 px-4 py-2 text-green-600">開普敦較低約50%</td>
+                            <td>私立醫療（年度保費）</td>
+                            <td>約 R30,000（5.6萬TWD）</td>
+                            <td>約 R60,000</td>
+                            <td>開普敦較低約50%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -988,66 +1046,80 @@ blockquote cite {
                 </ul>
                 
                 <h3>非財務因素對比</h3>
-                <table class="w-full text-sm my-6 border-collapse">
+                <table class="tax-table">
                     <thead>
                         <tr>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">因素</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">開普敦</th>
-                            <th class="border border-gray-200 px-4 py-2 text-left font-bold text-gray-700">台灣</th>
+                            <th>因素</th>
+                            <th>開普敦</th>
+                            <th>台灣</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2"><strong>氣候</strong></td>
-                            <td class="border border-gray-200 px-4 py-2">地中海氣候，年均17°C，日照充足</td>
-                            <td class="border border-gray-200 px-4 py-2">夏季濕熱、冬季濕冷</td>
+                            <td><strong>氣候</strong></td>
+                            <td>地中海氣候，年均17°C，日照充足</td>
+                            <td>夏季濕熱、冬季濕冷</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2"><strong>自然環境</strong></td>
-                            <td class="border border-gray-200 px-4 py-2">桌山、海灘、葡萄酒莊</td>
-                            <td class="border border-gray-200 px-4 py-2">山區、溫泉、離島</td>
+                            <td><strong>自然環境</strong></td>
+                            <td>桌山、海灘、葡萄酒莊</td>
+                            <td>山區、溫泉、離島</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2"><strong>語言</strong></td>
-                            <td class="border border-gray-200 px-4 py-2">英語環境，商業無障礙</td>
-                            <td class="border border-gray-200 px-4 py-2">華語環境，無文化隔閡</td>
+                            <td><strong>語言</strong></td>
+                            <td>英語環境，商業無障礙</td>
+                            <td>華語環境，無文化隔閡</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2"><strong>醫療</strong></td>
-                            <td class="border border-gray-200 px-4 py-2">私立醫院品質優良，費用低</td>
-                            <td class="border border-gray-200 px-4 py-2">健保體系完善，就醫便利</td>
+                            <td><strong>醫療</strong></td>
+                            <td>私立醫院品質優良，費用低</td>
+                            <td>健保體系完善，就醫便利</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2"><strong>治安</strong></td>
-                            <td class="border border-gray-200 px-4 py-2">需選擇安全社區</td>
-                            <td class="border border-gray-200 px-4 py-2">全球最安全地區之一</td>
+                            <td><strong>治安</strong></td>
+                            <td>需選擇安全社區</td>
+                            <td>全球最安全地區之一</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-200 px-4 py-2"><strong>基礎設施</strong></td>
-                            <td class="border border-gray-200 px-4 py-2">電力間歇性限電問題</td>
-                            <td class="border border-gray-200 px-4 py-2">穩定可靠</td>
+                            <td><strong>基礎設施</strong></td>
+                            <td>電力間歇性限電問題</td>
+                            <td>穩定可靠</td>
                         </tr>
                     </tbody>
                 </table>
+    </article>
+  </div>
+</section>
 
-                <h2>結論：誰適合哪個方案？</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s5.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/zar-vs-asia-quality-life-s5.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>結論：誰適合哪個方案？</h2>
                 
                 <h3>適合開普敦方案的人群 ✅</h3>
                 <ul>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>退休規劃者</strong>——追求7%定存利率的穩定被動收入，願意以較低成本享受高品質退休生活</span>
                     </li>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>數位遊牧工作者</strong>——遠程工作不受地點限制，英語環境+宜居氣候+低生活成本</span>
                     </li>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>長期資產配置者</strong>——希望分散地理風險，追求高於亞洲的資產回報率</span>
                     </li>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>熱愛戶外生活者</strong>——喜愛海灘、登山、葡萄酒文化，重視生活品質勝過工作機會</span>
                     </li>
                 </ul>
@@ -1055,102 +1127,26 @@ blockquote cite {
                 <h3>適合台灣/亞洲方案的人群 ✅</h3>
                 <ul>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>在職人士</strong>——需要穩定本地就業機會，事業發展重心在亞洲</span>
                     </li>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>家庭導向者</strong>——重視治安與教育資源，需要完善的基础設施</span>
                     </li>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>短期投資者</strong>——亞洲房市流動性較好，需要快速變現能力</span>
                     </li>
                     <li>
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">✓</span>
+                        <span>✓</span>
                         <span><strong>文化依賴者</strong>——無法長期離開華語環境，無需適應海外文化環境</span>
                     </li>
                 </ul>
-
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h2>常見問題 FAQ</h2>
-                
-                <div class="qa-item">
-                    <div class="qa-question" onclick="toggleFaq(this)">R16,000,000在開普敦可以買什麼樣的房產？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                    <div class="qa-answer">以R10,450,000（R10,450,000）可在開普敦購買花園住宅或翻新 loft。重點區域包括Woodstock（約580㎡、8-10%租金收益率）、Observatory（約650㎡、5-7%收益率）或Southern Suburbs（200-250㎡花園住宅）。</div>
-
-                <div class="qa-item">
-                    <div class="qa-question" onclick="toggleFaq(this)">南非銀行的定存利率是多少？實際收益如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                    <div class="qa-answer">南非SARB政策利率為7%（2026年4月），實際定存利率約6.5%年息（日結月付複利）。以R5,550,000（R5,550,000）存入，十年後本金+利息可達約R102,650,000，純利息收入約R50,500,000。</div>
-
-                <div class="qa-item">
-                    <div class="qa-question" onclick="toggleFaq(this)">R16,000,000放在台灣與開普敦，十年後資產差距有多大？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                    <div class="qa-answer">台灣方案（全部投入房產）：十年後總資產約R217,900,000。開普敦方案（房產+定存+租金）：十年後總資產約R286,250,000。差距約R68,350,000，開普敦方案勝出約31%。</div>
-
-                <div class="qa-item">
-                    <div class="qa-question" onclick="toggleFaq(this)">開普敦生活成本與台北相比如何？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                    <div class="qa-answer">根據Numbeo 2026數據，開普敦單人生活成本（不含房租）約R8,500/月（R8,000），比台北約R10,000低約20%。市中心一房房租約R12,000/月（R11,500），比台北約R14,000低約18%。私立醫療費用更是台北的一半。</div>
-
-                <div class="qa-item">
-                    <div class="qa-question" onclick="toggleFaq(this)">哪些人適合選擇開普敦置產方案？<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                    <div class="qa-answer">適合族群包括：追求被動收入的退休人士（7%定存+租金收益遠超亞洲）、數位遊牧工作者（英語環境+宜居氣候+低成本）、長期資產配置者（分散地理風險、享受南非利率紅利）、熱愛戶外生活者（海灘、登山、葡萄酒文化）。</div>
-
-            <!-- References -->
-            <div class="border-t border-gray-200 pt-8 mb-8">
-                <h3 class="text-lg font-bold text-gray-900 mb-4">參考資料與數據來源</h3>
-                <ul>
-                    <li>
-                        <i class="fas fa-external-link-alt mr-2"></i>
-                        <a href="https://tradingeconomics.com/south-africa/currency" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                            Trading Economics — 南非蘭特匯率數據（2026年4月）
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-external-link-alt mr-2"></i>
-                        <a href="https://www.lightstone.co.za/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                            Lightstone — 南非房地產數據平台（Q1 2026）
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-external-link-alt mr-2"></i>
-                        <a href="https://www.property24.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                            Property24 — 南非最大房地產平台（Q1 2026）
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-external-link-alt mr-2"></i>
-                        <a href="https://www.resbank.co.za/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                            South African Reserve Bank (SARB) — 南非儲備銀行利率數據（2026年4月）
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-external-link-alt mr-2"></i>
-                        <a href="https://www.numbeo.com/cost-of-living/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                            Numbeo — 全球生活成本指數 2026
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-external-link-alt mr-2"></i>
-                        <a href="https://www.ey.gov.tw/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                            內政部不動產資訊平台 — 台灣房價數據 2026
-                        </a>
-                    </li>
-                </ul>
-
-            <div class="mt-12 pt-8 border-t border-gray-200">
-                <div class="flex items-start gap-4">
-                    <img src="https://assets.dingyaoadvisory.tw/blog/images/scott-huang.jpg" alt="Scott Huang" class="w-16 h-16 rounded-full object-cover border-2 border-gray-200">
-                    <div>
-                        <h4 class="font-bold text-gray-900 text-lg">Scott Huang</h4>
-                        <p>Business Development</p>
-                        <p>
-                            專精於南非房地產投資分析與跨境資產配置，協助台灣高資產族群評估全球置產機會。透過詳盡的市場數據比較與十年資產模擬，為客戶找出最適合的海外投資路徑。擁有豐富的開普敦、台北兩地生活觀察經驗，致力於用客觀數據協助客戶做出明智的跨境投資決策。
-                        </p>
-
     </article>
   </div>
 </section>
+
 
 <!-- CTA -->
 <section class="section cta-section">

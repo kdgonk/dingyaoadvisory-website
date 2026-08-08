@@ -277,6 +277,13 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
 @media (max-width: 1024px) { .info-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media(max-width:768px){ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(10,14,23,0.95);backdrop-filter:blur(20px);flex-direction:column;padding:24px;gap:16px;border-bottom:1px solid rgba(201,168,76,0.1)} .nav-links.open{display:flex} .nav-toggle{display:block} .footer-grid{grid-template-columns:1fr 1fr} .section { padding: 60px 20px; } .footer-bottom { flex-direction: column; text-align: center; } .tax-table { font-size: 0.8rem; } .tax-table thead th, .tax-table tbody td { padding: 10px 12px; } }
 @media(max-width:480px){ .footer-grid{grid-template-columns:1fr} .article-meta { gap: 12px; font-size: 0.8rem; } .highlight-box { padding: 20px; } .info-card { padding: 20px; } }
+
+/* ===== SECTION BACKGROUND (partners style) ===== */
+.section-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.section-bg img{width:100%;height:100%;object-fit:cover}
+.section-bg-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,14,23,0.92) 0%,rgba(10,14,23,0.7) 50%,rgba(10,14,23,0.88) 100%)}
+.article-body{position:relative;z-index:2}
+
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
@@ -329,204 +336,308 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
 </header>
 
 <!-- ARTICLE BODY -->
-<section class="section" style="padding-top:0">
+<!-- SECTION 1 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s1.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s1.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
   <div class="container">
     <article class="article-body fade-in visible">
-
       <p>2026 年 7 月 19 日，<em>Business Day</em> 刊登了一則震撼南非房市的報導：根據 Lightstone 最新數據，<strong>過去十年外國買家在開普敦高端房產市場投入了 R1,530 億</strong>。在 R2,000 萬以上的房產交易中，<strong>39% 由外國買家購入</strong>——也就是說，每五間開普敦豪宅，就有兩間被外國人買走。</p>
-
-      <p>這組數據來自 Lightstone 對 2016 年至 2025 年全南非約 239 萬筆住宅交易的全面分析。Lightstone 不動產服務部執行總監 Hayley Ivins-Downes 指出：「外國買家在 R2,000 萬以上的房產中佔了 39%，這挑戰了外界對外國投資僅限於開普敦沿海豪華郊區的刻板印象。」</p>
-
-      <div class="highlight-box">
-        <p><strong>核心數據：</strong> 過去十年外國買家在開普敦投入 R1,530 億購置高端房產。R2,000 萬以上房產 39% 由外國人購入。西開普省外國買家比例 7.8% 為全國最高。Llandudno 約三分之二房產由外國人購買，平均價格 R2,920 萬。</p>
-      </div>
-
+      
+            <p>這組數據來自 Lightstone 對 2016 年至 2025 年全南非約 239 萬筆住宅交易的全面分析。Lightstone 不動產服務部執行總監 Hayley Ivins-Downes 指出：「外國買家在 R2,000 萬以上的房產中佔了 39%，這挑戰了外界對外國投資僅限於開普敦沿海豪華郊區的刻板印象。」</p>
+      
+            <div class="highlight-box">
+              <p><strong>核心數據：</strong> 過去十年外國買家在開普敦投入 R1,530 億購置高端房產。R2,000 萬以上房產 39% 由外國人購入。西開普省外國買家比例 7.8% 為全國最高。Llandudno 約三分之二房產由外國人購買，平均價格 R2,920 萬。</p>
+            </div>
+      
       <h2>外國買家：不只是度假屋買家</h2>
-
+      
       <p>Ivins-Downes 進一步說明：「雖然外界對外國房產買家的討論幾乎完全集中在休閒和生活風格，但實際情況遠比這更複雜。約翰尼斯堡的移民社區也驅動了大量購房活動，而西開普省和普馬蘭加省的生活風格市場持續吸引富裕的國際買家。」</p>
+      
+            <p>數據顯示，外國買家的動機多元——從生活風格、社區連結、商業投資到家庭網絡，並非單一買家畫像。在開普敦，大西洋海岸（Atlantic Seaboard）的 Llandudno 約三分之二的房產由外國人購買，平均價格 R2,920 萬。其他熱點包括 Bakoven、Camps Bay、Constantia 和 Bishopscourt。</p>
+    </article>
+  </div>
+</section>
 
-      <p>數據顯示，外國買家的動機多元——從生活風格、社區連結、商業投資到家庭網絡，並非單一買家畫像。在開普敦，大西洋海岸（Atlantic Seaboard）的 Llandudno 約三分之二的房產由外國人購買，平均價格 R2,920 萬。其他熱點包括 Bakoven、Camps Bay、Constantia 和 Bishopscourt。</p>
-
+<!-- SECTION 2 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s2.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s2.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
       <h2>開普敦房市 2026 年中：價格創歷史新高</h2>
-
+      
       <p>Robshaw Property Group 2026 年 7 月 5 日發布的最新市場報告顯示，開普敦房市正處於前所未有的強勁週期：</p>
+      
+            <ul>
+              <li><strong>平均售價年增 12.9%</strong>——2026 年上半年均價較 2025 年全年大幅上漲</li>
+              <li><strong>庫存年減 25%</strong>——Property24 上的總掛牌量在過去一年下降了約四分之一</li>
+              <li><strong>平均銷售天數僅 18 天</strong>——許多房產在公開上市前就已售出</li>
+              <li><strong>R1,000 萬以上市場 28% 為外國買家</strong>——且外國買家幾乎全是現金交易</li>
+            </ul>
+      
+            <p>Robshaw 報告指出：「開普敦的房產市場正被超越本地薪資和傳統本地需求的力量所塑造。生活風格移民、遠距工作、外國買家、現金買家、有限庫存，以及開普敦日益增長的國際吸引力，共同推動了一個越來越由財富驅動的市場。」</p>
+    </article>
+  </div>
+</section>
 
-      <ul>
-        <li><strong>平均售價年增 12.9%</strong>——2026 年上半年均價較 2025 年全年大幅上漲</li>
-        <li><strong>庫存年減 25%</strong>——Property24 上的總掛牌量在過去一年下降了約四分之一</li>
-        <li><strong>平均銷售天數僅 18 天</strong>——許多房產在公開上市前就已售出</li>
-        <li><strong>R1,000 萬以上市場 28% 為外國買家</strong>——且外國買家幾乎全是現金交易</li>
-      </ul>
-
-      <p>Robshaw 報告指出：「開普敦的房產市場正被超越本地薪資和傳統本地需求的力量所塑造。生活風格移民、遠距工作、外國買家、現金買家、有限庫存，以及開普敦日益增長的國際吸引力，共同推動了一個越來越由財富驅動的市場。」</p>
-
+<!-- SECTION 3 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s3.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s3.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
       <h2>五年區域表現：哪些區域漲幅最大？</h2>
-
+      
       <p>從 2021 年到 2026 年，開普敦各區域的價格表現呈現明顯分化：</p>
+      
+            <div class="tax-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>區域</th>
+                    <th>2021 年均價</th>
+                    <th>2026 年均價</th>
+                    <th>五年漲幅</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cape Peninsula（Noordhoek 等）</td>
+                    <td>R 1,850,000</td>
+                    <td>R 3,000,000</td>
+                    <td><strong>+62.2%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Atlantic Seaboard</td>
+                    <td>R 3,725,000</td>
+                    <td>R 5,900,000</td>
+                    <td><strong>+58.4%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Blaauwberg Coast</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td><strong>+41.9%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>City Bowl</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td><strong>+25.0%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Southern Suburbs</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td><strong>+21.7%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Northern Suburbs</td>
+                    <td>R 1,299,000</td>
+                    <td>R 1,450,000</td>
+                    <td><strong>+11.6%</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+      
+            <p>數據來源：Robshaw Property Group / Propstats，2026 年 7 月</p>
+      
+            <p>生活風格驅動的沿海和景觀區域（Cape Peninsula、Atlantic Seaboard）漲幅最大，反映了 semigration、遠距工作和財富遷移的疊加效應。而 Northern Suburbs 因價格較為親民，吸引了更多首次購房者（18-35 歲買家佔 31.9%），但漲幅相對溫和。</p>
+    </article>
+  </div>
+</section>
 
-      <div class="tax-table">
-        <table>
-          <thead>
-            <tr>
-              <th>區域</th>
-              <th>2021 年均價</th>
-              <th>2026 年均價</th>
-              <th>五年漲幅</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cape Peninsula（Noordhoek 等）</td>
-              <td>R 1,850,000</td>
-              <td>R 3,000,000</td>
-              <td><strong>+62.2%</strong></td>
-            </tr>
-            <tr>
-              <td>Atlantic Seaboard</td>
-              <td>R 3,725,000</td>
-              <td>R 5,900,000</td>
-              <td><strong>+58.4%</strong></td>
-            </tr>
-            <tr>
-              <td>Blaauwberg Coast</td>
-              <td>—</td>
-              <td>—</td>
-              <td><strong>+41.9%</strong></td>
-            </tr>
-            <tr>
-              <td>City Bowl</td>
-              <td>—</td>
-              <td>—</td>
-              <td><strong>+25.0%</strong></td>
-            </tr>
-            <tr>
-              <td>Southern Suburbs</td>
-              <td>—</td>
-              <td>—</td>
-              <td><strong>+21.7%</strong></td>
-            </tr>
-            <tr>
-              <td>Northern Suburbs</td>
-              <td>R 1,299,000</td>
-              <td>R 1,450,000</td>
-              <td><strong>+11.6%</strong></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>數據來源：Robshaw Property Group / Propstats，2026 年 7 月</p>
-
-      <p>生活風格驅動的沿海和景觀區域（Cape Peninsula、Atlantic Seaboard）漲幅最大，反映了 semigration、遠距工作和財富遷移的疊加效應。而 Northern Suburbs 因價格較為親民，吸引了更多首次購房者（18-35 歲買家佔 31.9%），但漲幅相對溫和。</p>
-
+<!-- SECTION 4 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s4.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s4.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
       <h2>外國買家湧入對開普敦房市的深層影響</h2>
-
+      
       <h3>1. 現金交易主導高端市場</h3>
-      <p>開普敦高端市場約 82% 的交易為現金交易。外國買家幾乎全是現金買家，這意味著他們不受 SARB 利率波動的影響。當本地貸款買家因利率上升而退場時，外國現金買家的議價空間反而增加。</p>
+            <p>開普敦高端市場約 82% 的交易為現金交易。外國買家幾乎全是現金買家，這意味著他們不受 SARB 利率波動的影響。當本地貸款買家因利率上升而退場時，外國現金買家的議價空間反而增加。</p>
+      
+            <h3>2. 供給稀缺持續加劇</h3>
+            <p>大西洋與桌山國家公園限制了開普敦的可開發土地。頂級地段如 Clifton、Camps Bay、Bantry Bay 的新建案極其有限。外國買家的持續湧入與供給稀缺形成結構性失衡，這是開普敦頂級房價長期看漲的根本原因。</p>
+      
+            <h3>3. 租金收益率維持強勁</h3>
+            <p>根據 The Africanvestor 2026 年 5 月最新數據，開普敦各區的淨租金收益率仍然可觀：</p>
+      
+            <ul>
+              <li><strong>City Bowl</strong> 一房淨收益率：<strong>7.5-7.9%</strong></li>
+              <li><strong>Sea Point</strong> 一房淨收益率：<strong>7.5-7.8%</strong></li>
+              <li><strong>Observatory</strong> 一房淨收益率：<strong>11.4%</strong></li>
+              <li><strong>Woodstock</strong> 一房淨收益率：<strong>10.2%</strong></li>
+              <li><strong>Rondebosch</strong> 一房淨收益率：<strong>7.5-7.7%</strong></li>
+            </ul>
+      
+            <p>這些收益率遠高於全球多數主要城市——倫敦 3-4%、紐約 3-5%、雪梨 2.5-3.5%、東京 3-4%。開普敦的租金收益率優勢，正是海外投資者持續湧入的重要驅動力。</p>
+    </article>
+  </div>
+</section>
 
-      <h3>2. 供給稀缺持續加劇</h3>
-      <p>大西洋與桌山國家公園限制了開普敦的可開發土地。頂級地段如 Clifton、Camps Bay、Bantry Bay 的新建案極其有限。外國買家的持續湧入與供給稀缺形成結構性失衡，這是開普敦頂級房價長期看漲的根本原因。</p>
-
-      <h3>3. 租金收益率維持強勁</h3>
-      <p>根據 The Africanvestor 2026 年 5 月最新數據，開普敦各區的淨租金收益率仍然可觀：</p>
-
-      <ul>
-        <li><strong>City Bowl</strong> 一房淨收益率：<strong>7.5-7.9%</strong></li>
-        <li><strong>Sea Point</strong> 一房淨收益率：<strong>7.5-7.8%</strong></li>
-        <li><strong>Observatory</strong> 一房淨收益率：<strong>11.4%</strong></li>
-        <li><strong>Woodstock</strong> 一房淨收益率：<strong>10.2%</strong></li>
-        <li><strong>Rondebosch</strong> 一房淨收益率：<strong>7.5-7.7%</strong></li>
-      </ul>
-
-      <p>這些收益率遠高於全球多數主要城市——倫敦 3-4%、紐約 3-5%、雪梨 2.5-3.5%、東京 3-4%。開普敦的租金收益率優勢，正是海外投資者持續湧入的重要驅動力。</p>
-
+<!-- SECTION 5 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s5.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s5.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
       <h2>DingYao 雙引擎現金流模型：結構化收益的解答</h2>
-
+      
       <p>對於希望參與開普敦房產市場的海外投資者，DingYao Advisory 的雙引擎現金流模型提供了一個經過驗證的結構化方案：</p>
+      
+            <div class="info-grid">
+              <div class="info-card">
+                <div class="ic-icon"><i class="fas fa-door-open"></i></div>
+                <h4>入門門檻</h4>
+                <p>R 16,000,000 的結構化投資方案，包含房產購置與信託存款兩部分。</p>
+              </div>
+              <div class="info-card">
+                <div class="ic-icon"><i class="fas fa-home"></i></div>
+                <h4>租金引擎</h4>
+                <p>R 10,450,000 購置開普敦精選房產，滿租年收益 R 836,000-R 1,045,000（8-10% 收益率）。</p>
+              </div>
+              <div class="info-card">
+                <div class="ic-icon"><i class="fas fa-piggy-bank"></i></div>
+                <h4>利息引擎</h4>
+                <p>R 5,000,000 存入 Standard Bank 信託帳戶，年收益約 R 335,000。</p>
+              </div>
+              <div class="info-card">
+                <div class="ic-icon"><i class="fas fa-calculator"></i></div>
+                <h4>綜合收益率</h4>
+                <p>合計年現金流 R 1,171,000-R 1,380,000，綜合收益率 7.3-8.6%。</p>
+              </div>
+            </div>
+      
+            <div class="highlight-box">
+              <p><strong>雙引擎的結構性優勢：</strong> 租金引擎（8-9% 滿租收益率）與利息引擎形成自然對沖。利率上升時利息引擎收益增加，利率下降時租金引擎因經濟活絡而受益。兩種引擎在不同市場環境中互補，為投資者提供穩健的現金流。</p>
+            </div>
+    </article>
+  </div>
+</section>
 
-      <div class="info-grid">
-        <div class="info-card">
-          <div class="ic-icon"><i class="fas fa-door-open"></i></div>
-          <h4>入門門檻</h4>
-          <p>R 16,000,000 的結構化投資方案，包含房產購置與信託存款兩部分。</p>
-        </div>
-        <div class="info-card">
-          <div class="ic-icon"><i class="fas fa-home"></i></div>
-          <h4>租金引擎</h4>
-          <p>R 10,450,000 購置開普敦精選房產，滿租年收益 R 836,000-R 1,045,000（8-10% 收益率）。</p>
-        </div>
-        <div class="info-card">
-          <div class="ic-icon"><i class="fas fa-piggy-bank"></i></div>
-          <h4>利息引擎</h4>
-          <p>R 5,000,000 存入 Standard Bank 信託帳戶，年收益約 R 335,000。</p>
-        </div>
-        <div class="info-card">
-          <div class="ic-icon"><i class="fas fa-calculator"></i></div>
-          <h4>綜合收益率</h4>
-          <p>合計年現金流 R 1,171,000-R 1,380,000，綜合收益率 7.3-8.6%。</p>
-        </div>
-      </div>
-
-      <div class="highlight-box">
-        <p><strong>雙引擎的結構性優勢：</strong> 租金引擎（8-9% 滿租收益率）與利息引擎形成自然對沖。利率上升時利息引擎收益增加，利率下降時租金引擎因經濟活絡而受益。兩種引擎在不同市場環境中互補，為投資者提供穩健的現金流。</p>
-      </div>
-
+<!-- SECTION 6 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s6.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s6.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
       <h2>外國買家的資金安全：律師信託保護機制</h2>
-
+      
       <p>對於海外投資者而言，資金安全是最核心的考量。南非法律規定，所有房地產交易資金必須存入律師的信託帳戶（<strong>律師信託保護</strong>），由律師事務所獨立管理。資金僅在產權成功登記至買方名下、所有市政費用結清、所有交易條件滿足後才會釋放給賣方。</p>
+      
+            <p>此機制受 Legal Practice Act 嚴格監管，確保買方資金在產權移轉完成前不會被挪用。DingYao Advisory 與 Garlicke & Bousfield 等頂級律師樓合作，為海外投資者提供從 FICA 合規到產權移轉的完整法律支援。</p>
+    </article>
+  </div>
+</section>
 
-      <p>此機制受 Legal Practice Act 嚴格監管，確保買方資金在產權移轉完成前不會被挪用。DingYao Advisory 與 Garlicke & Bousfield 等頂級律師樓合作，為海外投資者提供從 FICA 合規到產權移轉的完整法律支援。</p>
-
+<!-- SECTION 7 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s7.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s7.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
       <h2>給海外投資者的行動建議</h2>
-
+      
       <p>Lightstone 的 R1,530 億數據不僅是過去十年的成績單，更是未來趨勢的風向標。以下是針對不同類型投資者的具體建議：</p>
+      
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-num">01</div>
+                <div class="step-content">
+                  <h4>把握匯率紅利</h4>
+                  <p>對美元、歐元、英鎊投資者而言，蘭特的波動提供了額外的「匯率折扣」。開普敦頂級海岸房產價格僅為法國蔚藍海岸或地中海的 50% 以下，加上匯率優勢，實際購入成本更具吸引力。</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-num">02</div>
+                <div class="step-content">
+                  <h4>聚焦高收益區域</h4>
+                  <p>City Bowl、Sea Point、Observatory 等區域的淨收益率 7.5-11.4%，遠高於全球主要城市。這些區域的租客池深、空置率低，適合追求現金流的投資者。</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-num">03</div>
+                <div class="step-content">
+                  <h4>考慮結構化方案</h4>
+                  <p>DingYao 雙引擎現金流模型以 R 16,000,000 入門門檻，透過租金引擎（8-9% 收益率）與利息引擎的組合，實現 7.3-8.6% 的綜合年收益率，並在利率波動中形成自然對沖。</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-num">04</div>
+                <div class="step-content">
+                  <h4>確保法律合規</h4>
+                  <p>所有交易資金必須透過律師信託帳戶（律師信託保護）進行。選擇有經驗的律師樓和物業管理團隊，確保從 FICA 合規到產權移轉的每個環節都符合南非法律要求。</p>
+                </div>
+              </div>
+            </div>
+      
+            <blockquote>
+              「外國買家在開普敦的投資遠比外界想像的更多元。有些人購買頂級豪宅和生活風格物業，有些人則投資於與商業和家庭網絡相關的地點。開普敦的吸引力已經超越了單純的度假屋市場。」
+              <cite>— Hayley Ivins-Downes, Lightstone 不動產服務部執行總監, Business Day, 2026 年 7 月 19 日</cite>
+            </blockquote>
+    </article>
+  </div>
+</section>
 
-      <div class="process-steps">
-        <div class="process-step">
-          <div class="step-num">01</div>
-          <div class="step-content">
-            <h4>把握匯率紅利</h4>
-            <p>對美元、歐元、英鎊投資者而言，蘭特的波動提供了額外的「匯率折扣」。開普敦頂級海岸房產價格僅為法國蔚藍海岸或地中海的 50% 以下，加上匯率優勢，實際購入成本更具吸引力。</p>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="step-num">02</div>
-          <div class="step-content">
-            <h4>聚焦高收益區域</h4>
-            <p>City Bowl、Sea Point、Observatory 等區域的淨收益率 7.5-11.4%，遠高於全球主要城市。這些區域的租客池深、空置率低，適合追求現金流的投資者。</p>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="step-num">03</div>
-          <div class="step-content">
-            <h4>考慮結構化方案</h4>
-            <p>DingYao 雙引擎現金流模型以 R 16,000,000 入門門檻，透過租金引擎（8-9% 收益率）與利息引擎的組合，實現 7.3-8.6% 的綜合年收益率，並在利率波動中形成自然對沖。</p>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="step-num">04</div>
-          <div class="step-content">
-            <h4>確保法律合規</h4>
-            <p>所有交易資金必須透過律師信託帳戶（律師信託保護）進行。選擇有經驗的律師樓和物業管理團隊，確保從 FICA 合規到產權移轉的每個環節都符合南非法律要求。</p>
-          </div>
-        </div>
-      </div>
-
-      <blockquote>
-        「外國買家在開普敦的投資遠比外界想像的更多元。有些人購買頂級豪宅和生活風格物業，有些人則投資於與商業和家庭網絡相關的地點。開普敦的吸引力已經超越了單純的度假屋市場。」
-        <cite>— Hayley Ivins-Downes, Lightstone 不動產服務部執行總監, Business Day, 2026 年 7 月 19 日</cite>
-      </blockquote>
-
+<!-- SECTION 8 -->
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s8.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/foreign-buyers-r153bn-cape-town-luxury-10-years-s8.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
       <h2>結論：外資湧入的背後，是開普敦不可複製的價值</h2>
-
+      
       <p>Lightstone 的 R1,530 億數據揭示了一個明確的趨勢：全球資本正在用真金白銀投票，認可開普敦作為全球頂級房產投資目的地的價值。這不僅僅是生活風格的選擇，更是對開普敦地理稀缺性、治理品質、租金收益和長期增值潛力的理性判斷。</p>
-
-      <p>對於台灣和亞太地區的投資者而言，開普敦房產市場提供了一個獨特的機會——以合理的價格進入一個全球頂級的生活風格市場，同時享受 7.3-8.6% 的結構化收益。隨著外國買家持續湧入、庫存持續減少、價格持續創新高，這個窗口正在逐漸收窄。</p>
-
-      <p style="text-align:center;margin-top:48px;padding-top:32px;border-top:1px solid rgba(201,168,76,0.08)">
-        <em>R1,530 億的外資正在告訴你答案。現在就預約一對一諮詢，了解 DingYao 雙引擎現金流模型如何幫助您參與開普敦房產市場的長期增長。</em>
-      </p>
-
+      
+            <p>對於台灣和亞太地區的投資者而言，開普敦房產市場提供了一個獨特的機會——以合理的價格進入一個全球頂級的生活風格市場，同時享受 7.3-8.6% 的結構化收益。隨著外國買家持續湧入、庫存持續減少、價格持續創新高，這個窗口正在逐漸收窄。</p>
+      
+            <p style="text-align:center;margin-top:48px;padding-top:32px;border-top:1px solid rgba(201,168,76,0.08)">
+              <em>R1,530 億的外資正在告訴你答案。現在就預約一對一諮詢，了解 DingYao 雙引擎現金流模型如何幫助您參與開普敦房產市場的長期增長。</em>
+            </p>
     </article>
   </div>
 </section>

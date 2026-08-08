@@ -278,6 +278,11 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
 @media (max-width: 1024px) { .info-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media(max-width:768px){ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(10,14,23,0.95);backdrop-filter:blur(20px);flex-direction:column;padding:24px;gap:16px;border-bottom:1px solid rgba(201,168,76,0.1)} .nav-links.open{display:flex} .nav-toggle{display:block} .footer-grid{grid-template-columns:1fr 1fr} .section { padding: 60px 20px; } .footer-bottom { flex-direction: column; text-align: center; } .tax-table { font-size: 0.8rem; } .tax-table thead th, .tax-table tbody td { padding: 10px 12px; } }
 @media(max-width:480px){ .footer-grid{grid-template-columns:1fr} .article-meta { gap: 12px; font-size: 0.8rem; } .highlight-box { padding: 20px; } .info-card { padding: 20px; } }
+/* ===== SECTION BACKGROUND (partners style) ===== */
+.section-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.section-bg img{width:100%;height:100%;object-fit:cover}
+.section-bg-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,14,23,0.92) 0%,rgba(10,14,23,0.7) 50%,rgba(10,14,23,0.88) 100%)}
+.article-body{position:relative;z-index:2}
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
@@ -333,8 +338,7 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
 <section class="section" style="padding-top:0">
   <div class="container">
     <article class="article-body fade-in visible">
-
-      <p>2026 年 7 月 23 日，南非儲備銀行（SARB）貨幣政策委員會（MPC）將公布最新利率決議。距離這個關鍵時刻僅剩三天，預測市場顯示一個罕見的分裂格局——<strong>升息 25 基點的機率高達 47.5%</strong>，其餘機率分布在維持不變與再次降息之間。</p>
+<p>2026 年 7 月 23 日，南非儲備銀行（SARB）貨幣政策委員會（MPC）將公布最新利率決議。距離這個關鍵時刻僅剩三天，預測市場顯示一個罕見的分裂格局——<strong>升息 25 基點的機率高達 47.5%</strong>，其餘機率分布在維持不變與再次降息之間。</p>
 
       <p>這不是一次普通的利率會議。現行 prime rate 為 10.25%（repo rate 6.75%），自 2025 年高峰以來已連續六次降息，累計達 150 基點。通膨已降至 3.5%（2025 年 12 月數據），接近 SARB 新設立的 3% 目標區間下限。經濟學家普遍預期 H2 2026 還有 1-2 次 25 基點降息空間，但近期通膨壓力和蘭特波動讓 MPC 的決策蒙上不確定性。</p>
 
@@ -343,8 +347,22 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
       <div class="highlight-box">
         <p><strong>核心摘要：</strong> SARB 七月 MPC 面臨升息（47.5%）、維持不變、降息三種情境。對開普敦房產投資者而言，無論哪種結果，DingYao 雙引擎現金流模型（R 16,000,000 入門門檻，綜合收益率 7.3-8.6%）都能提供穩健的收益結構。利率波動反而為現金買家創造了獨特的議價窗口。</p>
       </div>
+    </article>
+  </div>
+</section>
 
-      <h2>情境一：升息 25 基點（47.5% 機率）</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s1.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s1.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>情境一：升息 25 基點（47.5% 機率）</h2>
 
       <h3>對本地買家的影響</h3>
       <p>若 SARB 在連續六次降息後意外升息，對依賴房貸的本地買家將產生顯著影響。以現行 prime rate 10.25% 計算，一筆 R 5,000,000 的 30 年期房貸月供約為 R 45,000。升息 25 基點後，每月將增加約 R 800-R 1,000——每年近 R 12,000。</p>
@@ -356,8 +374,22 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
 
       <h3>對外國現金買家的機會</h3>
       <p>開普敦高端市場約 82% 的交易為現金交易。升息導致本地貸款買家減少，意味著競爭降低、議價空間增加。對於持有美元、歐元或英鎊的海外投資者而言，蘭特的潛在貶值還將提供額外的「匯率折扣」。</p>
+    </article>
+  </div>
+</section>
 
-      <h2>情境二：維持利率不變（約 35% 機率）</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s2.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s2.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>情境二：維持利率不變（約 35% 機率）</h2>
 
       <h3>市場中性偏多</h3>
       <p>維持利率不變是最符合當前經濟共識的結果。通膨穩定在 3-6% 目標區間內，經濟增長溫和，MPC 選擇按兵不動。這對開普敦房產市場意味著穩定的借貸環境，本地買家信心不受衝擊，租賃市場持續強勁。</p>
@@ -379,8 +411,22 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
       <div class="highlight-box">
         <p><strong>雙引擎優勢：</strong> 即使利率環境變化，租金引擎（8-9% 滿租收益率）和利息引擎（信託存款利息）形成互補。利率上升時利息引擎收益增加，利率下降時租金引擎因經濟活絡而受益。兩種引擎在不同利率環境中形成自然對沖。</p>
       </div>
+    </article>
+  </div>
+</section>
 
-      <h2>情境三：降息 25 基點（約 17.5% 機率）</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s3.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s3.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>情境三：降息 25 基點（約 17.5% 機率）</h2>
 
       <h3>最樂觀情境</h3>
       <p>若 SARB 再次降息，prime rate 將降至 10.00%，這將是 2025 年高峰以來的第七次降息。對開普敦房產市場而言，這是最強勁的利多信號：</p>
@@ -391,8 +437,22 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
         <li><strong>蘭特升值：</strong> 降息若搭配全球風險偏好改善，蘭特可能升值，進一步吸引外資</li>
         <li><strong>租賃市場加溫：</strong> 更多本地人轉買為租的需求將推高租金</li>
       </ul>
+    </article>
+  </div>
+</section>
 
-      <h2>無論利率如何變動，開普敦房產的結構性優勢不變</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s4.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s4.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>無論利率如何變動，開普敦房產的結構性優勢不變</h2>
 
       <p>短期利率波動不應掩蓋開普敦房產市場的長期結構性優勢。以下是支撐開普敦房產價值的四大支柱：</p>
 
@@ -418,8 +478,22 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
           <p>南非法律規定交易資金必須存入律師信託帳戶（律師信託保護），受 Legal Practice Act 嚴格監管，確保資金安全。</p>
         </div>
       </div>
+    </article>
+  </div>
+</section>
 
-      <h2>給投資者的行動建議</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s5.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s5.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>給投資者的行動建議</h2>
 
       <p>距離 SARB 七月 MPC 決議僅剩三天，以下是針對不同投資者的具體建議：</p>
 
@@ -458,8 +532,22 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
         「開普敦不是一個普通的南非房地產市場。最好的住宅區被山和海限制，加上對更安全城市生活方式的強勁需求，使其在各種利率環境下都展現出獨特的韌性。」
         <cite>— The Africanvestor 開普敦房價預測，2026 年 6 月</cite>
       </blockquote>
+    </article>
+  </div>
+</section>
 
-      <h2>結論：利率波動中的不變價值</h2>
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s6.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/sarb-july-2026-mpc-three-scenarios-cape-town-property-s6.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>結論：利率波動中的不變價值</h2>
 
       <p>SARB 七月 MPC 決議無疑將在短期內影響市場情緒，但對於以十年為單位的開普敦房產投資者而言，利率波動只是長期持有過程中的一個變數。開普敦房產的真正價值來自於地理稀缺性、持續的國內移民、穩健的租金收益，以及南非法律體系提供的交易安全保障。</p>
 
@@ -468,10 +556,10 @@ blockquote cite { display: block; margin-top: 12px; font-style: normal; font-siz
       <p style="text-align:center;margin-top:48px;padding-top:32px;border-top:1px solid rgba(201,168,76,0.08)">
         <em>距離 SARB 七月 MPC 決議僅剩三天。現在就預約一對一諮詢，獲取 DingYao 雙引擎現金流模型的完整評估與開普敦置產策略建議。</em>
       </p>
-
     </article>
   </div>
 </section>
+
 
 <!-- CTA -->
 <section class="section cta-section">

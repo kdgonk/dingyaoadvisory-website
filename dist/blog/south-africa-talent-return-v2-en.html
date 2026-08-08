@@ -1106,7 +1106,12 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .qa-item { border-bottom: 1px solid #e5e7eb; padding: 1.5rem 0; }
 .qa-item:last-child { border-bottom: none; }
 .qa-question { font-weight: 600; color: #0F172A; margin-bottom: 0.5rem; }
-.qa-answer { color: #4B5563; line-height: 1.7; }</style>
+.qa-answer { color: #4B5563; line-height: 1.7; }/* ===== SECTION BACKGROUND (partners style) ===== */
+.section-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.section-bg img{width:100%;height:100%;object-fit:cover}
+.section-bg-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,14,23,0.92) 0%,rgba(10,14,23,0.7) 50%,rgba(10,14,23,0.88) 100%)}
+.article-body{position:relative;z-index:2}
+</style>
     
     <!-- JSON-LD Structured Data: Article -->
     <script type="application/ld+json">
@@ -1255,7 +1260,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
       <a href="/tour-en">Tour</a>
       <a href="/blog-en">Insights</a>
       <a href="/consultation-en" class="btn-nav">Consultation</a>
-      <div class="nav-lang"><a href="#" class="">TW</a><span>/</span><a href="#" class="active">EN</a>
+      <div class="nav-lang"><a href="#" class="">TW</a><span>/</span><a href="#" class="active">EN</a></div>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
@@ -1410,32 +1415,48 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
     </nav>
     
     <!-- Article Content -->
-    <section class="py-16 px-4 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <article class="article-content">
-                
-                <!-- Introduction -->
+            
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <article class="article-body fade-in visible">
+<!-- Introduction -->
                 <div class="prose prose-lg max-w-none">
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    <p>
                         Are you searching for a new direction in overseas asset allocation? With Taiwan's property market in a policy-driven cooling period, Dubai facing a geopolitical storm, Thailand cracking down on foreign nominee ownership, and Australia banning foreign buyers — the world's once-popular investment destinations are flashing warning signs. Where should capital go?
                     </p>
                     
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        The answer may lie somewhere you would not expect: <strong class="text-blue-900">Cape Town, South Africa</strong>.
+                    <p>
+                        The answer may lie somewhere you would not expect: <strong>Cape Town, South Africa</strong>.
                     </p>
                     
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    <p>
                         This African gem is enjoying a unique demographic dividend — a wave of skilled professionals returning from overseas. Carrying foreign-currency assets back to Cape Town, these professionals are not only driving the premium property market, but also creating a rare "free ride" opportunity for Asian investors.
                     </p>
                     
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        More importantly, Cape Town offers Africa's top universities, the British education system, and an internationalized lifestyle — this is not merely an investment, but a <strong class="text-blue-900">strategic choice that paves the way for the next generation</strong>.
+                    <p>
+                        More importantly, Cape Town offers Africa's top universities, the British education system, and an internationalized lifestyle — this is not merely an investment, but a <strong>strategic choice that paves the way for the next generation</strong>.
                     </p>
                 </div>
                 
                 <!-- Section 1 -->
                 <div class="prose prose-lg max-w-none">
-                    <h2>1. The Context of the Talent Return: Why Now?</h2>
+    </article>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s1.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s1.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>1. The Context of the Talent Return: Why Now?</h2>
                     
                     <h3>A "Homecoming Wave" Driven by Global Conditions</h3>
                     
@@ -1445,21 +1466,21 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     
                     <p>Behind this "homecoming wave" is the combined effect of shifting global conditions:</p>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Rising Global Economic Uncertainty</h4>
-                    <ul class="space-y-2">
+                    <h4>Rising Global Economic Uncertainty</h4>
+                    <ul>
                         <li>European economic growth has stalled, and the aftershocks of Brexit continue to ripple</li>
                         <li>US political polarization and policy swings are unsettling overseas professionals</li>
                         <li>Sky-high property prices in Australia and New Zealand create enormous cost-of-living pressure</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Improving Domestic Environment in South Africa</h4>
-                    <ul class="space-y-2">
+                    <h4>Improving Domestic Environment in South Africa</h4>
+                    <ul>
                         <li>In October 2025, South Africa was formally removed from the FATF (Financial Action Task Force) grey list, sharply improving its international standing</li>
                         <li>The G20 Summit was hosted in Cape Town, bringing unprecedented global visibility</li>
                         <li>Interest rates entered a cutting cycle, falling from 11.75% to 10.25%, improving the financing environment</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-4">The Economic Logic of "Reverse Migration"</h4>
+                    <h4>The Economic Logic of "Reverse Migration"</h4>
                     
                     <p>This is not simply an emotional return, but the result of rational calculation. South African professionals who spent years building careers in London, Sydney, and Dubai have discovered a compelling fact:</p>
                     
@@ -1476,33 +1497,33 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     <p>These returning professionals share several common characteristics:</p>
                     
                     <div class="overflow-x-auto my-6">
-                        <table class="min-w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                        <table class="tax-table">
                             <thead>
-                                <tr class="bg-blue-900 text-white">
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Characteristic</th>
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Description</th>
+                                <tr>
+                                    <th>Characteristic</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Overseas tenure</td>
-                                    <td class="border border-gray-300 px-4 py-3">Average of 8-15 years of overseas work experience</td>
+                                <tr>
+                                    <td>Overseas tenure</td>
+                                    <td>Average of 8-15 years of overseas work experience</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Professional fields</td>
-                                    <td class="border border-gray-300 px-4 py-3">Finance, technology, healthcare, engineering, law</td>
+                                <tr>
+                                    <td>Professional fields</td>
+                                    <td>Finance, technology, healthcare, engineering, law</td>
                                 </tr>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Asset size</td>
-                                    <td class="border border-gray-300 px-4 py-3">Most carry foreign-currency assets and can afford to buy property</td>
+                                <tr>
+                                    <td>Asset size</td>
+                                    <td>Most carry foreign-currency assets and can afford to buy property</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Educational background</td>
-                                    <td class="border border-gray-300 px-4 py-3">Graduates of top overseas or South African universities</td>
+                                <tr>
+                                    <td>Educational background</td>
+                                    <td>Graduates of top overseas or South African universities</td>
                                 </tr>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Family status</td>
-                                    <td class="border border-gray-300 px-4 py-3">Mostly married with children, placing high value on education</td>
+                                <tr>
+                                    <td>Family status</td>
+                                    <td>Mostly married with children, placing high value on education</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1524,7 +1545,22 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                 
                 <!-- Section 2 -->
                 <div class="prose prose-lg max-w-none">
-                    <h2>2. Impact on the Property Market: Talent-Driven Structural Demand</h2>
+    </article>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s2.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s2.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>2. Impact on the Property Market: Talent-Driven Structural Demand</h2>
                     
                     <h3>"Return Buyers" in the Premium Market</h3>
                     
@@ -1532,46 +1568,46 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                         This talent-return wave is directly boosting Cape Town's premium property market. According to reports from DG Properties and Hamilton's Property Portfolio, Cape Town's high-end market in 2025 showed the following characteristics:
                     </p>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Record Transactions in Top-Tier Properties</h4>
-                    <ul class="space-y-2">
+                    <h4>Record Transactions in Top-Tier Properties</h4>
+                    <ul>
                         <li>Luxury homes above R50 million have moved from "collector-grade" to an actively traded tier</li>
                         <li>Transactions of premium properties above R100 million hit record highs</li>
                         <li>Prices on the Atlantic Seaboard reach R170,000 per square metre</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-4">The Purchasing Power of Returning Talent</h4>
+                    <h4>The Purchasing Power of Returning Talent</h4>
                     
                     <p>These returning professionals bring not just demand, but "high-quality demand":</p>
                     
                     <div class="overflow-x-auto my-6">
-                        <table class="min-w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                        <table class="tax-table">
                             <thead>
-                                <tr class="bg-blue-900 text-white">
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Origin</th>
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Average assets carried</th>
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Preferred areas</th>
+                                <tr>
+                                    <th>Origin</th>
+                                    <th>Average assets carried</th>
+                                    <th>Preferred areas</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3">United Kingdom</td>
-                                    <td class="border border-gray-300 px-4 py-3">£500k-1.5M</td>
-                                    <td class="border border-gray-300 px-4 py-3">Atlantic Seaboard, City Bowl</td>
+                                <tr>
+                                    <td>United Kingdom</td>
+                                    <td>£500k-1.5M</td>
+                                    <td>Atlantic Seaboard, City Bowl</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3">Australia</td>
-                                    <td class="border border-gray-300 px-4 py-3">AUD 800k-2M</td>
-                                    <td class="border border-gray-300 px-4 py-3">Claremont, Constantia</td>
+                                <tr>
+                                    <td>Australia</td>
+                                    <td>AUD 800k-2M</td>
+                                    <td>Claremont, Constantia</td>
                                 </tr>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3">Dubai</td>
-                                    <td class="border border-gray-300 px-4 py-3">USD 300k-800k</td>
-                                    <td class="border border-gray-300 px-4 py-3">V&A Waterfront, Sea Point</td>
+                                <tr>
+                                    <td>Dubai</td>
+                                    <td>USD 300k-800k</td>
+                                    <td>V&A Waterfront, Sea Point</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3">United States</td>
-                                    <td class="border border-gray-300 px-4 py-3">USD 400k-1M</td>
-                                    <td class="border border-gray-300 px-4 py-3">Green Point, Hout Bay</td>
+                                <tr>
+                                    <td>United States</td>
+                                    <td>USD 400k-1M</td>
+                                    <td>Green Point, Hout Bay</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1583,11 +1619,11 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     
                     <p>You might ask: what does this have to do with me?</p>
                     
-                    <p>The answer is: <strong class="text-blue-900">this talent-return wave creates "dual demand" — local structural demand plus a revival of foreign-investor confidence.</strong></p>
+                    <p>The answer is: <strong>this talent-return wave creates "dual demand" — local structural demand plus a revival of foreign-investor confidence.</strong></p>
                     
                     <p>For Asian investors, this means:</p>
                     
-                    <ul class="space-y-2">
+                    <ul>
                         <li><strong>Real buying support</strong>: not pure speculation, but a structural market underpinned by genuine housing demand</li>
                         <li><strong>Upward price momentum</strong>: the foreign-currency purchasing power of returning talent drives premium prices higher</li>
                         <li><strong>Active rental market</strong>: returning talent tends to rent first, creating strong premium rental demand</li>
@@ -1599,7 +1635,22 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                 
                 <!-- Section 3 -->
                 <div class="prose prose-lg max-w-none">
-                    <h2>3. Investment Opportunity Analysis: Cape Town's Triple Value</h2>
+    </article>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s3.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s3.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>3. Investment Opportunity Analysis: Cape Town's Triple Value</h2>
                     
                     <h3>Value 1: The Currency Advantage — Surging Purchasing Power</h3>
                     
@@ -1607,39 +1658,39 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                         The South African rand (ZAR) trades at around 15.8 to the US dollar, near its highest level since June 2020 — meaning the rand is relatively weak, creating an excellent entry point for investors holding foreign currency.
                     </p>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Currency Conversion Example</h4>
+                    <h4>Currency Conversion Example</h4>
                     
                     <div class="overflow-x-auto my-6">
-                        <table class="min-w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                        <table class="tax-table">
                             <thead>
-                                <tr class="bg-blue-900 text-white">
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Currency</th>
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Exchange-rate change (vs 2021)</th>
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Purchasing-power change</th>
+                                <tr>
+                                    <th>Currency</th>
+                                    <th>Exchange-rate change (vs 2021)</th>
+                                    <th>Purchasing-power change</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3">US Dollar</td>
-                                    <td class="border border-gray-300 px-4 py-3">+35%</td>
-                                    <td class="border border-gray-300 px-4 py-3">Can buy more rand-denominated assets</td>
+                                <tr>
+                                    <td>US Dollar</td>
+                                    <td>+35%</td>
+                                    <td>Can buy more rand-denominated assets</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3">Rand (R)</td>
-                                    <td class="border border-gray-300 px-4 py-3">+28%</td>
-                                    <td class="border border-gray-300 px-4 py-3">The same budget buys a larger unit</td>
+                                <tr>
+                                    <td>Rand (R)</td>
+                                    <td>+28%</td>
+                                    <td>The same budget buys a larger unit</td>
                                 </tr>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3">Chinese Yuan</td>
-                                    <td class="border border-gray-300 px-4 py-3">+32%</td>
-                                    <td class="border border-gray-300 px-4 py-3">Renminbi investors benefit handsomely</td>
+                                <tr>
+                                    <td>Chinese Yuan</td>
+                                    <td>+32%</td>
+                                    <td>Renminbi investors benefit handsomely</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">A Concrete Example</h4>
-                    <ul class="space-y-2">
+                    <h4>A Concrete Example</h4>
+                    <ul>
                         <li>A premium Cape Town coastal apartment: R5 million</li>
                         <li>2021 cost: about USD 350,000</li>
                         <li>2026 cost: about USD 316,000</li>
@@ -1654,46 +1705,46 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                         For Asian investors who value their children's education, Cape Town offers a little-known advantage: <strong>a world-class British higher-education system</strong>.
                     </p>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">University of Cape Town (UCT)</h4>
-                    <ul class="space-y-2">
+                    <h4>University of Cape Town (UCT)</h4>
+                    <ul>
                         <li>Africa's top-ranked university</li>
                         <li>Ranked in the world's top 200 in the QS university rankings</li>
                         <li>British education system with internationally recognized degrees</li>
                         <li>Internationally acclaimed medical, law, and business schools</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Stellenbosch University</h4>
-                    <ul class="space-y-2">
+                    <h4>Stellenbosch University</h4>
+                    <ul>
                         <li>South Africa's leading research university</li>
                         <li>Renowned for engineering, agriculture, and wine science</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-4">Advantages of the British System</h4>
+                    <h4>Advantages of the British System</h4>
                     
                     <div class="overflow-x-auto my-6">
-                        <table class="min-w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                        <table class="tax-table">
                             <thead>
-                                <tr class="bg-blue-900 text-white">
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Item</th>
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Description</th>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Degree recognition</td>
-                                    <td class="border border-gray-300 px-4 py-3">Highly recognized in the UK, Australia, New Zealand, and beyond</td>
+                                <tr>
+                                    <td>Degree recognition</td>
+                                    <td>Highly recognized in the UK, Australia, New Zealand, and beyond</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Progression pathway</td>
-                                    <td class="border border-gray-300 px-4 py-3">Seamless pathway to UK postgraduate study</td>
+                                <tr>
+                                    <td>Progression pathway</td>
+                                    <td>Seamless pathway to UK postgraduate study</td>
                                 </tr>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Tuition cost</td>
-                                    <td class="border border-gray-300 px-4 py-3">About one-third of UK domestic tuition</td>
+                                <tr>
+                                    <td>Tuition cost</td>
+                                    <td>About one-third of UK domestic tuition</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Cost of living</td>
-                                    <td class="border border-gray-300 px-4 py-3">About one-quarter of London's</td>
+                                <tr>
+                                    <td>Cost of living</td>
+                                    <td>About one-quarter of London's</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1709,22 +1760,22 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                         In 2025, Cape Town hosted the G20 Summit, South Africa's first time hosting the world's most important economic forum. The post-G20 effects are profoundly reshaping Cape Town's international standing:
                     </p>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Infrastructure Upgrades</h4>
-                    <ul class="space-y-2">
+                    <h4>Infrastructure Upgrades</h4>
+                    <ul>
                         <li>Cape Town International Airport is being expanded, with more direct routes added</li>
                         <li>Roads and public transport systems are improving</li>
                         <li>Convention centres and commercial facilities are being upgraded</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">International Companies Moving In</h4>
-                    <ul class="space-y-2">
+                    <h4>International Companies Moving In</h4>
+                    <ul>
                         <li>Tech companies are establishing regional headquarters</li>
                         <li>Financial-services firms are expanding their footprint</li>
                         <li>Demand for talent at multinationals is rising</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Enhanced International Image</h4>
-                    <ul class="space-y-2">
+                    <h4>Enhanced International Image</h4>
+                    <ul>
                         <li>Extensive global media coverage</li>
                         <li>Tourists returning and boosting the services sector</li>
                         <li>International investor confidence is rebounding</li>
@@ -1735,26 +1786,41 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                 
                 <!-- Section 4 -->
                 <div class="prose prose-lg max-w-none">
-                    <h2>4. Risks & Mitigation: The Risks of Investing Alone</h2>
+    </article>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s4.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s4.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>4. Risks & Mitigation: The Risks of Investing Alone</h2>
                     
                     <h3>The Three Major Risks of Investing in South Africa</h3>
                     
                     <p>To be honest, every investment carries risk. Investing in South Africa is no exception:</p>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Risk 1: Exchange-Rate Volatility</h4>
-                    <ul class="space-y-2">
+                    <h4>Risk 1: Exchange-Rate Volatility</h4>
+                    <ul>
                         <li>The rand is volatile, which can affect returns calculated in your home currency</li>
                         <li>Long-term holding reduces the impact of short-term swings</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Risk 2: Moving Funds In and Out</h4>
-                    <ul class="space-y-2">
+                    <h4>Risk 2: Moving Funds In and Out</h4>
+                    <ul>
                         <li>South Africa's exchange controls have been substantially relaxed, but you still need to understand the rules</li>
                         <li>Large outbound transfers require tax clearance</li>
                     </ul>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Risk 3: Legal & Tax Considerations</h4>
-                    <ul class="space-y-2">
+                    <h4>Risk 3: Legal & Tax Considerations</h4>
+                    <ul>
                         <li>South Africa has unique transfer-duty and capital-gains-tax rules</li>
                         <li>The purchase process for foreigners differs slightly from that for citizens</li>
                     </ul>
@@ -1763,43 +1829,43 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     
                     <p>Investing in South African property on your own is like navigating a maze in a foreign country — you can try, but the cost may be time, money, and even legal risk.</p>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Professional Services from DingYao Advisory</h4>
+                    <h4>Professional Services from DingYao Advisory</h4>
                     
                     <div class="overflow-x-auto my-6">
-                        <table class="min-w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                        <table class="tax-table">
                             <thead>
-                                <tr class="bg-blue-900 text-white">
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Service</th>
-                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Description</th>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Property selection</td>
-                                    <td class="border border-gray-300 px-4 py-3">In-depth knowledge of Cape Town's areas to select the right investment for you</td>
+                                <tr>
+                                    <td>Property selection</td>
+                                    <td>In-depth knowledge of Cape Town's areas to select the right investment for you</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Legal advice</td>
-                                    <td class="border border-gray-300 px-4 py-3">Explain South African property law and help you complete transactions lawfully and compliantly</td>
+                                <tr>
+                                    <td>Legal advice</td>
+                                    <td>Explain South African property law and help you complete transactions lawfully and compliantly</td>
                                 </tr>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Tax planning</td>
-                                    <td class="border border-gray-300 px-4 py-3">Analyse purchase taxes, holding costs, and sale liabilities so you know the numbers</td>
+                                <tr>
+                                    <td>Tax planning</td>
+                                    <td>Analyse purchase taxes, holding costs, and sale liabilities so you know the numbers</td>
                                 </tr>
-                                <tr class="bg-gray-50">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Fund transfer</td>
-                                    <td class="border border-gray-300 px-4 py-3">Help you understand transfer channels and avoid bottlenecks</td>
+                                <tr>
+                                    <td>Fund transfer</td>
+                                    <td>Help you understand transfer channels and avoid bottlenecks</td>
                                 </tr>
-                                <tr class="bg-white">
-                                    <td class="border border-gray-300 px-4 py-3 font-medium">Property management</td>
-                                    <td class="border border-gray-300 px-4 py-3">End-to-end rental management and maintenance services</td>
+                                <tr>
+                                    <td>Property management</td>
+                                    <td>End-to-end rental management and maintenance services</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     
-                    <h4 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Why Choose DingYao?</h4>
-                    <ul class="space-y-2">
+                    <h4>Why Choose DingYao?</h4>
+                    <ul>
                         <li><strong>Years of South Africa expertise</strong>: we are not newcomers chasing a trend, but a professional team with a long-term focus on the South African market</li>
                         <li><strong>We understand Asian investors</strong>: we know what matters to you — currency, tax, law, education, and lifestyle</li>
                         <li><strong>End-to-end service</strong>: from consultation to handover, and from renting to selling, we stay with you every step of the way</li>
@@ -1809,7 +1875,22 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                 
                 <!-- Section 5 -->
                 <div class="prose prose-lg max-w-none">
-                    <h2>5. Conclusion: Ride the Tailwind of the Talent Return</h2>
+    </article>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-bg">
+    <picture>
+      <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s5.webp" type="image/webp">
+      <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-s5.webp" alt="" loading="lazy">
+    </picture>
+    <div class="section-bg-overlay"></div>
+  </div>
+  <div class="container">
+    <article class="article-body fade-in visible">
+<h2>5. Conclusion: Ride the Tailwind of the Talent Return</h2>
                     
                     <p>
                         The wave of skilled South African talent returning home is not a fleeting news topic but a structural demographic trend. These professionals, who have built careers around the world, have voted with their feet and chosen to return to Cape Town — in itself the highest endorsement of Cape Town's quality of life and investment value.
@@ -1817,7 +1898,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     
                     <p>For Asian investors, this talent-return wave creates a rare "free ride" opportunity:</p>
                     
-                    <ul class="space-y-2">
+                    <ul>
                         <li><strong>Currency advantage</strong>: foreign purchasing power has surged, making this an ideal entry point</li>
                         <li><strong>British education</strong>: paves an international education path for the next generation</li>
                         <li><strong>Global integration</strong>: post-G20 Cape Town enjoys unprecedented visibility</li>
@@ -1825,7 +1906,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     
                     <p>Of course, investing in South Africa is not for everyone. But if you:</p>
                     
-                    <ul class="space-y-2">
+                    <ul>
                         <li>are looking for a new direction in overseas asset allocation</li>
                         <li>value international education opportunities for your children</li>
                         <li>see growth potential in emerging markets</li>
@@ -1834,11 +1915,11 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     
                     <p>then Cape Town deserves your serious consideration.</p>
                     
-                    <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Next Step: Consult DingYao</h3>
+                    <h3>Next Step: Consult DingYao</h3>
                     
                     <p>Our South African property experts will provide you with:</p>
                     
-                    <ul class="space-y-2">
+                    <ul>
                         <li>In-depth analysis of curated Cape Town opportunities</li>
                         <li>Tax and legal planning for Taiwanese investors</li>
                         <li>Advice on moving funds and managing currency risk</li>
@@ -1846,199 +1927,30 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                         <li>Consulting on education-pathway planning for your children</li>
                     </ul>
                     
-                    <p class="mt-6">
+                    <p>
                         <a href="/consultation-en" class="inline-flex items-center text-blue-600 hover:underline font-medium">
                             <i class="fas fa-calendar-check mr-2"></i>
                             👉 Book a One-on-One Consultation
                         </a>
                     </p>
                 </div>
-                
-                <!-- QA Section -->
-                <div class="bg-gray-50 rounded-2xl p-8 my-12">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
-                        Frequently Asked Questions (FAQ)
-                    </h2>
-                    
-                    <div class="qa-item">
-                        <div class="qa-question" onclick="toggleFaq(this)">Is South Africa's security situation serious? Is it safe to invest?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                        <div class="qa-answer">
-                            Every major city in the world has security concerns — Paris has pickpockets, and London demands caution too. Prime Cape Town areas (such as Atlantic Seaboard, City Bowl, and the V&A Waterfront) are as safe as major European cities. Before you invest, we walk you through each area's characteristics in detail to help you choose the right property.
-                        </div>
-                    </div>
-                    
-                    <div class="qa-item">
-                        <div class="qa-question" onclick="toggleFaq(this)">Can foreigners buy property in South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                        <div class="qa-answer">
-                            Yes. South Africa is one of the few African countries that allows foreigners to fully own real estate. Foreigners can buy homes, apartments, commercial property, and land, with the same title protection as citizens. The only restriction is that farmland or sensitive border areas require special permits, but ordinary residential investment is fully open.
-                        </div>
-                    </div>
-                    
-                    <div class="qa-item">
-                        <div class="qa-question" onclick="toggleFaq(this)">What are rental yields like in Cape Town?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                        <div class="qa-answer">
-                            Long-term rental yields in Cape Town's coastal areas reach 5-7% annually, and peak-season short-term rentals can exceed 10% — far outperforming mature markets such as London (3%) and Paris (2.5%). The talent-return wave is driving premium rental demand, making it a favorable time to enter.
-                        </div>
-                    </div>
-                    
-                    <div class="qa-item">
-                        <div class="qa-question" onclick="toggleFaq(this)">Is it difficult to move funds in and out of South Africa?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                        <div class="qa-answer">
-                            South Africa's foreign-exchange controls have been substantially relaxed, and moving funds in and out is relatively free. However, large outbound transfers require processes such as tax clearance; we recommend working with professional advisors. DingYao can provide end-to-end fund-transfer services.
-                        </div>
-                    </div>
-                    
-                    <div class="qa-item">
-                        <div class="qa-question" onclick="toggleFaq(this)">Can my children receive an international education in Cape Town?<div class="qa-toggle"><i class="fas fa-chevron-down"></i></div></div>
-                        <div class="qa-answer">
-                            Yes. Cape Town has a comprehensive international school system, from kindergarten to high school, with excellent English-taught options. The University of Cape Town is Africa's top-ranked university with internationally recognized degrees. The British education system connects seamlessly to UK postgraduate study, making it an excellent choice for Asian families.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- References Section -->
-                <div class="border-t border-gray-200 pt-8 mb-8">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">References</h3>
-                    <ul class="text-sm text-gray-600 space-y-2">
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.dgproperties.co.za/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                DG Properties Cape Town Luxury Property Market 2026 Outlook
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.hamiltons.co.za/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                Hamilton's Property Portfolio CEO Market Analysis
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.betterbond.co.za/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                BetterBond 2025 Q3 Mortgage Application Data
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.fatf-gafi.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                FATF South Africa Grey List Removal
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.g20.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                G20 Summit Cape Town 2025 Official Information
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.topuniversities.com/universities/university-cape-town" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                University of Cape Town QS Ranking
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.goterra.co.za/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                GoTerra Property Prices per sqm in Cape Town
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://www.thepropertyguys.co.za/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                The Property Guys: Can Foreigners Buy Property in South Africa
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            <a href="https://tradingeconomics.com/zar" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                Trading Economics South African Rand Exchange Rate
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Author -->
-                <div class="mt-12 pt-8 border-t border-gray-200">
-                    <div class="flex items-start gap-4">
-                        <img src="https://assets.dingyaoadvisory.tw/blog/images/scott-huang.jpg" alt="Scott Huang" class="w-16 h-16 rounded-full object-cover border-2 border-gray-200">
-                        <div>
-                            <h4 class="font-bold text-gray-900 text-lg">Scott Huang</h4>
-                            <p class="text-sm text-gray-500 mb-2">Business Development</p>
-                            <p class="text-sm text-gray-600 leading-relaxed">
-                                Focused on South African property, Education, Retirement, and Residency, helping clients build their ideal asset portfolio and lifestyle in South Africa.
-                                With over 10 years of cross-border investment advisory experience, he is committed to technology-driven transparency so Taiwanese investors can manage their wealth and future as if they were on the ground, even on the other side of the world.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </article>
-        </div>
-    </section>
-    
-    <!-- CTA Section - High urgency and attractive -->
-    <section class="py-16 px-4 relative overflow-hidden" style="background: linear-gradient(135deg, #0F172A 0%, #1e3a8a 100%);">
-        <!-- CTA Background Image -->
-        <div class="absolute inset-0 z-0">
-            <picture>
-                <source srcset="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-cta-bg.webp" type="image/webp">
-                <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-talent-return-v2-cta-bg.jpg" alt="Cape Town property investment opportunities" class="w-full h-full object-cover opacity-30" width="1200" height="400">
-            </picture>
-        </div>
-        
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 bg-yellow-500/20 border border-yellow-500/40 rounded-full px-4 py-2 mb-6">
-                <span class="relative flex h-3 w-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"></span>
-                </span>
-                <span class="text-yellow-400 text-sm font-bold">Golden Window of the Talent Return: 2026-2027</span>
-            </div>
-            
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
-                Ride the Tailwind of the Talent Return
-            </h2>
-            
-            <p class="text-xl text-gray-300 mb-6 max-w-2xl mx-auto">
-                This talent-return wave creates a rare "free ride" opportunity. <strong class="text-yellow-400">Currency advantage, British education, and global integration</strong> — three values combined to open a new horizon for Asian investors.
-            </p>
-            
-            <div class="grid md:grid-cols-3 gap-6 mb-8 max-w-3xl mx-auto">
-                <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
-                    <p class="text-3xl font-bold text-yellow-400">70%</p>
-                    <p class="text-sm text-gray-300">growth in returning-talent willingness</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
-                    <p class="text-3xl font-bold text-yellow-400">5-7%</p>
-                    <p class="text-sm text-gray-300">annual long-term rental yield, coastal areas</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
-                    <p class="text-3xl font-bold text-yellow-400">1/3</p>
-                    <p class="text-sm text-gray-300">cost of UK university tuition</p>
-                </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/consultation-en" class="inline-flex items-center justify-center bg-yellow-500 text-blue-900 font-bold text-lg px-8 py-4 rounded-lg hover:bg-yellow-400 transition transform hover:-translate-y-1 shadow-xl">
-                    <i class="fas fa-calendar-check mr-2"></i>
-                    Book Your Free Consultation
-                </a>
-                
-                <a href="/assets-en" class="inline-flex items-center justify-center bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-white hover:text-blue-900 transition">
-                    Explore Featured Investment Opportunities
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-            
-            <p class="text-sm text-gray-400 mt-6">
-                <i class="fas fa-info-circle mr-1"></i>
-                Consultations are completely free with no hidden fees. Your information is kept strictly confidential.
-            </p>
-        </div>
-    </section>
-    
-    <!-- Related Articles -->
+    </article>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-content fade-in">
+      <h2>Ride the <span class="gold">Talent Return</span> Tailwind</h2>
+      <p>This talent-return wave creates a rare "free ride" opportunity for Asian investors. DingYao Advisory provides end-to-end support — from curated Cape Town opportunities to tax, legal, and fund-transfer planning. Book a free consultation today.</p>
+      <a href="/consultation-en" class="btn btn-primary">Book a Consultation <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Related Articles -->
     <section class="py-16 px-4 bg-gray-50">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-2xl font-bold text-gray-900 mb-8">Further Reading: More South Africa Investment Insights</h2>
