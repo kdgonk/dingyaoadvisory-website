@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-10",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "南非房產詐騙 2026 激增！過戶律師信託帳戶怎麼保護你的購屋款？5 大防騙守則一次看懂",
+          "url": "/blog/south-africa-property-fraud-conveyancer-trust-account-2026",
+          "language": "zh-TW",
+          "category": "資金安全",
+          "description": "2026 南非房產詐騙激增，R2700 萬判刑案、R72 萬信託帳戶竊盜、FSCA 冒名詐騙層出不窮。拆解過戶律師信託帳戶如何保護購屋款，並提供 5 大防騙守則，讓你在開普敦置產時資金安全無虞。",
+          "date": "2026-08-10"
+        },
+        {
+          "title": "Property Fraud Is Surging in South Africa in 2026: How the Conveyancer Trust Account Protects Your Purchase Funds",
+          "url": "/blog/south-africa-property-fraud-conveyancer-trust-account-2026-en",
+          "language": "en",
+          "category": "Fund Security",
+          "description": "Property fraud is surging in South Africa in 2026 — a R27 million sentencing, a R720,000 trust account theft, and FSCA impersonation scams. This article breaks down how the conveyancer trust account protects your purchase funds and provides 5 anti-fraud rules for buying property in Cape Town safely.",
+          "date": "2026-08-10"
+        },
         {
           "title": "開普敦 Atlantic Seaboard 1/3 被外國人買走：R60 億成交背後的高端置產密碼",
           "url": "/blog/foreign-buyers-atlantic-seaboard-1-3-cape-town-r6bn-2026",
