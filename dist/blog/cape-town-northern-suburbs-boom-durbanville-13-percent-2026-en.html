@@ -629,6 +629,12 @@ blockquote cite {
 .section-bg img{width:100%;height:100%;object-fit:cover}
 .section-bg-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,14,23,0.92) 0%,rgba(10,14,23,0.7) 50%,rgba(10,14,23,0.88) 100%)}
 .article-body{position:relative;z-index:2}
+.qa-item{margin-bottom:1rem;border:1px solid rgba(255,255,255,0.15);border-radius:8px;overflow:hidden}
+.qa-question{width:100%;text-align:left;padding:1rem;display:flex;justify-content:space-between;align-items:center;background:transparent;color:inherit;cursor:pointer;transition:background .2s}
+.qa-question:hover{background:rgba(255,255,255,0.05)}
+.qa-title{font-weight:700;color:#C5A059}
+.qa-icon{color:#C5A059;transition:transform .2s}
+.qa-answer{padding:1rem 1rem 1rem 1.5rem;background:rgba(255,255,255,0.03)}
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
@@ -941,45 +947,45 @@ blockquote cite {
     <article class="article-body fade-in visible">
 <h2 id="faq">Frequently Asked Questions</h2>
 
-<div class="qa-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
-  <button class="w-full text-left p-4 flex justify-between items-center hover:bg-gray-800/50 transition" onclick="toggleFaq(this)">
-    <span class="font-bold text-[#C5A059]">Why are Cape Town's Northern Suburbs growing at 13%+ annually?</span>
-    <i class="fas fa-chevron-down text-[#C5A059] transition-transform"></i>
+<div class="qa-item">
+  <button class="qa-question" onclick="toggleFaq(this)">
+    <span class="qa-title">Why are Cape Town's Northern Suburbs growing at 13%+ annually?</span>
+    <i class="fas fa-chevron-down qa-icon"></i>
   </button>
-  <div class="qa-answer p-4 pl-6 bg-gray-800/30 hidden">
+  <div class="qa-answer hidden">
   </div>
 </div>
 
 <p>Cape Town's Northern Suburbs (Durbanville, Brackenfell, Kraaifontein) are growing at 13%+ annually due to three key factors: an influx of young buyers (31.9% aged 18-35), MyCiTi rapid transit expansion adding 6-9% premium to properties within 500m of stations, and significantly lower entry prices (average R1.9M vs R5.9M on the Atlantic Seaboard).</p>
 
-<div class="qa-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
-  <button class="w-full text-left p-4 flex justify-between items-center hover:bg-gray-800/50 transition" onclick="toggleFaq(this)">
-    <span class="font-bold text-[#C5A059]">What are the rental yields in Cape Town's Northern Suburbs?</span>
-    <i class="fas fa-chevron-down text-[#C5A059] transition-transform"></i>
+<div class="qa-item">
+  <button class="qa-question" onclick="toggleFaq(this)">
+    <span class="qa-title">What are the rental yields in Cape Town's Northern Suburbs?</span>
+    <i class="fas fa-chevron-down qa-icon"></i>
   </button>
-  <div class="qa-answer p-4 pl-6 bg-gray-800/30 hidden">
+  <div class="qa-answer hidden">
   </div>
 </div>
 
 <p>Sectional title apartments in the Northern Suburbs deliver rental yields of 8-10% (full occupancy income), nearly double the 4-6% typical of the Atlantic Seaboard. Durbanville and Brackenfell benefit from proximity to university campuses and tech parks, creating strong demand from young professionals and students.</p>
 
-<div class="qa-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
-  <button class="w-full text-left p-4 flex justify-between items-center hover:bg-gray-800/50 transition" onclick="toggleFaq(this)">
-    <span class="font-bold text-[#C5A059]">How does the MyCiTi transit expansion affect property values?</span>
-    <i class="fas fa-chevron-down text-[#C5A059] transition-transform"></i>
+<div class="qa-item">
+  <button class="qa-question" onclick="toggleFaq(this)">
+    <span class="qa-title">How does the MyCiTi transit expansion affect property values?</span>
+    <i class="fas fa-chevron-down qa-icon"></i>
   </button>
-  <div class="qa-answer p-4 pl-6 bg-gray-800/30 hidden">
+  <div class="qa-answer hidden">
   </div>
 </div>
 
 <p>PropFlow360 data shows properties within 500m of MyCiTi stations command a 6-9% premium. As the MyCiTi network expands northward into Durbanville and Brackenfell, transit-oriented development (TOD) opportunities are emerging for forward-looking investors.</p>
 
-<div class="qa-item mb-4 border border-gray-700 rounded-lg overflow-hidden">
-  <button class="w-full text-left p-4 flex justify-between items-center hover:bg-gray-800/50 transition" onclick="toggleFaq(this)">
-    <span class="font-bold text-[#C5A059]">What can R 16,000,000 buy in the Northern Suburbs?</span>
-    <i class="fas fa-chevron-down text-[#C5A059] transition-transform"></i>
+<div class="qa-item">
+  <button class="qa-question" onclick="toggleFaq(this)">
+    <span class="qa-title">What can R 16,000,000 buy in the Northern Suburbs?</span>
+    <i class="fas fa-chevron-down qa-icon"></i>
   </button>
-  <div class="qa-answer p-4 pl-6 bg-gray-800/30 hidden">
+  <div class="qa-answer hidden">
   </div>
 </div>
 
