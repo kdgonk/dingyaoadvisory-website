@@ -14,9 +14,9 @@
 <meta property="og:description" content="Analysis of South Africa's March and March anti-immigration movement and the June 30 National Shutdown. Impact on Cape Town property market, government response, and investment outlook.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://dingyaoadvisory.tw/blog/south-africa-march-and-march-protests-en">>
-<meta property="og:image" content="https://dingyaoadvisory.tw/og-image.jpg">
+<meta property="og:image" content="https://assets.dingyaoadvisory.tw/blog/images/south-africa-march-and-march-protests-hero.webp">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:image" content="https://dingyaoadvisory.tw/og-image.jpg">
+<meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/blog/images/south-africa-march-and-march-protests-hero.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DingYao Advisory | South Africa's March and March Protests Analysis">
 <meta name="twitter:description" content="Analysis of South Africa's March and March anti-immigration movement and the June 30 National Shutdown. Impact on Cape Town property market.">
@@ -229,6 +229,36 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 }
 .hero .section-bg-img {
   opacity: 0.30;
+}
+
+/* ===== ARTICLE HERO ===== */
+.article-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+.article-hero .hero-bg-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.article-hero .hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(10,14,23,0.3) 0%, rgba(10,14,23,0.8) 100%);
+  z-index: 1;
+}
+.article-hero .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
 }
 
 /* ===== NAVIGATION ===== */
@@ -1094,6 +1124,12 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <img src="https://assets.dingyaoadvisory.tw/blog/images/south-africa-march-and-march-protests-hero.webp" alt="South Africa's March and March Anti-Immigration Protests: June 30 National Shutdown Crisis" class="hero-bg-img" loading="lazy">
+  <div class="hero-overlay"></div>
+</div>
 
 <!-- ARTICLE HEADER -->
 <header class="article-header">
