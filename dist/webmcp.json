@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-12",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "在開普敦買房讓孩子讀國際學校，比台北划算多少？2026 學費 × 置產投資全計算",
+          "url": "/blog/cape-town-international-school-cost-property-investment-2026",
+          "language": "zh-TW",
+          "category": "南非生活",
+          "description": "2026 開普敦國際學校學費 × 置產投資交叉財務計算：用真實數據算給台灣家庭看，在開普敦買房讓孩子讀國際學校比台北划算多少。國際學校年費 ZAR 120,000–200,000（約台北 1/2–1/3），頂尖學區 Claremont/Rondebosch/Southern Suburbs 房產增值。",
+          "date": "2026-08-12"
+        },
+        {
+          "title": "How Much Cheaper Is Cape Town's International Education When You Buy Property? A 2026 Fee × Investment Math",
+          "url": "/blog/cape-town-international-school-cost-property-investment-2026-en",
+          "language": "en",
+          "category": "Education",
+          "description": "2026 Cape Town international school fees × property investment math for Taiwan families. Cape Town international schools cost ZAR 120,000-200,000 (about 1/2-1/3 of Taipei), with top school-catchment suburbs like Claremont, Rondebosch and Southern Suburbs offering property appreciation.",
+          "date": "2026-08-12"
+        },
         {
           "title": "南非房產詐騙 2026 激增！過戶律師信託帳戶怎麼保護你的購屋款？5 大防騙守則一次看懂",
           "url": "/blog/south-africa-property-fraud-conveyancer-trust-account-2026",
