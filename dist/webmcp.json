@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-12",
+  "last_updated": "2026-08-14",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,38 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "開普敦 CBD 投資突破 R128 億創新高：內城置產如何搭上都市更新浪潮？",
+          "url": "/blog/cape-town-cbd-r128bn-investment-record-inner-city-property-2026",
+          "language": "zh-TW",
+          "category": "置產投資",
+          "description": "開普敦 CBD 2025/26 物業開發投資突破 R128 億、年增 41%，住宅開發達 R62 億佔過半。零售空置率僅 12.3%、sectional title 中位價 R192 萬。台灣投資者如何搭上內城都市更新浪潮，搶進開普敦市中心精華地段？",
+          "date": "2026-08-14"
+        },
+        {
+          "title": "Cape Town CBD Investment Hits Record R12.8bn: How Inner-City Property Rides the Urban Renewal Wave",
+          "url": "/blog/cape-town-cbd-r128bn-investment-record-inner-city-property-2026-en",
+          "language": "en",
+          "category": "Property Investment",
+          "description": "Cape Town CBD property development investment topped R12.8 billion in 2025/26, up 41% YoY. Residential development hit R6.2bn, retail vacancy just 12.3%, sectional title median R1.92m. How foreign buyers can ride the inner-city urban renewal wave.",
+          "date": "2026-08-14"
+        },
+        {
+          "title": "開普敦房市過熱了嗎？Atlantic Seaboard 泡沫疑慮 vs 真實數據 2026",
+          "url": "/blog/cape-town-property-bubble-atlantic-seaboard-valuation-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "2026 開普敦房市是否過熱？用 deeds office 實證數據拆解 Atlantic Seaboard 泡沫疑慮：外國買家佔 1/3、R20m+ 物件外國買家佔 39%、租金收益率 4-8%、SARB 利率 7%。用真實數據判斷開普敦房價是否泡沫，以及外國買家該如何進場。",
+          "date": "2026-08-13"
+        },
+        {
+          "title": "Is Cape Town Property Overheated? Atlantic Seaboard Bubble Fears vs Real Data 2026",
+          "url": "/blog/cape-town-property-bubble-atlantic-seaboard-valuation-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Is the Cape Town property market overheated in 2026? Deeds office data on the Atlantic Seaboard bubble: foreign buyers at 1/3, 39% above R20m, rental yields 4-8%, SARB rate 7%. Real data on whether Cape Town prices are a bubble and how foreign buyers should enter.",
+          "date": "2026-08-13"
+        },
         {
           "title": "在開普敦買房讓孩子讀國際學校，比台北划算多少？2026 學費 × 置產投資全計算",
           "url": "/blog/cape-town-international-school-cost-property-investment-2026",
