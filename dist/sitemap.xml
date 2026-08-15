@@ -15,7 +15,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/assets-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/assets"/>
@@ -25,7 +25,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/blog</loc>
-        <lastmod>2026-08-14</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog"/>
@@ -35,7 +35,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/blog-en</loc>
-        <lastmod>2026-08-14</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog"/>
@@ -104,6 +104,26 @@
     </url>
 
     <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo</loc>
+        <lastmod>2026-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2</loc>
+        <lastmod>2026-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2"/>
+    </url>
+
+    <url>
         <loc>https://dingyaoadvisory.tw/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-en</loc>
         <lastmod>2026-08-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -131,26 +151,6 @@
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-r128bn-investment-record-inner-city-property-2026"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-r128bn-investment-record-inner-city-property-2026-en"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-cbd-r128bn-investment-record-inner-city-property-2026"/>
-    </url>
-
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026</loc>
-        <lastmod>2026-08-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
-    </url>
-
-    <url>
-        <loc>https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026-en</loc>
-        <lastmod>2026-08-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
     </url>
 
     <url>
@@ -911,6 +911,26 @@
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/cape-town-winter-rental-strategy-seasonal-yield-2026"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/cape-town-winter-rental-strategy-seasonal-yield-2026-en"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/cape-town-winter-rental-strategy-seasonal-yield-2026"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026-en</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/blog/fed-rate-cut-cape-town-property-passive-income-2026"/>
     </url>
 
     <url>
@@ -1955,7 +1975,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/card</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/card"/>
@@ -1975,7 +1995,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/consultation-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/consultation"/>
@@ -1995,7 +2015,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/education-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/education"/>
@@ -2015,7 +2035,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/index-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/index"/>
@@ -2035,7 +2055,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/partners-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/partners"/>
@@ -2055,7 +2075,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/platform-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/platform"/>
@@ -2075,7 +2095,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/privacy-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/privacy"/>
@@ -2095,7 +2115,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/project-constantia-en</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-constantia"/>
@@ -2115,7 +2135,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/project-durbanville-en</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-durbanville"/>
@@ -2135,7 +2155,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/project-phase1-en</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-phase1"/>
@@ -2145,7 +2165,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/project-phase1-new</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-phase1-new"/>
@@ -2175,7 +2195,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/project-stellenbosch-en</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-stellenbosch"/>
@@ -2195,7 +2215,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/residency-en</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/residency"/>
@@ -2215,7 +2235,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/retirement-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/retirement"/>
@@ -2235,7 +2255,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/sandile-mbeko-en</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/sandile-mbeko"/>
@@ -2245,7 +2265,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/scott</loc>
-        <lastmod>2026-08-09</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/scott"/>
@@ -2265,7 +2285,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/terms-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/terms"/>
@@ -2285,7 +2305,7 @@
 
     <url>
         <loc>https://dingyaoadvisory.tw/tour-en</loc>
-        <lastmod>2026-08-03</lastmod>
+        <lastmod>2026-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/tour"/>
