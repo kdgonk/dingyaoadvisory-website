@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-15",
+  "last_updated": "2026-08-16",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "財務自由要多少錢？台灣上班族的被動收入目標，為何開普敦置產是加速器",
+          "url": "/blog/financial-freedom-cape-town-passive-income-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "財務自由要多少錢？用 4% 法則算出你的被動收入目標。開普敦租金收益率 7.5-11.4%、南非高息定存最高 8.15%，雙引擎被動收入加速財務自由。",
+          "date": "2026-08-16"
+        },
+        {
+          "title": "How Much Money Do You Need for Financial Freedom? Why Cape Town Property Is the Accelerator",
+          "url": "/blog/financial-freedom-cape-town-passive-income-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "How much money do you need for financial freedom? Use the 4% rule to calculate your passive income target. Cape Town rental yields 7.5-11.4%, South Africa fixed deposits up to 8.15% — dual-engine passive income accelerates financial freedom.",
+          "date": "2026-08-16"
+        },
         {
           "title": "升息循環見頂，你的定存利率要縮水了？南非高息資產如何成為資金避風港",
           "url": "/blog/fed-rate-cut-cape-town-property-passive-income-2026",
