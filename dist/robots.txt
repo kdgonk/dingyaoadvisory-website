@@ -5,15 +5,16 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
 
-# Block AI training crawlers that don't respect content
+# Allow AI retrieval/citation crawlers (AEO/GEO) — GPTBot/ChatGPT-User/CCBot
+# serve both training AND real-time retrieval; blocking kills ChatGPT citations.
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
 Allow: /
