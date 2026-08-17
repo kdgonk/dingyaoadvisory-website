@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-16",
+  "last_updated": "2026-08-17",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -24,7 +24,23 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
-          "title": "財務自由要多少錢？台灣上班族的被動收入目標，為何開普敦置產是加速器",
+          "title": "最低工資衝破 3 萬，你的薪水還是被通膨吃掉？台灣上班族的被動收入解方",
+          "url": "/blog/minimum-wage-cape-town-property-passive-income-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "最低工資衝破 3 萬，你的薪水還是被通膨吃掉？用 4% 法則算出被動收入目標，開普敦租金收益率 7.5-11.4%、南非高息定存最高 8.15%，雙引擎加速財務自由。",
+          "date": "2026-08-17"
+        },
+        {
+          "title": "Minimum Wage Breaks NT$30,000 — Is Your Salary Still Being Eaten by Inflation? The Passive Income Solution",
+          "url": "/blog/minimum-wage-cape-town-property-passive-income-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Minimum wage breaks NT$30,000 but your salary is still eaten by inflation. Use the 4% rule to calculate passive income targets. Cape Town rental yields 7.5-11.4%, SA fixed deposits up to 8.15%.",
+          "date": "2026-08-17"
+        },
+        {
+          "title": "財務自由要多少錎？台灣上班族的被動收入目標，為何開普敦置產是加速器",
           "url": "/blog/financial-freedom-cape-town-passive-income-2026",
           "language": "zh-TW",
           "category": "市場分析",
