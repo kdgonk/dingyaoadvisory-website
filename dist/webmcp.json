@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-18",
+  "last_updated": "2026-08-19",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "台股衝破四萬點，獲利了結的錢該放哪？開普敦置產如何把股市高點紅利變成穩定被動收入",
+          "url": "/blog/taiwan-stock-market-record-high-cape-town-passive-income-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "台股衝破四萬點，高點獲利了結的資金該往哪去？開普敦租金收益率 7.5-11.4%、南非高息定存 4.0-6.05%，雙引擎被動收入把股市高點紅利轉為穩定現金流。",
+          "date": "2026-08-19"
+        },
+        {
+          "title": "Taiwan's Stock Market Breaks 40,000 — Where Should Your Profit-Taking Money Go? How Cape Town Property Turns Stock Market Highs into Stable Passive Income",
+          "url": "/blog/taiwan-stock-market-record-high-cape-town-passive-income-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Taiwan's stock market has broken 40,000. Where should your profit-taking capital go? Cape Town rental yields 7.5-11.4%, South Africa fixed deposits 4.0-6.05% — a dual-engine passive income.",
+          "date": "2026-08-19"
+        },
         {
           "title": "精緻窮不是你的錯，是沒有被動收入！小資族如何用開普敦置產把「消費型月光」變成「資產型累積」",
           "url": "/blog/jingzhiqiong-passive-income-cape-town-2026",
