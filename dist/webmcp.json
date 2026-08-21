@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-20",
+  "last_updated": "2026-08-21",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "台灣定存利率太低？南非高息定存 + 開普敦置產，如何把閒置現金變成 7-11% 穩定被動收入",
+          "url": "/blog/south-africa-fixed-deposit-vs-cape-town-property-yield-2026",
+          "language": "zh-TW",
+          "category": "置產投資 / 退休生活 / 被動收入",
+          "description": "台灣定存利率僅 1-1.5%，南非定存利率 7-8%、開普敦置產租金收益率 7.5-11.4%。SARB 維持 7%、prime 10.5%。立即諮詢 DingYao 掌握南非高息定存 + 開普敦置產雙引擎被動收入方案。",
+          "date": "2026-08-21"
+        },
+        {
+          "title": "Taiwan Deposit Rates Too Low? South Africa High-Interest Fixed Deposits + Cape Town Property: How to Turn Idle Cash into 7-11% Stable Passive Income",
+          "url": "/blog/south-africa-fixed-deposit-vs-cape-town-property-yield-2026-en",
+          "language": "en",
+          "category": "Property Investment / Retirement / Passive Income",
+          "description": "Taiwan fixed deposit rates are only 1-1.5%, while South Africa offers 7-8% fixed deposit rates and Cape Town property rental yields of 7.5-11.4%. With SARB holding at 7% and prime at 10.5%, consult DingYao now to master the dual-engine passive income strategy.",
+          "date": "2026-08-21"
+        },
         {
           "title": "外國人在南非買房可以貸款嗎？50% 借貸規則、SARB 證書與開普敦置產槓桿完整指南",
           "url": "/blog/south-africa-foreign-buyer-mortgage-guide-2026",
