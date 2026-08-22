@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-21",
+  "last_updated": "2026-08-22",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "南非通膨降至 4.3%、SARB 9/19 可能降息：開普敦置產的降息前布局時機",
+          "url": "/blog/south-africa-inflation-cools-4-3-percent-cape-town-property-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "南非 7 月通膨降至 4.3%，SARB 9/19 可能降息，開普敦置產租金收益率 7.5-11.4%。降息前布局正是掌握低貸款成本與高收益時機。",
+          "date": "2026-08-22"
+        },
+        {
+          "title": "South Africa Inflation Falls to 4.3%, SARB May Cut Rates on 9/19: The Pre-Rate-Cut Window for Cape Town Property",
+          "url": "/blog/south-africa-inflation-cools-4-3-percent-cape-town-property-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "South Africa's July inflation fell to 4.3%, SARB widely expected to cut rates on 9/19, Cape Town property rental yields at 7.5-11.4%. Position before the rate cut to lock in lower borrowing costs and higher yields.",
+          "date": "2026-08-22"
+        },
         {
           "title": "台灣定存利率太低？南非高息定存 + 開普敦置產，如何把閒置現金變成 7-11% 穩定被動收入",
           "url": "/blog/south-africa-fixed-deposit-vs-cape-town-property-yield-2026",
