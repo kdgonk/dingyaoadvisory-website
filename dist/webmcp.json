@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-22",
+  "last_updated": "2026-08-23",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "台股過度集中台積電、退休族如何分散？南非開普敦置產的被動收入解方",
+          "url": "/blog/taiwan-stock-concentration-risk-south-africa-cape-town-asset-allocation-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "台股過度集中台積電，退休族如何分散風險？開普敦置產租金收益率 7.5-11.4%，南非高息定存 4.0-6.05%，雙引擎被動收入打造退休安全網。",
+          "date": "2026-08-23"
+        },
+        {
+          "title": "Taiwan Stock Concentration in TSMC & Diversification: Cape Town Passive Income as the Solution",
+          "url": "/blog/taiwan-stock-concentration-risk-south-africa-cape-town-asset-allocation-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Taiwan stock market over-concentrated in TSMC? Cape Town property rental yields 7.5-11.4%, SA fixed deposits 4.0-6.05% — dual-engine passive income for retirement diversification.",
+          "date": "2026-08-23"
+        },
         {
           "title": "南非通膨降至 4.3%、SARB 9/19 可能降息：開普敦置產的降息前布局時機",
           "url": "/blog/south-africa-inflation-cools-4-3-percent-cape-town-property-2026",
