@@ -2323,25 +2323,9 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/project-phase1"/>
     </url>
 
-    <url>
-        <loc>https://dingyaoadvisory.tw/project-phase1-new</loc>
-        <lastmod>2026-08-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-phase1-new"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/project-phase1-new-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/project-phase1-new"/>
-    </url>
+    
 
-    <url>
-        <loc>https://dingyaoadvisory.tw/project-phase1-new-en</loc>
-        <lastmod>2026-08-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-phase1-new"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/project-phase1-new-en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/project-phase1-new"/>
-    </url>
+    
 
     <url>
         <loc>https://dingyaoadvisory.tw/project-stellenbosch</loc>
