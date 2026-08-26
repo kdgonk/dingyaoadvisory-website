@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-25",
+  "last_updated": "2026-08-26",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "外國買家僅佔南非房產 6% 卻買走 39% 豪宅！開普敦房市兩極化，台灣投資人該買哪一層？",
+          "url": "/blog/foreign-buyers-6-percent-39-percent-cape-town-luxury-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "外國買家僅佔南非房市 6%，卻買走 39% 豪宅。開普敦租金收益率 7.5-11.4%，中端市場才是台灣投資人的甜蜜點。",
+          "date": "2026-08-26"
+        },
+        {
+          "title": "Foreign Buyers: 6% of SA Deals, 39% of Luxury Homes — Cape Town Two-Tier Market",
+          "url": "/blog/foreign-buyers-6-percent-39-percent-cape-town-luxury-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Foreign buyers are only 6% of SA deals but 39% of luxury. Cape Town mid-tier rental yields 7.5-11.4% — the sweet spot for Taiwanese investors.",
+          "date": "2026-08-26"
+        },
         {
           "title": "Fed 主席華許傑克遜霍爾首秀 → 美債殖利率飆升 → 南非高息資產與開普敦置產的資金避風港",
           "url": "/blog/jackson-hole-2026-fed-warsh-cape-town-property-safe-haven",
