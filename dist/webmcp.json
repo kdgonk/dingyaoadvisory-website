@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-27",
+  "last_updated": "2026-08-28",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "SARB按兵不動通膨5%蘭特升值9.58%！開普敦置產2026下半年時機",
+          "url": "/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "SARB 維持利率 7%，通膨降至 5%，蘭特升值 9.58%。開普敦置產租金收益率 7.5-11.4%，2026 下半年布局時機。",
+          "date": "2026-08-28"
+        },
+        {
+          "title": "SARB Holds Rates at 7%, Inflation 5%, Rand +9.58%: Cape Town Property Timing 2026",
+          "url": "/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "SARB holds at 7%, inflation drops to 5%, rand +9.58%. Cape Town rental yields 7.5-11.4% — H2 2026 entry timing.",
+          "date": "2026-08-28"
+        },
         {
           "title": "英國買家 R1,590 萬破紀錄買下開普敦頂層公寓！外國人搶購開普敦豪宅，台灣投資人如何切入？",
           "url": "/blog/uk-buyers-r15-9m-newlands-penthouse-cape-town-record-2026",
