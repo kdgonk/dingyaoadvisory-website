@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-28",
+  "last_updated": "2026-08-29",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "SARB 9/23 降息前瞻：蘭特升值、通膨降溫下的開普敦置產時機",
+          "url": "/blog/sarb-september-2026-mpc-preview-cape-town-property",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "SARB 9/23 MPC 降息前瞻：蘭特升值 16%、通膨降溫至 4.8%，開普敦置產雙引擎卡位時機。",
+          "date": "2026-08-29"
+        },
+        {
+          "title": "SARB September 2026 MPC Preview: Pre-Cut Cape Town Property Timing",
+          "url": "/blog/sarb-september-2026-mpc-preview-cape-town-property-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "SARB 9/23 MPC preview: rand +16%, inflation at 4.8%. Cape Town dual-engine pre-cut entry timing.",
+          "date": "2026-08-29"
+        },
         {
           "title": "SARB按兵不動通膨5%蘭特升值9.58%！開普敦置產2026下半年時機",
           "url": "/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026",
