@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-29",
+  "last_updated": "2026-08-30",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "開普敦非洲最國際化城市：全球富豪企業為何落腳",
+          "url": "/blog/cape-town-africa-most-international-city-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "開普敦非洲最國際化城市：UK 買家 R15.9m 創紀錄、Atlantic Seaboard 1/3 外國人，全球富豪落腳趨勢。",
+          "date": "2026-08-30"
+        },
+        {
+          "title": "Cape Town: Africa's Most International City",
+          "url": "/blog/cape-town-africa-most-international-city-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Cape Town is Africa's most international city — UK buyer's R15.9m record, foreigners 1/3 of Atlantic Seaboard, global investors settling here.",
+          "date": "2026-08-30"
+        },
         {
           "title": "SARB 9/23 降息前瞻：蘭特升值、通膨降溫下的開普敦置產時機",
           "url": "/blog/sarb-september-2026-mpc-preview-cape-town-property",
