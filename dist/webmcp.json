@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-30",
+  "last_updated": "2026-08-31",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "蘭特兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機",
+          "url": "/blog/rand-below-16-cape-town-property-opportunity-2026",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "蘭特兌美元跌破 16，南非資產台幣計價變便宜。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。",
+          "date": "2026-08-31"
+        },
+        {
+          "title": "Rand Below 16: Cape Town Property Opportunity",
+          "url": "/blog/rand-below-16-cape-town-property-opportunity-2026-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Rand fell below 16/USD, making Cape Town property cheaper in TWD. Prices up 4-7%, yields 7.5-11.4%.",
+          "date": "2026-08-31"
+        },
         {
           "title": "開普敦非洲最國際化城市：全球富豪企業為何落腳",
           "url": "/blog/cape-town-africa-most-international-city-2026",
