@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-08-31",
+  "last_updated": "2026-09-01",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "Fed 9/16 升息倒數！美元轉強、蘭特回軟——開普敦置產三情境策略",
+          "url": "/blog/fed-september-2026-rate-decision-cape-town-property-strategy",
+          "language": "zh-TW",
+          "category": "市場分析",
+          "description": "Fed 9/16 升息機率 66%，美元轉強蘭特回軟至 16.13。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。三情境布局策略。",
+          "date": "2026-09-01"
+        },
+        {
+          "title": "Fed Sep 2026 Rate Decision: Cape Town Property Three-Scenario Strategy",
+          "url": "/blog/fed-september-2026-rate-decision-cape-town-property-strategy-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "Fed rate decision Sept 16: 66% hike odds, dollar strength pushing rand to 16.13. Cape Town prices up 4-7%, yields 7.5-11.4%.",
+          "date": "2026-09-01"
+        },
         {
           "title": "蘭特兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機",
           "url": "/blog/rand-below-16-cape-town-property-opportunity-2026",
