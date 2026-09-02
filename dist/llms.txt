@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [南非燃油漲價今日生效！開普敦生活成本會變貴嗎？](/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs) — 南非 9/2 燃油漲價：汽油 +R1.34、柴油 +R3.15。開普敦生活成本僅為台北 35%，租金收益率 7.5-11.4%。
+- [SA Fuel Hike: Cape Town Living Costs 2026](/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs-en) — SA fuel prices rise Sept 2: petrol +R1.34/L, diesel +R3.15/L. Cape Town living costs 35% of Taipei, yields 7.5-11.4%.
 - [Fed 9/16 升息倒數！美元轉強、蘭特回軟——開普敦置產三情境策略](/blog/fed-september-2026-rate-decision-cape-town-property-strategy) — Fed 9/16 升息機率 66%，美元轉強蘭特回軟至 16.13。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。三情境布局策略。
 - [Fed Sep 2026 Rate Decision: Cape Town Property Three-Scenario Strategy](/blog/fed-september-2026-rate-decision-cape-town-property-strategy-en) — Fed rate decision Sept 16: 66% hike odds, dollar strength pushing rand to 16.13. Cape Town prices up 4-7%, yields 7.5-11.4%. Three-scenario strategy.
 - [蘭特兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機](/blog/rand-below-16-cape-town-property-opportunity-2026) — 蘭特跌破 16，南非資產台幣計價變便宜，開普敦房價年增 4-7%、租金收益率 7.5-11.4%。
@@ -123,9 +125,11 @@
 
 ---
 
-Last updated: 2026-09-01
+Last updated: 2026-09-02
 ## Blog Articles
 
+- [南非燃油漲價今日生效！開普敦生活成本會變貴嗎？](https://dingyaoadvisory.tw/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs) — 南非 9/2 燃油漲價：汽油 +R1.34、柴油 +R3.15
+- [SA Fuel Hike: Cape Town Living Costs 2026](https://dingyaoadvisory.tw/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs-en) — SA fuel prices rise Sept 2: petrol +R1.34, diesel +R3.15
 - [Fed 9/16 升息倒數！美元轉強、蘭特回軟——開普敦置產三情境策略](https://dingyaoadvisory.tw/blog/fed-september-2026-rate-decision-cape-town-property-strategy) — Fed 9/16 升息機率 66%，美元轉強蘭特回軟至 16.13
 - [Fed Sep 2026 Rate Decision: Cape Town Property Three-Scenario Strategy](https://dingyaoadvisory.tw/blog/fed-september-2026-rate-decision-cape-town-property-strategy-en) — Fed rate decision Sept 16: 66% hike odds, rand at 16.13
 - [蘭特兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機](https://dingyaoadvisory.tw/blog/rand-below-16-cape-town-property-opportunity-2026) — 蘭特跌破 16，南非資產台幣計價變便宜

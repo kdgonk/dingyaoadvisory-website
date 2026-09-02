@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-01",
+  "last_updated": "2026-09-02",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "南非燃油漲價今日生效！開普敦生活成本會變貴嗎？",
+          "url": "/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs",
+          "language": "zh-TW",
+          "category": "置產投資",
+          "description": "南非 9/2 燃油漲價：汽油 +R1.34、柴油 +R3.15。開普敦生活成本僅為台北 35%，租金收益率 7.5-11.4%。",
+          "date": "2026-09-02"
+        },
+        {
+          "title": "SA Fuel Hike: Cape Town Living Costs 2026",
+          "url": "/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs-en",
+          "language": "en",
+          "category": "Market Analysis",
+          "description": "SA fuel prices rise Sept 2: petrol +R1.34/L, diesel +R3.15/L. Cape Town living costs stay at 35% of Taipei, yields 7.5-11.4%.",
+          "date": "2026-09-02"
+        },
         {
           "title": "Fed 9/16 升息倒數！美元轉強、蘭特回軟——開普敦置產三情境策略",
           "url": "/blog/fed-september-2026-rate-decision-cape-town-property-strategy",
