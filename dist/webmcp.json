@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-02",
+  "last_updated": "2026-09-03",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "外國買家沒看房就花 R4,800 萬買下開普敦豪宅！遠距置產 6 步驟全攻略",
+          "url": "/blog/foreign-buyer-r48m-constantia-sight-unseen-remote-purchase-2026",
+          "language": "zh-TW",
+          "category": "置產投資",
+          "description": "外國買家未看房即以 R4,800 萬全額開價買下開普敦 Constantia 豪宅。遠距置產 6 步驟：視訊看房、驗屋、授權書、匯款、過戶、交屋。",
+          "date": "2026-09-03"
+        },
+        {
+          "title": "Buy Cape Town Property Remotely: 6 Steps",
+          "url": "/blog/foreign-buyer-r48m-constantia-sight-unseen-remote-purchase-2026-en",
+          "language": "en",
+          "category": "Property Investment",
+          "description": "A foreign buyer paid R48 million for a Cape Town Constantia home sight unseen. Remote property purchase in 6 steps.",
+          "date": "2026-09-03"
+        },
         {
           "title": "南非燃油漲價今日生效！開普敦生活成本會變貴嗎？",
           "url": "/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs",
