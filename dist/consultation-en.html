@@ -1562,6 +1562,12 @@ function handleFormSubmit(e) {
   .then(res => res.json())
   .then(data => {
     if (data.payload && data.payload.contact) {
+      /* GA4 conversion event */
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'consultation_page_en' });
+      } else if (window.dataLayer) {
+        window.dataLayer.push({ event: 'generate_lead', event_category: 'contact', event_label: 'consultation_page_en' });
+      }
       form.style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
     } else {
