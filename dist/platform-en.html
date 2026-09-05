@@ -1027,6 +1027,42 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/platform" />
 <meta name="twitter:title" content="Digital Platform — DYA Ding Yao Advisory APAC Hub">
 <meta name="twitter:description" content="Your 24/7 Digital Asset Butler — real-time monitoring of your overseas assets">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "鼎曜國際顧問 DingYao Advisory",
+  "url": "https://dingyaoadvisory.tw",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://dingyaoadvisory.tw/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dingyaoadvisory.tw/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Platform",
+      "item": "https://dingyaoadvisory.tw/platform-en.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="cookie-consent" id="cookieConsent">
@@ -1053,6 +1089,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <div class="glow-bg-2"></div>
 
 <!-- NAVBAR -->
+<header class="site-header">
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
@@ -1101,6 +1138,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
+</header>
+<main id="main-content">
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -1325,7 +1364,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Footer -->
-<footer class="footer">
+
+</main><footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">

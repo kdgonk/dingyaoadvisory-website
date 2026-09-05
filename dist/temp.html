@@ -1079,6 +1079,42 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/og-image.jpg">
 <meta name="twitter:title" content="預覽：全球精選資產配置新版 | 鼎曜國際顧問">
 <meta name="twitter:description" content="鼎曜國際顧問全球精選資產配置方案預覽">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "鼎曜國際顧問 DingYao Advisory",
+  "url": "https://dingyaoadvisory.tw",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://dingyaoadvisory.tw/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首頁",
+      "item": "https://dingyaoadvisory.tw/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "temp",
+      "item": "https://dingyaoadvisory.tw/temp.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 <div class="cookie-consent" id="cookieConsent">
@@ -1113,6 +1149,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- Header（與官網一致） -->
 <div class="fixed w-full z-50 top-4 md:top-6 px-4 pointer-events-none">
 <!-- NAVBAR -->
+<header class="site-header">
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
@@ -1162,6 +1199,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
+</header>
+<main id="main-content">
 </div>
 
 <!-- 新版全球精選資產配置區塊 -->
@@ -1586,7 +1625,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Footer（與官網一致） -->
-<footer class="footer">
+
+</main><footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">

@@ -1166,6 +1166,22 @@ tailwind.config = {
 <link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/project-durbanville" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/project-durbanville-en" />
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/project-durbanville" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "鼎曜國際顧問 DingYao Advisory",
+  "url": "https://dingyaoadvisory.tw",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://dingyaoadvisory.tw/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased selection:bg-yellow-500 selection:text-blue-900">
 <div class="cookie-consent" id="cookieConsent">
@@ -1258,6 +1274,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </nav>
 </div>
 <!-- NAVBAR -->
+<header class="site-header">
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="https://dingyaoadvisory.tw" class="nav-logo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
@@ -1307,6 +1324,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
+</header>
+<main id="main-content">
 <div class="max-w-7xl mx-auto px-6 py-16">
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
 <div class="lg:col-span-2 space-y-16">
@@ -1381,7 +1400,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </div>
 </div>
 </div>
-<footer class="footer">
+
+</main><footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">

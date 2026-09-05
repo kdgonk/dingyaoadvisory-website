@@ -1110,6 +1110,22 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <link rel="alternate" hreflang="zh-Hant" href="https://dingyaoadvisory.tw/sandile-mbeko" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/sandile-mbeko-en" />
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/sandile-mbeko" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "鼎曜國際顧問 DingYao Advisory",
+  "url": "https://dingyaoadvisory.tw",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://dingyaoadvisory.tw/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased selection:bg-[#C5A059] selection:text-white">
 
@@ -1185,6 +1201,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </nav>
 </div>
 <!-- NAVBAR -->
+<header class="site-header">
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
@@ -1235,6 +1252,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
+</header>
+<main id="main-content">
 <section class="bg-white py-16 border-b border-gray-100">
 <div class="max-w-4xl mx-auto px-6 text-center">
 <span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Design Philosophy</span>
@@ -1511,7 +1530,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 </div>
 </section>
-<footer class="footer">
+
+</main><footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">

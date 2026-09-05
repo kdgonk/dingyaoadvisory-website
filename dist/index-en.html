@@ -1057,6 +1057,36 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/index" />
 <link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/index-en" />
 <link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/index" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "鼎曜國際顧問 DingYao Advisory",
+  "url": "https://dingyaoadvisory.tw",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://dingyaoadvisory.tw/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dingyaoadvisory.tw/"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="cookie-consent" id="cookieConsent">
@@ -1088,6 +1118,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 
 <!-- Navigation -->
 <!-- NAVBAR -->
+<header class="site-header">
 <nav class="navbar" id="navbar">
   <div class="container">
     <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
@@ -1136,6 +1167,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
+</header>
+<main id="main-content">
 
 <!-- Hero -->
 <section class="hero" id="hero">
@@ -1542,7 +1575,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Footer -->
-<footer class="footer">
+
+</main><footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
