@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-05",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "開普敦門禁社區指南：安全莊園 vs 一般住宅，外國人怎麼選？",
+          "url": "/blog/cape-town-gated-community-guide-foreign-buyers-2026",
+          "language": "zh-TW",
+          "category": "置產投資",
+          "description": "開普敦門禁社區怎麼選？安全莊園 vs 一般住宅完整比較，管理費、增值潛力、外國人購買流程一次看懂。",
+          "date": "2026-09-05"
+        },
+        {
+          "title": "Cape Town Gated Communities: Foreign Buyers",
+          "url": "/blog/cape-town-gated-community-guide-foreign-buyers-2026-en",
+          "language": "en",
+          "category": "Investment",
+          "description": "Cape Town gated communities vs freehold homes: security estates, levies, appreciation, and the foreign buyer purchase process.",
+          "date": "2026-09-05"
+        },
         {
           "title": "美伊戰爭復燃、油價飆破 $90！南非通膨升息風險升溫——開普敦房產為何仍是避風港？",
           "url": "/blog/us-iran-war-oil-surge-sarb-september-2026-cape-town-property",
