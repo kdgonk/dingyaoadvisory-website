@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-05",
+  "last_updated": "2026-09-06",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "南非房價年增7.9% 西開普省11.2%！開普敦置產現在進場？",
+          "url": "/blog/south-africa-house-price-index-7-9-percent-western-cape-11-2-2026",
+          "language": "zh-TW",
+          "category": "置產投資",
+          "description": "南非房價年增 7.9%、西開普省 11.2%！開普敦房價漲幅全國 1.4 倍，實質年增值 6.9%。",
+          "date": "2026-09-06"
+        },
+        {
+          "title": "Cape Town House Prices 2026: Up 11.2%",
+          "url": "/blog/south-africa-house-price-index-7-9-percent-western-cape-11-2-2026-en",
+          "language": "en",
+          "category": "Investment",
+          "description": "SA house prices rose 7.9% y/y, Western Cape 11.2%: Cape Town growth is 1.4x the national rate.",
+          "date": "2026-09-06"
+        },
         {
           "title": "開普敦門禁社區指南：安全莊園 vs 一般住宅，外國人怎麼選？",
           "url": "/blog/cape-town-gated-community-guide-foreign-buyers-2026",
