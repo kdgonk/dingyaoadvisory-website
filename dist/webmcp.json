@@ -24,6 +24,38 @@
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
         {
+          "title": "關於鼎曜",
+          "url": "/about",
+          "language": "zh-TW",
+          "category": "關於",
+          "description": "鼎曜國際顧問公司介紹、團隊與願景",
+          "date": "2026-09-06"
+        },
+        {
+          "title": "About DingYao Advisory",
+          "url": "/about-en",
+          "language": "en",
+          "category": "About",
+          "description": "Company overview, team, and vision",
+          "date": "2026-09-06"
+        },
+        {
+          "title": "聯絡我們",
+          "url": "/contact",
+          "language": "zh-TW",
+          "category": "聯絡",
+          "description": "LINE、Email 等聯絡方式與免費諮詢",
+          "date": "2026-09-06"
+        },
+        {
+          "title": "Contact Us",
+          "url": "/contact-en",
+          "language": "en",
+          "category": "Contact",
+          "description": "LINE, email, social media contacts & free consultation",
+          "date": "2026-09-06"
+        },
+        {
           "title": "南非房價年增7.9% 西開普省11.2%！開普敦置產現在進場？",
           "url": "/blog/south-africa-house-price-index-7-9-percent-western-cape-11-2-2026",
           "language": "zh-TW",

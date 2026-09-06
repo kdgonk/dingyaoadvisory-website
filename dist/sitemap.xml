@@ -2424,6 +2424,46 @@
     </url>
 
     <url>
+        <loc>https://dingyaoadvisory.tw/about</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/about"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/about-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/about"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/about-en</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/about"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/about-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/about"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/contact</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/contact"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/contact-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/contact"/>
+    </url>
+
+    <url>
+        <loc>https://dingyaoadvisory.tw/contact-en</loc>
+        <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://dingyaoadvisory.tw/contact"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dingyaoadvisory.tw/contact-en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://dingyaoadvisory.tw/contact"/>
+    </url>
+
+    <url>
         <loc>https://dingyaoadvisory.tw/consultation</loc>
         <lastmod>2026-09-04</lastmod>
         <changefreq>monthly</changefreq>
