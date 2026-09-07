@@ -35,4 +35,45 @@ try:
 except Exception as e:
     print(f'List ERR: {str(e)[:200]}')
 
+# ── Submit to IndexNow (Bing) ──
+import urllib.request
+
+INDEXNOW_KEY = '3576af12bca967c7a277faa91d3e0c03'
+INDEXNOW_KEY_LOCATION = f'https://dingyaoadvisory.tw/{INDEXNOW_KEY}.txt'
+INDEXNOW_HOST = 'dingyaoadvisory.tw'
+INDEXNOW_API = 'https://api.indexnow.org/indexnow'
+
+# Read all URLs from sitemap
+import re
+sitemap_path = '/Users/dingyao/Documents/DingYao-Website/dingyaoadvisory-website/dist/sitemap.xml'
+try:
+    with open(sitemap_path, 'r', encoding='utf-8') as f:
+        sitemap_content = f.read()
+    all_urls = re.findall(r'<loc>(https?://[^<]+)</loc>', sitemap_content)
+
+    payload = {
+        'host': INDEXNOW_HOST,
+        'key': INDEXNOW_KEY,
+        'keyLocation': INDEXNOW_KEY_LOCATION,
+        'urlList': all_urls
+    }
+
+    data = json.dumps(payload).encode('utf-8')
+    req = urllib.request.Request(
+        INDEXNOW_API,
+        data=data,
+        headers={'Content-Type': 'application/json; charset=utf-8'},
+        method='POST'
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        status = resp.status
+        body = resp.read().decode('utf-8', errors='replace')
+        print(f'IndexNow HTTP {status} — {len(all_urls)} URLs submitted to Bing')
+        if body:
+            print(f'   Body: {body[:200]}')
+except urllib.error.HTTPError as e:
+    print(f'IndexNow HTTP {e.code}: {e.read().decode("utf-8", errors="replace")[:200]}')
+except Exception as e:
+    print(f'IndexNow error (non-blocking): {e}')
+
 print('DONE')

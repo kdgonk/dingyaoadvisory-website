@@ -169,6 +169,7 @@ body { font-family: var(--font-sans); background: var(--bg-dark); color: var(--w
   .footer-inner { grid-template-columns:1fr; }
 }
 </style>
+<script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
 
@@ -335,5 +336,6 @@ body { font-family: var(--font-sans); background: var(--bg-dark); color: var(--w
 document.getElementById('navToggle').addEventListener('click', function() { document.getElementById('navLinks').classList.toggle('active'); });
 window.addEventListener('scroll', function() { var n=document.getElementById('navbar'); n.style.background=window.scrollY>50?'rgba(10,14,23,0.98)':'rgba(10,14,23,0.95)'; });
 </script>
+<div google-add-preferred-source-btn data-theme="dark"></div>
 </body>
 </html>
