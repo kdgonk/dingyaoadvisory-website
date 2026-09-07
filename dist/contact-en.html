@@ -168,7 +168,7 @@ body { font-family: var(--font-sans); background: var(--bg-dark); color: var(--w
   .social-grid { grid-template-columns:repeat(3,1fr); }
   .footer-inner { grid-template-columns:1fr; }
 }
-</style>
+.footer-google-cta{margin-top:16px;display:inline-flex;align-items:center}.footer-google-cta [google-add-preferred-source-btn]{transform:scale(0.85);transform-origin:left center}</style>
 <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
@@ -302,6 +302,7 @@ body { font-family: var(--font-sans); background: var(--bg-dark); color: var(--w
         <a href="https://www.threads.net/@dingyaoadvisory" aria-label="Threads"><i class="fab fa-threads"></i></a>
         <a href="https://lin.ee/Z6pyU1S" aria-label="LINE"><i class="fab fa-line"></i></a>
       </div>
+      <div class="footer-google-cta" style="margin-top:16px"><div google-add-preferred-source-btn data-theme="dark"></div></div>
     </div>
     <div>
       <h4>Services</h4>
@@ -336,6 +337,5 @@ body { font-family: var(--font-sans); background: var(--bg-dark); color: var(--w
 document.getElementById('navToggle').addEventListener('click', function() { document.getElementById('navLinks').classList.toggle('active'); });
 window.addEventListener('scroll', function() { var n=document.getElementById('navbar'); n.style.background=window.scrollY>50?'rgba(10,14,23,0.98)':'rgba(10,14,23,0.95)'; });
 </script>
-<div google-add-preferred-source-btn data-theme="dark"></div>
 </body>
 </html>

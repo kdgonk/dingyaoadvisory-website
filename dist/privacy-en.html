@@ -931,7 +931,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .footer-bottom p{font-size:0.78rem;color:#F5F0E855}
 .footer-bottom-links{display:flex;gap:20px}
 .footer-bottom-links a{font-size:0.78rem;color:#F5F0E855;transition:color 0.3s}
-.footer-bottom-links a:hover{color:#C9A84C}.footer-line-cta{margin-top:16px}.footer-line-cta a{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(201,168,76,0.05);transition:all 0.3s;text-decoration:none;color:#C9A84C;font-size:0.85rem;font-weight:500}.footer-line-cta a:hover{background:rgba(201,168,76,0.12);border-color:#C9A84C;transform:translateY(-1px)}.footer-line-cta i{font-size:1.4rem;color:#06C755}.footer-line-cta small{display:block;font-size:0.72rem;color:#F5F0E877;font-weight:400;margin-top:2px}
+.footer-bottom-links a:hover{color:#C9A84C}.footer-line-cta{margin-top:16px}.footer-line-cta a{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(201,168,76,0.05);transition:all 0.3s;text-decoration:none;color:#C9A84C;font-size:0.85rem;font-weight:500}.footer-line-cta a:hover{background:rgba(201,168,76,0.12);border-color:#C9A84C;transform:translateY(-1px)}.footer-line-cta i{font-size:1.4rem;color:#06C755}.footer-line-cta small{display:block;font-size:0.72rem;color:#F5F0E877;font-weight:400;margin-top:2px}.footer-google-cta{margin-top:16px;display:inline-flex;align-items:center}.footer-google-cta [google-add-preferred-source-btn]{transform:scale(0.85);transform-origin:left center}
 
 /* ===== ANIMATIONS ===== */
 .fade-in {
@@ -1543,6 +1543,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
             <span>Join Our LINE Official Account<br><small>Get Your Exclusive Investment Assessment</small></span>
           </a>
         </div>
+        <div class="footer-google-cta"><div google-add-preferred-source-btn data-theme="dark"></div></div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1580,6 +1581,5 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
 </script>
 
-<div google-add-preferred-source-btn data-theme="dark"></div>
 </body>
 </html>
