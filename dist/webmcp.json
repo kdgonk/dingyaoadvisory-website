@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-08",
+  "last_updated": "2026-09-09",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "海外置產完整指南 2026：為什麼聰明投資人開始看向南非開普敦？",
+          "url": "/blog/overseas-property-investment-guide-cape-town-2026",
+          "language": "zh-TW",
+          "category": "海外置產 / 收益率 / 被動收入",
+          "description": "海外置產收益率比較：開普敦租金收益率 7.5-11.4%，台灣僅 1.5-2.5%。同樣 1,600 萬台幣，開普敦月收租 8 萬 vs 台北 3 萬。",
+          "date": "2026-09-09"
+        },
+        {
+          "title": "Overseas Property Guide 2026: Why Smart Investors Are Looking at Cape Town",
+          "url": "/blog/overseas-property-investment-guide-cape-town-2026-en",
+          "language": "en",
+          "category": "Overseas Property / Yield / Passive Income",
+          "description": "Cape Town rental yields 7.5-11.4% vs Taiwan's 1.5-2.5%. Same NT$16M: Cape Town monthly rent NT$80K vs Taipei NT$30K.",
+          "date": "2026-09-09"
+        },
         {
           "title": "南非年輕買家消失、租賃需求暴漲！開普敦租金收益是穩定現金流",
           "url": "https://dingyaoadvisory.tw/blog/south-africa-young-buyers-decline-rental-demand-cape-town-2026",
