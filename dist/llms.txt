@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [南非房地產「紫金期」來臨！機構資金進場，開普敦置產時機到了嗎？](/blog/south-africa-property-purple-patch-standard-bank-2026) — 南非最大銀行 Standard Bank 宣告房地產「紫金期」24-48 個月，REITs 前 8 個月 +2.4%、辦公室空置率 12.1% 新低。
+- [SA Purple Patch: Buy Cape Town?](/blog/south-africa-property-purple-patch-standard-bank-2026-en) — Standard Bank declares a 24-48 month property purple patch. REITs +2.4%, office vacancies at 12.1% low.
 - [海外置產完整指南 2026：為什麼聰明投資人開始看向南非開普敦？](/blog/overseas-property-investment-guide-cape-town-2026) — 海外置產收益率比較：開普敦租金收益率 7.5-11.4%，台灣僅 1.5-2.5%。同樣 1,600 萬台幣，開普敦月收租 8 萬 vs 台北 3 萬。
 - [Overseas Property Guide 2026: Why Smart Investors Are Looking at Cape Town](/blog/overseas-property-investment-guide-cape-town-2026-en) — Cape Town rental yields 7.5-11.4% vs Taiwan's 1.5-2.5%. Same NT$16M: Cape Town monthly rent NT$80K vs Taipei NT$30K.
 - [南非燃油漲價今日生效！開普敦生活成本會變貴嗎？](/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs) — 南非 9/2 燃油漲價：汽油 +R1.34、柴油 +R3.15。開普敦生活成本僅為台北 35%，租金收益率 7.5-11.4%。
@@ -127,9 +129,11 @@
 
 ---
 
-Last updated: 2026-09-09
+Last updated: 2026-09-10
 ## Blog Articles
 
+- [南非房地產「紫金期」來臨！機構資金進場，開普敦置產時機到了嗎？](https://dingyaoadvisory.tw/blog/south-africa-property-purple-patch-standard-bank-2026) — 南非最大銀行 Standard Bank 宣告房地產「紫金期」，REITs 前 8 個月 +2.4%
+- [SA Purple Patch: Buy Cape Town?](https://dingyaoadvisory.tw/blog/south-africa-property-purple-patch-standard-bank-2026-en) — Standard Bank declares a 24-48 month property purple patch. REITs +2.4%, office vacancies at 12.1% low
 - [海外置產完整指南 2026：為什麼聰明投資人開始看向南非開普敦？](https://dingyaoadvisory.tw/blog/overseas-property-investment-guide-cape-town-2026) — 海外置產收益率比較：開普敦租金收益率 7.5-11.4%，台灣僅 1.5-2.5%
 - [Overseas Property Guide 2026: Why Smart Investors Are Looking at Cape Town](https://dingyaoadvisory.tw/blog/overseas-property-investment-guide-cape-town-2026-en) — Cape Town rental yields 7.5-11.4% vs Taiwan's 1.5-2.5%. Same NT$16M investment
 - [南非燃油漲價今日生效！開普敦生活成本會變貴嗎？](https://dingyaoadvisory.tw/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs) — 南非 9/2 燃油漲價：汽油 +R1.34、柴油 +R3.15
