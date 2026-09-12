@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！蘭特續貶，開普敦置產為何反而更划算？](/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%，蘭特承壓下開普敦置產雙引擎。
+- [US CPI 3.4%: Fed 87% Hike Odds, Rand](/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property-en) — US CPI 3.4% beats forecast, Fed hike odds hit 87%. Rand weakens — Cape Town property gains on FX advantage.
 - [南非房地產「紫金期」來臨！機構資金進場，開普敦置產時機到了嗎？](/blog/south-africa-property-purple-patch-standard-bank-2026) — 南非最大銀行 Standard Bank 宣告房地產「紫金期」24-48 個月，REITs 前 8 個月 +2.4%、辦公室空置率 12.1% 新低。
 - [SA Purple Patch: Buy Cape Town?](/blog/south-africa-property-purple-patch-standard-bank-2026-en) — Standard Bank declares a 24-48 month property purple patch. REITs +2.4%, office vacancies at 12.1% low.
 - [海外置產完整指南 2026：為什麼聰明投資人開始看向南非開普敦？](/blog/overseas-property-investment-guide-cape-town-2026) — 海外置產收益率比較：開普敦租金收益率 7.5-11.4%，台灣僅 1.5-2.5%。同樣 1,600 萬台幣，開普敦月收租 8 萬 vs 台北 3 萬。
@@ -129,9 +131,11 @@
 
 ---
 
-Last updated: 2026-09-10
+Last updated: 2026-09-12
 ## Blog Articles
 
+- [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！蘭特續貶，開普敦置產為何反而更划算？](https://dingyaoadvisory.tw/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%
+- [US CPI 3.4%: Fed 87% Hike Odds, Rand](https://dingyaoadvisory.tw/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property-en) — US CPI 3.4% beats forecast, Fed hike odds hit 87%. Rand weakens — Cape Town property gains on FX advantage
 - [南非房地產「紫金期」來臨！機構資金進場，開普敦置產時機到了嗎？](https://dingyaoadvisory.tw/blog/south-africa-property-purple-patch-standard-bank-2026) — 南非最大銀行 Standard Bank 宣告房地產「紫金期」，REITs 前 8 個月 +2.4%
 - [SA Purple Patch: Buy Cape Town?](https://dingyaoadvisory.tw/blog/south-africa-property-purple-patch-standard-bank-2026-en) — Standard Bank declares a 24-48 month property purple patch. REITs +2.4%, office vacancies at 12.1% low
 - [海外置產完整指南 2026：為什麼聰明投資人開始看向南非開普敦？](https://dingyaoadvisory.tw/blog/overseas-property-investment-guide-cape-town-2026) — 海外置產收益率比較：開普敦租金收益率 7.5-11.4%，台灣僅 1.5-2.5%
