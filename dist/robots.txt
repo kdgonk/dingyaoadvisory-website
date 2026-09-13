@@ -5,6 +5,10 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
 
+# Ghost article - removed from sitemap (0 exposure, no EN, images 404)
+Disallow: /blog/taiwan-landlord-vs-cape-town-passive-income-2026
+Disallow: /blog/taiwan-landlord-vs-cape-town-passive-income-2026-en
+
 # Allow AI retrieval/citation crawlers (AEO/GEO) — GPTBot/ChatGPT-User/CCBot
 # serve both training AND real-time retrieval; blocking kills ChatGPT citations.
 User-agent: GPTBot
@@ -29,3 +33,4 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://dingyaoadvisory.tw/sitemap.xml
+Sitemap: https://dingyaoadvisory.tw/sitemap-news.xml
