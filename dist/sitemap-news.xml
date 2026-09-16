@@ -3,50 +3,26 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
-    <loc>https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026-en</loc>
+    <loc>https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook-en</loc>
     <news:news>
       <news:publication>
         <news:name>DingYao Advisory</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-09-14T00:00:00+08:00</news:publication_date>
-      <news:title>Estate Duty Guide for Foreign Heirs</news:title>
+      <news:publication_date>2026-09-16T00:00:00+08:00</news:publication_date>
+      <news:title>FOMC Decision: Cape Town Property Playbook</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026</loc>
+    <loc>https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook</loc>
     <news:news>
       <news:publication>
         <news:name>鼎曜國際顧問</news:name>
         <news:language>zh-tw</news:language>
       </news:publication>
-      <news:publication_date>2026-09-14T00:00:00+08:00</news:publication_date>
-      <news:title>「遺產」「遺產稅」登熱搜！南非 Estate Duty 傳承規劃：台灣人繼承開普敦房產要繳多少？</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/south-africa-talent-skills-shortage-2026-en</loc>
-    <news:news>
-      <news:publication>
-        <news:name>DingYao Advisory</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T00:00:00+08:00</news:publication_date>
-      <news:title>SA Talent Shortage 2026: 22% ICT Gap Drives Cape Town Yields</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/south-africa-talent-skills-shortage-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>鼎曜國際顧問</news:name>
-        <news:language>zh-tw</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T00:00:00+08:00</news:publication_date>
-      <news:title>南非人才短缺 2026：ICT 缺口 22% 為何推升開普敦租金收益？</news:title>
+      <news:publication_date>2026-09-16T00:00:00+08:00</news:publication_date>
+      <news:title>「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略</news:title>
     </news:news>
   </url>
 
