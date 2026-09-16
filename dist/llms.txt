@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略](/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook) — FOMC 今晚公布利率決策，市場升息定價 85%+，蘭特測 16.20，開普敦置產兩情境攻略
+- [FOMC Decision: Cape Town Property Playbook](/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook-en) — Fed decision tonight: 85%+ hike priced, rand at 16.20, Cape Town property gets cheaper for foreign buyers. Two-scenario playbook.
 - [「遺產」「遺產稅」登熱搜！南非 Estate Duty 傳承規劃：台灣人繼承開普敦房產要繳多少？](/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026) — 南非 Estate Duty 免稅額 R3.5M、稅率 20%、配偶全免、台灣無協議雙重課稅風險
 - [Estate Duty Guide for Foreign Heirs](/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026-en) — SA estate duty for Taiwanese heirs: R3.5M abatement, 20% rate, spousal exemption, no double-tax treaty
 - [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！蘭特續貶，開普敦置產為何反而更划算？](/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%，蘭特承壓下開普敦置產雙引擎。
@@ -133,9 +135,11 @@
 
 ---
 
-Last updated: 2026-09-14
+Last updated: 2026-09-16
 ## Blog Articles
 
+- [「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略](https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook) — FOMC 今晚公布利率決策，市場升息定價 85%+，蘭特測 16.20，開普敦置產兩情境攻略
+- [FOMC Decision: Cape Town Property Playbook](https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook-en) — Fed decision tonight: 85%+ hike priced, rand at 16.20, Cape Town property gets cheaper for foreign buyers. Two-scenario playbook.
 - [「遺產」「遺產稅」登熱搜！南非 Estate Duty 傳承規劃](https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026) — 南非 Estate Duty 免稅額 R3.5M、稅率 20%、配偶全免、台灣無協議雙重課稅風險
 - [Estate Duty Guide for Foreign Heirs](https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026-en) — SA estate duty for Taiwanese heirs: R3.5M abatement, 20% rate, spousal exemption, no double-tax treaty
 - [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！蘭特續貶，開普敦置產為何反而更划算？](https://dingyaoadvisory.tw/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%

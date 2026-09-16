@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-14",
+  "last_updated": "2026-09-16",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略",
+          "url": "https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook",
+          "language": "zh-TW",
+          "category": "投資",
+          "description": "FOMC 今晚公布利率決策，市場升息定價 85%+，蘭特測 16.20，開普敦置產兩情境攻略",
+          "date": "2026-09-16"
+        },
+        {
+          "title": "FOMC Decision: Cape Town Property Playbook",
+          "url": "https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook-en",
+          "language": "en",
+          "category": "Investment",
+          "description": "Fed decision tonight: 85%+ hike priced, rand at 16.20, Cape Town property gets cheaper for foreign buyers. Two-scenario playbook.",
+          "date": "2026-09-16"
+        },
         {
           "title": "「遺產」「遺產稅」登熱搜！南非 Estate Duty 傳承規劃：台灣人繼承開普敦房產要繳多少？",
           "url": "https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026",
