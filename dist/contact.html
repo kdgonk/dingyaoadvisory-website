@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-TW" data-theme="dark">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
+<!-- End Google Tag Manager -->
 <script defer data-domain="dingyaoadvisory.tw" src="https://plausible.dingyaoadvisory.tw/js/script.js"></script>
 
 <meta charset="UTF-8">
@@ -1120,6 +1123,9 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVWHRBWG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="主導覽">
   <div class="container">
@@ -1234,10 +1240,49 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   </div>
 
   <div>
-    <div class="cta-card">
+    <div class="cta-card" id="contactFormCard">
       <h3>免費諮詢</h3>
-      <p>填寫諮詢表單，我們的顧問團隊將在 24 小時內與您聯繫，提供量身打造的南非置產評估報告。</p>
-      <a href="/consultation" class="btn-gold">預約免費諮詢</a>
+      <p>填寫表單，我們的顧問團隊將在 24 小時內與您聯繫。</p>
+      <form id="contactForm" style="text-align:left;">
+        <div class="form-group" style="margin-bottom:16px;">
+          <label for="c-name" style="display:block;margin-bottom:4px;font-size:0.9rem;color:var(--text-muted);">您的稱呼 <span style="color:var(--gold);">*</span></label>
+          <input type="text" id="c-name" name="name" placeholder="請輸入姓名" required style="width:100%;padding:12px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:var(--text);font-size:0.9rem;">
+        </div>
+        <div class="form-group" style="margin-bottom:16px;">
+          <label for="c-email" style="display:block;margin-bottom:4px;font-size:0.9rem;color:var(--text-muted);">Email <span style="color:var(--gold);">*</span></label>
+          <input type="email" id="c-email" name="email" placeholder="your@email.com" required style="width:100%;padding:12px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:var(--text);font-size:0.9rem;">
+        </div>
+        <div class="form-group" style="margin-bottom:16px;">
+          <label for="c-phone" style="display:block;margin-bottom:4px;font-size:0.9rem;color:var(--text-muted);">聯絡電話</label>
+          <div style="display:flex;gap:8px;">
+            <select id="c-countryCode" name="countryCode" style="width:90px;padding:12px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:var(--text);font-size:0.9rem;">
+              <option value="+886">🇹🇼 +886</option>
+              <option value="+27">🇿🇦 +27</option>
+            </select>
+            <input type="tel" id="c-phone" name="phone" placeholder="請輸入電話號碼" style="flex:1;padding:12px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:var(--text);font-size:0.9rem;">
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:16px;">
+          <label for="c-interest" style="display:block;margin-bottom:4px;font-size:0.9rem;color:var(--text-muted);">感興趣的服務</label>
+          <select id="c-interest" name="interest" style="width:100%;padding:12px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:var(--text);font-size:0.9rem;">
+            <option value="">請選擇感興趣的服務</option>
+            <option value="property">南非置產 (莊園/豪宅)</option>
+            <option value="education">頂級私校教育諮詢</option>
+            <option value="residency">身分與移居規劃</option>
+            <option value="digital">數位資產託管服務</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:16px;">
+          <label for="c-message" style="display:block;margin-bottom:4px;font-size:0.9rem;color:var(--text-muted);">備註 (選填)</label>
+          <textarea id="c-message" name="message" placeholder="如有其他需求或問題，請在此說明..." rows="3" style="width:100%;padding:12px;border:1px solid rgba(201,168,76,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:var(--text);font-size:0.9rem;resize:vertical;"></textarea>
+        </div>
+        <button type="submit" id="c-submitBtn" class="btn-gold" style="width:100%;text-align:center;padding:16px;font-size:0.9rem;cursor:pointer;border:none;">預約免費諮詢 <i class="fas fa-arrow-right"></i></button>
+      </form>
+      <div id="contactFormSuccess" style="display:none;text-align:center;padding:40px 0;">
+        <div style="font-size:3rem;color:var(--gold);margin-bottom:16px;"><i class="fas fa-check-circle"></i></div>
+        <h3 style="font-family:var(--font-serif);font-size:1.3rem;margin-bottom:12px;">感謝您的諮詢！</h3>
+        <p style="color:var(--text-muted);">我們已收到您的預約申請，將在 24 小時內由專人與您聯繫。</p>
+      </div>
     </div>
     <div style="margin-top:24px; background:var(--bg-card); border:1px solid rgba(201,168,76,0.1); border-radius:12px; padding:32px; text-align:center;">
       <div style="font-size:2rem; color:var(--gold); margin-bottom:8px;"><span class="line-icon">LINE</span></div>
@@ -1318,6 +1363,59 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <script>
 document.getElementById('navToggle').addEventListener('click', function() { document.getElementById('navLinks').classList.toggle('active'); });
 window.addEventListener('scroll', function() { var n=document.getElementById('navbar'); n.style.background=window.scrollY>50?'rgba(10,14,23,0.98)':'rgba(10,14,23,0.95)'; });
+</script>
+
+<script>
+document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = e.target;
+  var name = form.querySelector('#c-name').value.trim();
+  var email = form.querySelector('#c-email').value.trim();
+  var phone = form.querySelector('#c-countryCode').value + form.querySelector('#c-phone').value.trim();
+  var interest = form.querySelector('#c-interest').value;
+  var message = form.querySelector('#c-message').value.trim();
+  var btn = form.querySelector('#c-submitBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送出中...';
+  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+    },
+    body: JSON.stringify({
+      inbox_id: 2,
+      name: name,
+      email: email,
+      phone_number: phone,
+      custom_attributes: {
+        source: 'contact_page',
+        interest: interest || '',
+        message: message || ''
+      }
+    })
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(data) {
+    if (data.payload && data.payload.contact) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'contact_page' });
+      } else if (window.dataLayer) {
+        window.dataLayer.push({ event: 'generate_lead', event_category: 'contact', event_label: 'contact_page' });
+      }
+      form.style.display = 'none';
+      document.getElementById('contactFormSuccess').style.display = 'block';
+    } else {
+      throw new Error('Failed');
+    }
+  })
+  .catch(function(err) {
+    btn.disabled = false;
+    btn.innerHTML = '預約免費諮詢 <i class="fas fa-arrow-right"></i>';
+    alert('送出失敗，請稍後再試或來信 info@dingyaoadvisory.tw');
+  });
+  return false;
+});
 </script>
 </body>
 </html>
