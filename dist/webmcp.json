@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-16",
+  "last_updated": "2026-09-18",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "三央行一週三決定：「央行」熱搜破萬後，蘭特與開普敦房市下一步？",
+          "url": "https://dingyaoadvisory.tw/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026",
+          "language": "zh-TW",
+          "category": "置產投資 / 央行決策 / 匯率",
+          "description": "Fed 升息 25bp、台灣央行連 10 凍、SARB 五五波——三央行決策全揭曉。「央行」熱搜破萬，蘭特與開普敦房市這樣布局。立即諮詢取得專業評估。",
+          "date": "2026-09-18"
+        },
+        {
+          "title": "Three Central Banks, One Week: What the Decisions Mean for the Rand and Cape Town Property",
+          "url": "https://dingyaoadvisory.tw/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026-en",
+          "language": "en",
+          "category": "Property Investment / Central Banks / FX",
+          "description": "Fed hiked 25bp, Taiwan held again, SARB decision is a coin flip. How the rand and Cape Town property respond — and what investors should do next.",
+          "date": "2026-09-18"
+        },
         {
           "title": "「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略",
           "url": "https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook",
