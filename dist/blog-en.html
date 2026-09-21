@@ -1154,7 +1154,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <a href="/tour-en">Tour</a>
       <a href="/blog-en">Insights</a>
       <a href="/consultation-en" class="btn-nav">Consultation</a>
-      <div class="nav-lang"><a href="#" class="">TW</a><span>/</span><a href="#" class="active">EN</a>
+      <div class="nav-lang"><a href="#" class="" id="langTw">TW</a><span>/</span><a href="#" class="active" id="langEn">EN</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
@@ -2985,5 +2985,40 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         });
     </script>
 
+<script>
+// Language switcher
+(function(){
+  var path = window.location.pathname;
+  var tw = document.getElementById('langTw');
+  var en = document.getElementById('langEn');
+  var logo = document.getElementById('navLogo');
+  if (path.endsWith('-en')) {
+    tw.href = path.slice(0, -3) || '/';
+  } else {
+    tw.href = path;
+  }
+  if (path === '/') {
+    en.href = '/index-en';
+  } else if (path.endsWith('-en')) {
+    en.href = path;
+  } else {
+    en.href = path + '-en';
+  }
+  if (path.endsWith('-en')) {
+    en.classList.add('active');
+    tw.classList.remove('active');
+  } else {
+    tw.classList.add('active');
+    en.classList.remove('active');
+  }
+
+  // Set logo href based on language
+  if (path.endsWith('-en') || path.endsWith('-en/')) {
+    if (logo) logo.href = '/index-en';
+  } else {
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
+  }
+})();
+</script>
 </body>
 </html>
