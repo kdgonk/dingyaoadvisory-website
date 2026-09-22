@@ -38,3 +38,5 @@ Allow: /
 
 Sitemap: https://dingyaoadvisory.tw/sitemap.xml
 Sitemap: https://dingyaoadvisory.tw/sitemap-news.xml
+Disallow: /blog/south-africa-talent-skills-shortage-2026
+Disallow: /blog/south-africa-talent-skills-shortage-2026-en

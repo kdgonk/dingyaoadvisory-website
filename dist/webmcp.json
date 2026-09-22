@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-09-22",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -1173,6 +1173,21 @@
       "zh": "/blog/foreign-mortgage-rates-cape-town-fed-sarb-2026",
       "en": "/blog/foreign-mortgage-rates-cape-town-fed-sarb-2026-en",
       "purpose": "SARB 9/23 決策：升息 1 碼對房貸月付的影響與外國人貸款規則"
+    },
+    "cape_town_rental_yields_sarb_rate_hike_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/cape-town-rental-yields-sarb-rate-hike-2026",
+      "en": "https://dingyaoadvisory.tw/blog/cape-town-rental-yields-sarb-rate-hike-2026-en",
+      "purpose": "SARB Sep 23 rate decision countdown and Cape Town rental yield analysis"
+    },
+    "south_africa_estate_duty_foreign_heirs_cape_town_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026",
+      "en": "https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026-en",
+      "purpose": "South Africa estate duty guide for Taiwanese heirs inheriting Cape Town property"
+    },
+    "g20_cape_town_property_opportunities": {
+      "zh": "https://dingyaoadvisory.tw/blog/g20-cape-town-property-opportunities",
+      "en": "https://dingyaoadvisory.tw/blog/g20-cape-town-property-opportunities-en",
+      "purpose": "G20 summit impact on Cape Town property: R12 billion infrastructure investment opportunities"
     }
   },
   "contact": {
