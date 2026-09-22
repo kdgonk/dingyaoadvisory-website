@@ -40,3 +40,5 @@ Sitemap: https://dingyaoadvisory.tw/sitemap.xml
 Sitemap: https://dingyaoadvisory.tw/sitemap-news.xml
 Disallow: /blog/south-africa-talent-skills-shortage-2026
 Disallow: /blog/south-africa-talent-skills-shortage-2026-en
+Disallow: /blog/g20-cape-town-property-opportunities
+Disallow: /blog/g20-cape-town-property-opportunities-en
