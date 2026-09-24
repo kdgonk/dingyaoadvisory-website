@@ -6,8 +6,6 @@ Disallow: /private/
 Disallow: /tmp/
 
 # Ghost article - removed from sitemap (0 exposure, no EN, images 404)
-Disallow: /blog/taiwan-landlord-vs-cape-town-passive-income-2026
-Disallow: /blog/taiwan-landlord-vs-cape-town-passive-income-2026-en
 Disallow: /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo
 Disallow: /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo-en
 Disallow: /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2
@@ -42,3 +40,4 @@ Disallow: /blog/south-africa-talent-skills-shortage-2026
 Disallow: /blog/south-africa-talent-skills-shortage-2026-en
 Disallow: /blog/g20-cape-town-property-opportunities
 Disallow: /blog/g20-cape-town-property-opportunities-en
+
