@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [開普敦租金收益率真相：11.53% 是全國平均，開普敦只有 9.49%](/blog/cape-town-rental-yield-9-49-percent-reality-check-2026) — 全國公寓毛收益率 11.53% 是全國平均，開普敦全市僅 9.49%；市內 Milnerton 14.62% vs Atlantic Seaboard 4.06%，淨收益再低 1.5-2pp。
+- [Cape Town Rental Yields 2026: 9.49% Not 11.53%](/blog/cape-town-rental-yield-9-49-percent-reality-check-2026-en) — South Africa's 11.53% is the national average; Cape Town city-wide averages 9.49%. Suburb spread 4.06%-14.62%, net yields 1.5-2pp lower.
 - [三央行一週三決定：「央行」熱搜破萬後，蘭特與開普敦房市下一步？](/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026)
 - [南非升息倒數：為什麼開普敦租金收益率反而變高？](/blog/cape-town-rental-yields-sarb-rate-hike-2026)
 - [Cape Town Rental Yields and the SARB Hike](/blog/cape-town-rental-yields-sarb-rate-hike-2026-en)
@@ -139,8 +141,10 @@
 
 ---
 
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 ## Blog Articles
+- [cape-town-rental-yield-9-49-percent-reality-check-2026](https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026): 開普敦租金收益率真相：11.53% 是全國平均，開普敦只有 9.49%
+- [cape-town-rental-yield-9-49-percent-reality-check-2026-en](https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026-en): Cape Town Rental Yields 2026: 9.49% Not 11.53%
 - [foreign-mortgage-rates-cape-town-fed-sarb-2026](https://dingyaoadvisory.tw/blog/foreign-mortgage-rates-cape-town-fed-sarb-2026): 南非央行 9/23 決策倒數：升息 1 碼，你的房貸月付會多多少？
 - [foreign-mortgage-rates-cape-town-fed-sarb-2026-en](https://dingyaoadvisory.tw/blog/foreign-mortgage-rates-cape-town-fed-sarb-2026-en): SARB Sep 23: 25bp & Your Bond
 - [cape-town-rental-yields-sarb-rate-hike-2026](https://dingyaoadvisory.tw/blog/cape-town-rental-yields-sarb-rate-hike-2026): 南非升息倒數：為什麼開普敦租金收益率反而變高？

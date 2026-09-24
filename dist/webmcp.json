@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-22",
+  "last_updated": "2026-09-24",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,22 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "開普敦租金收益率真相：11.53% 是全國平均，開普敦只有 9.49%",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026",
+          "language": "zh-TW",
+          "category": "置產投資 / 租金收益率 / 數據校正",
+          "description": "南非全國公寓毛租金收益率 11.53%，但開普敦全市平均僅 9.49%（2026 Q2, Global Property Guide）。市內 Milnerton 14.62% vs Atlantic Seaboard 4.06%，淨收益再低 1.5-2pp。立即索取市場資訊。",
+          "date": "2026-09-24"
+        },
+        {
+          "title": "Cape Town Rental Yields 2026: 9.49% Not 11.53%",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026-en",
+          "language": "en",
+          "category": "Property Investment / Rental Yields / Data Check",
+          "description": "South Africa's 11.53% apartment gross yield is the NATIONAL average; Cape Town city-wide averages 9.49% (Q2 2026, Global Property Guide). Suburb spread 4.06%-14.62%, net yields 1.5-2pp lower. Get the data.",
+          "date": "2026-09-24"
+        },
         {
           "title": "三央行一週三決定：「央行」熱搜破萬後，蘭特與開普敦房市下一步？",
           "url": "https://dingyaoadvisory.tw/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026",
@@ -1168,6 +1184,11 @@
       "zh": "/contact",
       "en": "/contact-en",
       "purpose": "聯絡諮詢 - 預約諮詢服務"
+    },
+    "cape_town_rental_yield_9_49_percent_reality_check_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026",
+      "en": "https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026-en",
+      "purpose": "National 11.53% vs Cape Town 9.49% rental yield reality check, with suburb-level spread and post-hike holding costs"
     },
     "foreign_mortgage_rates_cape_town_fed_sarb_2026": {
       "zh": "/blog/foreign-mortgage-rates-cape-town-fed-sarb-2026",
