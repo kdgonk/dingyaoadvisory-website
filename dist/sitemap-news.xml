@@ -2,28 +2,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/cape-town-rental-yields-sarb-rate-hike-2026-en</loc>
-    <news:news>
-      <news:publication>
-        <news:name>DingYao Advisory</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-22T00:00:00+08:00</news:publication_date>
-      <news:title>Cape Town Rental Yields and the SARB Hike</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/cape-town-rental-yields-sarb-rate-hike-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>鼎曜國際顧問</news:name>
-        <news:language>zh-tw</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-22T00:00:00+08:00</news:publication_date>
-      <news:title>南非升息倒數：為什麼開普敦租金收益率反而變高？</news:title>
-    </news:news>
-  </url>
-
 </urlset>
