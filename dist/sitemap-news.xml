@@ -2,4 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026-en</loc>
+    <news:news>
+      <news:publication>
+        <news:name>DingYao Advisory</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T00:00:00+08:00</news:publication_date>
+      <news:title>Cape Town Rental Yields 2026: 9.49% Not 11.53%</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>鼎曜國際顧問</news:name>
+        <news:language>zh-tw</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T00:00:00+08:00</news:publication_date>
+      <news:title>開普敦租金收益率真相：11.53% 是全國平均，開普敦只有 9.49%</news:title>
+    </news:news>
+  </url>
+
 </urlset>
