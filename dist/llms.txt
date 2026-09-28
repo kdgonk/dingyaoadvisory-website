@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [開普敦 F1 2031 賽道計畫：投資人如何提前布局周邊房產？](/blog/cape-town-f1-2031-property-investment-guide) — 開普敦F1 2031賽道計畫總投資67億南非幣，賽道選址Malmesbury，帶動周邊房產投資機會與風險解析。
+- [Cape Town F1 2031 Circuit Plan: How Investors Can Position Early](/blog/cape-town-f1-2031-property-investment-guide-en) — Cape Town F1 2031 circuit plan total investment $410M USD near Malmesbury; surrounding property opportunities and risks.
 - [開普敦第二圈：Cape Winelands 為何稱霸南非最熱房產區？](/blog/cape-winelands-cape-town-second-ring-2026) — Cape Winelands 去化不到 50 天、議價成交率 95% 稱霸南非六大熱區；開普敦第二圈數據與佈局解析。
 - [Cape Winelands Property: Cape Town's Second Ring in 2026](/blog/cape-winelands-cape-town-second-ring-2026-en) — Cape Winelands sells in under 50 days at 95% asking-price ratio, topping SA's six hot districts; only Cape Town beats it.
 - [開普敦房價只漲不跌？190 個郊區裡的 9 個例外](/blog/cape-town-nine-suburbs-price-drop-2026) — 開普敦十年均價漲 55%，但 190 個郊區有 9 個在跌、最深 −34.1%；郊區風險判讀方法。
@@ -147,6 +149,8 @@
 
 Last updated: 2026-09-28
 ## Blog Articles
+- [cape-town-f1-2031-property-investment-guide](https://dingyaoadvisory.tw/blog/cape-town-f1-2031-property-investment-guide): 開普敦 F1 2031 賽道計畫：投資人如何提前布局周邊房產？
+- [cape-town-f1-2031-property-investment-guide-en](https://dingyaoadvisory.tw/blog/cape-town-f1-2031-property-investment-guide-en): Cape Town F1 2031 Circuit Plan: How Investors Can Position Early
 - [cape-winelands-cape-town-second-ring-2026](https://dingyaoadvisory.tw/blog/cape-winelands-cape-town-second-ring-2026): 開普敦第二圈：Cape Winelands 為何稱霸南非最熱房產區？
 - [cape-winelands-cape-town-second-ring-2026-en](https://dingyaoadvisory.tw/blog/cape-winelands-cape-town-second-ring-2026-en): Cape Winelands Property: Cape Town's Second Ring in 2026
 - [cape-town-nine-suburbs-price-drop-2026](https://dingyaoadvisory.tw/blog/cape-town-nine-suburbs-price-drop-2026): 開普敦房價只漲不跌？190 個郊區裡的 9 個例外
