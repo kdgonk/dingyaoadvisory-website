@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-24",
+  "last_updated": "2026-09-28",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,38 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "title": "開普敦第二圈：Cape Winelands 為何稱霸南非最熱房產區？",
+          "url": "https://dingyaoadvisory.tw/blog/cape-winelands-cape-town-second-ring-2026",
+          "language": "zh-TW",
+          "category": "置產投資 / 開普敦第二圈 / 區域解析",
+          "description": "Cape Winelands 去化不到 50 天、議價成交率 95% 稱霸南非六大熱區，五大都會僅開普敦勝過它。開普敦第二圈數據與佈局解析。",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "Cape Winelands Property: Cape Town's Second Ring in 2026",
+          "url": "https://dingyaoadvisory.tw/blog/cape-winelands-cape-town-second-ring-2026-en",
+          "language": "en",
+          "category": "Property Investment / Second Ring / Area Analysis",
+          "description": "Cape Winelands property sells in under 50 days at a 95% asking-price ratio, topping SA's six hot districts; only Cape Town beats it.",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "開普敦房價只漲不跌？190 個郊區裡的 9 個例外",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-nine-suburbs-price-drop-2026",
+          "language": "zh-TW",
+          "category": "置產投資 / 郊區風險 / 數據判讀",
+          "description": "開普敦十年均價從 R148 萬漲到 R230 萬，但 190 個郊區有 9 個在跌，最深 −34.1%。完整跌幅對照表＋判讀方法，立即索取郊區風險清單。",
+          "date": "2026-09-26"
+        },
+        {
+          "title": "Cape Town Suburbs: 9 of 190 See Prices Drop",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-nine-suburbs-price-drop-2026-en",
+          "language": "en",
+          "category": "Property Investment / Suburb Risk / Data Analysis",
+          "description": "Cape Town prices are up 55% in a decade, yet 9 of 190 suburbs are dropping - the deepest -34.1%. Suburb risk analysis.",
+          "date": "2026-09-26"
+        },
         {
           "title": "開普敦租金收益率真相：11.53% 是全國平均，開普敦只有 9.49%",
           "url": "https://dingyaoadvisory.tw/blog/cape-town-rental-yield-9-49-percent-reality-check-2026",
