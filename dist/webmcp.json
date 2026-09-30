@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-28",
+  "last_updated": "2026-09-30",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,20 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "sarb-rate-hike-september-2026-cape-town-foreign-buyers",
+          "title_zh": "南非升息後開普敦房產外國買家因應指南：SARB 9月升息全解析（2026）",
+          "title_en": "SARB Rate Hike September 2026: What Cape Town Property Foreign Buyers Should Do Now",
+          "published": "2026-09-30",
+          "category": "investment",
+          "tags": [
+            "SARB",
+            "interest rate",
+            "Cape Town property",
+            "foreign buyers",
+            "South Africa home loan"
+          ]
+        },
         {
           "title": "開普敦 F1 2031 賽道計畫：投資人如何提前布局周邊房產？",
           "url": "https://dingyaoadvisory.tw/blog/cape-town-f1-2031-property-investment-guide",
@@ -1252,6 +1266,19 @@
       "zh": "https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026",
       "en": "https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026-en",
       "purpose": "South Africa estate duty guide for Taiwanese heirs inheriting Cape Town property"
+    },
+    "sarb-rate-hike-september-2026-cape-town-foreign-buyers": {
+      "zh": {
+        "title": "南非升息後開普敦房產外國買家因應指南：SARB 9月升息全解析（2026）",
+        "description": "SARB 9月升息後，外國買家在開普敦房產該怎麼因應？prime 10.75%、月付增 R253、可貸額少 R50,000，但議價空間反而擴大。完整數據與三情境。立即索取融資架構分析。",
+        "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-september-2026-cape-town-foreign-buyers"
+      },
+      "en": {
+        "title": "SARB Rate Hike September 2026: What Cape Town Property Foreign Buyers Should Do Now",
+        "description": "SARB hiked 25bp to a 10.75% prime on 23 Sep 2026. What it costs Cape Town property foreign buyers: instalments, borrowing capacity and widening rate discounts. Get the financing analysis.",
+        "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-september-2026-cape-town-foreign-buyers-en"
+      },
+      "purpose": "Explain the September 2026 SARB rate hike impact on Cape Town property foreign buyers"
     }
   },
   "contact": {
