@@ -2,28 +2,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/sarb-rate-hike-september-2026-cape-town-foreign-buyers-en</loc>
-    <news:news>
-      <news:publication>
-        <news:name>DingYao Advisory</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T00:00:00+08:00</news:publication_date>
-      <news:title>SARB Rate Hike September 2026: Cape Town Guide</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/sarb-rate-hike-september-2026-cape-town-foreign-buyers</loc>
-    <news:news>
-      <news:publication>
-        <news:name>鼎曜國際顧問</news:name>
-        <news:language>zh-tw</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T00:00:00+08:00</news:publication_date>
-      <news:title>南非升息後開普敦房產外國買家因應指南（2026）</news:title>
-    </news:news>
-  </url>
-
 </urlset>
