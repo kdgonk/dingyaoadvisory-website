@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-06",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "cape-town-short-term-letting-by-law-2026-en",
+          "title": "Cape Town Short-Term Letting By-law 2026",
+          "description": "Cape Town's draft short-term letting by-law closed public comment 5 Oct 2026: let over 183 nights and property rates can triple (R1,274 to R3,945 a month). Three host scenarios and an action checklist. Get the Cape Town property analysis.",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026-en",
+          "language": "en",
+          "category": "regulation",
+          "published": "2026-10-06",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-short-term-letting-by-law-2026-hero.webp"
+        },
+        {
+          "slug": "cape-town-short-term-letting-by-law-2026",
+          "title": "開普敦短租法規 2026：Airbnb 房屋稅可能 3 倍",
+          "description": "開普敦短租法規草案 10/5 截止公眾意見：短租逾 183 晚改課商業房屋稅，南非房產稅率最高 3 倍（R1,274→R3,945）。三種房東情境與因應清單。立即索取開普敦投資評估。",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026",
+          "language": "zh-TW",
+          "category": "regulation",
+          "published": "2026-10-06",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-short-term-letting-by-law-2026-hero.webp"
+        },
         {
           "slug": "sarb-rate-hike-september-2026-cape-town-foreign-buyers",
           "title_zh": "南非升息後開普敦房產外國買家因應指南：SARB 9月升息全解析（2026）",
@@ -1279,6 +1299,11 @@
         "url": "https://dingyaoadvisory.tw/blog/sarb-rate-hike-september-2026-cape-town-foreign-buyers-en"
       },
       "purpose": "Explain the September 2026 SARB rate hike impact on Cape Town property foreign buyers"
+    },
+    "cape_town_short_term_letting_by_law_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026",
+      "en": "https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026-en",
+      "purpose": "開普敦短租法規 2026 解讀與投資因應"
     }
   },
   "contact": {
