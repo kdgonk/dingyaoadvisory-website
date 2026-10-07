@@ -2,4 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026-en</loc>
+    <news:news>
+      <news:publication>
+        <news:name>DingYao Advisory</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-06T00:00:00+08:00</news:publication_date>
+      <news:title>Cape Town Short-Term Letting By-law 2026</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>鼎曜國際顧問</news:name>
+        <news:language>zh-tw</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-06T00:00:00+08:00</news:publication_date>
+      <news:title>開普敦短租法規 2026：Airbnb 房屋稅可能 3 倍</news:title>
+    </news:news>
+  </url>
+
 </urlset>
