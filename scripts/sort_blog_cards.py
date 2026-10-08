@@ -188,15 +188,17 @@ def verify(path, lang):
     if disorders:
         ok = False
 
-    # 3. 格式檢查
+    # 3. 格式檢查：只驗 <div class="blog-meta"> 區塊，避免摘要中的合法日期誤判
     fmt_bad = 0
     for i, card in enumerate(cards):
+        meta = re.search(r'<div\s+class="blog-meta"\s*>(.*?)</div>', card, re.S)
+        meta_str = meta.group(1) if meta else card
         if lang == "zh":
-            if re.search(r"\d{4}-\d{2}-\d{2}", card) or "min read" in card or "分鐘閱讀" not in card:
+            if re.search(r"\d{4}-\d{2}-\d{2}", meta_str) or "min read" in meta_str or "分鐘閱讀" not in meta_str:
                 print(f"[{lang}] ❌ #{i+1} 格式異常")
                 fmt_bad += 1
         else:
-            if re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{1,2}, \d{4}", card) or "min read" not in card:
+            if re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{1,2}, \d{4}", meta_str) or "min read" not in meta_str:
                 print(f"[{lang}] ❌ #{i+1} 格式異常")
                 fmt_bad += 1
     print(f"[{lang}] 格式異常: {fmt_bad} 張")
