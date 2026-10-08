@@ -671,6 +671,11 @@ blockquote cite {
 </script>
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 <script defer data-domain="dingyaoadvisory.tw" src="https://plausible.dingyaoadvisory.tw/js/script.js"></script>
+
+<style>
+@media(min-width:1024px){.lm-sticky{position:sticky;top:96px;}}
+</style>
+<link rel="stylesheet" href="/css/lm-form.css">
 </head>
 <body>
 
@@ -924,6 +929,57 @@ blockquote cite {
   </div>
 </section>
 
+<!-- Lead Magnet blog article: before CTA — NEW block. Does NOT modify #contactForm. -->
+<section class="section lm-section" id="free-guide">
+  <div class="container">
+    <div class="lm-card fade-in" id="lmCard">
+      <span class="lm-badge"><i class="fas fa-file-arrow-down" style="margin-right:6px"></i>免費下載</span>
+      <h2>免費下載《台灣高資產的海外資產配置工具書》</h2>
+      <p class="lm-sub">5 大工具一張表看懂 —— 不動產、保單、券商、定存、黃金，該怎麼配？</p>
+      <ul class="lm-points">
+        <li>五大工具比較表：流動性、稅務、匯率、門檻一張表看懂</li>
+        <li>南非房產在配置中的角色：租金現金流 × 資本利得</li>
+        <li>匯率風險管理：台幣與南非幣之間的實務做法</li>
+        <li>跨境傳承 3 個常見誤解＋進場前必問自己的 12 個問題檢核表</li>
+      </ul>
+      <form id="lmForm" onsubmit="return submitLmForm(event, 'lm_allocation_guide')">
+        <div class="form-group">
+          <label for="lmName">您的稱呼</label>
+          <input type="text" id="lmName" name="lmName" placeholder="王先生 / Ms. Chen（不填也可以）">
+        </div>
+        <div class="form-group">
+          <label for="lmEmail">Email <span class="req">*</span></label>
+          <input type="email" id="lmEmail" name="lmEmail" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="lmInterest">您目前最想了解的方向</label>
+          <select id="lmInterest" name="lmInterest">
+            <option value="">請選擇（可不選）</option>
+            <option value="海外資產配置">海外資產配置</option>
+            <option value="身分與居留">身分與居留</option>
+            <option value="兩者都想了解">兩者都想了解</option>
+          </select>
+        </div>
+        <div class="lm-consent">
+          <label class="lm-check">
+            <input type="checkbox" id="lmConsent" name="lmConsent" required>
+            <span>我同意鼎曜國際顧問依《隱私權政策》寄送本份下載內容及後續市場資訊給我。（<a href="/privacy" target="_blank" rel="noopener">隱私權政策</a>）</span>
+          </label>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">寄給我這份工具書 <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div id="lmSuccess" class="lm-success" style="display:none">
+        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+        <h3>已寄出！</h3>
+        <p>已寄出！請到信箱收信（若沒看到，檢查促銷／垃圾信匣）。</p>
+      </div>
+      <p class="lm-disclaimer">本下載內容僅為一般性資訊分享，<strong>不構成投資建議、要約、招攬、房產居間或購房服務</strong>。鼎曜國際顧問在台灣<strong>不從事不動產經紀、居間或代銷業務</strong>。所有投資決策應由您自行判斷或諮詢您所在地之專業人士。</p>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section cta-section">
   <div class="container">
@@ -1081,6 +1137,8 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   <button onclick="document.getElementById('cookieConsent').style.display='none'">接受</button>
 </div>
 
+
+<script src="/js/lm-form.js"></script>
 </body>
 </html>
 

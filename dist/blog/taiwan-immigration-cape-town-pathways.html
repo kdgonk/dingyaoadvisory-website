@@ -667,6 +667,11 @@ blockquote cite {
   ]
 }
 </script>
+
+<style>
+@media(min-width:1024px){.lm-sticky{position:sticky;top:96px;}}
+</style>
+<link rel="stylesheet" href="/css/lm-form.css">
 </head>
 <body>
 
@@ -882,6 +887,57 @@ blockquote cite {
   </div>
 </section>
 
+<!-- Lead Magnet currently orphan — NEW block. Does NOT modify #contactForm. -->
+<section class="section lm-section" id="free-guide">
+  <div class="container">
+    <div class="lm-card fade-in" id="lmCard">
+      <span class="lm-badge"><i class="fas fa-file-arrow-down" style="margin-right:6px"></i>免費下載</span>
+      <h2>免費下載《南非護照免簽 100+ 國完整清單》</h2>
+      <p class="lm-sub">免簽國分區清單 ＋ 台灣人 4 條居留路徑檢核表</p>
+      <ul class="lm-points">
+        <li>免簽國分區清單（非洲／美洲／亞洲中東／歐洲／大洋洲）附停留天數</li>
+        <li>2026 年最新變動：哪些國家新增、哪些失去免簽</li>
+        <li>台灣人取得南非永久居留的 4 條路徑比較（投資／退休／遠端工作／依親）</li>
+        <li>申請前文件檢核表：最常造成延誤的 3 類文件</li>
+      </ul>
+      <form id="lmForm" onsubmit="return submitLmForm(event, 'lm_passport_checklist')">
+        <div class="form-group">
+          <label for="lmName">您的稱呼</label>
+          <input type="text" id="lmName" name="lmName" placeholder="王先生 / Ms. Chen（不填也可以）">
+        </div>
+        <div class="form-group">
+          <label for="lmEmail">Email <span class="req">*</span></label>
+          <input type="email" id="lmEmail" name="lmEmail" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="lmInterest">您目前最想了解的方向</label>
+          <select id="lmInterest" name="lmInterest">
+            <option value="">請選擇（可不選）</option>
+            <option value="海外資產配置">海外資產配置</option>
+            <option value="身分與居留">身分與居留</option>
+            <option value="兩者都想了解">兩者都想了解</option>
+          </select>
+        </div>
+        <div class="lm-consent">
+          <label class="lm-check">
+            <input type="checkbox" id="lmConsent" name="lmConsent" required>
+            <span>我同意鼎曜國際顧問依《隱私權政策》寄送本份下載內容及後續市場資訊給我。（<a href="/privacy" target="_blank" rel="noopener">隱私權政策</a>）</span>
+          </label>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">寄給我這份清單 <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div id="lmSuccess" class="lm-success" style="display:none">
+        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+        <h3>已寄出！</h3>
+        <p>已寄出！請到信箱收信（若沒看到，檢查促銷／垃圾信匣）。</p>
+      </div>
+      <p class="lm-disclaimer">本下載內容僅為一般性資訊分享，<strong>不構成投資建議、要約、招攬、房產居間或購房服務</strong>。鼎曜國際顧問在台灣<strong>不從事不動產經紀、居間或代銷業務</strong>。所有投資決策應由您自行判斷或諮詢您所在地之專業人士。</p>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section cta-section">
   <div class="container">
@@ -1021,5 +1077,7 @@ if(localStorage.getItem('cookieConsent')==='accepted'){
 })();
 </script>
 
+
+<script src="/js/lm-form.js"></script>
 </body>
 </html>

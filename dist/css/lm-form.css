@@ -1,0 +1,40 @@
+/* Lead Magnet (#lmForm) — self-contained, .lm- prefixed. Does not touch #contactForm. */
+.lm-section{padding:64px 0;}
+.lm-card{max-width:760px;margin:0 auto;padding:48px 40px;border:1px solid var(--card-border,rgba(255,255,255,.12));
+  background:var(--card-bg,rgba(255,255,255,.03));position:relative;
+  background-image:linear-gradient(180deg,rgba(212,175,55,.06),transparent 60%);}
+.lm-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold,#d4af37),transparent);opacity:.5;}
+.lm-badge{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold,#d4af37);border:1px solid var(--card-border,rgba(255,255,255,.16));
+  padding:5px 12px;margin-bottom:18px;}
+.lm-card h2{font-family:var(--font-heading,inherit);font-size:1.6rem;line-height:1.35;margin:0 0 12px;}
+.lm-card h2 .gold{color:var(--gold,#d4af37);}
+.lm-sub{color:var(--text-muted,rgba(255,255,255,.7));margin:0 0 22px;line-height:1.7;}
+.lm-points{list-style:none;padding:0;margin:0 0 26px;}
+.lm-points li{padding:7px 0 7px 26px;position:relative;color:var(--text-muted,rgba(255,255,255,.75));
+  font-size:.94rem;line-height:1.6;}
+.lm-points li::before{content:'\f00c';font-family:'Font Awesome 6 Free';font-weight:900;
+  color:var(--gold,#d4af37);position:absolute;left:0;font-size:.8rem;top:9px;}
+.lm-card .form-group{margin-bottom:16px;}
+.lm-card label{display:block;font-size:.86rem;margin-bottom:7px;letter-spacing:.02em;}
+.lm-card label .req{color:var(--gold,#d4af37);}
+.lm-card input[type=text],.lm-card input[type=email],.lm-card select{width:100%;padding:12px 14px;
+  background:rgba(255,255,255,.05);border:1px solid var(--card-border,rgba(255,255,255,.16));
+  color:inherit;font-size:.95rem;font-family:inherit;}
+.lm-card input:focus,.lm-card select:focus{outline:none;border-color:var(--gold,#d4af37);}
+.lm-consent{margin:18px 0 6px;padding:14px;border:1px solid var(--card-border,rgba(255,255,255,.12));
+  background:rgba(255,255,255,.02);}
+.lm-check{display:flex;gap:10px;align-items:flex-start;font-size:.84rem;line-height:1.65;
+  color:var(--text-muted,rgba(255,255,255,.72));cursor:pointer;margin:0;}
+.lm-check input[type=checkbox]{margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--gold,#d4af37);}
+.lm-check a{color:var(--gold,#d4af37);text-decoration:underline;}
+.lm-card .form-submit{margin-top:20px;}
+.lm-card .form-submit .btn{width:100%;}
+.lm-success{text-align:center;padding:18px 0;}
+.lm-success .success-icon{font-size:2.4rem;color:var(--gold,#d4af37);margin-bottom:12px;}
+.lm-success h3{margin:0 0 8px;font-family:var(--font-heading,inherit);}
+.lm-success p{margin:0;color:var(--text-muted,rgba(255,255,255,.75));}
+.lm-disclaimer{font-size:.76rem;line-height:1.75;color:var(--text-muted,rgba(255,255,255,.55));
+  margin:24px 0 0;padding-top:18px;border-top:1px solid var(--card-border,rgba(255,255,255,.1));}
+.lm-sticky{position:static;}
