@@ -1,7 +1,96 @@
-# 2026-10-06 301 redirects for GSC exposed 404 EN pages
-/blog/south-africa-silicon-valley-en /blog/cape-town-africa-most-international-city-2026-en 301
-/blog/cape-town-african-silicon-valley-en /blog/cape-town-africa-most-international-city-2026-en 301
-/blog/cape-town-quality-of-life-en /blog/cape-town-quality-of-life-cost-comparison-en 301
-/blog/taiwan-high-net-worth-overseas-accounts-en /blog/taiwan-wealthy-overseas-allocation-en 301
-/blog/south-africa-defence-exports-en /blog/south-africa-investment-opportunities-2026-en 301
-/blog/south-africa-nuclear-disarmament-en /blog/south-africa-investment-opportunities-2026-en 301
+# GSC 404 redirects — dingyaoadvisory.tw
+# 2026-10-08: 88 historical deleted slugs → 301 (Saturnian diagnosis)
+#
+# Tier 1 — existing high-quality mappings (Titan 2026-10-06)
+/blog/south-africa-silicon-valley-en    /blog/cape-town-africa-most-international-city-2026-en    301
+/blog/cape-town-african-silicon-valley-en    /blog/cape-town-africa-most-international-city-2026-en    301
+/blog/cape-town-quality-of-life-en    /blog/cape-town-quality-of-life-cost-comparison-en    301
+/blog/taiwan-high-net-worth-overseas-accounts-en    /blog/taiwan-wealthy-overseas-allocation-en    301
+/blog/south-africa-defence-exports-en    /blog/south-africa-investment-opportunities-2026-en    301
+/blog/south-africa-nuclear-disarmament-en    /blog/south-africa-investment-opportunities-2026-en    301
+
+# Tier 2 — high-confidence topic match (Saturnian, similarity-verified)
+/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo    /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026    301
+/blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2    /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026    301
+/blog/cape-town-quality-of-life    /blog/cape-town-quality-life-property-demand-2026    301
+/blog/overseas-asset-allocation    /blog/taiwan-wealthy-overseas-asset-allocation-2026    301
+/blog/overseas-asset-allocation-en    /blog/taiwan-wealthy-overseas-allocation-en    301
+/blog/cape-town-property-overseas-asset    /blog/cape-town-property-outlook-2026-overseas-investors    301
+/blog/cape-town-property-overseas-asset-en    /blog/cape-town-property-outlook-2026-overseas-investors-en    301
+/blog/cape-town-property-trends-2026    /blog/international-buyers-cape-town-foreign-property-trends-2026    301
+/blog/cape-town-property-trends-2026-en    /blog/international-buyers-cape-town-foreign-property-trends-2026-en    301
+/blog/south-africa-investment-2025    /blog/cape-town-property-investment-2026    301
+/blog/south-africa-investment-2025-en    /blog/cape-town-property-investment-2026-en    301
+/blog/south-africa-real-estate-investment-2026    /blog/global-real-estate-recovery    301
+/blog/south-africa-real-estate-investment-2026-en    /blog/global-real-estate-recovery-en    301
+/blog/south-africa-skilled-talent-return    /blog/south-africa-talent-return-v2    301
+/blog/south-africa-skilled-talent-return-en    /blog/south-africa-talent-return-v2-en    301
+/blog/stop-loss-emotion-en    /blog/stop-loss-emotion-cape-town-passive-income-en    301
+/blog/zar-at-1644-cape-town-property    /blog/zar-depreciation-cape-town-property-opportunity-2026    301
+/blog/zar-at-1644-cape-town-property-en    /blog/zar-depreciation-cape-town-property-opportunity-2026-en    301
+/blog/zar-at-1644-cape-town-property-zh    /blog/zar-depreciation-cape-town-property-opportunity-2026    301
+/blog/2026-05-20-sa-property-recovery-g20-opportunity    /blog/g20-cape-town-property-opportunities    301
+/blog/2026-05-20-sa-property-recovery-g20-opportunity-en    /blog/g20-cape-town-property-opportunities-en    301
+
+# Tier 3 — no close match: zh → /blog, en → /blog-en
+/blog/bank-of-america-south-africa-top-ranked    /blog    301
+/blog/bank-of-america-south-africa-top-ranked-en    /blog-en    301
+/blog/cape-town-african-silicon-valley    /blog    301
+/blog/cape-town-airport-awards    /blog    301
+/blog/cape-town-airport-awards-en    /blog-en    301
+/blog/cape-town-property-hidden-costs    /blog    301
+/blog/cape-town-property-hidden-costs-en    /blog-en    301
+/blog/capital-haven    /blog    301
+/blog/capital-haven-en    /blog-en    301
+/blog/china-south-africa-investment-momentum    /blog    301
+/blog/china-south-africa-investment-momentum-en    /blog-en    301
+/blog/global-asset-allocation-second-home    /blog    301
+/blog/global-asset-allocation-second-home-en    /blog-en    301
+/blog/global-property-risk-map-2026    /blog    301
+/blog/global-property-risk-map-2026-en    /blog-en    301
+/blog/mahindra-south-africa-ckd-manufacturing    /blog    301
+/blog/mahindra-south-africa-ckd-manufacturing-en    /blog-en    301
+/blog/overseas-property-traps-southeast-asia    /blog    301
+/blog/overseas-property-traps-southeast-asia-en    /blog-en    301
+/blog/rand-undervalued-sa-property-dual-return    /blog    301
+/blog/rand-undervalued-sa-property-dual-return-en    /blog-en    301
+/blog/sa-elite-estates-5year-growth    /blog    301
+/blog/sa-elite-estates-5year-growth-en    /blog-en    301
+/blog/sa-elite-estates-5year-growth-zh    /blog    301
+/blog/sa-landlord-confidence-record-high    /blog    301
+/blog/sa-landlord-confidence-record-high-en    /blog-en    301
+/blog/sa-landlord-confidence-record-high-zh    /blog    301
+/blog/sa-rand-pressure-investment-opportunity    /blog    301
+/blog/sa-rand-pressure-investment-opportunity-zh    /blog    301
+/blog/sa-tw-property-roi    /blog    301
+/blog/sa-tw-property-roi-en    /blog-en    301
+/blog/second-home-global-asset-allocation    /blog    301
+/blog/second-home-global-asset-allocation-en    /blog-en    301
+/blog/south-africa-antarctic-research    /blog    301
+/blog/south-africa-antarctic-research-en    /blog-en    301
+/blog/south-africa-defence-exports    /blog    301
+/blog/south-africa-kidney-gene-research    /blog    301
+/blog/south-africa-kidney-gene-research-en    /blog-en    301
+/blog/south-africa-nuclear-disarmament    /blog    301
+/blog/south-africa-nuclear-history-cape-town    /blog    301
+/blog/south-africa-nuclear-history-cape-town-en    /blog-en    301
+/blog/south-africa-silicon-valley    /blog    301
+/blog/south-africa-tourism-q1-2024    /blog    301
+/blog/south-africa-tourism-q1-2024-en    /blog-en    301
+/blog/south-africa-tourism-rental-2025    /blog    301
+/blog/south-africa-tourism-rental-2025-en    /blog-en    301
+/blog/south-africa-trade-guide-2025    /blog    301
+/blog/south-africa-trade-guide-2025-en    /blog-en    301
+/blog/stock-stop-loss-vs-cape-town-property    /blog    301
+/blog/stock-stop-loss-vs-cape-town-property-en    /blog-en    301
+/blog/taiwan-capital-flight-cape-town-property    /blog    301
+/blog/taiwan-capital-flight-cape-town-property-en    /blog-en    301
+/blog/taiwan-high-net-worth-overseas-accounts    /blog    301
+/blog/tsmc-breakthrough-cape-town-property    /blog    301
+/blog/tsmc-breakthrough-cape-town-property-en    /blog-en    301
+/blog/tw-high-net-worth-offshore-account    /blog    301
+/blog/tw-high-net-worth-offshore-account-en    /blog-en    301
+/blog/tw-high-net-worth-offshore-account-zh    /blog    301
+/blog/western-cape-business-travel-recovery-2025-en    /blog-en    301
+/blog/zar-undervalued-cape-town-property-return    /blog    301
+/blog/zar-undervalued-cape-town-property-return-en    /blog-en    301
