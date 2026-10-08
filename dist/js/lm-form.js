@@ -11,19 +11,26 @@ function submitLmForm(e, source) {
   var label = btn.innerHTML;
   btn.disabled = true;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送出中...';
-  fetch('/api/lead-magnet', {
+  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+    },
     body: JSON.stringify({
-      source: source,
+      inbox_id: 2,
       name: name,
       email: email,
-      interest: interest || ''
+      custom_attributes: {
+        source: source || 'lead_magnet',
+        interest: interest || '',
+        lm_consent: 'granted (checkbox checked at submit)'
+      }
     })
   })
   .then(function(res){ return res.json(); })
   .then(function(data){
-    if (data.ok) {
+    if (data.payload && data.payload.contact) {
       if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', { event_category: 'lead_magnet', event_label: source });
       } else if (window.dataLayer) {

@@ -1728,15 +1728,22 @@ function submitHomeContact(e) {
   btn.disabled = true;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送出中...';
 
-  fetch('/api/contact', {
+  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+    },
     body: JSON.stringify({
+      inbox_id: 2,
       name: name,
       email: email,
-      phone: phone,
-      budget: budget,
-      interest: interest
+      phone_number: phone,
+      custom_attributes: {
+        source: 'home_page',
+        budget: budget || '',
+        interest: interest || ''
+      }
     })
   })
   .then(res => res.json())
