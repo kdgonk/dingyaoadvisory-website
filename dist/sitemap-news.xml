@@ -3,26 +3,86 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
-    <loc>https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026-en</loc>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-foreshore-precinct-redevelopment-2026-en</loc>
     <news:news>
       <news:publication>
         <news:name>DingYao Advisory</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-06T00:00:00+08:00</news:publication_date>
-      <news:title>Cape Town Short-Term Letting By-law 2026</news:title>
+      <news:publication_date>2026-10-08T00:00:00+08:00</news:publication_date>
+      <news:title>Cape Town Foreshore Precinct 2026: CBD Impact</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026</loc>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-foreshore-precinct-redevelopment-2026</loc>
     <news:news>
       <news:publication>
         <news:name>鼎曜國際顧問</news:name>
         <news:language>zh-tw</news:language>
       </news:publication>
-      <news:publication_date>2026-10-06T00:00:00+08:00</news:publication_date>
-      <news:title>開普敦短租法規 2026：Airbnb 房屋稅可能 3 倍</news:title>
+      <news:publication_date>2026-10-08T00:00:00+08:00</news:publication_date>
+      <news:title>開普敦前灘開發 2026：50 年未完工高架將拆建新橋隧道</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-gated-communities-guide-2026-en</loc>
+    <news:news>
+      <news:publication>
+        <news:name>DingYao Advisory</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T00:00:00+08:00</news:publication_date>
+      <news:title>Cape Town Gated Communities Guide 2026: Levies</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cape-town-gated-communities-guide-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>鼎曜國際顧問</news:name>
+        <news:language>zh-tw</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T00:00:00+08:00</news:publication_date>
+      <news:title>開普敦門禁社區完整指南 2026：類型、管理費與外國買家流程</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cost-of-living-in-cape-town-2026-en</loc>
+    <news:news>
+      <news:publication>
+        <news:name>DingYao Advisory</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T00:00:00+08:00</news:publication_date>
+      <news:title>Cost of Living in Cape Town 2026: Rent &amp; Budgets</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/cost-of-living-in-cape-town-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>鼎曜國際顧問</news:name>
+        <news:language>zh-tw</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T00:00:00+08:00</news:publication_date>
+      <news:title>開普敦生活成本 2026：租金、教育與每月預算逐項拆解</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-asset-allocation-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>鼎曜國際顧問</news:name>
+        <news:language>zh-tw</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T00:00:00+08:00</news:publication_date>
+      <news:title>海外資產配置 2026：台灣高資產族的工具比較與開普敦配置邏輯</news:title>
     </news:news>
   </url>
 
