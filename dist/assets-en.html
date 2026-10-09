@@ -1333,6 +1333,67 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   font-weight: 800;
   color: var(--gold);
 }
+/* ===== FAQ ===== */
+.faq {
+  background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
+  position: relative;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border: 1px solid var(--card-border);
+  margin-bottom: 12px;
+  background: var(--card-bg);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+.faq-item:hover {
+  border-color: rgba(201, 168, 76, 0.2);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--warm-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+  gap: 16px;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-question i {
+  font-size: 0.8rem;
+  color: var(--gold);
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+.faq-answer p {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 .cta-section {
   background: var(--navy-deep);
   position: relative;
@@ -1418,6 +1479,39 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the minimum for DingYao's premium asset allocation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cape Town premium estates start from R16M (ZAR), alongside Stellenbosch heritage wine estates and Constantia embassy-belt properties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are returns estimated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An interactive ROI calculator models projected annual returns from your parameters; actual returns depend on market and rental conditions and are not guaranteed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What asset types are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cape Town premium estates, Stellenbosch wine estates and Constantia embassy-belt properties — balancing rental cash flow and capital growth."
+      }
+    }
+  ]
+}
+</script>
+
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
@@ -1803,6 +1897,46 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="section-label">Frequently Asked Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about this service</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What is the minimum for DingYao's premium asset allocation?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Cape Town premium estates start from R16M (ZAR), alongside Stellenbosch heritage wine estates and Constantia embassy-belt properties.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How are returns estimated?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>An interactive ROI calculator models projected annual returns from your parameters; actual returns depend on market and rental conditions and are not guaranteed.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What asset types are available?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Cape Town premium estates, Stellenbosch wine estates and Constantia embassy-belt properties — balancing rental cash flow and capital growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section cta-section" id="cta">
   <div class="section-bg">
@@ -1914,5 +2048,9 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
 </script>
 
+<script>
+function toggleFaq(el){el.classList.toggle('active');}
+// FAQ section for assets-en.html
+</script>
 </body>
 </html>

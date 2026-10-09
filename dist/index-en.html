@@ -1050,6 +1050,67 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .contact-success h3{font-size:1.5rem;margin-bottom:12px;color:#C9A84C}
 .contact-success p{color:#F5F0E8AA;line-height:1.8;max-width:400px;margin:0 auto 10px}
 .contact-success a{color:#C9A84C;text-decoration:underline}
+/* ===== FAQ ===== */
+.faq {
+  background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
+  position: relative;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border: 1px solid var(--card-border);
+  margin-bottom: 12px;
+  background: var(--card-bg);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+.faq-item:hover {
+  border-color: rgba(201, 168, 76, 0.2);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--warm-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+  gap: 16px;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-question i {
+  font-size: 0.8rem;
+  color: var(--gold);
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+.faq-answer p {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 </style>
 
 <!-- Google Tag Manager -->
@@ -1088,6 +1149,39 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does DingYao Advisory offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SA property investment, PR/residency planning, digital-asset custody and premium education, connecting partners Crestline Advisory and CanvasCrest into one cross-border ecosystem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the \"Golden Triangle\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crestline Advisory (local advisory), CanvasCrest Properties (premium developer) and Standard Bank (international finance) — three pillars covering everything from advisory to finance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the entry threshold and returns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cape Town premium estates start from R16M with a dual-engine structure (property plus a 6-7% floating high-yield deposit); annual cash-flow reference range R1,171,000–1,380,000."
+      }
+    }
+  ]
+}
+</script>
+
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
@@ -1578,6 +1672,46 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 
 <!-- Footer -->
 
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="section-label">Frequently Asked Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about this service</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What services does DingYao Advisory offer?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>SA property investment, PR/residency planning, digital-asset custody and premium education, connecting partners Crestline Advisory and CanvasCrest into one cross-border ecosystem.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What is the "Golden Triangle"?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Crestline Advisory (local advisory), CanvasCrest Properties (premium developer) and Standard Bank (international finance) — three pillars covering everything from advisory to finance.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What are the entry threshold and returns?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Cape Town premium estates start from R16M with a dual-engine structure (property plus a 6-7% floating high-yield deposit); annual cash-flow reference range R1,171,000–1,380,000.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main><footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -1724,5 +1858,9 @@ function submitHomeContact(e) {
 }
 </script>
 
+<script>
+function toggleFaq(el){el.classList.toggle('active');}
+// FAQ section for index-en.html
+</script>
 </body>
 </html>

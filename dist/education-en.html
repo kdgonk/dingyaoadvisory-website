@@ -1181,6 +1181,67 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cookie-btn-more{background:transparent;color:#F5F0E8AA;border:1px solid rgba(245,240,232,0.15);padding:10px 20px;border-radius:4px;font-size:0.85rem;cursor:pointer;transition:all 0.3s;white-space:nowrap}
 .cookie-btn-more:hover{border-color:#F5F0E8;color:#F5F0E8}
 @media(max-width:640px){.cookie-inner{flex-direction:column;text-align:center}.cookie-btns{width:100%;justify-content:center}}
+/* ===== FAQ ===== */
+.faq {
+  background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
+  position: relative;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border: 1px solid var(--card-border);
+  margin-bottom: 12px;
+  background: var(--card-bg);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+.faq-item:hover {
+  border-color: rgba(201, 168, 76, 0.2);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--warm-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+  gap: 16px;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-question i {
+  font-size: 0.8rem;
+  color: var(--gold);
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+.faq-answer p {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
@@ -1226,6 +1287,39 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why choose South African private education?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top SA private schools offer full-English instruction, world-class academic standards and safe campuses, at roughly one-half to one-third of Taipei international-school fees — combinable with property investment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which top private schools does DingYao work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hilton College, Bishop's Diocesan College, St Anne's Diocesan College and Michael House, among others."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does education planning combine with property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buying in top school-catchment suburbs (Claremont, Rondebosch, Southern Suburbs) turns education spending into a family lifestyle and asset investment."
+      }
+    }
+  ]
+}
+</script>
+
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
@@ -1699,6 +1793,46 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 
 <!-- Footer -->
 
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="section-label">Frequently Asked Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about this service</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Why choose South African private education?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Top SA private schools offer full-English instruction, world-class academic standards and safe campuses, at roughly one-half to one-third of Taipei international-school fees — combinable with property investment.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Which top private schools does DingYao work with?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Hilton College, Bishop's Diocesan College, St Anne's Diocesan College and Michael House, among others.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How does education planning combine with property?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Buying in top school-catchment suburbs (Claremont, Rondebosch, Southern Suburbs) turns education spending into a family lifestyle and asset investment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main><footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -1790,5 +1924,9 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
 </script>
 
+<script>
+function toggleFaq(el){el.classList.toggle('active');}
+// FAQ section for education-en.html
+</script>
 </body>
 </html>

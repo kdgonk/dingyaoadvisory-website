@@ -1413,6 +1413,39 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "申請南非 PR 需要多長時間？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般約需 6 至 12 個月，實際取決於文件完整性與南非內政部審核進度，Crestline Advisory 團隊將全程協助。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "資產門檻南非幣 R1,600 萬是否包含房產？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是。R1,600 萬淨資產可包含房產、銀行存款、股票、基金等多種形式，顧問將協助整理資產證明文件。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "取得 PR 後需要在南非居住嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "需滿足一定居住要求，通常每年至少居住 3 個月，或每 3 年累計居住 12 個月；實際要求依個人情況而異。"
+      }
+    }
+  ]
+}
+</script>
+
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
@@ -1888,5 +1921,9 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
 </script>
 
+<script>
+function toggleFaq(el){el.classList.toggle('active');}
+// FAQ section for residency.html
+</script>
 </body>
 </html>

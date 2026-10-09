@@ -88,6 +88,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is DingYao Advisory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DingYao Advisory is a Taiwan-based consultancy for Cape Town property investment — with an on-the-ground South African team — covering market analysis, legal structuring and capital planning end to end."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are DingYao's core values?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Integrity first, tailored planning, local expertise and data-driven decisions, working with Cape Town partner Crestline Advisory plus licensed lawyers and accountants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is on the DingYao team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Business development is led by Scott Huang, collaborating with South African chief architect Sandile Mbeko and the Crestline Advisory local team."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -271,6 +304,67 @@
 .team-card-body .social a:hover { color: var(--gold); }
 
 /* ===== CTA ===== */
+/* ===== FAQ ===== */
+.faq {
+  background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
+  position: relative;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border: 1px solid var(--card-border);
+  margin-bottom: 12px;
+  background: var(--card-bg);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+.faq-item:hover {
+  border-color: rgba(201, 168, 76, 0.2);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--warm-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+  gap: 16px;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-question i {
+  font-size: 0.8rem;
+  color: var(--gold);
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+.faq-answer p {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 .cta-section {
   padding: 80px 24px;
   text-align: center;
@@ -1431,6 +1525,46 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="section-label">Frequently Asked Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about this service</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What is DingYao Advisory?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>DingYao Advisory is a Taiwan-based consultancy for Cape Town property investment — with an on-the-ground South African team — covering market analysis, legal structuring and capital planning end to end.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What are DingYao's core values?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Integrity first, tailored planning, local expertise and data-driven decisions, working with Cape Town partner Crestline Advisory plus licensed lawyers and accountants.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Who is on the DingYao team?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Business development is led by Scott Huang, collaborating with South African chief architect Sandile Mbeko and the Crestline Advisory local team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section">
   <h2>Ready to Start Your <span class="gold">Cape Town</span> Journey?</h2>
@@ -1519,6 +1653,10 @@ window.addEventListener('scroll', function() {
     navbar.style.background = 'rgba(10,14,23,0.95)';
   }
 });
+</script>
+<script>
+function toggleFaq(el){el.classList.toggle('active');}
+// FAQ section for about-en.html
 </script>
 </body>
 </html>
