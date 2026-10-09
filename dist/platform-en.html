@@ -1158,12 +1158,14 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </script>
 
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<style id="seo-a11y-outline">.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
 </head>
 <body>
+<h2 class="sr-only">Digital Platform</h2>
 <div class="cookie-consent" id="cookieConsent">
   <div class="cookie-inner">
     <div class="cookie-text">
-      <p>This website uses cookies to enhance your experience. By continuing to browse, you agree to our <a href="/privacy-en">Privacy Policy</a> and <a href="/terms-en">Terms of Service</a>.</p>
+      <p>This website uses cookies to enhance your experience. By continuing to browse, you agree to our <a href="/privacy-en" title="Privacy Policy">Privacy Policy</a> and <a href="/terms-en" title="Terms of Service">Terms of Service</a>.</p>
     </div>
     <div class="cookie-btns">
       <button class="cookie-btn-more" onclick="window.location.href='/privacy-en'">Learn More</button>
@@ -1186,19 +1188,20 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="Main navigation">
+<h2 class="sr-only">Main navigation</h2>
   <div class="container">
-    <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="/index-en" class="nav-logo" id="navLogo" title="DYA DING YAO ADVISORY APAC HUB">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
     <div class="nav-links" id="navLinks">
-      <a href="/partners-en">Partners</a>
-      <a href="/platform-en">Platform</a>
-      <a href="/education-en">Education</a>
-      <a href="/retirement-en" class="gold">Retirement</a>
-      <a href="/residency-en">Residency</a>
-      <a href="/assets-en">Assets</a>
-      <a href="/tour-en">Tour</a>
-      <a href="/blog-en">Insights</a>
-      <a href="/consultation-en" class="btn-nav">Consultation</a>
-      <div class="nav-lang" id="langSwitcher"><a href="#" class="" id="langTw">TW</a><span>/</span><a href="#" class="active" id="langEn">EN</a>
+      <a href="/partners-en" title="Partners">Partners</a>
+      <a href="/platform-en" title="Platform">Platform</a>
+      <a href="/education-en" title="Education">Education</a>
+      <a href="/retirement-en" class="gold" title="Retirement">Retirement</a>
+      <a href="/residency-en" title="Residency">Residency</a>
+      <a href="/assets-en" title="Assets">Assets</a>
+      <a href="/tour-en" title="Tour">Tour</a>
+      <a href="/blog-en" title="Insights">Insights</a>
+      <a href="/consultation-en" class="btn-nav" title="Consultation">Consultation</a>
+      <div class="nav-lang" id="langSwitcher"><a href="#" class="" id="langTw" title="TW">TW</a><span>/</span><a href="#" class="active" id="langEn" title="EN">EN</a>
 <script>
 (function(){
   var path = window.location.pathname;
@@ -1248,8 +1251,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <h1 class="hero-title fade-in visible fade-in-delay-1">Your 24/7<br><span class="gold">Digital Asset Butler</span></h1>
       <p class="hero-desc fade-in visible fade-in-delay-2">Real-time monitoring of your overseas assets — from project milestones to cash flow and taxes, from document management to instant notifications. Everything at your fingertips on one platform.</p>
       <div class="hero-btns fade-in visible fade-in-delay-3">
-        <a href="#cta" class="btn btn-primary">Book a Demo <i class="fas fa-arrow-right"></i></a>
-        <a href="#modules" class="btn btn-outline">Explore Features <i class="fas fa-chevron-down"></i></a>
+        <a href="#cta" class="btn btn-primary" title="Book a Demo">Book a Demo <i class="fas fa-arrow-right"></i></a>
+        <a href="#modules" class="btn btn-outline" title="Explore Features">Explore Features <i class="fas fa-chevron-down"></i></a>
       </div>
     </div>
   </div>
@@ -1301,7 +1304,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </div>
     <div class="modules-grid">
       <div class="module-card fade-in fade-in-delay-1">
-        <img class="module-img" src="https://assets.dingyaoadvisory.tw/redesign/platform-hero-bg.webp" alt="Transparent Project Milestones" loading="lazy">
+        <img class="module-img" src="https://assets.dingyaoadvisory.tw/redesign/platform-hero-bg.webp" alt="Transparent Project Milestones" loading="lazy" title="Transparent Project Milestones">
         <div class="module-body">
           <span class="module-tag"><i class="fas fa-drone"></i> Project Milestones</span>
           <h3>Transparent Project Milestones</h3>
@@ -1309,7 +1312,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         </div>
       </div>
       <div class="module-card fade-in fade-in-delay-2">
-        <img class="module-img" src="https://assets.dingyaoadvisory.tw/redesign/platform-finance.webp" alt="Cash Flow Dashboard" loading="lazy">
+        <img class="module-img" src="https://assets.dingyaoadvisory.tw/redesign/platform-finance.webp" alt="Cash Flow Dashboard" loading="lazy" title="Cash Flow Dashboard">
         <div class="module-body">
           <span class="module-tag"><i class="fas fa-chart-line"></i> Cash Flow Dashboard</span>
           <h3>Cash Flow & Tax Dashboard</h3>
@@ -1317,7 +1320,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         </div>
       </div>
       <div class="module-card fade-in fade-in-delay-3">
-        <img class="module-img" src="https://assets.dingyaoadvisory.tw/redesign/platform-documents.webp" alt="Cloud Document Vault" loading="lazy">
+        <img class="module-img" src="https://assets.dingyaoadvisory.tw/redesign/platform-documents.webp" alt="Cloud Document Vault" loading="lazy" title="Cloud Document Vault">
         <div class="module-body">
           <span class="module-tag"><i class="fas fa-cloud"></i> Cloud Document Vault</span>
           <h3>Cloud Document Vault</h3>
@@ -1378,7 +1381,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- STATS -->
-<section class="section">
+<div class="section">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/platform-hero-bg.webp');opacity:0.08;"></div>
   <div class="container">
     <div class="stats-grid">
@@ -1396,7 +1399,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- CTA URGENCY -->
 <section class="section cta-urgency" id="cta">
@@ -1426,8 +1429,8 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           </div>
         </div>
         <div class="cta-urgency-btns">
-          <a href="#" class="btn btn-primary">Book Your Free Demo Now <i class="fas fa-arrow-right"></i></a>
-          <a href="#" class="btn-outline-danger">Explore Platform Features <i class="fas fa-chevron-down"></i></a>
+          <a href="#" class="btn btn-primary" title="Book Your Free Demo Now">Book Your Free Demo Now <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="btn-outline-danger" title="Explore Platform Features">Explore Platform Features <i class="fas fa-chevron-down"></i></a>
         </div>
       </div>
       <div class="cta-urgency-right">
@@ -1504,47 +1507,47 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/index-en" class="nav-logo" id="navLogo">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="/index-en" class="nav-logo" id="navLogo" title="DYA DING YAO ADVISORY APAC HUB">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
         <p>Exclusive APAC Digital Marketing Hub — We are dedicated to bridging the cross-border investment information gap. Through digital escrow technology, we connect Taiwanese capital with premier South African assets.</p>
         <div class="footer-social">
-          <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/dingyaoadvisory" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/dingyaoadvisory" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://www.linkedin.com/company/dingyaoadvisory/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.threads.net/@dingyaoadvisory" target="_blank" rel="noopener" aria-label="Threads"><i class="fab fa-threads"></i></a>
-          <a href="https://www.youtube.com/@dingyaoadvisory" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/dingyaoadvisory" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/dingyaoadvisory" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/dingyaoadvisory/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.threads.net/@dingyaoadvisory" target="_blank" rel="noopener" aria-label="Threads" title="Threads"><i class="fab fa-threads"></i></a>
+          <a href="https://www.youtube.com/@dingyaoadvisory" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
 
         </div>
       </div>
       <div>
         <h4>Strategic Ecosystem</h4>
         <ul>
-          <li><a href="https://crestlineadvisory.co.za" target="_blank" rel="noopener">Crestline Advisory (Execution)</a></li>
-          <li><a href="https://canvascrest.co.za" target="_blank" rel="noopener">CanvasCrest Properties (Development)</a></li>
-          <li><a href="https://www.standardbank.co.za" target="_blank" rel="noopener">Standard Bank (Fund Escrow)</a></li>
-          <li><a href="https://www.gb.co.za" target="_blank" rel="noopener">Garlicke &amp; Bousfield (Legal Counsel)</a></li>
+          <li><a href="https://crestlineadvisory.co.za" target="_blank" rel="noopener" title="Crestline Advisory (Execution)">Crestline Advisory (Execution)</a></li>
+          <li><a href="https://canvascrest.co.za" target="_blank" rel="noopener" title="CanvasCrest Properties (Development)">CanvasCrest Properties (Development)</a></li>
+          <li><a href="https://www.standardbank.co.za" target="_blank" rel="noopener" title="Standard Bank (Fund Escrow)">Standard Bank (Fund Escrow)</a></li>
+          <li><a href="https://www.gb.co.za" target="_blank" rel="noopener" title="Garlicke &amp; Bousfield (Legal Counsel)">Garlicke &amp; Bousfield (Legal Counsel)</a></li>
         </ul>
       </div>
       <div>
         <h4>Core Services</h4>
         <ul>
-          <li><a href="/assets-en">Overseas Property Advisory</a></li>
-          <li><a href="/education-en">Premium Study Abroad Planning</a></li>
-          <li><a href="/retirement-en">Retirement Solutions</a></li>
-          <li><a href="/residency-en">Permanent Residency (PR)</a></li>
-          <li><a href="/platform-en">Platform</a></li>
-          <li><a href="/tour-en">Business Tours</a></li>
+          <li><a href="/assets-en" title="Overseas Property Advisory">Overseas Property Advisory</a></li>
+          <li><a href="/education-en" title="Premium Study Abroad Planning">Premium Study Abroad Planning</a></li>
+          <li><a href="/retirement-en" title="Retirement Solutions">Retirement Solutions</a></li>
+          <li><a href="/residency-en" title="Permanent Residency (PR)">Permanent Residency (PR)</a></li>
+          <li><a href="/platform-en" title="Platform">Platform</a></li>
+          <li><a href="/tour-en" title="Business Tours">Business Tours</a></li>
         </ul>
       </div>
       <div>
         <h4>Compliance & Contact</h4>
         <ul>
-          <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right:6px;color:#C9A84C"></i> Taichung City, Xitun District (APAC HQ)</a></li>
-          <li><a href="mailto:info@dingyaoadvisory.tw"><i class="fas fa-envelope" style="margin-right:6px;color:#C9A84C"></i> info@dingyaoadvisory.tw</a></li>
+          <li><a href="#" title="Taichung City, Xitun District (APAC HQ)"><i class="fas fa-map-marker-alt" style="margin-right:6px;color:#C9A84C"></i> Taichung City, Xitun District (APAC HQ)</a></li>
+          <li><a href="mailto:info@dingyaoadvisory.tw" title="info@dingyaoadvisory.tw"><i class="fas fa-envelope" style="margin-right:6px;color:#C9A84C"></i> info@dingyaoadvisory.tw</a></li>
         </ul>
         <div class="footer-cta-row">
         <div class="footer-line-cta">
-          <a href="https://lin.ee/Z6pyU1S" target="_blank" rel="noopener">
+          <a href="https://lin.ee/Z6pyU1S" target="_blank" rel="noopener" title="LINE Join Our LINE Official Account Get Your Exclusive Investment Assessment">
             <span class="line-icon">LINE</span>
             <span>Join Our LINE Official Account<br><small>Get Your Exclusive Investment Assessment</small></span>
           </a>
@@ -1555,13 +1558,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
   </div>
     <div class="footer-bottom">
-      <p>Designed for Global Investors &copy; 2026 <a href="https://dingyaoadvisory.tw" style="color:#C9A84C;text-decoration:none;">DingYao</a> Advisory</p>
+      <p>Designed for Global Investors &copy; 2026 <a href="https://dingyaoadvisory.tw" style="color:#C9A84C;text-decoration:none;" title="DingYao">DingYao</a> Advisory</p>
       <div class="footer-bottom-links">
-        <a href="/about-en">About Us</a>
-        <a href="/contact-en">Contact Us</a>
-        <a href="/sitemap">Sitemap</a>
-        <a href="/privacy-en">Privacy Policy</a>
-        <a href="/terms-en">Terms of Service</a>
+        <a href="/about-en" title="About Us">About Us</a>
+        <a href="/contact-en" title="Contact Us">Contact Us</a>
+        <a href="/sitemap" title="Sitemap">Sitemap</a>
+        <a href="/privacy-en" title="Privacy Policy">Privacy Policy</a>
+        <a href="/terms-en" title="Terms of Service">Terms of Service</a>
       </div>
     </div>
   </div>

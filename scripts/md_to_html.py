@@ -122,7 +122,7 @@ def markdown_to_html(md_text):
     html = re.sub(r'(^\d+\. .+\n)+', convert_ordered_list, html, flags=re.MULTILINE)
     
     # Links
-    html = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2" target="_blank" rel="noopener" class="text-blue-600 hover:underline">\1</a>', html)
+    html = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2" title="\1" target="_blank" rel="noopener" class="text-blue-600 hover:underline">\1</a>', html)
     
     # Paragraphs (must be last)
     paragraphs = []
@@ -228,7 +228,7 @@ def extract_references_section(content):
     for title, url in refs:
         ref_html += f'''            <li class="flex items-start gap-2">
                 <i class="fas fa-external-link-alt text-gray-400 mt-1 text-sm"></i>
-                <a href="{url}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{title}</a>
+                <a href="{url}" title="{title}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{title}</a>
             </li>
 '''
     
