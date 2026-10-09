@@ -11,6 +11,11 @@ Disallow: /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo-en
 Disallow: /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2
 Disallow: /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2-en
 
+# Templates & test files (must not be indexed)
+Disallow: /blog/article-template
+Disallow: /blog/blog-template
+Disallow: /temp
+
 # Allow AI retrieval/citation crawlers (AEO/GEO) — GPTBot/ChatGPT-User/CCBot
 # serve both training AND real-time retrieval; blocking kills ChatGPT citations.
 User-agent: GPTBot

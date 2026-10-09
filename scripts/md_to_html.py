@@ -334,6 +334,11 @@ def convert_md_to_html(md_path, output_path, template_path=None):
                 ins = f'{line}\n<link rel="alternate" hreflang="x-default" href="{zh_target}">'
                 html = head[:anchor_m.start()] + ins + head[anchor_m.end():] + html[head_end:]
 
+    # Force article pages to be indexable: blog-template.html carries noindex (template file),
+    # so always normalize the robots meta in generated ARTICLES to "index, follow".
+    html = re.sub(r'<meta name="robots"[^>]*>',
+                  '<meta name="robots" content="index, follow">', html, count=1)
+
     # Write output
     output_dir = os.path.dirname(output_path)
     if output_dir:
