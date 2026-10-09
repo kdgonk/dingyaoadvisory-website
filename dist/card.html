@@ -1092,6 +1092,67 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .cookie-btn-more{background:transparent;color:#F5F0E8AA;border:1px solid rgba(245,240,232,0.15);padding:10px 20px;border-radius:4px;font-size:0.85rem;cursor:pointer;transition:all 0.3s;white-space:nowrap}
 .cookie-btn-more:hover{border-color:#F5F0E8;color:#F5F0E8}
 @media(max-width:640px){.cookie-inner{flex-direction:column;text-align:center}.cookie-btns{width:100%;justify-content:center}}
+/* ===== FAQ ===== */
+.faq {
+  background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
+  position: relative;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border: 1px solid var(--card-border);
+  margin-bottom: 12px;
+  background: var(--card-bg);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+.faq-item:hover {
+  border-color: rgba(201, 168, 76, 0.2);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--warm-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+  gap: 16px;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-question i {
+  font-size: 0.8rem;
+  color: var(--gold);
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+.faq-answer p {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
@@ -1132,6 +1193,39 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "DingYao Advisory 的團隊有哪些成員？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "團隊包含創辦人暨首席顧問 Scott Huang、教育留學顧問 Alice Chen、資產配置顧問 David Lin 與退休移居顧問 Maggie Wang。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "團隊提供哪些專業服務？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "涵蓋南非置產與身分規劃、頂級私校申請輔導、跨境資產配置規劃，以及退休移居與落地安頓服務。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何與團隊預約諮詢？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可透過官網預約免費諮詢，專業團隊將依您的需求提供最適合的方案建議；亦可直接以 Email 聯繫各領域顧問。"
+      }
+    }
+  ]
+}
+</script>
+
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </head>
 <body>
@@ -1270,6 +1364,46 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="section-label">Frequently Asked Questions</span>
+      <h2>常見問題</h2>
+      <p>關於本頁服務的常見疑問</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>DingYao Advisory 的團隊有哪些成員？</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>團隊包含創辦人暨首席顧問 Scott Huang、教育留學顧問 Alice Chen、資產配置顧問 David Lin 與退休移居顧問 Maggie Wang。</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>團隊提供哪些專業服務？</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>涵蓋南非置產與身分規劃、頂級私校申請輔導、跨境資產配置規劃，以及退休移居與落地安頓服務。</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>如何與團隊預約諮詢？</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>可透過官網預約免費諮詢，專業團隊將依您的需求提供最適合的方案建議；亦可直接以 Email 聯繫各領域顧問。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section cta-section">
   <div class="container">
@@ -1373,5 +1507,9 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
 </script>
 
+<script>
+function toggleFaq(el){el.classList.toggle('active');}
+// FAQ section for card.html
+</script>
 </body>
 </html>
