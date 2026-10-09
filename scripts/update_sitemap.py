@@ -80,6 +80,40 @@ def rel_to_path(rel: str) -> Path:
         return ROOT / 'index.html'
     return ROOT / (rel.lstrip('/') + '.html')
 
+def _href_target_exists(href: str) -> bool:
+    """hreflang href 的目標檔是否存在（/index 視為 /）。"""
+    path = urlparse(href).path
+    if path == '/index':
+        path = '/'
+    return rel_to_path(path).exists()
+
+def repair_hreflang(content: str):
+    """對既有 <url> 區塊做兩件事（防死連結殘留 + /index 正規化）：
+       1) 移除 href 目標檔不存在的 <xhtml:link>（盲生 -en 對應的根因）
+       2) /index -> /
+       Idempotent。回傳 (content, dropped, normalized)。"""
+    dropped, normalized = [], []
+
+    def fix_block(m):
+        out_lines = []
+        for line in m.group(0).split('\n'):
+            lm = re.search(r'hreflang="([^"]+)"\s+href="([^"]+)"', line)
+            if lm:
+                lang, href = lm.group(1), lm.group(2)
+                if urlparse(href).path == '/index':
+                    line = line.replace(href, DOMAIN + '/')
+                    normalized.append((lang, href))
+                    href = DOMAIN + '/'
+                if not _href_target_exists(href):
+                    dropped.append((lang, href))
+                    continue
+            out_lines.append(line)
+        return '\n'.join(out_lines)
+
+    content = re.sub(r'<url>.*?</url>', fix_block, content, flags=re.S)
+    return content, dropped, normalized
+
+
 def find_block_end(content: str, start: int) -> int:
     """從 <url> 開始找到對應的 </url> 結尾"""
     end = content.find('</url>', start)
@@ -195,6 +229,15 @@ def main(bump_slugs=None):
                 )
                 print(f'  ~ bumped lastmod: {url} -> {today}')
     
+    # 修復既有區塊的 hreflang 死連結 + /index 正規化（根治：既有 block 過去不重檢）
+    content, dropped, normalized = repair_hreflang(content)
+    if dropped:
+        print(f'  ! dropped {len(dropped)} dead hreflang link(s):')
+        for l, h in dropped:
+            print(f'      DROP {l} {h}')
+    if normalized:
+        print(f'  ~ normalized {len(normalized)} /index -> /')
+
     SITEMAP.write_text(content, encoding='utf-8')
     
     # 驗證
