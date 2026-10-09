@@ -317,7 +317,23 @@ def convert_md_to_html(md_path, output_path, template_path=None):
         html = re.sub(r'href="{{ARTICLE_SLUG}}-en\.html"', f'href="{metadata.get("slug", "")}.html"', html)
         html = html.replace('>EN</a>', '>TW</a>')
         html = html.replace('>TW</span>', '>EN</span>')
-    
+
+    # Ensure x-default hreflang exists in <head> (point to ZH url), matching sitemap.
+    # Idempotent: skip when already present. Robust to any template ordering.
+    head_end = html.find('</head>')
+    if head_end >= 0:
+        head = html[:head_end]
+        if 'hreflang="x-default"' not in head:
+            slug = metadata.get('slug', '')
+            zh_url = f'https://dingyaoadvisory.tw/blog/{slug}'
+            zh_m = re.search(r'<link rel="alternate" hreflang="zh-TW" href="([^"]*)">', head)
+            anchor_m = zh_m or re.search(r'(<link rel="canonical" href="[^"]*">)', head)
+            if anchor_m:
+                line = anchor_m.group(1)
+                zh_target = zh_m.group(1) if zh_m else zh_url
+                ins = f'{line}\n<link rel="alternate" hreflang="x-default" href="{zh_target}">'
+                html = head[:anchor_m.start()] + ins + head[anchor_m.end():] + html[head_end:]
+
     # Write output
     output_dir = os.path.dirname(output_path)
     if output_dir:
