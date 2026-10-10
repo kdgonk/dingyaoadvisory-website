@@ -45,6 +45,9 @@ SITES = {
         'muted': '#8B8FA3', 'line': 'rgba(201,168,76,0.15)',
         'row_line': 'rgba(245,240,232,0.07)',
         'brand': 'DingYao Advisory',
+        # 追蹤碼：GTM 容器（內含 GA4 + Clarity）；Plausible 本站為直嵌
+        'gtm': 'GTM-PVWHRBWG',
+        'plausible': 'dingyaoadvisory.tw',
     },
     'crestline': {
         'fonts': ("https://fonts.googleapis.com/css2?"
@@ -56,6 +59,8 @@ SITES = {
         'muted': '#8B8FA3', 'line': 'rgba(197,160,89,0.15)',
         'row_line': 'rgba(248,249,250,0.07)',
         'brand': 'Crestline Advisory',
+        # GTM 容器（內含 GA4 + Clarity + Plausible，故不可在 HTML 重複嵌 Plausible）
+        'gtm': 'GTM-TCBK8C73',
     },
     'canvascrest': {
         'fonts': ("https://fonts.googleapis.com/css2?"
@@ -67,6 +72,8 @@ SITES = {
         'muted': '#8B8FA3', 'line': 'rgba(197,160,89,0.15)',
         'row_line': 'rgba(248,249,250,0.07)',
         'brand': 'CanvasCrest Properties',
+        # GTM 容器（內含 GA4 + Clarity + Plausible，故不可在 HTML 重複嵌 Plausible）
+        'gtm': 'GTM-TKFNCJVZ',
     },
 }
 
@@ -224,6 +231,7 @@ TPL = """<!DOCTYPE html>
 <title>{title}</title>
 <meta name="description" content="{desc_esc}">
 <meta name="robots" content="noindex, follow">
+{gtm_head}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{fonts}" rel="stylesheet">
@@ -330,6 +338,7 @@ TPL = """<!DOCTYPE html>
 </style>
 </head>
 <body>
+{gtm_body}
 <div class="wrap">
   <p class="brand">{brand}</p>
   <h1>{h1}</h1>
@@ -375,6 +384,34 @@ def render(site: str, entries: list, labels: dict, domain: str, title: str) -> s
         count = labels['count_zh'].format(n=n) + ' · ' + labels['count_en'].format(n=n)
     sub = labels.get('brand_sub', '')
     sub_html = f'  <p class="sub">{_html.escape(sub)}</p>' if sub else ''
+
+    # 追蹤碼：GTM 容器（各站自己的容器）。dingyao 另加直嵌 Plausible；
+    # crestline / canvascrest 的 Plausible 由 GTM 容器注入，不可在 HTML 重複（會重複計數）。
+    gtm_id = cfg.get('gtm', '')
+    gtm_head = gtm_body = ''
+    if gtm_id:
+        gtm_head = (
+            '<!-- Google Tag Manager -->\n'
+            "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':"
+            "new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],"
+            "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;"
+            "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;"
+            "f.parentNode.insertBefore(j,f);})"
+            f"(window,document,'script','dataLayer','{gtm_id}');</script>\n"
+            '<!-- End Google Tag Manager -->'
+        )
+        gtm_body = (
+            '<!-- Google Tag Manager (noscript) -->\n'
+            f'<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={gtm_id}"'
+            ' height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n'
+            '<!-- End Google Tag Manager (noscript) -->'
+        )
+    plaus = cfg.get('plausible', '')
+    if plaus:
+        snip = (f'<script defer data-domain="{plaus}" '
+                'src="https://plausible.dingyaoadvisory.tw/js/script.js"></script>')
+        gtm_head = f'{gtm_head}\n{snip}' if gtm_head else snip
+
     return TPL.format(
         html_lang=labels.get('html_lang', 'en'),
         title=_html.escape(title),
@@ -394,6 +431,8 @@ def render(site: str, entries: list, labels: dict, domain: str, title: str) -> s
         th_url=_html.escape(labels['th_url']),
         th_lastmod=_html.escape(labels['th_lastmod']),
         rows='\n'.join(rows),
+        gtm_head=gtm_head,
+        gtm_body=gtm_body,
     )
 
 
