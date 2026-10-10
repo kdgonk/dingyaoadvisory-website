@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-10",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "cape-town-property-investment-rates-net-return-2026",
+          "title": "開普敦房產投資報酬率 2026：毛收益率到淨收益完整解析",
+          "description": "開普敦房產投資報酬率怎麼算？從毛收益率（市場參考區間約 9.49%）一路扣到淨收益，含南非房貸利率、融資成本與五層費用，並對照台北租金收益率。立即索取完整計算清單。",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-property-investment-rates-net-return-2026",
+          "language": "zh-TW",
+          "category": "investment",
+          "published": "2026-10-10",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-rates-net-return-2026-hero.webp"
+        },
+        {
+          "slug": "cape-town-property-investment-rates-net-return-2026-en",
+          "title": "Cape Town Property Investment Rates 2026: Gross vs Net Return",
+          "description": "How do Cape Town property investment rates turn a gross yield into net return? Work through finance costs, five cost layers and South Africa home loan pricing, with a Taipei comparison. Get the analysis.",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-property-investment-rates-net-return-2026-en",
+          "language": "en",
+          "category": "investment",
+          "published": "2026-10-10",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-investment-rates-net-return-2026-hero.webp"
+        },
         {
           "slug": "cape-town-short-term-letting-by-law-2026-en",
           "title": "Cape Town Short-Term Letting By-law 2026",
@@ -1304,6 +1324,11 @@
       "zh": "https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026",
       "en": "https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026-en",
       "purpose": "開普敦短租法規 2026 解讀與投資因應"
+    },
+    "cape_town_property_investment_rates_net_return_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/cape-town-property-investment-rates-net-return-2026",
+      "en": "https://dingyaoadvisory.tw/blog/cape-town-property-investment-rates-net-return-2026-en",
+      "purpose": "開普敦房產投資報酬率怎麼算？從毛收益率（市場參考區間約 9.49%）一路扣到淨收益，含南非房貸利率、融資成本與五層費用，並對照台北租金收益率。立即索取完整計算清單。"
     }
   },
   "contact": {
