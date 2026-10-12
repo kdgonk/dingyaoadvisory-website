@@ -1185,6 +1185,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
+</div>
 </nav>
 </header>
 <main id="main-content">
@@ -3215,4 +3216,35 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   }
 })();
 </script>
+    </div>
+  </div>
+</section>
 
+</main>
+
+<script>
+// Navbar scroll effect
+window.addEventListener('scroll', function(){
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Mobile menu toggle
+document.getElementById('navToggle').addEventListener('click', function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// Fade-in on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-children').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
