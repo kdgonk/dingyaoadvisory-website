@@ -2,6 +2,30 @@
 <html lang="zh-TW" data-theme="dark">
 <head>
 <!-- Google Tag Manager -->
+<!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+(function(){
+  function _dyConsent(v){gtag('consent','update',{ad_storage:v,ad_user_data:v,ad_personalization:v,analytics_storage:v});}
+  var granted=false;
+  try{
+    granted=(document.cookie.indexOf('cookie_consent=accepted')>-1)
+      ||localStorage.getItem('cookieConsent')==='true'
+      ||localStorage.getItem('cookieConsent')==='accepted'
+      ||localStorage.getItem('gdpr_consent')==='accepted';
+  }catch(e){}
+  if(granted){_dyConsent('granted');}
+  var ACCEPT='#cookieConsent button:not(.cookie-btn-more), #accept-cookies-btn, [onclick*="acceptCookies"], [onclick*="acceptGDPR"]';
+  var DECLINE='#decline-cookies-btn, [onclick*="declineCookies"], [onclick*="declineGDPR"]';
+  document.addEventListener('click',function(e){
+    var t=e.target; if(!t||!t.closest) return;
+    if(t.closest(DECLINE)){_dyConsent('denied');return;}
+    if(t.closest(ACCEPT)){_dyConsent('granted');}
+  },true);
+})();
+</script>
+
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
 <script defer data-domain="dingyaoadvisory.tw" src="https://plausible.dingyaoadvisory.tw/js/script.js"></script>
