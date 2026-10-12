@@ -99,5 +99,5 @@
 /project-phase1-old    /project-phase1    301
 
 # 2026-10-12 老闆指示：/group → /overseas（海外交付鏈）
-/group       /overseas       301
-/group-en    /overseas-en    301
+/group       /overseas-buyers       301
+/group-en    /overseas-buyers-en    301
