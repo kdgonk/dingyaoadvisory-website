@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-12",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-interest-rate-fx-tracker-2026",
+          "title": "南非央行利率決議 × 南非幣匯率：2026 完整追蹤與開普敦置產啟示",
+          "description": "南非央行利率決議 2026 已升息兩次，repo 7.25%、prime 10.75%；南非幣未來趨勢、南非幣定存利率與 11/19 下次決議一次對照，並看對開普敦房貸與置產的影響。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026",
+          "language": "zh-TW",
+          "category": "investment",
+          "published": "2026-10-12",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-interest-rate-fx-tracker-2026-hero.webp"
+        },
+        {
+          "slug": "south-africa-interest-rate-fx-tracker-2026",
+          "title": "South Africa Interest Rate Decisions 2026: a live SARB and ZAR tracker for Cape Town property",
+          "description": "South Africa interest rate decisions 2026: repo 7.25%, prime 10.75%, USD/ZAR near 16.50 and 12-month fixed deposits up to 8.75%. Next SARB decision 19 Nov. Get the tracker.",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026-en",
+          "language": "en",
+          "category": "investment",
+          "published": "2026-10-12",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-interest-rate-fx-tracker-2026-hero.webp"
+        },
         {
           "slug": "cape-town-property-investment-rates-net-return-2026",
           "title": "開普敦房產投資報酬率 2026：毛收益率到淨收益完整解析",
@@ -1329,6 +1349,11 @@
       "zh": "https://dingyaoadvisory.tw/blog/cape-town-property-investment-rates-net-return-2026",
       "en": "https://dingyaoadvisory.tw/blog/cape-town-property-investment-rates-net-return-2026-en",
       "purpose": "開普敦房產投資報酬率怎麼算？從毛收益率（市場參考區間約 9.49%）一路扣到淨收益，含南非房貸利率、融資成本與五層費用，並對照台北租金收益率。立即索取完整計算清單。"
+    },
+    "south_africa_interest_rate_fx_tracker_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026",
+      "en": "https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026-en",
+      "purpose": "南非央行利率決議 2026 已升息兩次，repo 7.25%、prime 10.75%；南非幣未來趨勢、南非幣定存利率與 11/19 下次決議一次對照，並看對開普敦房貸與置產的影響。"
     }
   },
   "contact": {
