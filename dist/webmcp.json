@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "cape-town-safety-guide-foreign-buyers-2026",
+          "title": "開普敦治安 2026 完整解析：安全嗎、避開哪些區",
+          "description": "開普敦治安 2026 完整解析：開普敦安全嗎？要避開哪些區？住哪一區才安全？本文用 SAPS 2026 年 4–6 月犯罪統計，把開普敦分成五個安全等級，並逐區對照每平方公尺房價、1 房入場價與月租金區間，拆解台灣移居者與外國買家最常誤解的三件事，每個數字都附官方資料來源。立即索取開普敦治安 × 房價對照表。",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-safety-guide-foreign-buyers-2026",
+          "language": "zh-TW",
+          "category": "investment",
+          "published": "2026-10-15",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-safety-guide-foreign-buyers-2026-hero.webp"
+        },
+        {
+          "slug": "cape-town-safety-guide-foreign-buyers-2026-en",
+          "title": "Is Cape Town Safe? Safety by Suburb 2026",
+          "description": "Is Cape Town safe in 2026? This guide maps SAPS crime data to five safety tiers, then pairs every area with its price per square metre, entry ticket and monthly rent, so foreign buyers can see which suburbs are both safe and affordable. Request the Cape Town safety and price map.",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-safety-guide-foreign-buyers-2026-en",
+          "language": "en",
+          "category": "investment",
+          "published": "2026-10-15",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-safety-guide-foreign-buyers-2026-hero.webp"
+        },
         {
           "slug": "cape-town-infrastructure-investment-corridor-2026",
           "title": "開普敦基建投資 2026：開普敦機場升級與開發案地圖",
