@@ -1,0 +1,12 @@
+{
+  // dingyao = Cloudflare **Worker**（Static Assets，不是 Pages）
+  // 目的：讓缺頁回傳 dist/404.html（HTTP 404 + 有 body），修掉「空白 404」。
+  // 不要加 "main"：本 Worker 只要 assets，不需要執行 worker script。
+  "name": "dingyao",
+  "compatibility_date": "2026-10-14",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
