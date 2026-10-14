@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [開普敦基建投資 2026：開普敦機場升級與開發案地圖](https://dingyaoadvisory.tw/blog/cape-town-infrastructure-investment-corridor-2026) — 開普敦基建投資 2026 全解：開普敦機場升級 R113 億、CBD 開發案 R128 億，市府「審批加速 Hub」與公共投資走廊一次看懂。本文整理機場、MyCiTi、CBD 三大工程的官方金額與時程，拆解外國買家在開普敦該看的三個變數，並誠實標示市政費用上漲與審批尚未定案的風險。立即索取開普敦基建投資地圖。
+- [Cape Town Infrastructure Investment 2026 Guide](https://dingyaoadvisory.tw/blog/cape-town-infrastructure-investment-corridor-2026-en) — Cape Town infrastructure investment 2026: the R11.3bn airport upgrade, the R12.8bn CBD development pipeline and the City's new approval hub. See the map, the timeline and the risks. Request our tracker.
 - [南非央行利率決議 × 南非幣匯率：2026 完整追蹤與開普敦置產啟示](https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026) — 南非央行利率決議 2026 已升息兩次，repo 7.25%、prime 10.75%；南非幣未來趨勢、南非幣定存利率與 11/19 下次決議一次對照，並看對開普敦房貸與置產的影響。
 - [South Africa Interest Rate Decisions 2026: a live SARB and ZAR tracker for Cape Town property](https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026-en) — South Africa interest rate decisions 2026: repo 7.25%, prime 10.75%, USD/ZAR near 16.50 and 12-month fixed deposits up to 8.75%. Next SARB decision 19 Nov. Get the tracker.
 - [開普敦房產投資報酬率 2026：毛收益率到淨收益完整解析](/blog/cape-town-property-investment-rates-net-return-2026) — 開普敦房產投資報酬率怎麼算？從毛收益率（市場參考區間約 9.49%）一路扣到淨收益，含南非房貸利率、融資成本與五層費用，並對照台北租金收益率。立即索取完整計算清單。
@@ -39,15 +41,15 @@
 - [Cape Town Suburbs: 9 of 190 See Prices Drop](/blog/cape-town-nine-suburbs-price-drop-2026-en) — Cape Town prices up 55% in a decade, yet 9 of 190 suburbs are dropping; suburb risk analysis.
 - [開普敦租金收益率真相：11.53% 是全國平均，開普敦只有 9.49%](/blog/cape-town-rental-yield-9-49-percent-reality-check-2026) — 全國公寓毛收益率 11.53% 是全國平均，開普敦全市僅 9.49%；市內 Milnerton 14.62% vs Atlantic Seaboard 4.06%，淨收益再低 1.5-2pp。
 - [Cape Town Rental Yields 2026: 9.49% Not 11.53%](/blog/cape-town-rental-yield-9-49-percent-reality-check-2026-en) — South Africa's 11.53% is the national average; Cape Town city-wide averages 9.49%. Suburb spread 4.06%-14.62%, net yields 1.5-2pp lower.
-- [三央行一週三決定：「央行」熱搜破萬後，蘭特與開普敦房市下一步？](/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026)
+- [三央行一週三決定：「央行」熱搜破萬後，南非幣與開普敦房市下一步？](/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026)
 - [南非升息倒數：為什麼開普敦租金收益率反而變高？](/blog/cape-town-rental-yields-sarb-rate-hike-2026)
 - [Cape Town Rental Yields and the SARB Hike](/blog/cape-town-rental-yields-sarb-rate-hike-2026-en)
 - [Three Central Banks, One Week: What the Decisions Mean for the Rand and Cape Town Property](/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026-en)
-- [「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略](/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook) — FOMC 今晚公布利率決策，市場升息定價 85%+，蘭特測 16.20，開普敦置產兩情境攻略
+- [「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略](/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook) — FOMC 今晚公布利率決策，市場升息定價 85%+，南非幣測 16.20，開普敦置產兩情境攻略
 - [FOMC Decision: Cape Town Property Playbook](/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook-en) — Fed decision tonight: 85%+ hike priced, rand at 16.20, Cape Town property gets cheaper for foreign buyers. Two-scenario playbook.
 - [「遺產」「遺產稅」登熱搜！南非 Estate Duty 傳承規劃：台灣人繼承開普敦房產要繳多少？](/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026) — 南非 Estate Duty 免稅額 R3.5M、稅率 20%、配偶全免、台灣無協議雙重課稅風險
 - [Estate Duty Guide for Foreign Heirs](/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026-en) — SA estate duty for Taiwanese heirs: R3.5M abatement, 20% rate, spousal exemption, no double-tax treaty
-- [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！蘭特續貶，開普敦置產為何反而更划算？](/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%，蘭特承壓下開普敦置產雙引擎。
+- [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！南非幣續貶，開普敦置產為何反而更划算？](/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%，南非幣承壓下開普敦置產雙引擎。
 - [US CPI 3.4%: Fed 87% Hike Odds, Rand](/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property-en) — US CPI 3.4% beats forecast, Fed hike odds hit 87%. Rand weakens — Cape Town property gains on FX advantage.
 - [南非房地產「紫金期」來臨！機構資金進場，開普敦置產時機到了嗎？](/blog/south-africa-property-purple-patch-standard-bank-2026) — 南非最大銀行 Standard Bank 宣告房地產「紫金期」24-48 個月，REITs 前 8 個月 +2.4%、辦公室空置率 12.1% 新低。
 - [SA Purple Patch: Buy Cape Town?](/blog/south-africa-property-purple-patch-standard-bank-2026-en) — Standard Bank declares a 24-48 month property purple patch. REITs +2.4%, office vacancies at 12.1% low.
@@ -55,15 +57,15 @@
 - [Overseas Property Guide 2026: Why Smart Investors Are Looking at Cape Town](/blog/overseas-property-investment-guide-cape-town-2026-en) — Cape Town rental yields 7.5-11.4% vs Taiwan's 1.5-2.5%. Same NT$16M: Cape Town monthly rent NT$80K vs Taipei NT$30K.
 - [南非燃油漲價今日生效！開普敦生活成本會變貴嗎？](/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs) — 南非 9/2 燃油漲價：汽油 +R1.34、柴油 +R3.15。開普敦生活成本僅為台北 35%，租金收益率 7.5-11.4%。
 - [SA Fuel Hike: Cape Town Living Costs 2026](/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs-en) — SA fuel prices rise Sept 2: petrol +R1.34/L, diesel +R3.15/L. Cape Town living costs 35% of Taipei, yields 7.5-11.4%.
-- [Fed 9/16 升息倒數！美元轉強、蘭特回軟——開普敦置產三情境策略](/blog/fed-september-2026-rate-decision-cape-town-property-strategy) — Fed 9/16 升息機率 66%，美元轉強蘭特回軟至 16.13。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。三情境布局策略。
+- [Fed 9/16 升息倒數！美元轉強、南非幣回軟——開普敦置產三情境策略](/blog/fed-september-2026-rate-decision-cape-town-property-strategy) — Fed 9/16 升息機率 66%，美元轉強南非幣回軟至 16.13。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。三情境布局策略。
 - [Fed Sep 2026 Rate Decision: Cape Town Property Three-Scenario Strategy](/blog/fed-september-2026-rate-decision-cape-town-property-strategy-en) — Fed rate decision Sept 16: 66% hike odds, dollar strength pushing rand to 16.13. Cape Town prices up 4-7%, yields 7.5-11.4%. Three-scenario strategy.
-- [蘭特兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機](/blog/rand-below-16-cape-town-property-opportunity-2026) — 蘭特跌破 16，南非資產台幣計價變便宜，開普敦房價年增 4-7%、租金收益率 7.5-11.4%。
+- [南非幣兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機](/blog/rand-below-16-cape-town-property-opportunity-2026) — 南非幣跌破 16，南非資產台幣計價變便宜，開普敦房價年增 4-7%、租金收益率 7.5-11.4%。
 - [Rand Below 16: Cape Town Property Opportunity](/blog/rand-below-16-cape-town-property-opportunity-2026-en) — Rand fell below 16/USD, making Cape Town property cheaper in TWD. Prices up 4-7%, yields 7.5-11.4%.
 - [開普敦非洲最國際化城市：全球富豪企業為何落腳](/blog/cape-town-africa-most-international-city-2026) — 開普敦非洲最國際化城市，UK 買家 R15.9m 創紀錄、Atlantic Seaboard 1/3 外國人，全球富豪落腳趨勢。
 - [Cape Town: Africa's Most International City](/blog/cape-town-africa-most-international-city-2026-en) — Cape Town is Africa's most international city — UK buyer's R15.9m record, foreigners 1/3 of Atlantic Seaboard, global investors settling here.
-- [SARB 9/23 降息前瞻：蘭特升值、通膨降溫下的開普敦置產時機](/blog/sarb-september-2026-mpc-preview-cape-town-property) — SARB 9/23 MPC 降息前瞻，蘭特升值 16%、通膨降溫至 4.8%，開普敦置產雙引擎卡位時機。
+- [SARB 9/23 降息前瞻：南非幣升值、通膨降溫下的開普敦置產時機](/blog/sarb-september-2026-mpc-preview-cape-town-property) — SARB 9/23 MPC 降息前瞻，南非幣升值 16%、通膨降溫至 4.8%，開普敦置產雙引擎卡位時機。
 - [SARB September 2026 MPC Preview: Pre-Cut Cape Town Property Timing](/blog/sarb-september-2026-mpc-preview-cape-town-property-en) — SARB 9/23 MPC preview: rand +16%, inflation at 4.8%. Cape Town dual-engine pre-cut entry timing.
-- [SARB按兵不動通膨5%蘭特升值9.58%！開普敦置產2026下半年時機](/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026) — SARB 維持利率 7%，通膨降至 5%，蘭特升值 9.58%，開普敦置產租金收益率 7.5-11.4%，2026 下半年布局時機。
+- [SARB按兵不動通膨5%南非幣升值9.58%！開普敦置產2026下半年時機](/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026) — SARB 維持利率 7%，通膨降至 5%，南非幣升值 9.58%，開普敦置產租金收益率 7.5-11.4%，2026 下半年布局時機。
 - [SARB Holds Rates at 7%, Inflation 5%, Rand +9.58%: Cape Town Property Timing 2026](/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026-en) — SARB holds at 7%, inflation drops to 5%, rand +9.58%. Cape Town rental yields 7.5-11.4% — H2 2026 entry timing.
 - [英國買家 R1,590 萬破紀錄買下開普敦頂層公寓！外國人搶購開普敦豪宅，台灣投資人如何切入？](/blog/uk-buyers-r15-9m-newlands-penthouse-cape-town-record-2026) — 英國買家 R1,590 萬破紀錄買下 Newlands 頂層公寓，外國人搶購開普敦豪宅，台灣投資人如何切入分層投資。
 - [UK Buyer's R15.9m Cape Town Penthouse Record: How Taiwan Investors Can Enter](/blog/uk-buyers-r15-9m-newlands-penthouse-cape-town-record-2026-en) — UK buyer's R15.9m Newlands penthouse record. Foreign buyers snap up Cape Town luxury — where should Taiwanese investors enter?
@@ -182,13 +184,13 @@ Last updated: 2026-09-28
 - 南非升息倒數：為什麼開普敦租金收益率反而變高？: https://dingyaoadvisory.tw/blog/cape-town-rental-yields-sarb-rate-hike-2026
 - Cape Town Rental Yields and the SARB Hike: https://dingyaoadvisory.tw/blog/cape-town-rental-yields-sarb-rate-hike-2026-en
 
-- [三央行一週三決定：「央行」熱搜破萬後，蘭特與開普敦房市下一步？](https://dingyaoadvisory.tw/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026)
+- [三央行一週三決定：「央行」熱搜破萬後，南非幣與開普敦房市下一步？](https://dingyaoadvisory.tw/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026)
 - [Three Central Banks, One Week: What the Decisions Mean for the Rand and Cape Town Property](https://dingyaoadvisory.tw/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026-en)
-- [「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略](https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook) — FOMC 今晚公布利率決策，市場升息定價 85%+，蘭特測 16.20，開普敦置產兩情境攻略
+- [「美國經濟」登熱搜！FOMC 決策夜：升息 85% 定價下開普敦置產兩情境攻略](https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook) — FOMC 今晚公布利率決策，市場升息定價 85%+，南非幣測 16.20，開普敦置產兩情境攻略
 - [FOMC Decision: Cape Town Property Playbook](https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook-en) — Fed decision tonight: 85%+ hike priced, rand at 16.20, Cape Town property gets cheaper for foreign buyers. Two-scenario playbook.
 - [「遺產」「遺產稅」登熱搜！南非 Estate Duty 傳承規劃](https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026) — 南非 Estate Duty 免稅額 R3.5M、稅率 20%、配偶全免、台灣無協議雙重課稅風險
 - [Estate Duty Guide for Foreign Heirs](https://dingyaoadvisory.tw/blog/south-africa-estate-duty-foreign-heirs-cape-town-2026-en) — SA estate duty for Taiwanese heirs: R3.5M abatement, 20% rate, spousal exemption, no double-tax treaty
-- [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！蘭特續貶，開普敦置產為何反而更划算？](https://dingyaoadvisory.tw/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%
+- [美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！南非幣續貶，開普敦置產為何反而更划算？](https://dingyaoadvisory.tw/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property) — 美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%
 - [US CPI 3.4%: Fed 87% Hike Odds, Rand](https://dingyaoadvisory.tw/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property-en) — US CPI 3.4% beats forecast, Fed hike odds hit 87%. Rand weakens — Cape Town property gains on FX advantage
 - [南非房地產「紫金期」來臨！機構資金進場，開普敦置產時機到了嗎？](https://dingyaoadvisory.tw/blog/south-africa-property-purple-patch-standard-bank-2026) — 南非最大銀行 Standard Bank 宣告房地產「紫金期」，REITs 前 8 個月 +2.4%
 - [SA Purple Patch: Buy Cape Town?](https://dingyaoadvisory.tw/blog/south-africa-property-purple-patch-standard-bank-2026-en) — Standard Bank declares a 24-48 month property purple patch. REITs +2.4%, office vacancies at 12.1% low
@@ -218,12 +220,12 @@ Last updated: 2026-09-28
 - [Buy Cape Town Property Remotely: 6 Steps](https://dingyaoadvisory.tw/blog/foreign-buyer-r48m-constantia-sight-unseen-remote-purchase-2026-en) — Foreign buyer paid R48M for Constantia home sight unseen
 - [南非燃油漲價今日生效！開普敦生活成本會變貴嗎？](https://dingyaoadvisory.tw/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs) — 南非 9/2 燃油漲價：汽油 +R1.34、柴油 +R3.15
 - [SA Fuel Hike: Cape Town Living Costs 2026](https://dingyaoadvisory.tw/blog/south-africa-fuel-price-hike-september-2026-cape-town-living-costs-en) — SA fuel prices rise Sept 2: petrol +R1.34, diesel +R3.15
-- [Fed 9/16 升息倒數！美元轉強、蘭特回軟——開普敦置產三情境策略](https://dingyaoadvisory.tw/blog/fed-september-2026-rate-decision-cape-town-property-strategy) — Fed 9/16 升息機率 66%，美元轉強蘭特回軟至 16.13
+- [Fed 9/16 升息倒數！美元轉強、南非幣回軟——開普敦置產三情境策略](https://dingyaoadvisory.tw/blog/fed-september-2026-rate-decision-cape-town-property-strategy) — Fed 9/16 升息機率 66%，美元轉強南非幣回軟至 16.13
 - [Fed Sep 2026 Rate Decision: Cape Town Property Three-Scenario Strategy](https://dingyaoadvisory.tw/blog/fed-september-2026-rate-decision-cape-town-property-strategy-en) — Fed rate decision Sept 16: 66% hike odds, rand at 16.13
-- [蘭特兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機](https://dingyaoadvisory.tw/blog/rand-below-16-cape-town-property-opportunity-2026) — 蘭特跌破 16，南非資產台幣計價變便宜
+- [南非幣兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機](https://dingyaoadvisory.tw/blog/rand-below-16-cape-town-property-opportunity-2026) — 南非幣跌破 16，南非資產台幣計價變便宜
 - [Rand Below 16: Cape Town Property Opportunity](https://dingyaoadvisory.tw/blog/rand-below-16-cape-town-property-opportunity-2026-en) — Rand below 16, Cape Town property cheaper in TWD
 - [SARB September 2026 MPC Preview: Pre-Cut Cape Town Property Timing](https://dingyaoadvisory.tw/blog/sarb-september-2026-mpc-preview-cape-town-property-en) — SARB 9/23 MPC pre-cut, rand +16%, Cape Town dual-engine timing
-- [SARB按兵不動通膨5%蘭特升值9.58%！開普敦置產2026下半年時機](https://dingyaoadvisory.tw/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026) — SARB 7% 按兵不動、通膨 5%、蘭特 +9.58%、開普敦 H2 布局
+- [SARB按兵不動通膨5%南非幣升值9.58%！開普敦置產2026下半年時機](https://dingyaoadvisory.tw/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026) — SARB 7% 按兵不動、通膨 5%、南非幣 +9.58%、開普敦 H2 布局
 - [SARB Holds Rates at 7%, Inflation 5%, Rand +9.58%: Cape Town Property Timing 2026](https://dingyaoadvisory.tw/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026-en) — SARB 7% hold, inflation 5%, rand +9.58%, Cape Town H2 entry
 - [英國買家 R1,590 萬破紀錄買下開普敦頂層公寓！外國人搶購開普敦豪宅，台灣投資人如何切入？](https://dingyaoadvisory.tw/blog/uk-buyers-r15-9m-newlands-penthouse-cape-town-record-2026) — UK 買家 R15.9m Newlands 破紀錄，開普敦豪宅分層投資
 - [UK Buyer's R15.9m Cape Town Penthouse Record: How Taiwan Investors Can Enter](https://dingyaoadvisory.tw/blog/uk-buyers-r15-9m-newlands-penthouse-cape-town-record-2026-en) — R15.9m penthouse record, Cape Town tiered entry

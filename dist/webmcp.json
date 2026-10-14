@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-14",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,16 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "cape-town-infrastructure-investment-corridor-2026",
+          "title": "開普敦基建投資 2026：開普敦機場升級與開發案地圖",
+          "description": "開普敦基建投資 2026 全解：開普敦機場升級 R113 億、CBD 開發案 R128 億，市府「審批加速 Hub」與公共投資走廊一次看懂。本文整理機場、MyCiTi、CBD 三大工程的官方金額與時程，拆解外國買家在開普敦該看的三個變數，並誠實標示市政費用上漲與審批尚未定案的風險。立即索取開普敦基建投資地圖。",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-infrastructure-investment-corridor-2026",
+          "language": "zh-TW",
+          "category": "investment",
+          "published": "2026-10-14",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-infrastructure-investment-corridor-2026-hero.webp"
+        },
         {
           "slug": "south-africa-interest-rate-fx-tracker-2026",
           "title": "南非央行利率決議 × 南非幣匯率：2026 完整追蹤與開普敦置產啟示",
@@ -162,11 +172,11 @@
           "date": "2026-09-24"
         },
         {
-          "title": "三央行一週三決定：「央行」熱搜破萬後，蘭特與開普敦房市下一步？",
+          "title": "三央行一週三決定：「央行」熱搜破萬後，南非幣與開普敦房市下一步？",
           "url": "https://dingyaoadvisory.tw/blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026",
           "language": "zh-TW",
           "category": "置產投資 / 央行決策 / 匯率",
-          "description": "Fed 升息 25bp、台灣央行連 10 凍、SARB 五五波——三央行決策全揭曉。「央行」熱搜破萬，蘭特與開普敦房市這樣布局。立即諮詢取得專業評估。",
+          "description": "Fed 升息 25bp、台灣央行連 10 凍、SARB 五五波——三央行決策全揭曉。「央行」熱搜破萬，南非幣與開普敦房市這樣布局。立即諮詢取得專業評估。",
           "date": "2026-09-18"
         },
         {
@@ -182,7 +192,7 @@
           "url": "https://dingyaoadvisory.tw/blog/fed-fomc-september-2026-rate-hike-cape-town-property-playbook",
           "language": "zh-TW",
           "category": "投資",
-          "description": "FOMC 今晚公布利率決策，市場升息定價 85%+，蘭特測 16.20，開普敦置產兩情境攻略",
+          "description": "FOMC 今晚公布利率決策，市場升息定價 85%+，南非幣測 16.20，開普敦置產兩情境攻略",
           "date": "2026-09-16"
         },
         {
@@ -210,11 +220,11 @@
           "date": "2026-09-14"
         },
         {
-          "title": "美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！蘭特續貶，開普敦置產為何反而更划算？",
+          "title": "美國 CPI 3.4% 超預期、Fed 9/16 升息機率 87%！南非幣續貶，開普敦置產為何反而更划算？",
           "url": "https://dingyaoadvisory.tw/blog/us-cpi-august-2026-fed-hike-rand-cape-town-property",
           "language": "zh-TW",
           "category": "置產投資",
-          "description": "美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%。蘭特承壓之下，開普敦置產的匯率與租金雙引擎怎麼把握？",
+          "description": "美國 8 月 CPI 3.4% 超預期、能源年增 28%，Fed 升息機率 87%。南非幣承壓之下，開普敦置產的匯率與租金雙引擎怎麼把握？",
           "date": "2026-09-12"
         },
         {
@@ -386,11 +396,11 @@
           "date": "2026-09-02"
         },
         {
-          "title": "Fed 9/16 升息倒數！美元轉強、蘭特回軟——開普敦置產三情境策略",
+          "title": "Fed 9/16 升息倒數！美元轉強、南非幣回軟——開普敦置產三情境策略",
           "url": "/blog/fed-september-2026-rate-decision-cape-town-property-strategy",
           "language": "zh-TW",
           "category": "市場分析",
-          "description": "Fed 9/16 升息機率 66%，美元轉強蘭特回軟至 16.13。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。三情境布局策略。",
+          "description": "Fed 9/16 升息機率 66%，美元轉強南非幣回軟至 16.13。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。三情境布局策略。",
           "date": "2026-09-01"
         },
         {
@@ -402,11 +412,11 @@
           "date": "2026-09-01"
         },
         {
-          "title": "蘭特兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機",
+          "title": "南非幣兌美元跌破 16！南非資產台幣計價變便宜，開普敦置產時機",
           "url": "/blog/rand-below-16-cape-town-property-opportunity-2026",
           "language": "zh-TW",
           "category": "市場分析",
-          "description": "蘭特兌美元跌破 16，南非資產台幣計價變便宜。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。",
+          "description": "南非幣兌美元跌破 16，南非資產台幣計價變便宜。開普敦房價年增 4-7%、租金收益率 7.5-11.4%。",
           "date": "2026-08-31"
         },
         {
@@ -434,11 +444,11 @@
           "date": "2026-08-30"
         },
         {
-          "title": "SARB 9/23 降息前瞻：蘭特升值、通膨降溫下的開普敦置產時機",
+          "title": "SARB 9/23 降息前瞻：南非幣升值、通膨降溫下的開普敦置產時機",
           "url": "/blog/sarb-september-2026-mpc-preview-cape-town-property",
           "language": "zh-TW",
           "category": "市場分析",
-          "description": "SARB 9/23 MPC 降息前瞻：蘭特升值 16%、通膨降溫至 4.8%，開普敦置產雙引擎卡位時機。",
+          "description": "SARB 9/23 MPC 降息前瞻：南非幣升值 16%、通膨降溫至 4.8%，開普敦置產雙引擎卡位時機。",
           "date": "2026-08-29"
         },
         {
@@ -450,11 +460,11 @@
           "date": "2026-08-29"
         },
         {
-          "title": "SARB按兵不動通膨5%蘭特升值9.58%！開普敦置產2026下半年時機",
+          "title": "SARB按兵不動通膨5%南非幣升值9.58%！開普敦置產2026下半年時機",
           "url": "/blog/sarb-hold-rates-7-percent-inflation-cape-town-property-2026",
           "language": "zh-TW",
           "category": "市場分析",
-          "description": "SARB 維持利率 7%，通膨降至 5%，蘭特升值 9.58%。開普敦置產租金收益率 7.5-11.4%，2026 下半年布局時機。",
+          "description": "SARB 維持利率 7%，通膨降至 5%，南非幣升值 9.58%。開普敦置產租金收益率 7.5-11.4%，2026 下半年布局時機。",
           "date": "2026-08-28"
         },
         {
@@ -1354,6 +1364,11 @@
       "zh": "https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026",
       "en": "https://dingyaoadvisory.tw/blog/south-africa-interest-rate-fx-tracker-2026-en",
       "purpose": "南非央行利率決議 2026 已升息兩次，repo 7.25%、prime 10.75%；南非幣未來趨勢、南非幣定存利率與 11/19 下次決議一次對照，並看對開普敦房貸與置產的影響。"
+    },
+    "cape_town_infrastructure_investment_corridor_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/cape-town-infrastructure-investment-corridor-2026",
+      "en": "https://dingyaoadvisory.tw/blog/cape-town-infrastructure-investment-corridor-2026-en",
+      "purpose": "Cape Town infrastructure investment 2026 hub: the R11.3bn airport upgrade, R7.1bn MyCiTi Phase 2A, R12.8bn CBD pipeline and the City's new approval hub"
     }
   },
   "contact": {
