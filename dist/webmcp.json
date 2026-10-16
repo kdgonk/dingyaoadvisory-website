@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-15",
+  "last_updated": "2026-10-16",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-residency-pathways-taiwan-guide-2026",
+          "title": "南非移民 2026 完整指南：四條居留路徑與南非永久居留門檻",
+          "description": "南非移民 2026 完整指南：台灣人四條居留路徑一次看懂。南非永久居留（財務獨立簽證 R12,000,000 淨資產）、關鍵技能簽證 100 分制、遠端工作簽證 ZAR 650,976 門檻、南非留學轉居留，逐條標明法源與時程。另釐清南非免簽國家的正確認知，並拆解在開普敦落地的學費、租金與過戶稅成本。立即索取四條路徑檢核表。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-residency-pathways-taiwan-guide-2026",
+          "language": "zh-TW",
+          "category": "residency",
+          "published": "2026-10-16",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-residency-pathways-taiwan-guide-2026-hero.webp"
+        },
+        {
+          "slug": "south-africa-residency-pathways-taiwan-guide-2026-en",
+          "title": "South Africa Permanent Residency 2026: Four Residency Pathways from Taiwan",
+          "description": "South Africa permanent residency 2026 for Taiwanese applicants: the four residency pathways, South Africa PR requirements, the ZAR 12,000,000 Financial Independence threshold, Critical Skills points, the ZAR 650,976 remote work visa and study options. Request the free pathway checklist.",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-residency-pathways-taiwan-guide-2026-en",
+          "language": "en",
+          "category": "residency",
+          "published": "2026-10-16",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-residency-pathways-taiwan-guide-2026-hero.webp"
+        },
         {
           "slug": "cape-town-safety-guide-foreign-buyers-2026",
           "title": "開普敦治安 2026 完整解析：安全嗎、避開哪些區",
