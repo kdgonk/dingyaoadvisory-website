@@ -28,7 +28,8 @@ DEADLINE = '2026-11-02'
 DAILY_LIMIT = 2
 COOLDOWN_DAYS = 3
 LOOKBACK_DAYS = 14        # sitemap lastmod 在此天數內 → 納管
-MAX_NEW_PER_DAY = 40      # 每日最多新納管檢查頁數（避免 289 頁一次打爆，backlog 每日消化）
+MAX_NEW_PER_DAY = 8       # 每日最多新納管檢查頁數（backlog 每日消化，避免 cron 超時）
+MAX_RECHECK = 6           # 每日最多複查（非 gate 頁、滿 7 天未被收錄者）
 T7_DAYS = 7               # 納管滿 7 天仍未收錄 → 告警（即使狀態沒變）
 
 # gate targets（策略卡保護對象）：最弱的先送
@@ -107,7 +108,18 @@ def main():
 
     recent = sitemap_recent(today_d)
     new_urls = [u for u, _ in recent if u not in pages]
-    candidates = tracked + new_urls[:MAX_NEW_PER_DAY]
+    # 非 gate 頁複查：滿 7 天仍未收錄者，每日最多 MAX_RECHECK 頁（避免 289 頁每日全掃拖垮 cron）
+    recheck = []
+    for u, rec in pages.items():
+        if u in tracked or rec.get('status') in OK_STATES:
+            continue
+        try:
+            age_chk = (today_d - datetime.date.fromisoformat(rec.get('last_checked', today))).days
+        except ValueError:
+            age_chk = 0
+        if age_chk >= 7:
+            recheck.append(u)
+    candidates = tracked + new_urls[:MAX_NEW_PER_DAY] + recheck[:MAX_RECHECK]
     candidates = list(dict.fromkeys(candidates))  # 去重且保序
 
     lines, changed, t7_alert = [], [], []
