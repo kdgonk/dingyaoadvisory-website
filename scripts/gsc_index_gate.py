@@ -43,6 +43,16 @@ TRACKED_DEFAULT = [
 OK_STATES = {'Submitted and indexed'}
 
 
+def band_of(cov):
+    """把 coverageState 正規化成穩定頻帶，避免 Google 在 unknown/discovered 間跳動造成每日假告警。"""
+    if cov in OK_STATES:
+        return 'indexed'
+    low = cov.lower()
+    if 'unknown to google' in low or 'discovered' in low or 'crawled - currently not indexed' in low:
+        return 'not_indexed'
+    return cov
+
+
 def load_state():
     if os.path.exists(STATE):
         with open(STATE) as fh:
@@ -111,7 +121,7 @@ def main():
     # 非 gate 頁複查：滿 7 天仍未收錄者，每日最多 MAX_RECHECK 頁（避免 289 頁每日全掃拖垮 cron）
     recheck = []
     for u, rec in pages.items():
-        if u in tracked or rec.get('status') in OK_STATES:
+        if u in tracked or rec.get('band') == 'indexed':
             continue
         try:
             age_chk = (today_d - datetime.date.fromisoformat(rec.get('last_checked', today))).days
@@ -131,23 +141,26 @@ def main():
         except Exception as exc:  # noqa: BLE001
             cov, crawl = 'INSPECT_ERROR: ' + str(exc)[:80], None
         is_new = not prev
+        band = band_of(cov)
         pages[url] = {
             'status': cov,
+            'band': band,
             'lastCrawl': crawl,
             'first_seen': prev.get('first_seen', today),
             'last_checked': today,
         }
-        if cov not in OK_STATES:
+        if band != 'indexed':
             pending.append(url)
         is_tracked = url in tracked
-        status_changed = is_new or prev.get('status') != cov
+        status_changed = is_new or prev.get('band') != band
         # T+7：納管滿 7 天仍未被收錄
         try:
             age = (today_d - datetime.date.fromisoformat(pages[url]['first_seen'])).days
         except ValueError:
             age = 0
-        overdue = cov not in OK_STATES and age >= T7_DAYS
-        if (is_tracked and status_changed) or (not is_tracked and status_changed and cov in OK_STATES):
+        overdue = band != 'indexed' and age >= T7_DAYS
+        # 只有 gate 頁的頻帶變化才報；非 gate 頁（backlog）靜默記錄，不逐頁洗版
+        if is_tracked and status_changed:
             changed.append((url, cov, crawl, is_new))
         if is_tracked and overdue:
             t7_alert.append((url, cov, age))
@@ -175,7 +188,7 @@ def main():
         state.setdefault('history', []).append({'date': today, 'submitted': sent})
     save_state(state)
 
-    indexed = sum(1 for u in tracked if pages.get(u, {}).get('status') in OK_STATES)
+    indexed = sum(1 for u in tracked if pages.get(u, {}).get('band') == 'indexed')
     if tracked and indexed == len(tracked):
         state['closed'] = True
         state['closed_at'] = today
@@ -183,14 +196,20 @@ def main():
         print(f'✅ S-20261019-01 索引閘門結案：{indexed}/{len(tracked)} 全部 indexed（{today}）')
         return 0
 
-    # 靜默條件：無狀態變更、無 T+7 告警、無遞送、未過 deadline
+    # 每日固定一行 gate 摘要（土星人 2026-10-19 驗收：每日要看得到 4 頁狀態、且不得重複噪音）
+    def _tag(u):
+        b = pages.get(u, {}).get('band', 'n/a')
+        return {'indexed': 'indexed', 'not_indexed': 'not-indexed'}.get(b, b[:14])
+
+    print(f'📊 索引閘門 {today}｜gate {indexed}/{len(tracked)}｜' + ', '.join(
+        f'{u.rsplit("/", 1)[-1]}={_tag(u)}' for u in tracked))
+
+    # 明細只在有變化／T+7／遞送／過 deadline 時輸出
     if not changed and not t7_alert and not sent and today <= DEADLINE:
         return 0
 
-    head = f'📊 索引閘門 {today}｜gate {indexed}/{len(tracked)}｜納管 {len(pages)} 頁'
     if today > DEADLINE:
-        head = f'🚨 已過 deadline {DEADLINE}，gate 仍 {indexed}/{len(tracked)}｜' + head.split('｜', 1)[1]
-    print(head)
+        print(f'  🚨 已過 deadline {DEADLINE}，gate 仍 {indexed}/{len(tracked)}')
     if changed:
         print('  狀態變更：')
         for url, cov, crawl, is_new in changed:
