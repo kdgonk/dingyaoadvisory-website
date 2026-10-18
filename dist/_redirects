@@ -13,7 +13,7 @@
 /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo    /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026    301
 /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026-demo2    /blog/cape-town-cbd-one-bedroom-oversupply-foreign-buyers-2026    301
 /blog/cape-town-quality-of-life    /blog/cape-town-quality-life-property-demand-2026    301
-/blog/overseas-asset-allocation    /blog/taiwan-wealthy-overseas-asset-allocation-2026    301
+/blog/overseas-asset-allocation    /blog/taiwan-wealthy-overseas-allocation    301
 /blog/overseas-asset-allocation-en    /blog/taiwan-wealthy-overseas-allocation-en    301
 /blog/cape-town-property-overseas-asset    /blog/cape-town-property-outlook-2026-overseas-investors    301
 /blog/cape-town-property-overseas-asset-en    /blog/cape-town-property-outlook-2026-overseas-investors-en    301
@@ -105,3 +105,7 @@
 # 2026-10-18 土星人裁決 A：footer 舊連結 /overseas、/overseas-en 全站 404 → 301 止血
 /overseas       /overseas-buyers      301
 /overseas-en    /overseas-buyers-en   301
+
+# 2026-10-19 土星人裁決 P0-1：0 曝光通用模板 → 301 到對應新頁（單跳，目標皆 200）
+/blog/cape-town-gated-community      /blog/cape-town-gated-community-guide-foreign-buyers-2026    301
+/blog/cape-town-short-term-rentals   /blog/cape-town-short-term-letting-by-law-2026               301
