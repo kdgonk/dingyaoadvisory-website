@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-16",
+  "last_updated": "2026-10-18",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "cape-town-unlawful-occupation-eviction-timeline-2026",
+          "title": "開普敦房屋被占用怎麼辦？南非驅逐租客程序與租金管制解析",
+          "description": "開普敦房屋被占用怎麼辦？南非 PIE 法規定沒有法院命令不得驅逐：警長送達、至少 14 天通知、無抗辯約 3–6 個月、有抗辯 12 個月以上，自行換鎖反而可能觸發占有回復。本文整理南非驅逐租客程序七步流程、開普敦租金管制立場與開普敦租金市場 2026 數據，並附海外房東的租務風險清單。立即索取房東風險檢核表。",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026",
+          "language": "zh-TW",
+          "category": "investment",
+          "published": "2026-10-18",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-unlawful-occupation-eviction-timeline-2026-hero.webp"
+        },
+        {
+          "slug": "cape-town-unlawful-occupation-eviction-timeline-2026-en",
+          "title": "Eviction Process South Africa: Cape Town Guide",
+          "description": "Unlawful occupation in South Africa cannot be resolved by changing locks. This guide covers the eviction process South Africa requires — court notice, Sheriff service, 14 days, 3–6 months unopposed — plus Cape Town rent control and Cape Town rental market 2026 data. Request our landlord risk checklist.",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026-en",
+          "language": "en",
+          "category": "investment",
+          "published": "2026-10-18",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-unlawful-occupation-eviction-timeline-2026-hero.webp"
+        },
         {
           "slug": "south-africa-residency-pathways-taiwan-guide-2026",
           "title": "南非移民 2026 完整指南：四條居留路徑與南非永久居留門檻",
