@@ -1879,11 +1879,10 @@ function submitTourRegistration(e) {
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
 
   // Create contact via Chatwoot API
-  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
+  fetch('/api/lead', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       inbox_id: 2,
@@ -1899,7 +1898,7 @@ function submitTourRegistration(e) {
   })
   .then(res => res.json())
   .then(data => {
-    if (data.payload && data.payload.contact) {
+    if (data.ok || (data.payload && data.payload.contact)) {
       /* GA4 conversion event */
       if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'tour_page' });

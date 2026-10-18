@@ -11,11 +11,10 @@ function submitLmForm(e, source) {
   var label = btn.innerHTML;
   btn.disabled = true;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送出中...';
-  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
+  fetch('/api/lead', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       inbox_id: 2,
@@ -30,7 +29,7 @@ function submitLmForm(e, source) {
   })
   .then(function(res){ return res.json(); })
   .then(function(data){
-    if (data.payload && data.payload.contact) {
+    if (data.ok || (data.payload && data.payload.contact)) {
       if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', { event_category: 'lead_magnet', event_label: source });
       } else if (window.dataLayer) {

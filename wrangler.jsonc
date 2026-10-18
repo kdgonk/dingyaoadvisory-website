@@ -1,10 +1,14 @@
 {
   // dingyao = Cloudflare **Worker**（Static Assets，不是 Pages）
-  // 目的：讓缺頁回傳 dist/404.html（HTTP 404 + 有 body），修掉「空白 404」。
-  // 不要加 "main"：本 Worker 只要 assets，不需要執行 worker script。
+  // 目的 1：讓缺頁回傳 dist/404.html（HTTP 404 + 有 body），修掉「空白 404」。
+  // 目的 2（2026-10-19）：/api/lead 由本 Worker 代理 Chatwoot，前端不再持有 API token。
+  //   token 只存在 Cloudflare secret CHATWOOT_API_TOKEN，永不進 repo / 前端。
+  // 注意：dist/_worker.js 會導致部署硬失敗，不要新增該檔。
   "name": "dingyao",
+  "main": "src/worker.js",
   "compatibility_date": "2026-10-14",
   "assets": {
+    "binding": "ASSETS",
     "directory": "./dist",
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash"

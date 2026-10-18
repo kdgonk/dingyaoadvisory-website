@@ -1528,11 +1528,10 @@ document.getElementById('contactForm')?.addEventListener('submit', function(e) {
   var btn = form.querySelector('#c-submitBtn');
   btn.disabled = true;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-  fetch('https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts', {
+  fetch('/api/lead', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'api_access_token': '3GcboBf6MgYfn54yiGJDJscb'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       inbox_id: 2,
@@ -1548,7 +1547,7 @@ document.getElementById('contactForm')?.addEventListener('submit', function(e) {
   })
   .then(function(res) { return res.json(); })
   .then(function(data) {
-    if (data.payload && data.payload.contact) {
+    if (data.ok || (data.payload && data.payload.contact)) {
       if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'contact_page_en' });
       } else if (window.dataLayer) {
