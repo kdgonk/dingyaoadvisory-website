@@ -101,3 +101,7 @@
 # 2026-10-12 老闆指示：/group → /overseas（海外交付鏈）
 /group       /overseas-buyers       301
 /group-en    /overseas-buyers-en    301
+
+# 2026-10-18 土星人裁決 A：footer 舊連結 /overseas、/overseas-en 全站 404 → 301 止血
+/overseas       /overseas-buyers      301
+/overseas-en    /overseas-buyers-en   301
