@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
-"""S-20261019-01 索引閘門 — 每日 1–2 頁送 Indexing API + 回報 URL Inspection 狀態。
+"""S-20261019-01 索引閘門 — 每日 URL Inspection 追蹤（sitemap lastmod ≤14 天差集）。
 
-背景：4 篇新頁停在 Discovered - currently not indexed、lastCrawl 從未發生。
-Google 的「Request Indexing」只在 GSC UI 提供（無程式化 API），本腳本用
-Indexing API URL_UPDATED 做每日錯開遞送（配額自律：每天最多 2 頁），
-並用 URL Inspection API 追蹤 coverageState，目標 2026-11-02 前 4/4 indexed。
+設計（2026-10-19 土星人裁決 P1）：
+  · 追蹤清單 = 固定 4 頁 gate targets ∪ sitemap 中 lastmod ≤14 天的 /blog/ 新頁
+  · 每日逐頁呼叫 URL Inspection API，記錄 coverageState / lastCrawl
+  · 只在「狀態變更」或「首次納管」或「T+7 仍未收錄」時輸出；其餘靜默（stdout 空 = 不發訊息）
+  · 4/4 已 indexed → 輸出一次結案訊息後永久靜默
+  · 遞送保留：每頁 3 天冷卻、每日上限 2 頁（Indexing API 200 不保證收錄，僅作訊號）
 
-輸出（stdout 即訊息）：
-  每日一行狀態 + 今日遞送清單；4/4 全 indexed 時輸出結案訊息。
-無事可報（已全數 indexed 且已結案）→ 不輸出（靜默）。
-
-狀態檔：~/.hermes/state/gsc_index_gate_S-20261019-01.json
+狀態檔：~/.hermes/state/gsc_index_gate_S-20261019-01.json（去重、first_seen、last_status）
 """
 import datetime
 import json
 import os
+import re
 import sys
 
 from google.oauth2 import service_account
@@ -23,12 +22,17 @@ from googleapiclient.discovery import build
 CREDS = '/Users/dingyao/.openclaw/secrets/hermes-gsc-service-account.json'
 SITE = 'sc-domain:dingyaoadvisory.tw'
 STATE = os.path.expanduser('~/.hermes/state/gsc_index_gate_S-20261019-01.json')
+SITEMAP = os.path.expanduser(
+    '~/Documents/DingYao-Website/dingyaoadvisory-website/dist/sitemap.xml')
 DEADLINE = '2026-11-02'
 DAILY_LIMIT = 2
 COOLDOWN_DAYS = 3
+LOOKBACK_DAYS = 14        # sitemap lastmod 在此天數內 → 納管
+MAX_NEW_PER_DAY = 40      # 每日最多新納管檢查頁數（避免 289 頁一次打爆，backlog 每日消化）
+T7_DAYS = 7               # 納管滿 7 天仍未收錄 → 告警（即使狀態沒變）
 
-# 排序 = 遞送優先序：最弱的先送（unknown to Google > discovered）
-TARGETS = [
+# gate targets（策略卡保護對象）：最弱的先送
+TRACKED_DEFAULT = [
     'https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-asset-allocation-2026',
     'https://dingyaoadvisory.tw/blog/cape-town-safety-guide-foreign-buyers-2026',
     'https://dingyaoadvisory.tw/blog/cape-town-short-term-letting-by-law-2026',
@@ -42,7 +46,7 @@ def load_state():
     if os.path.exists(STATE):
         with open(STATE) as fh:
             return json.load(fh)
-    return {'submissions': {}, 'history': []}
+    return {}
 
 
 def save_state(state):
@@ -69,35 +73,82 @@ def inspect(gsc, url):
     return idx.get('coverageState') or 'UNKNOWN', idx.get('lastCrawlTime')
 
 
-def main():
-    today = datetime.date.today().isoformat()
-    gsc, ix = services()
-    state = load_state()
-    subs = state.setdefault('submissions', {})
+def sitemap_recent(today):
+    """回傳 [(url, lastmod)]，只取 /blog/ 且 lastmod ≥ today-LOOKBACK_DAYS，新到舊。"""
+    if not os.path.exists(SITEMAP):
+        return []
+    xml = open(SITEMAP, encoding='utf-8').read()
+    cut = (today - datetime.timedelta(days=LOOKBACK_DAYS)).isoformat()
+    out = []
+    for block in re.findall(r'<url>(.*?)</url>', xml, re.S):
+        loc = re.search(r'<loc>(.*?)</loc>', block)
+        lm = re.search(r'<lastmod>(.*?)</lastmod>', block)
+        if not loc or not lm:
+            continue
+        url, lastmod = loc.group(1).strip(), lm.group(1).strip()[:10]
+        if '/blog/' in url and lastmod >= cut:
+            out.append((url, lastmod))
+    out.sort(key=lambda x: x[1], reverse=True)
+    return out
 
-    rows, pending = [], []
-    for url in TARGETS:
+
+def main():
+    today_d = datetime.date.today()
+    today = today_d.isoformat()
+    state = load_state()
+    pages = state.setdefault('pages', {})
+    subs = state.setdefault('submissions', {})
+    tracked = state.setdefault('tracked', list(TRACKED_DEFAULT))
+
+    if state.get('closed'):
+        return 0  # 結案後永久靜默
+
+    gsc, ix = services()
+
+    recent = sitemap_recent(today_d)
+    new_urls = [u for u, _ in recent if u not in pages]
+    candidates = tracked + new_urls[:MAX_NEW_PER_DAY]
+    candidates = list(dict.fromkeys(candidates))  # 去重且保序
+
+    lines, changed, t7_alert = [], [], []
+    pending = []
+    for url in candidates:
+        prev = pages.get(url, {})
         try:
             cov, crawl = inspect(gsc, url)
         except Exception as exc:  # noqa: BLE001
-            cov, crawl = f'INSPECT_ERROR: {exc}'[:80], None
-        rows.append((url, cov, crawl))
+            cov, crawl = 'INSPECT_ERROR: ' + str(exc)[:80], None
+        is_new = not prev
+        pages[url] = {
+            'status': cov,
+            'lastCrawl': crawl,
+            'first_seen': prev.get('first_seen', today),
+            'last_checked': today,
+        }
         if cov not in OK_STATES:
             pending.append(url)
+        is_tracked = url in tracked
+        status_changed = is_new or prev.get('status') != cov
+        # T+7：納管滿 7 天仍未被收錄
+        try:
+            age = (today_d - datetime.date.fromisoformat(pages[url]['first_seen'])).days
+        except ValueError:
+            age = 0
+        overdue = cov not in OK_STATES and age >= T7_DAYS
+        if (is_tracked and status_changed) or (not is_tracked and status_changed and cov in OK_STATES):
+            changed.append((url, cov, crawl, is_new))
+        if is_tracked and overdue:
+            t7_alert.append((url, cov, age))
 
-    if not pending:
-        print(f'✅ S-20261019-01 結案：4/4 已 indexed（{today} 檢查）')
-        return 0
-
+    # 遞送（僅 gate targets，冷卻 3 天、每日 2 頁）
     sent = []
-    for url in pending:
+    for url in [u for u in tracked if u in pending]:
         if len(sent) >= DAILY_LIMIT:
             break
         last = subs.get(url)
         if last:
-            # 每頁 3 天內不重送（避免對同一頁刷遞送稀釋配額）
             try:
-                if (datetime.date.today() - datetime.date.fromisoformat(last)).days < COOLDOWN_DAYS:
+                if (today_d - datetime.date.fromisoformat(last)).days < COOLDOWN_DAYS:
                     continue
             except ValueError:
                 pass
@@ -108,20 +159,37 @@ def main():
         except Exception as exc:  # noqa: BLE001
             sent.append(f'{url}（送件失敗: {str(exc)[:60]}）')
 
-    state.setdefault('history', []).append({'date': today, 'submitted': sent, 'pending': len(pending)})
+    if sent:
+        state.setdefault('history', []).append({'date': today, 'submitted': sent})
     save_state(state)
 
-    flag = ''
-    if today > DEADLINE and pending:
-        flag = f'🚨 已過 deadline {DEADLINE}，仍未 4/4 — 需人工在 GSC UI Request Indexing\n'
-    print(f'{flag}📊 S-20261019-01 索引閘門 {today}（deadline {DEADLINE}）: indexed {len(TARGETS) - len(pending)}/4')
-    for url, cov, crawl in rows:
-        slug = url.rsplit('/', 1)[-1]
-        print(f'  · {slug}: {cov} | lastCrawl={crawl or "never"}')
+    indexed = sum(1 for u in tracked if pages.get(u, {}).get('status') in OK_STATES)
+    if tracked and indexed == len(tracked):
+        state['closed'] = True
+        state['closed_at'] = today
+        save_state(state)
+        print(f'✅ S-20261019-01 索引閘門結案：{indexed}/{len(tracked)} 全部 indexed（{today}）')
+        return 0
+
+    # 靜默條件：無狀態變更、無 T+7 告警、無遞送、未過 deadline
+    if not changed and not t7_alert and not sent and today <= DEADLINE:
+        return 0
+
+    head = f'📊 索引閘門 {today}｜gate {indexed}/{len(tracked)}｜納管 {len(pages)} 頁'
+    if today > DEADLINE:
+        head = f'🚨 已過 deadline {DEADLINE}，gate 仍 {indexed}/{len(tracked)}｜' + head.split('｜', 1)[1]
+    print(head)
+    if changed:
+        print('  狀態變更：')
+        for url, cov, crawl, is_new in changed:
+            tag = 'NEW ' if is_new else 'DIFF'
+            print(f'  [{tag}] {url.rsplit("/", 1)[-1]}: {cov} | lastCrawl={crawl or "never"}')
+    if t7_alert:
+        print(f'  ⏰ T+{T7_DAYS} 仍未收錄：')
+        for url, cov, age in t7_alert:
+            print(f'  · {url.rsplit("/", 1)[-1]}: {cov}（納管 {age} 天）')
     if sent:
-        print('  → 今日 Indexing API 遞送: ' + ', '.join(s.rsplit('/', 1)[-1] for s in sent))
-    else:
-        print('  → 今日無新遞送（今日配額已用或待明日錯開）')
+        print('  → Indexing API 遞送: ' + ', '.join(s.rsplit('/', 1)[-1] for s in sent))
     return 0
 
 
