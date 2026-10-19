@@ -3,8 +3,13 @@ name: Deploy to Cloudflare Workers
 # 2026-10-19 泰坦人：GitHub Actions → wrangler deploy（不取代本機 wrangler）
 # 階段 1：只允許手動觸發（workflow_dispatch）。驗證通過後才加 push 觸發。
 # 注意：Worker secret CHATWOOT_API_TOKEN 存在 Cloudflare 端，部署不會清除。
+# 階段 2（2026-10-19 驗證通過後）：加 push 觸發，push 到 main 即自動部署。
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
 
 concurrency:
   group: deploy-${{ github.ref }}
