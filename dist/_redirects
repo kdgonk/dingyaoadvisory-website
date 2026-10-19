@@ -112,3 +112,6 @@
 # 2026-10-19 土星人驗收補正：EN 對應頁同步 301（目標皆實測 200）
 /blog/cape-town-gated-community-en   /blog/cape-town-gated-community-guide-foreign-buyers-2026-en 301
 /blog/cape-town-short-term-rentals-en /blog/cape-town-short-term-letting-by-law-2026-en            301
+
+# 2026-10-19 土星人裁決（S-20261007-02）：0 曝光近重複新頁讓位給有排名證據的舊頁（單跳）
+/blog/taiwan-wealthy-overseas-asset-allocation-2026    /blog/taiwan-wealthy-overseas-allocation    301
