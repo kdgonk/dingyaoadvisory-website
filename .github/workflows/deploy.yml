@@ -1,0 +1,26 @@
+name: Deploy to Cloudflare Workers
+
+# 2026-10-19 泰坦人：GitHub Actions → wrangler deploy（不取代本機 wrangler）
+# 階段 1：只允許手動觸發（workflow_dispatch）。驗證通過後才加 push 觸發。
+# 注意：Worker secret CHATWOOT_API_TOKEN 存在 Cloudflare 端，部署不會清除。
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: wrangler deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy with Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
+          command: deploy
