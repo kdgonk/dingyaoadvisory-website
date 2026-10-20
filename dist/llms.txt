@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [南非開戶完整手冊：Standard Bank 非居民帳戶文件與流程（2026）](https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026) — 南非開戶不需要南非身分：Standard Bank 非居民帳戶只要護照認證副本、3 個月內地址證明、近 3 個月海外對帳單與收入證明，但真正卡住人的是 profiling 四題。本文整理官方文件清單、兩個官方頁面對地址證明的矛盾、退件三大原因、匯款費用，以及所得稅法 s50D 銀行利息免 15% 扣繳的適用邊界，並附南非定存與高利活存利率對照。立即索取開戶文件檢核表。
+- [Standard Bank Non Resident Account 2026 Guide](https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026-en) — Opening a South Africa bank account for foreigners is possible without residency: certified passport, proof of address, 3-month statements and four profiling answers. This guide also covers rejection reasons, fees and the s50D bank interest exemption. Request our document checklist.
 - [開普敦房屋被占用怎麼辦？南非驅逐租客程序與租金管制解析](https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026) — 開普敦房屋被占用怎麼辦？南非 PIE 法規定沒有法院命令不得驅逐：警長送達、至少 14 天通知、無抗辯約 3–6 個月、有抗辯 12 個月以上，自行換鎖反而可能觸發占有回復。本文整理南非驅逐租客程序七步流程、開普敦租金管制立場與開普敦租金市場 2026 數據，並附海外房東的租務風險清單。立即索取房東風險檢核表。
 - [Eviction Process South Africa: Cape Town Guide](https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026-en) — Unlawful occupation in South Africa cannot be resolved by changing locks. This guide covers the eviction process South Africa requires — court notice, Sheriff service, 14 days, 3–6 months unopposed — plus Cape Town rent control and Cape Town rental market 2026 data. Request our landlord risk checklist.
 - [南非移民 2026 完整指南：四條居留路徑與南非永久居留門檻](https://dingyaoadvisory.tw/blog/south-africa-residency-pathways-taiwan-guide-2026) — 南非移民 2026 完整指南：台灣人四條居留路徑一次看懂。南非永久居留（財務獨立簽證 R12,000,000 淨資產）、關鍵技能簽證 100 分制、遠端工作簽證 ZAR 650,976 門檻、南非留學轉居留，逐條標明法源與時程。另釐清南非免簽國家的正確認知，並拆解在開普敦落地的學費、租金與過戶稅成本。立即索取四條路徑檢核表。
@@ -202,6 +204,14 @@
 
 Last updated: 2026-10-18
 ## Blog Articles
+## 南非開戶完整手冊：Standard Bank 非居民帳戶文件與流程（2026）
+- URL (ZH): https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026
+- URL (EN): https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026-en
+- Published: 2026-10-20
+- Category: 南非置產 / 銀行開戶 / 財務規劃
+- Key entities: Standard Bank non-resident account, FICA, profiling, s50D interest exemption, SARS IN 115, 15% withholding tax on interest, FSCA
+- Summary: 南非開戶不需要南非身分：Standard Bank 非居民帳戶只要護照認證副本、3 個月內地址證明、近 3 個月海外對帳單與收入證明，但真正卡住人的是 profiling 四題。本文整理官方文件清單、兩個官方頁面對地址證明的矛盾、退件三大原因、匯款費用，以及所得稅法 s50D 銀行利息免 15% 扣繳的適用邊界，並附南非定存與高利活存利率對照。立即索取開戶文件檢核表。
+
 ## 開普敦房屋被占用怎麼辦？南非驅逐租客程序與租金管制解析
 - URL (ZH): https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026
 - URL (EN): https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026-en

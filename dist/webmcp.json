@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-10-20",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "standard-bank-non-resident-account-2026",
+          "title": "南非開戶完整手冊：Standard Bank 非居民帳戶文件與流程（2026）",
+          "description": "南非開戶不需要南非身分：Standard Bank 非居民帳戶只要護照認證副本、3 個月內地址證明、近 3 個月海外對帳單與收入證明，但真正卡住人的是 profiling 四題。本文整理官方文件清單、兩個官方頁面對地址證明的矛盾、退件三大原因、匯款費用，以及所得稅法 s50D 銀行利息免 15% 扣繳的適用邊界，並附南非定存與高利活存利率對照。立即索取開戶文件檢核表。",
+          "url": "https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026",
+          "language": "zh-TW",
+          "category": "investment",
+          "published": "2026-10-20",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/standard-bank-non-resident-account-2026-hero.webp"
+        },
+        {
+          "slug": "standard-bank-non-resident-account-2026-en",
+          "title": "Standard Bank Non Resident Account 2026 Guide",
+          "description": "Opening a South Africa bank account for foreigners is possible without residency: certified passport, proof of address, 3-month statements and four profiling answers. This guide also covers rejection reasons, fees and the s50D bank interest exemption. Request our document checklist.",
+          "url": "https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026-en",
+          "language": "en",
+          "category": "investment",
+          "published": "2026-10-20",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/standard-bank-non-resident-account-2026-hero.webp"
+        },
         {
           "slug": "cape-town-unlawful-occupation-eviction-timeline-2026",
           "title": "開普敦房屋被占用怎麼辦？南非驅逐租客程序與租金管制解析",
@@ -1429,6 +1449,11 @@
       "zh": "https://dingyaoadvisory.tw/blog/cape-town-infrastructure-investment-corridor-2026",
       "en": "https://dingyaoadvisory.tw/blog/cape-town-infrastructure-investment-corridor-2026-en",
       "purpose": "Cape Town infrastructure investment 2026 hub: the R11.3bn airport upgrade, R7.1bn MyCiTi Phase 2A, R12.8bn CBD pipeline and the City's new approval hub"
+    },
+    "standard_bank_non_resident_account_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026",
+      "en": "https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026-en",
+      "purpose": "南非非居民銀行開戶執行手冊：Standard Bank 官方文件清單、FICA 地址證明兩層規則不一致、profiling 四題、退件原因、費用、s50D 利息免扣繳邊界"
     }
   },
   "contact": {
