@@ -245,8 +245,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:all 0.4s ease}
 .navbar.scrolled{background:rgba(10,14,23,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:10px 0;border-bottom:1px solid rgba(201,168,76,0.1)}
 .navbar .container{display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:'Cinzel',serif;font-size:clamp(0.7rem,1.2vw,0.85rem);font-weight:600;letter-spacing:3px;color:#C9A84C;line-height:1.3}
-.nav-logo span{display:block;font-size:clamp(0.5rem,0.7vw,0.6rem);color:#F5F0E866;letter-spacing:2px}
 .nav-links{display:flex;align-items:center;gap:clamp(16px,1.8vw,32px)}
 .nav-links a{font-size:clamp(0.8rem,0.95vw,0.95rem);font-weight:500;color:#F5F0E8CC;transition:color 0.3s;position:relative;letter-spacing:0.5px}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:#C9A84C;transition:width 0.3s}
@@ -968,8 +966,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 /* ===== FOOTER ===== */
 .footer{background:#0A0E17;border-top:1px solid rgba(201,168,76,0.08);padding:80px 0 40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
-.footer-brand .nav-logo{margin-bottom:16px;display:inline-block}
-.footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
+.footer-brand .footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 .footer-social{display:flex;gap:12px;margin-top:20px}
 .footer-social a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;color:#F5F0E877;transition:all 0.3s;font-size:0.9rem}
 .footer-social a:hover{border-color:#C9A84C;color:#C9A84C;transform:translateY(-2px)}
@@ -1150,7 +1147,41 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PVWHRBWG');</script>
 <!-- End Google Tag Manager -->
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
-<style id="seo-a11y-outline">.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+<style id="seo-a11y-outline">.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* ===== nav LOGO 白金版 + 三支柱下拉（2026-10-20） ===== */
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;margin-bottom:0}
+.nav-mark{width:46px;height:36px;display:block;flex-shrink:0}
+.nav-wordmark{display:flex;flex-direction:column;line-height:1.15}
+.nav-w1{font-family:Cinzel,serif;font-size:14.5px;font-weight:600;letter-spacing:1.6px;color:#fff}
+.nav-w2{font-size:11.5px;letter-spacing:2.4px;color:#C9A84C;font-weight:600;margin-top:2px}
+.nav-item{position:relative}
+.nav-links>.nav-item>a{display:inline-flex;align-items:center;gap:5px}
+.nav-dd{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(6px);
+  background:rgba(10,14,23,.98);backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.22);
+  border-radius:8px;padding:8px;min-width:236px;opacity:0;visibility:hidden;transition:opacity .22s,transform .22s,visibility .22s;
+  box-shadow:0 16px 44px rgba(0,0,0,.55);z-index:120}
+.nav-item.has-dd:hover .nav-dd,.nav-item.has-dd:focus-within .nav-dd{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.nav-dd a{display:flex;flex-direction:column;gap:1px;padding:9px 13px;border-radius:5px;white-space:nowrap;transition:background .2s}
+.nav-dd a:hover{background:rgba(201,168,76,.1)}
+.nav-dd a::after{display:none}
+.nav-dd strong{font-size:13.5px;font-weight:600;color:#F5F0E8;letter-spacing:.3px}
+.nav-dd .nd-sub{font-size:11px;color:#F5F0E899;letter-spacing:.2px}
+@media(max-width:768px){
+  .nav-links{align-items:stretch}
+  .nav-links>a,.nav-links>.nav-item{text-align:left}
+  .nav-links>.nav-item{width:100%}
+  .nav-links>.nav-item>a{width:100%;justify-content:space-between}
+  .nav-links>.btn-nav{text-align:center;justify-content:center}
+  .nav-dd{position:static;transform:none;opacity:1;visibility:visible;background:rgba(255,255,255,.03);
+    border:none;border-left:2px solid rgba(201,168,76,.3);border-radius:0;padding:4px 0 4px 14px;margin:4px 0 2px;
+    box-shadow:none;min-width:0;backdrop-filter:none}
+  .nav-item.has-dd:hover .nav-dd{transform:none}
+  .nav-dd a{padding:7px 10px}
+  .nav-dd strong{font-size:13px}
+  .nav-dd .nd-sub{font-size:10.5px}
+}
+
+</style>
 </head>
 <body>
 <h2 class="sr-only">鼎曜國際顧問 DingYao Advisory</h2>
@@ -1162,18 +1193,64 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <nav class="navbar" id="navbar" aria-label="主導覽">
 <h2 class="sr-only">主導覽</h2>
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo" title="DYA DING YAO ADVISORY APAC HUB">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="46" height="36">
+      <span class="nav-wordmark">
+        <span class="nav-w1">DingYao Advisory</span>
+        <span class="nav-w2">APAC HUB</span>
+      </span>
+    </a>
     <div class="nav-links" id="navLinks">
-      <a href="/partners" title="戰略夥伴">戰略夥伴</a>
-      <a href="/platform" title="數位服務">數位服務</a>
-      <a href="/education" title="教育留學">教育留學</a>
-      <a href="/retirement" class="gold" title="退休生活">退休生活</a>
-      <a href="/residency" title="身分規劃">身分規劃</a>
-      <a href="/assets" title="精選資產">精選資產</a>
+      <div class="nav-item has-dd">
+        <a href="/south-africa-bank-account" title="南非開戶">南非開戶 ▾</a>
+        <div class="nav-dd">
+          <a href="/south-africa-bank-account"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
+          <a href="/platform"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
+          <a href="/assets"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-dd">
+        <a href="/south-africa-property" title="南非置產">南非置產 ▾</a>
+        <div class="nav-dd">
+          <a href="/south-africa-property"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
+          <a href="/overseas-buyers"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
+          <a href="/retirement"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
+          <a href="/residency"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-dd">
+        <a href="/education" title="教育留學">教育留學 ▾</a>
+        <div class="nav-dd">
+          <a href="/education"><strong>教育留學總覽</strong></a>
+          <a href="/education#schools"><strong>貴族寄宿學校</strong></a>
+          <a href="/education#cost"><strong>學費與生活成本</strong></a>
+        </div>
+      </div>
       <a href="/tour" title="商業考察">商業考察</a>
       <a href="/blog" title="鼎曜觀點">鼎曜觀點</a>
       <a href="/consultation" class="btn-nav" title="預約諮詢">預約諮詢</a>
-      <div class="nav-lang"><a href="#" class="active" id="langTw" title="TW">TW</a><span>/</span><a href="#" id="langEn" title="EN">EN</a></div>
+      <div class="nav-lang" id="langSwitcher">
+  <a href="#" class="active" id="langTw" title="TW">TW</a><span>/</span><a href="#" id="langEn" title="EN">EN</a>
+</div>
+<script>
+(function(){
+  var path = window.location.pathname;
+  var tw = document.getElementById('langTw');
+  var en = document.getElementById('langEn');
+  var logo = document.getElementById('navLogo');
+  if (path.endsWith('-en')) { tw.href = path.slice(0, -3) || '/'; } else { tw.href = path; }
+  if (path === '/') { en.href = '/index-en'; }
+  else if (path.endsWith('-en')) { en.href = path; }
+  else { en.href = path + '-en'; }
+  if (path.endsWith('-en')) {
+    en.classList.add('active'); tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
+  } else {
+    tw.classList.add('active'); en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
+  }
+})();
+</script>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>

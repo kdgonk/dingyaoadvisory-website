@@ -272,8 +272,6 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:all 0.4s ease}
 .navbar.scrolled{background:rgba(10,14,23,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:10px 0;border-bottom:1px solid rgba(201,168,76,0.1)}
 .navbar .container{display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:'Cinzel',serif;font-size:clamp(0.7rem,1.2vw,0.85rem);font-weight:600;letter-spacing:3px;color:#C9A84C;line-height:1.3}
-.nav-logo span{display:block;font-size:clamp(0.5rem,0.7vw,0.6rem);color:#F5F0E866;letter-spacing:2px}
 .nav-links{display:flex;align-items:center;gap:clamp(16px,1.8vw,32px)}
 .nav-links a{font-size:clamp(0.8rem,0.95vw,0.95rem);font-weight:500;color:#F5F0E8CC;transition:color 0.3s;position:relative;letter-spacing:0.5px;white-space:nowrap}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:#C9A84C;transition:width 0.3s}
@@ -576,8 +574,7 @@ blockquote cite {
 /* ===== FOOTER ===== */
 .footer{background:#0A0E17;border-top:1px solid rgba(201,168,76,0.08);padding:80px 0 40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
-.footer-brand .nav-logo{margin-bottom:16px;display:inline-block}
-.footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
+.footer-brand .footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 .footer-social{display:flex;gap:12px;margin-top:20px}
 .footer-social a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;color:#F5F0E877;transition:all 0.3s;font-size:0.9rem}
 .footer-social a:hover{border-color:#C9A84C;color:#C9A84C;transform:translateY(-2px)}
@@ -731,18 +728,64 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <nav class="navbar" id="navbar" aria-label="Main navigation">
 <h2 class="sr-only">Main navigation</h2>
   <div class="container">
-    <a href="/index-en" class="nav-logo" id="navLogo" title="DYA DING YAO ADVISORY APAC HUB">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+    <a href="/index-en" class="nav-logo" id="navLogo">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="46" height="36">
+      <span class="nav-wordmark">
+        <span class="nav-w1">DingYao Advisory</span>
+        <span class="nav-w2">APAC HUB</span>
+      </span>
+    </a>
     <div class="nav-links" id="navLinks">
-      <a href="/partners-en" title="Partners">Partners</a>
-      <a href="/platform-en" title="Platform">Platform</a>
-      <a href="/education-en" title="Education">Education</a>
-      <a href="/retirement-en" class="gold" title="Retirement">Retirement</a>
-      <a href="/residency-en" title="Residency">Residency</a>
-      <a href="/assets-en" title="Assets">Assets</a>
-      <a href="/tour-en" title="Tour">Tour</a>
+      <div class="nav-item has-dd">
+        <a href="/south-africa-bank-account-en" title="Bank Account">Bank Account ▾</a>
+        <div class="nav-dd">
+          <a href="/south-africa-bank-account-en"><strong>SA Bank Account Service</strong><span class="nd-sub">Standard Bank Non-Resident Account</span></a>
+          <a href="/platform-en"><strong>Digital Services</strong><span class="nd-sub">Digital Asset Platform</span></a>
+          <a href="/assets-en"><strong>Featured Assets</strong><span class="nd-sub">Asset Allocation</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-dd">
+        <a href="/south-africa-property-en" title="SA Property">SA Property ▾</a>
+        <div class="nav-dd">
+          <a href="/south-africa-property-en"><strong>SA Property Advisory</strong><span class="nd-sub">Cape Town Property Advisory</span></a>
+          <a href="/overseas-buyers-en"><strong>Overseas Buyer Process</strong><span class="nd-sub">Delivery & Transfer</span></a>
+          <a href="/retirement-en"><strong>Retirement</strong><span class="nd-sub">Retirement Relocation</span></a>
+          <a href="/residency-en"><strong>Residency</strong><span class="nd-sub">Permanent Residency</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-dd">
+        <a href="/education-en" title="Education">Education ▾</a>
+        <div class="nav-dd">
+          <a href="/education-en"><strong>Education Overview</strong></a>
+          <a href="/education-en#schools"><strong>Top Boarding Schools</strong></a>
+          <a href="/education-en#cost"><strong>Fees and Living Costs</strong></a>
+        </div>
+      </div>
+      <a href="/tour-en" title="Business Tour">Business Tour</a>
       <a href="/blog-en" title="Insights">Insights</a>
       <a href="/consultation-en" class="btn-nav" title="Consultation">Consultation</a>
-      <div class="nav-lang"><a href="#" id="langEn" class="active" title="EN">EN</a><span>/</span><a href="#" id="langTw" title="TW">TW</a></div>
+      <div class="nav-lang" id="langSwitcher">
+  <a href="#" class="active" id="langTw" title="TW">TW</a><span>/</span><a href="#" id="langEn" title="EN">EN</a>
+</div>
+<script>
+(function(){
+  var path = window.location.pathname;
+  var tw = document.getElementById('langTw');
+  var en = document.getElementById('langEn');
+  var logo = document.getElementById('navLogo');
+  if (path.endsWith('-en')) { tw.href = path.slice(0, -3) || '/'; } else { tw.href = path; }
+  if (path === '/') { en.href = '/index-en'; }
+  else if (path.endsWith('-en')) { en.href = path; }
+  else { en.href = path + '-en'; }
+  if (path.endsWith('-en')) {
+    en.classList.add('active'); tw.classList.remove('active');
+    if (logo) logo.href = '/index-en';
+  } else {
+    tw.classList.add('active'); en.classList.remove('active');
+    if (logo) logo.href = 'https://dingyaoadvisory.tw';
+  }
+})();
+</script>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
   </div>
@@ -1024,6 +1067,40 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 .crestline-assist .ca-cta{margin-top:2rem}
 .crestline-assist .ca-cta .btn{margin-top:0}
 @media(max-width:768px){.crestline-assist{padding:3rem 0}.crestline-assist h2{font-size:1.45rem}.crestline-assist h3{font-size:1.02rem}.crestline-assist p,.crestline-assist li{line-height:1.85}}
+
+/* ===== nav LOGO 白金版 + 三支柱下拉（2026-10-20） ===== */
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;margin-bottom:0}
+.nav-mark{width:46px;height:36px;display:block;flex-shrink:0}
+.nav-wordmark{display:flex;flex-direction:column;line-height:1.15}
+.nav-w1{font-family:Cinzel,serif;font-size:14.5px;font-weight:600;letter-spacing:1.6px;color:#fff}
+.nav-w2{font-size:11.5px;letter-spacing:2.4px;color:#C9A84C;font-weight:600;margin-top:2px}
+.nav-item{position:relative}
+.nav-links>.nav-item>a{display:inline-flex;align-items:center;gap:5px}
+.nav-dd{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(6px);
+  background:rgba(10,14,23,.98);backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.22);
+  border-radius:8px;padding:8px;min-width:236px;opacity:0;visibility:hidden;transition:opacity .22s,transform .22s,visibility .22s;
+  box-shadow:0 16px 44px rgba(0,0,0,.55);z-index:120}
+.nav-item.has-dd:hover .nav-dd,.nav-item.has-dd:focus-within .nav-dd{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.nav-dd a{display:flex;flex-direction:column;gap:1px;padding:9px 13px;border-radius:5px;white-space:nowrap;transition:background .2s}
+.nav-dd a:hover{background:rgba(201,168,76,.1)}
+.nav-dd a::after{display:none}
+.nav-dd strong{font-size:13.5px;font-weight:600;color:#F5F0E8;letter-spacing:.3px}
+.nav-dd .nd-sub{font-size:11px;color:#F5F0E899;letter-spacing:.2px}
+@media(max-width:768px){
+  .nav-links{align-items:stretch}
+  .nav-links>a,.nav-links>.nav-item{text-align:left}
+  .nav-links>.nav-item{width:100%}
+  .nav-links>.nav-item>a{width:100%;justify-content:space-between}
+  .nav-links>.btn-nav{text-align:center;justify-content:center}
+  .nav-dd{position:static;transform:none;opacity:1;visibility:visible;background:rgba(255,255,255,.03);
+    border:none;border-left:2px solid rgba(201,168,76,.3);border-radius:0;padding:4px 0 4px 14px;margin:4px 0 2px;
+    box-shadow:none;min-width:0;backdrop-filter:none}
+  .nav-item.has-dd:hover .nav-dd{transform:none}
+  .nav-dd a{padding:7px 10px}
+  .nav-dd strong{font-size:13px}
+  .nav-dd .nd-sub{font-size:10.5px}
+}
+
 </style>
 <section class="crestline-assist" id="crestline-assist">
   <div class="ca-inner">
