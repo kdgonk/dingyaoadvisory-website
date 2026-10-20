@@ -1294,6 +1294,15 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .faq-item.active .faq-answer {
   max-height: 300px;
 }
+/* ===== FAQ 展開修復（2026-10-20）
+   toggleFaq(el) 把 active 加在 <button class="faq-question"> 上，
+   舊規則用 .faq-item.active 永遠不匹配 → 點了 class 變了但畫面沒反應。
+   故改用相鄰兄弟選擇器 .faq-question.active + .faq-answer。 ===== */
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.faq-question.active + .faq-answer{max-height:900px;}
+.faq-question{display:flex;justify-content:space-between;align-items:center;width:100%;cursor:pointer;}
+.faq-question i{transition:transform .3s ease;}
+.faq-question.active i{transform:rotate(180deg);}
 .faq-answer p {
   padding: 0 24px 20px;
   font-size: 0.9rem;

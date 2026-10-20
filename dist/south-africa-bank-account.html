@@ -11,12 +11,12 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="canonical" href="https://dingyaoadvisory.tw/south-africa-bank-account">
-<meta name="description" content="南非銀行開戶完整指南：南非幣定存與南非當地 Money Market 的利率差、FICA 文件、三個月內地址證明與匯款 BOP 類別。Standard Bank Money Market Select 於 2026-10-02 公告 7.10% 至 7.45%，台灣一年期定存固定利率 1.700%，但南非幣貶值超過 5.40% 利差即歸零。文內附最壞情況試算與退場機制，開戶文件由鼎曜協助確認並轉交 Crestline Advisory 簽約。">
+<meta name="description" content="南非銀行開戶完整指南：南非幣定存與南非當地 Money Market 的利率差、FICA 文件、三個月內地址證明與匯款 BOP 類別。Standard Bank Money Market Select 約 7%（2026-10-02 牌告 7.10% 至 7.45%），最低開戶金額 R100,000 起（約新台幣 17 萬元）；台灣一年期定存固定利率 1.700%。文內附最壞情況試算與退場機制，開戶文件由鼎曜協助確認並轉交 Crestline Advisory；帳戶簽約主體為 Standard Bank。">
 <meta name="keywords" content="南非PR, 南非永久居留權, 南非移民, 第二身分, 全球身分規劃, 南非簽證, Crestline Advisory, DingYao Advisory">
 <meta name="author" content="DingYao Advisory">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="南非銀行開戶完整指南｜外國人開戶流程與文件｜鼎曜國際顧問">
-<meta property="og:description" content="南非銀行開戶完整指南：南非幣定存與南非當地 Money Market 的利率差、FICA 文件、三個月內地址證明與匯款 BOP 類別。Standard Bank Money Market Select 於 2026-10-02 公告 7.10% 至 7.45%，台灣一年期定存固定利率 1.700%，但南非幣貶值超過 5.40% 利差即歸零。文內附最壞情況試算與退場機制，開戶文件由鼎曜協助確認並轉交 Crestline Advisory 簽約。">
+<meta property="og:description" content="南非銀行開戶完整指南：南非幣定存與南非當地 Money Market 的利率差、FICA 文件、三個月內地址證明與匯款 BOP 類別。Standard Bank Money Market Select 約 7%（2026-10-02 牌告 7.10% 至 7.45%），最低開戶金額 R100,000 起（約新台幣 17 萬元）；台灣一年期定存固定利率 1.700%。文內附最壞情況試算與退場機制，開戶文件由鼎曜協助確認並轉交 Crestline Advisory；帳戶簽約主體為 Standard Bank。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dingyaoadvisory.tw/south-africa-bank-account">
 <meta property="og:image" content="https://assets.dingyaoadvisory.tw/redesign/section-hero.webp">
@@ -24,7 +24,7 @@
 <meta name="twitter:image" content="https://assets.dingyaoadvisory.tw/redesign/section-hero.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="南非銀行開戶完整指南｜外國人開戶流程與文件｜鼎曜國際顧問">
-<meta name="twitter:description" content="南非銀行開戶完整指南：南非幣定存與南非當地 Money Market 的利率差、FICA 文件、三個月內地址證明與匯款 BOP 類別。Standard Bank Money Market Select 於 2026-10-02 公告 7.10% 至 7.45%，台灣一年期定存固定利率 1.700%，但南非幣貶值超過 5.40% 利差即歸零。文內附最壞情況試算與退場機制，開戶文件由鼎曜協助確認並轉交 Crestline Advisory 簽約。">
+<meta name="twitter:description" content="南非銀行開戶完整指南：南非幣定存與南非當地 Money Market 的利率差、FICA 文件、三個月內地址證明與匯款 BOP 類別。Standard Bank Money Market Select 約 7%（2026-10-02 牌告 7.10% 至 7.45%），最低開戶金額 R100,000 起（約新台幣 17 萬元）；台灣一年期定存固定利率 1.700%。文內附最壞情況試算與退場機制，開戶文件由鼎曜協助確認並轉交 Crestline Advisory；帳戶簽約主體為 Standard Bank。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1294,6 +1294,15 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .faq-item.active .faq-answer {
   max-height: 300px;
 }
+/* ===== FAQ 展開修復（2026-10-20）
+   toggleFaq(el) 把 active 加在 <button class="faq-question"> 上，
+   舊規則用 .faq-item.active 永遠不匹配 → 點了 class 變了但畫面沒反應。
+   故改用相鄰兄弟選擇器 .faq-question.active + .faq-answer。 ===== */
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.faq-question.active + .faq-answer{max-height:900px;}
+.faq-question{display:flex;justify-content:space-between;align-items:center;width:100%;cursor:pointer;}
+.faq-question i{transition:transform .3s ease;}
+.faq-question.active i{transform:rotate(180deg);}
 .faq-answer p {
   padding: 0 24px 20px;
   font-size: 0.9rem;
@@ -1384,7 +1393,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "name": "鼎曜國際顧問 DingYao Advisory — 南非銀行開戶與南非幣高利帳戶",
-  "description": "南非銀行開戶服務：南非幣高利帳戶的利率比較、FICA 文件準備、格式複核與轉交 Crestline Advisory 簽約。",
+  "description": "南非銀行開戶服務：南非幣高利帳戶的利率比較、FICA 文件準備、格式複核，與協助轉交 Crestline Advisory 完成開戶流程。",
   "url": "https://dingyaoadvisory.tw/south-africa-bank-account",
   "areaServed": [
     {
@@ -1481,7 +1490,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       "name": "南非幣定存利率和南非當地差多少？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "台灣的南非幣定存走的是各銀行外幣牌告，通常低於當地貨幣市場利率；當地 Money Market Select 於 2026-10-02 公告 7.10% 至 7.45%。差距要看你往來銀行的牌告與額度限制，不是固定倍數，也不是換銀行就能解決。"
+        "text": "台灣的南非幣定存走的是各銀行外幣牌告，通常低於當地貨幣市場利率；當地 Money Market Select 約 7%（2026-10-02 牌告 7.10% 至 7.45%），最低開戶金額 R100,000 起（約新台幣 17 萬元）。差距要看你往來銀行的牌告與額度限制，不是固定倍數，也不是換銀行就能解決。"
       }
     },
     {
@@ -1513,7 +1522,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       "name": "7.10% 的利率是保證的嗎？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "不是。7.10% 至 7.45% 是 2026-10-02 的公開牌告資料，會隨南非儲備銀行政策與各銀行資金成本調整而變動。任何把利率寫成固定保證、卻同時不提匯率風險與存款保障上限的說法，都不正確。"
+        "text": "不是。7% 是約略值，牌告區間為 7.10% 至 7.45%（2026-10-02），會隨南非儲備銀行政策與各銀行資金成本調整而變動。任何把利率寫成固定保證、卻同時不提匯率風險與存款保障上限的說法，都不正確。"
       }
     },
     {
@@ -1521,7 +1530,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       "name": "鼎曜是簽約方嗎？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "不是。鼎曜國際顧問在開普敦協助你確認資料、準備文件並轉交 Crestline Advisory；帳戶與相關合約的簽約主體是 Crestline Advisory，鼎曜不代收資金、不代為簽約，也不經手任何一筆匯款。"
+        "text": "不是。鼎曜提供文件確認與轉交；帳戶及開戶合約之簽約主體為 Standard Bank（南非標準銀行），Crestline Advisory 是協助你完成開戶流程的顧問方，鼎曜與 Crestline 均不代收你的資金。"
       }
     }
   ]
@@ -1632,7 +1641,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <span class="gold-text">南非銀行開戶流程與文件</span>
     </h1>
     <p class="hero-subtitle">
-      台灣一年期定存 <strong>1.700%</strong>，南非 Money Market 公告 <strong class="gold-text">7.10%–7.45%</strong>。<br>問題不是資格，是文件格式與匯率風險；我們在<strong>開普敦</strong>幫你備齊。
+      台灣一年期定存 <strong>1.700%</strong>，南非 Money Market <strong class="gold-text">約 7%</strong>，最低開戶 <strong>R100,000</strong>（約新台幣 17 萬元）。<br>問題不是資格，是文件格式與匯率風險；我們在<strong>開普敦</strong>幫你備齊。
     </p>
     <div class="hero-actions">
       <a href="/consultation" class="btn btn-primary" data-cta-id="hero_primary" data-cta-location="hero" title="預約免費體檢">預約免費體檢 <i class="fas fa-arrow-right"></i></a>
@@ -1667,7 +1676,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="why-card">
         <div class="w-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg></div>
         <h3>台灣的南非幣定存被吃掉一層</h3>
-        <p>台灣銀行賣的是外幣牌告利率，不是南非當地利率，價差與額度限制都藏在牌告裡。同樣叫定存，兩邊不是同一個價格。</p>
+        <p>台灣銀行賣的是外幣牌告利率，不是南非當地利率，價差與額度限制都藏在牌告裡。台灣端是定存（約定期間內不能動用），南非端 Money Market Select 是活存（可隨時動用、無鎖期）—— 南非活存不只利率更高，資金也更靈活，這兩件事經常被混為一談。</p>
       </div>
       <div class="why-card">
         <div class="w-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
@@ -1676,7 +1685,12 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       </div>
     </div>
     <div class="fade-in" style="max-width:900px;margin:2.5rem auto 0;padding:1.75rem 2rem;background:var(--card-bg);border:1px solid var(--card-border);border-left:3px solid var(--gold);border-radius:10px;">
-      <p style="margin:0;color:var(--cream);line-height:1.9;">最壞情況先算：300 萬台幣換成南非幣，若一年後貶 15%，本金剩約 255 萬，加上 7.10% 利息約 21.3 萬，合計約 276.3 萬，仍低於原本的 300 萬。7.10% 減 1.700% 等於 5.40 個百分點，貶超過 5.40% 利差歸零 —— 這是開普敦客戶最常忽略的一段。</p>
+      <p style="margin:0;color:var(--cream);line-height:1.9;">同樣一筆南非幣，放台灣定存和放南非活存，匯率貶值時的結果完全不同：</p>
+      <ul style="margin:.85rem 0 0;padding-left:1.25rem;color:var(--cream);line-height:1.9;">
+        <li style="margin-bottom:.5rem;"><strong>台灣銀行南非幣定存（一年期約 1.70%）</strong>：貶 5.40% 時，1.70% − 5.40% = 實質 <strong style="color:#e0785f;">−3.70%</strong>，本金倒賠。</li>
+        <li><strong>南非 Standard Bank 活存（約 7.10%）</strong>：貶 5.40% 時，7.10% − 5.40% = 實質 <strong class="gold-text">+1.70%</strong>，仍是正報酬。</li>
+      </ul>
+      <p style="margin:.85rem 0 0;color:var(--text-muted);font-size:.9rem;line-height:1.8;">同樣的匯率貶幅，一邊倒賠、一邊仍正報酬 —— 差別在利率夠不夠厚。這是開普敦客戶最常忽略的一段。</p>
     </div>
   </div>
 </section>
@@ -1722,7 +1736,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         <div class="timeline-content">
           <div class="step-num">STEP 04</div>
           <h3>轉交 Crestline Advisory</h3>
-          <p>由 Crestline 在開普敦與你簽約、送件並對接銀行 KYC。鼎曜不代收資金，也不代為簽約。</p>
+          <p>由 Crestline 在開普敦協助你送件並對接銀行 KYC；開戶合約的簽約主體是 Standard Bank（南非標準銀行）。鼎曜與 Crestline 均不代收你的資金。</p>
         </div>
       </div>
       <div class="timeline-item fade-in">
@@ -1758,13 +1772,18 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           <tr><th>比較項目</th><th>台灣一年期定存</th><th>南非 Money Market</th></tr>
         </thead>
         <tbody>
-          <tr><td>利率水準</td><td>依各銀行南非幣牌告，通常低於當地</td><td>7.10%（ZAR 10 萬）／7.45%（ZAR 100 萬以上）</td></tr>
+          <tr><td>利率水準</td><td>依各銀行南非幣牌告，通常低於當地</td><td>約 7%（2026-10-02 牌告 7.10%–7.45%）</td></tr>
           <tr><td>利率性質</td><td>銀行自訂外幣牌告</td><td>當地貨幣市場利率，隨央行政策變動</td></tr>
+          <tr><td>資金動用</td><td>定存，約定期間內動用會減息</td><td>活存，可隨時動用、無鎖期</td></tr>
           <tr><td>匯率成本</td><td>換匯價差</td><td>換匯價差＋跨境匯費</td></tr>
-          <tr><td>存款保障</td><td>台灣中央存保（外幣依規定）</td><td>南非機制，上限待確認</td></tr>
-          <tr><td>簽約主體</td><td>台灣的銀行</td><td>Crestline Advisory</td></tr>
+          <tr><td>存款保障</td><td>中央存保，上限 NT$300 萬</td><td>CODI，每人每家銀行 R100,000</td></tr>
+          <tr><td>簽約主體</td><td>台灣的銀行</td><td>Standard Bank（南非標準銀行）</td></tr>
         </tbody>
       </table>
+    </div>
+    <div class="fade-in" style="max-width:900px;margin:1.5rem auto 0;padding:1.25rem 1.5rem;background:var(--card-bg);border:1px solid var(--card-border);border-left:3px solid var(--gold);border-radius:10px;">
+      <p style="margin:0 0 .6rem;color:var(--cream);line-height:1.9;"><strong>存款保障上限（很多人沒問，但最該問）</strong></p>
+      <p style="margin:0;color:var(--text-muted);font-size:.9rem;line-height:1.85;">南非存款保障制度為 CODI（Corporation for Deposit Insurance，南非儲備銀行全資子公司），2024 年 4 月 1 日起運作，保障上限為每位存款人、每家銀行 R100,000（約新台幣 17 萬元），自動生效、不需登記。對照台灣，中央存款保險保障上限為新台幣 300 萬元。超過上限的部分同樣不受保障 —— 這是大額資金放單一銀行的共同風險，不是南非獨有；實務做法是分散銀行配置，我們在評估階段會一起看。</p>
     </div>
     <div class="section-title fade-in" style="margin-top:3.5rem;">
       <h2>南非幣貶多少，利差就被吃掉？</h2>
@@ -1812,7 +1831,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           <i class="fas fa-chevron-down"></i>
         </button>
         <div class="faq-answer">
-          <p>台灣的南非幣定存走的是各銀行外幣牌告，通常低於當地貨幣市場利率；當地 Money Market Select 於 2026-10-02 公告 7.10% 至 7.45%。差距要看你往來銀行的牌告與額度限制，不是固定倍數，也不是換銀行就能解決。</p>
+          <p>台灣的南非幣定存走的是各銀行外幣牌告，通常低於當地貨幣市場利率；當地 Money Market Select 約 7%（2026-10-02 牌告 7.10% 至 7.45%），最低開戶金額 R100,000 起（約新台幣 17 萬元）。差距要看你往來銀行的牌告與額度限制，不是固定倍數，也不是換銀行就能解決。</p>
         </div>
       </div>
       <div class="faq-item fade-in">
@@ -1848,7 +1867,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           <i class="fas fa-chevron-down"></i>
         </button>
         <div class="faq-answer">
-          <p>不是。7.10% 至 7.45% 是 2026-10-02 的公開牌告資料，會隨南非儲備銀行政策與各銀行資金成本調整而變動。任何把利率寫成固定保證、卻同時不提匯率風險與存款保障上限的說法，都不正確。</p>
+          <p>不是。7% 是約略值，牌告區間為 7.10% 至 7.45%（2026-10-02），會隨南非儲備銀行政策與各銀行資金成本調整而變動。任何把利率寫成固定保證、卻同時不提匯率風險與存款保障上限的說法，都不正確。</p>
         </div>
       </div>
       <div class="faq-item fade-in">
@@ -1857,7 +1876,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           <i class="fas fa-chevron-down"></i>
         </button>
         <div class="faq-answer">
-          <p>不是。鼎曜國際顧問在開普敦協助你確認資料、準備文件並轉交 Crestline Advisory；帳戶與相關合約的簽約主體是 Crestline Advisory，鼎曜不代收資金、不代為簽約，也不經手任何一筆匯款。</p>
+          <p>不是。鼎曜提供文件確認與轉交；帳戶及開戶合約之簽約主體為 Standard Bank（南非標準銀行），Crestline Advisory 是協助你完成開戶流程的顧問方，鼎曜與 Crestline 均不代收你的資金。</p>
         </div>
       </div>
     </div>
