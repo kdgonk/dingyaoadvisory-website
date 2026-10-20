@@ -232,6 +232,19 @@ def update_sitemap():
     # Find all blog articles
     blog_files = list(BLOG_DIR.glob('*.html'))
     blog_files = [f for f in blog_files if f.name != 'blog-template.html']
+
+    # 2026-10-20 泰坦人：被 dist/_redirects 301 的檔案不可進 sitemap
+    redirect_sources = set()
+    redirects_file = DIST_DIR / '_redirects'
+    if redirects_file.exists():
+        for line in redirects_file.read_text(encoding='utf-8', errors='ignore').splitlines():
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            parts = line.split()
+            if len(parts) >= 2 and '*' not in parts[0] and not parts[0].startswith('http'):
+                redirect_sources.add(parts[0].rstrip('/'))
+    blog_files = [f for f in blog_files if f'/blog/{f.stem}' not in redirect_sources]
     
     # Check what's already in sitemap
     existing_urls = re.findall(r'<loc>(https://dingyaoadvisory\.tw/blog/[^<]+)</loc>', content)
