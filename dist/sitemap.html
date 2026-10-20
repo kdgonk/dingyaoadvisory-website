@@ -180,6 +180,14 @@
   .form-row { grid-template-columns: 1fr; }
 }
 
+
+/* ===== footer brand 獨立結構（2026-10-20 第 6 批） ===== */
+.footer-logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-bottom:18px}
+.footer-mark{width:38px;height:30px;display:block;flex-shrink:0}
+.footer-wordmark{display:flex;flex-direction:column;line-height:1.15}
+.footer-w1{font-family:Cinzel,serif;font-size:13px;font-weight:600;letter-spacing:1.4px;color:#F5F0E8}
+.footer-w2{font-size:10px;letter-spacing:2px;color:#C9A84C;font-weight:600;margin-top:2px}
+.footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 </style>
 </head>
 <body>
@@ -1527,7 +1535,13 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo" title="DYA DING YAO ADVISORY APAC HUB">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="footer-logo" id="navLogo" title="DingYao Advisory">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <span class="footer-wordmark">
+            <span class="footer-w1">DingYao Advisory</span>
+            <span class="footer-w2">APAC HUB</span>
+          </span>
+        </a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>

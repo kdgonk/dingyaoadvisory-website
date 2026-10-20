@@ -578,7 +578,7 @@ blockquote cite {
 /* ===== FOOTER ===== */
 .footer{background:#0A0E17;border-top:1px solid rgba(201,168,76,0.08);padding:80px 0 40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
-.footer-brand .footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
+.footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 .footer-social{display:flex;gap:12px;margin-top:20px}
 .footer-social a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;color:#F5F0E877;transition:all 0.3s;font-size:0.9rem}
 .footer-social a:hover{border-color:#C9A84C;color:#C9A84C;transform:translateY(-2px)}
@@ -733,7 +733,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <h2 class="sr-only">主導覽</h2>
   <div class="container">
     <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">
-      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="46" height="36">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32">
       <span class="nav-wordmark">
         <span class="nav-w1">DingYao Advisory</span>
         <span class="nav-w2">APAC HUB</span>
@@ -1380,8 +1380,8 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
 /* ===== nav LOGO 白金版 + 三支柱下拉（2026-10-20） ===== */
 .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;margin-bottom:0}
-.nav-mark{width:46px;height:36px;display:block;flex-shrink:0}
-.nav-wordmark{display:flex;flex-direction:column;line-height:1.15}
+.nav-mark{width:42px;height:32px;display:block;flex-shrink:0}
+.nav-wordmark{display:flex;flex-direction:column;line-height:1.15;align-items:center;text-align:center}
 .nav-w1{font-family:Cinzel,serif;font-size:14.5px;font-weight:600;letter-spacing:1.6px;color:#fff}
 .nav-w2{font-size:11.5px;letter-spacing:2.4px;color:#C9A84C;font-weight:600;margin-top:2px}
 .nav-item{position:relative}
@@ -1411,6 +1411,14 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
   .nav-dd .nd-sub{font-size:10.5px}
 }
 
+
+/* ===== footer brand 獨立結構（2026-10-20 第 6 批） ===== */
+.footer-logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-bottom:18px}
+.footer-mark{width:38px;height:30px;display:block;flex-shrink:0}
+.footer-wordmark{display:flex;flex-direction:column;line-height:1.15}
+.footer-w1{font-family:Cinzel,serif;font-size:13px;font-weight:600;letter-spacing:1.4px;color:#F5F0E8}
+.footer-w2{font-size:10px;letter-spacing:2px;color:#C9A84C;font-weight:600;margin-top:2px}
+.footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 </style>
 <section class="crestline-assist" id="crestline-assist">
   <div class="ca-inner">
@@ -1460,7 +1468,13 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo" title="DYA DING YAO ADVISORY APAC HUB">DYA<span>DING YAO ADVISORY APAC HUB</span></a>
+        <a href="https://dingyaoadvisory.tw" class="footer-logo" id="navLogo" title="DingYao Advisory">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <span class="footer-wordmark">
+            <span class="footer-w1">DingYao Advisory</span>
+            <span class="footer-w2">APAC HUB</span>
+          </span>
+        </a>
         <p>亞太區獨家數位行銷中心 — 我們致力於消除跨境投資的資訊落差。透過數位託管技術，連結台灣資金與南非頂級資產。</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DingYaoAdvisory/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
