@@ -30,6 +30,7 @@ import http.client
 import pathlib
 import re
 import sys
+import time
 import urllib.parse
 
 UA = {"User-Agent": "Mozilla/5.0 TitanSitemapAudit/1.0"}
@@ -63,20 +64,29 @@ def load_redirect_sources() -> set:
     return out
 
 
-def check_url(u: str, want_redirect: bool = False):
-    """回傳 (url, status, location)。不跟隨 redirect。"""
-    try:
-        p = urllib.parse.urlparse(u)
-        conn = http.client.HTTPSConnection(p.netloc or BASE_HOST, timeout=20)
-        path = (p.path or "/") + (("?" + p.query) if p.query else "")
-        conn.request("HEAD", path, headers=UA)
-        r = conn.getresponse()
-        r.read()
-        code, loc = r.status, r.getheader("location") or ""
-        conn.close()
-        return u, code, loc
-    except Exception as e:
-        return u, "ERR", str(e)[:60]
+def check_url(u: str, want_redirect: bool = False, retries: int = 2):
+    """回傳 (url, status, location)。不跟隨 redirect。
+
+    ERR（SSL handshake timeout / 連線重置）在並發 25 下偶爾發生，
+    不是真的 301/404 —— 必須重試，否則會誤報回歸。
+    """
+    last = ("ERR", "")
+    for attempt in range(retries + 1):
+        try:
+            p = urllib.parse.urlparse(u)
+            conn = http.client.HTTPSConnection(p.netloc or BASE_HOST, timeout=25)
+            path = (p.path or "/") + (("?" + p.query) if p.query else "")
+            conn.request("HEAD", path, headers=UA)
+            r = conn.getresponse()
+            r.read()
+            code, loc = r.status, r.getheader("location") or ""
+            conn.close()
+            return u, code, loc
+        except Exception as e:
+            last = ("ERR", str(e)[:60])
+            if attempt < retries:
+                time.sleep(0.6 * (attempt + 1))
+    return u, last[0], last[1]
 
 
 def main():
