@@ -2111,6 +2111,25 @@ Cal.ns.dingyao("on", {
     });
   }
 });
+
+/* 容器高度跟隨 Cal iframe（平板 1260px 會被固定容器裁切；桌機則可消掉底部留白） */
+(function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var c = document.getElementById("cal-inline");
+    var f = c && c.querySelector("iframe");
+    if (!f) { if (++tries > 80) clearInterval(timer); return; }
+    clearInterval(timer);
+    function sync() {
+      var h = Math.round(f.getBoundingClientRect().height);
+      if (h > 200 && Math.abs(h - c.getBoundingClientRect().height) > 2) {
+        c.style.height = h + "px";
+      }
+    }
+    if (window.ResizeObserver) { new ResizeObserver(sync).observe(f); }
+    sync();
+  }, 250);
+})();
 </script>
 
 </body>
