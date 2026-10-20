@@ -3,26 +3,38 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
-    <loc>https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026-en</loc>
+    <loc>https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026-en</loc>
     <news:news>
       <news:publication>
         <news:name>DingYao Advisory</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-18T00:00:00+08:00</news:publication_date>
-      <news:title>Eviction Process South Africa: Cape Town</news:title>
+      <news:publication_date>2026-10-20T00:00:00+08:00</news:publication_date>
+      <news:title>Standard Bank Non Resident Account 2026 Guide</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://dingyaoadvisory.tw/blog/cape-town-unlawful-occupation-eviction-timeline-2026</loc>
+    <loc>https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026</loc>
     <news:news>
       <news:publication>
         <news:name>鼎曜國際顧問</news:name>
         <news:language>zh-tw</news:language>
       </news:publication>
-      <news:publication_date>2026-10-18T00:00:00+08:00</news:publication_date>
-      <news:title>開普敦房屋被占用怎麼辦？南非驅逐租客程序與租金管制解析</news:title>
+      <news:publication_date>2026-10-20T00:00:00+08:00</news:publication_date>
+      <news:title>南非開戶完整手冊：Standard Bank 非居民帳戶文件與流程（2026）</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-asset-allocation-2026-en</loc>
+    <news:news>
+      <news:publication>
+        <news:name>DingYao Advisory</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T00:00:00+08:00</news:publication_date>
+      <news:title>Overseas Allocation 2026: Five Tools for Taiwan's Wealthy</news:title>
     </news:news>
   </url>
 
