@@ -115,3 +115,5 @@
 
 # 2026-10-19 土星人裁決（S-20261007-02）：0 曝光近重複新頁讓位給有排名證據的舊頁（單跳）
 /blog/taiwan-wealthy-overseas-asset-allocation-2026    /blog/taiwan-wealthy-overseas-allocation    301
+# 2026-10-20 泰坦人補正（D1-A 語言鏡像）：EN 新頁同步 301 到舊 EN 頁（ZH 已於 10-19 301）
+/blog/taiwan-wealthy-overseas-asset-allocation-2026-en /blog/taiwan-wealthy-overseas-allocation-en 301

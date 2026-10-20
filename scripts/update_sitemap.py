@@ -31,11 +31,45 @@ DOMAIN = 'https://dingyaoadvisory.tw'
 EXCLUDE_PREFIXES = ('404', 'project-phase1-old', 'blog-template', 'article-template')
 EXCLUDE_SUBSTR = ('-demo', '-old', 'template', 'temp')
 
+def load_redirect_sources() -> set:
+    """dist/_redirects 中「作為 redirect 來源」的 URL path 集合。
+
+    為什麼需要：sitemap 產生器掃 dist/*.html，而被 301 攔截的檔案仍然存在
+    → 那些 URL 會一直被收進 sitemap，GSC 報「Page with redirect」
+    （2026-10-20 回歸事故：5 個 301 來源被 booking 那次重生 sitemap 帶回來）。
+    這裡直接以 _redirects 為唯一真相，避免逐筆 hardcode。
+    """
+    redirects = ROOT / '_redirects'
+    sources = set()
+    if not redirects.exists():
+        return sources
+    for line in redirects.read_text(encoding='utf-8', errors='ignore').splitlines():
+        line = line.strip()
+        if not line or line.startswith('#'):
+            continue
+        parts = line.split()
+        if len(parts) < 2:
+            continue
+        src = parts[0]
+        # 只看真的會攔截的路徑（帶 301/302/307/308 狀態碼的規則；沒有 status 也視為 redirect）
+        if src.startswith('http'):
+            continue
+        if src.endswith('/*') or '*' in src:
+            continue  # splat 規則不逐筆處理
+        sources.add('/' + src.lstrip('/').rstrip('/'))
+    return sources
+
+
+REDIRECT_SOURCES = load_redirect_sources()
+
+
 def should_index(path: Path) -> bool:
     name = path.name
     if name.startswith(EXCLUDE_PREFIXES):
         return False
     if any(s in name for s in EXCLUDE_SUBSTR):
+        return False
+    if path_to_rel(path) in REDIRECT_SOURCES:
         return False
     try:
         c = path.read_text(encoding='utf-8', errors='ignore')
@@ -81,10 +115,15 @@ def rel_to_path(rel: str) -> Path:
     return ROOT / (rel.lstrip('/') + '.html')
 
 def _href_target_exists(href: str) -> bool:
-    """hreflang href 的目標檔是否存在（/index 視為 /）。"""
+    """hreflang href 的目標檔是否存在（/index 視為 /）。
+
+    目標若是 _redirects 的來源（會被 301 攔截）也算不存在 → hreflang 不可指向 redirect。
+    """
     path = urlparse(href).path
     if path == '/index':
         path = '/'
+    if path.rstrip('/') in REDIRECT_SOURCES and path != '/':
+        return False
     return rel_to_path(path).exists()
 
 def repair_hreflang(content: str):

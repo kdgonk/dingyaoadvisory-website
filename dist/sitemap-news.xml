@@ -26,16 +26,4 @@
     </news:news>
   </url>
 
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/taiwan-wealthy-overseas-asset-allocation-2026-en</loc>
-    <news:news>
-      <news:publication>
-        <news:name>DingYao Advisory</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T00:00:00+08:00</news:publication_date>
-      <news:title>Overseas Allocation 2026: Five Tools for Taiwan's Wealthy</news:title>
-    </news:news>
-  </url>
-
 </urlset>
