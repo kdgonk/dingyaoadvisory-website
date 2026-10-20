@@ -230,6 +230,17 @@ def build_output(filename, content):
     read_time = extract_read_time(content)
     category = extract_category(content)
     body_content = extract_body_content(content)
+
+    # ── 語言屬性：一律依「檔名」判定，不繼承模板 ─────────────────────
+    #    模板本體是中文（lang="zh-TW"），產英文頁時必須覆蓋成 lang="en"。
+    is_en = filename.endswith('-en.html')
+    html_lang = 'en' if is_en else 'zh-TW'
+    og_locale = 'en_US' if is_en else 'zh_TW'
+    slug = filename.replace('-en.html', '').replace('.html', '')
+    # 站上慣例：中文＝裸 slug、英文＝slug + '-en'。hreflang 一律由 slug 推導，
+    # 不信任來源檔的 canonical（來源可能是錯的，且 canonical 只代表自己）。
+    en_url = f'https://dingyaoadvisory.tw/blog/{slug}-en'
+    zh_url = f'https://dingyaoadvisory.tw/blog/{slug}'
     
     if not body_content or len(body_content) < 50:
         print(f"  WARNING: Body content too short ({len(body_content) if body_content else 0} chars)")
@@ -244,6 +255,7 @@ def build_output(filename, content):
     output = template.replace('{seo_meta}', seo_meta)
     output = output.replace('{canonical_url}', canonical)
     output = output.replace('{zh_url}', zh_url)
+    output = output.replace('{en_url}', en_url)
     output = output.replace('{og_title}', og_title)
     output = output.replace('{og_description}', og_description)
     output = output.replace('{og_image}', og_image)
@@ -256,7 +268,13 @@ def build_output(filename, content):
     output = output.replace('{article_read_time}', read_time)
     output = output.replace('{article_category}', category)
     output = output.replace('{article_content}', body_content)
-    
+
+    # ── 用檔名判定的語言覆蓋模板的 lang / og:locale ────────────────
+    output = re.sub(r'(<html[^>]*\blang=")[^"]*(")',
+                    lambda m: m.group(1) + html_lang + m.group(2), output, count=1)
+    output = re.sub(r'(<meta\s+property="og:locale"\s+content=")[^"]*(")',
+                    lambda m: m.group(1) + og_locale + m.group(2), output, count=1)
+
     return output
 
 
