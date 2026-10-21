@@ -8,7 +8,9 @@
  * （env.CHATWOOT_API_TOKEN），永不進前端、永不進 repo。
  */
 
-const CHATWOOT_CONTACTS = 'https://chat.dingyaoadvisory.tw/api/v1/accounts/2/contacts';
+const CHATWOOT_BASE = 'https://chat.dingyaoadvisory.tw/api/v1/accounts/2';
+const CHATWOOT_CONTACTS = CHATWOOT_BASE + '/contacts';
+const CHATWOOT_CONVERSATIONS = CHATWOOT_BASE + '/conversations';
 const INBOX_ID = 2;
 const MAX_BODY_BYTES = 8192;
 
@@ -43,6 +45,96 @@ function normalizeSource(source) {
   if (/^lm_[a-z0-9_]{1,37}$/.test(s)) return s;
   return 'website';
 }
+
+/**
+ * 在 Chatwoot 找既有聯絡人。
+ *
+ * 為什麼需要：Chatwoot 對 phone_number 有唯一性限制，重複 create 會回
+ * 422 "Phone number has already been taken"。原版直接把 422 傳回前端，
+ * 造成「同一支電話第二次諮詢必定失敗」——回訪客戶全掉單，而且
+ * GA4 的 generate_lead 只在成功時觸發，所以從數據完全看不出來。
+ *
+ * 先用 email 搜（Chatwoot 的 search 是跨欄位模糊比對），
+ * 沒中就再用電話搜；兩者都比對到完全相同才視為同一人。
+ */
+async function findContact(env, email, phone) {
+  const headers = { 'api_access_token': env.CHATWOOT_API_TOKEN };
+  const queries = [];
+  if (email) queries.push(email);
+  if (phone) queries.push(phone.replace(/^\+/, ''));
+
+  for (const q of queries) {
+    let res;
+    try {
+      res = await fetch(
+        CHATWOOT_CONTACTS + '/search?q=' + encodeURIComponent(q),
+        { headers }
+      );
+    } catch (err) {
+      continue;  // 搜尋失敗不阻斷流程，往下走 create
+    }
+    if (!res.ok) continue;
+
+    let data = {};
+    try {
+      data = await res.json();
+    } catch (err) {
+      continue;
+    }
+
+    const list = Array.isArray(data && data.payload) ? data.payload : [];
+    for (const c of list) {
+      const cEmail = str(c.email, 254).toLowerCase();
+      const cPhone = str(c.phone_number, 40).replace(/^\+/, '');
+      if ((email && cEmail && cEmail === email.toLowerCase()) ||
+          (phone && cPhone && cPhone === phone.replace(/^\+/, ''))) {
+        return c;
+      }
+    }
+  }
+  return null;
+}
+
+/**
+ * 建一筆新 conversation。
+ *
+ * 原本只 create contact，Chatwoot 不會自動開對話，等於名單進來卻沒有
+ * 任何一筆待處理的諮詢；upsert 之後每次送出都留一筆 conversation，
+ * 業務端才看得到「這個人今天又問了一次」。
+ */
+async function createConversation(env, contactId, message) {
+  const content = str(message, 1000) || '（官網表單送出，未填訊息）';
+  let res;
+  try {
+    res = await fetch(CHATWOOT_CONVERSATIONS, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'api_access_token': env.CHATWOOT_API_TOKEN
+      },
+      body: JSON.stringify({
+        source_id: 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8),
+        inbox_id: INBOX_ID,
+        contact_id: contactId,
+        status: 'open',
+        message: { content }
+      })
+    });
+  } catch (err) {
+    return { ok: false, reason: 'unreachable' };
+  }
+  if (!res.ok) {
+    return { ok: false, reason: 'status_' + res.status };
+  }
+  let data = {};
+  try {
+    data = await res.json();
+  } catch (err) {
+    data = {};
+  }
+  return { ok: true, id: (data && data.id) || null };
+}
+
 
 async function handleLead(request, env) {
   if (!env.CHATWOOT_API_TOKEN) {
@@ -87,16 +179,38 @@ async function handleLead(request, env) {
     custom_attributes
   };
 
+  // ── upsert：先找既有聯絡人，避免 422 "Phone number has already been taken" ──
+  const existing = await findContact(env, email, payload.phone_number);
+
   let res;
   try {
-    res = await fetch(CHATWOOT_CONTACTS, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'api_access_token': env.CHATWOOT_API_TOKEN
-      },
-      body: JSON.stringify(payload)
-    });
+    if (existing) {
+      // 命中就更新。custom_attributes 用合併，不覆蓋掉前一次的 interest/budget，
+      // 這樣業務端看得到完整的諮詢軌跡（這次問 education、上次問 bank）。
+      const merged = Object.assign({}, existing.custom_attributes || {}, custom_attributes);
+      res = await fetch(CHATWOOT_CONTACTS + '/' + existing.id, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'api_access_token': env.CHATWOOT_API_TOKEN
+        },
+        body: JSON.stringify({
+          name: payload.name,
+          email: payload.email,
+          phone_number: payload.phone_number,
+          custom_attributes: merged
+        })
+      });
+    } else {
+      res = await fetch(CHATWOOT_CONTACTS, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api_access_token': env.CHATWOOT_API_TOKEN
+        },
+        body: JSON.stringify(payload)
+      });
+    }
   } catch (err) {
     return json({ ok: false, error: 'Upstream unreachable' }, 502);
   }
@@ -114,8 +228,26 @@ async function handleLead(request, env) {
     return json({ ok: false, error: detail || 'Chatwoot rejected the request', upstream_status: res.status }, res.status === 401 ? 502 : res.status);
   }
 
-  const contact = data && data.payload ? data.payload.contact : null;
-  return json({ ok: true, contact: contact || null });
+  // PUT 回傳的是 contact 物件本身；POST 回傳的是 {payload:{contact}}。兩種都要吃。
+  const contact = (data && data.payload && data.payload.contact)
+    || (data && data.id ? data : null)
+    || existing
+    || null;
+  const contactId = contact && contact.id ? contact.id : (existing && existing.id) || null;
+
+  // 每次送出都開一筆新 conversation。contact 只是名單，conversation 才是
+  // 業務端 inbox 裡看得到的「有人來問」。
+  let conversation = null;
+  if (contactId) {
+    conversation = await createConversation(env, contactId, custom_attributes.message);
+  }
+
+  return json({
+    ok: true,
+    matched_existing: Boolean(existing),
+    contact: contact || null,
+    conversation
+  });
 }
 
 export default {
