@@ -1339,7 +1339,15 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
         "text": "Buying in top school-catchment suburbs (Claremont, Rondebosch, Southern Suburbs) turns education spending into a family lifestyle and asset investment."
       }
     }
-  ]
+  ,
+    {
+      "@type": "Question",
+      "name": "What happens if we miss the application window?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Places are allocated by academic year and Grade 8 is the main entry point, so a missed year usually means waiting for the next one; Grades 9 and 10 open only when a vacancy appears. A study visa cannot be lodged without an acceptance letter, so a timing slip forces the visa, lease and guardianship authorisation to be re-sequenced. Setting your own deadline 18 months before the entry year is the practical safeguard."
+      }
+    }]
 }
 </script>
 
@@ -1648,6 +1656,24 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </section>
 
+
+<!-- EDUCATION MID CTA (2026-10-21) -->
+<section class="section" id="cost-cta" style="padding-top:0">
+  <div class="container">
+    <div class="text-center fade-in" style="max-width:780px;margin:0 auto">
+      <div class="gold-line"></div>
+      <h2 class="section-title">Match the <span class="gold">fees and timeline</span> to your child</h2>
+      <p class="section-subtitle">The table above is the structure. What you actually have to sequence is which entry year your child's age maps to — and which schools are still taking applications.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px">
+        <a href="/consultation-en?pillar=education" class="btn btn-primary" data-cta-id="education-cost" data-cta-location="mid_section" title="Book a 30-minute education assessment">Book a 30-minute education assessment <i class="fas fa-arrow-right"></i></a>
+        <a href="/consultation-en?pillar=education&amp;intent=timeline" class="btn btn-outline" data-cta-id="education-leadmagnet" data-cta-location="mid_section" data-leadmagnet="fees-timeline" title="Request the fees and application timeline">Request “Fees &amp; Application Timeline” <i class="fas fa-file-lines"></i></a>
+      </div>
+      <p style="font-size:0.8rem;color:#F5F0E877;margin-top:14px">The timeline sheet is organised by the child's age and target entry year. Fees and closing dates follow each school's current-year publication. We do not act as agents and do not take commission.</p>
+    </div>
+  </div>
+</section>
+
+
 <!-- ALUMNI NETWORK -->
 <section class="section alumni-section">
   <div class="section-bg">
@@ -1780,28 +1806,28 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="cta-urgency-left fade-in">
         <div class="cta-urgency-tag"><i class="fas fa-exclamation-triangle"></i> AI Era · Education Alert</div>
         <h2>Is your child ready<br>for the <span class="danger">AI Era</span>?<br><span class="gold">Or are they being left behind?</span></h2>
-        <p class="cta-urgency-desc">In 2026, AI has already replaced a significant number of traditional white-collar jobs. Over the next decade, children who can only take exams, lack international perspective, and have no cross-cultural competitiveness will face unprecedented career elimination pressure.</p>
+        <p class="cta-urgency-desc">In 2026, AI is rapidly reshaping entry-level white-collar work. Over the next decade, children who can only sit exams — with no international perspective and no cross-cultural experience — will find their options narrower than their parents' generation.</p>
         <div class="cta-urgency-stats">
           <div class="cta-urgency-stat fade-in fade-in-delay-1">
-            <span class="num danger-num">47%</span>
-            <span class="label">Traditional white-collar jobs will be replaced or reshaped by AI by 2030</span>
+            <span class="num danger-num">AI</span>
+            <span class="label">Entry-level white-collar work is being reshaped by AI, starting with repetitive tasks</span>
           </div>
           <div class="cta-urgency-stat fade-in fade-in-delay-2">
-            <span class="num">3.2×</span>
-            <span class="label">Students with international education backgrounds have 3.2× higher admission rates to top global companies</span>
+            <span class="num">Outlook</span>
+            <span class="label">An international qualification plus cross-cultural experience is a real differentiator in global hiring</span>
           </div>
           <div class="cta-urgency-stat fade-in fade-in-delay-3">
-            <span class="num danger-num">85%</span>
-            <span class="label">Asian parents admit their children's English proficiency is insufficient for the international workplace</span>
+            <span class="num danger-num">Baseline</span>
+            <span class="label">English has moved from an advantage to a basic requirement — without it the interview stage is out of reach</span>
           </div>
           <div class="cta-urgency-stat fade-in fade-in-delay-4">
-            <span class="num">Age 12</span>
-            <span class="label">Optimal starting age for studying abroad — miss the golden window and language and perspective gaps become difficult to close</span>
+            <span class="num">Earlier</span>
+            <span class="label">Language and perspective gaps widen with age; the later a child enters an all-English environment, the harder they are to close</span>
           </div>
         </div>
         <div class="cta-urgency-btns fade-in fade-in-delay-3">
-          <a href="#" class="btn btn-primary" title="Book Education Consultation Now">Book Education Consultation Now <i class="fas fa-arrow-right"></i></a>
-          <a href="#" class="btn-outline-danger" title="Learn About the Golden Window">Learn About the Golden Window <i class="fas fa-clock"></i></a>
+          <a href="#booking" class="btn btn-primary" title="Book Education Consultation Now" data-cta-id="education-urgency" data-cta-location="bottom_cta">Book Education Consultation Now <i class="fas fa-arrow-right"></i></a>
+          <a href="#cost" class="btn-outline-danger" title="See fees and application timeline" data-cta-id="education-cost-link" data-cta-location="nav">Learn About the Golden Window <i class="fas fa-clock"></i></a>
         </div>
       </div>
 
@@ -1873,6 +1899,16 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       </div>
     </div>
   </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What happens if we miss the application window?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>South African schools allocate places by academic year, and Grade 8 is the main entry point. Miss the year and the usual outcome is waiting for the next one; Grades 9 and 10 open only when a place falls vacant. Three things cascade: a study visa cannot be lodged without an acceptance letter, so a slip in timing means the visa, the lease and the guardianship authorisation all get re-sequenced — and in Cape Town, day schools also mean renegotiating the lease and the school run. In practice, set your own deadline 18 months before the entry year rather than watching the school's closing date.</p>
+        </div>
+      </div>
 </section>
 
 <!-- cal-booking-inline-v1 -->
