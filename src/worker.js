@@ -245,9 +245,38 @@ async function handleLead(request, env) {
 
   // 每次送出都開一筆新 conversation。contact 只是名單，conversation 才是
   // 業務端 inbox 裡看得到的「有人來問」。
+  //
+  // ⚠️ 2026-10-21 實測：此 Chatwoot 實例的 POST /conversations 對「所有」inbox
+  // （WebWidget 2 / LINE 1 / Facebook 4）一律回 500 Internal Server Error，
+  // 屬伺服器端問題（Chatwoot v4.8.0 的 conversation builder 已知 bug 家族），
+  // 不是 payload 寫錯，也不是 inbox 類型不符（官方文件允許 Website/Api/Phone/Email）。
+  // 所以在 conversation 建不起來時，退而把諮詢軌跡寫回 contact 的
+  // custom_attributes（inquiry_count / last_inquiry_at / last_inquiry_message），
+  // 業務端至少在聯絡人頁看得到「這個人問了幾次、最近一次問什麼」。
   let conversation = null;
   if (contactId) {
     conversation = await createConversation(env, contactId, custom_attributes.message);
+
+    if (!conversation || !conversation.ok) {
+      try {
+        const prev = (existing && existing.custom_attributes) || {};
+        const trail = Object.assign({}, prev, custom_attributes, {
+          inquiry_count: String(Number(prev.inquiry_count || 0) + 1),
+          last_inquiry_at: new Date().toISOString(),
+          last_inquiry_message: str(custom_attributes.message, 1000)
+        });
+        await fetch(CHATWOOT_CONTACTS + '/' + contactId, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            'api_access_token': env.CHATWOOT_API_TOKEN
+          },
+          body: JSON.stringify({ custom_attributes: trail })
+        });
+      } catch (err) {
+        // 軌跡寫入失敗不影響表單成功（客戶端的成功判定只看 ok:true）
+      }
+    }
   }
 
   return json({
@@ -281,49 +310,6 @@ export default {
 
     if (path === '/api/health') {
       return json({ ok: true, chatwoot_token_configured: Boolean(env.CHATWOOT_API_TOKEN) });
-    }
-
-    // 臨時診斷端點（診斷完即移除）。用 query key 保護，只回 inbox 的 id/name/type，
-    // 不含 token、不含聯絡人資料。
-    if (path === '/api/_diag' && url.searchParams.get('k') === 'titan-diag-20261021') {
-      const headers = { 'api_access_token': env.CHATWOOT_API_TOKEN };
-      const out = {};
-      try {
-        const r1 = await fetch(CHATWOOT_BASE + '/inboxes', { headers });
-        out.inboxes_status = r1.status;
-        const d1 = await r1.json();
-        out.inboxes = (Array.isArray(d1 && d1.payload) ? d1.payload : []).map(function (i) {
-          return { id: i.id, name: i.name, type: i.channel_type || i.medium, website: i.website_url || null };
-        });
-      } catch (err) {
-        out.inboxes_error = String(err).slice(0, 120);
-      }
-      // 逐一嘗試用每個 inbox 建 conversation，看哪個會成功
-      const cid = Number(url.searchParams.get('contact_id') || 0);
-      if (cid) {
-        out.trials = [];
-        for (const ib of (out.inboxes || [])) {
-          try {
-            const rt = await fetch(CHATWOOT_CONVERSATIONS, {
-              method: 'POST',
-              headers: Object.assign({ 'Content-Type': 'application/json' }, headers),
-              body: JSON.stringify({
-                source_id: 'diag-' + Date.now() + '-' + ib.id,
-                inbox_id: ib.id,
-                contact_id: cid,
-                status: 'open',
-                message: { content: '診斷訊息（可刪）' }
-              })
-            });
-            let tx = '';
-            try { tx = String(await rt.text()).slice(0, 160); } catch (e) { tx = ''; }
-            out.trials.push({ inbox_id: ib.id, type: ib.type, status: rt.status, body: tx });
-          } catch (err) {
-            out.trials.push({ inbox_id: ib.id, error: String(err).slice(0, 100) });
-          }
-        }
-      }
-      return json(out);
     }
 
     return env.ASSETS.fetch(request);
