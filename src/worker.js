@@ -124,7 +124,15 @@ async function createConversation(env, contactId, message) {
     return { ok: false, reason: 'unreachable' };
   }
   if (!res.ok) {
-    return { ok: false, reason: 'status_' + res.status };
+    // 把上游 body 帶回來，不然只知道 500 不知道為什麼（inbox 類型不對、
+    // source_id 重複、contact 不存在…都可能是 500）。
+    let detail = '';
+    try {
+      detail = str(await res.text(), 300);
+    } catch (err) {
+      detail = '';
+    }
+    return { ok: false, reason: 'status_' + res.status, detail };
   }
   let data = {};
   try {
