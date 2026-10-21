@@ -2133,5 +2133,48 @@ document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-chi
 function toggleFaq(el){el.classList.toggle('active');}
 // FAQ section for assets-en.html
 </script>
+
+<script>
+/* ROI calculator（2026-10-21 補上：原本只有 oninput="updateCalculator()" 呼叫，
+   函式從未定義，滑桿完全沒反應） */
+function updateCalculator() {
+  var $ = function (id) { return document.getElementById(id); };
+  var amount = parseFloat($('investAmount').value);
+  var appr   = parseFloat($('appreciation').value);
+  var intr   = parseFloat($('interest').value);
+  var rent   = parseFloat($('rental').value);
+
+  var PROP_PCT = 0.653125;   // 房產配置比（由 10,450,000 / 16,000,000 反推）
+  var SAV_PCT  = 0.334375;   // 活存配置比（由  5,350,000 / 16,000,000 反推）
+
+  var prop = Math.round(amount * PROP_PCT);
+  var sav  = Math.round(amount * SAV_PCT);
+
+  var apprRet = Math.round(prop * appr / 100);
+  var intrRet = Math.round(sav * intr / 100);
+  var rentRet = Math.round(prop * rent / 100);
+  var total   = apprRet + intrRet + rentRet;
+  var roi     = amount > 0 ? (total / amount * 100) : 0;
+
+  var fmt = function (n) { return 'R ' + n.toLocaleString('en-US'); };
+
+  $('investAmountDisplay').textContent = fmt(amount);
+  $('appreciationDisplay').textContent = appr + '%';
+  $('interestDisplay').textContent     = intr + '%';
+  $('rentalDisplay').textContent       = rent + '%';
+
+  $('propertyAllocation').textContent = fmt(prop);
+  $('savingsAllocation').textContent  = fmt(sav);
+  $('appreciationReturn').textContent = '+' + fmt(apprRet);
+  $('interestReturn').textContent     = '+' + fmt(intrRet);
+  $('rentalReturn').textContent       = '+' + fmt(rentRet);
+  $('totalReturn').textContent        = fmt(total);
+  $('totalROI').textContent           = roi.toFixed(1) + '%';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.getElementById('investAmount')) updateCalculator();
+});
+</script>
 </body>
 </html>
