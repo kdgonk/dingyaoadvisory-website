@@ -86,7 +86,7 @@
       "name": "What are South Africa's mortgage interest rates right now?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The SARB repo rate currently stands at 7.00%, with the prime lending rate at 10.50%. Foreign buyer mortgage rates are typically priced off prime with a margin, with the actual rate depending on individual credit and bank policy."
+        "text": "The SARB repo rate has stood at 7.25% since 25 September 2026, with the prime lending rate at 10.75% (a 25bp hike at the 23 September MPC, the third of 2026). Foreign buyer mortgage rates are typically priced off prime with a margin, with the actual rate depending on individual credit and bank policy."
       }
     },
     {
@@ -656,13 +656,13 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       ||localStorage.getItem('cookieConsent')==='accepted'
       ||localStorage.getItem('gdpr_consent')==='accepted';
   }catch(e){}
-  if(granted){_dyConsent('granted');}
+  if(granted){_dyConsent('granted');document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('cookieConsent');if(el){el.style.display='none';}});}
   var ACCEPT='#cookieConsent button:not(.cookie-btn-more), #accept-cookies-btn, [onclick*="acceptCookies"], [onclick*="acceptGDPR"]';
   var DECLINE='#decline-cookies-btn, [onclick*="declineCookies"], [onclick*="declineGDPR"]';
   document.addEventListener('click',function(e){
     var t=e.target; if(!t||!t.closest) return;
     if(t.closest(DECLINE)){_dyConsent('denied');return;}
-    if(t.closest(ACCEPT)){_dyConsent('granted');}
+    if(t.closest(ACCEPT)){_dyConsent('granted');try{document.cookie='cookie_consent=accepted;max-age=31536000;path=/;SameSite=Lax';localStorage.setItem('cookieConsent','accepted');}catch(e){}
   },true);
 })();
 </script>
@@ -969,7 +969,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>Now that you understand the 50% borrowing rule and LTV limits, the next key decision is: <strong>should you buy Cape Town property with cash or a mortgage?</strong> This depends on your capital cost, leverage needs, and rental income.</p>
 
-      <p>The SARB repo rate currently stands at <strong>7.00%</strong>, with the prime lending rate at <strong>10.50%</strong>. Foreign buyer mortgage rates are typically priced off prime with a margin, with the actual rate depending on individual credit and bank policy. In a prime 10.5% environment, mortgage costs are not low.</p>
+      <p>The SARB repo rate has stood at <strong>7.25%</strong> since <strong>25 September 2026</strong>, with the prime lending rate at <strong>10.75%</strong> (a 25bp hike at the 23 September MPC, the third hike of 2026). Foreign buyer mortgage rates are typically priced off prime with a margin, with the actual rate depending on individual credit and bank policy. In a prime 10.5% environment, mortgage costs are not low.</p>
 
       <table class="tax-table">
         <thead>
@@ -1185,7 +1185,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       <p>Yes. When foreign buyers remit funds into South Africa, they must declare under SARB exchange control rules and obtain an exchange control certificate (Form A/B related documents) proving the source and nature of the funds, ensuring the capital is legally remitted in and can be remitted out later.</p>
 
       <h3>What are South Africa's mortgage interest rates right now?</h3>
-      <p>The SARB repo rate currently stands at 7.00%, with the prime lending rate at 10.50%. Foreign buyer mortgage rates are typically priced off prime with a margin, with the actual rate depending on individual credit and bank policy.</p>
+      <p>The SARB repo rate has stood at 7.25% since 25 September 2026, with the prime lending rate at 10.75%. Foreign buyer mortgage rates are typically priced off prime with a margin, with the actual rate depending on individual credit and bank policy.</p>
 
       <h3>Is it better to buy property in Cape Town with cash or a mortgage?</h3>
       <p>It depends on capital cost and leverage needs. Cash purchase avoids mortgage interest and exchange control complexity but ties up capital; a mortgage amplifies leverage and preserves cash flow but is subject to the 50% cap and the prime 10.5% rate. With Cape Town rental yields of 7.5-11.4%, you can assess whether rent covers the mortgage cost before deciding.</p>

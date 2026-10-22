@@ -87,7 +87,7 @@
       "name": "南非房貸利率目前是多少？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "南非 SARB 基準利率（repo rate）目前維持在 7.00%，prime lending rate 為 10.50%。外國人房貸利率通常以 prime 為基準加碼，實際利率依個人信用與銀行政策而定。"
+        "text": "南非 SARB 基準利率（repo rate）自 2026-09-25 起為 7.25%，prime lending rate 為 10.75%（2026-09-23 MPC 升息 1 碼，年內第三度升息）。外國人房貸利率通常以 prime 為基準加碼，實際利率依個人信用與銀行政策而定。"
       }
     },
     {
@@ -657,13 +657,13 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       ||localStorage.getItem('cookieConsent')==='accepted'
       ||localStorage.getItem('gdpr_consent')==='accepted';
   }catch(e){}
-  if(granted){_dyConsent('granted');}
+  if(granted){_dyConsent('granted');document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('cookieConsent');if(el){el.style.display='none';}});}
   var ACCEPT='#cookieConsent button:not(.cookie-btn-more), #accept-cookies-btn, [onclick*="acceptCookies"], [onclick*="acceptGDPR"]';
   var DECLINE='#decline-cookies-btn, [onclick*="declineCookies"], [onclick*="declineGDPR"]';
   document.addEventListener('click',function(e){
     var t=e.target; if(!t||!t.closest) return;
     if(t.closest(DECLINE)){_dyConsent('denied');return;}
-    if(t.closest(ACCEPT)){_dyConsent('granted');}
+    if(t.closest(ACCEPT)){_dyConsent('granted');try{document.cookie='cookie_consent=accepted;max-age=31536000;path=/;SameSite=Lax';localStorage.setItem('cookieConsent','accepted');}catch(e){}
   },true);
 })();
 </script>
@@ -970,7 +970,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>理解了 50% 借貸規則與 LTV 限制後，下一個關鍵決策是：<strong>開普敦置產，該用現金還是貸款？</strong>這取決於你的資金成本、槓桿需求與租金收益。</p>
 
-      <p>南非 SARB 基準利率（repo rate）目前維持在 <strong>7.00%</strong>，prime lending rate 為 <strong>10.50%</strong>。外國人房貸利率通常以 prime 為基準加碼，實際利率依個人信用與銀行政策而定。在 prime 10.5% 的環境下，貸款成本並不低。</p>
+      <p>南非 SARB 基準利率（repo rate）自 <strong>2026-09-25</strong> 起為 <strong>7.25%</strong>，prime lending rate 為 <strong>10.75%</strong>（2026-09-23 MPC 一致決議升息 1 碼，為 2026 年內第三度升息）。外國人房貸利率通常以 prime 為基準加碼，實際利率依個人信用與銀行政策而定。在 prime 10.75% 的環境下，貸款成本並不低。</p>
 
       <table class="tax-table">
         <thead>
@@ -1186,7 +1186,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       <p>需要。外國人購屋資金匯入南非時，需依 SARB 外匯管制規定申報，取得外匯證書（Form A/B 相關文件），證明資金來源與性質，才能確保資金合法匯入並於日後順利匯出。</p>
 
       <h3>南非房貸利率目前是多少？</h3>
-      <p>南非 SARB 基準利率（repo rate）目前維持在 7.00%，prime lending rate 為 10.50%。外國人房貸利率通常以 prime 為基準加碼，實際利率依個人信用與銀行政策而定。</p>
+      <p>南非 SARB 基準利率（repo rate）自 2026-09-25 起為 7.25%，prime lending rate 為 10.75%。外國人房貸利率通常以 prime 為基準加碼（常見為 prime + 0 至 2%），實際利率依個人信用、簽證身分與銀行政策而定。下一次 MPC 會議為 2026-11-19。</p>
 
       <h3>外國人在開普敦買房，現金還是貸款比較划算？</h3>
       <p>取決於資金成本與槓桿需求。現金購屋可免除貸款利息與外匯申報複雜度，但資金占用高；貸款購屋可放大槓桿、保留現金流，但受 50% 上限與 prime 10.5% 利率影響。開普敦租金收益率 7.5-11.4%，可評估租金覆蓋貸款成本後決定。</p>
