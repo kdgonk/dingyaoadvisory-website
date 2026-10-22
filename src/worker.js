@@ -366,15 +366,18 @@ export default {
       return json({ ok: true, chatwoot_token_configured: Boolean(env.CHATWOOT_API_TOKEN) });
     }
 
-    // 短網址：/go/<key>（含 /go 與結尾斜線，皆視為未知 key → 首頁）
-    if (path === '/go' || path.startsWith('/go/')) {
+    // 短網址：/go/<key> 與 /l/<key>（同一張 GO_LINKS 表；/l/ 是 2026-10-22 新增的
+    // 乾淨前綴 —— 老闆瀏覽器裡可能還存著 /go/* 的舊 404，/l/* 從未被訪問過，
+    // 保證不會命中任何客戶端快取）。裸 /go、/l 或未知 key → 首頁。
+    if (/^\/(go|l)(\/|$)/.test(path)) {
       if (request.method !== 'GET' && request.method !== 'HEAD') {
         return new Response(null, {
           status: 405,
           headers: { 'Allow': 'GET, HEAD', 'Cache-Control': 'no-store' }
         });
       }
-      return handleShortLink(path.slice(4));
+      const prefix = path.startsWith('/go') ? '/go' : '/l';
+      return handleShortLink(path.slice(prefix.length + 1));
     }
 
     const assetRes = await env.ASSETS.fetch(request);
