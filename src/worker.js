@@ -377,6 +377,26 @@ export default {
       return handleShortLink(path.slice(4));
     }
 
-    return env.ASSETS.fetch(request);
+    const assetRes = await env.ASSETS.fetch(request);
+
+    // 404 一律 no-store（2026-10-22 修）
+    //
+    // 為什麼：Static Assets 的 404 頁預設帶 `cache-control: public, max-age=0,
+    // must-revalidate`，實測 cf-cache-status: HIT —— 也就是某個 URL 一旦在
+    // 功能上線前被拜訪過，那個 404 會被釘在邊緣（與瀏覽器）快取上，之後即使
+    // /go/<key> 已經會 302，使用者（老闆 Chrome，H3）仍可能看到 404 頁。
+    // 404 沒有任何快取價值，改成 no-store 讓新路由/新頁面一上線就立即正確。
+    if (assetRes.status === 404) {
+      const headers = new Headers(assetRes.headers);
+      headers.set('Cache-Control', 'no-store');
+      headers.delete('cf-cache-status');
+      return new Response(assetRes.body, {
+        status: 404,
+        statusText: assetRes.statusText,
+        headers
+      });
+    }
+
+    return assetRes;
   }
 };
