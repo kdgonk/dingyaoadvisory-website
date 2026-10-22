@@ -1264,13 +1264,13 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       ||localStorage.getItem('cookieConsent')==='accepted'
       ||localStorage.getItem('gdpr_consent')==='accepted';
   }catch(e){}
-  if(granted){_dyConsent('granted');}
+  if(granted){_dyConsent('granted');document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('cookieConsent');if(el){el.style.display='none';}});}
   var ACCEPT='#cookieConsent button:not(.cookie-btn-more), #accept-cookies-btn, [onclick*="acceptCookies"], [onclick*="acceptGDPR"]';
   var DECLINE='#decline-cookies-btn, [onclick*="declineCookies"], [onclick*="declineGDPR"]';
   document.addEventListener('click',function(e){
     var t=e.target; if(!t||!t.closest) return;
     if(t.closest(DECLINE)){_dyConsent('denied');return;}
-    if(t.closest(ACCEPT)){_dyConsent('granted');}
+    if(t.closest(ACCEPT)){_dyConsent('granted');try{document.cookie='cookie_consent=accepted;max-age=31536000;path=/;SameSite=Lax';localStorage.setItem('cookieConsent','accepted');}catch(e){}}
   },true);
 })();
 </script>
@@ -1328,7 +1328,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       "name": "為什麼選擇南非的私立教育？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "南非頂級私校提供全英語授課、世界級學術水準與安全校園環境，學費約為台北國際學校的 1/2–1/3，並可結合置產與教育移居。"
+        "text": "南非頂級私校提供全英語授課、世界級學術水準與安全校園環境，年度學費約 ZAR 300,000-500,000（約 NT$ 50-85 萬），並可結合置產與教育移居。"
       }
     },
     {
@@ -1655,7 +1655,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           </tr>
           <tr>
             <td>性價比評價</td>
-            <td class="highlight">⭐⭐⭐⭐⭐ 全英語貴族教育<br><span style="font-size:0.75rem;color:#22c55e">學費僅台灣頂級私校 1/3</span></td>
+            <td class="highlight">⭐⭐⭐⭐⭐ 全英語貴族教育<br><span style="font-size:0.75rem;color:#22c55e">年學費約 ZAR 300,000-500,000</span></td>
             <td>⭐⭐⭐ 高壓升學環境</td>
           </tr>
         </tbody>
@@ -1884,7 +1884,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           <i class="fas fa-chevron-down"></i>
         </button>
         <div class="faq-answer">
-          <p>南非頂級私校提供全英語授課、世界級學術水準與安全校園環境，學費約為台北國際學校的 1/2–1/3，並可結合置產與教育移居。</p>
+          <p>南非頂級私校提供全英語授課、世界級學術水準與安全校園環境，年度學費約 ZAR 300,000-500,000（約 NT$ 50-85 萬），並可結合置產與教育移居。</p>
         </div>
       </div>
       <div class="faq-item fade-in">

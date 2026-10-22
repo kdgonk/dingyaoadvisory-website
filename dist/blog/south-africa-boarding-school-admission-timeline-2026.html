@@ -722,13 +722,13 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       ||localStorage.getItem('cookieConsent')==='accepted'
       ||localStorage.getItem('gdpr_consent')==='accepted';
   }catch(e){}
-  if(granted){_dyConsent('granted');}
+  if(granted){_dyConsent('granted');document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('cookieConsent');if(el){el.style.display='none';}});}
   var ACCEPT='#cookieConsent button:not(.cookie-btn-more), #accept-cookies-btn, [onclick*="acceptCookies"], [onclick*="acceptGDPR"]';
   var DECLINE='#decline-cookies-btn, [onclick*="declineCookies"], [onclick*="declineGDPR"]';
   document.addEventListener('click',function(e){
     var t=e.target; if(!t||!t.closest) return;
     if(t.closest(DECLINE)){_dyConsent('denied');return;}
-    if(t.closest(ACCEPT)){_dyConsent('granted');}
+    if(t.closest(ACCEPT)){_dyConsent('granted');try{document.cookie='cookie_consent=accepted;max-age=31536000;path=/;SameSite=Lax';localStorage.setItem('cookieConsent','accepted');}catch(e){}}
   },true);
 })();
 </script>

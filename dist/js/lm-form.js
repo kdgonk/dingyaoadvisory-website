@@ -35,6 +35,14 @@ function submitLmForm(e, source) {
       } else if (window.dataLayer) {
         window.dataLayer.push({ event: 'generate_lead', event_category: 'lead_magnet', event_label: source });
       }
+      // 2026-10-22：GA4 在 analytics_storage=denied（訪客沒點 cookie 同意）時會丟掉
+      // generate_lead，導致「表單明明送出成功、GA4 轉換卻是 0」。Plausible 是
+      // cookieless，同一個轉換在 Plausible 一律記得到，兩邊對照就不會再誤判掉單。
+      try {
+        if (typeof window.plausible === 'function') {
+          window.plausible('generate_lead', { props: { source: source || 'lead_magnet' } });
+        }
+      } catch (e) {}
       form.style.display = 'none';
       document.getElementById('lmSuccess').style.display = 'block';
     } else { throw new Error(data.error || '建立聯絡人失敗'); }

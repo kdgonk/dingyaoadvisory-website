@@ -1,0 +1,54 @@
+✅ [1] Tailwind class = 0  — ZH 0 / EN 0
+✅ [2] Font Awesome integrity format
+✅ [3] Nav ZH == live template + 11 real destinations  — identical=True miss=[]
+✅ [4] Nav EN == live template + 11 real destinations  — identical=True miss=[]
+✅ [5] Footer 6 social icons
+✅ [6] CSS braces balanced  — ZH 274/274 EN 274/274
+✅ [7] Hero slug consistent (img/og/twitter/jsonld)
+✅ [8] og:image is .webp
+✅ [9] EN mirror: same <style> count & main block  — style tags ZH 3 EN 3; main-block equal=True
+✅ [10] JSON-LD publisher name per language
+✅ [11] FAQ block both languages
+✅ [12] FAQPage schema both  — ZH 1 EN 1
+✅ [13] H2 questionized >=60%  — ZH 10/11, EN 9/12
+✅ [14] Footer bottom links ZH 5/5  — <a href="/overseas-buyers" title="海外交付鏈 →">海外交付鏈 →</a><a href="/partners" title="合作夥伴名錄 →">合作夥伴名錄 →</a><a href="/sitemap
+✅ [15] Footer bottom links EN 5/5  — <a href="/overseas-buyers-en" title="Overseas delivery chain →">Overseas delivery chain →</a><a href="/partners-en" titl
+✅ [16] footer-cta-row
+✅ [17] line-icon used, no fab fa-line
+✅ [18] Google 4-colour SVG
+✅ [19] publisher.js manual mode
+✅ [20] JSON-LD parses (all blocks)  — []
+✅ [21] No guarantee claims  — ZH [] EN []
+✅ [22] No broker-service wording (non-negated)  — []
+✅ [23] Disclaimer block ZH/EN
+✅ [24] Disclaimer fine-print spec
+✅ [25] Figures given as ranges + caveat
+✅ [26] No 蘭特/蘭德
+✅ [26.5] No NTD conversion of ZAR
+✅ [R] No deposit-rate claims  — []
+✅ [27] Related-reading real block >=3 links  — ZH 4 EN 4
+✅ [28] Target keywords verbatim  — ZH miss [] EN miss []
+✅ [29] Cape Town/SA focus >=70% (loose+strict)  — ZH 97.0/97.0  EN 96.8/96.8
+✅ [30] HTML tag pairing
+✅ [31] No inherited malformed tail
+✅ [32] EN file contains zero CJK
+✅ [33] Meta desc 150-320 & 3 places identical  — ZH [173, 173, 173] EN [152, 152, 152]
+✅ [33b] EN canonical has no .html
+✅ [34] Inline sources >=3 per language (body)  — ZH (4, 0, 4) EN (4, 0, 4)
+✅ [35] No simplified characters (ZH)
+✅ [36] No Chinese HTML comments  — []
+✅ [37] EN title <=60 chars, ZH present  — ZH 52 EN 53
+✅ [38] Pricing-language framing (iron law 0.11)  — [] []
+✅ [39] Crestline assist block (>=3 mentions + id)  — ZH 7 EN 7
+✅ [40] hreflang bidirectional (zh-TW/en/x-default)
+✅ [41] No .html in internal links
+✅ [42] Data tables (tax-table) >=1  — ZH 3 EN 3
+✅ [43] H1 unique
+✅ [44] Direct-answer highlight box
+✅ [45] No template residue (old slug only as internal link)  — []
+✅ [46] sr-only outline H2 matches H1  — ZH=南非寄宿學校怎麼申請？頂級私校入學時程、監護安排與費用結構（ EN=How to Apply to a South Africa
+✅ [47] Breadcrumb name == H1  — ZH=南非寄宿學校怎麼申請？頂級私校入學時程、監護安排與費用結構（2026） EN=How to Apply to a South Africa Boarding School: Admission Timeline, Guardianship and Fees (2026)
+✅ [48] EN article links only EN targets  — []
+✅ [49] ZH article links only ZH targets  — []
+
+TOTAL 52 checks | PASS 52 | FAIL 0

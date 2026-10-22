@@ -738,7 +738,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
   document.addEventListener('click',function(e){
     var t=e.target; if(!t||!t.closest) return;
     if(t.closest(DECLINE)){_dyConsent('denied');return;}
-    if(t.closest(ACCEPT)){_dyConsent('granted');try{document.cookie='cookie_consent=accepted;max-age=31536000;path=/;SameSite=Lax';localStorage.setItem('cookieConsent','accepted');}catch(e){}
+    if(t.closest(ACCEPT)){_dyConsent('granted');try{document.cookie='cookie_consent=accepted;max-age=31536000;path=/;SameSite=Lax';localStorage.setItem('cookieConsent','accepted');}catch(e){}}
   },true);
 })();
 </script>
