@@ -28,6 +28,60 @@ const ALLOWED_SOURCES = new Set([
 
 const JSON_HEADERS = { 'Content-Type': 'application/json; charset=utf-8' };
 
+/**
+ * /go/<key> 短網址表（2026-10-22 老闆需求）
+ *
+ * 為什麼需要：LINE 官方帳號回覆有 500 字上限，一條 PDF 網址加 UTM 就吃掉
+ * 161 字（例：assets.dingyaoadvisory.tw/whitepapers/dingyao-bank-vs-taiwan-
+ * whitepaper-2026-zh.pdf?utm_source=line&utm_medium=oa&utm_campaign=whitebook
+ * &utm_content=bank）。改成 dingyaoadvisory.tw/go/wb-bank 只要 36 字。
+ *
+ * 規則：
+ *  - key 小寫比對（大小寫不敏感），結尾斜線由上方 path 正規化處理
+ *  - UTM 固定 utm_source=line&utm_medium=oa，另帶 utm_campaign / utm_content
+ *  - 未知 key → 302 回首頁（不 404，避免 LINE 內建瀏覽器停住）
+ *  - Cache-Control: no-store，之後改表不需清 Cloudflare 快取
+ */
+const HOME_URL = 'https://dingyaoadvisory.tw/';
+const ASSET_BASE = 'https://assets.dingyaoadvisory.tw/whitepapers/';
+const UTM_FIXED = 'utm_source=line&utm_medium=oa';
+
+// key: [目標 URL, utm_campaign, utm_content]
+const GO_LINKS = new Map([
+  ['wb-bank', [ASSET_BASE + 'dingyao-bank-vs-taiwan-whitepaper-2026-zh.pdf', 'whitebook', 'bank']],
+  ['wb-prop', [ASSET_BASE + 'dingyao-property-whitepaper-2026-zh.pdf', 'whitebook', 'prop']],
+  ['wb-edu',  [ASSET_BASE + 'dingyao-education-whitepaper-2026-zh.pdf', 'whitebook', 'edu']],
+  ['wb-rent', [ASSET_BASE + 'dingyao-rental-management-whitepaper-2026-zh.pdf', 'whitebook', 'rent']],
+  ['bank',    ['https://dingyaoadvisory.tw/south-africa-bank-account', 'menu', 'bank']],
+  ['prop',    ['https://dingyaoadvisory.tw/south-africa-property', 'menu', 'prop']],
+  ['edu',     ['https://dingyaoadvisory.tw/education', 'menu', 'edu']],
+  ['book',    ['https://cal.com/dingyao/30min', 'booking', 'human']],
+  ['consult', ['https://dingyaoadvisory.tw/consultation', 'menu', 'consult']],
+  ['line',    ['https://dingyaoadvisory.tw/', 'menu', 'home']]
+]);
+
+/** 302 + no-store。用 Response.redirect 當基底，再補上 no-store（其 headers 不可直接改）。 */
+function redirect(target) {
+  const base = Response.redirect(target, 302);
+  return new Response(base.body, {
+    status: 302,
+    headers: {
+      'Location': target,
+      'Cache-Control': 'no-store'
+    }
+  });
+}
+
+function handleShortLink(key) {
+  const entry = GO_LINKS.get(String(key || '').toLowerCase());
+  if (!entry) return redirect(HOME_URL);
+  const target = entry[0]
+    + (entry[0].includes('?') ? '&' : '?')
+    + UTM_FIXED + '&utm_campaign=' + entry[1] + '&utm_content=' + entry[2];
+  return redirect(target);
+}
+
+
 function json(body, status = 200) {
   return new Response(JSON.stringify(body), { status, headers: JSON_HEADERS });
 }
@@ -310,6 +364,17 @@ export default {
 
     if (path === '/api/health') {
       return json({ ok: true, chatwoot_token_configured: Boolean(env.CHATWOOT_API_TOKEN) });
+    }
+
+    // 短網址：/go/<key>（含 /go 與結尾斜線，皆視為未知 key → 首頁）
+    if (path === '/go' || path.startsWith('/go/')) {
+      if (request.method !== 'GET' && request.method !== 'HEAD') {
+        return new Response(null, {
+          status: 405,
+          headers: { 'Allow': 'GET, HEAD', 'Cache-Control': 'no-store' }
+        });
+      }
+      return handleShortLink(path.slice(4));
     }
 
     return env.ASSETS.fetch(request);
