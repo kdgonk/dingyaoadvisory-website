@@ -376,8 +376,9 @@ export default {
           headers: { 'Allow': 'GET, HEAD', 'Cache-Control': 'no-store' }
         });
       }
-      const prefix = path.startsWith('/go') ? '/go' : '/l';
-      return handleShortLink(path.slice(prefix.length + 1));
+      const prefix = path.startsWith('/go/') ? '/go' : '/l';
+      // '/go/<key>' → slice(4)、'/l/<key>' → slice(3)
+      return handleShortLink(path.length > prefix.length ? path.slice(prefix.length + 1) : '');
     }
 
     const assetRes = await env.ASSETS.fetch(request);

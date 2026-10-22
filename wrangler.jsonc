@@ -11,6 +11,12 @@
     "binding": "ASSETS",
     "directory": "./dist",
     "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    // 2026-10-22：讓 Worker 在「查快取/查靜態資產」之前就先執行這三組路徑。
+    // 為什麼：not_found_handling 的 404 帶 cache-control: public，會被邊緣快取，
+    // 且快取 key 依 Accept 分流 → 瀏覽器（Accept: text/html）可能命中上線前就被
+    // 快取的舊 404，而 curl（*/*）不命中，造成「我這台 200、老闆 404」。
+    // run_worker_first 保證 /l/* /go/* /api/* 一律進 Worker 產生動態回應（no-store）。
+    "run_worker_first": ["/l/*", "/go/*", "/api/*"]
   }
 }
