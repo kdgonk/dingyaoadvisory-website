@@ -73,7 +73,9 @@ function redirect(target) {
 }
 
 function handleShortLink(key) {
-  const entry = GO_LINKS.get(String(key || '').toLowerCase());
+  // 允許 /l/bank.html 這種實體檔寫法（dist/l/*.html 是雙保險用）
+  const cleaned = String(key || '').toLowerCase().replace(/\.html$/, '');
+  const entry = GO_LINKS.get(cleaned);
   if (!entry) return redirect(HOME_URL);
   const target = entry[0]
     + (entry[0].includes('?') ? '&' : '?')

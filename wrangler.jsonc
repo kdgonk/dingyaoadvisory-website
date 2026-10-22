@@ -17,6 +17,6 @@
     // 且快取 key 依 Accept 分流 → 瀏覽器（Accept: text/html）可能命中上線前就被
     // 快取的舊 404，而 curl（*/*）不命中，造成「我這台 200、老闆 404」。
     // run_worker_first 保證 /l/* /go/* /api/* 一律進 Worker 產生動態回應（no-store）。
-    "run_worker_first": ["/l/*", "/go/*", "/api/*"]
+    "run_worker_first": ["/l", "/l/*", "/go", "/go/*", "/api", "/api/*"]
   }
 }
