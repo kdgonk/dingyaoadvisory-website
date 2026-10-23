@@ -1537,7 +1537,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
 <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>
 <style id="seo-a11y-outline">.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-/* ===== nav LOGO 白金版 + 三支柱下拉（2026-10-20） ===== */
+/* ===== nav LOGO platinum edition + three-pillar dropdown (2026-10-20) ===== */
 .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;margin-bottom:0}
 .nav-mark{width:42px;height:32px;display:block;flex-shrink:0}
 .nav-wordmark{display:flex;flex-direction:column;line-height:1.15;align-items:center;text-align:center}
@@ -1571,7 +1571,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 }
 
 
-/* ===== footer brand 獨立結構（2026-10-20 第 6 批） ===== */
+/* ===== footer brand standalone structure (2026-10-20, batch 6) ===== */
 .footer-logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-bottom:18px}
 .footer-mark{width:38px;height:30px;display:block;flex-shrink:0}
 .footer-wordmark{display:flex;flex-direction:column;line-height:1.15}
@@ -2135,8 +2135,7 @@ function toggleFaq(el){el.classList.toggle('active');}
 </script>
 
 <script>
-/* ROI calculator（2026-10-21 補上：原本只有 oninput="updateCalculator()" 呼叫，
-   函式從未定義，滑桿完全沒反應） */
+/* ROI calculator (added 2026-10-21: previously only the oninput="updateCalculator()" call existed, the function was never defined, so the sliders did nothing) */
 function updateCalculator() {
   var $ = function (id) { return document.getElementById(id); };
   var amount = parseFloat($('investAmount').value);
@@ -2144,8 +2143,8 @@ function updateCalculator() {
   var intr   = parseFloat($('interest').value);
   var rent   = parseFloat($('rental').value);
 
-  var PROP_PCT = 0.653125;   // 房產配置比（由 10,450,000 / 16,000,000 反推）
-  var SAV_PCT  = 0.334375;   // 活存配置比（由  5,350,000 / 16,000,000 反推）
+  var PROP_PCT = 0.653125;   // Property allocation share (derived from 10,450,000 / 16,000,000)
+  var SAV_PCT  = 0.334375;   // Savings allocation share (derived from 5,350,000 / 16,000,000)
 
   var prop = Math.round(amount * PROP_PCT);
   var sav  = Math.round(amount * SAV_PCT);

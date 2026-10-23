@@ -1901,7 +1901,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- cal-booking-inline-v1 -->
 
 <style id="cal-booking-css">
-/* Cal.com 預約區塊（金黑風格） */
+/* Cal.com booking block (gold-on-black theme) */
 .booking-section{
   position:relative;padding:5rem 0 5.5rem;background:#0A0E17;overflow:hidden;
   border-top:1px solid rgba(201,168,76,.12);
@@ -1961,7 +1961,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   .booking-wrap{padding:.6rem}
 }
 
-/* ===== nav LOGO 白金版 + 三支柱下拉（2026-10-20） ===== */
+/* ===== nav LOGO platinum edition + three-pillar dropdown (2026-10-20) ===== */
 .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;margin-bottom:0}
 .nav-mark{width:42px;height:32px;display:block;flex-shrink:0}
 .nav-wordmark{display:flex;flex-direction:column;line-height:1.15;align-items:center;text-align:center}
@@ -1995,7 +1995,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 }
 
 
-/* ===== footer brand 獨立結構（2026-10-20 第 6 批） ===== */
+/* ===== footer brand standalone structure (2026-10-20, batch 6) ===== */
 .footer-logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-bottom:18px}
 .footer-mark{width:38px;height:30px;display:block;flex-shrink:0}
 .footer-wordmark{display:flex;flex-direction:column;line-height:1.15}
@@ -2162,7 +2162,7 @@ Cal.ns.dingyao("ui", {
   }
 });
 
-/* L4：預約成立 */
+/* L4: booking confirmed */
 Cal.ns.dingyao("on", {
   action: "bookingSuccessful",
   callback: function (e) {
@@ -2188,7 +2188,7 @@ Cal.ns.dingyao("on", {
   }
 });
 
-/* 容器高度跟隨 Cal iframe（平板 1260px 會被固定容器裁切；桌機則可消掉底部留白） */
+/* Container height follows the Cal iframe (tablet: 1260px gets clipped by the fixed container; desktop: removes bottom whitespace) */
 (function () {
   var tries = 0;
   var timer = setInterval(function () {
