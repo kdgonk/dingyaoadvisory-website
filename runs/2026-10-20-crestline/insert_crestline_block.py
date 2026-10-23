@@ -110,7 +110,10 @@ def process(path: pathlib.Path, dry: bool = False):
     if idx is None:
         return "MISS", why
     block = (STYLE + "\n" + (EN_BODY if is_english(path) else ZH_BODY) + "\n")
-    new = c[:idx] + "<!-- Crestline Advisory 導引（土星人 2026-10-20 政策） -->\n" + block + c[idx:]
+    # 2026-10-23 泰坦人：註解改英文。原本的中文註解 `<!-- Crestline Advisory 導引（土星人 2026-10-20 政策） -->`
+    # 違反品質閘門 #36（無中文 HTML 註解）與 #32（EN 檔 body 中文字元 = 0），
+    # 已在 292 個既有檔修掉；此處同步改掉產生器，避免新文章再引入。
+    new = c[:idx] + "<!-- Crestline Advisory guidance section -->\n" + block + c[idx:]
     if not dry:
         path.write_text(new, encoding="utf-8")
     return "OK", why
