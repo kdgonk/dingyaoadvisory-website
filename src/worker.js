@@ -14,6 +14,16 @@ const CHATWOOT_CONVERSATIONS = CHATWOOT_BASE + '/conversations';
 const INBOX_ID = 2;
 const MAX_BODY_BYTES = 8192;
 
+// ⚠️ 2026-10-24 泰坦人實測：站上 9 處 `gtag('event','generate_lead')` 全部是空包彈。
+//    GTM 容器 GTM-PVWHRBWG 只有 __googtag（G-4H4T55YXB0）+ clarity + ahrefs + chatwoot，
+//    **沒有任何自訂事件 trigger、也沒有 GA4 事件標籤（__gaawe）**；而 GTM 載入的 gtag.js
+//    綁在它自己的 queue，頁面呼叫 gtag() 只會 push 進 window.dataLayer，沒有人消費。
+//    實測：頁面執行 gtag('event','qa_probe') 後 30 秒內 **零** collect 請求（見 2026-10-24 報告）。
+//    ⇒ 名單成功，GA4 卻永遠不會有 generate_lead。
+//    解法：由 Worker 在「Chatwoot 真的建檔成功」之後直接送 Measurement Protocol，
+//    只依成功訊號觸發，不受前端／GTM／同意模式影響。
+const GA4_MEASUREMENT_ID = 'G-4H4T55YXB0';
+
 // 只允許官網實際會送出的來源值，其他一律降級為 website，
 // 避免 proxy 被當成任意寫入 Chatwoot 的跳板。
 const ALLOWED_SOURCES = new Set([
@@ -200,7 +210,52 @@ async function createConversation(env, contactId, message) {
 }
 
 
-async function handleLead(request, env) {
+/**
+ * 伺服器端送 GA4 generate_lead（Measurement Protocol）。
+ *
+ * 觸發條件：Chatwoot 建檔／更新真的成功（呼叫端只在 ok 之後呼叫）。
+ * client_id 取自瀏覽器 _ga cookie（同源 fetch 會帶）：`_ga=GA1.1.<cid>.<ts>` → `<cid>.<ts>`。
+ * **沒有 _ga 就代表 analytics 同意未給，直接不送**（尊重同意，絕不繞過 cookie 橫幅）。
+ *
+ * 失敗一律吞掉：追蹤壞掉不可以影響收單。
+ */
+async function sendGa4Lead(env, request, source) {
+  try {
+    const secret = env.GA4_MP_API_SECRET;
+    if (!secret) return;
+    const cookie = request.headers.get('cookie') || '';
+    const m = cookie.match(/_ga=GA\d\.\d\.(\d+\.\d+)/);
+    if (!m) return;
+    const category = /^lm_/.test(source) || source === 'lead_magnet' ? 'lead_magnet' : 'contact';
+    const payload = {
+      client_id: m[1],
+      events: [{
+        name: 'generate_lead',
+        params: {
+          event_category: category,
+          event_label: source,
+          source,
+          lead_origin: 'worker_mp',
+          engagement_time_msec: '1'
+        }
+      }]
+    };
+    await fetch(
+      'https://www.google-analytics.com/mp/collect?measurement_id=' + GA4_MEASUREMENT_ID
+        + '&api_secret=' + encodeURIComponent(secret),
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }
+    );
+  } catch (err) {
+    // 追蹤失敗不影響收單
+  }
+}
+
+
+async function handleLead(request, env, ctx) {
   if (!env.CHATWOOT_API_TOKEN) {
     return json({ ok: false, error: 'Server misconfigured: missing CHATWOOT_API_TOKEN' }, 500);
   }
@@ -335,6 +390,15 @@ async function handleLead(request, env) {
     }
   }
 
+  // GA4 generate_lead：只有走到這裡才代表 Chatwoot 真的收單成功。
+  // 前端 gtag 那條路是死的（見檔頭說明），所以由 Worker 補送。
+  const ga4 = sendGa4Lead(env, request, custom_attributes.source);
+  if (ctx && typeof ctx.waitUntil === 'function') {
+    ctx.waitUntil(ga4);
+  } else {
+    await ga4;
+  }
+
   return json({
     ok: true,
     matched_existing: Boolean(existing),
@@ -344,7 +408,7 @@ async function handleLead(request, env) {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, '') || '/';
 
@@ -361,7 +425,7 @@ export default {
       if (request.method !== 'POST') {
         return json({ ok: false, error: 'Method not allowed' }, 405);
       }
-      return handleLead(request, env);
+      return handleLead(request, env, ctx);
     }
 
     if (path === '/api/health') {

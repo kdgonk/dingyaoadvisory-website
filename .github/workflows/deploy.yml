@@ -20,9 +20,19 @@ jobs:
     name: wrangler deploy
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      # 2026-10-24 泰坦人：GA4 Measurement Protocol api_secret。
+      # 放在 job env 才能在 step 的 if 裡判斷「有沒有設定」，未設定就不 sync（本機/分支不會壞）。
+      GA4_MP_API_SECRET: ${{ secrets.GA4_MP_API_SECRET }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Sync GA4 Measurement Protocol secret
+        if: env.GA4_MP_API_SECRET != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS_TOKEN }}
+        run: printf '%s' "$GA4_MP_API_SECRET" | npx --yes wrangler@4 secret put GA4_MP_API_SECRET --name dingyao
 
       - name: Deploy with Wrangler
         uses: cloudflare/wrangler-action@v3
