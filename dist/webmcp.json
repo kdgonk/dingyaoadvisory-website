@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-20",
+  "last_updated": "2026-10-24",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-property-sale-withholding-tax-foreign-sellers-2026",
+          "title": "南非賣房稅 s35A 預扣稅 7.5%：NR03 申請與匯出實算（2026）",
+          "description": "南非賣房稅的核心是所得稅法 s35A：非居民出售南非不動產，售價超過 R2,000,000 時，買方必須就「全額」預扣 7.5%（自然人）、10%（公司）或 15%（信託）。本文以開普敦 Bishopscourt 與 Atlantic Seaboard 實價拆解預扣金額、NR03 減免申請、21 個工作日與 14 天付款期限的差別、買方 10% 罰則、CGT 結算時點，以及匯出代碼 510 01，並附開普敦賣方出售前 90 天文件預檢清單。立即索取出售前檢查表。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-property-sale-withholding-tax-foreign-sellers-2026",
+          "language": "zh-TW",
+          "category": "tax",
+          "published": "2026-10-24",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-property-sale-withholding-tax-foreign-sellers-2026-hero.webp"
+        },
+        {
+          "slug": "south-africa-property-sale-withholding-tax-foreign-sellers-2026-en",
+          "title": "Section 35A Withholding Tax on SA Property",
+          "description": "Under section 35A of the Income Tax Act, when a non-resident sells South African immovable property for more than R2,000,000, the purchaser must withhold 7.5% (individual), 10% (company) or 15% (trust) of the full purchase price. This guide breaks down the Cape Town numbers, the NR03 directive, why 21 business days is processing time and not the payment deadline, the 10% penalty on purchasers, the CGT timing rule, and BoP code 510 01 for repatriation. Request the pre-sale document checklist.",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-property-sale-withholding-tax-foreign-sellers-2026-en",
+          "language": "en",
+          "category": "tax",
+          "published": "2026-10-24",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-property-sale-withholding-tax-foreign-sellers-2026-hero.webp"
+        },
         {
           "slug": "standard-bank-non-resident-account-2026",
           "title": "南非開戶完整手冊：Standard Bank 非居民帳戶文件與流程（2026）",
