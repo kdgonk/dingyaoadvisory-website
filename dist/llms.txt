@@ -211,7 +211,7 @@ Last updated: 2026-10-26
 ## 南非幣匯回台灣完整流程：BOP 類別、匯率與申報（2026）
 - URL (ZH): https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026
 - URL (EN): https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026-en
-- Published: 2026-10-24
+- Published: 2026-10-26
 - Category: 置產投資 / 跨境資金 / 稅務規劃
 - Key entities: BoP category, SARB Currency and Exchanges Manual, SADC harmonised categories (11 August 2026), section 50D interest exemption, withholding tax on interest, Taiwan overseas income basic tax, Cape Town
 - Summary: 南非幣匯回台灣不是填一張表就好：利息、本金、賣房款是三種不同性質的錢，走三組不同 BoP 類別與文件。本文整理 SARB 2026-08-11 上路的 SADC 調和版分類、非居民匯出自身資金走哪一組代碼、一次匯回與分批匯回的匯率與手續費差異、南非端 15% 利息扣繳的豁免邊界（所得稅法 s50D），以及台灣端海外所得計入基本所得額的申報邏輯。附匯出前六項文件檢查。立即索取匯出檢查表。
