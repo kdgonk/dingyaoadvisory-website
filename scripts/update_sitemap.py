@@ -101,7 +101,8 @@ def get_expected_urls() -> set:
 
 def get_lastmod_from_file(path: Path) -> str:
     c = path.read_text(encoding='utf-8', errors='ignore')
-    for key in ('datePublished', 'dateModified'):
+    # 2026-10-26（S-20261026-01）：lastmod 取「最後修改」而非「發布」
+    for key in ('dateModified', 'datePublished'):
         m = re.search(rf'"{key}"\s*:\s*"([^"]+)"', c)
         if m:
             return m.group(1)[:10]

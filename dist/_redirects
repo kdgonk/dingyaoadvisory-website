@@ -120,3 +120,9 @@
 /blog/taiwan-wealthy-overseas-asset-allocation-2026    /blog/taiwan-wealthy-overseas-allocation    301
 # 2026-10-20 泰坦人補正（D1-A 語言鏡像）：EN 新頁同步 301 到舊 EN 頁（ZH 已於 10-19 301）
 /blog/taiwan-wealthy-overseas-asset-allocation-2026-en /blog/taiwan-wealthy-overseas-allocation-en 301
+
+# 2026-10-26（S-20261026-01 ②）舊 slug 404 → 301（站內殘留 0 處，來源為外部連結／GSC 404 報告）
+/blog/cape-town-short-term-letting    /blog/cape-town-short-term-letting-by-law-2026    301
+/blog/cape-town-short-term-letting-en /blog/cape-town-short-term-letting-by-law-2026-en 301
+/blog/cape-town-short-term-letting.html    /blog/cape-town-short-term-letting-by-law-2026    301
+/blog/cape-town-short-term-letting-en.html /blog/cape-town-short-term-letting-by-law-2026-en 301

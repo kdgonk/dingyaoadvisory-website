@@ -17,6 +17,7 @@
 不改任何其他欄位（changefreq / priority / hreflang 原樣保留）。
 """
 import argparse
+import hashlib
 import re
 import subprocess
 import sys
@@ -24,6 +25,40 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 SITEMAP = REPO / "dist" / "sitemap.xml"
+
+# ── 純雜訊變更判定（2026-10-26 土星人派工 S-20261026-01）──────────────────
+# 82f4516d / 26518b70 只改 HTML/CSS 註解，卻讓 292 頁 lastmod 一起跳到 10-23，
+# Google 因此收到「近 300 頁同時變更」的假訊號。此後 bump 前先比對
+# 「可見內容指紋」：剝掉 script/style/註解後若位元組相同 ⇒ 不算內容變更，不 bump。
+_VIS_DROP = (
+    re.compile(r"<script\b.*?</script\s*>", re.S | re.I),
+    re.compile(r"<style\b.*?</style\s*>", re.S | re.I),
+    re.compile(r"<!--.*?-->", re.S),
+)
+
+
+def _fingerprint(raw: bytes) -> str:
+    s = raw.decode("utf-8", "ignore")
+    for pat in _VIS_DROP:
+        s = pat.sub(" ", s)
+    return hashlib.sha256(re.sub(r"\s+", " ", s).strip().encode()).hexdigest()
+
+
+def _blob_fp(rev: str, relpath: str):
+    p = subprocess.run(["git", "show", f"{rev}:{relpath}"], cwd=REPO, capture_output=True)
+    return _fingerprint(p.stdout) if p.returncode == 0 and p.stdout else None
+
+
+def content_changed(commit: str, url_path: str) -> bool:
+    """該 commit 對這一頁是否造成可見內容變更（純註解／純追蹤碼 = False）。"""
+    rel = url_path.strip("/")
+    relpath = "dist/index.html" if rel == "" else f"dist/{rel}.html"
+    cur, prev = _blob_fp(commit, relpath), _blob_fp(f"{commit}^", relpath)
+    if cur is None:
+        return False            # 該 commit 刪了檔 → 不是內容更新
+    if prev is None:
+        return True             # 新增檔
+    return cur != prev
 
 
 def changed_paths(commit: str):
@@ -54,7 +89,19 @@ def main():
 
     sm = Path(args.sitemap)
     text = sm.read_text(encoding="utf-8")
-    targets = changed_paths(args.commit) + ["/" + e.strip("/") if not e.startswith("/") else e for e in args.extra]
+    touched = changed_paths(args.commit)
+    noise = [p for p in touched if not content_changed(args.commit, p)]
+    targets = [p for p in touched if p not in noise] + [
+        "/" + e.strip("/") if not e.startswith("/") else e for e in args.extra
+    ]
+
+    if noise:
+        print(f"NOISE {len(noise)} 頁只有註解／script 變更，不 bump lastmod：")
+        for p in noise[:5]:
+            print(f"      {p}")
+        if len(noise) > 5:
+            print(f"      … 其餘 {len(noise) - 5} 頁")
+        print()
 
     bumped, already, missing = [], [], []
     for path in targets:
