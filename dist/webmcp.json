@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-26",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-interest-remittance-to-taiwan-2026",
+          "title": "南非幣匯回台灣完整流程：BOP 類別、匯率與申報（2026）",
+          "description": "南非幣匯回台灣不是填一張表就好：利息、本金、賣房款是三種不同性質的錢，走三組不同 BoP 類別與文件。本文整理 SARB 2026-08-11 上路的 SADC 調和版分類、非居民匯出自身資金走哪一組代碼、一次匯回與分批匯回的匯率與手續費差異、南非端 15% 利息扣繳的豁免邊界（所得稅法 s50D），以及台灣端海外所得計入基本所得額的申報邏輯。附匯出前六項文件檢查。立即索取匯出檢查表。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026",
+          "language": "zh-TW",
+          "category": "置產投資 / 跨境資金 / 稅務規劃",
+          "published": "2026-10-24",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-interest-remittance-to-taiwan-2026-hero.webp"
+        },
+        {
+          "slug": "south-africa-interest-remittance-to-taiwan-2026-en",
+          "title": "Remit Money from South Africa to Taiwan Guide",
+          "description": "Interest, capital and sale proceeds are three different kinds of money and they leave South Africa under different BoP categories. This guide covers the SARB categories implemented on 11 August 2026, the four codes a Taiwan investor actually needs, the cost trade-off between a single transfer and staged transfers, the section 50D exemption for bank interest paid to non-residents, and how Taiwan treats the proceeds under its alternative minimum tax. Request the six-document export checklist.",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026-en",
+          "language": "en",
+          "category": "Property Investment / Cross-Border Finance / Tax",
+          "published": "2026-10-24",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-interest-remittance-to-taiwan-2026-hero.webp"
+        },
         {
           "slug": "south-africa-property-sale-withholding-tax-foreign-sellers-2026",
           "title": "南非賣房稅 s35A 預扣稅 7.5%：NR03 申請與匯出實算（2026）",
@@ -1474,6 +1494,11 @@
       "zh": "https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026",
       "en": "https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026-en",
       "purpose": "南非非居民銀行開戶執行手冊：Standard Bank 官方文件清單、FICA 地址證明兩層規則不一致、profiling 四題、退件原因、費用、s50D 利息免扣繳邊界"
+    },
+    "south_africa_interest_remittance_to_taiwan_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026",
+      "en": "https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026-en",
+      "purpose": "南非資金匯回台灣執行手冊：利息/本金/賣房款三組 BoP 類別、SARB 2026-08-11 SADC 調和版分類、非居民匯出代碼、一次與分批匯回成本、s50D 利息 15% 扣繳豁免邊界、台灣端海外所得計入基本所得額申報"
     }
   },
   "contact": {

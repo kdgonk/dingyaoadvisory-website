@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [南非幣匯回台灣完整流程：BOP 類別、匯率與申報（2026）](https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026) — 南非幣匯回台灣不是填一張表就好：利息、本金、賣房款是三種不同性質的錢，走三組不同 BoP 類別與文件。本文整理 SARB 2026-08-11 上路的 SADC 調和版分類、非居民匯出自身資金走哪一組代碼、一次匯回與分批匯回的匯率與手續費差異、南非端 15% 利息扣繳的豁免邊界（所得稅法 s50D），以及台灣端海外所得計入基本所得額的申報邏輯。附匯出前六項文件檢查。立即索取匯出檢查表。
+- [Remit Money from South Africa to Taiwan Guide](https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026-en) — Interest, capital and sale proceeds are three different kinds of money and they leave South Africa under different BoP categories. This guide covers the SARB categories implemented on 11 August 2026, the four codes a Taiwan investor actually needs, the cost trade-off between a single transfer and staged transfers, the section 50D exemption for bank interest paid to non-residents, and how Taiwan treats the proceeds under its alternative minimum tax. Request the six-document export checklist.
 - [南非賣房稅 s35A 預扣稅 7.5%：NR03 申請與匯出實算（2026）](https://dingyaoadvisory.tw/blog/south-africa-property-sale-withholding-tax-foreign-sellers-2026) — 南非賣房稅的核心是所得稅法 s35A：非居民出售南非不動產，售價超過 R2,000,000 時，買方必須就「全額」預扣 7.5%（自然人）、10%（公司）或 15%（信託）。本文以開普敦 Bishopscourt 與 Atlantic Seaboard 實價拆解預扣金額、NR03 減免申請、21 個工作日與 14 天付款期限的差別、買方 10% 罰則、CGT 結算時點，以及匯出代碼 510 01，並附開普敦賣方出售前 90 天文件預檢清單。立即索取出售前檢查表。
 - [Section 35A Withholding Tax on SA Property](https://dingyaoadvisory.tw/blog/south-africa-property-sale-withholding-tax-foreign-sellers-2026-en) — Under section 35A of the Income Tax Act, when a non-resident sells South African immovable property for more than R2,000,000, the purchaser must withhold 7.5% (individual), 10% (company) or 15% (trust) of the full purchase price. This guide breaks down the Cape Town numbers, the NR03 directive, why 21 business days is processing time and not the payment deadline, the 10% penalty on purchasers, the CGT timing rule, and BoP code 510 01 for repatriation. Request the pre-sale document checklist.
 - [南非開戶完整手冊：Standard Bank 非居民帳戶文件與流程（2026）](https://dingyaoadvisory.tw/blog/standard-bank-non-resident-account-2026) — 南非開戶不需要南非身分：Standard Bank 非居民帳戶只要護照認證副本、3 個月內地址證明、近 3 個月海外對帳單與收入證明，但真正卡住人的是 profiling 四題。本文整理官方文件清單、兩個官方頁面對地址證明的矛盾、退件三大原因、匯款費用，以及所得稅法 s50D 銀行利息免 15% 扣繳的適用邊界，並附南非定存與高利活存利率對照。立即索取開戶文件檢核表。
@@ -204,8 +206,16 @@
 
 ---
 
-Last updated: 2026-10-24
+Last updated: 2026-10-26
 ## Blog Articles
+## 南非幣匯回台灣完整流程：BOP 類別、匯率與申報（2026）
+- URL (ZH): https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026
+- URL (EN): https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026-en
+- Published: 2026-10-24
+- Category: 置產投資 / 跨境資金 / 稅務規劃
+- Key entities: BoP category, SARB Currency and Exchanges Manual, SADC harmonised categories (11 August 2026), section 50D interest exemption, withholding tax on interest, Taiwan overseas income basic tax, Cape Town
+- Summary: 南非幣匯回台灣不是填一張表就好：利息、本金、賣房款是三種不同性質的錢，走三組不同 BoP 類別與文件。本文整理 SARB 2026-08-11 上路的 SADC 調和版分類、非居民匯出自身資金走哪一組代碼、一次匯回與分批匯回的匯率與手續費差異、南非端 15% 利息扣繳的豁免邊界（所得稅法 s50D），以及台灣端海外所得計入基本所得額的申報邏輯。附匯出前六項文件檢查。立即索取匯出檢查表。
+
 ## 南非賣房稅 s35A 預扣稅 7.5%：NR03 申請與匯出實算（2026）
 - URL (ZH): https://dingyaoadvisory.tw/blog/south-africa-property-sale-withholding-tax-foreign-sellers-2026
 - URL (EN): https://dingyaoadvisory.tw/blog/south-africa-property-sale-withholding-tax-foreign-sellers-2026-en
