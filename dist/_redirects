@@ -1,3 +1,19 @@
+# 2026-10-27（S-20261026-02｜零曝光舊文 301 試點 12 列；土星人核准 2026-10-26）
+# 來源 28d 曝光=0 已 indexed 殭屍頁 → 301 併入同叢集已排名/有點擊目標頁。永久 301，禁 302/307。
+# 來源 HTML 檔保留（由本檔攔截），sitemap.xml 已同步移除這 12 條。
+/blog/sarb-july-mpc-cape-town-property                         /blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026            301
+/blog/sarb-july-2026-mpc-preview-cape-town-property            /blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026            301
+/blog/sarb-holds-rate-july-2026-cape-town-property-impact      /blog/three-central-banks-hike-hold-sarb-watch-cape-town-2026            301
+/blog/sarb-rate-hold-june-2025-cape-town-property              /blog/south-africa-interest-rate-fx-tracker-2026                         301
+/blog/cape-town-property-outlook-2026-overseas-investors       /blog/cape-town-property-outlook-2026                                    301
+/blog/cape-town-semigration-2-0-maturing-market-2026           /blog/cape-town-semigration-2026                                         301
+/blog/fitch-upgrade-south-africa-cape-town-investment-2026     /blog/south-africa-investment-opportunities-2026                         301
+/blog/south-africa-credit-upgrade-cape-town-investment-2026    /blog/south-africa-investment-opportunities-2026                         301
+/blog/cape-town-quality-life-property-demand-2026-en           /blog/cape-town-quality-of-life-cost-comparison-en                       301
+/blog/cape-town-rental-occupancy-2026-en                       /blog/cape-town-rental-yield-9-49-percent-reality-check-2026-en          301
+/blog/international-buyers-cape-town-foreign-investors-guide-en /blog/cape-town-property-demand-semigration-foreign-buyers-2026-en       301
+/blog/forbes-global-properties-cape-town-luxury-real-estate-2026-en /blog/cape-town-luxury-property-boom-constantia-bishopscourt-2026-en     301
+
 /blog/cape-town-dual-engine-income-rental-savings-65-percent /blog/cape-town-dual-engine-income-rental-savings-7-percent 301
 /blog/cape-town-dual-engine-income-rental-savings-65-percent-en /blog/cape-town-dual-engine-income-rental-savings-7-percent-en 301
 
@@ -18,7 +34,7 @@
 /blog/cape-town-quality-of-life    /blog/cape-town-quality-life-property-demand-2026    301
 /blog/overseas-asset-allocation    /blog/taiwan-wealthy-overseas-allocation    301
 /blog/overseas-asset-allocation-en    /blog/taiwan-wealthy-overseas-allocation-en    301
-/blog/cape-town-property-overseas-asset    /blog/cape-town-property-outlook-2026-overseas-investors    301
+/blog/cape-town-property-overseas-asset    /blog/cape-town-property-outlook-2026    301
 /blog/cape-town-property-overseas-asset-en    /blog/cape-town-property-outlook-2026-overseas-investors-en    301
 /blog/cape-town-property-trends-2026    /blog/international-buyers-cape-town-foreign-property-trends-2026    301
 /blog/cape-town-property-trends-2026-en    /blog/international-buyers-cape-town-foreign-property-trends-2026-en    301
