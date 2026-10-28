@@ -6,3 +6,7 @@ node_modules/
 .refactor/
 *.DS_Store
 .wrangler/
+
+# 未部署草稿（2026-10-28）：Worker assets = ./dist，_drafts/ 不會上線；
+# 忽略草稿本體，避免 git add -A 把未部署頁面帶進 commit。README 除外。
+_drafts/blog/

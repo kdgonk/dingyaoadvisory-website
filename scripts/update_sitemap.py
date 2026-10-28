@@ -17,9 +17,20 @@ Titan 專用：增量維護 dist/sitemap.xml。
 首頁特殊對應：
 - index.html -> /
 - index-en.html -> /index-en
+
+已部署過濾（2026-10-28）：
+- 預設對每個候選 URL 做 HEAD，live 非 200（3xx/4xx/5xx）者排除，不寫進 sitemap
+  —— 防「dist 有檔但還沒部署」的草稿被送進 sitemap ＋ IndexNow（10-27 valuation 事故）。
+- 連線層失敗（ERR）保守視為未知 → 保留，只警告，避免偶發 SSL timeout 誤刪活頁。
+- --offline（別名 --no-live）：跳過 live 檢查，供 CI／無網路環境使用。
+- 用法：python3 scripts/update_sitemap.py [--offline] [slug1 slug2 ...]（slug = bump lastmod）
 """
+import concurrent.futures as cf
+import http.client
 import re
 import sys
+import time
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -27,6 +38,10 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).parent.parent / 'dist'
 SITEMAP = ROOT / 'sitemap.xml'
 DOMAIN = 'https://dingyaoadvisory.tw'
+UA = {'User-Agent': 'Mozilla/5.0 TitanSitemapGen/1.1'}
+LIVE_WORKERS = 20
+LIVE_RETRIES = 2
+LIVE_TIMEOUT = 20
 
 EXCLUDE_PREFIXES = ('404', 'project-phase1-old', 'blog-template', 'article-template')
 EXCLUDE_SUBSTR = ('-demo', '-old', 'template', 'temp')
@@ -61,6 +76,76 @@ def load_redirect_sources() -> set:
 
 
 REDIRECT_SOURCES = load_redirect_sources()
+
+# 由 main() 在 live 檢查後填入「live 非 200」的 URL path。
+# hreflang 產生/修復時必須把它們視為「目標不存在」，否則會替 404 頁產生 hreflang。
+LIVE_EXCLUDED_PATHS = set()
+
+
+def check_url(url: str):
+    """HEAD 單一 URL，回傳 (url, status, note)。
+
+    status 為 int 或 'ERR'（連線層失敗）。ERR 不可當成 404 —— 並發下偶發
+    SSL handshake timeout，誤判會把活頁從 sitemap 移除（2026-10-20 教訓）。
+    """
+    last = ('ERR', '')
+    for attempt in range(LIVE_RETRIES + 1):
+        try:
+            p = urllib.parse.urlparse(url)
+            conn = http.client.HTTPSConnection(p.netloc or 'dingyaoadvisory.tw', timeout=LIVE_TIMEOUT)
+            path = (p.path or '/') + (('?' + p.query) if p.query else '')
+            conn.request('HEAD', path, headers=UA)
+            r = conn.getresponse()
+            r.read()
+            code = r.status
+            conn.close()
+            return url, code, ''
+        except Exception as e:  # noqa: BLE001
+            last = ('ERR', str(e)[:60])
+            if attempt < LIVE_RETRIES:
+                time.sleep(0.6 * (attempt + 1))
+    return url, last[0], last[1]
+
+
+def filter_deployed(urls: set):
+    """只留下 live 200 的 URL。
+
+    為什麼需要（2026-10-28）：舊版只認 dist/ 檔案存在，不認 live 狀態。
+    10-27 把一頁尚未部署的 valuation 草稿（dist 有檔、live 404）送進
+    sitemap ＋ IndexNow，讓 Google 收到 404。
+
+    回傳 (kept, dropped, unknown)：
+      kept    = live 200
+      dropped = live 明確非 200（3xx/4xx/5xx）→ 排除
+      unknown = 連線層失敗（ERR）→ 保守保留，只警告不刪
+    """
+    kept, dropped, unknown = set(), {}, {}
+    todo = sorted(urls)
+    print(f'[live] 檢查 {len(todo)} 個 URL 是否真的部署（並發 {LIVE_WORKERS}）...')
+    with cf.ThreadPoolExecutor(max_workers=LIVE_WORKERS) as ex:
+        for url, code, note in ex.map(check_url, todo):
+            if code == 200:
+                kept.add(url)
+            elif code == 'ERR':
+                unknown[url] = note
+                kept.add(url)
+            else:
+                dropped[url] = code
+    if dropped:
+        print(f'[live] ⛔ 排除 {len(dropped)} 個非 200（未部署/已下線）:')
+        for u, c in sorted(dropped.items()):
+            print(f'       {c}  {u}')
+    else:
+        print('[live] ✅ 全部 200，無需排除')
+    if unknown:
+        print(f'[live] ⚠️  {len(unknown)} 個 URL 連線失敗（保守保留，請重跑確認）:')
+        for u, n in sorted(unknown.items())[:10]:
+            print(f'       ERR {u}  ({n})')
+    return kept, dropped, unknown
+
+
+def _path_of(url: str) -> str:
+    return urlparse(url).path.rstrip('/') or '/'
 
 
 def should_index(path: Path) -> bool:
@@ -125,6 +210,8 @@ def _href_target_exists(href: str) -> bool:
         path = '/'
     if path.rstrip('/') in REDIRECT_SOURCES and path != '/':
         return False
+    if path.rstrip('/') in LIVE_EXCLUDED_PATHS and path != '/':
+        return False  # hreflang 不可指向 live 非 200 的頁（含未部署草稿）
     return rel_to_path(path).exists()
 
 def repair_hreflang(content: str):
@@ -216,10 +303,18 @@ def clone_nearest_block(content: str, url: str) -> str:
     # 若 priority 是根頁面但複製到 blog，可能需要調整，但保留原格式即可
     return block
 
-def main(bump_slugs=None):
+def main(bump_slugs=None, offline=False):
+    global LIVE_EXCLUDED_PATHS
     bump_slugs = bump_slugs or []
     content = SITEMAP.read_text(encoding='utf-8')
-    expected = get_expected_urls()
+    expected_all = get_expected_urls()
+
+    if offline:
+        print('[offline] 跳過 live 部署檢查（CI／無網路時使用）')
+        expected = expected_all
+    else:
+        expected, dropped_live, _unknown = filter_deployed(expected_all)
+        LIVE_EXCLUDED_PATHS = {_path_of(u) for u in dropped_live}
     
     # 解析現有 sitemap 的 URL 區塊
     blocks = []
@@ -291,5 +386,7 @@ def main(bump_slugs=None):
         print('Still orphan:', final_orphan)
 
 if __name__ == '__main__':
-    bump = sys.argv[1:] if len(sys.argv) > 1 else []
-    main(bump_slugs=bump)
+    args = sys.argv[1:]
+    offline = ('--offline' in args) or ('--no-live' in args)
+    bump = [a for a in args if not a.startswith('-')]
+    main(bump_slugs=bump, offline=offline)
