@@ -426,9 +426,40 @@ def main():
     return rc
 
 
+def restore_fx_links(base: Path, slug: str, marker: str = "2026-10-28 titan"):
+    """上線後必做：還原 fx-tracker ZH/EN 被註解的 valuation 內連（土星人 2026-10-28 裁決步驟 A）。
+
+    為什麼：valuation 頁上線前，fx-tracker 的「相關閱讀」有一條指向它的內連是 live 404，
+    先以 `<!-- marker ... -->` 包起來止血；上線後必須確定性還原，否則該頁永遠少一條內向連結。
+    """
+    tool = base / "scripts" / "restore_commented_block.py"
+    targets = [
+        base / "dist" / "blog" / "south-africa-interest-rate-fx-tracker-2026.html",
+        base / "dist" / "blog" / "south-africa-interest-rate-fx-tracker-2026-en.html",
+    ]
+    targets = [t for t in targets if t.exists()]
+    if not tool.exists() or not targets:
+        log(f"   ⚠️ fx-tracker 還原略過（tool={tool.exists()} targets={len(targets)}）")
+        return None
+    rc, out = run([sys.executable, tool] + [str(t) for t in targets] + ["--marker", marker])
+    log("   fx-tracker 還原: " + (out.strip().splitlines()[-1] if out.strip() else f"rc={rc}"))
+    rc2, out2 = run([sys.executable, tool] + [str(t) for t in targets] + ["--marker", marker, "--check"])
+    remaining = out2.strip().splitlines()[-1] if out2.strip() else ""
+    log(f"   fx-tracker --check: rc={rc2} {remaining[:120]}")
+    hits = {}
+    pat = re.compile(r'href="/blog/' + re.escape(slug) + r'(?:-en)?"')
+    for t in targets:
+        hits[t.name] = len(pat.findall(t.read_text(encoding="utf-8")))
+    log(f"   fx-tracker 指向 valuation 的 href: {hits}")
+    return rc2 == 0 and all(v >= 1 for v in hits.values())
+
+
 def post_steps(slug, day, urls, base: Path, dry: bool = False, push: bool = True):
-    """live 200 之後：sitemap → news sitemap → push → purge → IndexNow/GSC → 最終驗證"""
-    log("\n── post：sitemap / news sitemap / purge / 索引 ──")
+    """live 200 之後：fx-tracker 內連還原 → sitemap → news sitemap → push → purge → IndexNow/GSC → 最終驗證"""
+    log("\n── post：fx-tracker 內連 / sitemap / news sitemap / purge / 索引 ──")
+    fx_ok = restore_fx_links(base, slug)
+    if dry:
+        fx_ok = None
     rc, out = run([sys.executable, base / "scripts" / "update_sitemap.py", slug])
     log("\n".join(out.strip().splitlines()[-12:]))
     sm = (base / "dist" / "sitemap.xml").read_text(encoding="utf-8")
@@ -447,7 +478,12 @@ def post_steps(slug, day, urls, base: Path, dry: bool = False, push: bool = True
         return 0
 
     if push:
-        targets = ["dist/sitemap.xml", "dist/sitemap-news.xml"]
+        targets = [
+            "dist/sitemap.xml",
+            "dist/sitemap-news.xml",
+            "dist/blog/south-africa-interest-rate-fx-tracker-2026.html",
+            "dist/blog/south-africa-interest-rate-fx-tracker-2026-en.html",
+        ]
         rc, _ = run(["git", "add"] + targets)
         rc, out = run(["git", "commit", "-m", f"chore(seo): {slug} 進 sitemap + news sitemap（{day}）"])
         log("   " + (out.strip().splitlines()[0] if out.strip() else "(no changes)"))
@@ -486,6 +522,9 @@ def post_steps(slug, day, urls, base: Path, dry: bool = False, push: bool = True
     )
     log(f"   hreflang 互指: {'✅' if pair_ok else '❌'}")
     all_ok &= pair_ok
+    if fx_ok is not None:
+        log(f"   fx-tracker 內連已還原: {'✅' if fx_ok else '❌'}")
+        all_ok &= fx_ok
 
     log("\n" + ("✅ 部署完成，全部驗證通過" if all_ok else "⚠️ 部署完成但有驗證項失敗（見上）"))
     return 0 if all_ok else 4
