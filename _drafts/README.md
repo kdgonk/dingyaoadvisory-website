@@ -32,7 +32,12 @@
 **S-20261028-VALU 排程（土星人 2026-10-28 裁決）**
 - 日期已統一：ZH／EN 兩檔 `datePublished`＋`dateModified` 全部 = **2026-10-31**（4 欄位已驗）。
 - 部署時點：`0 11 * * 1,3,6` 發布 cron 的 **2026-10-31（六）11:00** 班；該 job 的 prompt 已內建
-  「S-20261028-VALU」專屬區塊（gate → 日期校正 → mv → 卡片排序 → sitemap → push → news sitemap → purge → 驗證）。
-- 硬性閘門：`python3 scripts/check_assets_ready.py <draft> --expect=7`，**7 張圖全 200 才准 push**；
-  任一 404 就停手回報（上線破圖比延後一天更糟）。
-- 上線後把 `fx-tracker` ZH/EN 內被註解的相關閱讀連結還原（搜尋 `2026-10-28 titan`）。
+  「S-20261028-VALU」專屬區塊（硬性日期閘門 → `deploy_article_pair.py` → 恢復 fx-tracker 內連 → 驗證）。
+- 🔴 **禁止提前**：即使 7 張圖提早到齊，也**不得**在 10-28／29／30 部署。`datePublished` 已鎖 2026-10-31，
+  提前 live 會變「未來日期」，Google 會 clamp 到發現日、news sitemap 48h 窗口對不上。圖先到就放著。
+- 硬性閘門：`python3 scripts/check_assets_ready.py <draft> --expect=7`（或 `deploy_article_pair.py` 內建的預檢），
+  **7 張圖全 200 才准 push**；任一 404 就停手回報（上線破圖比延後一天更糟）。
+- 部署用 `python3 scripts/deploy_article_pair.py --slug <slug> --publish-date 2026-10-31`（一條指令跑完
+  gate → 日期 → 卡片 → sitemap → news → purge → live 驗證；exit 2 = 圖未就緒且什麼都沒動）。
+- 上線後用 `python3 scripts/restore_commented_block.py ... --marker "2026-10-28 titan"` 還原
+  `fx-tracker` ZH/EN 被註解的相關閱讀連結（已驗：還原後與註解前 byte-identical）。
