@@ -22,4 +22,9 @@
 
 | 檔案 | 狀態 | 待辦 |
 |---|---|---|
-| `blog/cape-town-property-valuation-rates-foreign-buyers-2026.html` | ZH 草稿，未部署（live 404） | 木星人補 hero 圖 → 泰坦人部署；EN 版尚未產生 |
+| `blog/cape-town-property-valuation-rates-foreign-buyers-2026.html` | ZH 草稿，未部署（live 404） | 木星人補 hero 圖 → 泰坦人部署 |
+| `blog/cape-town-property-valuation-rates-foreign-buyers-2026-en.html` | EN 草稿，未部署（live 404，2026-10-28 14:06 由火星人寫出，同日移入） | 同上；兩版一起部署 |
+
+**圖檔狀態（2026-10-28 14:10 實測）**：hero／s1／s2 共 3 張 webp 在
+`https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-valuation-rates-foreign-buyers-2026-*.webp`
+**全部 404（木星人尚未上傳）** → 現在部署會是破圖，維持隔離。
