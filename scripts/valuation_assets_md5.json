@@ -1,0 +1,15 @@
+{
+  "_comment": "S-20261028-VALU 定稿圖檔（out_final 批）MD5 對照表。來源：土星人 2026-10-28 21:0x 提供。部署前 scripts/verify_asset_md5.py 必須 exit 0 才可 push。舊批（暖色日光）hero=4e6938f7/72564B 屬錯誤批，不得上線。",
+  "slug": "cape-town-property-valuation-rates-foreign-buyers-2026",
+  "assets": [
+    {"name": "hero", "md5": "1911ee21e7fc31396597c9a27e3d2bfb", "bytes": 64940},
+    {"name": "s1", "md5": "19bf05845e29e739be70c66796ce64a0"},
+    {"name": "s2", "md5": "b573ac748c5bcf45cd8115936dc44c61"},
+    {"name": "s3", "md5": "b70879be38b9516dab2358d45f829431"},
+    {"name": "s4", "md5": "172896330142e7843b42e572abafaa75"},
+    {"name": "s5", "md5": "093fc80f650c28b54ebcf9277d94395c", "bytes": 66650},
+    {"name": "s6", "md5": "dc6b3091c711ac100b5bec286809e83e"}
+  ],
+  "base_url": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-valuation-rates-foreign-buyers-2026-",
+  "suffix": ".webp"
+}
