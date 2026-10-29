@@ -296,9 +296,26 @@ def main():
         return post_steps(slug, day, urls, base, dry=args.dry_run, push=not args.no_push)
 
     # 已上線就不再改日期（避免重跑把 datePublished 推成隔天，破壞 news sitemap 時效）
-    if not (args.rehearse or args.dry_run) and all(http_status(u, method="GET")[0] == 200 for u in urls):
-        log("✅ 兩版已 live 200（先前已部署）→ 只跑 post 步驟，不改日期")
-        return post_steps(slug, day, urls, base, dry=False, push=not args.no_push)
+    # ⚠️ 2026-10-29 事故：同 slug 的「舊版」也會回 200，單看 HTTP 200 會誤判已部署 →
+    #    必須比對 live datePublished 是否已等於本次 day，才可視為「先前已部署」。
+    def live_published(u):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(
+                    u, headers={"User-Agent": "curl/8.7.1", "Cache-Control": "no-cache"}), timeout=20) as r:
+                if r.status != 200:
+                    return None
+                m = re.search(r'"datePublished"\s*:\s*"([^"]+)"', r.read().decode("utf-8", "replace"))
+                return m.group(1)[:10] if m else None
+        except Exception:
+            return None
+
+    if not (args.rehearse or args.dry_run):
+        live_dates = {u: live_published(u) for u in urls}
+        if all(d == day for d in live_dates.values()):
+            log(f"✅ 兩版已 live 且 datePublished={day}（先前已部署）→ 只跑 post 步驟，不改日期")
+            return post_steps(slug, day, urls, base, dry=False, push=not args.no_push)
+        if any(d for d in live_dates.values()):
+            log(f"⚠️ live 已有頁面但 datePublished={live_dates} ≠ {day} → 視為舊版未更新，繼續部署新版")
 
     if not zh_draft.exists() or not en_draft.exists():
         log(f"🛑 BLOCKED：_drafts 缺檔 → {zh_draft.exists()=} {en_draft.exists()=}")
