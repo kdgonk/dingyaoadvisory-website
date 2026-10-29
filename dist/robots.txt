@@ -16,12 +16,37 @@ Disallow: /blog/article-template
 Disallow: /blog/blog-template
 Disallow: /temp
 
-# Allow AI retrieval/citation crawlers (AEO/GEO) — GPTBot/ChatGPT-User/CCBot
-# serve both training AND real-time retrieval; blocking kills ChatGPT citations.
-User-agent: GPTBot
+# ── AI / LLM crawlers（2026-10-29 泰坦人：AI 能見度計畫 B-1）────────────────
+# 檢索／引用類：AI 搜尋引擎要引用本站內容，這一組必須允許。
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# 訓練類：依本站現行政策保留（允許）
+User-agent: GPTBot
 Allow: /
 
 User-agent: CCBot
