@@ -39,6 +39,11 @@ BRAND_CSS = """
 .by-dark{background-color:var(--navy-deep,#0A0E17)!important;color:var(--warm-white,#F5F0E8)!important}
 .by-gold-link{color:var(--navy-deep,#0A0E17)!important;text-decoration:underline;font-weight:700}
 .by-gold-hover:hover{border-color:var(--gold,#C9A84C)!important;color:var(--gold,#C9A84C)!important}
+/* 2026-10-30 泰坦人：本兩頁 hero 是淺色，.navbar 預設透明（白字）→ 淺底上看不見；
+   固定給黑金玻璃底（與全站 .navbar.scrolled 同款），並補 body padding 讓內容不被固定列遮住 */
+.site-header .navbar{background:rgba(10,14,23,0.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(201,168,76,0.18)}
+body.by-cream{padding-top:84px}
+
 """
 
 
@@ -83,7 +88,7 @@ def fix(path, apply_changes):
     s = s.replace('class="bg-gray-50 ', 'class="by-cream ')
 
     # 5) 補品牌色 override（只補一次）
-    if ".by-cream{" not in s:
+    if ".site-header .navbar{background" not in s:
         s = s.replace("</style>", BRAND_CSS + "</style>", 1)
         report["brand_css_injected"] = 1
 

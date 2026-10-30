@@ -1197,6 +1197,11 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .by-dark{background-color:var(--navy-deep,#0A0E17)!important;color:var(--warm-white,#F5F0E8)!important}
 .by-gold-link{color:var(--navy-deep,#0A0E17)!important;text-decoration:underline;font-weight:700}
 .by-gold-hover:hover{border-color:var(--gold,#C9A84C)!important;color:var(--gold,#C9A84C)!important}
+/* 2026-10-30 泰坦人：本兩頁 hero 是淺色，.navbar 預設透明（白字）→ 淺底上看不見；
+   固定給黑金玻璃底（與全站 .navbar.scrolled 同款），並補 body padding 讓內容不被固定列遮住 */
+.site-header .navbar{background:rgba(10,14,23,0.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(201,168,76,0.18)}
+body.by-cream{padding-top:84px}
+
 </style>
 <link href="/css/tailwind.min.css" rel="stylesheet">
 
