@@ -1185,6 +1185,18 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   line-height: 1.7;
 }
 
+
+/* 2026-10-30 泰坦人：舊版頁面殘留色 → 鼎曜品牌色（#0A0E17 墨黑 / #C9A84C 金 / #F5F0E8 米白）
+   注意：tailwind.min.css 是預編譯檔，任意色 class（text-[#xxxxxx]）不在其中，故在此顯式定義 */
+.text-\[\#0A0E17\]{color:var(--navy-deep,#0A0E17)}
+.text-\[\#C9A84C\]{color:var(--gold,#C9A84C)}
+.bg-\[\#C9A84C\]{background-color:var(--gold,#C9A84C)}
+.border-\[\#C9A84C\]{border-color:var(--gold,#C9A84C)}
+.border-\[\#0A0E17\]{border-color:var(--navy-deep,#0A0E17)}
+.by-cream{background-color:var(--warm-white,#F5F0E8)!important}
+.by-dark{background-color:var(--navy-deep,#0A0E17)!important;color:var(--warm-white,#F5F0E8)!important}
+.by-gold-link{color:var(--navy-deep,#0A0E17)!important;text-decoration:underline;font-weight:700}
+.by-gold-hover:hover{border-color:var(--gold,#C9A84C)!important;color:var(--gold,#C9A84C)!important}
 </style>
 <link href="/css/tailwind.min.css" rel="stylesheet">
 
@@ -1284,7 +1296,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased selection:bg-[#C5A059] selection:text-white">
+<body class="by-cream text-gray-800 antialiased selection:bg-[#C9A84C] selection:text-white">
 <h2 class="sr-only">Sandile Mbeko, Architect</h2>
 
 <!-- Google Tag Manager (noscript) -->
@@ -1293,72 +1305,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 
 <!-- End Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PVWHRBWG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<div class="fixed w-full z-50 top-4 md:top-6 px-4 pointer-events-none">
-<nav aria-label="Main navigation" class="max-w-7xl mx-auto bg-white/90 backdrop-blur-xl border border-white/40 shadow-2xl rounded-3xl px-6 py-3 transition-all duration-300 relative pointer-events-auto">
-<h2 class="sr-only">Main navigation</h2>
-<div class="flex justify-between items-center">
-<div class="flex items-center gap-4 cursor-pointer group" onclick="location.href='/index-en'">
-<div class="relative group-hover:scale-105 transition-transform duration-300">
-<div class="text-3xl font-bold font-logo tracking-tighter leading-none select-none">
-<span class="text-[#0F172A]">D</span><span class="text-[#C5A059]">Y</span><span class="text-[#0F172A]">A</span>
-</div>
-<div class="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full border border-white">
-</div>
-</div>
-<div class="hidden lg:flex items-center gap-3">
-<div class="h-8 w-px bg-gray-200 mx-1"></div>
-<div class="flex flex-col justify-center">
-<span class="text-[0.65rem] font-bold text-[#0F172A] tracking-[0.2em] uppercase leading-tight font-logo">DING YAO
-</span>
-<span class="text-[0.55rem] text-gray-400 font-medium tracking-[0.1em] uppercase leading-tight">ADVISORY</span>
-</div>
-                        <span class="ml-2 text-[0.5rem] bg-[#0F172A] text-white px-1.5 py-0.5 rounded border border-gray-700 font-bold tracking-widest uppercase opacity-80">APAC HUB</span>
-</div>
-</div>
-<div class="hidden md:flex items-center space-x-1">
-<a class="px-4 py-2 text-sm font-medium text-blue-900 bg-gray-100/50 rounded-full transition font-bold" href="/partners" title="Partners">Partners</a>
-<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="/platform" title="Platform">Platform</a>
-<div class="relative group dropdown-container">
-<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition flex items-center focus:outline-none">
-                            Lifestyle <i class="fas fa-chevron-down ml-1 text-xs opacity-50 transition-transform duration-300 group-hover:-rotate-180"></i>
-</button>
-<div class="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 overflow-hidden p-2">
-<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="/education" title="Education"><i class="fas fa-graduation-cap w-6 text-center mr-2 text-[#C5A059]"></i> Education</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="/retirement" title="Retirement"><i class="fas fa-wine-glass-alt w-6 text-center mr-2 text-[#C5A059]"></i> Retirement</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="/residency" title="Residency"><i class="fas fa-passport w-6 text-center mr-2 text-[#C5A059]"></i> Residency</a>
-</div>
-</div>
-<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="/assets" title="Assets">Assets</a>
-<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="/blog" title="Insights">Insights</a>
-</div>
-<div class="hidden md:flex items-center gap-3">
-<div class="flex items-center text-xs font-bold text-gray-400">
-<a class="hover:text-blue-900 transition" href="/sandile-mbeko-en" title="EN">EN</a>
-<span class="mx-2">/</span>
-<span class="text-blue-900 cursor-default">TW</span>
-</div>
-<a class="bg-[#0F172A] text-white hover:bg-[#1e293b] px-6 py-2 rounded-full text-xs font-bold shadow-lg shadow-blue-900/20 transform hover:-translate-y-0.5 transition whitespace-nowrap" href="/#contact" title="Book Now">Book Now</a>
-</div>
-<div class="md:hidden flex items-center gap-3">
-<a class="text-sm font-bold text-gray-700 bg-white border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 shadow-sm relative z-50 pointer-events-auto cursor-pointer block" href="/sandile-mbeko-en" title="EN">EN</a>
-<button class="text-gray-700 bg-white border border-gray-300 focus:outline-none p-2 ml-2 relative z-50 pointer-events-auto cursor-pointer flex items-center justify-center rounded-lg hover:bg-gray-100 shadow-sm" onclick="toggleMobileMenu()"><i class="fas fa-bars text-xl"></i></button>
-</div>
-</div>
-<div class="hidden md:hidden border-t border-gray-100 mt-3 pt-2 space-y-1" id="mobile-menu">
-<a class="block px-4 py-3 text-sm font-medium text-blue-900 bg-gray-50 rounded-xl" href="/partners" title="Partners">Partners</a>
-<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="/platform" title="Platform">Platform</a>
-<div class="pl-4 border-l-2 border-gray-100 ml-4 my-2">
-<p class="text-xs text-gray-400 uppercase tracking-widest mb-2 pl-2">Lifestyle</p>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="/education" title="Education">Education</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="/retirement" title="Retirement">Retirement</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="/residency" title="Residency">Residency</a>
-</div>
-<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="/assets" title="Assets">Assets</a>
-<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="/blog" title="Insights">Insights</a>
-<a class="block px-4 py-3 text-sm font-bold text-center text-white bg-[#0F172A] rounded-xl mt-4 shadow-lg" href="/#contact" onclick="toggleMobileMenu()" title="Book Now Now">Book Now Now</a>
-</div>
-</nav>
-</div>
+
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="Main navigation">
@@ -1401,7 +1348,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
       <a href="/blog-en" title="Insights">Insights</a>
       <a href="/consultation-en" class="btn-nav" title="Consultation">Consultation</a>
       <div class="nav-lang" id="langSwitcher">
-  <a href="#" class="active" id="langTw" title="TW">TW</a><span>/</span><a href="#" id="langEn" title="EN">EN</a>
+  <a href="/sandile-mbeko" id="langTw" title="TW">TW</a><span>/</span><a href="/sandile-mbeko-en" class="active" id="langEn" title="EN">EN</a>
 </div>
 <script>
 (function(){
@@ -1430,32 +1377,32 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <main id="main-content">
 <section class="bg-white py-16 border-b border-gray-100">
 <div class="max-w-4xl mx-auto px-6 text-center">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Design Philosophy</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2 mb-6">Design Philosophy</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Design Philosophy</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2 mb-6">Design Philosophy</h2>
 <p class="text-gray-600 leading-relaxed text-lg">
                 "Architecture is not just the stacking of spaces — it is the embodiment of a way of life. I believe the best design is invisible — it seamlessly integrates into the daily lives of its occupants, becoming a part of life itself."
             </p>
 <div class="mt-8 flex justify-center">
-<div class="w-20 h-1 bg-[#C5A059]"></div>
+<div class="w-20 h-1 bg-[#C9A84C]"></div>
 </div>
 </div>
 </section>
 <section class="py-20 bg-gray-50">
 <div class="max-w-6xl mx-auto px-6">
 <div class="text-center mb-16">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">About the Architect</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2">Meet the Designer</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">About the Architect</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2">Meet the Designer</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 <div class="space-y-6">
-<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#C5A059]">
-<h3 class="text-xl font-bold text-[#0F172A] mb-4"><i class="fas fa-graduation-cap text-[#C5A059] mr-2"></i> Professional Background</h3>
+<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#C9A84C]">
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4"><i class="fas fa-graduation-cap text-[#C9A84C] mr-2"></i> Professional Background</h3>
 <p class="text-gray-600 leading-relaxed">
                             Sandile Mbeko is a senior architectural designer from Durban, South Africa, with extensive experience in residential and commercial building design. He specializes in blending South Africa's unique cultural elements with contemporary architectural language, creating living spaces that are both internationally minded and locally grounded.
                         </p>
 </div>
-<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#0F172A]">
-<h3 class="text-xl font-bold text-[#0F172A] mb-4"><i class="fas fa-lightbulb text-[#C5A059] mr-2"></i> Design Approach</h3>
+<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#0A0E17]">
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4"><i class="fas fa-lightbulb text-[#C9A84C] mr-2"></i> Design Approach</h3>
 <p class="text-gray-600 leading-relaxed">
                             Skilled in delivering full-cycle design services from concept planning to construction supervision. Focused on spatial efficiency, natural lighting and ventilation, integrating sustainability into every project while pursuing green building certification standards.
                         </p>
@@ -1463,41 +1410,41 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="space-y-6">
 <div class="bg-white p-8 rounded-2xl shadow-lg">
-<h3 class="text-xl font-bold text-[#0F172A] mb-6 text-center">Core Expertise</h3>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-6 text-center">Core Expertise</h3>
 <div class="space-y-4">
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-home text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-home text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">Residential Architecture</h4>
+<h4 class="font-bold text-[#0A0E17]">Residential Architecture</h4>
 <p class="text-sm text-gray-600">Custom homes, luxury estates & manor planning</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-building text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-building text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">Commercial Spaces</h4>
+<h4 class="font-bold text-[#0A0E17]">Commercial Spaces</h4>
 <p class="text-sm text-gray-600">Hotels, resorts & office spaces</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-leaf text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-leaf text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">Sustainable Architecture</h4>
+<h4 class="font-bold text-[#0A0E17]">Sustainable Architecture</h4>
 <p class="text-sm text-gray-600">Green building certification & eco-friendly design</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-couch text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-couch text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">Interior Design</h4>
+<h4 class="font-bold text-[#0A0E17]">Interior Design</h4>
 <p class="text-sm text-gray-600">Furniture layout & spatial atmosphere planning</p>
 </div>
 </div>
@@ -1510,23 +1457,23 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <section class="py-20 bg-white">
 <div class="max-w-6xl mx-auto px-6">
 <div class="text-center mb-16">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Design Approach</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2">Design Methodology</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Design Approach</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2">Design Methodology</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow">
-<div class="w-16 h-16 rounded-full bg-[#C5A059] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">01</div>
-<h3 class="text-xl font-bold text-[#0F172A] mb-4">Listen & Understand</h3>
+<div class="w-16 h-16 rounded-full bg-[#C9A84C] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">01</div>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4">Listen & Understand</h3>
 <p class="text-gray-600">Deeply understanding the lifestyle, needs and vision of the occupants. Every project begins with in-depth conversations.</p>
 </div>
 <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow">
-<div class="w-16 h-16 rounded-full bg-[#C5A059] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">02</div>
-<h3 class="text-xl font-bold text-[#0F172A] mb-4">Cultural Fusion</h3>
+<div class="w-16 h-16 rounded-full bg-[#C9A84C] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">02</div>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4">Cultural Fusion</h3>
 <p class="text-gray-600">Seamlessly integrating South Africa's unique cultural elements with contemporary architectural vocabulary to create spaces with soul.</p>
 </div>
 <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow">
-<div class="w-16 h-16 rounded-full bg-[#C5A059] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">03</div>
-<h3 class="text-xl font-bold text-[#0F172A] mb-4">Sustainable Execution</h3>
+<div class="w-16 h-16 rounded-full bg-[#C9A84C] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">03</div>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4">Sustainable Execution</h3>
 <p class="text-gray-600">From concept to completion, ensuring every detail meets sustainability standards and the highest construction quality.</p>
 </div>
 </div>
@@ -1535,14 +1482,14 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <section class="py-20 bg-white">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Portfolio</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2">Selected Works</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Portfolio</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2">Selected Works</h2>
 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From modern luxury homes to commercial spaces, showcasing diverse design styles and craftsmanship</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-1.jpg')">
 <img alt="House Zungu - Modern Family Residence" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-1.jpg"/ title="House Zungu - Modern Family Residence">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">House Zungu</h3>
 <p class="text-gray-300 text-sm">Modern Family Residence · Durban</p>
@@ -1551,7 +1498,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-2.jpg')">
 <img alt="KZN Residence" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-2.jpg"/ title="KZN Residence">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">KZN Residence</h3>
 <p class="text-gray-300 text-sm">Luxury Villa · KwaZulu-Natal</p>
@@ -1560,7 +1507,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-3.jpg')">
 <img alt="Coastal Living" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-3.jpg"/ title="Coastal Living">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Coastal Living</h3>
 <p class="text-gray-300 text-sm">Seaside Residence · Durban North Coast</p>
@@ -1569,7 +1516,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-4.jpg')">
 <img alt="Modern Elegance" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-4.jpg"/ title="Modern Elegance">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Modern Elegance</h3>
 <p class="text-gray-300 text-sm">Modern Style Residence</p>
@@ -1578,7 +1525,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer md:col-span-2 lg:col-span-2" onclick="openLightbox('sandile-portfolio-5.jpg')">
 <img alt="Signature Collection" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-5.jpg"/ title="Signature Collection">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Signature Collection</h3>
 <p class="text-gray-300 text-sm">Premium Estate Series · Panoramic Design</p>
@@ -1587,7 +1534,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-6.jpg')">
 <img alt="House Ngcobo" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-6.jpg"/ title="House Ngcobo">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">House Ngcobo</h3>
 <p class="text-gray-300 text-sm">Modern Interior Design · Durban</p>
@@ -1596,7 +1543,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-7.jpg')">
 <img alt="Beach House" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-7.jpg"/ title="Beach House">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Beach House</h3>
 <p class="text-gray-300 text-sm">Beachfront Estate · Infinity Pool</p>
@@ -1605,7 +1552,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-8.jpg')">
 <img alt="Modern Living" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-8.jpg"/ title="Modern Living">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Modern Living</h3>
 <p class="text-gray-300 text-sm">Modern Living Space · Open Kitchen</p>
@@ -1614,7 +1561,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-9.jpg')">
 <img alt="Estate Living" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-9.jpg"/ title="Estate Living">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Estate Living</h3>
 <p class="text-gray-300 text-sm">Estate Residence · Pool Courtyard</p>
@@ -1623,14 +1570,14 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 </div>
 <div class="mt-12 text-center">
-<a class="inline-flex items-center gap-2 text-[#C5A059] font-bold hover:underline" href="https://www.instagram.com/srm_projects_za/" rel="noopener noreferrer" target="_blank" title="View More Projects">
+<a class="inline-flex items-center gap-2 text-[#C9A84C] font-bold hover:underline" href="https://www.instagram.com/srm_projects_za/" rel="noopener noreferrer" target="_blank" title="View More Projects">
 <i class="fab fa-instagram"></i> View More Projects
                     </a>
 </div>
 </div>
 </section>
 <div class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm" id="lightbox" onclick="closeLightbox()">
-<div class="absolute top-4 right-4 text-white text-4xl cursor-pointer hover:text-[#C5A059] transition" onclick="closeLightbox()">×</div>
+<div class="absolute top-4 right-4 text-white text-4xl cursor-pointer hover:text-[#C9A84C] transition" onclick="closeLightbox()">×</div>
 <img alt="Portfolio" class="max-w-[90vw] max-h-[90vh] object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" id="lightbox-img" src=""/ title="Portfolio">
 </div>
 <script>
@@ -1647,24 +1594,24 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     if (e.key === 'Escape') closeLightbox();
                 });
             </script>
-<section class="py-20 bg-[#0F172A] text-white">
+<section class="py-20 bg-[#0A0E17] text-white">
 <div class="max-w-4xl mx-auto px-6 text-center">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Collaboration</span>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Collaboration</span>
 <h2 class="text-3xl font-bold mt-2 mb-6">Collaboration with DingYao</h2>
 <p class="text-gray-300 leading-relaxed text-lg mb-12">
                 As Chief Architectural Designer at DingYao, Sandile Mbeko provides professional design services for our development projects. From CanvasCrest's gated communities to premium estate projects, Sandile's aesthetic vision and technical expertise ensure every project meets international standards.
             </p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
 <div class="p-6">
-<div class="text-4xl font-bold text-[#C5A059] mb-2">10+</div>
+<div class="text-4xl font-bold text-[#C9A84C] mb-2">10+</div>
 <div class="text-gray-400">Years of Design Experience</div>
 </div>
 <div class="p-6">
-<div class="text-4xl font-bold text-[#C5A059] mb-2">50+</div>
+<div class="text-4xl font-bold text-[#C9A84C] mb-2">50+</div>
 <div class="text-gray-400">Completed Projects</div>
 </div>
 <div class="p-6">
-<div class="text-4xl font-bold text-[#C5A059] mb-2">100%</div>
+<div class="text-4xl font-bold text-[#C9A84C] mb-2">100%</div>
 <div class="text-gray-400">Client Satisfaction</div>
 </div>
 </div>
@@ -1672,9 +1619,9 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </section>
 <section class="py-20 bg-gray-50">
 <div class="max-w-4xl mx-auto px-6 text-center">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Testimonial</span>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Testimonial</span>
 <div class="mt-8 bg-white p-10 rounded-2xl shadow-lg relative">
-<i class="fas fa-quote-left text-4xl text-[#C5A059]/20 absolute top-6 left-6"></i>
+<i class="fas fa-quote-left text-4xl text-[#C9A84C]/20 absolute top-6 left-6"></i>
 <blockquote class="text-xl text-gray-700 italic leading-relaxed mb-6 relative z-10">
                     "Sandile's design made our house more than just a building — it became a true home. His attention to detail and understanding of culture created a space that is both modern and warm."
                 </blockquote>
@@ -1683,19 +1630,19 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <i class="fas fa-user text-gray-400"></i>
 </div>
 <div class="text-left">
-<div class="font-bold text-[#0F172A]">Project Client</div>
+<div class="font-bold text-[#0A0E17]">Project Client</div>
 <div class="text-sm text-gray-500">Cape Town Residence Project</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-20 bg-[#0F172A] text-white">
+<section class="py-20 bg-[#0A0E17] text-white">
 <div class="max-w-4xl mx-auto px-6 text-center">
 <h2 class="text-3xl font-bold mb-6">Start Your Design Journey</h2>
 <p class="text-gray-300 mb-8 text-lg">Contact Sandile Mbeko and his team to create your ideal home together.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<a class="bg-[#C5A059] text-white px-8 py-4 rounded-full font-bold hover:bg-[#b8944f] transition shadow-lg flex items-center justify-center" href="/#contact" title="Book a Design Consultation">
+<a class="bg-[#C9A84C] text-white px-8 py-4 rounded-full font-bold hover:bg-[#b8944f] transition shadow-lg flex items-center justify-center" href="/#contact" title="Book a Design Consultation">
 <i class="fas fa-paper-plane mr-2"></i> Book a Design Consultation
                 </a>
 <a class="bg-white/10 text-white border border-white/30 px-8 py-4 rounded-full font-bold hover:bg-white/20 transition flex items-center justify-center" href="/partners" title="Back to Partner Network">
@@ -1811,11 +1758,11 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 md:p-6 shadow-2xl z-[100] flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 hidden" id="cookie-banner">
 <div class="container mx-auto max-w-7xl flex flex-col md:flex-row items-center gap-4 md:pr-24">
 <div class="text-xs md:text-sm text-gray-600 flex-grow text-center md:text-left">
-<p><strong>We Value Your Privacy</strong><br/>This website uses cookies to provide the best browsing experience and marketing analytics. By continuing to browse, you agree to our<a class="text-blue-900 underline font-bold" href="/privacy" title="Privacy Policy">Privacy Policy</a>.</p>
+<p><strong>We Value Your Privacy</strong><br/>This website uses cookies to provide the best browsing experience and marketing analytics. By continuing to browse, you agree to our<a class="by-gold-link underline font-bold" href="/privacy" title="Privacy Policy">Privacy Policy</a>.</p>
 </div>
 <div class="flex gap-4 flex-shrink-0">
-<button class="bg-blue-900 text-white px-6 py-2 text-xs md:text-sm font-bold hover:bg-blue-800 transition rounded shadow-sm" onclick="acceptCookies()">Accept & Continue</button>
-<button class="border border-gray-300 text-gray-500 px-6 py-2 text-xs md:text-sm font-bold hover:border-blue-900 hover:text-blue-900 transition rounded" onclick="declineCookies()">Decline</button>
+<button class="by-dark text-white px-6 py-2 text-xs md:text-sm font-bold transition rounded shadow-sm" onclick="acceptCookies()">Accept & Continue</button>
+<button class="border border-gray-300 text-gray-500 px-6 py-2 text-xs md:text-sm font-bold by-gold-hover transition rounded" onclick="declineCookies()">Decline</button>
 </div>
 </div>
 </div>

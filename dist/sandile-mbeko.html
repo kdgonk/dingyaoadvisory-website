@@ -1187,6 +1187,18 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
   line-height: 1.7;
 }
 
+
+/* 2026-10-30 泰坦人：舊版頁面殘留色 → 鼎曜品牌色（#0A0E17 墨黑 / #C9A84C 金 / #F5F0E8 米白）
+   注意：tailwind.min.css 是預編譯檔，任意色 class（text-[#xxxxxx]）不在其中，故在此顯式定義 */
+.text-\[\#0A0E17\]{color:var(--navy-deep,#0A0E17)}
+.text-\[\#C9A84C\]{color:var(--gold,#C9A84C)}
+.bg-\[\#C9A84C\]{background-color:var(--gold,#C9A84C)}
+.border-\[\#C9A84C\]{border-color:var(--gold,#C9A84C)}
+.border-\[\#0A0E17\]{border-color:var(--navy-deep,#0A0E17)}
+.by-cream{background-color:var(--warm-white,#F5F0E8)!important}
+.by-dark{background-color:var(--navy-deep,#0A0E17)!important;color:var(--warm-white,#F5F0E8)!important}
+.by-gold-link{color:var(--navy-deep,#0A0E17)!important;text-decoration:underline;font-weight:700}
+.by-gold-hover:hover{border-color:var(--gold,#C9A84C)!important;color:var(--gold,#C9A84C)!important}
 </style>
 <link href="/css/tailwind.min.css" rel="stylesheet">
 
@@ -1288,7 +1300,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased selection:bg-[#C5A059] selection:text-white">
+<body class="by-cream text-gray-800 antialiased selection:bg-[#C9A84C] selection:text-white">
 <h2 class="sr-only">Sandile Mbeko</h2>
 
 <!-- Google Tag Manager (noscript) -->
@@ -1297,72 +1309,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 
 <!-- End Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PVWHRBWG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<div class="fixed w-full z-50 top-4 md:top-6 px-4 pointer-events-none">
-<nav aria-label="主導覽" class="max-w-7xl mx-auto bg-white/90 backdrop-blur-xl border border-white/40 shadow-2xl rounded-3xl px-6 py-3 transition-all duration-300 relative pointer-events-auto">
-<h2 class="sr-only">主導覽</h2>
-<div class="flex justify-between items-center">
-<div class="flex items-center gap-4 cursor-pointer group" onclick="location.href='/'">
-<div class="relative group-hover:scale-105 transition-transform duration-300">
-<div class="text-3xl font-bold font-logo tracking-tighter leading-none select-none">
-<span class="text-[#0F172A]">D</span><span class="text-[#C5A059]">Y</span><span class="text-[#0F172A]">A</span>
-</div>
-<div class="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full border border-white">
-</div>
-</div>
-<div class="hidden lg:flex items-center gap-3">
-<div class="h-8 w-px bg-gray-200 mx-1"></div>
-<div class="flex flex-col justify-center">
-<span class="text-[0.65rem] font-bold text-[#0F172A] tracking-[0.2em] uppercase leading-tight font-logo">DING YAO
-</span>
-<span class="text-[0.55rem] text-gray-400 font-medium tracking-[0.1em] uppercase leading-tight">ADVISORY</span>
-</div>
-                        <span class="ml-2 text-[0.5rem] bg-[#0F172A] text-white px-1.5 py-0.5 rounded border border-gray-700 font-bold tracking-widest uppercase opacity-80">APAC HUB</span>
-</div>
-</div>
-<div class="hidden md:flex items-center space-x-1">
-<a class="px-4 py-2 text-sm font-medium text-blue-900 bg-gray-100/50 rounded-full transition font-bold" href="/partners" title="戰略夥伴">戰略夥伴</a>
-<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="/platform" title="數位服務">數位服務</a>
-<div class="relative group dropdown-container">
-<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition flex items-center focus:outline-none">
-                            美好生活 <i class="fas fa-chevron-down ml-1 text-xs opacity-50 transition-transform duration-300 group-hover:-rotate-180"></i>
-</button>
-<div class="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 overflow-hidden p-2">
-<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="/education" title="教育留學"><i class="fas fa-graduation-cap w-6 text-center mr-2 text-[#C5A059]"></i> 教育留學</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="/retirement" title="退休生活"><i class="fas fa-wine-glass-alt w-6 text-center mr-2 text-[#C5A059]"></i> 退休生活</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900 rounded-xl transition flex items-center" href="/residency" title="身分規劃"><i class="fas fa-passport w-6 text-center mr-2 text-[#C5A059]"></i> 身分規劃</a>
-</div>
-</div>
-<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="/assets" title="精選資產">精選資產</a>
-<a class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-100/50 rounded-full transition" href="/blog" title="專欄">專欄</a>
-</div>
-<div class="hidden md:flex items-center gap-3">
-<div class="flex items-center text-xs font-bold text-gray-400">
-<a class="hover:text-blue-900 transition" href="/sandile-mbeko-en" title="EN">EN</a>
-<span class="mx-2">/</span>
-<span class="text-blue-900 cursor-default">TW</span>
-</div>
-<a class="bg-[#0F172A] text-white hover:bg-[#1e293b] px-6 py-2 rounded-full text-xs font-bold shadow-lg shadow-blue-900/20 transform hover:-translate-y-0.5 transition whitespace-nowrap" href="/#contact" title="預約諮詢">預約諮詢</a>
-</div>
-<div class="md:hidden flex items-center gap-3">
-<a class="text-sm font-bold text-gray-700 bg-white border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 shadow-sm relative z-50 pointer-events-auto cursor-pointer block" href="/sandile-mbeko-en" title="EN">EN</a>
-<button class="text-gray-700 bg-white border border-gray-300 focus:outline-none p-2 ml-2 relative z-50 pointer-events-auto cursor-pointer flex items-center justify-center rounded-lg hover:bg-gray-100 shadow-sm" onclick="toggleMobileMenu()"><i class="fas fa-bars text-xl"></i></button>
-</div>
-</div>
-<div class="hidden md:hidden border-t border-gray-100 mt-3 pt-2 space-y-1" id="mobile-menu">
-<a class="block px-4 py-3 text-sm font-medium text-blue-900 bg-gray-50 rounded-xl" href="/partners" title="戰略夥伴">戰略夥伴</a>
-<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="/platform" title="數位服務">數位服務</a>
-<div class="pl-4 border-l-2 border-gray-100 ml-4 my-2">
-<p class="text-xs text-gray-400 uppercase tracking-widest mb-2 pl-2">美好生活</p>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="/education" title="教育留學">教育留學</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="/retirement" title="退休生活">退休生活</a>
-<a class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-900" href="/residency" title="身分規劃">身分規劃</a>
-</div>
-<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="/assets" title="精選資產">精選資產</a>
-<a class="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-xl" href="/blog" title="專欄觀點">專欄觀點</a>
-<a class="block px-4 py-3 text-sm font-bold text-center text-white bg-[#0F172A] rounded-xl mt-4 shadow-lg" href="/#contact" onclick="toggleMobileMenu()" title="立即預約諮詢">立即預約諮詢</a>
-</div>
-</nav>
-</div>
+
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="主導覽">
@@ -1405,7 +1352,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
       <a href="/blog" title="鼎曜觀點">鼎曜觀點</a>
       <a href="/consultation" class="btn-nav" title="預約諮詢">預約諮詢</a>
       <div class="nav-lang" id="langSwitcher">
-  <a href="#" class="active" id="langTw" title="TW">TW</a><span>/</span><a href="#" id="langEn" title="EN">EN</a>
+  <a href="/sandile-mbeko" class="active" id="langTw" title="TW">TW</a><span>/</span><a href="/sandile-mbeko-en" id="langEn" title="EN">EN</a>
 </div>
 <script>
 (function(){
@@ -1434,32 +1381,32 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <main id="main-content">
 <section class="bg-white py-16 border-b border-gray-100">
 <div class="max-w-4xl mx-auto px-6 text-center">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Design Philosophy</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2 mb-6">設計理念</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Design Philosophy</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2 mb-6">設計理念</h2>
 <p class="text-gray-600 leading-relaxed text-lg">
                 「建築不只是空間的堆砌，而是生活方式的體現。我相信好的設計應該是無形的——它自然融入居住者的日常，成為生活的一部分。」
             </p>
 <div class="mt-8 flex justify-center">
-<div class="w-20 h-1 bg-[#C5A059]"></div>
+<div class="w-20 h-1 bg-[#C9A84C]"></div>
 </div>
 </div>
 </section>
 <section class="py-20 bg-gray-50">
 <div class="max-w-6xl mx-auto px-6">
 <div class="text-center mb-16">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">About the Architect</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2">認識設計師</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">About the Architect</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2">認識設計師</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 <div class="space-y-6">
-<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#C5A059]">
-<h3 class="text-xl font-bold text-[#0F172A] mb-4"><i class="fas fa-graduation-cap text-[#C5A059] mr-2"></i> 專業背景</h3>
+<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#C9A84C]">
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4"><i class="fas fa-graduation-cap text-[#C9A84C] mr-2"></i> 專業背景</h3>
 <p class="text-gray-600 leading-relaxed">
                             Sandile Mbeko 是南非德班的資深建築設計師，擁有豐富的住宅與商業建築設計經驗。他專注於將南非獨特的文化元素與現代建築語彙融合，創造既具國際視野又貼近當地文化的居住空間。
                         </p>
 </div>
-<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#0F172A]">
-<h3 class="text-xl font-bold text-[#0F172A] mb-4"><i class="fas fa-lightbulb text-[#C5A059] mr-2"></i> 設計特色</h3>
+<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[#0A0E17]">
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4"><i class="fas fa-lightbulb text-[#C9A84C] mr-2"></i> 設計特色</h3>
 <p class="text-gray-600 leading-relaxed">
                             擅長從概念規劃到施工監造的全流程設計服務。注重空間效率、自然採光與通風，並將永續發展理念融入每個專案，追求綠建築認證標準。
                         </p>
@@ -1467,41 +1414,41 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="space-y-6">
 <div class="bg-white p-8 rounded-2xl shadow-lg">
-<h3 class="text-xl font-bold text-[#0F172A] mb-6 text-center">核心專長</h3>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-6 text-center">核心專長</h3>
 <div class="space-y-4">
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-home text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-home text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">住宅建築設計</h4>
+<h4 class="font-bold text-[#0A0E17]">住宅建築設計</h4>
 <p class="text-sm text-gray-600">客製化住宅、豪宅與莊園規劃</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-building text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-building text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">商業空間設計</h4>
+<h4 class="font-bold text-[#0A0E17]">商業空間設計</h4>
 <p class="text-sm text-gray-600">酒店、度假村與辦公空間</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-leaf text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-leaf text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">永續建築</h4>
+<h4 class="font-bold text-[#0A0E17]">永續建築</h4>
 <p class="text-sm text-gray-600">綠建築認證與環保設計</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-[#C5A059]/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-couch text-[#C5A059]"></i>
+<div class="w-12 h-12 rounded-full bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+<i class="fas fa-couch text-[#C9A84C]"></i>
 </div>
 <div>
-<h4 class="font-bold text-[#0F172A]">室內設計</h4>
+<h4 class="font-bold text-[#0A0E17]">室內設計</h4>
 <p class="text-sm text-gray-600">傢俱配置與空間氛圍規劃</p>
 </div>
 </div>
@@ -1514,23 +1461,23 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <section class="py-20 bg-white">
 <div class="max-w-6xl mx-auto px-6">
 <div class="text-center mb-16">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Design Approach</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2">設計方法論</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Design Approach</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2">設計方法論</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow">
-<div class="w-16 h-16 rounded-full bg-[#C5A059] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">01</div>
-<h3 class="text-xl font-bold text-[#0F172A] mb-4">聆聽與理解</h3>
+<div class="w-16 h-16 rounded-full bg-[#C9A84C] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">01</div>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4">聆聽與理解</h3>
 <p class="text-gray-600">深入了解居住者的生活方式、需求與願景。每個專案都從深入的對話開始。</p>
 </div>
 <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow">
-<div class="w-16 h-16 rounded-full bg-[#C5A059] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">02</div>
-<h3 class="text-xl font-bold text-[#0F172A] mb-4">文化融合</h3>
+<div class="w-16 h-16 rounded-full bg-[#C9A84C] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">02</div>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4">文化融合</h3>
 <p class="text-gray-600">將南非獨特的文化元素與現代建築語彙無縫整合，創造有靈魂的空間。</p>
 </div>
 <div class="text-center p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow">
-<div class="w-16 h-16 rounded-full bg-[#C5A059] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">03</div>
-<h3 class="text-xl font-bold text-[#0F172A] mb-4">永續執行</h3>
+<div class="w-16 h-16 rounded-full bg-[#C9A84C] text-white flex items-center justify-center mx-auto mb-6 text-2xl font-bold">03</div>
+<h3 class="text-xl font-bold text-[#0A0E17] mb-4">永續執行</h3>
 <p class="text-gray-600">從概念到完工，確保每個細節都符合永續發展標準與最高建築品質。</p>
 </div>
 </div>
@@ -1539,14 +1486,14 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <section class="py-20 bg-white">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Portfolio</span>
-<h2 class="text-3xl font-bold text-[#0F172A] mt-2">精選作品</h2>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Portfolio</span>
+<h2 class="text-3xl font-bold text-[#0A0E17] mt-2">精選作品</h2>
 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">從現代豪宅到商業空間，展現多元設計風格與精湛工藝</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-1.jpg')">
 <img alt="House Zungu - Modern Family Residence" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-1.jpg"/ title="House Zungu - Modern Family Residence">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">House Zungu</h3>
 <p class="text-gray-300 text-sm">現代家庭住宅 · 德班</p>
@@ -1555,7 +1502,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-2.jpg')">
 <img alt="KZN Residence" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-2.jpg"/ title="KZN Residence">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">KZN Residence</h3>
 <p class="text-gray-300 text-sm">豪華別墅 · 誇祖魯-納塔爾</p>
@@ -1564,7 +1511,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-3.jpg')">
 <img alt="Coastal Living" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-3.jpg"/ title="Coastal Living">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Coastal Living</h3>
 <p class="text-gray-300 text-sm">海景住宅 · 德班北海岸</p>
@@ -1573,7 +1520,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-4.jpg')">
 <img alt="Modern Elegance" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-4.jpg"/ title="Modern Elegance">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Modern Elegance</h3>
 <p class="text-gray-300 text-sm">現代風格住宅</p>
@@ -1582,7 +1529,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer md:col-span-2 lg:col-span-2" onclick="openLightbox('sandile-portfolio-5.jpg')">
 <img alt="Signature Collection" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-5.jpg"/ title="Signature Collection">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Signature Collection</h3>
 <p class="text-gray-300 text-sm">頂級豪宅系列 · 全景設計</p>
@@ -1591,7 +1538,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-6.jpg')">
 <img alt="House Ngcobo" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-6.jpg"/ title="House Ngcobo">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">House Ngcobo</h3>
 <p class="text-gray-300 text-sm">現代室內設計 · 德班</p>
@@ -1600,7 +1547,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-7.jpg')">
 <img alt="Beach House" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-7.jpg"/ title="Beach House">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Beach House</h3>
 <p class="text-gray-300 text-sm">海濱豪宅 · 無邊際泳池</p>
@@ -1609,7 +1556,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-8.jpg')">
 <img alt="Modern Living" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-8.jpg"/ title="Modern Living">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Modern Living</h3>
 <p class="text-gray-300 text-sm">現代生活空間 · 開放式廚房</p>
@@ -1618,7 +1565,7 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer" onclick="openLightbox('sandile-portfolio-9.jpg')">
 <img alt="Estate Living" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="sandile-portfolio-9.jpg"/ title="Estate Living">
-<div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="absolute bottom-0 left-0 right-0 p-6">
 <h3 class="text-white font-bold text-lg mb-1">Estate Living</h3>
 <p class="text-gray-300 text-sm">莊園式住宅 · 泳池庭院</p>
@@ -1627,14 +1574,14 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </div>
 </div>
 <div class="mt-12 text-center">
-<a class="inline-flex items-center gap-2 text-[#C5A059] font-bold hover:underline" href="https://www.instagram.com/srm_projects_za/" rel="noopener noreferrer" target="_blank" title="查看更多作品">
+<a class="inline-flex items-center gap-2 text-[#C9A84C] font-bold hover:underline" href="https://www.instagram.com/srm_projects_za/" rel="noopener noreferrer" target="_blank" title="查看更多作品">
 <i class="fab fa-instagram"></i> 查看更多作品
                     </a>
 </div>
 </div>
 </section>
 <div class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm" id="lightbox" onclick="closeLightbox()">
-<div class="absolute top-4 right-4 text-white text-4xl cursor-pointer hover:text-[#C5A059] transition" onclick="closeLightbox()">×</div>
+<div class="absolute top-4 right-4 text-white text-4xl cursor-pointer hover:text-[#C9A84C] transition" onclick="closeLightbox()">×</div>
 <img alt="Portfolio" class="max-w-[90vw] max-h-[90vh] object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" id="lightbox-img" src=""/ title="Portfolio">
 </div>
 <script>
@@ -1651,24 +1598,24 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
                     if (e.key === 'Escape') closeLightbox();
                 });
             </script>
-<section class="py-20 bg-[#0F172A] text-white">
+<section class="py-20 bg-[#0A0E17] text-white">
 <div class="max-w-4xl mx-auto px-6 text-center">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Collaboration</span>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Collaboration</span>
 <h2 class="text-3xl font-bold mt-2 mb-6">與鼎曜的合作</h2>
 <p class="text-gray-300 leading-relaxed text-lg mb-12">
                 Sandile Mbeko 作為鼎曜國際顧問的首席建築設計師，為我們的開發專案提供專業設計服務。從 CanvasCrest 的封閉式社區到頂級豪宅專案，Sandile 的美學理念與技術專長確保每個專案都達到國際級標準。
             </p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
 <div class="p-6">
-<div class="text-4xl font-bold text-[#C5A059] mb-2">10+</div>
+<div class="text-4xl font-bold text-[#C9A84C] mb-2">10+</div>
 <div class="text-gray-400">年設計經驗</div>
 </div>
 <div class="p-6">
-<div class="text-4xl font-bold text-[#C5A059] mb-2">50+</div>
+<div class="text-4xl font-bold text-[#C9A84C] mb-2">50+</div>
 <div class="text-gray-400">完成專案</div>
 </div>
 <div class="p-6">
-<div class="text-4xl font-bold text-[#C5A059] mb-2">100%</div>
+<div class="text-4xl font-bold text-[#C9A84C] mb-2">100%</div>
 <div class="text-gray-400">客戶滿意度</div>
 </div>
 </div>
@@ -1676,9 +1623,9 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 </section>
 <section class="py-20 bg-gray-50">
 <div class="max-w-4xl mx-auto px-6 text-center">
-<span class="text-[#C5A059] font-bold tracking-widest uppercase text-sm">Testimonial</span>
+<span class="text-[#C9A84C] font-bold tracking-widest uppercase text-sm">Testimonial</span>
 <div class="mt-8 bg-white p-10 rounded-2xl shadow-lg relative">
-<i class="fas fa-quote-left text-4xl text-[#C5A059]/20 absolute top-6 left-6"></i>
+<i class="fas fa-quote-left text-4xl text-[#C9A84C]/20 absolute top-6 left-6"></i>
 <blockquote class="text-xl text-gray-700 italic leading-relaxed mb-6 relative z-10">
                     「Sandile 的設計讓我們的房子不只是一棟建築，而是一個真正的家。他對細節的堅持與對文化的理解，創造出既現代又溫暖的空間。」
                 </blockquote>
@@ -1687,19 +1634,19 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <i class="fas fa-user text-gray-400"></i>
 </div>
 <div class="text-left">
-<div class="font-bold text-[#0F172A]">專案客戶</div>
+<div class="font-bold text-[#0A0E17]">專案客戶</div>
 <div class="text-sm text-gray-500">開普敦住宅專案</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-20 bg-[#0F172A] text-white">
+<section class="py-20 bg-[#0A0E17] text-white">
 <div class="max-w-4xl mx-auto px-6 text-center">
 <h2 class="text-3xl font-bold mb-6">開始您的設計之旅</h2>
 <p class="text-gray-300 mb-8 text-lg">與 Sandile Mbeko 及其團隊聯繫，共同打造您的理想家園。</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<a class="bg-[#C5A059] text-white px-8 py-4 rounded-full font-bold hover:bg-[#b8944f] transition shadow-lg flex items-center justify-center" href="/#contact" title="預約設計諮詢">
+<a class="bg-[#C9A84C] text-white px-8 py-4 rounded-full font-bold hover:bg-[#b8944f] transition shadow-lg flex items-center justify-center" href="/#contact" title="預約設計諮詢">
 <i class="fas fa-paper-plane mr-2"></i> 預約設計諮詢
                 </a>
 <a class="bg-white/10 text-white border border-white/30 px-8 py-4 rounded-full font-bold hover:bg-white/20 transition flex items-center justify-center" href="/partners" title="返回戰略夥伴">
@@ -1815,11 +1762,11 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 md:p-6 shadow-2xl z-[100] flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 hidden" id="cookie-banner">
 <div class="container mx-auto max-w-7xl flex flex-col md:flex-row items-center gap-4 md:pr-24">
 <div class="text-xs md:text-sm text-gray-600 flex-grow text-center md:text-left">
-<p><strong>我們重視您的隱私</strong><br/>本網站使用 Cookie 以提供最佳的瀏覽體驗與行銷分析。繼續瀏覽即代表您同意我們的<a class="text-blue-900 underline font-bold" href="/privacy" title="隱私權政策">隱私權政策</a>。</p>
+<p><strong>我們重視您的隱私</strong><br/>本網站使用 Cookie 以提供最佳的瀏覽體驗與行銷分析。繼續瀏覽即代表您同意我們的<a class="by-gold-link underline font-bold" href="/privacy" title="隱私權政策">隱私權政策</a>。</p>
 </div>
 <div class="flex gap-4 flex-shrink-0">
-<button class="bg-blue-900 text-white px-6 py-2 text-xs md:text-sm font-bold hover:bg-blue-800 transition rounded shadow-sm" onclick="acceptCookies()">同意並繼續</button>
-<button class="border border-gray-300 text-gray-500 px-6 py-2 text-xs md:text-sm font-bold hover:border-blue-900 hover:text-blue-900 transition rounded" onclick="declineCookies()">拒絕</button>
+<button class="by-dark text-white px-6 py-2 text-xs md:text-sm font-bold transition rounded shadow-sm" onclick="acceptCookies()">同意並繼續</button>
+<button class="border border-gray-300 text-gray-500 px-6 py-2 text-xs md:text-sm font-bold by-gold-hover transition rounded" onclick="declineCookies()">拒絕</button>
 </div>
 </div>
 </div>
