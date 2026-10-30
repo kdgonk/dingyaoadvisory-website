@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-30",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,26 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "cape-town-property-valuation-rates-foreign-buyers-2026",
+          "title": "開普敦市政稅 2026：GV2025 估值冊、R620,000 減免與外國買家試算",
+          "description": "開普敦市政稅怎麼算？公式是（市府估值 − R620,000）× 0.7010%，2026 年 7 月 1 日起改按 GV2025 估值冊計徵。以 R6,000,000 公寓試算，年繳約 R37,714、每月 R3,143；R8m 以上不適用免計額。西開普 9 月 CPI 已達 5.5%、水費年增 10.1%，4 月 30 日高等法院判決也改了固定費結構。立即索取開普敦持有成本試算表。",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-property-valuation-rates-foreign-buyers-2026",
+          "language": "zh-TW",
+          "category": "置產投資 / 跨境資金 / 稅務規劃",
+          "published": "2026-10-30",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-valuation-rates-foreign-buyers-2026-hero.webp"
+        },
+        {
+          "slug": "cape-town-property-valuation-rates-foreign-buyers-2026-en",
+          "title": "Cape Town Property Rates 2026: GV2025 & Rebate",
+          "description": "Cape Town property rates 2026: (GV2025 value − R620,000) × 0.7010%. A R6,000,000 flat pays R37,714 a year, and R8m+ gets no rebate. Get the cost sheet.",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-property-valuation-rates-foreign-buyers-2026-en",
+          "language": "en",
+          "category": "置產投資 / 跨境資金 / 稅務規劃",
+          "published": "2026-10-30",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-property-valuation-rates-foreign-buyers-2026-hero.webp"
+        },
         {
           "slug": "south-africa-interest-remittance-to-taiwan-2026",
           "title": "南非幣匯回台灣完整流程：BOP 類別、匯率與申報（2026）",
