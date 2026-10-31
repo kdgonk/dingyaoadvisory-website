@@ -224,6 +224,12 @@ def git_sync(dry: bool = False):
     """
     dirty, _ = tree_dirty()
     if dirty:
+        if dry:
+            # dry-run 不寫檔、不 pull → 不必阻擋，但必須示警：真正部署時會在這裡被擋
+            log("   ⚠️ 工作區不乾淨（dry-run 不寫檔，僅示警；真正部署會在寫檔前 exit 3）：")
+            for ln in dirty[:10]:
+                log("      " + ln)
+            return True, "dry-dirty-warn"
         log("🛑 git 工作區不乾淨（已追蹤檔案有變動）；為避免 rebase 收起產出，未寫入任何檔案：")
         for ln in dirty[:20]:
             log("   " + ln)
@@ -629,6 +635,24 @@ def restore_fx_links(base: Path, slug: str, marker: str = "2026-10-28 titan"):
 def post_steps(slug, day, urls, base: Path, dry: bool = False, push: bool = True):
     """live 200 之後：fx-tracker 內連還原 → sitemap → news sitemap → push → purge → IndexNow/GSC → 最終驗證"""
     log("\n── post：fx-tracker 內連 / sitemap / news sitemap / purge / 索引 ──")
+    # 2026-10-31 新增：下游同步也會 commit/push，先確認工作區沒有別的 Agent 的未提交改動，
+    # 避免把別人的半成品一起 commit（也避免 push 被拒後靜默失敗）。
+    if push and not dry:
+        expected = {
+            f"dist/blog/{slug}.html", f"dist/blog/{slug}-en.html",
+            "dist/blog.html", "dist/blog-en.html",
+            "dist/sitemap.xml", "dist/sitemap-news.xml",
+            "dist/blog/south-africa-interest-rate-fx-tracker-2026.html",
+            "dist/blog/south-africa-interest-rate-fx-tracker-2026-en.html",
+        }
+        dirty, _ = tree_dirty()
+        extra = [ln for ln in dirty if ln[3:].strip() not in expected]
+        if extra:
+            log("🛑 有本流程以外的未提交改動（其他 Agent 正在編修同一個 repo）→ 不自動 commit/push：")
+            for ln in extra[:10]:
+                log("   " + ln)
+            log("   → 等對方 commit 後以 --post-only 重跑；本次未產生任何檔案、未遞送索引")
+            return 3
     fx_ok = restore_fx_links(base, slug)
     if dry:
         fx_ok = None
