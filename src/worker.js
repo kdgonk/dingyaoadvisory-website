@@ -33,7 +33,11 @@ const ALLOWED_SOURCES = new Set([
   'consultation_page',
   'lead_magnet',
   'tour_page',
-  'website'
+  'website',
+  // 2026-10-31 泰坦人：策略驗證需要「可信分母」，QA 送單必須可辨識、可排除。
+  // 原本 qa_test 不在白名單 → 被 normalizeSource 正規化成 'website'，
+  // 導致測試單混進真實來源、分母被污染且事後無法區分。
+  'qa_test'
 ]);
 
 const JSON_HEADERS = { 'Content-Type': 'application/json; charset=utf-8' };
@@ -223,6 +227,8 @@ async function sendGa4Lead(env, request, source) {
   try {
     const secret = env.GA4_MP_API_SECRET;
     if (!secret) return;
+    // 2026-10-31：QA 測試單不進 GA4 —— 否則「可信分母」會被自己的測試污染。
+    if (source === 'qa_test') return;
     const cookie = request.headers.get('cookie') || '';
     const m = cookie.match(/_ga=GA\d\.\d\.(\d+\.\d+)/);
     if (!m) return;
