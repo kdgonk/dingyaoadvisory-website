@@ -18,6 +18,17 @@
   python3 scripts/deploy_article_pair.py --slug <slug> --ignore-images --rehearse /tmp/x  # 無圖演練
 
 Exit codes：0 成功 / 2 圖檔未就緒（未動任何檔） / 3 閘門或 git 失敗 / 4 live 未轉 200
+            / 5 日期排程校驗未通過（未動任何檔、未 push）
+
+2026-10-31 修正（土星人複驗工單 S-20261028-VALU 收尾兩項根因）：
+  a) git pull --rebase 移到「寫 dist 之前」，寫入前後都檢查工作區乾淨度。
+     舊版先寫 dist 再 pull，dirty tree 被 git 拒絕 → 靠 rebase.autoStash=true 繞過；
+     但 autoStash 會在 rebase 時把 dist 改動暫時收起，若 rebase 衝突/中斷，
+     產出消失而腳本未必正確回報失敗 → 「跑完但沒部署」的假成功。autoStash 僅留作保險。
+  b) 新增「datePublished 必須等於當日」前置校驗 + 排程日校驗：
+     部署日必須等於 date 實測今天；草稿鎖定的 datePublished 晚於部署日 → 提前上線 → 中止。
+     根因事故：2026-10-30 18:19 把排定 10-31 的 valuation 稿提前上線（datePublished=10-30），
+     10-31 才覆蓋校正 → 一日內日期變動，news sitemap 先送舊日期。
 """
 from __future__ import annotations
 
@@ -197,6 +208,128 @@ def wait_live(urls, budget: int = 900, interval: int = 20):
     return False, state
 
 
+def tree_dirty():
+    """回傳「已追蹤檔案」的變動行（untracked 不含；untracked 不會擋 git pull --rebase）"""
+    rc, out = run(["git", "status", "--porcelain", "--untracked-files=no"])
+    return [ln for ln in out.splitlines() if ln.strip()], rc
+
+
+def git_sync(dry: bool = False):
+    """把 git pull --rebase 移到「寫 dist 之前」（2026-10-31 修正）。
+
+    舊順序（先寫 dist 再 pull）在工作區有改動時必被 git 拒絕（首跑 exit 3），
+    過去靠 `git config rebase.autoStash true` 繞過；但 autoStash 會在 rebase 期間
+    把 dist 改動暫存收起，rebase 若衝突/中斷，產出消失而腳本未必正確回報 → 假成功。
+    新順序：確認 tree 乾淨 → fetch + pull --rebase → 再確認 tree 乾淨 → 才開始寫檔。
+    """
+    dirty, _ = tree_dirty()
+    if dirty:
+        log("🛑 git 工作區不乾淨（已追蹤檔案有變動）；為避免 rebase 收起產出，未寫入任何檔案：")
+        for ln in dirty[:20]:
+            log("   " + ln)
+        return False, "dirty-before-sync"
+    if dry:
+        log("   (dry-run) 工作區乾淨 ✅（略過 fetch/pull，不動 repo）")
+        return True, "dry-skip"
+    # autoStash 僅作保險，主要機制是「先同步後寫檔」
+    run(["git", "config", "rebase.autoStash", "true"])
+    run(["git", "fetch", "origin", "main"], timeout=180)
+    rc, out = run(["git", "pull", "--rebase", "origin", "main"], timeout=180)
+    if rc != 0:
+        log("🛑 git pull --rebase 失敗（遠端衝突或工作區問題），未寫入任何檔案：")
+        log(out[-800:])
+        return False, "pull-failed"
+    dirty, _ = tree_dirty()
+    if dirty:
+        log("🛑 rebase 後工作區仍不乾淨，未寫入任何檔案：")
+        for ln in dirty[:20]:
+            log("   " + ln)
+        return False, "dirty-after-pull"
+    rc, head = run(["git", "rev-parse", "--short", "HEAD"])
+    log(f"   git 已同步 origin/main @ {head.strip()}，工作區乾淨 ✅")
+    return True, "synced"
+
+
+def draft_locked_date(text: str):
+    m = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})', text)
+    return m.group(1) if m else None
+
+
+def schedule_guard(zh_text: str, en_text: str, day: str,
+                   allow_backdate: bool = False, force_schedule: bool = False) -> bool:
+    """datePublished 前置校驗（2026-10-31 新增）。
+
+    規則：
+      1. 部署日必須等於「今天」（`date +%Y-%m-%d` 實測）→ 否則中止（--allow-backdate 才放行）
+      2. 草稿鎖定的 datePublished 晚於部署日 → 提前上線 → 中止（--force-schedule 才放行）
+      3. 草稿鎖定早於部署日 → 逾期補發，允許，但記錄警告（datePublished 一律改寫為今日）
+
+    為什麼：2026-10-30 18:19 把排定 10-31 的稿提前上線並寫成 10-30，10-31 又覆蓋成 10-31，
+    datePublished 一日內變動（Google 可能視為操縱），news sitemap 也先送了舊日期。
+    """
+    today = date.today().isoformat()
+    locked = sorted({d for d in (draft_locked_date(zh_text), draft_locked_date(en_text)) if d})
+    log(f"   日期校驗：today={today} deploy_day={day} 草稿鎖定={locked}")
+    if day != today and not allow_backdate:
+        log(f"🛑 datePublished 必須等於當日：部署日 {day} ≠ 今天 {today}（事後補救需明示 --allow-backdate）")
+        return False
+    if locked and not force_schedule:
+        future = [d for d in locked if d > day]
+        if future:
+            log(f"🛑 提前部署：草稿 datePublished={future} 晚於部署日 {day} → 排程日與部署日未綁定，中止。")
+            log("   確認要提前上線（排程作廢）才可加 --force-schedule，並在 commit 說明原因。")
+            return False
+        past = [d for d in locked if d < day]
+        if past:
+            log(f"   ⚠️ 逾期部署：草稿鎖定 {past} 早於 {day}；datePublished 將改寫為 {day}（news 48h 窗口需要）")
+    return True
+
+
+def verify_written(paths, day: str, min_bytes: int = 20000) -> bool:
+    """寫入後實測：檔案存在、有內容、datePublished/可見日期都等於 day"""
+    ok = True
+    dotted = day.replace("-", ".")
+    for p in paths:
+        if not p.exists():
+            log(f"   ❌ 寫入後檔案不存在：{p}")
+            ok = False
+            continue
+        text = p.read_text(encoding="utf-8", errors="replace")
+        size = len(text.encode("utf-8"))
+        dps = sorted({d[:10] for d in re.findall(r'"datePublished"\s*:\s*"([^"]+)"', text)})
+        vis = dotted in text
+        good = size >= min_bytes and dps == [day] and vis
+        log(f"   {'✅' if good else '❌'} {p.name} {size}B datePublished={dps} 可見 {dotted}={vis}")
+        ok &= good
+    return ok
+
+
+def check_tree_expected(expected) -> bool:
+    """寫入後檢查工作區：只允許預期的那幾個檔案有變動"""
+    dirty, _ = tree_dirty()
+    exp, changed, extra = set(), set(), []
+    for e in expected:
+        try:
+            exp.add(str(Path(e).relative_to(REPO)) if Path(e).is_absolute() else str(e))
+        except ValueError:
+            exp.add(str(e))
+    for ln in dirty:
+        path = ln[3:].strip()
+        changed.add(path)
+        if path not in exp:
+            extra.append(ln)
+    if extra:
+        log("🛑 寫入後出現非預期的已追蹤檔案變動（可能被其他流程動過，先人工確認）：")
+        for ln in extra[:20]:
+            log("   " + ln)
+        return False
+    missing = exp - changed
+    if missing:
+        log(f"   ℹ️ 預期變更但 git 顯示無差異（內容相同）：{sorted(missing)}")
+    log(f"   寫入後 working tree 乾淨度：僅預期變更 {len(changed)} 檔 ✅" if not extra else "")
+    return True
+
+
 def purge_cf(urls):
     token = ""
     if CF_ENV.exists():
@@ -258,6 +391,10 @@ def main():
     ap.add_argument("--rehearse", default=None, help="沙盒目錄，全流程演練但不動 repo")
     ap.add_argument("--ignore-images", action="store_true", help="僅演練用：圖檔 404 也繼續")
     ap.add_argument("--post-only", action="store_true", help="文章已上線，只跑 sitemap/news/purge/驗證")
+    ap.add_argument("--allow-backdate", action="store_true",
+                    help="明示允許部署日 ≠ 今天（事後補救用；預設 datePublished 必須等於當日）")
+    ap.add_argument("--force-schedule", action="store_true",
+                    help="明示允許提前上線草稿鎖定的未來日期（排程作廢時才用，須在 commit 說明）")
     ap.add_argument("--no-push", action="store_true")
     ap.add_argument("--strategy", default="S-20261028-VALU-EN", help="策略編號（寫進 commit 訊息）")
     args = ap.parse_args()
@@ -321,11 +458,24 @@ def main():
         log(f"🛑 BLOCKED：_drafts 缺檔 → {zh_draft.exists()=} {en_draft.exists()=}")
         return 3
 
+    # ── 1.5 日期排程前置校驗（2026-10-31 新增；不符即中止，什麼都不動）
+    zh_text = zh_draft.read_text(encoding="utf-8")
+    en_text = en_draft.read_text(encoding="utf-8")
+    if not schedule_guard(zh_text, en_text, day, args.allow_backdate, args.force_schedule):
+        log("\n🛑 BLOCKED：日期排程校驗未通過，未寫入任何檔案、未 push。")
+        return 5
+
+    # ── 1.6 git 同步「必須在寫 dist 之前」（2026-10-31 修正順序）
+    if not args.rehearse:
+        ok_sync, why = git_sync(dry=args.dry_run)
+        if not ok_sync:
+            log(f"\n🛑 BLOCKED：git 前置同步失敗（{why}），未寫入任何檔案。（autoStash 不再是主要機制）")
+            return 3
+
     # ── 2/3. 日期改寫 + 搬進 dist（ZH+EN 同批）
     outs = {}
-    for lang, draft, dst in (("zh", zh_draft, blog / f"{slug}.html"), ("en", en_draft, blog / f"{slug}-en.html")):
-        text = draft.read_text(encoding="utf-8")
-        text, counts = stamp_dates(text, day)
+    for lang, text0, dst in (("zh", zh_text, blog / f"{slug}.html"), ("en", en_text, blog / f"{slug}-en.html")):
+        text, counts = stamp_dates(text0, day)
         outs[lang] = (text, counts, dst)
         log(f"   [{lang}] 日期改寫 {counts}")
     if args.dry_run:
@@ -372,6 +522,16 @@ def main():
             log("🛑 卡片排序/格式檢查失敗，嚴禁 push")
             return 3
 
+    # ── 5.5 寫入後實測（檔案真的存在、有內容、datePublished 等於部署日）
+    if not (args.dry_run and not args.rehearse):
+        targets = [outs["zh"][2], outs["en"][2]]
+        log("   寫入後實測：")
+        if not verify_written(targets, day):
+            log("🛑 寫入後驗證失敗（檔案不存在／內容不足／datePublished 不符）→ 不 push")
+            return 3
+        if not args.rehearse and not check_tree_expected(targets + [zh_idx, en_idx]):
+            return 3
+
     if args.rehearse:
         text = zh_idx.read_text(encoding="utf-8")
         i = text.find(f'/blog/{slug}"')
@@ -396,12 +556,7 @@ def main():
         return 3
 
     # ── 7. commit + push（push main = GitHub Actions 自動部署）
-    rc, out = run(["git", "fetch", "origin", "main"], timeout=180)
-    rc, out = run(["git", "pull", "--rebase", "origin", "main"], timeout=180)
-    if rc != 0:
-        log("🛑 git pull --rebase 失敗（工作區可能被其他流程改動），請人工處理：")
-        log(out[-800:])
-        return 3
+    # git pull --rebase 已在 1.6（寫 dist 之前）完成，此處 tree 應只有本腳本的 4 個預期變更。
     files = [blog / f"{slug}.html", blog / f"{slug}-en.html", zh_idx, en_idx]
     rc, out = run(["git", "add"] + [str(f.relative_to(REPO)) for f in files])
     if rc != 0:
