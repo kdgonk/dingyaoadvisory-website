@@ -325,8 +325,8 @@ def check_tree_expected(expected) -> bool:
         return False
     missing = exp - changed
     if missing:
-        log(f"   ℹ️ 預期變更但 git 顯示無差異（內容相同）：{sorted(missing)}")
-    log(f"   寫入後 working tree 乾淨度：僅預期變更 {len(changed)} 檔 ✅" if not extra else "")
+        log(f"   ℹ️ 預期變更但 git 顯示無差異（可能內容相同或仍是未追蹤新檔）：{sorted(missing)}")
+    log(f"   寫入後 working tree 檢查：無非預期變動 ✅（已追蹤變動 {len(changed)} 檔）")
     return True
 
 
@@ -644,6 +644,10 @@ def post_steps(slug, day, urls, base: Path, dry: bool = False, push: bool = True
     news = news_path.read_text(encoding="utf-8") if news_path.exists() else ""
     news_hit = [u for u in urls if f"<loc>{u}</loc>" in news]
     log(f"   news sitemap 收錄: {len(news_hit)}/2 {news_hit}")
+    if rc != 0:
+        # gen_news_sitemap.py 內建「datePublished 不得晚於現在」防護，不符會 exit 3
+        log("🛑 news sitemap 產生失敗（exit 非 0，多為 datePublished 晚於現在）→ 不 push、不遞送索引")
+        return 3
 
     if dry:
         log("(dry-run) 未 push、未 purge")
