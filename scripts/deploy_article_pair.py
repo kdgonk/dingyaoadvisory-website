@@ -121,7 +121,31 @@ def assets_in(text: str):
     return sorted(set(re.findall(re.escape(ASSETS) + r"[^\"\s,')]+", text)))
 
 
-def check_images(urls):
+def load_expected_bytes(slug: str, path: str | None = None):
+    """讀木星人交付單 runs/*/image-manifest-bytes.json，取該 slug 的 {檔名: bytes}。
+
+    2026-10-31 新增：HTTP 200 不代表內容正確（可能是舊版或別張圖），
+    逐檔比對 content-length = 交付單 bytes 才算通過。
+    """
+    cands = [Path(path)] if path else sorted(REPO.glob("runs/*/image-manifest-bytes.json"), reverse=True)
+    for c in cands:
+        if not c.exists():
+            continue
+        try:
+            data = json.loads(c.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        rows = data if isinstance(data, list) else [
+            {"file": k, "bytes": (v.get("bytes") if isinstance(v, dict) else v)} for k, v in data.items()
+        ]
+        m = {str(r["file"]): int(r["bytes"]) for r in rows if str(r.get("file", "")).startswith(slug)}
+        if m:
+            return m, c
+    return {}, None
+
+
+def check_images(urls, expect=None):
+    expect = expect or {}
     rows, ok = [], True
     for u in urls:
         st, ct, size = http_status(u)
@@ -130,9 +154,13 @@ def check_images(urls):
             st2, ct2, size2 = http_status(u, method="GET")
             good = st2 == 200 and (ct2.startswith("image") or size2 > 1000)
             st, ct, size = st2, ct2, size2
+        name = u.rsplit("/", 1)[-1]
+        exp = expect.get(name)
+        if good and exp is not None and size != exp:
+            good = False  # 位元組不符 → 視為未就緒（交付單對不上）
         if not good:
             ok = False
-        rows.append((u.rsplit("/", 1)[-1], st, ct.split(";")[0], size, good))
+        rows.append((name, st, ct.split(";")[0], size, good, exp))
     return ok, rows
 
 
@@ -396,6 +424,8 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="只檢查圖檔與閘門，不寫檔、不 push")
     ap.add_argument("--rehearse", default=None, help="沙盒目錄，全流程演練但不動 repo")
     ap.add_argument("--ignore-images", action="store_true", help="僅演練用：圖檔 404 也繼續")
+    ap.add_argument("--expect-bytes", default=None,
+                    help="木星人交付單 JSON（預設自動找 runs/*/image-manifest-bytes.json），逐檔比對 content-length")
     ap.add_argument("--post-only", action="store_true", help="文章已上線，只跑 sitemap/news/purge/驗證")
     ap.add_argument("--allow-backdate", action="store_true",
                     help="明示允許部署日 ≠ 今天（事後補救用；預設 datePublished 必須等於當日）")
@@ -425,9 +455,15 @@ def main():
         if p.exists():
             img_urls += assets_in(p.read_text(encoding="utf-8", errors="ignore"))
     img_urls = sorted(set(img_urls))
-    ok_img, rows = check_images(img_urls)
-    for name, st, ct, size, good in rows:
-        log(f"   {'✅' if good else '❌'} {name}  {st} {ct} {size}B")
+    exp_map, exp_src = load_expected_bytes(slug, args.expect_bytes)
+    if exp_map:
+        log(f"   交付單位元組：{exp_src.name if exp_src else '(--expect-bytes)'} → {len(exp_map)} 檔可比對")
+    elif args.expect_bytes:
+        log(f"   ⚠️ --expect-bytes={args.expect_bytes} 內找不到 {slug} 的圖，僅驗 HTTP")
+    ok_img, rows = check_images(img_urls, exp_map)
+    for name, st, ct, size, good, exp in rows:
+        tail = f" / 預期 {exp}B" + ("" if exp in (None, size) else f" ← 差 {size - exp:+d}") if exp else ""
+        log(f"   {'✅' if good else '❌'} {name}  {st} {ct} {size}B{tail}")
     log(f"   圖檔 {sum(1 for r in rows if r[4])}/{len(rows)} 就緒")
     if not ok_img and not (args.ignore_images or args.rehearse):
         log("\n🛑 BLOCKED：圖檔未就緒，未寫入任何檔案、未 push。等木星人上傳後重跑本腳本。")
@@ -711,8 +747,9 @@ def post_steps(slug, day, urls, base: Path, dry: bool = False, push: bool = True
         all_ok &= st == 200
     art = (base / "dist" / "blog" / f"{slug}-en.html").read_text(encoding="utf-8")
     img_urls = assets_in(art)
-    ok_img, rows = check_images(img_urls)
-    log(f"   圖檔 {sum(1 for r in rows if r[4])}/{len(rows)} 200")
+    exp_map, _ = load_expected_bytes(slug)
+    ok_img, rows = check_images(img_urls, exp_map)
+    log(f"   圖檔 {sum(1 for r in rows if r[4])}/{len(rows)} 200 且位元組相符")
     all_ok &= ok_img
     # hreflang 互指
     zh_p = (base / "dist" / "blog" / f"{slug}.html").read_text(encoding="utf-8")
