@@ -1,0 +1,37 @@
+{
+  "strategy": "S-20261019-03",
+  "freeze_until": "2026-11-17",
+  "recorded_at": "2026-11-02",
+  "pages": {
+    "cape-town-quality-of-life-cost-comparison-en.html": {
+      "title": "Cape Town Quality of Life 2026: 42nd/230, 40% Cost | DingYao",
+      "description": "Cape Town ranks 42nd of 230 cities on quality of life, and living costs run about 40% of Taipei's. See the full monthly budget and request the comparison.",
+      "sha256": "d5f802a43cc81af3"
+    },
+    "standard-bank-money-market-en.html": {
+      "title": "Standard Bank Money Market 2026: 7% Instant Access | DingYao",
+      "description": "Standard Bank's money market account pays about 7% a year in 2026, against 1.5-1.7% in Taiwan. See the R100,000 insurance limit and how to open an account.",
+      "sha256": "29cbe17e9ac87f49"
+    },
+    "south-africa-talent-skills-shortage-2026.html": {
+      "title": "南非人才短缺 2026：ICT 缺口 22% 推升開普敦租金｜鼎曜國際顧問",
+      "description": "南非 2026 年 ICT 技能短缺率高達 22%，企業搶人推升薪資，國際人才持續移入開普敦。本文從人才流動、薪資結構到租賃市場，拆解這條供需鏈如何支撐租金收益率與低空置率，並比較各產業聚落對應的租客薪資區間與續租率，幫你判斷哪一區租客結構最穩定、哪類房型最容易滿租。立即諮詢鼎曜。資料來源：南非官方技能短缺調查與開普敦租賃市場統計。",
+      "sha256": "55d17245b8733056"
+    },
+    "south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026.html": {
+      "title": "南非買房稅費：Transfer Duty 級距表與 R1,600 萬實例（2026）｜鼎曜國際顧問",
+      "description": "南非買房到底要付多少稅？本文用 R1,600 萬投資額完整拆解 Transfer Duty 級距、律師費、市政稅與資本利得稅（CGT），說明外國買家最常見的申報誤區與節稅架構，並附各價位帶稅率表與實際案例，讓你在簽約前算清總持有成本與賣出淨額。立即預約免費諮詢。稅率依 SARS 2026 年度公告，實際負擔依交易結構與買方身分認定。",
+      "sha256": "b1e12796d1521b2b"
+    },
+    "cape-town-rental-yield-9-49-percent-reality-check-2026-en.html": {
+      "title": "Cape Town Rental Yield 2026: 9.49%, Not 11.53%",
+      "description": "Cape Town's gross rental yield is 9.49%, not the 11.53% national figure: 1-bed 12.35%, 2-bed 10.68%, 3-bed 5.45%. See suburb-level yields and net returns.",
+      "sha256": "272616a855491eaa"
+    },
+    "cape-town-property-investment-rates-net-return-2026-en.html": {
+      "title": "Cape Town Rental Return 2026: 9.49% Gross to Net | DingYao",
+      "description": "A 9.49% gross yield is not what you keep. See the five cost layers that turn it into net return, with leveraged and cash cases plus a Taipei comparison.",
+      "sha256": "f3091a9b881a0ef5"
+    }
+  }
+}
