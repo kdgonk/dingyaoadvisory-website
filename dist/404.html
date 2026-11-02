@@ -1149,7 +1149,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 </style>
 </head>
 <body>
-<h2 class="sr-only">404 頁面未找到 / Page not found</h2>
+<h2 class="sr-only" id="404-page-not-found">404 頁面未找到 / Page not found</h2>
 <div class="cookie-consent" id="cookieConsent">
   <div class="cookie-inner">
     <div class="cookie-text">
@@ -1168,10 +1168,10 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="主導覽">
-<h2 class="sr-only">主導覽</h2>
+<h2 class="sr-only" id="nav-heading">主導覽</h2>
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">
-      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32">
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo" title="Go to: 首頁">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32" title="DingYao Advisory logo">
       <span class="nav-wordmark">
         <span class="nav-w1">DingYao Advisory</span>
         <span class="nav-w2">APAC HUB</span>
@@ -1181,26 +1181,26 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="nav-item has-dd">
         <a href="/south-africa-bank-account" title="南非開戶">南非開戶 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-bank-account"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
-          <a href="/platform"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
-          <a href="/assets"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
+          <a href="/south-africa-bank-account" title="Go to: 南非銀行開戶完整指南｜外國人開戶流程與文件｜鼎曜國際顧問"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
+          <a href="/platform" title="Go to: 數位平台 — DYA DingYao APAC Hub"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
+          <a href="/assets" title="Go to: 全球精選資產配置 | 鼎曜國際顧問 DingYao"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/south-africa-property" title="南非置產">南非置產 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-property"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
-          <a href="/overseas-buyers"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
-          <a href="/retirement"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
-          <a href="/residency"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
+          <a href="/south-africa-property" title="Go to: 南非置產顧問服務｜在地團隊陪同簽約與過戶｜鼎曜國際顧問"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
+          <a href="/overseas-buyers" title="Go to: 海外買家 | 鼎曜國際顧問 DingYao"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
+          <a href="/retirement" title="Go to: 退休生活 — DYA DingYao APAC Hub"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
+          <a href="/residency" title="Go to: 全球身分規劃 | 鼎曜國際顧問 DingYao"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/education" title="教育留學">教育留學 ▾</a>
         <div class="nav-dd">
-          <a href="/education"><strong>教育留學總覽</strong></a>
-          <a href="/education#schools"><strong>貴族寄宿學校</strong></a>
-          <a href="/education#cost"><strong>學費與生活成本</strong></a>
+          <a href="/education" title="Go to: 南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>教育留學總覽</strong></a>
+          <a href="/education#schools" title="Go to: 南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>貴族寄宿學校</strong></a>
+          <a href="/education#cost" title="Go to: 南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>學費與生活成本</strong></a>
         </div>
       </div>
       <a href="/tour" title="商業考察">商業考察</a>
@@ -1241,7 +1241,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <div class="max-w-2xl mx-auto">
 <picture><source srcset="https://assets.dingyaoadvisory.tw/redesign/logo-dya-gold.avif" type="image/avif"><source srcset="https://assets.dingyaoadvisory.tw/redesign/logo-dya-gold.webp" type="image/webp"><img alt="鼎曜國際顧問 DingYao" class="mx-auto mb-8 opacity-90" src="https://assets.dingyaoadvisory.tw/redesign/logo-dya-gold.png" width="1002" height="364" style="height:56px;width:auto" loading="lazy" decoding="async" title="鼎曜國際顧問 DingYao"></picture>
 <h1 class="text-8xl font-bold text-yellow-500 mb-4 tracking-tighter">404</h1>
-<h2 class="text-3xl font-bold mb-3">迷路了嗎？這裡沒有資產，只有空氣。</h2>
+<h2 class="text-3xl font-bold mb-3" id="h2-1">迷路了嗎？這裡沒有資產，只有空氣。</h2>
 <p class="text-xl text-gray-400 font-light mb-6">Lost your way? There is no asset here, only air.</p>
 <p class="text-gray-300 mb-3 text-lg font-light">
             您尋找的頁面可能已被移除、更名或暫時無法使用。<br/>
@@ -1273,7 +1273,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="https://dingyaoadvisory.tw" class="footer-logo" title="DingYao">
-          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30" title="DingYao Advisory logo">
           <span class="footer-wordmark">
             <span class="footer-w1">DingYao</span>
             <span class="footer-w2">APAC HUB</span>

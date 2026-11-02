@@ -1810,7 +1810,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 </style>
 </head>
 <body>
-<h2 class="sr-only">全球精選資產配置</h2>
+<h2 class="sr-only" id="h2-9">全球精選資產配置</h2>
 <div class="cookie-consent" id="cookieConsent">
   <div class="cookie-inner">
     <div class="cookie-text">
@@ -1836,10 +1836,10 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="主導覽">
-<h2 class="sr-only">主導覽</h2>
+<h2 class="sr-only" id="nav-heading">主導覽</h2>
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">
-      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32">
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo" title="前往：首頁">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32" title="鼎曜國際顧問標誌">
       <span class="nav-wordmark">
         <span class="nav-w1">DingYao Advisory</span>
         <span class="nav-w2">APAC HUB</span>
@@ -1849,26 +1849,26 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="nav-item has-dd">
         <a href="/south-africa-bank-account" title="南非開戶">南非開戶 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-bank-account"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
-          <a href="/platform"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
-          <a href="/assets"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
+          <a href="/south-africa-bank-account" title="前往：南非銀行開戶完整指南｜外國人開戶流程與文件｜鼎曜國際顧問"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
+          <a href="/platform" title="前往：數位平台 — DYA DingYao APAC Hub"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
+          <a href="/assets" title="前往：全球精選資產配置 | 鼎曜國際顧問 DingYao"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/south-africa-property" title="南非置產">南非置產 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-property"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
-          <a href="/overseas-buyers"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
-          <a href="/retirement"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
-          <a href="/residency"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
+          <a href="/south-africa-property" title="前往：南非置產顧問服務｜在地團隊陪同簽約與過戶｜鼎曜國際顧問"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
+          <a href="/overseas-buyers" title="前往：海外買家 | 鼎曜國際顧問 DingYao"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
+          <a href="/retirement" title="前往：退休生活 — DYA DingYao APAC Hub"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
+          <a href="/residency" title="前往：全球身分規劃 | 鼎曜國際顧問 DingYao"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/education" title="教育留學">教育留學 ▾</a>
         <div class="nav-dd">
-          <a href="/education"><strong>教育留學總覽</strong></a>
-          <a href="/education#schools"><strong>貴族寄宿學校</strong></a>
-          <a href="/education#cost"><strong>學費與生活成本</strong></a>
+          <a href="/education" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>教育留學總覽</strong></a>
+          <a href="/education#schools" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>貴族寄宿學校</strong></a>
+          <a href="/education#cost" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>學費與生活成本</strong></a>
         </div>
       </div>
       <a href="/tour" title="商業考察">商業考察</a>
@@ -1904,7 +1904,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <main id="main-content">
 
 <!-- Hero -->
-<section class="hero" id="hero">
+<section class="hero" id="hero" aria-labelledby="h2-1">
   <div class="hero-bg">
     <picture>
       <source srcset="https://assets.dingyaoadvisory.tw/assets-hero-v2.avif" type="image/avif">
@@ -1920,7 +1920,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <i class="fas fa-chart-line"></i>
       Premium Asset Allocation
     </div>
-    <h1>
+    <h1 id="h2-1">
       全球精選資產配置
       <span class="gold-text">為您的財富尋找最佳落點</span>
     </h1>
@@ -1944,7 +1944,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Investment Philosophy -->
-<section class="section philosophy" id="philosophy">
+<section class="section philosophy" id="philosophy" aria-labelledby="h2-2">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/redesign/assets-philosophy.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/redesign/assets-philosophy.webp" alt="鼎曜國際顧問投資哲學" loading="lazy" title="鼎曜國際顧問投資哲學"></picture>
     <div class="section-bg-overlay"></div>
@@ -1953,7 +1953,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <div class="philosophy-inner">
       <div class="philosophy-content fade-in-left">
         <span class="section-label">Investment Philosophy</span>
-        <h2>我們的投資哲學</h2>
+        <h2 id="h2-2">我們的投資哲學</h2>
         <p>我們相信，真正的財富增長來自於 <strong class="gold-text">精選標的</strong>、<strong class="gold-text">多元配置</strong> 與 <strong class="gold-text">長期持有</strong>。每一項資產都經過 Crestline Advisory 團隊的嚴格篩選與實地考察。</p>
         <div class="philosophy-principles">
           <div class="philosophy-principle">
@@ -1993,7 +1993,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Plan 1: Cape Town Estate -->
-<section class="section plan-detail" id="plan1">
+<section class="section plan-detail" id="plan1" aria-labelledby="h2-3">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/redesign/assets-plan1.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/redesign/assets-plan1.webp" alt="開普敦精選莊園投資" loading="lazy" title="開普敦精選莊園投資"></picture>
     <div class="section-bg-overlay"></div>
@@ -2002,7 +2002,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <div class="plan-detail-card featured fade-in">
       <div class="plan-badge">開放申請</div>
       <div class="plan-phase">第一期</div>
-      <h3>開普敦精選莊園投資</h3>
+      <h3 id="h2-3">開普敦精選莊園投資</h3>
       <div class="plan-location">Durbanville 頂級封閉式社區</div>
       <div class="plan-image">
         <picture>
@@ -2050,7 +2050,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Plan 2: Stellenbosch VIP -->
-<section class="section plan-detail" id="plan2">
+<section class="section plan-detail" id="plan2" aria-labelledby="h2-4">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/redesign/assets-plan2.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/redesign/assets-plan2.webp" alt="斯泰倫博斯傳世酒莊" loading="lazy" title="斯泰倫博斯傳世酒莊"></picture>
     <div class="section-bg-overlay"></div>
@@ -2058,7 +2058,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="plan-detail-card fade-in">
       <div class="plan-phase">第二期 · 2027 Q1</div>
-      <h3>斯泰倫博斯 · 傳世酒莊</h3>
+      <h3 id="h2-4">斯泰倫博斯 · 傳世酒莊</h3>
       <div class="plan-location">Stellenbosch Heritage Estate</div>
       <div class="plan-image">
         <picture>
@@ -2092,7 +2092,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Plan 3: Constantia VIP -->
-<section class="section plan-detail" id="plan3">
+<section class="section plan-detail" id="plan3" aria-labelledby="h2-5">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/redesign/assets-plan3.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/redesign/assets-plan3.webp" alt="康斯坦夏使館綠帶" loading="lazy" title="康斯坦夏使館綠帶"></picture>
     <div class="section-bg-overlay"></div>
@@ -2100,7 +2100,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="plan-detail-card fade-in">
       <div class="plan-phase">第三期 · 2027 Q2</div>
-      <h3>康斯坦夏 · 使館綠帶</h3>
+      <h3 id="h2-5">康斯坦夏 · 使館綠帶</h3>
       <div class="plan-location">Constantia Embassy Estate</div>
       <div class="plan-image">
         <picture>
@@ -2134,7 +2134,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- ROI Calculator -->
-<section class="section calculator" id="calculator">
+<section class="section calculator" id="calculator" aria-labelledby="h2-6">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/redesign/assets-calculator.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/redesign/assets-calculator.webp" alt="收益計算機" loading="lazy" title="收益計算機"></picture>
     <div class="section-bg-overlay"></div>
@@ -2142,7 +2142,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">ROI Calculator</span>
-      <h2>收益計算機</h2>
+      <h2 id="h2-6">收益計算機</h2>
       <p>輸入您的投資金額，即時估算預期收益</p>
     </div>
     <div class="calc-wrap fade-in">
@@ -2211,11 +2211,11 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Lead Magnet assets: below calculator — NEW block. Does NOT modify #contactForm. -->
-<section class="section lm-section" id="free-guide">
+<section class="section lm-section" id="free-guide" aria-labelledby="h2-7">
   <div class="container">
     <div class="lm-card fade-in" id="lmCard">
       <span class="lm-badge"><i class="fas fa-file-arrow-down" style="margin-right:6px"></i>免費下載</span>
-      <h2>免費下載《台灣高資產的海外資產配置工具書》</h2>
+      <h2 id="h2-7">免費下載《台灣高資產的海外資產配置工具書》</h2>
       <p class="lm-sub">5 大工具一張表看懂 —— 不動產、保單、券商、活存、黃金，該怎麼配？</p>
       <ul class="lm-points">
         <li>五大工具比較表：流動性、稅務、匯率、門檻一張表看懂</li>
@@ -2262,11 +2262,11 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- FAQ -->
-<section class="section faq" id="faq">
+<section class="section faq" id="faq" aria-labelledby="faq-2">
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Frequently Asked Questions</span>
-      <h2>常見問題</h2>
+      <h2 id="faq-2">常見問題</h2>
       <p>關於本頁服務的常見疑問</p>
     </div>
     <div class="faq-list">
@@ -2302,7 +2302,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- CTA -->
-<section class="section cta-section" id="cta">
+<section class="section cta-section" id="cta" aria-labelledby="h2-8">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/redesign/assets-cta.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/redesign/assets-cta.webp" alt="準備好配置您的全球資產了嗎" loading="lazy" title="準備好配置您的全球資產了嗎"></picture>
     <div class="section-bg-overlay"></div>
@@ -2310,7 +2310,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="cta-card fade-in">
       <span class="section-label">Get Started</span>
-      <h2>準備好配置您的<br>全球資產了嗎？</h2>
+      <h2 id="h2-8">準備好配置您的<br>全球資產了嗎？</h2>
       <p>預約免費諮詢，獲取您的專屬投資評估報告。</p>
       <a href="/consultation" class="btn btn-primary" title="索取詳細方案">
         索取詳細方案 <i class="fas fa-arrow-right"></i>
@@ -2326,7 +2326,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="https://dingyaoadvisory.tw" class="footer-logo" id="navLogo" title="DingYao">
-          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30" title="鼎曜國際顧問標誌">
           <span class="footer-wordmark">
             <span class="footer-w1">DingYao</span>
             <span class="footer-w2">APAC HUB</span>

@@ -1197,7 +1197,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 </style>
 </head>
 <body>
-<h2 class="sr-only">SA Property & Investment Insights</h2>
+<h2 class="sr-only" id="sa-property-investment-insights">SA Property & Investment Insights</h2>
 <div class="glow-bg"></div>
 <div class="glow-bg-2"></div>
 
@@ -1222,10 +1222,10 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="Main navigation">
-<h2 class="sr-only">Main navigation</h2>
+<h2 class="sr-only" id="nav-heading">Main navigation</h2>
   <div class="container">
-    <a href="/index-en" class="nav-logo" id="navLogo">
-      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32">
+    <a href="/index-en" class="nav-logo" id="navLogo" title="Go to: Global Opportunities & Digital Assets | DingYao">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32" title="DingYao Advisory logo">
       <span class="nav-wordmark">
         <span class="nav-w1">DingYao Advisory</span>
         <span class="nav-w2">APAC HUB</span>
@@ -1235,26 +1235,26 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="nav-item has-dd">
         <a href="/south-africa-bank-account-en" title="Bank Account">Bank Account ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-bank-account-en"><strong>SA Bank Account Service</strong><span class="nd-sub">Standard Bank Non-Resident Account</span></a>
-          <a href="/platform-en"><strong>Digital Services</strong><span class="nd-sub">Digital Asset Platform</span></a>
-          <a href="/assets-en"><strong>Featured Assets</strong><span class="nd-sub">Asset Allocation</span></a>
+          <a href="/south-africa-bank-account-en" title="Go to: South Africa Bank Account for Foreigners | DingYao"><strong>SA Bank Account Service</strong><span class="nd-sub">Standard Bank Non-Resident Account</span></a>
+          <a href="/platform-en" title="Go to: Digital Platform — DYA DingYao Advisory APAC Hub"><strong>Digital Services</strong><span class="nd-sub">Digital Asset Platform</span></a>
+          <a href="/assets-en" title="Go to: Global Premium Asset Allocation | DingYao"><strong>Featured Assets</strong><span class="nd-sub">Asset Allocation</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/south-africa-property-en" title="SA Property">SA Property ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-property-en"><strong>SA Property Advisory</strong><span class="nd-sub">Cape Town Property Advisory</span></a>
-          <a href="/overseas-buyers-en"><strong>Overseas Buyer Process</strong><span class="nd-sub">Delivery & Transfer</span></a>
-          <a href="/retirement-en"><strong>Retirement</strong><span class="nd-sub">Retirement Relocation</span></a>
-          <a href="/residency-en"><strong>Residency</strong><span class="nd-sub">Permanent Residency</span></a>
+          <a href="/south-africa-property-en" title="Go to: South Africa Property Advisory Services | DingYao"><strong>SA Property Advisory</strong><span class="nd-sub">Cape Town Property Advisory</span></a>
+          <a href="/overseas-buyers-en" title="Go to: Overseas Buyers | DingYao Advisory"><strong>Overseas Buyer Process</strong><span class="nd-sub">Delivery & Transfer</span></a>
+          <a href="/retirement-en" title="Go to: Retirement Living — DingYao Advisory APAC Hub"><strong>Retirement</strong><span class="nd-sub">Retirement Relocation</span></a>
+          <a href="/residency-en" title="Go to: Global Residency Planning | DingYao"><strong>Residency</strong><span class="nd-sub">Permanent Residency</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/education-en" title="Education">Education ▾</a>
         <div class="nav-dd">
-          <a href="/education-en"><strong>Education Overview</strong></a>
-          <a href="/education-en#schools"><strong>Top Boarding Schools</strong></a>
-          <a href="/education-en#cost"><strong>Fees and Living Costs</strong></a>
+          <a href="/education-en" title="Go to: South Africa Study & Private Schools | DingYao Advisory"><strong>Education Overview</strong></a>
+          <a href="/education-en#schools" title="Go to: South Africa Study & Private Schools | DingYao Advisory"><strong>Top Boarding Schools</strong></a>
+          <a href="/education-en#cost" title="Go to: South Africa Study & Private Schools | DingYao Advisory"><strong>Fees and Living Costs</strong></a>
         </div>
       </div>
       <a href="/tour-en" title="Business Tour">Business Tour</a>
@@ -1290,7 +1290,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <main id="main-content">
     
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" aria-labelledby="market-insights-latest-updates">
       <div class="hero-bg">
         <picture>
           <source srcset="https://assets.dingyaoadvisory.tw/blog/images/blog-hero.webp" type="image/webp">
@@ -1301,7 +1301,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="container" style="position:relative;z-index:2">
         <div class="hero-content">
           <div class="hero-tag fade-in visible">DYA INSIGHTS</div>
-          <h1 class="hero-title fade-in visible fade-in-delay-1">Market Insights &<br><span class="gold">Latest Updates</span></h1>
+          <h1 class="hero-title fade-in visible fade-in-delay-1" id="market-insights-latest-updates">Market Insights &<br><span class="gold">Latest Updates</span></h1>
           <p class="hero-desc fade-in visible fade-in-delay-2">Professional perspectives on South African property, education abroad, retirement living, and residency planning.</p>
           
           <div class="flex flex-wrap justify-center gap-3 mt-8" style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:32px">
@@ -1316,11 +1316,11 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     </section>
 
     <!-- Blog Grid -->
-    <section class="section" id="posts">
+    <section class="section" id="posts" aria-labelledby="all-insights">
         <div class="container">
             <div class="section-title">
                 <span class="section-label">LATEST ARTICLES</span>
-                <h2>All <span class="gold-text">Insights</span></h2>
+                <h2 id="all-insights">All <span class="gold-text">Insights</span></h2>
                 <p>Curated analysis and market intelligence for global investors</p>
             </div>
             <div class="blog-grid" id="standard-posts">
@@ -3462,7 +3462,7 @@ document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stagger-chi
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/index-en" class="footer-logo" id="navLogo" title="DingYao">
-          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30" title="DingYao Advisory logo">
           <span class="footer-wordmark">
             <span class="footer-w1">DingYao</span>
             <span class="footer-w2">APAC HUB</span>
