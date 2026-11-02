@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-10-30",
+  "last_updated": "2026-11-02",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,13 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "taiwan-high-dividend-etf-vs-south-africa-deposit-2026",
+          "title": "00878 配息 7% 與南非幣 7% 差在哪？稅後到手試算",
+          "description": "00878 配息 7% 與南非幣 Money Market 活存約 7% 看起來一樣，但配息可能含本金，稅與匯率還會各扣一次。本文以 NT$1,000,000 實算四層到手金額：00878 前三季配 NT$58,626、年化推估 NT$78,167，南非幣約 NT$70,000。含二代健保、南非 s50D 扣繳豁免與海外所得 100 萬門檻，附 00878 配息組成與 SARB repo 7.25% 對照表。立即索取南非開戶文件檢核表。",
+          "url": "https://dingyaoadvisory.tw/blog/taiwan-high-dividend-etf-vs-south-africa-deposit-2026",
+          "url_en": "https://dingyaoadvisory.tw/blog/taiwan-high-dividend-etf-vs-south-africa-deposit-2026-en"
+        },
         {
           "slug": "cape-town-property-valuation-rates-foreign-buyers-2026",
           "title": "開普敦市政稅 2026：GV2025 估值冊、R620,000 減免與外國買家試算",

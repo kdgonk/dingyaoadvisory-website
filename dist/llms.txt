@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [00878 配息 7% 與南非幣 7% 差在哪？稅後到手試算](https://dingyaoadvisory.tw/blog/taiwan-high-dividend-etf-vs-south-africa-deposit-2026) — 00878 配息 7% 與南非幣 Money Market 活存約 7% 看起來一樣，但配息可能含本金，稅與匯率還會各扣一次。本文以 NT$1,000,000 實算四層到手金額：00878 前三季配 NT$58,626、年化推估 NT$78,167，南非幣約 NT$70,000。含二代健保、南非 s50D 扣繳豁免與海外所得 100 萬門檻，附 00878 配息組成與 SARB repo 7.25% 對照表。立即索取南非開戶文件檢核表。
+- [ZAR 7% vs Taiwan ETF 7%: After-Tax Reality](https://dingyaoadvisory.tw/blog/taiwan-high-dividend-etf-vs-south-africa-deposit-2026-en) — Rand deposits pay about 7%, Taiwan dividend ETFs about 7%. Compare the after-tax results for 2026: one of them may include part of your own principal.
 - [開普敦市政稅 2026：GV2025 估值冊、R620,000 減免與外國買家試算](https://dingyaoadvisory.tw/blog/cape-town-property-valuation-rates-foreign-buyers-2026) — 開普敦市政稅怎麼算？公式是（市府估值 − R620,000）× 0.7010%，2026 年 7 月 1 日起改按 GV2025 估值冊計徵。以 R6,000,000 公寓試算，年繳約 R37,714、每月 R3,143；R8m 以上不適用免計額。西開普 9 月 CPI 已達 5.5%、水費年增 10.1%，4 月 30 日高等法院判決也改了固定費結構。立即索取開普敦持有成本試算表。
 - [Cape Town Property Rates 2026: GV2025 & Rebate](https://dingyaoadvisory.tw/blog/cape-town-property-valuation-rates-foreign-buyers-2026-en) — Cape Town property rates 2026: (GV2025 value − R620,000) × 0.7010%. A R6,000,000 flat pays R37,714 a year, and R8m+ gets no rebate. Get the cost sheet.
 - [南非幣匯回台灣完整流程：BOP 類別、匯率與申報（2026）](https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026) — 南非幣匯回台灣不是填一張表就好：利息、本金、賣房款是三種不同性質的錢，會用到四組 BoP 類別與文件。本文整理 SARB 2026-08-11 上路的 SADC 調和版分類、非居民匯出自身資金走哪一組代碼、一次匯回與分批匯回的匯率與手續費差異、南非端 15% 利息扣繳的豁免邊界（所得稅法 s50D），以及台灣端海外所得計入基本所得額的申報邏輯。附匯出前六項文件檢查。立即索取匯出檢查表。
