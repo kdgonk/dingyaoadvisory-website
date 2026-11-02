@@ -1618,7 +1618,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 </style>
 </head>
 <body>
-<h2 class="sr-only">Book Now</h2>
+<h2 class="sr-only" id="book-now">Book Now</h2>
 <div class="cookie-consent" id="cookieConsent">
   <div class="cookie-inner">
     <div class="cookie-text">
@@ -1644,10 +1644,10 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="Main navigation">
-<h2 class="sr-only">Main navigation</h2>
+<h2 class="sr-only" id="nav-heading">Main navigation</h2>
   <div class="container">
-    <a href="/index-en" class="nav-logo" id="navLogo">
-      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32">
+    <a href="/index-en" class="nav-logo" id="navLogo" title="Go to: Global Opportunities & Digital Assets | DingYao">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32" title="DingYao Advisory logo">
       <span class="nav-wordmark">
         <span class="nav-w1">DingYao Advisory</span>
         <span class="nav-w2">APAC HUB</span>
@@ -1657,26 +1657,26 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="nav-item has-dd">
         <a href="/south-africa-bank-account-en" title="Bank Account">Bank Account ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-bank-account-en"><strong>SA Bank Account Service</strong><span class="nd-sub">Standard Bank Non-Resident Account</span></a>
-          <a href="/platform-en"><strong>Digital Services</strong><span class="nd-sub">Digital Asset Platform</span></a>
-          <a href="/assets-en"><strong>Featured Assets</strong><span class="nd-sub">Asset Allocation</span></a>
+          <a href="/south-africa-bank-account-en" title="Go to: South Africa Bank Account for Foreigners | DingYao"><strong>SA Bank Account Service</strong><span class="nd-sub">Standard Bank Non-Resident Account</span></a>
+          <a href="/platform-en" title="Go to: Digital Platform — DYA DingYao Advisory APAC Hub"><strong>Digital Services</strong><span class="nd-sub">Digital Asset Platform</span></a>
+          <a href="/assets-en" title="Go to: Global Premium Asset Allocation | DingYao"><strong>Featured Assets</strong><span class="nd-sub">Asset Allocation</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/south-africa-property-en" title="SA Property">SA Property ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-property-en"><strong>SA Property Advisory</strong><span class="nd-sub">Cape Town Property Advisory</span></a>
-          <a href="/overseas-buyers-en"><strong>Overseas Buyer Process</strong><span class="nd-sub">Delivery & Transfer</span></a>
-          <a href="/retirement-en"><strong>Retirement</strong><span class="nd-sub">Retirement Relocation</span></a>
-          <a href="/residency-en"><strong>Residency</strong><span class="nd-sub">Permanent Residency</span></a>
+          <a href="/south-africa-property-en" title="Go to: South Africa Property Advisory Services | DingYao"><strong>SA Property Advisory</strong><span class="nd-sub">Cape Town Property Advisory</span></a>
+          <a href="/overseas-buyers-en" title="Go to: Overseas Buyers | DingYao Advisory"><strong>Overseas Buyer Process</strong><span class="nd-sub">Delivery & Transfer</span></a>
+          <a href="/retirement-en" title="Go to: Retirement Living — DingYao Advisory APAC Hub"><strong>Retirement</strong><span class="nd-sub">Retirement Relocation</span></a>
+          <a href="/residency-en" title="Go to: Global Residency Planning | DingYao"><strong>Residency</strong><span class="nd-sub">Permanent Residency</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/education-en" title="Education">Education ▾</a>
         <div class="nav-dd">
-          <a href="/education-en"><strong>Education Overview</strong></a>
-          <a href="/education-en#schools"><strong>Top Boarding Schools</strong></a>
-          <a href="/education-en#cost"><strong>Fees and Living Costs</strong></a>
+          <a href="/education-en" title="Go to: South Africa Study & Private Schools | DingYao Advisory"><strong>Education Overview</strong></a>
+          <a href="/education-en#schools" title="Go to: South Africa Study & Private Schools | DingYao Advisory"><strong>Top Boarding Schools</strong></a>
+          <a href="/education-en#cost" title="Go to: South Africa Study & Private Schools | DingYao Advisory"><strong>Fees and Living Costs</strong></a>
         </div>
       </div>
       <a href="/tour-en" title="Business Tour">Business Tour</a>
@@ -1712,7 +1712,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <main id="main-content">
 
 <!-- Hero -->
-<section class="hero" id="hero">
+<section class="hero" id="hero" aria-labelledby="cta-heading">
   <div class="hero-bg">
     <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-hero.webp');opacity:0.25;"></div>
     <div class="gradient-1"></div>
@@ -1724,7 +1724,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <i class="fas fa-calendar-check"></i>
       Free Consultation
     </div>
-    <h1>
+    <h1 id="cta-heading">
       Start Your
       <span class="gold-text">Asset Allocation Plan</span>
     </h1>
@@ -1747,12 +1747,12 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Guarantees -->
-<section class="section guarantees" id="guarantees">
+<section class="section guarantees" id="guarantees" aria-labelledby="three-core-guarantees">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-guarantees.webp');opacity:0.12;"></div>
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Our Guarantees</span>
-      <h2>Three Core Guarantees</h2>
+      <h2 id="three-core-guarantees">Three Core Guarantees</h2>
       <p>We are committed to providing the most professional and transparent consulting services</p>
     </div>
     <div class="guarantees-grid stagger-children">
@@ -1776,13 +1776,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Form Section -->
-<section class="section form-section" id="form">
+<section class="section form-section" id="form" aria-labelledby="book-a-free-assessment">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-form.webp');opacity:0.10;"></div>
   <div class="container">
     <div class="form-inner">
       <div class="form-info fade-in-left">
         <span class="section-label">Book Your Session</span>
-        <h2>Book a Free Assessment</h2>
+        <h2 id="book-a-free-assessment">Book a Free Assessment</h2>
         <p>Fill out the form below, and our senior consultant will contact you within <strong class="gold-text">24 hours</strong> with a personalized investment assessment report.</p>
         <div class="form-highlights">
           <div class="form-highlight">
@@ -1873,12 +1873,12 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Contact Info -->
-<section class="section contact-info-section" id="contact">
+<section class="section contact-info-section" id="contact" aria-labelledby="contact-information">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-contact.webp');opacity:0.10;"></div>
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Contact Information</span>
-      <h2>Contact Information</h2>
+      <h2 id="contact-information">Contact Information</h2>
       <p>Feel free to reach us through the following channels</p>
     </div>
     <div class="contact-cards stagger-children">
@@ -1904,11 +1904,11 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- Footer -->
 
 <!-- FAQ -->
-<section class="section faq" id="faq">
+<section class="section faq" id="faq" aria-labelledby="faq-2">
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Frequently Asked Questions</span>
-      <h2>Frequently Asked Questions</h2>
+      <h2 id="faq-2">Frequently Asked Questions</h2>
       <p>Common questions about this service</p>
     </div>
     <div class="faq-list">
@@ -1945,7 +1945,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           <i class="fas fa-chevron-down"></i>
         </button>
         <div class="faq-answer">
-          <p>The Foreshore Precinct redevelopment is one of the most closely watched Cape Town urban renewal projects of 2026: the elevated freeway that has sat unfinished for 50 years is being demolished and replaced with new bridge and tunnel works, which affects residential supply and rental dynamics around the CBD. Read the full analysis in <a href="/blog/cape-town-foreshore-precinct-redevelopment-2026-en">Cape Town Foreshore Precinct 2026</a>. Other precincts are assessed against your budget and holding period during a consultation.</p>
+          <p>The Foreshore Precinct redevelopment is one of the most closely watched Cape Town urban renewal projects of 2026: the elevated freeway that has sat unfinished for 50 years is being demolished and replaced with new bridge and tunnel works, which affects residential supply and rental dynamics around the CBD. Read the full analysis in <a href="/blog/cape-town-foreshore-precinct-redevelopment-2026-en" title="Go to: Foreshore Precinct Project 2026: Cape Town CBD Impact">Cape Town Foreshore Precinct 2026</a>. Other precincts are assessed against your budget and holding period during a consultation.</p>
         </div>
       </div>
     </div>
@@ -1957,7 +1957,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/index-en" class="footer-logo" id="navLogo" title="DingYao">
-          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30" title="DingYao Advisory logo">
           <span class="footer-wordmark">
             <span class="footer-w1">DingYao</span>
             <span class="footer-w2">APAC HUB</span>

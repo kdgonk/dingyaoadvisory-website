@@ -1759,7 +1759,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 }</script>
 </head>
 <body data-pillar="property">
-<h2 class="sr-only">全球身分規劃</h2>
+<h2 class="sr-only" id="h2-7">全球身分規劃</h2>
 <div class="cookie-consent" id="cookieConsent">
   <div class="cookie-inner">
     <div class="cookie-text">
@@ -1790,10 +1790,10 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="主導覽">
-<h2 class="sr-only">主導覽</h2>
+<h2 class="sr-only" id="nav-heading">主導覽</h2>
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">
-      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32">
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo" title="前往：首頁">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32" title="鼎曜國際顧問標誌">
       <span class="nav-wordmark">
         <span class="nav-w1">DingYao Advisory</span>
         <span class="nav-w2">APAC HUB</span>
@@ -1803,26 +1803,26 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="nav-item has-dd">
         <a href="/south-africa-bank-account" title="南非開戶">南非開戶 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-bank-account"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
-          <a href="/platform"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
-          <a href="/assets"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
+          <a href="/south-africa-bank-account" title="前往：南非銀行開戶完整指南｜外國人開戶流程與文件｜鼎曜國際顧問"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
+          <a href="/platform" title="前往：數位平台 — DYA DingYao APAC Hub"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
+          <a href="/assets" title="前往：全球精選資產配置 | 鼎曜國際顧問 DingYao"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/south-africa-property" title="南非置產">南非置產 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-property"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
-          <a href="/overseas-buyers"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
-          <a href="/retirement"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
-          <a href="/residency"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
+          <a href="/south-africa-property" title="前往：南非置產顧問服務｜在地團隊陪同簽約與過戶｜鼎曜國際顧問"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
+          <a href="/overseas-buyers" title="前往：海外買家 | 鼎曜國際顧問 DingYao"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
+          <a href="/retirement" title="前往：退休生活 — DYA DingYao APAC Hub"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
+          <a href="/residency" title="前往：全球身分規劃 | 鼎曜國際顧問 DingYao"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/education" title="教育留學">教育留學 ▾</a>
         <div class="nav-dd">
-          <a href="/education"><strong>教育留學總覽</strong></a>
-          <a href="/education#schools"><strong>貴族寄宿學校</strong></a>
-          <a href="/education#cost"><strong>學費與生活成本</strong></a>
+          <a href="/education" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>教育留學總覽</strong></a>
+          <a href="/education#schools" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>貴族寄宿學校</strong></a>
+          <a href="/education#cost" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>學費與生活成本</strong></a>
         </div>
       </div>
       <a href="/tour" title="商業考察">商業考察</a>
@@ -1856,7 +1856,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </nav>
 </header><main id="main-content">
 
-<section class="hero" id="hero">
+<section class="hero" id="hero" aria-labelledby="h2-1">
   <div class="hero-bg">
     <picture>
         <source srcset="https://assets.dingyaoadvisory.tw/blog/images/sa-property-hero.avif" type="image/avif">
@@ -1874,7 +1874,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <i class="fas fa-map-marked-alt"></i>
       開普敦房產 · 南非投資 · 陪同過戶
     </div>
-    <h1>
+    <h1 id="h2-1">
       南非置產顧問服務
       <span class="gold-text">開普敦房產的淨報酬、稅費與退場</span>
     </h1>
@@ -1894,7 +1894,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </section>
 
-<section class="section why" id="why">
+<section class="section why" id="why" aria-labelledby="h2-2">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s1.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s1.webp" width="1792" height="1024" alt="為什麼南非投資要選開普敦房產？" title="為什麼南非投資要選開普敦房產？" loading="lazy" decoding="async"></picture>
     <div class="section-bg-overlay"></div>
@@ -1902,7 +1902,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Why Cape Town</span>
-      <h2>為什麼南非投資要選開普敦房產？</h2>
+      <h2 id="h2-2">為什麼南非投資要選開普敦房產？</h2>
       <p>南非很大，但外國買家真正買得到、租得出去、賣得掉的，集中在少數幾個城市。</p>
     </div>
     <div class="why-grid stagger-children">
@@ -1928,7 +1928,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </section>
 
-<section class="section timeline" id="process">
+<section class="section timeline" id="process" aria-labelledby="h2-3">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s2.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s2.webp" width="1792" height="1024" alt="我們陪你走的四個階段" title="我們陪你走的四個階段" loading="lazy" decoding="async"></picture>
     <div class="section-bg-overlay"></div>
@@ -1936,7 +1936,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">How We Work</span>
-      <h2>我們陪你走的四個階段</h2>
+      <h2 id="h2-3">我們陪你走的四個階段</h2>
       <p>過戶的七大步驟與文件細節，整理在既有流程指南；這裡只說明我們在各階段負責什麼、你會拿到什麼。</p>
     </div>
     <div class="timeline-track">
@@ -1973,14 +1973,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
         </div>
       </div>
     </div>
-    <p class="fade-in" style="max-width:820px;margin:2rem auto 0;text-align:center;color:var(--text-muted);line-height:1.9;">完整的過戶七大步驟與文件清單，請看<a href="/blog/cape-town-property-purchase-process-guide" style="color:var(--gold);text-decoration:underline;">開普敦買房流程完整指南</a>。</p>
+    <p class="fade-in" style="max-width:820px;margin:2rem auto 0;text-align:center;color:var(--text-muted);line-height:1.9;">完整的過戶七大步驟與文件清單，請看<a href="/blog/cape-town-property-purchase-process-guide" style="color:var(--gold);text-decoration:underline;" title="前往：開普敦買房流程完整指南：外國人從簽約到過戶的七大步驟 | 鼎曜國際顧問">開普敦買房流程完整指南</a>。</p>
     <div class="fade-in" style="text-align:center;margin-top:2.75rem;">
       <a href="/consultation" class="btn btn-primary" data-cta-id="mid_process" data-cta-location="mid_section" title="預約免費體檢">預約免費體檢 <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 </section>
 
-<section class="section comparison" id="compare">
+<section class="section comparison" id="compare" aria-labelledby="h2-4">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s3.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s3.webp" width="1792" height="1024" alt="開普敦房產的租金報酬怎麼算？" title="開普敦房產的租金報酬怎麼算？" loading="lazy" decoding="async"></picture>
     <div class="section-bg-overlay"></div>
@@ -1988,7 +1988,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Rental Return & Cost</span>
-      <h2>開普敦房產的租金報酬怎麼算？</h2>
+      <h2 id="h2-4">開普敦房產的租金報酬怎麼算？</h2>
       <p>毛租金收益率約 9.49%，扣掉空置、代管與稅費後，淨值落在 7.5% 至 8.0%。</p>
     </div>
     <div class="comparison-table-wrap fade-in">
@@ -2005,17 +2005,17 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       </table>
     </div>
     <div class="section-title fade-in" style="margin-top:3.5rem;">
-      <h2>淨收益率為什麼會從 9.49% 掉到 7.5%？</h2>
+      <h2 id="h2-8">淨收益率為什麼會從 9.49% 掉到 7.5%？</h2>
     </div>
     <div class="fade-in" style="max-width:900px;margin:0 auto;">
       <p style="margin:0 0 1rem;color:var(--cream);line-height:1.95;">因為毛值只算租金，淨值要算成本。9.49% 扣掉空置、代管費 8% 到 12%、市政稅、保險與維修，落在 7.5% 至 8.0%。用毛值決策，等於一開始就高估近兩個百分點。</p>      <p style="margin:0 0 1rem;color:var(--cream);line-height:1.95;">退場也要先算：資本利得 40% 納入所得、有效稅率最高約 18%。開普敦的查證方式很具體 —— 公司登記、合約範本、匯款憑證與在地律師資料，都可以在諮詢時要求提供；詐騙案例多半發生在「只有話術、沒有文件」的時候。</p>
-      <p style="margin:0 0 1rem;color:var(--cream);line-height:1.95;">選區與持有方式，會在報酬之前先決定風險：<a href="/blog/cape-town-safety-guide-foreign-buyers-2026" style="color:var(--gold);text-decoration:underline;">開普敦治安 2026：外國買家的區域風險地圖</a>逐區對照 SAPS 犯罪統計與房價；<a href="/blog/cape-town-short-term-letting-by-law-2026" style="color:var(--gold);text-decoration:underline;">開普敦短租法規 2026：183 晚門檻與房屋稅</a>說明短租合規成本；<a href="/blog/cape-town-gated-communities-guide-2026" style="color:var(--gold);text-decoration:underline;">開普敦門禁社區管理費與淨收益率</a>則把每月管理費攤進淨收益試算。</p>
+      <p style="margin:0 0 1rem;color:var(--cream);line-height:1.95;">選區與持有方式，會在報酬之前先決定風險：<a href="/blog/cape-town-safety-guide-foreign-buyers-2026" style="color:var(--gold);text-decoration:underline;" title="前往：開普敦治安 2026 完整解析：安全嗎、避開哪些區｜鼎曜國際顧問">開普敦治安 2026：外國買家的區域風險地圖</a>逐區對照 SAPS 犯罪統計與房價；<a href="/blog/cape-town-short-term-letting-by-law-2026" style="color:var(--gold);text-decoration:underline;" title="前往：開普敦短租法規 2026：Airbnb 房屋稅可能 3 倍 | 鼎曜國際顧問">開普敦短租法規 2026：183 晚門檻與房屋稅</a>說明短租合規成本；<a href="/blog/cape-town-gated-communities-guide-2026" style="color:var(--gold);text-decoration:underline;" title="前往：開普敦門禁社區管理費與淨收益率 2026：隱藏成本怎麼算 | 鼎曜國際顧問">開普敦門禁社區管理費與淨收益率</a>則把每月管理費攤進淨收益試算。</p>
     </div>
-    <div class="fade-in" style="max-width:900px;margin:1.5rem auto 0;padding:1.25rem 1.5rem;background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;"><p style="margin:0 0 .5rem;font-size:.85rem;letter-spacing:.08em;color:var(--gold);">延伸閱讀</p><ul style="margin:0;padding-left:1.1rem;font-size:.9rem;color:var(--cream);line-height:1.8;"><li style="margin:.35rem 0;"><a href="/blog/cape-town-property-investment-rates-net-return-2026" style="color:var(--gold);text-decoration:underline;">開普敦房產淨報酬率實算</a></li><li style="margin:.35rem 0;"><a href="/blog/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026" style="color:var(--gold);text-decoration:underline;">外國買家轉讓稅與過戶費完整拆解</a></li><li style="margin:.35rem 0;"><a href="/blog/cape-town-short-term-letting-by-law-2026" style="color:var(--gold);text-decoration:underline;">開普敦短租法規與稅務風險</a></li></ul></div>
+    <div class="fade-in" style="max-width:900px;margin:1.5rem auto 0;padding:1.25rem 1.5rem;background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;"><p style="margin:0 0 .5rem;font-size:.85rem;letter-spacing:.08em;color:var(--gold);">延伸閱讀</p><ul style="margin:0;padding-left:1.1rem;font-size:.9rem;color:var(--cream);line-height:1.8;"><li style="margin:.35rem 0;"><a href="/blog/cape-town-property-investment-rates-net-return-2026" style="color:var(--gold);text-decoration:underline;" title="前往：開普敦房產投資報酬率 2026：毛收益率到淨收益完整解析 | 鼎曜國際顧問">開普敦房產淨報酬率實算</a></li><li style="margin:.35rem 0;"><a href="/blog/south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026" style="color:var(--gold);text-decoration:underline;" title="前往：南非買房稅費：Transfer Duty 級距表與 R1,600 萬實例（2026）｜鼎曜國際顧問">外國買家轉讓稅與過戶費完整拆解</a></li><li style="margin:.35rem 0;"><a href="/blog/cape-town-short-term-letting-by-law-2026" style="color:var(--gold);text-decoration:underline;" title="前往：開普敦短租法規 2026：Airbnb 房屋稅可能 3 倍 | 鼎曜國際顧問">開普敦短租法規與稅務風險</a></li></ul></div>
   </div>
 </section>
 
-<section class="section faq" id="faq">
+<section class="section faq" id="faq" aria-labelledby="faq-2">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s4.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s4.webp" width="1792" height="1024" alt="常見問題" title="常見問題" loading="lazy" decoding="async"></picture>
     <div class="section-bg-overlay"></div>
@@ -2023,7 +2023,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Frequently Asked Questions</span>
-      <h2>常見問題</h2>
+      <h2 id="faq-2">常見問題</h2>
       <p>開普敦租金報酬、稅費與退場的常見疑問</p>
     </div>
     <div class="faq-list">
@@ -2106,7 +2106,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   </div>
 </section>
 
-<section class="section cta-section" id="cta">
+<section class="section cta-section" id="cta" aria-labelledby="h2-5">
   <div class="section-bg">
     <picture><source srcset="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s1.webp" type="image/webp"><img src="https://assets.dingyaoadvisory.tw/blog/images/sa-property-s1.webp" width="1792" height="1024" alt="先做一次開普敦置產成本體檢" title="先做一次開普敦置產成本體檢" loading="lazy" decoding="async"></picture>
     <div class="section-bg-overlay"></div>
@@ -2114,7 +2114,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
   <div class="container">
     <div class="cta-card fade-in">
       <span class="section-label">Cost Health Check</span>
-      <h2>先做一次<br>開普敦置產成本體檢</h2>
+      <h2 id="h2-5">先做一次<br>開普敦置產成本體檢</h2>
       <p>用你的預算跑一張五年試算表：含稅費、空置、匯損與退場年限。先看淨報酬與第五年情境，再決定要不要看屋、要不要簽約。</p>
       <a href="/consultation" class="btn btn-primary" data-cta-id="bottom_primary" data-cta-location="bottom_cta" title="預約免費體檢">預約免費體檢 <i class="fas fa-arrow-right"></i></a>
       <div class="data-sources" style="margin:2rem auto 0;max-width:760px;text-align:left;font-size:0.78rem;line-height:1.9;color:var(--text-muted);border-top:1px solid rgba(201,168,76,.25);padding-top:1.25rem;">
@@ -2238,11 +2238,11 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 .footer-brand p{font-size:0.85rem;color:#F5F0E877;line-height:1.8;max-width:320px}
 </style>
 
-<section class="section booking-section" id="booking" data-pillar="property">
+<section class="section booking-section" id="booking" data-pillar="property" aria-labelledby="h2-6">
   <div class="container">
     <div class="booking-head fade-in">
       <span class="section-label">Book a Consultation</span>
-      <h2>預約 30 分鐘顧問評估</h2>
+      <h2 id="h2-6">預約 30 分鐘顧問評估</h2>
       <p>先把淨報酬、稅費與退場算清楚，再談看房。<br>30 分鐘，不帶看、不推案。</p>
       <ul class="booking-points">
         <li>釐清你的持有年限、租金期待與退場方式</li>
@@ -2254,7 +2254,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div id="cal-inline"></div>
     </div>
     <p class="booking-note">預約後你會收到 Google 行事曆邀請與線上會議連結。時區自動換算成你所在時區。</p>
-    <div class="booking-text-cta">想先算清楚淨報酬？<a href="#booking" data-cta-id="inline_to_booking" data-cta-location="body_text">直接選時段預約 30 分鐘評估</a></div>
+    <div class="booking-text-cta">想先算清楚淨報酬？<a href="#booking" data-cta-id="inline_to_booking" data-cta-location="body_text" title="本頁段落：直接選時段預約 30 分鐘評估">直接選時段預約 30 分鐘評估</a></div>
   </div>
 </section>
 
@@ -2263,7 +2263,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="https://dingyaoadvisory.tw" class="footer-logo" id="navLogo" title="DingYao">
-          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30" title="鼎曜國際顧問標誌">
           <span class="footer-wordmark">
             <span class="footer-w1">DingYao</span>
             <span class="footer-w2">APAC HUB</span>

@@ -1618,7 +1618,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 </style>
 </head>
 <body>
-<h2 class="sr-only">預約諮詢</h2>
+<h2 class="sr-only" id="h2-5">預約諮詢</h2>
 <div class="cookie-consent" id="cookieConsent">
   <div class="cookie-inner">
     <div class="cookie-text">
@@ -1644,10 +1644,10 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- NAVBAR -->
 <header class="site-header">
 <nav class="navbar" id="navbar" aria-label="主導覽">
-<h2 class="sr-only">主導覽</h2>
+<h2 class="sr-only" id="nav-heading">主導覽</h2>
   <div class="container">
-    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo">
-      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32">
+    <a href="https://dingyaoadvisory.tw" class="nav-logo" id="navLogo" title="前往：首頁">
+      <img src="/dya-mark-whitegold.svg" alt="DYA" class="nav-mark" width="42" height="32" title="鼎曜國際顧問標誌">
       <span class="nav-wordmark">
         <span class="nav-w1">DingYao Advisory</span>
         <span class="nav-w2">APAC HUB</span>
@@ -1657,26 +1657,26 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <div class="nav-item has-dd">
         <a href="/south-africa-bank-account" title="南非開戶">南非開戶 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-bank-account"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
-          <a href="/platform"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
-          <a href="/assets"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
+          <a href="/south-africa-bank-account" title="前往：南非銀行開戶完整指南｜外國人開戶流程與文件｜鼎曜國際顧問"><strong>南非開戶服務</strong><span class="nd-sub">Standard Bank 非居民帳戶</span></a>
+          <a href="/platform" title="前往：數位平台 — DYA DingYao APAC Hub"><strong>數位服務</strong><span class="nd-sub">數位資產平台</span></a>
+          <a href="/assets" title="前往：全球精選資產配置 | 鼎曜國際顧問 DingYao"><strong>精選資產</strong><span class="nd-sub">資產配置標的</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/south-africa-property" title="南非置產">南非置產 ▾</a>
         <div class="nav-dd">
-          <a href="/south-africa-property"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
-          <a href="/overseas-buyers"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
-          <a href="/retirement"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
-          <a href="/residency"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
+          <a href="/south-africa-property" title="前往：南非置產顧問服務｜在地團隊陪同簽約與過戶｜鼎曜國際顧問"><strong>南非置產服務</strong><span class="nd-sub">開普敦房產顧問</span></a>
+          <a href="/overseas-buyers" title="前往：海外買家 | 鼎曜國際顧問 DingYao"><strong>海外買家流程</strong><span class="nd-sub">交付與過戶</span></a>
+          <a href="/retirement" title="前往：退休生活 — DYA DingYao APAC Hub"><strong>退休生活</strong><span class="nd-sub">退休移居方案</span></a>
+          <a href="/residency" title="前往：全球身分規劃 | 鼎曜國際顧問 DingYao"><strong>身分規劃</strong><span class="nd-sub">永久居留 PR</span></a>
         </div>
       </div>
       <div class="nav-item has-dd">
         <a href="/education" title="教育留學">教育留學 ▾</a>
         <div class="nav-dd">
-          <a href="/education"><strong>教育留學總覽</strong></a>
-          <a href="/education#schools"><strong>貴族寄宿學校</strong></a>
-          <a href="/education#cost"><strong>學費與生活成本</strong></a>
+          <a href="/education" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>教育留學總覽</strong></a>
+          <a href="/education#schools" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>貴族寄宿學校</strong></a>
+          <a href="/education#cost" title="前往：南非留學與頂級私校規劃 | 鼎曜國際顧問"><strong>學費與生活成本</strong></a>
         </div>
       </div>
       <a href="/tour" title="商業考察">商業考察</a>
@@ -1712,7 +1712,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <main id="main-content">
 
 <!-- Hero -->
-<section class="hero" id="hero">
+<section class="hero" id="hero" aria-labelledby="h2-1">
   <div class="hero-bg">
     <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-hero.webp');opacity:0.25;"></div>
     <div class="gradient-1"></div>
@@ -1724,7 +1724,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
       <i class="fas fa-calendar-check"></i>
       Free Consultation
     </div>
-    <h1>
+    <h1 id="h2-1">
       啟動您的
       <span class="gold-text">資產配置計畫</span>
     </h1>
@@ -1747,12 +1747,12 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Guarantees -->
-<section class="section guarantees" id="guarantees">
+<section class="section guarantees" id="guarantees" aria-labelledby="h2-2">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-guarantees.webp');opacity:0.12;"></div>
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Our Guarantees</span>
-      <h2>三大保證</h2>
+      <h2 id="h2-2">三大保證</h2>
       <p>我們承諾提供最專業、最透明的諮詢服務</p>
     </div>
     <div class="guarantees-grid stagger-children">
@@ -1776,13 +1776,13 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Form Section -->
-<section class="section form-section" id="form">
+<section class="section form-section" id="form" aria-labelledby="h2-3">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-form.webp');opacity:0.10;"></div>
   <div class="container">
     <div class="form-inner">
       <div class="form-info fade-in-left">
         <span class="section-label">Book Your Session</span>
-        <h2>預約免費評估</h2>
+        <h2 id="h2-3">預約免費評估</h2>
         <p>填寫以下表單，我們的資深顧問將在 <strong class="gold-text">24 小時內</strong> 與您聯繫，提供專屬投資評估報告。</p>
         <div class="form-highlights">
           <div class="form-highlight">
@@ -1873,12 +1873,12 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 </section>
 
 <!-- Contact Info -->
-<section class="section contact-info-section" id="contact">
+<section class="section contact-info-section" id="contact" aria-labelledby="h2-4">
   <div class="section-bg-img" style="background-image:url('https://assets.dingyaoadvisory.tw/redesign/consultation-contact.webp');opacity:0.10;"></div>
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Contact Information</span>
-      <h2>聯絡資訊</h2>
+      <h2 id="h2-4">聯絡資訊</h2>
       <p>歡迎透過以下方式與我們聯繫</p>
     </div>
     <div class="contact-cards stagger-children">
@@ -1904,11 +1904,11 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
 <!-- Footer -->
 
 <!-- FAQ -->
-<section class="section faq" id="faq">
+<section class="section faq" id="faq" aria-labelledby="faq-2">
   <div class="container">
     <div class="section-title fade-in">
       <span class="section-label">Frequently Asked Questions</span>
-      <h2>常見問題</h2>
+      <h2 id="faq-2">常見問題</h2>
       <p>關於本頁服務的常見疑問</p>
     </div>
     <div class="faq-list">
@@ -1945,7 +1945,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
           <i class="fas fa-chevron-down"></i>
         </button>
         <div class="faq-answer">
-          <p>開普敦前灘（Foreshore Precinct）的再開發是 2026 年最受關注的城市更新案之一：50 年未完工的高架橋將拆除並改建新橋隧道，直接影響 CBD 周邊的住宅供給與租賃結構。完整解析見〈<a href="/blog/cape-town-foreshore-precinct-redevelopment-2026">開普敦前灘開發 Foreshore Precinct 2026</a>〉。其他區域題材會依您的預算與持有期間，在諮詢時一併評估。</p>
+          <p>開普敦前灘（Foreshore Precinct）的再開發是 2026 年最受關注的城市更新案之一：50 年未完工的高架橋將拆除並改建新橋隧道，直接影響 CBD 周邊的住宅供給與租賃結構。完整解析見〈<a href="/blog/cape-town-foreshore-precinct-redevelopment-2026" title="前往：開普敦 Foreshore Precinct 開發案 2026：50 年高架改建新橋隧道">開普敦前灘開發 Foreshore Precinct 2026</a>〉。其他區域題材會依您的預算與持有期間，在諮詢時一併評估。</p>
         </div>
       </div>
     </div>
@@ -1957,7 +1957,7 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="https://dingyaoadvisory.tw" class="footer-logo" id="navLogo" title="DingYao">
-          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30">
+          <img src="/dya-mark-whitegold.svg" alt="DYA" class="footer-mark" width="38" height="30" title="鼎曜國際顧問標誌">
           <span class="footer-wordmark">
             <span class="footer-w1">DingYao</span>
             <span class="footer-w2">APAC HUB</span>
