@@ -689,7 +689,16 @@ def post_steps(slug, day, urls, base: Path, dry: bool = False, push: bool = True
                 log("   " + ln)
             log("   → 等對方 commit 後以 --post-only 重跑；本次未產生任何檔案、未遞送索引")
             return 3
-    fx_ok = restore_fx_links(base, slug)
+    # ⚠️ 本步驟是 valuation 專屬（2026-10-28 裁決），對其他 slug 一律 skip。
+    # 2026-11-02 實證：ETF 篇部署時 hits 全 0 → fx_ok=False → 最終驗證假 FAIL（⚠️ 部署完成但有驗證項失敗），
+    # 而 fx-tracker 與該文毫無關係。故加 slug 守衛：非 valuation 時 fx_ok=None（不列入 all_ok），
+    # 但**後續 sitemap/news/purge/IndexNow 仍必須照跑**（不可 return）。
+    FX_TRACKER_SLUG = "cape-town-property-valuation-rates-foreign-buyers-2026"
+    if slug != FX_TRACKER_SLUG:
+        log("   fx-tracker 內連檢查：略過（本步驟僅適用 valuation 篇）")
+        fx_ok = None
+    else:
+        fx_ok = restore_fx_links(base, slug)
     if dry:
         fx_ok = None
     rc, out = run([sys.executable, base / "scripts" / "update_sitemap.py", slug])
