@@ -9,6 +9,11 @@
   · 遞送保留：每頁 3 天冷卻、每日上限 2 頁（Indexing API 200 不保證收錄，僅作訊號）
 
 狀態檔：~/.hermes/state/gsc_index_gate_S-20261019-01.json（去重、first_seen、last_status）
+監看清單：~/.hermes/state/gsc_gate_watchlist.json（{"until":"YYYY-MM-DD","urls":[...]}，
+          until 前每日併入檢查並無條件輸出逐頁 verdict／coverageState／lastCrawl；
+          未索引一律標「順延」不標失敗；不併入 tracked、不觸發 Indexing API 遞送。
+          當日快照寫入 ~/.hermes/state/gsc_gate_watch_history.jsonl（date+url 去重）。
+          `--watch-report` 只掃 watch 清單並輸出表格（驗證日回填用）。
 """
 import datetime
 import json
@@ -41,6 +46,82 @@ TRACKED_DEFAULT = [
 ]
 
 OK_STATES = {'Submitted and indexed'}
+
+# ── 驗證批次監看清單（2026-11-03 土星人指派 S-20261103-N2／S-20261019-02／-03／S-20261020-01）──
+# 為什麼要有：這批 URL 的 sitemap lastmod 都在 10-26 前後，靠 lookback=14 天會在
+# 11-16/11-17 當天滑出追蹤範圍（cut=11-02），導致最關鍵的驗證日看不到資料。
+# 設計：watch URL 不併入 tracked（不動既有 gate 4 頁的摘要與結案語意），
+#       只併入「今日檢查」並無條件輸出逐頁 verdict／coverageState／lastCrawl。
+WATCHLIST = os.path.expanduser('~/.hermes/state/gsc_gate_watchlist.json')
+
+
+def load_watchlist(today_d):
+    """回傳 (urls, until, label)；today 不在 [from, until] 內 → ([], ...)。
+
+    `from` 可省略（＝即刻生效）。設 from 是為了避免非驗證日拖長每日 cron 時間
+    （實測 URL Inspection 約 7 秒／頁，10 頁 ≈ 72 秒）；--watch-report 不受 from 限制。
+    """
+    if not os.path.exists(WATCHLIST):
+        return [], None, None
+    try:
+        d = json.load(open(WATCHLIST, encoding='utf-8'))
+    except Exception:  # noqa: BLE001
+        return [], None, None
+    urls = [u.strip() for u in d.get('urls', []) if u and u.strip()]
+    until = d.get('until')
+    start = d.get('from')
+    try:
+        active = today_d <= datetime.date.fromisoformat(until)
+        if start:
+            active = active and today_d >= datetime.date.fromisoformat(start)
+    except Exception:  # noqa: BLE001
+        active = False
+    return (urls if active else []), until, d.get('label')
+
+
+def watch_report(watch, pages):
+    """逐頁表格：verdict／coverageState／lastCrawl。未索引一律標「順延」（不可寫成失敗）。"""
+    if not watch:
+        return
+    print(f'🔎 驗證批次監看 {len(watch)} 頁')
+    for u in watch:
+        rec = pages.get(u, {})
+        cov = rec.get('status', 'NOT_CHECKED')
+        crawl = rec.get('lastCrawl') or 'never'
+        verdict = rec.get('verdict', 'UNKNOWN')
+        band = rec.get('band', 'n/a')
+        tag = 'indexed' if band == 'indexed' else '順延'
+        print(f'  · {u.rsplit("/", 1)[-1]} | verdict={verdict} | '
+              f'coverageState={cov} | lastCrawl={crawl} | {tag}')
+
+
+def record_watch_history(watch, pages, today):
+    """把 watch 頁當日快照寫入 JSONL（同一 date+url 只留一筆），供驗證日做 11-16→11-17 對照。"""
+    if not watch:
+        return
+    path = os.path.expanduser('~/.hermes/state/gsc_gate_watch_history.jsonl')
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    seen = set()
+    if os.path.exists(path):
+        for line in open(path, encoding='utf-8'):
+            try:
+                d = json.loads(line)
+                seen.add((d.get('date'), d.get('url')))
+            except Exception:  # noqa: BLE001
+                continue
+    with open(path, 'a', encoding='utf-8') as fh:
+        for u in watch:
+            if (today, u) in seen:
+                continue
+            rec = pages.get(u, {})
+            fh.write(json.dumps({
+                'date': today,
+                'url': u,
+                'verdict': rec.get('verdict', 'UNKNOWN'),
+                'coverageState': rec.get('status', 'NOT_CHECKED'),
+                'lastCrawl': rec.get('lastCrawl'),
+                'band': rec.get('band', 'n/a'),
+            }, ensure_ascii=False) + '\n')
 
 
 def band_of(cov):
@@ -81,7 +162,9 @@ def inspect(gsc, url):
     r = gsc.urlInspection().index().inspect(
         body={'inspectionUrl': url, 'siteUrl': SITE}).execute()
     idx = r.get('inspectionResult', {}).get('indexStatusResult', {})
-    return idx.get('coverageState') or 'UNKNOWN', idx.get('lastCrawlTime')
+    return (idx.get('coverageState') or 'UNKNOWN',
+            idx.get('lastCrawlTime'),
+            idx.get('verdict') or 'UNKNOWN')
 
 
 def sitemap_recent(today):
@@ -104,6 +187,11 @@ def sitemap_recent(today):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--watch-report', action='store_true',
+                    help='只輸出驗證批次監看清單逐頁表格（verdict/coverageState/lastCrawl）')
+    args = ap.parse_args()
     today_d = datetime.date.today()
     today = today_d.isoformat()
     state = load_state()
@@ -111,7 +199,15 @@ def main():
     subs = state.setdefault('submissions', {})
     tracked = state.setdefault('tracked', list(TRACKED_DEFAULT))
 
-    if state.get('closed'):
+    watch, watch_until, watch_label = load_watchlist(today_d)
+    if args.watch_report and not watch:
+        # 驗證日手動回填不受 from 限制
+        try:
+            watch = [u for u in json.load(open(WATCHLIST, encoding='utf-8')).get('urls', []) if u]
+        except Exception:  # noqa: BLE001
+            watch = []
+
+    if state.get('closed') and not watch:
         return 0  # 結案後永久靜默
 
     gsc, ix = services()
@@ -130,6 +226,9 @@ def main():
         if age_chk >= 7:
             recheck.append(u)
     candidates = tracked + new_urls[:MAX_NEW_PER_DAY] + recheck[:MAX_RECHECK]
+    candidates += watch
+    if args.watch_report:  # 只掃 watch，避免拖長 cron 時間
+        candidates = list(watch)
     candidates = list(dict.fromkeys(candidates))  # 去重且保序
 
     lines, changed, t7_alert = [], [], []
@@ -137,15 +236,16 @@ def main():
     for url in candidates:
         prev = pages.get(url, {})
         try:
-            cov, crawl = inspect(gsc, url)
+            cov, crawl, verdict = inspect(gsc, url)
         except Exception as exc:  # noqa: BLE001
-            cov, crawl = 'INSPECT_ERROR: ' + str(exc)[:80], None
+            cov, crawl, verdict = 'INSPECT_ERROR: ' + str(exc)[:80], None, 'UNKNOWN'
         is_new = not prev
         band = band_of(cov)
         pages[url] = {
             'status': cov,
             'band': band,
             'lastCrawl': crawl,
+            'verdict': verdict,
             'first_seen': prev.get('first_seen', today),
             'last_checked': today,
         }
@@ -187,6 +287,11 @@ def main():
     if sent:
         state.setdefault('history', []).append({'date': today, 'submitted': sent})
     save_state(state)
+    record_watch_history(watch, pages, today)
+
+    if args.watch_report:
+        watch_report(watch, pages)
+        return 0
 
     indexed = sum(1 for u in tracked if pages.get(u, {}).get('band') == 'indexed')
     if tracked and indexed == len(tracked):
@@ -205,6 +310,7 @@ def main():
         f'{u.rsplit("/", 1)[-1]}={_tag(u)}' for u in tracked))
 
     # 明細只在有變化／T+7／遞送／過 deadline 時輸出
+    watch_report(watch, pages)
     if not changed and not t7_alert and not sent and today <= DEADLINE:
         return 0
 
