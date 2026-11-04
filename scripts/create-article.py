@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-"""
-Blog Article Generator for Titan (泰坦人)
+"""Blog Article Generator for Titan (泰坦人)
+
+⚠️ DEPRECATED（2026-11-04）：DIST_DIR 仍指舊路徑 /Users/dingyao/.openclaw/...，
+   現役產生器是 dist/blog/convert_articles.py + dist/blog/article-template.html。
+   本檔僅保留回溯；title 一律經 ensure_page_title() 套「｜鼎曜國際顧問」與 60 字上限。
+
 Creates a new blog article from template.
 
 Usage:
@@ -12,6 +16,25 @@ import sys
 import re
 from datetime import datetime
 from pathlib import Path
+
+# ── title 規則（唯一權威：scripts/normalize_zh_blog_titles.py）──
+BRAND = "｜鼎曜國際顧問"
+MAX_TITLE = 60
+BRAND_RE = re.compile(
+    r"\s*[｜|]?\s*(?:鼎曜國際顧問(?:\s*DingYao(?:\s*Advisory)?)?"
+    r"|鼎曜國際顯問|鼎昰國際顯問|鼎曜國際|DingYao(?:\s*Advisory)?|鼎曜)\s*$"
+)
+
+
+def ensure_page_title(raw: str) -> str:
+    """『內容｜鼎曜國際顧問』；超長直接拋錯，不靜默截斷、不丟品牌。"""
+    t = (raw or "").strip()
+    m = BRAND_RE.search(t)
+    core = t[: m.start()].rstrip(" ｜|") if m and m.start() > 0 else t
+    title = core + BRAND
+    if len(title) > MAX_TITLE:
+        raise ValueError(f"title 超過 {MAX_TITLE} 字（{len(title)}）：{title}")
+    return title
 
 # Configuration
 DIST_DIR = Path('/Users/dingyao/.openclaw/workspace/dingyaoadvisory-website/dist')

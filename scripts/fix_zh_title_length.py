@@ -1,74 +1,20 @@
 #!/usr/bin/env python3
-"""P0: Truncate ZH article <title> to <=65 chars (SEO guard, mirrors EN fix).
-Strategy: drop brand suffix if over; truncate headline at char boundary (CJK).
-Dry-run (no write) unless --apply.
+"""DEPRECATED（2026-11-04）：已被 scripts/normalize_zh_blog_titles.py 取代。
+
+為什麼廢掉：
+  舊版 MAX=65、品牌用「鼎曜國際顧問 DingYao Advisory」，而且最致命的
+  `return content  # bare content (should be <=60)` —— 品牌塞不下時直接
+  **丟掉品牌**，正是 2026-11-04「title 沒有品牌／品牌被截」的結構性風險。
+
+本檔保留僅為回溯相容：執行時直接委派給 normalize_zh_blog_titles.py
+（同一套 BRAND/MAX 規則、絕不丟品牌、超長必須人工裁決）。
 """
-import glob, re, sys, os
+import os
+import sys
 
-BRAND = "鼎曜國際顧問 DingYao Advisory"
-MAX = 65
-MAX_CONTENT = 60  # leaves room for brand
-
-def truncate_title(raw):
-    raw = raw.strip()
-    content = raw
-    brand = ""
-    # 1. split off brand suffix if present
-    for b in (BRAND, "DingYao Advisory", "鼎曜國際顧問"):
-        if content.endswith("| " + b):
-            content = content[: -len("| " + b)].rstrip()
-            brand = b
-            break
-    content = content.strip()
-    # 2. if full fits, keep brand
-    full = content + " | " + brand if brand else content
-    if len(full) <= MAX:
-        return full
-    # 3. truncate content to MAX_CONTENT at char boundary (CJK)
-    if len(content) > MAX_CONTENT:
-        cut = content[:MAX_CONTENT]
-        # back off to last CJK punctuation / space if present
-        for sep in ("：", "，", "、", "。", "？", "！", " ", "—", "－"):
-            idx = cut.rfind(sep)
-            if idx > 20:
-                cut = cut[: idx + 1]
-                break
-        cut = cut.rstrip(" ,;:：，、。？！-—") + "…"
-        content = cut
-    # 4. re-attach brand if it fits
-    full = content + " | " + brand if brand else content
-    if len(full) <= MAX:
-        return full
-    return content  # bare content (should be <=60)
-
-def main():
-    apply = "--apply" in sys.argv
-    files = sorted(glob.glob("dist/blog/*.html"))
-    files = [f for f in files if not f.endswith("-en.html")]
-    changed = 0
-    over = 0
-    for f in files:
-        html = open(f, encoding="utf-8").read()
-        m = re.search(r"<title>(.*?)</title>", html, re.S)
-        if not m:
-            continue
-        old = m.group(1).strip()
-        if len(old) <= MAX:
-            continue
-        over += 1
-        new = truncate_title(old)
-        if new == old or len(new) > MAX:
-            print(f"⚠️ SKIP {os.path.basename(f)}: cannot reduce {len(old)}->{len(new)}")
-            print(f"   OLD: {old[:80]}")
-            continue
-        if apply:
-            html = html[: m.start()] + "<title>" + new + "</title>" + html[m.end():]
-            open(f, "w", encoding="utf-8").write(html)
-        print(f"{'✓' if apply else '·'} {os.path.basename(f)}: {len(old)}→{len(new)}")
-        print(f"   OLD: {old[:75]}")
-        print(f"   NEW: {new[:75]}")
-        changed += 1
-    print(f"\nOver-limit titles: {over} | Fixed: {changed} | Mode: {'APPLY' if apply else 'DRY-RUN'}")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TARGET = os.path.join(REPO, "scripts", "normalize_zh_blog_titles.py")
 
 if __name__ == "__main__":
-    main()
+    print("⚠️  fix_zh_title_length.py 已棄用 → 轉呼叫 scripts/normalize_zh_blog_titles.py")
+    os.execv(sys.executable, [sys.executable, TARGET, *sys.argv[1:]])

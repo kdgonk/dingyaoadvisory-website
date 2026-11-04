@@ -3,7 +3,10 @@
 <head>
 <script defer data-domain="dingyaoadvisory.tw" src="https://plausible.dingyaoadvisory.tw/js/script.js"></script>
 
-<title>{og_title} | 鼎曜國際顧問</title>
+<!-- title 四處一律吃同一個 {page_title}（含品牌「｜鼎曜國際顧問」、全長 ≤60 全形字）。
+     ⚠️ 不要在這裡再串品牌，也不要把 og/twitter 留成無品牌版本：
+     2026-11-04 事故即「<title> 有品牌、og/twitter/headline 沒有」+ 手寫短尾綴「｜鼎曜」。 -->
+<title>{page_title}</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -16,7 +19,7 @@
 <link rel="alternate" hreflang="zh-TW" href="{zh_url}">
 <link rel="alternate" hreflang="x-default" href="{zh_url}">
 <link rel="alternate" hreflang="en" href="{en_url}">
-<meta property="og:title" content="{og_title}">
+<meta property="og:title" content="{page_title}">
 <meta property="og:description" content="{og_description}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{canonical_url}">
@@ -24,7 +27,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="DingYao">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{og_title}">
+<meta name="twitter:title" content="{page_title}">
 <meta name="twitter:description" content="{og_description}">
 <meta name="twitter:image" content="{og_image}">
 {json_ld}

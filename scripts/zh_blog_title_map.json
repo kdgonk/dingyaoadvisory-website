@@ -1,0 +1,9 @@
+{
+  "_comment": "ZH blog title 人工裁決表（內容不含品牌，腳本會自動接「｜鼎曜國際顧問」）。只在『內容 + 品牌 > 60 字』或需要改寫賣點時使用。鍵 = 檔名去 .html。",
+  "max_total": 60,
+  "brand": "｜鼎曜國際顧問",
+  "titles": {
+    "south-africa-property-purple-patch-standard-bank-2026": "南非房產「紫金期」：Standard Bank 24-48 個月機構資金進場，開普敦置產時機",
+    "sarb-july-mpc-cape-town-property": "SARB 7月 MPC 倒數：升息 47.5% 下，開普敦房市結構性分化與海外現金買家"
+  }
+}

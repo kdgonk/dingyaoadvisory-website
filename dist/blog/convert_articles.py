@@ -8,6 +8,30 @@ import os
 
 BLOG_DIR = "/Users/dingyao/Documents/DingYao-Website/dingyaoadvisory-website/dist/blog"
 
+# ── 版面標題規則（唯一權威：scripts/normalize_zh_blog_titles.py，改動需兩邊同步）──
+BRAND = "｜鼎曜國際顧問"
+MAX_TITLE = 60
+MAX_CORE = MAX_TITLE - len(BRAND)
+BRAND_RE = re.compile(
+    r"\s*[｜|]?\s*"
+    r"(?:鼎曜國際顧問(?:\s*DingYao(?:\s*Advisory)?)?"
+    r"|鼎曜國際顯問|鼎昰國際顯問|鼎曜國際"
+    r"|DingYao(?:\s*Advisory)?"
+    r"|鼎曜)"
+    r"\s*$"
+)
+
+
+def ensure_page_title(raw):
+    """把任意 title 正規化成『內容｜鼎曜國際顧問』，超過 60 字回傳 None（不靜默截斷）。"""
+    t = (raw or "").strip()
+    if not t:
+        return None
+    m = BRAND_RE.search(t)
+    core = t[: m.start()].rstrip(" ｜|") if m and m.start() > 0 else t
+    title = core + BRAND
+    return title if len(title) <= MAX_TITLE else None
+
 
 def remove_section(raw, start_pos):
     """Remove a <section>...</section> block handling nested sections."""
@@ -252,7 +276,26 @@ def build_output(filename, content):
     with open(template_path, 'r', encoding='utf-8') as f:
         template = f.read()
     
-    output = template.replace('{seo_meta}', seo_meta)
+    # ── title 四處同步（2026-11-04 事故：品牌尾綴被寫成「｜鼎曜」、og/twitter 無品牌）──
+    #    ZH：一律「內容｜鼎曜國際顧問」且全長 ≤60；EN：不套中文品牌，僅驗長度
+    if is_en:
+        page_title = (og_title or title or "").strip()
+        if not page_title or len(page_title) > 65:
+            print(f"  ERROR: EN title 空白或超過 65 字元：{page_title!r}")
+            return None
+    else:
+        page_title = ensure_page_title(og_title or title)
+        if page_title is None:
+            print(f"  ERROR: title 超過 {MAX_TITLE} 字，請縮短後重跑：{og_title or title}")
+            return None
+    json_ld = re.sub(
+        r'("headline"\s*:\s*")[^"]*(")',
+        lambda m: m.group(1) + page_title + m.group(2),
+        json_ld,
+    )
+
+    output = template.replace('{page_title}', page_title)
+    output = output.replace('{seo_meta}', seo_meta)
     output = output.replace('{canonical_url}', canonical)
     output = output.replace('{zh_url}', zh_url)
     output = output.replace('{en_url}', en_url)
