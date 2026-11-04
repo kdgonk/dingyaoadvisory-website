@@ -1,0 +1,30 @@
+{
+  "_source": "/mnt/DingYao/app-data/agent-notes/TO-saturnian/2026-11-06-英文頁title-meta重寫清單.md §3（水星人 ☿ 2026-11-04）",
+  "_rule": "逐字照抄，不自行改寫。expected_len 為規格給的字元數，套用時必須完全相符（不符即 ERROR 不寫入）。",
+  "pages": {
+    "sarb-bop-codes-foreign-property-buyers-2026-en": {
+      "title": "SARB BOP Codes 2026 List: 416 Remittance, 510 01 Property",
+      "title_len": 57,
+      "description": "SARB BoP codes 2026 full list: 416 remittance meaning, 510 01 property purchase, 313 00 interest and 304 00 salary. Look up any code in one table, then request the PDF checklist.",
+      "description_len": 178,
+      "strategy": "S-20261106-EN-META",
+      "why": "28d 3,247i/25c/0.77%，`bop codes` pos 2.4 卻只 1 點擊；416 remittance 查詢族 48i/0c 未被 title 接住"
+    },
+    "standard-bank-non-resident-account-2026-en": {
+      "title": "Standard Bank Non-Resident Account 2026: Requirements",
+      "title_len": 53,
+      "description": "Standard Bank non-resident account requirements 2026: certified passport, proof of address, 3-month statements and four FICA profiling answers. See fees, rejection reasons and how to apply from Taiwan.",
+      "description_len": 201,
+      "strategy": "S-20261106-EN-META",
+      "why": "28d 232i/2c/0.86%；查詢集中 requirements，舊 title 只有泛稱 Guide"
+    },
+    "south-africa-remote-work-visa-cape-town-property-demand-2026-en": {
+      "title": "South Africa Remote Work Visa 2026: Cape Town Property Demand",
+      "title_len": 61,
+      "description": "South Africa's remote work visa 2026 brings digital nomads to Cape Town. See the income threshold, visa terms and how long-stay demand affects rental yields and property prices in the City Bowl and Atlantic Seaboard.",
+      "description_len": 216,
+      "strategy": "S-20261106-EN-META",
+      "why": "title 損壞成 `How South Africa | DingYao`（26 字元，句子被 apostrophe 切斷）→ 修 bug"
+    }
+  }
+}

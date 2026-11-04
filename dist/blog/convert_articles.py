@@ -2,6 +2,8 @@
 """
 Convert English blog articles: remove Tailwind, use correct dark theme template.
 """
+from __future__ import annotations  # Python 3.9：讓 str | None 型別註解可運作
+
 import re
 import json
 import os
@@ -31,6 +33,47 @@ def ensure_page_title(raw):
     core = t[: m.start()].rstrip(" ｜|") if m and m.start() > 0 else t
     title = core + BRAND
     return title if len(title) <= MAX_TITLE else None
+
+
+# ── EN title 防呆（2026-11-06 土星人要求）──
+# 事故樣本：south-africa-remote-work-visa-cape-town-property-demand-2026-en
+#   完整句 'How South Africa's Remote Work Visa is Driving Cape Town Property Demand…'
+#   被切成 'How South Africa | DingYao'（26 字元）—— apostrophe 處截斷，句子不完整。
+EN_MIN_TITLE = 30
+EN_TAIL_STOPWORDS = {
+    # 冠詞／介系詞／連接詞／be 動詞／疑問詞結尾 = 句子被切斷
+    "the", "a", "an", "of", "and", "or", "for", "to", "in", "on", "at", "by",
+    "with", "from", "as", "is", "are", "was", "were", "be", "been", "being",
+    "how", "what", "why", "when", "where", "which", "who", "that", "this",
+    "these", "those", "your", "our", "their", "its", "his", "her", "not",
+    "into", "than", "then", "if", "so", "but", "about", "over", "under", "vs",
+    "versus", "per", "via",
+}
+
+
+def validate_en_title(page_title: str) -> str | None:
+    """EN title 防呆。回傳錯誤訊息；None 表示通過。
+
+    抓的是「句子被切斷」而不是「不好看」：
+      - 空白、>65 字元
+      - 全長 <30 → 幾乎必然是截斷（事故樣本 26）
+      - 主體最後一詞是功能詞（the/of/for/how…）→ 句子沒寫完
+      - 含中日韓字元 → 中文標題誤入英文頁
+    """
+    t = (page_title or "").strip()
+    if not t:
+        return "EN title 空白"
+    if len(t) > 65:
+        return f"EN title 超過 65 字元（{len(t)}）：{t!r}"
+    if len(t) < EN_MIN_TITLE:
+        return f"EN title 過短（{len(t)}<{EN_MIN_TITLE}），疑似被截斷：{t!r}"
+    main = t.split("|")[0].strip()
+    words = re.findall(r"[A-Za-z][A-Za-z'’\-]*", main)
+    if words and words[-1].lower() in EN_TAIL_STOPWORDS:
+        return f"EN title 結尾是功能詞（{words[-1]!r}），句子被切斷：{t!r}"
+    if re.search(r"[\u3400-\u9fff]", t):
+        return f"EN title 含中日韓字元：{t!r}"
+    return None
 
 
 def remove_section(raw, start_pos):
@@ -280,8 +323,9 @@ def build_output(filename, content):
     #    ZH：一律「內容｜鼎曜國際顧問」且全長 ≤60；EN：不套中文品牌，僅驗長度
     if is_en:
         page_title = (og_title or title or "").strip()
-        if not page_title or len(page_title) > 65:
-            print(f"  ERROR: EN title 空白或超過 65 字元：{page_title!r}")
+        err = validate_en_title(page_title)
+        if err:
+            print(f"  ERROR: {err}")
             return None
     else:
         page_title = ensure_page_title(og_title or title)
