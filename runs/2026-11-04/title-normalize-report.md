@@ -167,3 +167,53 @@
 | 7 | `south-africa-residency-pathways-taiwan-guide-2026` | 37 | 南非移民 2026 完整指南：四條居留路徑與南非永久居留門檻｜鼎曜國際顧問 |
 | 8 | `south-africa-talent-skills-shortage-2026` | 37 | 南非人才短缺 2026：ICT 缺口 22% 推升開普敦租金｜鼎曜國際顧問 |
 | 9 | `south-africa-transfer-duty-foreign-buyer-cape-town-tax-guide-2026` | 49 | 南非買房稅費：Transfer Duty 級距表與 R1,600 萬實例（2026）｜鼎曜國際顧問 |
+
+## C. SERP 顯示寬度實測（重要：這與『≤60 字元』是不同門檻）
+
+Google 中文 SERP 桌面可視寬度約 580–600px，換算約 **30–32 個全形字**（中文字寬 1em）。
+因此「≤60 字元」只保證 HTML title 不超長，**不保證 SERP 不截斷**。
+
+| 門檻（全形寬度單位） | 超標頁數 |
+|---|---|
+| > 30 | 122 頁 |
+| > 35 | 74 頁 |
+| > 40 | 43 頁 |
+| > 45 | 18 頁 |
+
+- 全站 ZH blog 152 頁｜平均寬度 35.9｜最寬 52.5
+- 會被 SERP 截斷（>30）：**122 頁**；截斷到品牌都看不到（>40）：**43 頁**
+
+### C-1 最寬 30 頁（品牌尾綴在 SERP 會被切掉，建議第二階段優先處理）
+
+| # | slug | 寬度 | 字數 | title |
+|---|---|---|---|---|
+| 1 | `minimum-wage-cape-town-property-passive-income-2026` | 52.5 | 54 | 最低工資衝破 3 萬，你的薪水還是被通膨吃掉？台灣上班族的被動收入解方，為何開普敦置產是加速器｜鼎曜國際顧問 |
+| 2 | `jingzhiqiong-passive-income-cape-town-2026` | 52.0 | 52 | 精緻窮不是你的錯，是沒有被動收入！小資族如何用開普敦置產把「消費型月光」變成「資產型累積」｜鼎曜國際顧問 |
+| 3 | `cape-town-property-demand-semigration-foreign-buyers-2026` | 50.0 | 57 | 開普敦房市需求大解析：誰在買？為什麼買？—— semigration、國際買家與銀行競爭的三重驅動力｜鼎曜國際顧問 |
+| 4 | `uk-buyers-r15-9m-newlands-penthouse-cape-town-record-2026` | 50.0 | 54 | 英國買家 R1,590 萬破紀錄買下開普敦頂層公寓！外國人搶購開普敦豪宅，台灣投資人如何切入？｜鼎曜國際顧問 |
+| 5 | `foreign-buyer-r48m-constantia-sight-unseen-remote-purchase-2026` | 49.5 | 56 | 外國買家沒看房就花 R4,800 萬買下開普敦豪宅！遠距置產 6 步驟全攻略——台灣人也能做到嗎？｜鼎曜國際顧問 |
+| 6 | `cape-town-property-market-mid-2026-pulse-check` | 48.5 | 58 | 開普敦房市 2026 年中盤點：房價年增 12.9%、成交僅需 18 天 — 供給極度緊縮下的投資策略｜鼎曜國際顧問 |
+| 7 | `south-africa-estate-duty-foreign-heirs-cape-town-2026` | 48.5 | 55 | 「遺產」「遺產稅」登熱搜！南非 Estate Duty 傳承規劃：台灣人繼承開普敦房產要繳多少？｜鼎曜國際顧問 |
+| 8 | `cape-town-sectional-title-investment-guide-2026` | 47.5 | 58 | 開普敦 Sectional Title 公寓投資攻略：2026年租金收益率最高的區域與外國買家入門指南｜鼎曜國際顧問 |
+| 9 | `foreign-buyers-6-percent-39-percent-cape-town-luxury-2026` | 47.5 | 52 | 外國買家僅佔南非房產 6% 卻買走 39% 豪宅！開普敦房市兩極化，台灣投資人該買哪一層？｜鼎曜國際顧問 |
+| 10 | `forbes-global-properties-cape-town-luxury-real-estate-2026` | 47.5 | 52 | Forbes 進軍南非！全球頂級豪宅網絡為何選擇開普敦？— 國際品牌認證下的高端房市新格局｜鼎曜國際顧問 |
+| 11 | `south-africa-property-fraud-conveyancer-trust-account-2026` | 47.0 | 51 | 南非房產詐騙 2026 激增！過戶律師信託帳戶怎麼保護你的購屋款？5 大防騙守則一次看懂｜鼎曜國際顧問 |
+| 12 | `south-africa-offer-to-purchase-foreign-buyer-legal-protection-2026` | 46.5 | 57 | 南非買房契約（Offer to Purchase）白話解析：外國人簽名前必懂的 10 個法律保障重點｜鼎曜國際顧問 |
+| 13 | `cape-town-three-structural-trends-h2-2026` | 46.5 | 54 | 開普敦房市三大結構性趨勢：Semigration、外資湧入、供給緊縮如何重塑2026下半年市場｜鼎曜國際顧問 |
+| 14 | `cape-town-southern-suburbs-luxury-property-record-prices-uppers` | 46.0 | 60 | 開普敦 Southern Suburbs 豪宅區價格創新高：「The Uppers」五年翻倍背後的投資邏輯｜鼎曜國際顧問 |
+| 15 | `grandwest-mall-cape-town-infrastructure-investment` | 46.0 | 53 | 開普敦GrandWest R6.5億商場破土動工：當機構資本押注開普敦，個人投資者該怎麼做？｜鼎曜國際顧問 |
+| 16 | `jackson-hole-2026-fed-warsh-cape-town-property-safe-haven` | 46.0 | 48 | Fed 華許傑克遜霍爾首秀：美債殖利率飆升下，南非高息資產與開普敦置產的資金避風港｜鼎曜國際顧問 |
+| 17 | `samsung-strike-supply-chain-vs-cape-town-property` | 46.0 | 46 | 三星罷工危機與供應鏈轉單：地緣政治風險下，開普敦房產為何成為「非相關性資產」？｜鼎曜國際顧問 |
+| 18 | `south-africa-talent-cost-advantage-cape-town-business-hub-2026` | 45.5 | 52 | 台灣企業想外銷非洲？南非開普敦：50-65% 人才成本優勢 + 營運基地 + 置產一次到位｜鼎曜國際顧問 |
+| 19 | `us-iran-war-oil-surge-sarb-september-2026-cape-town-property` | 45.0 | 48 | 美伊戰爭復燃、油價飆破 $90！南非通膨升息風險升溫——開普敦房產為何仍是避風港？｜鼎曜國際顧問 |
+| 20 | `south-africa-remote-work-visa-cape-town-property-demand-2026` | 45.0 | 47 | 南非遠端工作簽證如何驅動開普敦房市需求：2026年數位遊民與海外置產的結構性連結｜鼎曜國際顧問 |
+| 21 | `foreign-buyers-r153bn-cape-town-luxury-10-years` | 44.5 | 54 | 外國買家十年砸 R1,530 億搶進開普敦豪宅：Lightstone 數據揭示的投資趨勢與機會｜鼎曜國際顧問 |
+| 22 | `taiwan-stock-market-record-high-cape-town-passive-income-2026` | 44.0 | 49 | 台股衝破四萬點，獲利了結的錢該放哪？開普敦租金收益率市場參考區間 7.5-11.4%｜鼎曜國際顧問 |
+| 23 | `cape-town-uppers-luxury-scarcity-investment-2026` | 44.0 | 44 | 開普敦豪宅區逆勢創新高：當全球經濟動盪，稀缺資產為何成為海外投資者的避風港｜鼎曜國際顧問 |
+| 24 | `cape-town-dual-engine-income-rental-savings-7-percent` | 43.5 | 56 | 開普敦房產雙引擎收益：租金8-10% + 活存約 7% 如何打造 R 1,395,000/年現金流｜鼎曜國際顧問 |
+| 25 | `south-africa-inflation-5-percent-cape-town-property-2026` | 43.5 | 48 | 南非通膨飆至 5% 兩年新高：SARB 升息壓力升溫，開普敦房產投資者該如何應對？｜鼎曜國際顧問 |
+| 26 | `south-africa-property-purple-patch-standard-bank-2026` | 43.0 | 53 | 南非房產「紫金期」：Standard Bank 24-48 個月機構資金進場，開普敦置產時機｜鼎曜國際顧問 |
+| 27 | `cape-town-semigration-2-0-maturing-market-2026` | 43.0 | 52 | Semigration 2.0：開普敦房市進入成熟期 — 三股新流向如何重塑南非房地產格局｜鼎曜國際顧問 |
+| 28 | `cape-town-international-school-cost-property-investment-2026` | 43.0 | 47 | 在開普敦買房讓孩子讀國際學校，比台北划算多少？2026 學費 × 置產投資全計算｜鼎曜國際顧問 |
+| 29 | `south-africa-young-buyers-decline-rental-demand-cape-town-2026` | 43.0 | 43 | 南非年輕買家消失、租賃需求暴漲！開普敦租金收益為何是台灣人的穩定現金流？｜鼎曜國際顧問 |
+| 30 | `foreign-buyers-atlantic-seaboard-1-3-cape-town-r6bn-2026` | 42.5 | 56 | 開普敦 Atlantic Seaboard 1/3 被外國人買走：R60 億成交背後的高端置產密碼｜鼎曜國際顧問 |
