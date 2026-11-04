@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,17 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-rental-income-tax-non-resident-landlords-2026",
+          "title": "南非租金所得稅怎麼算？非居民房東的申報、可扣費用與稅後實拿（2026）",
+          "description": "南非租金所得稅課的是利潤不是租金總額，2026/27 年度稅率自 18% 起。本文以開普敦平均月租 R12,561 實算：應稅所得 R81,254、稅額 R14,626、稅後現金流 R66,628（淨收益率 3.33%），並說明非居民申報身分、可扣費用清單與台灣海外所得門檻。立即索取租金稅後現金流試算表。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-rental-income-tax-non-resident-landlords-2026",
+          "url_en": "https://dingyaoadvisory.tw/blog/south-africa-rental-income-tax-non-resident-landlords-2026-en",
+          "language": "zh-TW",
+          "category": "置產投資 / 稅務規劃 / 持有期收益",
+          "published": "2026-11-04",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-rental-income-tax-non-resident-landlords-2026-hero.webp"
+        },
         {
           "slug": "taiwan-high-dividend-etf-vs-south-africa-deposit-2026",
           "title": "00878 配息 7% 與南非幣 7% 差在哪？稅後到手試算",
