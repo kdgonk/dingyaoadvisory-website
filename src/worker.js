@@ -413,6 +413,90 @@ async function handleLead(request, env, ctx) {
   });
 }
 
+/**
+ * ── LM 名單匯出（2026-11-04 泰坦人，P0）────────────────────────────
+ *
+ * 為什麼存在：策略卡 LM-20261007-01／-02 的 KPI 是「名單筆數（分母）」，
+ * 但本 Worker 原本只有寫入端點（POST /api/lead），Chatwoot token 又只存在
+ * secret，導致名單數只能靠人工登入後台 → 策略無法自動驗證（2026-11-04
+ * 水星人回報的量測缺口）。此端點把「讀名單」變成可自動化的唯讀操作。
+ *
+ * 安全設計：
+ *  1. Chatwoot token 仍只留在 secret（env.CHATWOOT_API_TOKEN），不進前端。
+ *  2. 呼叫端必須帶 `x-lm-key`，其 SHA-256 必須等於下面的常數。
+ *     repo 是 public，因此**只放雜湊、不放金鑰**：拿到雜湊也無法回推金鑰。
+ *  3. 回應只含 id／source／created_at，**不含 email／phone／name／訊息**，
+ *     即使外流也只暴露「有幾筆、哪一天進來」。
+ *  4. 唯讀：只打 Chatwoot GET /contacts，不改任何資料。
+ *
+ * 用法：
+ *   curl -s -H "x-lm-key: $CHATWOOT_LM_EXPORT_KEY" \
+ *     https://dingyaoadvisory.tw/api/lm-export
+ *   金鑰本機存放：~/.hermes/secrets/chatwoot-lm-export.env
+ */
+const LM_EXPORT_KEY_SHA256 = 'aaa71ca7be086a9b37b9baef5cc0ec3be18386053a6361cdf577111057fd478b';
+const LM_EXPORT_MAX_PAGES = 20;   // 100 筆/頁 → 上限 2,000 筆，遠超目前規模
+
+async function sha256Hex(input) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(input));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function handleLmExport(request, env) {
+  if (!env.CHATWOOT_API_TOKEN) {
+    return json({ ok: false, error: 'Server misconfigured: missing CHATWOOT_API_TOKEN' }, 500);
+  }
+  const key = request.headers.get('x-lm-key') || '';
+  if (!key) return json({ ok: false, error: 'unauthorized' }, 401);
+  if ((await sha256Hex(key)) !== LM_EXPORT_KEY_SHA256) {
+    return json({ ok: false, error: 'unauthorized' }, 401);
+  }
+
+  const headers = { 'api_access_token': env.CHATWOOT_API_TOKEN };
+  const items = [];
+  let total = null;
+  let pages = 0;
+
+  for (let page = 1; page <= LM_EXPORT_MAX_PAGES; page++) {
+    let res;
+    try {
+      res = await fetch(CHATWOOT_CONTACTS + '?page=' + page + '&per_page=100', { headers });
+    } catch (err) {
+      return json({ ok: false, error: 'chatwoot_unreachable', page }, 502);
+    }
+    if (!res.ok) {
+      let detail = '';
+      try { detail = str(await res.text(), 200); } catch (err) { detail = ''; }
+      // 401／403 代表 token 缺 contacts read 權限 —— 明確回報，不靜默失敗
+      return json({ ok: false, error: 'chatwoot_status_' + res.status, detail, page }, 502);
+    }
+    let data = {};
+    try { data = await res.json(); } catch (err) { data = {}; }
+    if (data && data.meta && typeof data.meta.count === 'number') total = data.meta.count;
+    const list = Array.isArray(data && data.payload) ? data.payload : [];
+    if (!list.length) break;
+    for (const c of list) {
+      const attrs = (c && c.custom_attributes) || {};
+      items.push({
+        id: (c && c.id) || null,
+        source: attrs.source || null,
+        created_at: (c && c.created_at) || null
+      });
+    }
+    pages = page;
+    if (total !== null && items.length >= total) break;
+  }
+
+  return json({
+    ok: true,
+    contact_total_in_chatwoot: total,
+    scanned: items.length,
+    pages,
+    exported_at: new Date().toISOString(),
+    items
+  });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -436,6 +520,19 @@ export default {
 
     if (path === '/api/health') {
       return json({ ok: true, chatwoot_token_configured: Boolean(env.CHATWOOT_API_TOKEN) });
+    }
+
+    // 唯讀名單匯出（需 x-lm-key）。GET／HEAD 皆可，POST 一律 405。
+    if (path === '/api/lm-export') {
+      if (request.method !== 'GET' && request.method !== 'HEAD') {
+        return new Response(null, {
+          status: 405,
+          headers: { 'Allow': 'GET, HEAD', 'Cache-Control': 'no-store' }
+        });
+      }
+      const res = await handleLmExport(request, env);
+      res.headers.set('Cache-Control', 'no-store');
+      return res;
     }
 
     // 短網址：/go/<key> 與 /l/<key>（同一張 GO_LINKS 表；/l/ 是 2026-10-22 新增的
