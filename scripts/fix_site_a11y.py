@@ -190,8 +190,10 @@ def build_cache(root: Path, pages) -> dict:
             if not h or h.startswith(("mailto:", "tel:", "javascript:", "#")) or h.startswith("http"):
                 continue
             hrefs.add(h.split("#")[0])
-    cache = {}
+    cache = load_cache()          # 與既有快取合併，避免覆蓋前面批次已抓到的標題
     for i, h in enumerate(sorted(hrefs), 1):
+        if cache.get(h):
+            continue
         try:
             req = urllib.request.Request(SITE + h, headers={"User-Agent": "titan-a11y-cache/1.0"})
             with urllib.request.urlopen(req, timeout=20) as r:
