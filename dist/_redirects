@@ -45,9 +45,9 @@
 /blog/south-africa-skilled-talent-return    /blog/south-africa-talent-return-v2    301
 /blog/south-africa-skilled-talent-return-en    /blog/south-africa-talent-return-v2-en    301
 /blog/stop-loss-emotion-en    /blog/stop-loss-emotion-cape-town-passive-income-en    301
-/blog/zar-at-1644-cape-town-property    /blog/zar-depreciation-cape-town-property-opportunity-2026    301
-/blog/zar-at-1644-cape-town-property-en    /blog/zar-depreciation-cape-town-property-opportunity-2026-en    301
-/blog/zar-at-1644-cape-town-property-zh    /blog/zar-depreciation-cape-town-property-opportunity-2026    301
+/blog/zar-at-1644-cape-town-property    /blog/south-africa-interest-rate-fx-tracker-2026    301
+/blog/zar-at-1644-cape-town-property-en    /blog/south-africa-interest-rate-fx-tracker-2026-en    301
+/blog/zar-at-1644-cape-town-property-zh    /blog/south-africa-interest-rate-fx-tracker-2026    301
 /blog/2026-05-20-sa-property-recovery-g20-opportunity    /blog/g20-cape-town-property-opportunities    301
 /blog/2026-05-20-sa-property-recovery-g20-opportunity-en    /blog/g20-cape-town-property-opportunities-en    301
 
@@ -142,3 +142,13 @@
 /blog/cape-town-short-term-letting-en /blog/cape-town-short-term-letting-by-law-2026-en 301
 /blog/cape-town-short-term-letting.html    /blog/cape-town-short-term-letting-by-law-2026    301
 /blog/cape-town-short-term-letting-en.html /blog/cape-town-short-term-letting-by-law-2026-en 301
+
+# 2026-11-06（S-20261106-01｜匯率三頁 0 點擊收斂；土星人核准 2026-11-06）
+# 90d 62 曝光 / 0 點擊 → 301 併入 south-africa-interest-rate-fx-tracker-2026（28d 274i/12c/CTR 4.4%/pos 4.6）。
+# 來源 HTML 保留（由本檔攔截），sitemap.xml / sitemap.html 已同步移除這 6 條。驗證日 2026-12-04。
+/blog/rand-below-16-cape-town-property-opportunity-2026          /blog/south-africa-interest-rate-fx-tracker-2026       301
+/blog/zar-depreciation-cape-town-property-opportunity-2026       /blog/south-africa-interest-rate-fx-tracker-2026       301
+/blog/zar-exchange-rate-cape-town-property-foreign-investors-2026 /blog/south-africa-interest-rate-fx-tracker-2026       301
+/blog/rand-below-16-cape-town-property-opportunity-2026-en       /blog/south-africa-interest-rate-fx-tracker-2026-en    301
+/blog/zar-depreciation-cape-town-property-opportunity-2026-en    /blog/south-africa-interest-rate-fx-tracker-2026-en    301
+/blog/zar-exchange-rate-cape-town-property-foreign-investors-2026-en /blog/south-africa-interest-rate-fx-tracker-2026-en    301
