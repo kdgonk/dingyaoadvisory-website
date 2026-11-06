@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-06",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,17 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "cape-town-university-international-students-guide-2026",
+          "title": "南非讀大學 2026：開普敦大學入學門檻、學費與回台學歷認證",
+          "description": "開普敦大學 2027 學年大學部申請 2026-04-01 開放、07-31 截止，逾期不受理。本文整理國際學生四層費用（學分費＋國際學期費＋行政費＋住宿 R89,520 起）、入學門檻、NBT 與英語要求，以及回台學歷認證的查證流程，全部附官方來源與 2026-10-31 抓取日。立即索取南非大學申請時程檢核表。",
+          "url": "https://dingyaoadvisory.tw/blog/cape-town-university-international-students-guide-2026",
+          "url_en": "https://dingyaoadvisory.tw/blog/cape-town-university-international-students-guide-2026-en",
+          "language": "zh-TW",
+          "category": "教育留學 / 南非大學 / 學歷銜接",
+          "published": "2026-11-06",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/cape-town-university-international-students-guide-2026-hero.webp"
+        },
         {
           "slug": "south-africa-rental-income-tax-non-resident-landlords-2026",
           "title": "南非租金所得稅怎麼算？非居民房東的申報、可扣費用與稅後實拿（2026）",
