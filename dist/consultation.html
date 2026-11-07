@@ -1894,6 +1894,14 @@ function acceptCookies(){var d=new Date();d.setTime(d.getTime()+365*24*60*60*100
             <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
           </div>
           <div class="form-group">
+            <label for="purpose">房產用途</label>
+            <select id="purpose" name="purpose">
+              <option value="">請選擇用途（選填）</option>
+              <option value="rent">收租（投資出租）</option>
+              <option value="own-use">自住或偶爾居住</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="budget">預算範圍</label>
             <select id="budget" name="budget">
               <option value="">請選擇預算範圍</option>
@@ -2133,6 +2141,7 @@ function handleFormSubmit(e) {
   const budget = form.querySelector('#budget').value;
   const interest = form.querySelector('#interest').value;
   const message = form.querySelector('#message').value.trim();
+  const purpose = form.querySelector('#purpose').value;
 
   const btn = form.querySelector('button[type="submit"]');
   btn.disabled = true;
@@ -2150,6 +2159,7 @@ function handleFormSubmit(e) {
       phone_number: phone,
       custom_attributes: {
         source: 'consultation_page',
+        purpose: purpose || '',
         budget: budget || '',
         interest: interest || '',
         message: message || ''

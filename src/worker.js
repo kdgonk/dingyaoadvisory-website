@@ -291,7 +291,7 @@ async function handleLead(request, env, ctx) {
     : {};
 
   const custom_attributes = { source: normalizeSource(incoming.source) };
-  for (const key of ['budget', 'interest', 'message', 'plan', 'note', 'lm_consent']) {
+  for (const key of ['budget', 'interest', 'message', 'plan', 'note', 'lm_consent', 'purpose']) {
     const value = str(incoming[key], 1000);
     if (value) custom_attributes[key] = value;
   }
