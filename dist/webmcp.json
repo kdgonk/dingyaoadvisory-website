@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-09",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,19 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-school-curriculum-caps-ieb-cambridge-2026",
+          "title": "南非學制怎麼選？CAPS、IEB、Cambridge 與 IB 的差別",
+          "description": "南非的全國畢業證書只有一張 NSC：CAPS 是國定課程，IEB 與 SACAI 是另兩個受 Umalusi 認證的評量機構，南非所有大學同等承認。Cambridge 與 IB 則是獨立學制，在開普敦只有少數學校提供，申請南非大學還須向 USAf 取得豁免證明（2026 年 R1,070、約 6 至 8 週）。本文整理開普敦四種學制的實際差別、真的有在教的學校、2026 年學費區間與台幣換算。立即索取學制對照表。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-school-curriculum-caps-ieb-cambridge-2026",
+          "url_en": "https://dingyaoadvisory.tw/blog/south-africa-school-curriculum-caps-ieb-cambridge-2026-en",
+          "language": "zh-TW",
+          "category": "教育留學 / 南非學制 / 開普敦學校",
+          "published": "2026-11-09",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-school-curriculum-caps-ieb-cambridge-2026-hero.webp",
+          "title_en": "South Africa School Curriculum: CAPS vs IEB | DingYao Advisory",
+          "description_en": "South Africa has one school certificate, the NSC. CAPS and IEB both lead to it. Cambridge and IB need a USAf exemption costing R1,070 and taking 6-8 weeks."
+        },
         {
           "slug": "cape-town-university-international-students-guide-2026",
           "title": "南非讀大學 2026：開普敦大學入學門檻、學費與回台學歷認證",

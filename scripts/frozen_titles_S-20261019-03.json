@@ -1,12 +1,12 @@
 {
   "strategy": "S-20261019-03",
   "freeze_until": "2026-11-17",
-  "recorded_at": "2026-11-02",
+  "recorded_at": "2026-11-09",
   "pages": {
     "cape-town-quality-of-life-cost-comparison-en.html": {
-      "title": "Cape Town Quality of Life 2026: 42nd/230, 40% Cost | DingYao",
-      "description": "Cape Town ranks 42nd of 230 cities on quality of life, and living costs run about 40% of Taipei's. See the full monthly budget and request the comparison.",
-      "sha256": "d5f802a43cc81af3"
+      "title": "Cape Town Quality of Life: 42nd/230, Costs 40% of Taipei",
+      "description": "Cape Town gives you a top-42 world city for quality of life at 40% of Taipei's living costs. See the line-by-line monthly budget and request the comparison.",
+      "sha256": "9e7b133e97948ecc"
     },
     "standard-bank-money-market-en.html": {
       "title": "Standard Bank Money Market 2026: 7% Instant Access | DingYao",
