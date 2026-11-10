@@ -590,6 +590,11 @@ export default {
       return handleShortLink(path.length > prefix.length ? path.slice(prefix.length + 1) : '');
     }
 
+    // ⚠️ 下面這行是 `dist/_redirects`（100+ 條 SEO 301）的唯一活路，不要改成
+    //    「改寫 / 統一」資產回應的寫法（例如把 301 改成 200、或自行組 body）。
+    //    2026-11-10 起 run_worker_first 是 "/*"，_redirects 由 ASSETS 在 Worker 之後
+    //    套用；一旦在這裡吞掉或改寫非 200 的資產回應，那 100+ 條轉址會靜默失效，
+    //    已被 301 收斂的舊文會立刻變回可索引的重複內容。
     const assetRes = await env.ASSETS.fetch(request);
 
     // 404 一律 no-store（2026-10-22 修）
