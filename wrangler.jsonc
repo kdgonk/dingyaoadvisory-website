@@ -3,6 +3,7 @@
   // 目的 1：讓缺頁回傳 dist/404.html（HTTP 404 + 有 body），修掉「空白 404」。
   // 目的 2（2026-10-19）：/api/lead 由本 Worker 代理 Chatwoot，前端不再持有 API token。
   //   token 只存在 Cloudflare secret CHATWOOT_API_TOKEN，永不進 repo / 前端。
+  // 目的 3（2026-11-10）：www.dingyaoadvisory.tw → 主網域 301（見 src/worker.js 開頭）。
   // 注意：dist/_worker.js 會導致部署硬失敗，不要新增該檔。
   "name": "dingyao",
   "main": "src/worker.js",
@@ -17,6 +18,34 @@
     // 且快取 key 依 Accept 分流 → 瀏覽器（Accept: text/html）可能命中上線前就被
     // 快取的舊 404，而 curl（*/*）不命中，造成「我這台 200、老闆 404」。
     // run_worker_first 保證 /l/* /go/* /api/* 一律進 Worker 產生動態回應（no-store）。
-    "run_worker_first": ["/l", "/l/*", "/go", "/go/*", "/api", "/api/*"]
+    //
+    // 2026-11-10 擴充為 "/*"（www → non-www 301 的必要條件）：
+    // Static Assets 的預設行為是「先服務資產，Worker 不執行」，而 www 的 /、/blog、
+    // /about、/contact 全都有實體檔 → 只把 301 寫進 Worker，對這些路徑永遠不會被叫到。
+    // 實測證據：https://www.dingyaoadvisory.tw/zz-<random> 回 404 且標頭是
+    //   `cache-control: public, max-age=0, must-revalidate` + `cf-cache-status: HIT`
+    //   ⇒ 回應由資產層產生，Worker 的 404 no-store 覆寫沒生效 ⇒ Worker 沒執行。
+    //
+    // 為什麼要排除靜態資產（!開頭，負向樣式優先於正向）：
+    // 每個請求只要進 Worker 就算一次 Worker 請求（免費方案 100,000 次/日；純靜態資產
+    // 請求則不限量）。單一頁面載入約 1 個 HTML + 3 個 CSS/JS + 10~20 張圖，若全部進
+    // Worker，額度會被圖片吃光並在超量時讓全站回錯誤。排除 css/js/images 後只有
+    // HTML 與 sitemap/robots/llms 這類「該被導向」的路徑進 Worker，量級回到安全範圍。
+    // ⚠️ 不要排除 .xml / .txt：www 的 sitemap.xml、robots.txt、llms.txt 也必須 301，
+    //    否則 www 會繼續供應第二份索引檔（就是這次要消滅的重複內容）。
+    "run_worker_first": [
+      "/*",
+      "!/css/*",
+      "!/js/*",
+      "!/blog/images/*",
+      "!/*.jpg",
+      "!/*.jpeg",
+      "!/*.png",
+      "!/*.webp",
+      "!/*.avif",
+      "!/*.svg",
+      "!/*.ico",
+      "!/*.gif"
+    ]
   }
 }
