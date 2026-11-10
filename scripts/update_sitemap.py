@@ -23,10 +23,22 @@ Titan 專用：增量維護 dist/sitemap.xml。
   —— 防「dist 有檔但還沒部署」的草稿被送進 sitemap ＋ IndexNow（10-27 valuation 事故）。
 - 連線層失敗（ERR）保守視為未知 → 保留，只警告，避免偶發 SSL timeout 誤刪活頁。
 - --offline（別名 --no-live）：跳過 live 檢查，供 CI／無網路環境使用。
-- 用法：python3 scripts/update_sitemap.py [--offline] [slug1 slug2 ...]（slug = bump lastmod）
+- 用法：python3 scripts/update_sitemap.py [--offline] [--audit N] [slug1 slug2 ...]
+        （slug = 要求 bump，但只有該頁 JSON-LD dateModified 已是今天才會真的生效）
+
+lastmod 單一真實來源（2026-11-11，S-20261026-01 後續）：
+- lastmod **一律**由頁內 JSON-LD 的 `dateModified` 決定，產生器每跑一次就全站校正。
+- 為什麼：抽驗 8 頁只有 1 頁 lastmod == dateModified，最大差 120 天 —— 因為舊版只在
+  「新增條目」或「手動傳 slug」時寫 lastmod，其他時候沿用歷史值，而批次機械改動
+  （全站補詞、內連修正）又會 bump 成當天 → lastmod 變成「有人動過檔」而非「內容真的改了」。
+- 因此：**批次機械改動不 bump lastmod**；要讓 Google 認為內容更新，唯一做法是改頁內
+  `dateModified`，產生器會自動跟上。
+- dateModified 缺漏的頁（無 Article/BlogPosting JSON-LD）→ 保留既有 lastmod 並列警告，
+  不拿 mtime 充當（避免 git checkout 造成全站假更新）。
 """
 import concurrent.futures as cf
 import http.client
+import json
 import re
 import sys
 import time
@@ -184,14 +196,120 @@ def get_expected_urls() -> set:
                 urls.add(DOMAIN + path_to_rel(f))
     return urls
 
-def get_lastmod_from_file(path: Path) -> str:
+# JSON-LD 解析用
+LD_JSON_RE = re.compile(
+    r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', re.S | re.I)
+# 這些 @type 的 dateModified 才算「本文內容版次」；FAQPage/BreadcrumbList/WebSite 不算
+ARTICLE_TYPES = {
+    'article', 'blogposting', 'newsarticle', 'techarticle', 'report',
+    'analysisnewsarticle', 'scholarlyarticle', 'webpage',
+}
+DATE_RE = re.compile(r'^(\d{4}-\d{2}-\d{2})')
+
+
+def _walk_ld(node):
+    """遞迴走訪 JSON-LD，產出所有 dict 節點（含 @graph 內層）。"""
+    if isinstance(node, dict):
+        yield node
+        for v in node.values():
+            yield from _walk_ld(v)
+    elif isinstance(node, list):
+        for v in node:
+            yield from _walk_ld(v)
+
+
+def get_jsonld_datemodified(path: Path):
+    """回傳頁內 JSON-LD 的 dateModified（YYYY-MM-DD）；找不到回 None。
+
+    為什麼不用 regex 抓第一個 dateModified（舊版做法）：
+    舊版 `re.search(r'"dateModified"')` 取檔案中第一個出現者，遇到 FAQPage／
+    BreadcrumbList 或註解裡的殘留字串就抓錯，而且完全不驗 JSON 合法性。
+    這裡只認合法 JSON-LD 區塊，且優先取 Article/BlogPosting/WebPage 這類版次節點，
+    多個候選取最大值（同頁多 schema 時最保守的「最後修改」）。
+    """
+    try:
+        c = path.read_text(encoding='utf-8', errors='ignore')
+    except Exception:
+        return None
+    preferred, others = [], []
+    for m in LD_JSON_RE.finditer(c):
+        try:
+            data = json.loads(m.group(1).strip())
+        except Exception:
+            continue
+        for obj in _walk_ld(data):
+            dm = obj.get('dateModified')
+            if not isinstance(dm, str):
+                continue
+            mm = DATE_RE.match(dm.strip())
+            if not mm:
+                continue
+            t = obj.get('@type')
+            if isinstance(t, list):
+                types = {str(x).lower() for x in t}
+            elif isinstance(t, str):
+                types = {t.lower()}
+            else:
+                types = set()
+            (preferred if types & ARTICLE_TYPES else others).append(mm.group(1))
+    for pool in (preferred, others):
+        if pool:
+            return max(pool)
+    return None
+
+
+def get_lastmod_from_file(path: Path):
+    """新增條目時用的 lastmod：JSON-LD dateModified → datePublished → mtime。"""
+    dm = get_jsonld_datemodified(path)
+    if dm:
+        return dm
     c = path.read_text(encoding='utf-8', errors='ignore')
-    # 2026-10-26（S-20261026-01）：lastmod 取「最後修改」而非「發布」
-    for key in ('dateModified', 'datePublished'):
-        m = re.search(rf'"{key}"\s*:\s*"([^"]+)"', c)
-        if m:
-            return m.group(1)[:10]
+    m = re.search(r'"datePublished"\s*:\s*"([^"]+)"', c)
+    if m:
+        return m.group(1)[:10]
     return datetime.fromtimestamp(path.stat().st_mtime).strftime('%Y-%m-%d')
+
+
+def sync_lastmod(content: str):
+    """把每個既有 <url> 的 lastmod 校正為該頁 JSON-LD dateModified。
+
+    - 有 dateModified → 直接覆寫（可往前也可往後，反映真實版次）
+    - 無 dateModified → 保留原值並記錄，不造假
+    回傳 (content, stats)
+    """
+    stats = {'changed': [], 'same': 0, 'no_dm': [], 'no_file': [], 'no_lastmod': 0}
+
+    def fix_block(m):
+        whole, block = m.group(0), m.group(1)
+        loc_m = re.search(r'<loc>([^<]+)</loc>', block)
+        if not loc_m:
+            return whole
+        loc = loc_m.group(1)
+        path = rel_to_path(urlparse(loc).path)
+        if not path.exists():
+            stats['no_file'].append(loc)
+            return whole
+        dm = get_jsonld_datemodified(path)
+        if not dm:
+            stats['no_dm'].append(urlparse(loc).path)
+            return whole
+        old_m = re.search(r'<lastmod>([^<]+)</lastmod>', block)
+        if not old_m:
+            stats['no_lastmod'] += 1
+            new_block = block.replace(loc_m.group(0),
+                                      f'{loc_m.group(0)}\n        <lastmod>{dm}</lastmod>', 1)
+            stats['changed'].append((urlparse(loc).path, None, dm))
+            return whole.replace(block, new_block, 1)
+        old = old_m.group(1).strip()
+        if old == dm:
+            stats['same'] += 1
+            return whole
+        new_block = block.replace(old_m.group(0), f'<lastmod>{dm}</lastmod>', 1)
+        stats['changed'].append((urlparse(loc).path, old, dm))
+        return whole.replace(block, new_block, 1)
+
+    content = re.sub(r'\s*(<url>.*?</url>)\s*', fix_block, content, flags=re.S)
+    return content, stats
 
 def rel_to_path(rel: str) -> Path:
     """把 URL path 轉回 dist/ 下的檔案路徑。'/' -> index.html"""
@@ -350,19 +468,41 @@ def main(bump_slugs=None, offline=False):
         new_blocks = ''.join(clone_nearest_block(content, url) for url in missing)
         content = content[:insert_pos] + new_blocks + content[insert_pos:]
     
-    # 更新指定 slug 的 lastmod
+    # 更新指定 slug 的 lastmod —— 只有該頁 JSON-LD dateModified 已是今天才真的 bump。
+    # 2026-11-11：批次機械改動（全站補詞、內連修正）不得 bump lastmod；要 bump 就得先改
+    # 頁內 dateModified（那才是 Google 看到的內容版次）。這裡只做守衛與提示。
     today = datetime.now().strftime('%Y-%m-%d')
     for slug in bump_slugs:
         for suffix in ('', '-en'):
             url = f'{DOMAIN}/blog/{slug}{suffix}'
-            if url in expected:
-                content = re.sub(
-                    rf'(<loc>{re.escape(url)}</loc>\s*)<lastmod>[^<]+</lastmod>',
-                    rf'\1<lastmod>{today}</lastmod>',
-                    content,
-                    count=1
-                )
-                print(f'  ~ bumped lastmod: {url} -> {today}')
+            if url not in expected:
+                continue
+            path = rel_to_path(urlparse(url).path)
+            dm = get_jsonld_datemodified(path) if path.exists() else None
+            if dm != today:
+                print(f'  ! skip bump {urlparse(url).path}: '
+                      f'dateModified={dm or "缺失"} != {today}（lastmod 跟隨 dateModified，不手動 bump）')
+                continue
+            content = re.sub(
+                rf'(<loc>{re.escape(url)}</loc>\s*)<lastmod>[^<]+</lastmod>',
+                rf'\1<lastmod>{today}</lastmod>',
+                content,
+                count=1
+            )
+            print(f'  ~ bumped lastmod: {urlparse(url).path} -> {today}')
+
+    # 全站 lastmod 校正：唯一真實來源 = 頁內 JSON-LD dateModified
+    content, st = sync_lastmod(content)
+    print(f'\n[lastmod] 校正 {len(st["changed"])} 筆，已相符 {st["same"]} 筆'
+          f'（無 dateModified {len(st["no_dm"])} 筆保留原值）')
+    for p, old, new in st['changed'][:15]:
+        print(f'       {p}  {old or "(無)"} -> {new}')
+    if len(st['changed']) > 15:
+        print(f'       …另有 {len(st["changed"]) - 15} 筆')
+    if st['no_dm']:
+        print(f'  ⚠️ 無 JSON-LD dateModified（保留既有 lastmod，不造假）: {len(st["no_dm"])} 筆')
+        for p in st['no_dm'][:10]:
+            print(f'       {p}')
     
     # 修復既有區塊的 hreflang 死連結 + /index 正規化（根治：既有 block 過去不重檢）
     content, dropped, normalized = repair_hreflang(content)
@@ -384,9 +524,49 @@ def main(bump_slugs=None, offline=False):
         print('Still missing:', final_missing)
     if final_orphan:
         print('Still orphan:', final_orphan)
+    return 0
+
+
+def audit(sample: int):
+    """抽樣比對 sitemap lastmod vs 頁內 JSON-LD dateModified（唯讀，不改檔）。"""
+    content = SITEMAP.read_text(encoding='utf-8')
+    rows = []
+    for m in re.finditer(r'\s*<url>(.*?)</url>\s*', content, re.S):
+        block = m.group(1)
+        lm = re.search(r'<loc>([^<]+)</loc>', block)
+        if not lm:
+            continue
+        loc = lm.group(1)
+        path = rel_to_path(urlparse(loc).path)
+        dm = get_jsonld_datemodified(path) if path.exists() else None
+        mm = re.search(r'<lastmod>([^<]+)</lastmod>', block)
+        rows.append((urlparse(loc).path, mm.group(1).strip() if mm else None, dm))
+
+    with_dm = [r for r in rows if r[2]]
+    if sample and sample < len(with_dm):
+        step = max(1, len(with_dm) // sample)
+        picked = with_dm[::step][:sample]
+    else:
+        picked = with_dm
+
+    ok = sum(1 for _, l, d in picked if l == d)
+    print(f'sitemap 條目 {len(rows)}｜有 dateModified {len(with_dm)}｜抽樣 {len(picked)}')
+    print(f'{"PASS" if ok == len(picked) else "FAIL"}  lastmod == dateModified: {ok}/{len(picked)}\n')
+    for p, l, d in picked:
+        flag = '✅' if l == d else '❌'
+        print(f'{flag} {p}\n     lastmod={l}  dateModified={d}')
+    bad_all = [(p, l, d) for p, l, d in with_dm if l != d]
+    if bad_all:
+        print(f'\n全站不符: {len(bad_all)} 筆（抽樣外）')
+    return 0 if ok == len(picked) else 1
+
 
 if __name__ == '__main__':
     args = sys.argv[1:]
     offline = ('--offline' in args) or ('--no-live' in args)
+    if '--audit' in args:
+        i = args.index('--audit')
+        n = int(args[i + 1]) if i + 1 < len(args) and args[i + 1].isdigit() else 8
+        sys.exit(audit(n))
     bump = [a for a in args if not a.startswith('-')]
-    main(bump_slugs=bump, offline=offline)
+    sys.exit(main(bump_slugs=bump, offline=offline))
