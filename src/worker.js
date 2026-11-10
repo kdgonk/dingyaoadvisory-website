@@ -508,23 +508,35 @@ export default {
     // 114340、title 相同）。GSC 已出現「替代頁面（有適當標準標記）14」與
     // 「重複網頁，使用者未選取標準網頁 3」。主網域是唯一 canonical，www 一律 301。
     //
-    // 保留完整路徑與 query string（含結尾斜線原樣，不重新正規化），避免 301 之後
-    // 多一跳或產生 404。GET/HEAD 用 301；其他方法用 308 —— 301 會被瀏覽器改寫成
-    // GET，任何非 GET 請求（例如舊客戶端打 www 的 /api/*）會靜默變形。
+    // 保留 query string；pathname 先套用 apex 的 html_handling: auto-trailing-slash
+    // 正規化（`/about/`、`/about.html`、`/about/index.html` → `/about`、`/index.html`
+    // → `/`），直接 301 到終點。為什麼：若原樣轉發，`www/about/` 會變成
+    //   301 → apex/about/ → 307 → apex/about（實測 2 跳），而 307 是暫時轉址、
+    //   Googlebot 每爬一次都要重走；301 的目標必須是終點，不能是另一條轉址。
+    //
+    // GET/HEAD 用 301；其他方法用 308 —— 301 會被瀏覽器改寫成 GET，任何非 GET
+    // 請求（例如舊客戶端打 www 的 /api/*）會靜默變形。
     //
     // ⚠️ 這段必須搭配 wrangler.jsonc 的 `run_worker_first: ["/*", …排除靜態資產]`。
     //    Static Assets 預設「先服務資產、Worker 不執行」，而 www 的 /、/blog、/about
     //    全都有實體檔 → 只改 Worker 的話這段程式對那些路徑永遠不會被叫到
     //    （2026-11-10 實測：www 缺頁仍回資產層的 `public, max-age=0` + cf-cache-status
     //    HIT ⇒ Worker 沒跑）。
-    if (url.hostname === 'www.dingyaoadvisory.tw') {
-      const target = 'https://dingyaoadvisory.tw' + url.pathname + url.search;
+    // 尾點（`www.dingyaoadvisory.tw.` 這種 FQDN 寫法）也要命中，否則該寫法仍是完整鏡像。
+    const reqHost = url.hostname.replace(/\.$/, '');
+    if (reqHost === 'www.dingyaoadvisory.tw') {
+      let p = url.pathname;
+      if (p.endsWith('/index.html')) p = p.slice(0, -'/index.html'.length) || '/';
+      else if (p.endsWith('.html')) p = p.slice(0, -'.html'.length);
+      if (p.length > 1) p = p.replace(/\/+$/, '') || '/';
+      const target = 'https://dingyaoadvisory.tw' + p + url.search;
       const status = (request.method === 'GET' || request.method === 'HEAD') ? 301 : 308;
       return new Response(null, {
         status,
         headers: {
           'Location': target,
           // 永久導向可以快取，但只給 1 小時上限：日後若要改回或改規則，不必逐 URL purge。
+          // ⚠️ max-age 只管 CDN／中間層；301 一旦進瀏覽器就是近乎永久，rollback 需使用者清快取。
           'Cache-Control': 'public, max-age=3600'
         }
       });
