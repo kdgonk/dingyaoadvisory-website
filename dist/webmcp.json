@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-16",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,19 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026",
+          "title": "南非幣定存利率比較 2026：玉山 4.55%，但換匯先付 4.53%",
+          "description": "南非幣定存利率 2026 年 11 月比較：玉山銀行一年期 4.55%（2026-11-10 牌價）、南非本地貨幣市場 7.10–7.45%，差 2.55–2.90 個百分點。本文用臺銀即期牌價實算換匯來回價差 4.53%，等於 1.6 到 1.8 年的利差，並附 2026-11-19 SARB 決議三情境與非居民開戶退件點。立即索取你的定存試算。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026",
+          "url_en": "https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026-en",
+          "language": "zh-TW",
+          "category": "南非開戶 / 外幣定存 / 跨境資金",
+          "published": "2026-11-16",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026-hero.webp",
+          "title_en": "South Africa Fixed Deposit Rates: 4.55% vs 7%",
+          "description_en": "South Africa fixed deposit rates 2026: E.SUN pays 4.55%, local money market 7.10-7.45%. A 4.53% round-trip FX cost equals 1.6-1.8 years of the rate gap."
+        },
         {
           "slug": "south-africa-school-curriculum-caps-ieb-cambridge-2026",
           "title": "南非學制怎麼選？CAPS、IEB、Cambridge 與 IB 的差別",
@@ -1529,6 +1542,11 @@
       "zh": "https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026",
       "en": "https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026-en",
       "purpose": "南非資金匯回台灣執行手冊：利息/本金/賣房款四組 BoP 類別、SARB 2026-08-11 SADC 調和版分類、非居民匯出代碼、一次與分批匯回成本、s50D 利息 15% 扣繳豁免邊界、台灣端海外所得計入基本所得額申報"
+    },
+    "south_africa_fixed_deposit_rate_comparison_taiwan_banks_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026",
+      "en": "https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026-en",
+      "purpose": "南非幣定存利率比較：台灣端銀行掛牌 4.55%（玉山 2026-11-10）vs 南非本地貨幣市場 7.10–7.45%，換匯來回價差 4.53% 實算（等於 1.6–1.8 年利差）、SARB 2026-11-19 決議三情境、非居民開戶退件點與 SARS s50D 利息扣繳豁免邊界"
     }
   },
   "contact": {

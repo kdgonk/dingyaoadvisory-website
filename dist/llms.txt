@@ -27,6 +27,8 @@
 - [聯絡諮詢](/contact) — 預約諮詢服務
 
 ### 部落格文章 (Blog)
+- [南非幣定存利率比較 2026：玉山 4.55%，但換匯先付 4.53%](https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026) — 南非幣定存利率 2026 年 11 月比較：玉山銀行一年期 4.55%（2026-11-10 牌價）、南非本地貨幣市場 7.10–7.45%，差 2.55–2.90 個百分點。本文用臺銀即期牌價實算換匯來回價差 4.53%，等於 1.6 到 1.8 年的利差，並附 2026-11-19 SARB 決議三情境與非居民開戶退件點。立即索取你的定存試算。
+- [South Africa Fixed Deposit Rates: 4.55% vs 7%](https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026-en) — South Africa fixed deposit rates 2026: E.SUN pays 4.55%, local money market 7.10-7.45%. A 4.53% round-trip FX cost equals 1.6-1.8 years of the rate gap.
 - [南非學制怎麼選？CAPS、IEB、Cambridge 與 IB 的差別](https://dingyaoadvisory.tw/blog/south-africa-school-curriculum-caps-ieb-cambridge-2026) — 南非的全國畢業證書只有一張 NSC：CAPS 是國定課程，IEB 與 SACAI 是另兩個受 Umalusi 認證的評量機構，南非所有大學同等承認。Cambridge 與 IB 則是獨立學制，在開普敦只有少數學校提供，申請南非大學還須向 USAf 取得豁免證明（2026 年 R1,070、約 6 至 8 週）。本文整理開普敦四種學制的實際差別、真的有在教的學校、2026 年學費區間與台幣換算。立即索取學制對照表。
 - [South Africa School Curriculum: CAPS vs IEB | DingYao Advisory](https://dingyaoadvisory.tw/blog/south-africa-school-curriculum-caps-ieb-cambridge-2026-en) — South Africa has one school certificate, the NSC. CAPS and IEB both lead to it. Cambridge and IB need a USAf exemption costing R1,070 and taking 6-8 weeks.
 - [南非讀大學 2026：開普敦大學入學門檻、學費與回台學歷認證](https://dingyaoadvisory.tw/blog/cape-town-university-international-students-guide-2026) — 開普敦大學 2027 學年大學部申請 2026-04-01 開放、07-31 截止，逾期不受理。本文整理國際學生四層費用（學分費＋國際學期費＋行政費＋住宿 R89,520 起）、入學門檻、NBT 與英語要求，以及回台學歷認證的查證流程，全部附官方來源與 2026-10-31 抓取日。立即索取南非大學申請時程檢核表。
@@ -215,6 +217,14 @@
 
 Last updated: 2026-10-30
 ## Blog Articles
+
+## 南非幣定存利率比較 2026：玉山 4.55%，但換匯先付 4.53%
+- URL (ZH): https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026
+- URL (EN): https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026-en
+- Published: 2026-11-16
+- Category: 南非開戶 / 外幣定存 / 跨境資金
+- Key entities: E.SUN Bank ZAR one-year fixed deposit, South African money market rate 7.10-7.45%, round-trip FX spread 4.53%, TWD 1-year deposit 1.725%, SARB MPC 2026-11-19, SARS section 50D withholding exemption, Cape Town non-resident banking
+- Summary: 南非幣定存利率 2026 年 11 月比較：玉山銀行一年期 4.55%（2026-11-10 牌價）、南非本地貨幣市場 7.10–7.45%，差 2.55–2.90 個百分點。本文用臺銀即期牌價實算換匯來回價差 4.53%，等於 1.6 到 1.8 年的利差，並附 2026-11-19 SARB 決議三情境與非居民開戶退件點。立即索取你的定存試算。
 ## 南非幣匯回台灣完整流程：BOP 類別、匯率與申報（2026）
 - URL (ZH): https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026
 - URL (EN): https://dingyaoadvisory.tw/blog/south-africa-interest-remittance-to-taiwan-2026-en
