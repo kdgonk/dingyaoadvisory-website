@@ -2,28 +2,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026-en</loc>
-    <news:news>
-      <news:publication>
-        <news:name>DingYao Advisory</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T00:00:00+08:00</news:publication_date>
-      <news:title>South Africa Fixed Deposit Rates: 4.55% vs 7%</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>鼎曜國際顧問</news:name>
-        <news:language>zh-tw</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T00:00:00+08:00</news:publication_date>
-      <news:title>南非幣定存利率比較 2026：玉山 4.55%，但換匯先付 4.53%</news:title>
-    </news:news>
-  </url>
-
 </urlset>
