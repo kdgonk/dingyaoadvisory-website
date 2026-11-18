@@ -770,6 +770,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -1045,6 +1047,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>Stellenbosch 最大的吸引力之一，在於其極高的性價比。以下是一對退休夫妻的月生活費估算：</p>
 
+      <div class="table-scroll">
       <table class="cost-table">
         <thead>
           <tr>
@@ -1091,6 +1094,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p>以新台幣 42,500-68,000 元的月開銷，即可在 Stellenbosch 享受包含高爾夫、品酒與精緻餐飲的退休生活，這在台北或東京同等品質的生活至少需要 2-3 倍的預算。</p>
     </section>

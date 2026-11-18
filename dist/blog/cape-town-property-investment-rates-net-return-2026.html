@@ -705,6 +705,8 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -895,6 +897,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>下表整合兩個來源的區域級數字。要特別說明三件事：① <strong>「參考價／月租」是掛牌樣本的<em>要價</em>與<em>要租</em>，不是成交價</strong>；② <strong>「淨收益率（參考）」是本文依後段五層費用結構推估的結果，不是任何機構的實測值</strong>；③ 不同來源因樣本、房型與統計期間不同，同一區域的數字會不一致（同一區的 1 房與 3 房收益率可以差一倍以上）。因此表中數字一律以「市場參考區間」看待，不可當作單一保證值，也不構成投資建議。</p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：區域（開普敦）、房型、參考要價、參考要租與毛淨收益率">
         <thead>
           <tr><th scope="col">區域（開普敦）</th><th scope="col">房型</th><th scope="col">參考要價</th><th scope="col">參考要租</th><th scope="col">毛收益率</th><th scope="col">淨收益率（參考）</th></tr>
@@ -910,6 +913,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>Southern Suburbs</td><td>1–2 房</td><td>—</td><td>—</td><td>約 10.3–10.5%（毛）</td><td>—</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>這張表最重要的訊息是「區域分化」。高價濱海區（Camps Bay、Bantry Bay）毛收益率約 6.6–7.3%，扣掉五層費用後淨收益率可能只剩 4% 上下（市場參考區間）——它們的投資邏輯偏向資本利得與稀缺性，而不是租金現金流。反之，開普敦的中低價區（Milnerton、Southern Suburbs、Muizenberg）毛收益率約 10–14.6%，淨收益率相對較高，現金流導向的買家通常會從這些區段找起。</p>
 
@@ -941,6 +945,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>Numbeo 2026 年 6 月的推估顯示，開普敦市中心一房月租 <strong>R17,188</strong>、約翰尼斯堡 <strong>R8,620</strong>，是 <strong>1.994 倍</strong>；但市中心每平方米售價開普敦 <strong>R37,954</strong>、約堡 <strong>R17,264</strong>，是 <strong>2.198 倍</strong>。租金倍數小於售價倍數，代表開普敦的毛租金收益率只有約堡的約九成——這就是「漲最兇的地方，收益率最低」的算術版本。</p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：開普敦與約翰尼斯堡租金與售價倍數比較（Numbeo 2026 年 6 月推估）">
         <thead><tr><th scope="col">項目</th><th scope="col">開普敦</th><th scope="col">約翰尼斯堡</th><th scope="col">倍數</th></tr></thead>
         <tbody>
@@ -949,6 +954,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><th scope="row">毛租金收益率（相對）</th><td colspan="2">1.994 ÷ 2.198 = 0.907</td><td>約堡的 90.7%</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>這個算式<strong>有一個必要前提：兩邊比較的是同口徑的「一房」單位，也就是假設兩地一房的面積相同</strong>。在這個前提下，面積同時出現在分子（租金對應的面積）與分母（售價對應的面積）而相消，算式才成立；若兩地一房面積不同，面積比會留在式子裡——若約堡一房比開普敦一房大兩成，結果會從 90.7% 變成約 108.8%，「開普敦只有九成」的結論就反轉。因此 1.994 ÷ 2.198 = 0.907 只在同口徑前提下有效，不能當成無條件成立的結論。它<strong>也不能</strong>反推任何一個絕對收益率數字——倍數只說明兩地的相對關係，絕對值仍要看實際成交租金與實際成交售價。</p>
 
@@ -962,6 +968,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p><strong>直接回答：南非的利率基準有兩個——央行回購利率（repo）7.25% 與最優惠利率（prime）10.75%，兩者於 2026-09-25 生效。房貸通常以 prime 加減碼定價；2026 年 8 月 ooba 房貸機構統計的平均成交利率約為 prime − 0.75%，比 1–7 月的約 prime − 0.64% 更優惠。外國人南非房貸的核貸條件通常較本地買家嚴格，實際利率與成數仍須個案審核。</strong></p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：利率／指標、水準（市場參考）、對投資人的意涵">
         <thead>
           <tr><th scope="col">利率／指標</th><th scope="col">水準（市場參考）</th><th scope="col">對投資人的意涵</th></tr>
@@ -973,6 +980,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>通膨（CPI）</td><td>4.3% → 4.4%（近期）</td><td>通膨若受控，利率環境相對穩定，利於現金流估算</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>把利率放進報酬率計算，關鍵是「現金買家」與「槓桿買家」的差別。現金買家的淨收益率不受利率影響；槓桿買家在租金扣掉費用後，還要再付貸款利息。如果貸款利率接近 10%，而開普敦毛收益率只有約 9.49%，在還沒扣除五層費用之前就可能出現負向現金流——這就是為什麼南非房產投資利率（prime 10.75%）的變動，對槓桿買家的淨報酬影響特別大。</p>
 
@@ -1032,6 +1040,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p><strong>直接回答：台北住宅租金收益率市場參考約 1–2%，開普敦公寓毛收益率約 9.49%（市場參考區間）。名目差距相當明顯，但兩者不是直接比較的關係——必須同時考慮稅制、匯率、流動性、持有成本與法規差異。</strong></p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：比較項目、台北、開普敦">
         <thead>
           <tr><th scope="col">比較項目</th><th scope="col">台北</th><th scope="col">開普敦</th></tr>
@@ -1044,6 +1053,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>主要風險</td><td>收益率低、資金集中單一市場</td><td>匯率波動、法規與市場差異</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>這張表想表達的不是「開普敦一定比較好」，而是「兩個市場的報酬結構不同」。台北的優勢是流動性高、法規熟悉、資金取得容易，但收益率低；開普敦的名目收益率高，但要扣掉匯率、跨境成本與較高的資訊門檻。理性的做法，是把兩者放進「整體資產配置」一起看，而不是單看哪邊的百分比高。</p>
 

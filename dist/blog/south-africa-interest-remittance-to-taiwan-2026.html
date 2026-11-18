@@ -684,6 +684,8 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -834,6 +836,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
     <section class="article-body fade-in visible">
 <h2>南非幣利息要匯回台灣，第一步該分清楚的是哪三種錢？</h2>
       <p><strong>先把「利息」、「本金」與「賣房款」分開，因為它們在南非的分類系統裡是三個不同的東西。</strong>這一步沒做，後面填什麼單都會被退回。開普敦與約翰尼斯堡的銀行在受理非居民匯出時，第一個問題永遠是「這筆錢的來源性質」，不是「金額多少」。</p>
+      <div class="table-scroll">
       <table class="tax-table">
         <thead><tr><th>錢的性質</th><th>怎麼產生</th><th>南非端文件</th><th>匯出時的分類邏輯</th></tr></thead>
         <tbody>
@@ -842,6 +845,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td><strong>賣房款</strong></td><td>出售開普敦不動產後的價金</td><td>買賣契約、過戶證明、SARS 預扣繳款收據</td><td>非居民不動產處分（510 01）</td></tr>
         </tbody>
       </table>
+      </div>
       <p>為什麼要分這麼細？因為南非的出口申報是<strong>逐筆按性質</strong>登錄的。把利息申報成本金，或把本金申報成投資收益，不會讓你多繳稅，但會讓這筆錢在銀行的合規審查裡「說不通」——而說不通的匯款，處理時間會從 3 個工作日變成 3 到 6 週。這是開普敦非居民帳戶最常見的延誤來源。</p>
       <h3>同一個帳戶裡的錢，可能同時是三種</h3>
       <p>一個典型的台灣投資人帳戶長這樣：2024 年從台灣匯入 R1,000,000（本金），兩年下來累積利息 R140,000（利息），2026 年再從開普敦賣掉一間小套房拿到 R1,800,000（賣房款）。這三筆在同一個帳戶餘額裡，但匯出時是三張不同的申報，各自要帶不同的文件。銀行不會幫你分，你必須自己分。</p>
@@ -891,6 +895,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
     <section class="article-body fade-in visible">
 <h2>利息、本金、賣房款各走哪一組 BoP 類別？</h2>
       <p><strong>四組會用到的類別，其餘全部查既有對照表。</strong>依 Nedbank 公布的 SARB 分類（2026-08 版），與台灣投資人直接相關的匯出類別如下——注意這是「你的交易會落在哪一類」的對照，不是可以自行指定的欄位。</p>
+      <div class="table-scroll">
       <table class="tax-table">
         <thead><tr><th>BoP 類別</th><th>官方描述</th><th>對應你的哪一筆錢</th></tr></thead>
         <tbody>
@@ -900,6 +905,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td><strong>510 01</strong></td><td>Disinvestment of property by a non-resident individual</td><td>出售不動產後的價金匯出</td></tr>
         </tbody>
       </table>
+      </div>
       <p>（資料來源：南非 Nedbank, FinSurv BoP categories guide, Version 20250622/v003, 2026-08）</p>
       <h3>利息到底走 313 00 還是 309 08？</h3>
       <p>這是實務上最常被問的一題，也是本文最需要誠實回答的一題：<strong>兩者的界線在於「這筆利息是不是因為一筆借款而支付」。</strong>309 系列在官方分類裡是「interest paid（paid to a non-resident in respect of loans / not in respect of loans）」，也就是圍繞借貸關係設計的；313 00 則是「非居民個人投資所產生的所得」。南非幣定存與貨幣市場帳戶的利息，性質上屬於後者（投資收益），不是借貸利息。</p>
@@ -925,6 +931,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <h2>一次匯回還是分批匯回？匯率與手續費怎麼算？</h2>
       <p><strong>沒有標準答案，但有可計算的取捨。</strong>這個問題在開普敦的非居民帳戶裡最常被問，答案取決於三件事：金額級距、你對南非幣走勢的判斷、以及你何時需要這筆台幣。</p>
       <h3>先看成本結構：三筆固定成本＋一筆比例成本</h3>
+      <div class="table-scroll">
       <table class="tax-table">
         <thead><tr><th>成本項目</th><th>性質</th><th>一次匯回</th><th>分三次匯回</th></tr></thead>
         <tbody>
@@ -934,6 +941,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>匯差（spread）</td><td>比例（約成交金額的固定百分比）</td><td>集中在一天</td><td>分散在三天</td></tr>
         </tbody>
       </table>
+      </div>
       <p>結構很清楚：<strong>分批匯回是用「三次固定手續費」換「匯率分散」。</strong>金額小的時候，固定成本占比高，分批不划算；金額大的時候，匯率波動的期望損失可能遠大於手續費總額。</p>
       <h3>用實際數字感覺一下</h3>
       <p>以 2026 年 10 月 23 日的參考匯率 1 南非幣 ≈ 新台幣 1.975 元計算（僅供試算，實際以交易當日銀行牌告為準）：R1,500,000 的南非幣，在 1.975 的價位約合新台幣 2,962,500 元。若匯率在三個月內從 1.975 走到 1.88（約 -4.8%），同一筆 R1,500,000 只能換到約新台幣 2,820,000 元，差額超過 14 萬台幣——這個量級遠大於三筆電匯手續費的總和。</p>

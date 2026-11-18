@@ -671,6 +671,8 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -866,6 +868,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>換句話說，<strong>開普敦房價下跌是「局部現象」，不是「全市趨勢」</strong>。但正因為它是局部現象，才更需要被單獨攤開——只用全市平均去理解這 9 個區，你完全看不到它們發生了什麼事。</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -888,6 +891,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td><strong>Tarragona</strong></td><td>Hout Bay</td><td>R9,600,000</td><td>R6,320,000</td><td>−34.1%</td></tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：The South African〈Property prices are dropping in these Cape Town suburbs〉（2026-09-11，本文作者已實抓原頁核實全表數字）。表中均價為該開普敦郊區當期平均成交價，屬市場參考值，未區分產品類型；不同產品結構的均價不可直接跨區比較。</p>
 
       <p>這張開普敦郊區對照表有一個必須先講清楚的陷阱：<strong>Wynberg 對 2018 年是 +5.4%（不是下跌）</strong>，它只是已從 2023-2025 年間的高點回落約 10.5%；同理，Harbour Heights 對 2018 是 −1.5%，相對 2023 年峰值 R235 萬則是明顯回落。也就是說，「跌」的定義高度取決於你選哪個基準點——開普敦同一個郊區可以是「十年上漲」與「近兩年下跌」同時成立。這一點在第四節會完整拆解。</p>
@@ -932,6 +936,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p><strong>直接回答：跌幅從 −1.5% 到 −34.1% 不等，而且成因明顯分成三類。</strong>把它們按成因歸類之後，你會發現「開普敦郊區房價下跌」這件事其實同時包含三種完全不同的現象——把它們混在一起談，是誤判的開始。</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -968,6 +973,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：The South African（2026-09-11，開普敦郊區房價專題）。分類由本文依原始報導敘述歸納，非原始報導自身的分類。均價為市場參考值，非保證或預測值。</p>
 
       <p>三類之中，<strong>A 類與 C 類最容易被誤讀</strong>。A 類會讓人以為「開普敦這個地段不行了」，但實際上可能只是當期成交的產品組合變了；C 類則會讓人以為「開普敦這裡崩盤了」，但實際上可能只是成交件數從 1 件變 2 件。<strong>而 B 類才是真正需要留意的一群</strong>——它不是被單一產品帶偏，而是整個開普敦郊區的價格確實離開了高點。</p>
@@ -1002,6 +1008,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p><strong>證據三：租金面沒有同步走弱。</strong>依 PayProp Q2 2026 租賃指數，開普敦平均月租為 <strong>R12,561，年增 9.7%（一年增加約 R1,107）</strong>，西開普省仍是全南非租金最貴的省份。房價與租金同時走弱，才是需求面轉折的訊號；目前只有「局部郊區的均價」走弱，租金沒有。</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1019,6 +1026,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>成交量</td><td>Tarragona 等區成交量極小（1-2 件）</td><td>成交量放大伴隨價格下跌（拋售）</td><td>未出現</td></tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：The South African（2026-09-11、2026-09-22 開普敦房市報導，含 Lightstone 數據經 Pam Golding 引用）、PayProp Q2 2026 租賃指數（經 EWN 2026-09-18 報導）。表中數字均為市場參考值，非保證或預測值；過往績效不代表未來收益。</p>
 
       <p>所以，開普敦房市泡沫這個問題的正確問法不是「有沒有泡沫」，而是「<strong>你買的是哪一種產品、在哪一個供給結構裡</strong>」。在高房價基期下，分層產權的供給量一旦增加，成交均價就會被拉低——這與地段價值是兩件事。</p>
@@ -1044,6 +1052,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>更值得學的一課是<strong>基準點的選擇會改變結論</strong>。同一份開普敦資料，換一個起算點，同一個郊區的跌幅可以從 2% 變成 36%：</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1059,6 +1068,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td><strong>Harbour Heights</strong></td><td>R1,620,000 → R1,600,000（−1.5%）</td><td>對 2023 年峰值 R2,350,000 為明顯回落；但自 2024 年（約 R1,000,000）以來是上升</td><td>上升、回落同時成立</td></tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：The South African（2026-09-11，開普敦郊區專題）。峰值年份與數值均為原始報導所載。市場參考值，非保證或預測值。</p>
 
       <div class="process-steps">
@@ -1126,6 +1136,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
         </div>
       </div>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1143,6 +1154,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>資訊落差</td><td>實價登錄可查</td><td>郊區級資料多為英文媒體統計，中文資訊近乎空白</td><td>需自行建立跨語言判讀能力</td></tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：The South African（2026-09-11、2026-09-22 開普敦房市報導）、PayProp Q2 2026（經 EWN 2026-09-18）。表中數字為市場參考值，非保證或預測值；過往績效不代表未來收益。</p>
 
       <p>最後要強調的是定位：本文揭露開普敦郊區房價下跌的完整數據，不是為了勸退，而是因為<strong>資訊顧問的價值在於讓你看到全部，而不是只看到平均數</strong>。全站多數文章談的是開普敦的成長動能——這篇負責補上另一面。兩者合起來，才是可以拿去做決策的完整圖像。開普敦置產風險是真實存在的，但它通常不在「全市平均」裡，而在「你買的那一種產品、那一個供給結構」裡。</p>

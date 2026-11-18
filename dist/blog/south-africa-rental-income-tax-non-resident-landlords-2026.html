@@ -654,6 +654,8 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -808,6 +810,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <!-- AI-DEF: citable definition sentence -->
       <p><strong>南非租金所得稅是對出租不動產的應稅利潤課徵的所得稅，2026/27 年度稅率自 18% 起、最高 45%。</strong>南非稅務局（SARS）的原文寫得很直接：租金收入要「加進你的其他所得」，再「減掉與產生這筆租金有關的允許費用」，差額才是應稅所得。也就是說，課的不是 R150,732 這個租金總額，而是扣完成本後的利潤。</p>
       <p>這對開普敦的台灣房東有一個實際意義：租金不是獨立課稅，而是<strong>疊在你其他南非來源所得之上</strong>按邊際稅率往上加。若你在南非只有這一間出租公寓，應稅所得會落在最低級距；若你在南非還有薪資、股利或其他租金，同樣的租金利潤會被推到更高級距。南非的稅務年度是每年 3 月 1 日到次年 2 月底，不是日曆年。</p>
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：應稅所得（R）、稅額計算方式（2026/27 年度）、邊際稅率">
         <thead><tr><th scope="col">應稅所得（R）</th><th scope="col">稅額計算方式（2026/27 年度）</th><th scope="col">邊際稅率</th></tr></thead>
         <tbody>
@@ -820,6 +823,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>1,878,601 以上</td><td>R666,339 + 超過 R1,878,600 部分 × 45%</td><td>45%</td></tr>
         </tbody>
       </table>
+      </div>
       <p>同一個稅表上還有兩個常被忽略的數字：<strong>初級回扣 R17,820</strong>（2026/27 年度），以及<strong>未滿 65 歲者的課稅門檻 R99,000</strong>。回扣是「算出稅額後再減」，不是「先減所得」；門檻則是「所得低於這個數字通常不必繳稅」。（資料來源：SARS《Rates of Tax for Individuals》，2027 稅務年度，2026-10-31 抓取）</p>
 
     </section>
@@ -842,6 +846,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <!-- AI-DEF: citable definition sentence -->
       <p><strong>南非稅務局允許從租金收入扣除市政稅、貸款利息、保險、維修、仲介費與管理費，僅限生產租金收入的支出。</strong>SARS 列出的允許項目包括：市政稅（rates and taxes）、房貸利息（bond interest）、廣告費、房產仲介的佣金、房屋本身的保險（不含家財保險與貸款保險）、園藝服務、實際出租範圍的維修，以及保全與物業管理費（levies）。</p>
       <p>不能扣的同樣重要：<strong>資本性質的支出與私人支出</strong>。SARS 明確區分「維修」與「改善」—— 把損壞的熱水器修回原本功能是維修，可以扣；把整間浴室升級成更高規格是改善，不能扣，但可以計入物業的成本基礎，未來賣出計算資本利得時抵減。另外，住宅出租在增值稅（VAT）上屬於免稅供應，所以你付的 VAT 也不能拿來扣抵。</p>
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：費用項目、可否從開普敦租金收入扣除、實務提醒">
         <thead><tr><th scope="col">費用項目</th><th scope="col">可否從開普敦租金收入扣除</th><th scope="col">實務提醒</th></tr></thead>
         <tbody>
@@ -854,6 +859,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>裝修升級、加建</td><td>不可</td><td>屬資本支出，計入成本基礎而非當期費用</td></tr>
         </tbody>
       </table>
+      </div>
       <p>如果房子只有一部分出租（例如主屋自住、花園小屋出租），費用必須<strong>按面積分攤</strong>。SARS 的官方範例是把出租面積除以房屋總面積（含車庫與附屬建物）得出比例，再把各項費用乘上該比例。對開普敦常見的「主屋＋花園小屋」配置，這個比例會直接決定你能扣多少，也是稅務顧問第一個會問你的數字。（資料來源：SARS《Tax on Rental Income》，2024-12-13 更新）</p>
 
     </section>
@@ -900,6 +906,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <h2 id="h2-4">稅後實拿怎麼算？用開普敦平均月租 R12,561 走一遍</h2>
 <!-- AI-DEF: citable definition sentence -->
       <p><strong>以開普敦平均月租 R12,561 計，年毛租金 R150,732，扣費用後應稅 R81,254，18% 稅額 R14,626。</strong>下面這張表把每一層列出來，物件假設是 R2,000,000 的開普敦兩房公寓、貸款利息全額可扣、空置一個月。</p>
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：計算層、金額（R）、說明">
         <thead><tr><th scope="col">計算層</th><th scope="col">金額（R）</th><th scope="col">說明</th></tr></thead>
         <tbody>
@@ -913,7 +920,9 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>淨收益率（對 R2,000,000）</td><td>3.33%</td><td>毛租金滿租為 7.54%、實收為 6.91%</td></tr>
         </tbody>
       </table>
+      </div>
       <p>這個 3.33% 與帳面上「開普敦租金收益率 7–9%」的落差，全部來自三件事：空置、費用、稅。如果將應稅所得拉高到不同級距，稅負的形狀會明顯改變 —— 下表是同一個費率結構下三個級距的對照，讓你判斷「多買一間」會把你推進哪一格。</p>
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：應稅所得（R）、所得稅（R）、有效稅率">
         <thead><tr><th scope="col">應稅所得（R）</th><th scope="col">所得稅（R）</th><th scope="col">有效稅率</th></tr></thead>
         <tbody>
@@ -922,6 +931,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>400,000</td><td>84,392</td><td>21.1%</td></tr>
         </tbody>
       </table>
+      </div>
       <p>這也是為什麼我們在開普敦看投報率時，會要求客戶把「稅後現金流」單獨算一欄。毛收益率適合用來篩區域，稅後現金流才是決定你要不要持有第二間、第三間的依據。（資料來源：PayProp Q2 2026 租金指數，EWN 2026-09-18 報導）</p>
 
     </section>
@@ -942,6 +952,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
 <h2 id="h2-5">租金所得稅和 s35A 賣方預扣稅差在哪？</h2>
 <p><strong>租金所得稅課持有期間的利潤，s35A 預扣稅扣出售當下的價金，兩者是不同時點、不同納稅機制。</strong>同一個開普敦物件，你在持有時每年申報租金利潤，賣出時則由買方（透過過戶律師）從價金中預扣一筆稅款繳給 SARS，非居民個人的預扣率是 7.5%。</p>
+      <div class="table-scroll">
       <table class="tax-table" aria-label="表：比較項目、租金所得稅（持有期）、s35A 預扣稅（出售時）">
         <thead><tr><th scope="col">比較項目</th><th scope="col">租金所得稅（持有期）</th><th scope="col">s35A 預扣稅（出售時）</th></tr></thead>
         <tbody>
@@ -952,6 +963,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>可否退還</td><td>年度結算多退少補</td><td>可申請 NR03 取得豁免或降低預扣</td></tr>
         </tbody>
       </table>
+      </div>
       <p>實務上兩者會交錯：賣出的那一年，你既要申報當年租金利潤，也要處理 s35A 的預扣與 NR03 申請。若沒有事先申請 NR03，7.5% 會先被扣走，之後再向 SARS 申請退還 —— 對需要把資金匯回台灣的人，這段時間差會直接影響你的匯款排程。</p>
 
     </section>

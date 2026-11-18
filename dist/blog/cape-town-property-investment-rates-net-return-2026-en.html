@@ -703,6 +703,8 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -893,6 +895,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>The table below combines two sources at suburb level. Note carefully: because sample, unit type and period differ, the same suburb produces different figures (a one-bedroom and a three-bedroom in the same area can differ by more than double). Every figure here is therefore a market-reference range, not a single guaranteed value, and not investment advice. Three labels matter: (1) <strong>the reference price and rent are asking figures from listing samples, not transacted prices</strong>; (2) <strong>the net yield column is this article's own estimate built on the five cost layers below, not a measured figure from any institution</strong>; (3) sources differ in sample, unit type and period, so the same suburb can appear to differ by more than double.</p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="Table: suburb, unit type, reference asking price, reference asking rent and gross/net yield">
         <thead>
           <tr><th scope="col">Suburb (Cape Town)</th><th scope="col">Unit</th><th scope="col">Reference asking price</th><th scope="col">Reference asking rent</th><th scope="col">Gross yield</th><th scope="col">Net yield (ref.)</th></tr>
@@ -908,6 +911,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>Southern Suburbs</td><td>1-2 bed</td><td>-</td><td>-</td><td>~10.3-10.5% (gross)</td><td>-</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>The most important message is divergence. Premium coastal areas (Camps Bay, Bantry Bay) carry gross yields of about 6.6-7.3%, and after five cost layers may leave a net yield of only around 4% (market-reference range) - their investment logic leans on capital gain and scarcity rather than rental cash flow. Conversely, Cape Town's lower-priced suburbs (Milnerton, Southern Suburbs, Muizenberg) show gross yields of about 10-14.6%, with relatively higher net yields, so cash-flow-oriented buyers usually start there.</p>
 
@@ -939,6 +943,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>Numbeo's June 2026 estimates put a one-bedroom in central Cape Town at <strong>R17,188</strong> a month against <strong>R8,620</strong> in Johannesburg, a <strong>1.994x</strong> multiple; price per square metre in the same districts is <strong>R37,954</strong> against <strong>R17,264</strong>, a <strong>2.198x</strong> multiple. When the rent multiple is smaller than the price multiple, Cape Town's gross rental yield comes out at roughly nine tenths of Johannesburg's — the arithmetic version of "the fastest-growing city has the lowest yield".</p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="Table: Cape Town and Johannesburg rent and price multiples, Numbeo June 2026 estimates">
         <thead><tr><th scope="col">Item</th><th scope="col">Cape Town</th><th scope="col">Johannesburg</th><th scope="col">Multiple</th></tr></thead>
         <tbody>
@@ -947,6 +952,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><th scope="row">Gross rental yield (relative)</th><td colspan="2">1.994 / 2.198 = 0.907</td><td>90.7% of Johannesburg</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>This calculation rests on <strong>one necessary premise: both cities are compared on the same one-bedroom basis, i.e. the two one-bedroom units are assumed to be the same size</strong>. Under that premise the floor area appears in both the numerator (the rent earned on that area) and the denominator (the price paid for it) and cancels; if the two units differ in size, the area ratio stays in the equation — a Johannesburg one-bedroom 20% larger than its Cape Town counterpart would push the result from 90.7% to about 108.8% and reverse the conclusion. So 1.994 / 2.198 = 0.907 holds only under that premise. What it <strong>cannot</strong> do is produce an absolute yield figure — multiples describe the relative position only, while absolute values still depend on actual achieved rents and achieved sale prices.</p>
 
@@ -960,6 +966,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p><strong>Direct answer: South Africa has two rate benchmarks - the SARB repo rate at 7.25% and the prime rate at 10.75%, both effective 25 September 2026. Mortgages are usually priced off prime plus or minus a margin; in August 2026 the average rate achieved, per ooba, was about prime minus 0.75%, better than the roughly prime minus 0.64% in January-July. Home loans for foreigners in South Africa are usually assessed on stricter terms than for local buyers, and actual pricing and loan-to-value remain case by case.</strong></p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="Table: Rate / indicator、Level (market reference)、What it means fo">
         <thead>
           <tr><th scope="col">Rate / indicator</th><th scope="col">Level (market reference)</th><th scope="col">What it means for investors</th></tr>
@@ -971,6 +978,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>Inflation (CPI)</td><td>4.3% -> 4.4% (recent)</td><td>Contained inflation supports a more stable rate backdrop for cash-flow estimates</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>Putting rates into the return calculation turns on the difference between a cash buyer and a leveraged buyer. A cash buyer's net yield is unaffected by interest rates; a leveraged buyer must pay loan interest after deducting costs from rent. If the loan rate is close to 10% while the Cape Town gross yield is only about 9.49%, negative cash flow can appear before the five cost layers are even counted - which is why moves in the property interest rate South Africa benchmark (prime 10.75%) hit a leveraged buyer's net return hardest.</p>
 
@@ -996,6 +1004,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <h2 id="h2-4">Which five cost layers turn a gross yield into a net return in Cape Town?</h2>
 <p><strong>Any net rental yield Cape Town landlords quote should be read against these five layers. What do the five layers cost on a R2.6M unit?</strong> The table converts the layers into annual rand amounts for the Sea Point one-bed in the yield table above (R2,600,000, R21,000 a month, 9.7% gross).</p>
 
+<div class="table-scroll">
 <table class="tax-table" aria-label="Table: Cost layer、Annual amount (R)、% of gross rent、Yield impact">
   <thead><tr><th scope="col">Cost layer</th><th scope="col">Annual amount (R)</th><th scope="col">% of gross rent</th><th scope="col">Yield impact</th></tr></thead>
   <tbody>
@@ -1008,6 +1017,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
     <tr><td><strong>Net yield after five layers</strong></td><td><strong>200,499</strong></td><td>-</td><td><strong>7.71%</strong></td></tr>
   </tbody>
 </table>
+</div>
 
 <p style="font-size:0.85rem;opacity:0.75">(Source: layer percentages are the author's estimates applied to the Sea Point R2,600,000 one-bed and its 9.7% gross yield in the table above; the 1.5-2.0 pp gap follows the Global Property Guide methodology note. Rounding each layer moves the net figure within about 0.2 pp of the 7.5% market reference.)</p>
 
@@ -1048,6 +1058,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p><strong>Direct answer: Taipei residential rental yields are a market-reference range of about 1-2%, against a Cape Town apartment gross yield of about 9.49% (market-reference range). The nominal gap is wide, but the two are not a direct comparison - tax, currency, liquidity, holding costs and regulation all differ.</strong></p>
 
+      <div class="table-scroll">
       <table class="tax-table" aria-label="Table: Item、Taipei、Cape Town">
         <thead>
           <tr><th scope="col">Item</th><th scope="col">Taipei</th><th scope="col">Cape Town</th></tr>
@@ -1060,6 +1071,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>Main risk</td><td>Low yield, capital concentrated in one market</td><td>Currency swings, regulatory and market differences</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p>The point of the table is not that "Cape Town is always better" but that the two markets have different return structures. Taipei's strengths are high liquidity, familiar rules and easy access to capital, offset by a low yield; Cape Town's nominal yield is higher, but must absorb currency, cross-border costs and a higher information barrier. The rational approach is to read both inside an overall asset allocation rather than looking only at which percentage is bigger.</p>
 

@@ -727,6 +727,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -1080,6 +1082,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       <p>為了讓您更直觀地了解南非 PR 的競爭力，以下與幾個熱門移民國家進行比較：</p>
 
       <div style="overflow-x:auto">
+        <div class="table-scroll">
         <table class="comparison-table">
           <thead>
             <tr>
@@ -1135,6 +1138,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
 
       <p>從上表可以看出，南非 PR 在<strong>投資門檻、語言要求和居住要求</strong>三個關鍵指標上具有明顯優勢，尤其適合希望以較低成本取得第二身分、且不願受嚴格居住時間限制的高資產人士。</p>

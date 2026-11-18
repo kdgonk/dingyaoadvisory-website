@@ -727,6 +727,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -1075,6 +1077,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       <p>To help you better understand South Africa PR's competitiveness, here is a comparison with several popular immigration destinations:</p>
 
       <div style="overflow-x:auto">
+        <div class="table-scroll">
         <table class="comparison-table">
           <thead>
             <tr>
@@ -1130,6 +1133,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
 
       <p>As the table shows, South Africa PR has clear advantages in <strong>investment threshold, language requirements, and residency requirements</strong>, making it especially suitable for high-net-worth individuals seeking a second residency at a lower cost without strict residency restrictions.</p>

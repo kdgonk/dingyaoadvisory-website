@@ -684,6 +684,8 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -838,6 +840,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       <h3>這筆錢的本質是「預繳」，不是「罰款」</h3>
       <p>南非稅務局 SARS 對這件事的用語很明確：在開普敦出售房產，被扣下的金額是賣方<strong>該課稅年度正常稅（normal tax）的預付款（advance payment）</strong>。也就是說，它不是額外多收你一筆，而是先把你要繳的稅「預存」起來。真正的稅額在年度申報時才確定，扣多了退、扣少了補。</p>
       <p>但這裡有個開普敦賣方最容易誤判的地方：預扣比例是依<strong>成交價</strong>算，而實際稅額是依<strong>獲利</strong>算。一間 2019 年在 Constantia 以 R6,000,000 買入、2026 年以 R11,000,000 賣出的房子，預扣是 R825,000（全額 7.5%），但應稅獲利只有 R5,000,000 的一部分，兩者差距會讓現金流被鎖住好幾個月。</p>
+      <div class="table-scroll">
       <table class="tax-table">
         <thead><tr><th>賣方身分</th><th>預扣比例</th><th>計算基礎</th><th>開普敦常見情境</th></tr></thead>
         <tbody>
@@ -846,6 +849,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>信託</td><td><strong>15%</strong></td><td>應付金額全額</td><td>以家族信託持有開普敦酒莊周邊物業</td></tr>
         </tbody>
       </table>
+      </div>
       <p>（資料來源：南非稅務局 SARS, Non-resident sellers of immovable property, 2026-08-19 更新；SARS, Guide to Amounts to be Withheld, 2025-10-02 更新）</p>
     </section>
   </div>
@@ -867,6 +871,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       <p><strong>超過就全額扣。</strong>這是台灣賣方在開普敦最容易被算錯的一條。南非稅務局 SARS 原文寫得很直白：「Where the value of the property exceeds R2 million, the withholding amount applies to the full purchase price, without regard to the R2 million threshold.」——房產價值超過 R2,000,000 時，預扣金額適用於<strong>全部成交價</strong>，不扣除那 R2,000,000 的門檻（資料來源：SARS, Guide to Amounts to be Withheld, 2025-10-02）。</p>
       <p>換句話說，它不是「超過 R2,000,000 的部分才扣」。反過來說，如果買方應付的總額（含付給賣方或其他代收人的所有款項）「合計不超過」R2,000,000，s35A 就完全不適用。開普敦市區一間 R1,950,000 的小套房，與 Southern Suburbs 一間 R2,050,000 的排屋，只有 5% 的價差，卻決定了要不要被扣 15 萬以上——這條線在開普敦的價格帶裡是真實存在的。</p>
       <h3>三組實算：從 R2,000,000 到 R189,000,000</h3>
+      <div class="table-scroll">
       <table class="tax-table">
         <thead><tr><th>開普敦情境</th><th>成交價</th><th>身分</th><th>預扣金額</th><th>賣方當日實拿</th></tr></thead>
         <tbody>
@@ -876,6 +881,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>開普敦市區小套房</td><td>R1,950,000</td><td>自然人</td><td><strong>R0</strong>（合計未逾 R2,000,000 不適用）</td><td>R1,950,000</td></tr>
         </tbody>
       </table>
+      </div>
       <p>第一列開普敦 Bishopscourt 的 R14,175,000，就是 R189,000,000 × 7.5%。注意這筆錢是<strong>買方</strong>的法定義務，不是賣方「可以商量」的選項。買方如果沒扣、沒繳，SARS 會直接找買方（下面第 4 節詳述）。</p>
       <h3>定金（deposit）那一筆要先扣嗎？</h3>
       <p>不用，但有條件。SARS 規定：買方為確保交易而支付的定金，在買賣契約尚未成為「無條件（unconditional）」之前，不需要就定金預扣；一旦契約生效，原本該從定金扣下的金額，<strong>改從後續第一筆付款中扣</strong>。開普敦的實務是：契約通常附帶「bond approval（貸款核准）」與「房屋檢查」等先決條件，這些條件清除（通常是簽約後 30 至 45 天）才是扣款的起算點。</p>
@@ -964,6 +970,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
       <p><strong>預扣是預繳，CGT 才是最終稅額。</strong>很多人把兩者混為一談，結果在開普敦賣房時把現金流算錯。SARS 的說法是：被扣下的金額是賣方在<strong>處分該不動產所屬課稅年度</strong>的正常稅預付款；而資本利得是依所得稅法第八附表（Eighth Schedule）計算後，計入應稅所得，再按邊際稅率課稅。</p>
       <h3>2026/27 年度 CGT 的有效稅率上限</h3>
       <p>南非的資本利得不是全額課稅，而是先按「計入比例（inclusion rate）」計入應稅所得，再套用所得稅率。因此有效稅率有上限：</p>
+      <div class="table-scroll">
       <table class="tax-table">
         <thead><tr><th>納稅主體</th><th>最高有效 CGT 稅率</th><th>對開普敦賣方的意義</th></tr></thead>
         <tbody>
@@ -972,6 +979,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td>其他信託</td><td><strong>36%</strong></td><td>家族信託持有的開普敦物業，稅負最重</td></tr>
         </tbody>
       </table>
+      </div>
       <p>（資料來源：南非稅務局 SARS, Budget 2026 Frequently Asked Questions, 2026-03-20）</p>
       <p>同一份南非官方文件也公告了 2026 年 3 月 2 日起的排除額調整：<strong>年度排除額 R50,000</strong>（原 R40,000）、<strong>主要居所排除額 R3,000,000</strong>（原 R2,000,000）、死亡排除額 R440,000。主要居所排除額是否適用於非居民個案，須依第八附表條件與實際居住事實由 SARS 認定，不能直接套用。</p>
       <h3>處分時點是「簽約日」，不是「過戶日」</h3>
@@ -998,6 +1006,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <h2>賣房款怎麼合法匯出南非？510 01 與 2026 年新 BoP 分類</h2>
       <p><strong>不動產處分所得走 BoP 類別 510 01。</strong>這是在開普敦賣完房子後，把錢匯出南非時最關鍵的一組數字。南非儲備銀行（SARB）自 <strong>2026 年 8 月 11 日</strong>起實施新的國際收支（BoP）分類，採 SADC 調和版代碼並納入 IMF 第七版手冊（BPM7）架構；銀行業的實施日為 2026-08-11（資料來源：Nedbank, FinSurv BoP categories guide, 2026-08；SARB Quarterly Bulletin, Box 2, 2026-09）。</p>
       <p>在非居民個人的「資本移轉（capital transfers）」項下，與開普敦賣方直接相關的是：</p>
+      <div class="table-scroll">
       <table class="tax-table">
         <thead><tr><th>BoP 代碼</th><th>官方描述</th><th>開普敦賣方的適用情境</th></tr></thead>
         <tbody>
@@ -1007,6 +1016,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td><strong>309 08</strong></td><td>Interest paid not in respect of loans</td><td>非貸款性質的利息支付</td></tr>
         </tbody>
       </table>
+      </div>
       <p>（資料來源：南非 Nedbank, FinSurv BoP categories guide, Version 20250622/v003, 2026-08）</p>
       <p>必須說清楚的是：<strong>最終代碼由銀行的授權外匯部門（authorised dealer）依實際交易性質認定</strong>，不是由賣方自行指定。上表是「你的交易會落在哪一類」的對照，不是「填這個就過」。這也是為什麼開普敦的匯出流程裡，第一個被退件的通常不是代碼寫錯，而是<strong>交易性質證明不足</strong>——你無法說明這筆錢是「賣房款」還是「租金」。因此賣方要留下的文件至少包括：買賣契約、過戶完成證明、SARS 的預扣繳款收據、以及外匯申報表。</p>
       <h3>匯出前最常被退件的三件事</h3>

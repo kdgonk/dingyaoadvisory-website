@@ -625,6 +625,8 @@ p { font-size: clamp(0.95rem, 1.2vw, 1.1rem); color: var(--cream); }
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -900,6 +902,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>One of Stellenbosch's greatest attractions is its exceptional value for money. Below is an estimated monthly budget for a retired couple:</p>
 
+      <div class="table-scroll">
       <table class="cost-table">
         <thead>
           <tr>
@@ -946,6 +949,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p>With a monthly budget of NTD 42,500-68,000, you can enjoy a retirement lifestyle in Stellenbosch that includes golf, wine tasting, and fine dining — a lifestyle that would cost 2-3 times as much in Taipei or Tokyo.</p>
     </section>

@@ -643,6 +643,7 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -868,6 +869,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                 <h3>Capital Allocation Overview</h3>
                 <p>R16,000,000 (16 million rand) is allocated as follows:</p>
                 
+                <div class="table-scroll">
                 <table class="tax-table">
                     <thead>
                         <tr>
@@ -898,12 +900,14 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 
                 <h3>Property Allocation: What Can R10,450,000 Buy?</h3>
                 <p>
                     According to Lightstone and Property24 data for Q1 2026, Cape Town property prices vary by area:
                 </p>
                 
+                <div class="table-scroll">
                 <table class="tax-table">
                     <thead>
                         <tr>
@@ -946,6 +950,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 
                 <p class="text-muted">The areas in that table are <strong>theoretical</strong>: budget ÷ average price per sqm. They are not the size of anything you can actually buy, and they should not be compared directly with Taipei "ping" figures. Two reasons: (1) the average includes every transaction in the suburb, older, smaller and worse-located stock included, whereas a renovated loft or sea-view apartment trades at 1.5-3× the suburb average; (2) freehold houses are measured by land area while sectional-title apartments are measured by internal floor area, so the two cannot be sized against each other. The table tells you which suburb is cheaper per square metre — the list below tells you what is actually buyable.</p>
                 <p><strong>Real purchasing power</strong>: with R10,450,000 (about TWD 19.65 million) in Cape Town you can buy:</p>
@@ -1079,6 +1084,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 <h2>What Is the Ten-Year Asset Gap?</h2>
                 
                 <h3>Cape Town Approach at a Glance (South Africa)</h3>
+                <div class="table-scroll">
                 <table class="tax-table">
                     <thead>
                         <tr>
@@ -1109,10 +1115,12 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 <p><strong>Total assets after ten years: about TWD 49.65 million (roughly R26.41 million)</strong> — property TWD 29.12m + call account TWD 20.53m (all figures in TWD). <strong>The TWD 7.6m of ten-year net rent is deliberately excluded</strong>: that money is period cash flow used to cover living costs in the coverage-ratio section below, so counting it as ending assets too would mean the same money is both spent and saved. The Taiwan case uses the same convention (rent excluded).</p>
                 <p class="text-muted">Rounding note: property at (1.04)^10 = 1.4802 computes to TWD 29.09m and the call account at (1.07)^10 = 1.967 computes to TWD 20.52m; the table shows 29.12 and 20.53. Each line is rounded to TWD 10k, so the total may differ by ±TWD 50k. Ratios and conclusions are unaffected.</p>
                 
                 <h3>Taiwan Approach at a Glance</h3>
+                <div class="table-scroll">
                 <table class="tax-table">
                     <thead>
                         <tr>
@@ -1137,8 +1145,10 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 
                 <h3>Key Gap Summary</h3>
+                <div class="table-scroll">
                 <table class="tax-table">
                     <thead>
                         <tr>
@@ -1175,6 +1185,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 <p class="text-muted">The two approaches are allocated differently, which is a strategy difference rather than a calculation error: Cape Town deliberately keeps 35% in a 7% call account, while the Taiwan case buys property outright. On a like-for-like 65/35 basis (TWD 19.65m property + TWD 10.43m at 1.7% fixed deposit), the Taiwan case ends at about TWD 40.20m after ten years — TWD 9.45m behind Cape Town's TWD 49.65m, slightly wider than the +TWD 9.22m shown here. This article deliberately uses the comparison least favourable to Cape Town (Taiwan buys outright, property growth cut to 3%) to avoid overstating the case.</p>
                 <h3>Costs this model does not include (read before the numbers)</h3>
                 <p>Both TWD 49.65m and TWD 40.43m are <strong>pre-tax, pre-cost</strong> figures. Owning South African property involves three cost layers that this model does not deduct:</p>
@@ -1204,6 +1215,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                 
                 <h3>Cost of Living (Numbeo 2026 data, all figures converted to TWD)</h3>
                 <p class="text-muted">Everything below is in Taiwan dollars (TWD); the ZAR original is shown in brackets at 1 ZAR = 1.88 TWD. An earlier version of this page labelled Taipei's TWD figures as "R", which distorted the percentage column — now corrected and recalculated.</p>
+                <div class="table-scroll">
                 <table class="tax-table">
                     <thead>
                         <tr>
@@ -1240,6 +1252,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 
                 <h3>Passive Income Coverage Ratio (10-year average annual cash flow)</h3>
                 <p class="text-muted">Basis: rent uses the 10-year average NET figure (gross rent less 30% for vacancy, repairs and management); interest uses total ten-year interest ÷ 10 years. No best-year cherry-picking. FX the same 1 ZAR = 1.88 TWD.</p>
@@ -1264,6 +1277,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                 </ul>
                 
                 <h3>Non-Financial Factors Comparison</h3>
+                <div class="table-scroll">
                 <table class="tax-table">
                     <thead>
                         <tr>
@@ -1305,6 +1319,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
                         </tr>
                     </tbody>
                 </table>
+                </div>
 
     </section>
   </div>

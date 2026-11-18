@@ -671,6 +671,8 @@ blockquote cite {
 .article-body{position:relative;z-index:2}
 
 @media(max-width:768px){.compliance-disclaimer div[style*="font-size:0.72rem"]{font-size:0.76rem!important}}
+.section-bg figcaption{display:none}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 </style>
 <!-- Google Tag Manager -->
 <!-- Consent Mode v2 — default denied; MUST precede Google Tag Manager -->
@@ -903,6 +905,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>把五個城市攤開來看，排序很清楚：</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -945,6 +948,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：Global Property Guide 南非租金收益率（2026 Q2）。所有數字為毛值市場參考區間，未扣稅費、管理費、修繕、空置與呆帳，非保證收益。市內區間取該城市各分區與各房型的最低與最高值。</p>
 
       <p>值得注意的是，<strong>開普敦是五城中「市內落差最大」的城市：4.06% 到 14.62%，跨度超過 10 個百分點。</strong>Johannesburg 的落差雖然也大（8.61-17.28%），但那是因為它同時包含 CBD 與 Sandton 兩種完全不同的市場。開普敦的落差則集中在同一座城市的生活圈之間——這正是下一節要拆解的。</p>
@@ -970,6 +974,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>把開普敦各區的數字攤開，規律非常清楚：</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1042,6 +1047,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：Global Property Guide 南非租金收益率（2026 Q2）。所有數字為毛值市場參考區間，未扣稅費、管理費、修繕、空置與呆帳，非保證收益；實際收益將隨市場狀況與出租狀況而變動。</p>
 
       <p>這張表有一個非常清楚的規律：<strong>房型越大、單價越高，毛收益率越低。</strong>全市 1 房平均 12.35%，2 房降到 10.68%，3 房只剩 5.45%。而在同一房型裡，單價低的外圍區域（Milnerton、Bellville、Southern Suburbs）收益率明顯高於高價海景區（Atlantic Seaboard、City Bowl）。</p>
@@ -1071,6 +1077,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>毛收益率的計算方式是「中位數月租金 × 12 ÷ 中位數房價」，它<strong>完全沒有扣除任何持有成本</strong>。要從毛值走到淨值，至少要扣掉這五項：</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1107,10 +1114,12 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：Global Property Guide 方法說明（毛收益率未計稅費、修繕成本、地租、仲介費用等；淨收益率通常低 1.5-2 個百分點）。本表為市場參考整理，非保證收益；實際成本結構依個案、社區與出租狀況而異。</p>
 
       <p>把數字放進來看更清楚。以下用 R2,000,000 的物件為例，示範不同毛收益率對應的年租金與月租金（未扣成本）：</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1129,6 +1138,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">上表為毛收益率示意試算，僅用於說明不同收益率對應的租金量級。毛收益率為市場參考區間，未扣除稅費、管理費、修繕、空置與呆帳，非保證收益；該機構方法說明指出淨收益通常比毛收益低約 1.5-2 個百分點。實際收益將隨市場狀況、出租狀況與匯率而變動。過往績效不代表未來收益。</p>
 
       <p>更重要的是：<strong>同一筆資金放在不同區域，淨收益的排序不一定跟毛收益一樣。</strong>因為管理費、修繕頻率與空置風險都隨區域與房型而變——1 房產品的租客流動性通常高於 3 房，但單價低、修繕項目也少。只有把成本逐項放進自己的試算表，你才會知道自己那一間的淨值是多少。市場參考區間，非保證收益，實際收益將隨市場狀況而變動。</p>
@@ -1204,6 +1214,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
 
       <p>先看升息後各級距的月付增加幅度（20 年期、貼 prime、未計議價空間的市場參考試算）：</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1223,12 +1234,14 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           <tr><td><strong>R5,000,000</strong></td><td>約 R49,919</td><td>約 R50,761</td><td><strong>+R842</strong></td></tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：REI.co.za（Neale Petersen，2026-09-23，20 年期、prime、未計議價 margin 之市場參考試算）。為市場參考試算，非保證數字；實際月付依銀行核定的利率、年期與費用而異。</p>
 
       <p>有一個關鍵事實必須放進來：<strong>掛牌的 prime 不等於你實際拿到的利率。</strong>ooba 2026 年 8 月的平均成交利率為<strong>prime 減 0.75%</strong>，而 1 至 7 月的平均是 prime 減 0.64%——顯示即使升息，南非銀行對優質房貸業務的競爭仍在，議價空間反而略有擴大。這代表壓力測試用 10.75% 是保守做法，但實際成本可能低於這個數字。市場參考資訊，非保證。</p>
 
       <p>接著把開普敦與台灣放在同一張表上比較：</p>
 
+      <div class="table-scroll">
       <table class="tax-table">
         <thead>
           <tr>
@@ -1270,6 +1283,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
           </tr>
         </tbody>
       </table>
+      </div>
       <p class="text-muted" style="font-size:0.85rem">資料來源：Global Property Guide（2026 Q2 南非租金收益率）；REI.co.za（2026-09-23，prime 10.75% 與月付試算）；The South African 引用 Pam Golding 與 Lightstone（2026-09-22，開普敦房價年增 11.4%）；台灣部分為市場公開資訊之參考區間。所有數字為市場參考區間，非保證收益；實際收益將隨市場狀況、出租狀況與匯率而變動。</p>
 
       <p><strong>務必並列的三個風險：</strong>①<strong>匯率風險</strong>——租金收入是南非幣，若南非幣貶值，換回台幣的實質收益會縮水；②<strong>空置風險</strong>——毛收益率假設滿租，實際空置期直接吃掉收益；③<strong>稅費與管理成本</strong>——跨國持有涉及當地稅制、匯出規範與管理費用，必須逐項計算。<strong>不要用「9.49% 減台灣 1.5%」這種算法決定投資</strong>；正確做法是把毛收益一路扣到淨值，再與台灣方案比較。差距可能仍然明顯，但只有算完的人才知道自己的版本是多少。本表為市場參考比較，非保證收益，實際收益將隨市場狀況而變動。</p>
