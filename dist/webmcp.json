@@ -7,7 +7,7 @@
     "zh-TW",
     "en"
   ],
-  "last_updated": "2026-11-16",
+  "last_updated": "2026-11-23",
   "ai_readable": {
     "llms_txt": "/llms.txt",
     "sitemap": "/sitemap.xml"
@@ -23,6 +23,19 @@
       "en": "/blog-en",
       "purpose": "專欄文章 - 投資趨勢、移民資訊、市場分析",
       "articles": [
+        {
+          "slug": "south-africa-rand-fund-distribution-yield-reality-2026",
+          "title": "南非幣基金配息率不等於報酬率：含息總報酬與匯差實算",
+          "description": "南非幣基金年配息 12%–27% 都不是報酬率。本文拆解「配息來源可能為本金」的機制、用投入 10 萬領 8 千的公開算例算出含息總報酬 −4%，再把 4.53% 來回換匯成本代入 NT$1,000,000 三條路徑，算出到手台幣；含配息率對照表與 1.90 匯率基準。立即索取你的試算對照。",
+          "url": "https://dingyaoadvisory.tw/blog/south-africa-rand-fund-distribution-yield-reality-2026",
+          "url_en": "https://dingyaoadvisory.tw/blog/south-africa-rand-fund-distribution-yield-reality-2026-en",
+          "language": "zh-TW",
+          "category": "南非開戶 / 基金配息 / 跨境資金",
+          "published": "2026-11-23",
+          "image": "https://assets.dingyaoadvisory.tw/blog/images/south-africa-rand-fund-distribution-yield-reality-2026-hero.webp",
+          "title_en": "Rand Fund Payout Yield vs Total Return 2026",
+          "description_en": "Rand fund payouts of 12-27% are not returns: the principal-payout mechanics, a worked total-return example, and the 4.53% round-trip FX cost on NT$1,000,000."
+        },
         {
           "slug": "south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026",
           "title": "南非幣定存利率比較 2026：玉山 4.55%，但換匯先付 4.53%",
@@ -1547,6 +1560,11 @@
       "zh": "https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026",
       "en": "https://dingyaoadvisory.tw/blog/south-africa-fixed-deposit-rate-comparison-taiwan-banks-2026-en",
       "purpose": "南非幣定存利率比較：台灣端銀行掛牌 4.55%（玉山 2026-11-10）vs 南非本地貨幣市場 7.10–7.45%，換匯來回價差 4.53% 實算（等於 1.6–1.8 年利差）、SARB 2026-11-19 決議三情境、非居民開戶退件點與 SARS s50D 利息扣繳豁免邊界"
+    },
+    "south_africa_rand_fund_distribution_yield_reality_2026": {
+      "zh": "https://dingyaoadvisory.tw/blog/south-africa-rand-fund-distribution-yield-reality-2026",
+      "en": "https://dingyaoadvisory.tw/blog/south-africa-rand-fund-distribution-yield-reality-2026-en",
+      "purpose": "南非幣基金配息率與含息總報酬的差別：12%–27% 配息率不是報酬率，配息可能來自本金；含息總報酬算例（−4%）、4.53% 來回換匯成本、配息率對照表與匯率基準 1.90"
     }
   },
   "contact": {
