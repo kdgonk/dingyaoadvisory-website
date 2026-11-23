@@ -542,6 +542,64 @@ export default {
       });
     }
 
+    // ── apex `.html` 重複網址 → 乾淨網址（301）2026-11-23 泰坦人 ──────────
+    // 為什麼：wrangler.jsonc 的 assets.html_handling: "auto-trailing-slash" 會讓資產層
+    // 對 `*.html` 一律回 **307**（暫時轉址）。307 不併訊號：GSC 近 12 個月有 21 組
+    // 「`.html` ＋ 乾淨網址」同內容兩者都吃到曝光（最高 86 次）→ 權重被切開。
+    // 這裡在 Worker 層先攔下來直接 **301** 到去副檔名的終點，Google 才會併。
+    //
+    // 正規化與上面 www 段一致：`/index.html` → `/`、`/x.html` → `/x`、`/a/b/index.html`
+    // → `/a/b`，保留 query string；GET/HEAD 用 301，其他方法用 308（301 會被瀏覽器
+    // 改寫成 GET，非 GET 請求會靜默變形）。
+    //
+    // ⚠️ 不要改 assets.html_handling：那是資產層行為，改了會連帶影響目錄索引與 404；
+    //    也**不要動上面 www 段**。這段的 301 目標必須是終點（不可再指向另一條轉址）。
+    if (reqHost === 'dingyaoadvisory.tw' && /\.html$/i.test(url.pathname)) {
+      let p = url.pathname;
+      if (/\/index\.html$/i.test(p)) p = p.slice(0, -'/index.html'.length) || '/';
+      else p = p.slice(0, -'.html'.length) || '/';
+      if (p.length > 1) p = p.replace(/\/+$/, '') || '/';
+
+      // 去副檔名後的終點本身可能還在 `dist/_redirects` 裡（例：
+      // /blog/south-africa-defence-exports-en → /blog/south-africa-investment-opportunities-2026-en）。
+      // 那種情況直接 301 到「終點的路徑」會變成 301 → 301 兩跳，Google 併訊號的效果打折。
+      // 這裡用一次 ASSETS 子請求把鏈走完（上限 3 跳），只認最終 200 的終點；
+      // 若最終不是 200（例如該 .html 對應的頁已不存在 → 404），就**不介入**，
+      // 讓下面的資產層照原行為回 404，不製造「301 → 404」。
+      let finalPath = p;
+      try {
+        for (let i = 0; i < 3; i++) {
+          const probe = await env.ASSETS.fetch(
+            new Request('https://dingyaoadvisory.tw' + finalPath, { method: 'GET', redirect: 'manual' })
+          );
+          if (probe.status < 300 || probe.status >= 400) break;
+          const loc = probe.headers.get('Location');
+          if (!loc) break;
+          const nextPath = new URL(loc, 'https://dingyaoadvisory.tw').pathname.replace(/\/+$/, '') || '/';
+          if (nextPath === finalPath) break;
+          finalPath = nextPath;
+        }
+        const done = await env.ASSETS.fetch(
+          new Request('https://dingyaoadvisory.tw' + finalPath, { method: 'GET', redirect: 'manual' })
+        );
+        if (done.status !== 200) {
+          return env.ASSETS.fetch(request); // 終點不是 200 → 不介入（維持 404 語意）
+        }
+      } catch (err) {
+        return env.ASSETS.fetch(request);
+      }
+
+      const status = (request.method === 'GET' || request.method === 'HEAD') ? 301 : 308;
+      return new Response(null, {
+        status,
+        headers: {
+          'Location': 'https://dingyaoadvisory.tw' + finalPath + url.search,
+          // 與 www 段同口徑：可快取但只給 1 小時上限，日後改規則不必逐 URL purge。
+          'Cache-Control': 'public, max-age=3600'
+        }
+      });
+    }
+
     if (path === '/api/lead') {
       if (request.method === 'OPTIONS') {
         return new Response(null, {
